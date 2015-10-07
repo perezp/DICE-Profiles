@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/uml2/2.2.0/GenModel"
+    modelDirectory="/com.masdes.dam.static.profile/src" modelPluginID="com.masdes.dam.static.profile"
+    modelName="DAM" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.uml2.uml.ecore.importer" complianceLevel="8.0" copyrightFields="false"
+    usedGenPackages="../../org.eclipse.emf.ecore/model/Ecore.genmodel#//ecore ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE.genmodel#//MARTE ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE.genmodel#//MARTE_Library ../../org.eclipse.uml2.types/model/Types.genmodel#//types ../../org.eclipse.uml2.uml/model/UML.genmodel#//uml ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE.genmodel#//MARTE_Library/BasicNFP_Types"
+    importOrganizing="true">
+  <genAnnotations source="http://www.eclipse.org/emf/2002/GenModel/importer/org.eclipse.uml2.uml.ecore.importer">
+    <details key="OPPOSITE_ROLE_NAMES" value="IGNORE"/>
+    <details key="DUPLICATE_FEATURES" value="DISCARD"/>
+    <details key="ANNOTATION_DETAILS" value="PROCESS"/>
+    <details key="PROPERTY_DEFAULT_EXPRESSIONS" value="IGNORE"/>
+    <details key="DUPLICATE_FEATURE_INHERITANCE" value="DISCARD"/>
+    <details key="COMMENTS" value="PROCESS"/>
+    <details key="DERIVED_FEATURES" value="PROCESS"/>
+    <details key="SUPER_CLASS_ORDER" value="PROCESS"/>
+    <details key="DUPLICATE_OPERATION_INHERITANCE" value="DISCARD"/>
+    <details key="REDEFINING_OPERATIONS" value="REPORT"/>
+    <details key="INVARIANT_CONSTRAINTS" value="PROCESS"/>
+    <details key="UNION_PROPERTIES" value="REPORT"/>
+    <details key="DUPLICATE_OPERATIONS" value="DISCARD"/>
+    <details key="NON_API_INVARIANTS" value="IGNORE"/>
+    <details key="CAMEL_CASE_NAMES" value="IGNORE"/>
+    <details key="SUBSETTING_PROPERTIES" value="REPORT"/>
+    <details key="OPERATION_BODIES" value="IGNORE"/>
+    <details key="ECORE_TAGGED_VALUES" value="PROCESS"/>
+    <details key="UNTYPED_PROPERTIES" value="REPORT"/>
+    <details key="REDEFINING_PROPERTIES" value="REPORT"/>
+    <details key="INVOCATION_DELEGATES" value="IGNORE"/>
+    <details key="VALIDATION_DELEGATES" value="IGNORE"/>
+  </genAnnotations>
+  <foreignModel>DAM.profile.uml</foreignModel>
+  <genPackages xsi:type="genmodel:GenPackage" prefix="DAM" basePackage="com.masdes.dam"
+      disposableProviderFactory="true" ecorePackage="DAM.ecore#/">
+    <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="DAM.ecore#//dummy"/>
+    <nestedGenPackages xsi:type="genmodel:GenPackage" prefix="DAM_UML_Extensions"
+        basePackage="com.masdes.dam" disposableProviderFactory="true" ecorePackage="DAM.ecore#//DAM_UML_Extensions">
+      <nestedGenPackages xsi:type="genmodel:GenPackage" prefix="System" basePackage="com.masdes.dam"
+          disposableProviderFactory="true" ecorePackage="DAM.ecore#//DAM_UML_Extensions/System">
+        <nestedGenPackages xsi:type="genmodel:GenPackage" prefix="Core" basePackage="com.masdes.dam"
+            disposableProviderFactory="true" ecorePackage="DAM.ecore#//DAM_UML_Extensions/System/Core">
+          <genClasses xsi:type="genmodel:GenClass" ecoreClass="DAM.ecore#//DAM_UML_Extensions/System/Core/DaComponent">
+            <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DAM.ecore#//DAM_UML_Extensions/System/Core/DaComponent/stateful"/>
+            <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DAM.ecore#//DAM_UML_Extensions/System/Core/DaComponent/origin"/>
+            <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DAM.ecore#//DAM_UML_Extensions/System/Core/DaComponent/failureCoverage"/>
+            <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DAM.ecore#//DAM_UML_Extensions/System/Core/DaComponent/percPermFault"/>
+            <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DAM.ecore#//DAM_UML_Extensions/System/Core/DaComponent/ssAvail"/>
+            <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DAM.ecore#//DAM_UML_Extensions/System/Core/DaComponent/unreliability"/>
+            <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DAM.ecore#//DAM_UML_Extensions/System/Core/DaComponent/reliability"/>
+            <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DAM.ecore#//DAM_UML_Extensions/System/Core/DaComponent/missionTime"/>
+            <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DAM.ecore#//DAM_UML_Extensions/System/Core/DaComponent/availLevel"/>
+            <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DAM.ecore#//DAM_UML_Extensions/System/Core/DaComponent/reliabilityLevel"/>
+            <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DAM.ecore#//DAM_UML_Extensions/System/Core/DaComponent/safetyLevel"/>
+            <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DAM.ecore#//DAM_UML_Extensions/System/Core/DaComponent/complexity"/>
+            <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+                createChild="true" ecoreFeature="ecore:EReference DAM.ecore#//DAM_UML_Extensions/System/Core/DaComponent/fault"/>
+            <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+                createChild="true" ecoreFeature="ecore:EReference DAM.ecore#//DAM_UML_Extensions/System/Core/DaComponent/error"/>
+            <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+                createChild="true" ecoreFeature="ecore:EReference DAM.ecore#//DAM_UML_Extensions/System/Core/DaComponent/failure"/>
+            <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+                createChild="true" ecoreFeature="ecore:EReference DAM.ecore#//DAM_UML_Extensions/System/Core/DaComponent/hazard"/>
+            <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+                createChild="true" ecoreFeature="ecore:EReference DAM.ecore#//DAM_UML_Extensions/System/Core/DaComponent/repair"/>
+            <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+                propertySortChoices="true" ecoreFeature="ecore:EReference DAM.ecore#//DAM_UML_Extensions/System/Core/DaComponent/substitutedBy"/>
+          </genClasses>
+          <genClasses xsi:type="genmodel:GenClass" ecoreClass="DAM.ecore#//DAM_UML_Extensions/System/Core/DaService">
+            <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DAM.ecore#//DAM_UML_Extensions/System/Core/DaService/execProb"/>
+            <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DAM.ecore#//DAM_UML_Extensions/System/Core/DaService/ssAvail"/>
+            <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DAM.ecore#//DAM_UML_Extensions/System/Core/DaService/instAvail"/>
+            <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DAM.ecore#//DAM_UML_Extensions/System/Core/DaService/unreliability"/>
+            <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DAM.ecore#//DAM_UML_Extensions/System/Core/DaService/reliability"/>
+            <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DAM.ecore#//DAM_UML_Extensions/System/Core/DaService/missionTime"/>
+            <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DAM.ecore#//DAM_UML_Extensions/System/Core/DaService/availLevel"/>
+            <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DAM.ecore#//DAM_UML_Extensions/System/Core/DaService/reliabLevel"/>
+            <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DAM.ecore#//DAM_UML_Extensions/System/Core/DaService/safetyLevel"/>
+            <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DAM.ecore#//DAM_UML_Extensions/System/Core/DaService/complexity"/>
+            <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+                createChild="true" ecoreFeature="ecore:EReference DAM.ecore#//DAM_UML_Extensions/System/Core/DaService/failure"/>
+            <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+                createChild="true" ecoreFeature="ecore:EReference DAM.ecore#//DAM_UML_Extensions/System/Core/DaService/hazard"/>
+            <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+                createChild="true" ecoreFeature="ecore:EReference DAM.ecore#//DAM_UML_Extensions/System/Core/DaService/recovery"/>
+            <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DAM.ecore#//DAM_UML_Extensions/System/Core/DaService/confLevel"/>
+            <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DAM.ecore#//DAM_UML_Extensions/System/Core/DaService/integLevel"/>
+          </genClasses>
+          <genClasses xsi:type="genmodel:GenClass" ecoreClass="DAM.ecore#//DAM_UML_Extensions/System/Core/DaStep">
+            <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DAM.ecore#//DAM_UML_Extensions/System/Core/DaStep/kind"/>
+            <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+                createChild="true" ecoreFeature="ecore:EReference DAM.ecore#//DAM_UML_Extensions/System/Core/DaStep/error"/>
+            <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+                createChild="true" ecoreFeature="ecore:EReference DAM.ecore#//DAM_UML_Extensions/System/Core/DaStep/fault"/>
+          </genClasses>
+          <genClasses xsi:type="genmodel:GenClass" ecoreClass="DAM.ecore#//DAM_UML_Extensions/System/Core/DaResistance">
+            <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DAM.ecore#//DAM_UML_Extensions/System/Core/DaResistance/coverage"/>
+          </genClasses>
+          <genClasses xsi:type="genmodel:GenClass" ecoreClass="DAM.ecore#//DAM_UML_Extensions/System/Core/DaRecognition"/>
+          <genClasses xsi:type="genmodel:GenClass" ecoreClass="DAM.ecore#//DAM_UML_Extensions/System/Core/DaRecovery"/>
+          <genClasses xsi:type="genmodel:GenClass" ecoreClass="DAM.ecore#//DAM_UML_Extensions/System/Core/DaServiceMode">
+            <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+                propertySortChoices="true" ecoreFeature="ecore:EReference DAM.ecore#//DAM_UML_Extensions/System/Core/DaServiceMode/service"/>
+            <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+                createChild="true" ecoreFeature="ecore:EReference DAM.ecore#//DAM_UML_Extensions/System/Core/DaServiceMode/qos"/>
+            <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DAM.ecore#//DAM_UML_Extensions/System/Core/DaServiceMode/prob"/>
+            <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+                propertySortChoices="true" ecoreFeature="ecore:EReference DAM.ecore#//DAM_UML_Extensions/System/Core/DaServiceMode/base_State"/>
+          </genClasses>
+          <genClasses xsi:type="genmodel:GenClass" ecoreClass="DAM.ecore#//DAM_UML_Extensions/System/Core/DaServiceRequest">
+            <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DAM.ecore#//DAM_UML_Extensions/System/Core/DaServiceRequest/accessProb"/>
+            <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DAM.ecore#//DAM_UML_Extensions/System/Core/DaServiceRequest/serviceProb"/>
+            <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+                propertySortChoices="true" ecoreFeature="ecore:EReference DAM.ecore#//DAM_UML_Extensions/System/Core/DaServiceRequest/request"/>
+            <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+                propertySortChoices="true" ecoreFeature="ecore:EReference DAM.ecore#//DAM_UML_Extensions/System/Core/DaServiceRequest/base_Classifier"/>
+            <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+                propertySortChoices="true" ecoreFeature="ecore:EReference DAM.ecore#//DAM_UML_Extensions/System/Core/DaServiceRequest/base_Lifeline"/>
+            <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+                propertySortChoices="true" ecoreFeature="ecore:EReference DAM.ecore#//DAM_UML_Extensions/System/Core/DaServiceRequest/base_Interaction"/>
+            <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+                propertySortChoices="true" ecoreFeature="ecore:EReference DAM.ecore#//DAM_UML_Extensions/System/Core/DaServiceRequest/base_InstanceSpecification"/>
+            <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="DAM.ecore#//DAM_UML_Extensions/System/Core/DaServiceRequest/requestSize">
+              <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="DAM.ecore#//DAM_UML_Extensions/System/Core/DaServiceRequest/requestSize/diagnostics"/>
+              <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="DAM.ecore#//DAM_UML_Extensions/System/Core/DaServiceRequest/requestSize/context"/>
+            </genOperations>
+          </genClasses>
+          <genClasses xsi:type="genmodel:GenClass" ecoreClass="DAM.ecore#//DAM_UML_Extensions/System/Core/DaConnector">
+            <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DAM.ecore#//DAM_UML_Extensions/System/Core/DaConnector/coupling"/>
+            <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+                createChild="true" ecoreFeature="ecore:EReference DAM.ecore#//DAM_UML_Extensions/System/Core/DaConnector/errorProp"/>
+            <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+                createChild="true" ecoreFeature="ecore:EReference DAM.ecore#//DAM_UML_Extensions/System/Core/DaConnector/failure"/>
+            <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+                createChild="true" ecoreFeature="ecore:EReference DAM.ecore#//DAM_UML_Extensions/System/Core/DaConnector/hazard"/>
+            <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+                propertySortChoices="true" ecoreFeature="ecore:EReference DAM.ecore#//DAM_UML_Extensions/System/Core/DaConnector/base_InvocationAction"/>
+            <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+                propertySortChoices="true" ecoreFeature="ecore:EReference DAM.ecore#//DAM_UML_Extensions/System/Core/DaConnector/base_Extend"/>
+            <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+                propertySortChoices="true" ecoreFeature="ecore:EReference DAM.ecore#//DAM_UML_Extensions/System/Core/DaConnector/base_Include"/>
+            <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+                propertySortChoices="true" ecoreFeature="ecore:EReference DAM.ecore#//DAM_UML_Extensions/System/Core/DaConnector/base_Message"/>
+            <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+                propertySortChoices="true" ecoreFeature="ecore:EReference DAM.ecore#//DAM_UML_Extensions/System/Core/DaConnector/base_Connector"/>
+            <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+                propertySortChoices="true" ecoreFeature="ecore:EReference DAM.ecore#//DAM_UML_Extensions/System/Core/DaConnector/base_Dependency"/>
+            <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+                propertySortChoices="true" ecoreFeature="ecore:EReference DAM.ecore#//DAM_UML_Extensions/System/Core/DaConnector/base_Association"/>
+          </genClasses>
+          <genClasses xsi:type="genmodel:GenClass" ecoreClass="DAM.ecore#//DAM_UML_Extensions/System/Core/DaChange">
+            <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+                propertySortChoices="true" ecoreFeature="ecore:EReference DAM.ecore#//DAM_UML_Extensions/System/Core/DaChange/threats"/>
+            <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+                propertySortChoices="true" ecoreFeature="ecore:EReference DAM.ecore#//DAM_UML_Extensions/System/Core/DaChange/recognition"/>
+            <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+                propertySortChoices="true" ecoreFeature="ecore:EReference DAM.ecore#//DAM_UML_Extensions/System/Core/DaChange/recovery"/>
+            <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+                propertySortChoices="true" ecoreFeature="ecore:EReference DAM.ecore#//DAM_UML_Extensions/System/Core/DaChange/resistance"/>
+            <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+                propertySortChoices="true" ecoreFeature="ecore:EReference DAM.ecore#//DAM_UML_Extensions/System/Core/DaChange/base_Transition"/>
+          </genClasses>
+        </nestedGenPackages>
+        <nestedGenPackages xsi:type="genmodel:GenPackage" prefix="Redundancy" basePackage="com.masdes.dam"
+            disposableProviderFactory="true" ecorePackage="DAM.ecore#//DAM_UML_Extensions/System/Redundancy">
+          <genClasses xsi:type="genmodel:GenClass" ecoreClass="DAM.ecore#//DAM_UML_Extensions/System/Redundancy/DaController"/>
+          <genClasses xsi:type="genmodel:GenClass" ecoreClass="DAM.ecore#//DAM_UML_Extensions/System/Redundancy/DaVariant"/>
+          <genClasses xsi:type="genmodel:GenClass" ecoreClass="DAM.ecore#//DAM_UML_Extensions/System/Redundancy/DaAdjudicator">
+            <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DAM.ecore#//DAM_UML_Extensions/System/Redundancy/DaAdjudicator/errorDetecCoverage"/>
+          </genClasses>
+          <genClasses xsi:type="genmodel:GenClass" ecoreClass="DAM.ecore#//DAM_UML_Extensions/System/Redundancy/DaRedundantStructure">
+            <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+                createChild="true" ecoreFeature="ecore:EReference DAM.ecore#//DAM_UML_Extensions/System/Redundancy/DaRedundantStructure/commonModeFailure"/>
+            <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+                createChild="true" ecoreFeature="ecore:EReference DAM.ecore#//DAM_UML_Extensions/System/Redundancy/DaRedundantStructure/commonModeHazard"/>
+            <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DAM.ecore#//DAM_UML_Extensions/System/Redundancy/DaRedundantStructure/FTlevel"/>
+            <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+                propertySortChoices="true" ecoreFeature="ecore:EReference DAM.ecore#//DAM_UML_Extensions/System/Redundancy/DaRedundantStructure/base_Package"/>
+            <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="DAM.ecore#//DAM_UML_Extensions/System/Redundancy/DaRedundantStructure/packageSize">
+              <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="DAM.ecore#//DAM_UML_Extensions/System/Redundancy/DaRedundantStructure/packageSize/diagnostics"/>
+              <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="DAM.ecore#//DAM_UML_Extensions/System/Redundancy/DaRedundantStructure/packageSize/context"/>
+            </genOperations>
+          </genClasses>
+          <genClasses xsi:type="genmodel:GenClass" ecoreClass="DAM.ecore#//DAM_UML_Extensions/System/Redundancy/DaSpare">
+            <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DAM.ecore#//DAM_UML_Extensions/System/Redundancy/DaSpare/dormancyFactor"/>
+            <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+                propertySortChoices="true" ecoreFeature="ecore:EReference DAM.ecore#//DAM_UML_Extensions/System/Redundancy/DaSpare/substituteFor"/>
+            <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="DAM.ecore#//DAM_UML_Extensions/System/Redundancy/DaSpare/excludeSelfElement">
+              <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="DAM.ecore#//DAM_UML_Extensions/System/Redundancy/DaSpare/excludeSelfElement/diagnostics"/>
+              <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="DAM.ecore#//DAM_UML_Extensions/System/Redundancy/DaSpare/excludeSelfElement/context"/>
+            </genOperations>
+          </genClasses>
+        </nestedGenPackages>
+      </nestedGenPackages>
+      <nestedGenPackages xsi:type="genmodel:GenPackage" prefix="Threats" basePackage="com.masdes.dam"
+          disposableProviderFactory="true" ecorePackage="DAM.ecore#//DAM_UML_Extensions/Threats">
+        <genClasses xsi:type="genmodel:GenClass" ecoreClass="DAM.ecore#//DAM_UML_Extensions/Threats/DaErrorPropRelation">
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DAM.ecore#//DAM_UML_Extensions/Threats/DaErrorPropRelation/propagationExpr"/>
+          <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+              createChild="true" ecoreFeature="ecore:EReference DAM.ecore#//DAM_UML_Extensions/Threats/DaErrorPropRelation/errorProp"/>
+          <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+              propertySortChoices="true" ecoreFeature="ecore:EReference DAM.ecore#//DAM_UML_Extensions/Threats/DaErrorPropRelation/base_Constraint"/>
+        </genClasses>
+        <genClasses xsi:type="genmodel:GenClass" ecoreClass="DAM.ecore#//DAM_UML_Extensions/Threats/DaFaultGenerator">
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DAM.ecore#//DAM_UML_Extensions/Threats/DaFaultGenerator/numberOfFaults"/>
+          <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+              createChild="true" ecoreFeature="ecore:EReference DAM.ecore#//DAM_UML_Extensions/Threats/DaFaultGenerator/fault"/>
+        </genClasses>
+      </nestedGenPackages>
+      <nestedGenPackages xsi:type="genmodel:GenPackage" prefix="Maintenance" basePackage="com.masdes.dam"
+          disposableProviderFactory="true" ecorePackage="DAM.ecore#//DAM_UML_Extensions/Maintenance">
+        <genClasses xsi:type="genmodel:GenClass" ecoreClass="DAM.ecore#//DAM_UML_Extensions/Maintenance/DaReplacementStep">
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DAM.ecore#//DAM_UML_Extensions/Maintenance/DaReplacementStep/kindRepS"/>
+          <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+              propertySortChoices="true" ecoreFeature="ecore:EReference DAM.ecore#//DAM_UML_Extensions/Maintenance/DaReplacementStep/replace"/>
+          <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+              propertySortChoices="true" ecoreFeature="ecore:EReference DAM.ecore#//DAM_UML_Extensions/Maintenance/DaReplacementStep/with"/>
+          <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="DAM.ecore#//DAM_UML_Extensions/Maintenance/DaReplacementStep/replaceSize">
+            <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="DAM.ecore#//DAM_UML_Extensions/Maintenance/DaReplacementStep/replaceSize/diagnostics"/>
+            <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="DAM.ecore#//DAM_UML_Extensions/Maintenance/DaReplacementStep/replaceSize/context"/>
+          </genOperations>
+        </genClasses>
+        <genClasses xsi:type="genmodel:GenClass" ecoreClass="DAM.ecore#//DAM_UML_Extensions/Maintenance/DaReallocationStep">
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DAM.ecore#//DAM_UML_Extensions/Maintenance/DaReallocationStep/kindRealS"/>
+          <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+              propertySortChoices="true" ecoreFeature="ecore:EReference DAM.ecore#//DAM_UML_Extensions/Maintenance/DaReallocationStep/map"/>
+          <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+              propertySortChoices="true" ecoreFeature="ecore:EReference DAM.ecore#//DAM_UML_Extensions/Maintenance/DaReallocationStep/to"/>
+          <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="DAM.ecore#//DAM_UML_Extensions/Maintenance/DaReallocationStep/mapSize">
+            <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="DAM.ecore#//DAM_UML_Extensions/Maintenance/DaReallocationStep/mapSize/diagnostics"/>
+            <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="DAM.ecore#//DAM_UML_Extensions/Maintenance/DaReallocationStep/mapSize/context"/>
+          </genOperations>
+        </genClasses>
+        <genClasses xsi:type="genmodel:GenClass" ecoreClass="DAM.ecore#//DAM_UML_Extensions/Maintenance/DaActivationStep">
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DAM.ecore#//DAM_UML_Extensions/Maintenance/DaActivationStep/kindActS"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DAM.ecore#//DAM_UML_Extensions/Maintenance/DaActivationStep/prio"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DAM.ecore#//DAM_UML_Extensions/Maintenance/DaActivationStep/preemption"/>
+          <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+              propertySortChoices="true" ecoreFeature="ecore:EReference DAM.ecore#//DAM_UML_Extensions/Maintenance/DaActivationStep/failCause"/>
+          <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+              propertySortChoices="true" ecoreFeature="ecore:EReference DAM.ecore#//DAM_UML_Extensions/Maintenance/DaActivationStep/agents"/>
+        </genClasses>
+        <genClasses xsi:type="genmodel:GenClass" ecoreClass="DAM.ecore#//DAM_UML_Extensions/Maintenance/DaAgentGroup">
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DAM.ecore#//DAM_UML_Extensions/Maintenance/DaAgentGroup/skill"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DAM.ecore#//DAM_UML_Extensions/Maintenance/DaAgentGroup/correctness"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DAM.ecore#//DAM_UML_Extensions/Maintenance/DaAgentGroup/agentNumber"/>
+          <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+              propertySortChoices="true" ecoreFeature="ecore:EReference DAM.ecore#//DAM_UML_Extensions/Maintenance/DaAgentGroup/base_Classifier"/>
+        </genClasses>
+      </nestedGenPackages>
+    </nestedGenPackages>
+  </genPackages>
+  <genPackages xsi:type="genmodel:GenPackage" prefix="DAM_Library" basePackage="com.masdes.dam"
+      disposableProviderFactory="true" ecorePackage="DAM_Library.ecore#/">
+    <nestedGenPackages xsi:type="genmodel:GenPackage" prefix="Complex_DA_Types" basePackage="com.masdes.dam"
+        disposableProviderFactory="true" ecorePackage="DAM_Library.ecore#//Complex_DA_Types">
+      <nestedGenPackages xsi:type="genmodel:GenPackage" prefix="Complex_Data_Types"
+          basePackage="com.masdes.dam" disposableProviderFactory="true" ecorePackage="DAM_Library.ecore#//Complex_DA_Types/Complex_Data_Types">
+        <genClasses xsi:type="genmodel:GenClass" ecoreClass="DAM_Library.ecore#//Complex_DA_Types/Complex_Data_Types/DaError">
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DAM_Library.ecore#//Complex_DA_Types/Complex_Data_Types/DaError/latency"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DAM_Library.ecore#//Complex_DA_Types/Complex_Data_Types/DaError/probability"/>
+          <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+              createChild="true" ecoreFeature="ecore:EReference DAM_Library.ecore#//Complex_DA_Types/Complex_Data_Types/DaError/cause"/>
+          <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+              createChild="true" ecoreFeature="ecore:EReference DAM_Library.ecore#//Complex_DA_Types/Complex_Data_Types/DaError/effectF"/>
+          <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+              createChild="true" ecoreFeature="ecore:EReference DAM_Library.ecore#//Complex_DA_Types/Complex_Data_Types/DaError/effectH"/>
+        </genClasses>
+        <genClasses xsi:type="genmodel:GenClass" ecoreClass="DAM_Library.ecore#//Complex_DA_Types/Complex_Data_Types/DaFault">
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DAM_Library.ecore#//Complex_DA_Types/Complex_Data_Types/DaFault/occurrenceRate"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DAM_Library.ecore#//Complex_DA_Types/Complex_Data_Types/DaFault/latency"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DAM_Library.ecore#//Complex_DA_Types/Complex_Data_Types/DaFault/occurrenceProb"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DAM_Library.ecore#//Complex_DA_Types/Complex_Data_Types/DaFault/occurrenceDist"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DAM_Library.ecore#//Complex_DA_Types/Complex_Data_Types/DaFault/persistency"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DAM_Library.ecore#//Complex_DA_Types/Complex_Data_Types/DaFault/duration"/>
+          <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+              createChild="true" ecoreFeature="ecore:EReference DAM_Library.ecore#//Complex_DA_Types/Complex_Data_Types/DaFault/effectE"/>
+          <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+              createChild="true" ecoreFeature="ecore:EReference DAM_Library.ecore#//Complex_DA_Types/Complex_Data_Types/DaFault/effectF"/>
+          <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+              createChild="true" ecoreFeature="ecore:EReference DAM_Library.ecore#//Complex_DA_Types/Complex_Data_Types/DaFault/effectH"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DAM_Library.ecore#//Complex_DA_Types/Complex_Data_Types/DaFault/phaseCreation"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DAM_Library.ecore#//Complex_DA_Types/Complex_Data_Types/DaFault/sysBoundaries"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DAM_Library.ecore#//Complex_DA_Types/Complex_Data_Types/DaFault/phenomCause"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DAM_Library.ecore#//Complex_DA_Types/Complex_Data_Types/DaFault/dimension"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DAM_Library.ecore#//Complex_DA_Types/Complex_Data_Types/DaFault/objective"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DAM_Library.ecore#//Complex_DA_Types/Complex_Data_Types/DaFault/intent"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DAM_Library.ecore#//Complex_DA_Types/Complex_Data_Types/DaFault/capability"/>
+        </genClasses>
+        <genClasses xsi:type="genmodel:GenClass" ecoreClass="DAM_Library.ecore#//Complex_DA_Types/Complex_Data_Types/DaFailure">
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DAM_Library.ecore#//Complex_DA_Types/Complex_Data_Types/DaFailure/occurrenceRate"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DAM_Library.ecore#//Complex_DA_Types/Complex_Data_Types/DaFailure/MTTF"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DAM_Library.ecore#//Complex_DA_Types/Complex_Data_Types/DaFailure/MTBF"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DAM_Library.ecore#//Complex_DA_Types/Complex_Data_Types/DaFailure/occurrenceProb"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DAM_Library.ecore#//Complex_DA_Types/Complex_Data_Types/DaFailure/occurrenceDist"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DAM_Library.ecore#//Complex_DA_Types/Complex_Data_Types/DaFailure/domain"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DAM_Library.ecore#//Complex_DA_Types/Complex_Data_Types/DaFailure/consistency"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DAM_Library.ecore#//Complex_DA_Types/Complex_Data_Types/DaFailure/consequence"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DAM_Library.ecore#//Complex_DA_Types/Complex_Data_Types/DaFailure/risk"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DAM_Library.ecore#//Complex_DA_Types/Complex_Data_Types/DaFailure/cost"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DAM_Library.ecore#//Complex_DA_Types/Complex_Data_Types/DaFailure/condition"/>
+          <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+              createChild="true" ecoreFeature="ecore:EReference DAM_Library.ecore#//Complex_DA_Types/Complex_Data_Types/DaFailure/causeF"/>
+          <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+              createChild="true" ecoreFeature="ecore:EReference DAM_Library.ecore#//Complex_DA_Types/Complex_Data_Types/DaFailure/causeE"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DAM_Library.ecore#//Complex_DA_Types/Complex_Data_Types/DaFailure/description"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DAM_Library.ecore#//Complex_DA_Types/Complex_Data_Types/DaFailure/detectability"/>
+        </genClasses>
+        <genClasses xsi:type="genmodel:GenClass" ecoreClass="DAM_Library.ecore#//Complex_DA_Types/Complex_Data_Types/DaHazard">
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DAM_Library.ecore#//Complex_DA_Types/Complex_Data_Types/DaHazard/origin"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DAM_Library.ecore#//Complex_DA_Types/Complex_Data_Types/DaHazard/severity"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DAM_Library.ecore#//Complex_DA_Types/Complex_Data_Types/DaHazard/occurrenceProb"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DAM_Library.ecore#//Complex_DA_Types/Complex_Data_Types/DaHazard/likelihood"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DAM_Library.ecore#//Complex_DA_Types/Complex_Data_Types/DaHazard/level"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DAM_Library.ecore#//Complex_DA_Types/Complex_Data_Types/DaHazard/latency"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DAM_Library.ecore#//Complex_DA_Types/Complex_Data_Types/DaHazard/accidentLikelihood"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DAM_Library.ecore#//Complex_DA_Types/Complex_Data_Types/DaHazard/risk"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DAM_Library.ecore#//Complex_DA_Types/Complex_Data_Types/DaHazard/cost"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DAM_Library.ecore#//Complex_DA_Types/Complex_Data_Types/DaHazard/guideword"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DAM_Library.ecore#//Complex_DA_Types/Complex_Data_Types/DaHazard/accident"/>
+          <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+              createChild="true" ecoreFeature="ecore:EReference DAM_Library.ecore#//Complex_DA_Types/Complex_Data_Types/DaHazard/causeF"/>
+          <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+              createChild="true" ecoreFeature="ecore:EReference DAM_Library.ecore#//Complex_DA_Types/Complex_Data_Types/DaHazard/causeE"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DAM_Library.ecore#//Complex_DA_Types/Complex_Data_Types/DaHazard/description"/>
+        </genClasses>
+        <genClasses xsi:type="genmodel:GenClass" ecoreClass="DAM_Library.ecore#//Complex_DA_Types/Complex_Data_Types/DaErrorPropagation">
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DAM_Library.ecore#//Complex_DA_Types/Complex_Data_Types/DaErrorPropagation/probability"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DAM_Library.ecore#//Complex_DA_Types/Complex_Data_Types/DaErrorPropagation/from"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DAM_Library.ecore#//Complex_DA_Types/Complex_Data_Types/DaErrorPropagation/to"/>
+          <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+              createChild="true" ecoreFeature="ecore:EReference DAM_Library.ecore#//Complex_DA_Types/Complex_Data_Types/DaErrorPropagation/cause"/>
+          <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+              createChild="true" ecoreFeature="ecore:EReference DAM_Library.ecore#//Complex_DA_Types/Complex_Data_Types/DaErrorPropagation/effect"/>
+        </genClasses>
+        <genClasses xsi:type="genmodel:GenClass" ecoreClass="DAM_Library.ecore#//Complex_DA_Types/Complex_Data_Types/DaRec">
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DAM_Library.ecore#//Complex_DA_Types/Complex_Data_Types/DaRec/rate"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DAM_Library.ecore#//Complex_DA_Types/Complex_Data_Types/DaRec/duration"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DAM_Library.ecore#//Complex_DA_Types/Complex_Data_Types/DaRec/distribution"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DAM_Library.ecore#//Complex_DA_Types/Complex_Data_Types/DaRec/coverageFactor"/>
+        </genClasses>
+        <genClasses xsi:type="genmodel:GenClass" ecoreClass="DAM_Library.ecore#//Complex_DA_Types/Complex_Data_Types/DaRepair">
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DAM_Library.ecore#//Complex_DA_Types/Complex_Data_Types/DaRepair/rate"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DAM_Library.ecore#//Complex_DA_Types/Complex_Data_Types/DaRepair/MTTR"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DAM_Library.ecore#//Complex_DA_Types/Complex_Data_Types/DaRepair/distribution"/>
+        </genClasses>
+        <genClasses xsi:type="genmodel:GenClass" ecoreClass="DAM_Library.ecore#//Complex_DA_Types/Complex_Data_Types/DaSurvivability">
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DAM_Library.ecore#//Complex_DA_Types/Complex_Data_Types/DaSurvivability/metric"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DAM_Library.ecore#//Complex_DA_Types/Complex_Data_Types/DaSurvivability/value"/>
+        </genClasses>
+      </nestedGenPackages>
+    </nestedGenPackages>
+    <nestedGenPackages xsi:type="genmodel:GenPackage" prefix="Basic_DA_Types" basePackage="com.masdes.dam"
+        disposableProviderFactory="true" ecorePackage="DAM_Library.ecore#//Basic_DA_Types">
+      <nestedGenPackages xsi:type="genmodel:GenPackage" prefix="Basic_Data_Types"
+          basePackage="com.masdes.dam" disposableProviderFactory="true" ecorePackage="DAM_Library.ecore#//Basic_DA_Types/Basic_Data_Types">
+        <genDataTypes xsi:type="genmodel:GenDataType" ecoreDataType="DAM_Library.ecore#//Basic_DA_Types/Basic_Data_Types/DaLikelihood"/>
+        <genDataTypes xsi:type="genmodel:GenDataType" ecoreDataType="DAM_Library.ecore#//Basic_DA_Types/Basic_Data_Types/DaLevel"/>
+        <genDataTypes xsi:type="genmodel:GenDataType" ecoreDataType="DAM_Library.ecore#//Basic_DA_Types/Basic_Data_Types/DaCriticalLevel"/>
+        <genDataTypes xsi:type="genmodel:GenDataType" ecoreDataType="DAM_Library.ecore#//Basic_DA_Types/Basic_Data_Types/DaCurrency"/>
+        <genDataTypes xsi:type="genmodel:GenDataType" ecoreDataType="DAM_Library.ecore#//Basic_DA_Types/Basic_Data_Types/DaFrequency"/>
+      </nestedGenPackages>
+      <nestedGenPackages xsi:type="genmodel:GenPackage" prefix="Basic_Enumeration_Types"
+          basePackage="com.masdes.dam" disposableProviderFactory="true" ecorePackage="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types">
+        <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/Persistency">
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/Persistency/transient"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/Persistency/permanent"/>
+        </genEnums>
+        <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/Domain">
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/Domain/content"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/Domain/earlyTiming"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/Domain/lateTiming"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/Domain/halt"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/Domain/erratic"/>
+        </genEnums>
+        <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/Consistency">
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/Consistency/consistent"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/Consistency/inconsistent"/>
+        </genEnums>
+        <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/Detectabillity">
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/Detectabillity/signaled"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/Detectabillity/unsignaled"/>
+        </genEnums>
+        <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/FactorOrigin">
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/FactorOrigin/endogenous"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/FactorOrigin/exogenous"/>
+        </genEnums>
+        <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/Guideword">
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/Guideword/value"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/Guideword/omission"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/Guideword/commission"/>
+        </genEnums>
+        <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/PhaseCreation">
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/PhaseCreation/development"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/PhaseCreation/operational"/>
+        </genEnums>
+        <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/SysBoundaries">
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/SysBoundaries/internal"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/SysBoundaries/external"/>
+        </genEnums>
+        <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/PhenomCause">
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/PhenomCause/natural"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/PhenomCause/humanMade"/>
+        </genEnums>
+        <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/Objective">
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/Objective/malicious"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/Objective/nonMalicious"/>
+        </genEnums>
+        <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/Intent">
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/Intent/deliberate"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/Intent/nonDeliberate"/>
+        </genEnums>
+        <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/Capability">
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/Capability/accidental"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/Capability/incompetence"/>
+        </genEnums>
+        <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/MetricName">
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/MetricName/ssAvail"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/MetricName/instAvail"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/MetricName/unreliability"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/MetricName/reliability"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/MetricName/missionTime"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/MetricName/availLevel"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/MetricName/reliabLevel"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/MetricName/safetyLevel"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/MetricName/respT"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/MetricName/confLevel"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/MetricName/integLevel"/>
+        </genEnums>
+        <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/DaFrequencyUnitKind">
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/DaFrequencyUnitKind/ft_s"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/DaFrequencyUnitKind/ft_ms"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/DaFrequencyUnitKind/ft_min"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/DaFrequencyUnitKind/ft_hr"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/DaFrequencyUnitKind/ft_day"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/DaFrequencyUnitKind/ft_month"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/DaFrequencyUnitKind/ft_yr"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/DaFrequencyUnitKind/fail_s"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/DaFrequencyUnitKind/fail_ms"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/DaFrequencyUnitKind/fail_min"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/DaFrequencyUnitKind/fail_hr"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/DaFrequencyUnitKind/fail_day"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/DaFrequencyUnitKind/fail_month"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/DaFrequencyUnitKind/fail_yr"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/DaFrequencyUnitKind/repair_s"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/DaFrequencyUnitKind/repair_ms"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/DaFrequencyUnitKind/repair_min"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/DaFrequencyUnitKind/repair_hr"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/DaFrequencyUnitKind/repair_day"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/DaFrequencyUnitKind/repair_month"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/DaFrequencyUnitKind/repair_yr"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/DaFrequencyUnitKind/rec_s"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/DaFrequencyUnitKind/rec_ms"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/DaFrequencyUnitKind/rec_min"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/DaFrequencyUnitKind/rec_hr"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/DaFrequencyUnitKind/rec_day"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/DaFrequencyUnitKind/rec_month"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/DaFrequencyUnitKind/rec_yr"/>
+        </genEnums>
+        <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/CriticalLevel">
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/CriticalLevel/minor"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/CriticalLevel/marginal"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/CriticalLevel/major"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/CriticalLevel/catastrophic"/>
+        </genEnums>
+        <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/Level">
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/Level/veryHigh"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/Level/high"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/Level/medium"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/Level/low"/>
+        </genEnums>
+        <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/Likelihood">
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/Likelihood/frequent"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/Likelihood/moderate"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/Likelihood/occasional"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/Likelihood/remote"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/Likelihood/unlikely"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/Likelihood/impossible"/>
+        </genEnums>
+        <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/StepKind">
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/StepKind/error"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/StepKind/failure"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/StepKind/hazard"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/StepKind/reallocation"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/StepKind/replacement"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/StepKind/activation"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/StepKind/fault"/>
+        </genEnums>
+        <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/SkillType">
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/SkillType/hwTechnician"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/SkillType/swTechnician"/>
+        </genEnums>
+        <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/DaCurrKind">
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/DaCurrKind/euro"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/DaCurrKind/dollar"/>
+        </genEnums>
+        <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/Origin">
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/Origin/hw"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/Origin/sw"/>
+        </genEnums>
+      </nestedGenPackages>
+    </nestedGenPackages>
+  </genPackages>
+</genmodel:GenModel>

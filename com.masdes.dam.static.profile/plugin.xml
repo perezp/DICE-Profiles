@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated DAM -->
+      <package
+            uri="http://com.masdes.dam/profiles/DAM/1.0"
+            class="com.masdes.dam.DAM.DAMPackage"
+            genModel="resources/DAM.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated DAM -->
+      <package
+            uri="http://com.masdes.dam/profiles/Core/1.0"
+            class="com.masdes.dam.Core.CorePackage"
+            genModel="resources/DAM.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated DAM -->
+      <package
+            uri="http://com.masdes.dam/profiles/Redundancy/1.0"
+            class="com.masdes.dam.Redundancy.RedundancyPackage"
+            genModel="resources/DAM.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated DAM -->
+      <package
+            uri="http://com.masdes.dam/profiles/Threats/1.0"
+            class="com.masdes.dam.Threats.ThreatsPackage"
+            genModel="resources/DAM.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated DAM -->
+      <package
+            uri="http://com.masdes.dam/profiles/Maintenance/1.0"
+            class="com.masdes.dam.Maintenance.MaintenancePackage"
+            genModel="resources/DAM.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated DAM -->
+      <package
+            uri="http://com.masdes.dam/libraries/DAM/Complex_Data_Types/1.0"
+            class="com.masdes.dam.Complex_Data_Types.Complex_Data_TypesPackage"
+            genModel="resources/DAM.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated DAM -->
+      <package
+            uri="http://com.masdes.dam/libraries/DAM/Basic_Data_Types/1.0"
+            class="com.masdes.dam.Basic_Data_Types.Basic_Data_TypesPackage"
+            genModel="resources/DAM.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated DAM -->
+      <package
+            uri="http://com.masdes.dam/libraries/DAM/Basic_Enumeration_Types/1.0"
+            class="com.masdes.dam.Basic_Enumeration_Types.Basic_Enumeration_TypesPackage"
+            genModel="resources/DAM.genmodel"/>
+   </extension>
+   
+   <extension
+         point="org.eclipse.emf.ecore.uri_mapping">
+      <mapping
+            source="pathmap://DAM_PROFILES/"
+            target="platform:/plugin/com.masdes.dam.static.profile/resources/">
+      </mapping>
+      <mapping
+            source="pathmap://DAM_LIBRARIES/"
+            target="platform:/plugin/com.masdes.dam.static.profile/resources/">
+      </mapping>
+   </extension>
+   <extension
+         point="org.eclipse.uml2.uml.generated_package">
+      <profile
+            location="pathmap://DAM_PROFILES/DAM.profile.uml#_DchGAOSiEeKuSu-I2xDxSA"
+            uri="http://com.masdes.dam/profiles/Core/1.0">
+      </profile>
+      <profile
+            location="pathmap://DAM_PROFILES/DAM.profile.uml#_9t6vAOSiEeKuSu-I2xDxSA"
+            uri="http://com.masdes.dam/profiles/Redundancy/1.0">
+      </profile>
+      <profile
+            location="pathmap://DAM_PROFILES/DAM.profile.uml#_G1-xoOShEeKuSu-I2xDxSA"
+            uri="http://com.masdes.dam/profiles/Threats/1.0">
+      </profile>
+      <profile
+            location="pathmap://DAM_PROFILES/DAM.profile.uml#_rsXqkOShEeKuSu-I2xDxSA"
+            uri="http://com.masdes.dam/profiles/Maintenance/1.0">
+      </profile>
+      <profile
+            uri="http://com.masdes.dam/profiles/DAM/1.0">
+      </profile>
+   </extension>
+   <extension
+         point="org.eclipse.papyrus.uml.extensionpoints.UMLProfile">
+      <profile
+            description="DAM Profile v1.1"
+            iconpath="icons/beaver-dam-logo-16px.png"
+            name="DAM"
+            path="pathmap://DAM_PROFILES/DAM.profile.uml">
+      </profile>
+   </extension>
+   <extension
+         point="org.eclipse.papyrus.uml.extensionpoints.UMLLibrary">
+      <library
+            description="DAM Profile Library v1.1"
+            iconpath="icons/beaver-dam-logo-16px.png"
+            name="DAM Library"
+            path="pathmap://DAM_LIBRARIES/DAM_Library.uml">
+      </library>
+   </extension>
+</plugin>
