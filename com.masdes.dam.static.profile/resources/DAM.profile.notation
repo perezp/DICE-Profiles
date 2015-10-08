@@ -334,7 +334,7 @@
         <layoutConstraint xmi:type="notation:Bounds" xmi:id="_BwaO9OPxEeKfvsJiOXhpew"/>
       </children>
       <element xmi:type="uml:Stereotype" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_XYaMIBKYEdyGYuetzx6T5A"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_BwYZwePxEeKfvsJiOXhpew" y="60" width="277"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_BwYZwePxEeKfvsJiOXhpew" y="68" width="277"/>
     </children>
     <children xmi:type="notation:Shape" xmi:id="_PithMOPxEeKfvsJiOXhpew" type="1026" fontName="Ubuntu" fontHeight="11" fillColor="8047085" gradient="16777215, 16777215, 0" lineColor="0">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_PiuIQOPxEeKfvsJiOXhpew" source="ShadowFigure">
@@ -730,8 +730,8 @@
       <styles xmi:type="notation:FontStyle" xmi:id="_G_qiEePxEeKfvsJiOXhpew" fontName="Ubuntu" fontHeight="11"/>
       <element xmi:type="uml:Generalization" href="DAM.profile.uml#_G_j0YOPxEeKfvsJiOXhpew"/>
       <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_G_qiEuPxEeKfvsJiOXhpew" points="[2, -4, 0, 74]$[1, -60, -1, 18]"/>
-      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_G_uMcOPxEeKfvsJiOXhpew" id="(0.49097472924187724,0.013114754098360656)"/>
-      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_G_uMcePxEeKfvsJiOXhpew" id="(0.4981949458483754,0.82)"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_G_uMcOPxEeKfvsJiOXhpew" id="(0.46851385390428213,0.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_G_uMcePxEeKfvsJiOXhpew" id="(0.4981949458483754,1.0)"/>
     </edges>
     <edges xmi:type="notation:Connector" xmi:id="_vsp5IOPxEeKfvsJiOXhpew" type="4002" source="_PithMOPxEeKfvsJiOXhpew" target="_SdZwsOPxEeKfvsJiOXhpew" routing="Rectilinear" closestDistance="true" lineColor="0">
       <children xmi:type="notation:DecorationNode" xmi:id="_vsp5I-PxEeKfvsJiOXhpew" type="6007">
