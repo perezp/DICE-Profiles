@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/com.masdes.dam.profile_0.1.0.201510081305.jar" id="com.masdes.dam.profile" version="0.1.0.201510081305">
+      <category name="DICE Profiles"/>
+   </feature>
+   <category-def name="DICE Profiles" label="DICE Profiles"/>
+</site>
