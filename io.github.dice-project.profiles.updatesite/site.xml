@@ -3,8 +3,12 @@
    <description name="DICE Profiles" url="http://dice-project.github.io/DICE-Profiles/updates">
       Profiles used in the DICE Project
    </description>
-   <feature url="features/com.masdes.dam.profile_0.1.0.201510081311.jar" id="com.masdes.dam.profile" version="0.1.0.201510081311">
+   <feature url="features/com.masdes.dam.profile_0.1.0.201510081501.jar" id="com.masdes.dam.profile" version="0.1.0.201510081501">
       <category name="DICE Profiles"/>
    </feature>
-   <category-def name="DICE Profiles" label="DICE Profiles"/>
+   <category-def name="DICE Profiles" label="DICE Profiles">
+      <description>
+         Profiles for the DICE Project
+      </description>
+   </category-def>
 </site>

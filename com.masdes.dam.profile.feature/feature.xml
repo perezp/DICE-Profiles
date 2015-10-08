@@ -223,11 +223,20 @@ any resulting litigation.
       <update url="http://dice-project.github.io/DICE-Profiles/updates"/>
    </url>
 
+   <requires>
+      <import plugin="org.eclipse.core.runtime"/>
+      <import plugin="org.eclipse.emf.ecore"/>
+      <import plugin="org.eclipse.papyrus.marte.static.profile"/>
+      <import plugin="org.eclipse.uml2.types"/>
+      <import plugin="org.eclipse.uml2.uml"/>
+      <import plugin="org.eclipse.papyrus.uml.extensionpoints"/>
+   </requires>
+
    <plugin
          id="com.masdes.dam.static.profile"
          download-size="0"
          install-size="0"
-         version="0.0.0"
+         version="0.1.0.qualifier"
          unpack="false"/>
 
 </feature>
