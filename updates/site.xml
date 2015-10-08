@@ -6,7 +6,7 @@
    <feature url="features/com.masdes.dam.profile_0.1.0.201510081501.jar" id="com.masdes.dam.profile" version="0.1.0.201510081501">
       <category name="DICE Profiles"/>
    </feature>
-   <feature url="features/com.masdes.dam.profile_0.2.0.201510081825.jar" id="com.masdes.dam.profile" version="0.2.0.201510081825">
+   <feature url="features/com.masdes.dam.profile_0.2.0.201510081830.jar" id="com.masdes.dam.profile" version="0.2.0.201510081830">
       <category name="DICE Profiles"/>
    </feature>
    <category-def name="DICE Profiles" label="DICE Profiles">
