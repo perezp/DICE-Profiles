@@ -15,9 +15,13 @@ This plugin reimplements the DAM profile available at https://bitbucket.org/mber
 
 Feature for the DAM Profile.
 
-## io.github.dice-project.profiles.updatesite
+## com.masdes.dam.static.profile.ui
 
-Ready-to-use *Update Site* to install the DICE Profiles.
+UI enhancements for the DAM profile, such as icons and custom label providers for the 'Properties' view.
+
+## com.masdes.dam.profile.ui.feature
+
+Feature for the UI enhancements of the DAM Profile.
 
 ## org.eclipse.uml2.uml
 
