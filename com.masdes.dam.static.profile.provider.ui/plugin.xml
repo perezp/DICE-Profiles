@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+
+
+
+
+   <extension
+         point="org.eclipse.papyrus.infra.services.labelprovider.labelProvider">
+      <labelProvider
+            priority="10"
+            provider="com.masdes.dam.profile.ui.provider.DAMDatatypeLabelProvider">
+      </labelProvider>
+   </extension>
+
+</plugin>
