@@ -6,7 +6,7 @@ Bundle-Version: 0.2.1.qualifier
 Bundle-ClassPath: .
 Bundle-Vendor: %providerName
 Bundle-Localization: plugin
-Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 Export-Package: com.masdes.dam.Basic_Data_Types,
  com.masdes.dam.Basic_Data_Types.impl,
  com.masdes.dam.Basic_Enumeration_Types,
