@@ -15,6 +15,12 @@
    <feature url="features/com.masdes.dam.profile.ui.feature_0.2.1.201510131753.jar" id="com.masdes.dam.profile.ui.feature" version="0.2.1.201510131753">
       <category name="DICE Profiles"/>
    </feature>
+   <feature url="features/com.masdes.dam.profile_0.3.0.201602121816.jar" id="com.masdes.dam.profile" version="0.3.0.201602121816">
+      <category name="DICE Profiles"/>
+   </feature>
+   <feature url="features/com.masdes.dam.profile.ui.feature_0.3.0.201602121816.jar" id="com.masdes.dam.profile.ui.feature" version="0.3.0.201602121816">
+      <category name="DICE Profiles"/>
+   </feature>
    <category-def name="DICE Profiles" label="DICE Profiles">
       <description>
          Profiles for the DICE Project
