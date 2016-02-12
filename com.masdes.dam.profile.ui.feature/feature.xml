@@ -230,12 +230,12 @@ any resulting litigation.
       <import plugin="org.eclipse.uml2.uml"/>
       <import plugin="org.eclipse.uml2.uml.edit"/>
       <import plugin="org.eclipse.uml2.common.edit"/>
-      <import plugin="org.eclipse.papyrus.infra.services.labelprovider" version="1.1.2" match="greaterOrEqual"/>
-      <import plugin="org.eclipse.papyrus.uml.tools" version="1.1.2" match="greaterOrEqual"/>
-      <import plugin="org.eclipse.papyrus.infra.emf" version="1.1.2" match="greaterOrEqual"/>
-      <import plugin="org.eclipse.papyrus.emf.facet.custom.ui" version="1.1.2" match="greaterOrEqual"/>
-      <import plugin="org.eclipse.papyrus.emf.facet.custom.core" version="1.1.2" match="greaterOrEqual"/>
       <import plugin="org.eclipse.emf.edit.ui" version="2.11.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.papyrus.infra.services.labelprovider" version="1.1.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.papyrus.uml.tools" version="1.1.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.papyrus.infra.emf" version="1.1.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.papyrus.emf.facet.custom.ui" version="1.1.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.papyrus.emf.facet.custom.core" version="1.1.0" match="greaterOrEqual"/>
    </requires>
 
    <plugin
