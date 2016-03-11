@@ -25,7 +25,7 @@
    <extension point="org.eclipse.emf.ecore.generated_package">
       <!-- @generated DICE -->
       <package
-            uri="http://es.unizar.disco.dice/libraries/DICE/Complex_Data_Types/1.0"
+            uri="http://es.unizar.disco.dice/libraries/Complex_Data_Types/1.0"
             class="es.unizar.disco.dice.Complex_Data_Types.Complex_Data_TypesPackage"
             genModel="resources/DICE.genmodel"/>
    </extension>
@@ -33,9 +33,61 @@
    <extension point="org.eclipse.emf.ecore.generated_package">
       <!-- @generated DICE -->
       <package
-            uri="http://es.unizar.disco.dice/libraries/DICE/Basic_Enumeration_Types/1.0"
+            uri="http://es.unizar.disco.dice/libraries/Basic_Enumeration_Types/1.0"
             class="es.unizar.disco.dice.Basic_Enumeration_Types.Basic_Enumeration_TypesPackage"
             genModel="resources/DICE.genmodel"/>
+   </extension>
+   <extension
+         point="org.eclipse.emf.ecore.uri_mapping">
+      <mapping
+            source="pathmap://DICE_PROFILES/"
+            target="platform:/plugin/es.unizar.disco.dice.static.profile/resources/">
+      </mapping>
+      <mapping
+            source="pathmap://DICE_LIBRARIES/"
+            target="platform:/plugin/es.unizar.disco.dice.static.profile/resources/">
+      </mapping>
+   </extension>
+   <extension
+         point="org.eclipse.papyrus.uml.extensionpoints.UMLLibrary">
+      <library
+            description="DICE Profile Library v1.0"
+            iconpath="icons/dice16.gif"
+            name="DICE Library"
+            path="pathmap://DICE_LIBRARIES/DICE_Library.uml">
+      </library>
+   </extension>
+   <extension
+         point="org.eclipse.papyrus.uml.extensionpoints.UMLProfile">
+      <profile
+            description="DICE Profile v1.0"
+            iconpath="icons/dice16.gif"
+            name="DICE"
+            path="pathmap://DICE_PROFILES/DICE.profile.uml">
+      </profile>
+   </extension>
+   <extension
+         point="org.eclipse.uml2.uml.generated_package">
+      <profile
+            location="pathmap://DICE_PROFILES/DICE.profile.uml#_gFr1YOebEeWj7ZPL8JeBTQ"
+            uri="http://es.unizar.disco.dice/profiles/DPIM/1.0">
+      </profile>
+      <profile
+            location="pathmap://DICE_PROFILES/DICE.profile.uml#_MPXosOePEeWj7ZPL8JeBTQ"
+            uri="http://es.unizar.disco.dice/profiles/DICE/1.0">
+      </profile>
+      <profile
+            location="pathmap://DICE_LIBRARIES/DICE_Library.uml#_GunKUOeZEeWj7ZPL8JeBTQ"
+            uri="http://es.unizar.disco.dice/libraries/Complex_Data_Types/1.0">
+      </profile>
+      <profile
+            location="pathmap://DICE_LIBRARIES/DICE_Library.uml#_diCmMOeWEeWj7ZPL8JeBTQ"
+            uri="http://es.unizar.disco.dice/libraries/Basic_Enumeration_Types/1.0">
+      </profile>
+      <profile
+            location="pathmap://DICE_LIBRARIES/DICE_Library.uml#_yQjxwOeYEeWj7ZPL8JeBTQ"
+            uri="http://es.unizar.disco.dice/libraries/Basic_Data_Types/1.0">
+      </profile>
    </extension>
 
 </plugin>
