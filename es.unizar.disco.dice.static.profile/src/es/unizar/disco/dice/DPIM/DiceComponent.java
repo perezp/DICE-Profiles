@@ -10,24 +10,24 @@ import es.unizar.disco.dice.Basic_Enumeration_Types.TechType;
 
 /**
  * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>Computation Node</b></em>'.
+ * A representation of the model object '<em><b>Dice Component</b></em>'.
  * <!-- end-user-doc -->
  *
  * <p>
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link es.unizar.disco.dice.DPIM.ComputationNode#getThroughput <em>Throughput</em>}</li>
- *   <li>{@link es.unizar.disco.dice.DPIM.ComputationNode#getType <em>Type</em>}</li>
- *   <li>{@link es.unizar.disco.dice.DPIM.ComputationNode#getTargetTech <em>Target Tech</em>}</li>
- *   <li>{@link es.unizar.disco.dice.DPIM.ComputationNode#getProcType <em>Proc Type</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DPIM.DiceComponent#getThroughput <em>Throughput</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DPIM.DiceComponent#getType <em>Type</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DPIM.DiceComponent#getTargetTech <em>Target Tech</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DPIM.DiceComponent#getProcType <em>Proc Type</em>}</li>
  * </ul>
  *
- * @see es.unizar.disco.dice.DPIM.DPIMPackage#getComputationNode()
+ * @see es.unizar.disco.dice.DPIM.DPIMPackage#getDiceComponent()
  * @model
  * @generated
  */
-public interface ComputationNode extends DaComponent {
+public interface DiceComponent extends DaComponent {
 	/**
 	 * Returns the value of the '<em><b>Throughput</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -38,14 +38,14 @@ public interface ComputationNode extends DaComponent {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Throughput</em>' attribute.
 	 * @see #setThroughput(String)
-	 * @see es.unizar.disco.dice.DPIM.DPIMPackage#getComputationNode_Throughput()
+	 * @see es.unizar.disco.dice.DPIM.DPIMPackage#getDiceComponent_Throughput()
 	 * @model dataType="org.eclipse.papyrus.MARTE_Library.BasicNFP_Types.NFP_Frequency" ordered="false"
 	 * @generated
 	 */
 	String getThroughput();
 
 	/**
-	 * Sets the value of the '{@link es.unizar.disco.dice.DPIM.ComputationNode#getThroughput <em>Throughput</em>}' attribute.
+	 * Sets the value of the '{@link es.unizar.disco.dice.DPIM.DiceComponent#getThroughput <em>Throughput</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Throughput</em>' attribute.
@@ -66,14 +66,14 @@ public interface ComputationNode extends DaComponent {
 	 * @return the value of the '<em>Type</em>' attribute.
 	 * @see es.unizar.disco.dice.Basic_Enumeration_Types.ComputationType
 	 * @see #setType(ComputationType)
-	 * @see es.unizar.disco.dice.DPIM.DPIMPackage#getComputationNode_Type()
+	 * @see es.unizar.disco.dice.DPIM.DPIMPackage#getDiceComponent_Type()
 	 * @model ordered="false"
 	 * @generated
 	 */
 	ComputationType getType();
 
 	/**
-	 * Sets the value of the '{@link es.unizar.disco.dice.DPIM.ComputationNode#getType <em>Type</em>}' attribute.
+	 * Sets the value of the '{@link es.unizar.disco.dice.DPIM.DiceComponent#getType <em>Type</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Type</em>' attribute.
@@ -95,14 +95,14 @@ public interface ComputationNode extends DaComponent {
 	 * @return the value of the '<em>Target Tech</em>' attribute.
 	 * @see es.unizar.disco.dice.Basic_Enumeration_Types.TechType
 	 * @see #setTargetTech(TechType)
-	 * @see es.unizar.disco.dice.DPIM.DPIMPackage#getComputationNode_TargetTech()
+	 * @see es.unizar.disco.dice.DPIM.DPIMPackage#getDiceComponent_TargetTech()
 	 * @model ordered="false"
 	 * @generated
 	 */
 	TechType getTargetTech();
 
 	/**
-	 * Sets the value of the '{@link es.unizar.disco.dice.DPIM.ComputationNode#getTargetTech <em>Target Tech</em>}' attribute.
+	 * Sets the value of the '{@link es.unizar.disco.dice.DPIM.DiceComponent#getTargetTech <em>Target Tech</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Target Tech</em>' attribute.
@@ -124,14 +124,14 @@ public interface ComputationNode extends DaComponent {
 	 * @return the value of the '<em>Proc Type</em>' attribute.
 	 * @see es.unizar.disco.dice.Basic_Enumeration_Types.ProcessingType
 	 * @see #setProcType(ProcessingType)
-	 * @see es.unizar.disco.dice.DPIM.DPIMPackage#getComputationNode_ProcType()
+	 * @see es.unizar.disco.dice.DPIM.DPIMPackage#getDiceComponent_ProcType()
 	 * @model ordered="false"
 	 * @generated
 	 */
 	ProcessingType getProcType();
 
 	/**
-	 * Sets the value of the '{@link es.unizar.disco.dice.DPIM.ComputationNode#getProcType <em>Proc Type</em>}' attribute.
+	 * Sets the value of the '{@link es.unizar.disco.dice.DPIM.DiceComponent#getProcType <em>Proc Type</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Proc Type</em>' attribute.
@@ -141,4 +141,4 @@ public interface ComputationNode extends DaComponent {
 	 */
 	void setProcType(ProcessingType value);
 
-} // ComputationNode
+} // DiceComponent

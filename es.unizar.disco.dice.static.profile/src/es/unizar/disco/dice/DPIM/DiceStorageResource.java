@@ -8,22 +8,22 @@ import org.eclipse.papyrus.MARTE.MARTE_Foundations.GRM.StorageResource;
 
 /**
  * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>Storagate Node</b></em>'.
+ * A representation of the model object '<em><b>Dice Storage Resource</b></em>'.
  * <!-- end-user-doc -->
  *
  * <p>
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link es.unizar.disco.dice.DPIM.StoragateNode#getRespondsTo <em>Responds To</em>}</li>
- *   <li>{@link es.unizar.disco.dice.DPIM.StoragateNode#getCrudRate <em>Crud Rate</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DPIM.DiceStorageResource#getRespondsTo <em>Responds To</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DPIM.DiceStorageResource#getCrudRate <em>Crud Rate</em>}</li>
  * </ul>
  *
- * @see es.unizar.disco.dice.DPIM.DPIMPackage#getStoragateNode()
+ * @see es.unizar.disco.dice.DPIM.DPIMPackage#getDiceStorageResource()
  * @model
  * @generated
  */
-public interface StoragateNode extends ComputationNode, StorageResource {
+public interface DiceStorageResource extends StorageResource {
 	/**
 	 * Returns the value of the '<em><b>Responds To</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
@@ -34,14 +34,14 @@ public interface StoragateNode extends ComputationNode, StorageResource {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Responds To</em>' containment reference.
 	 * @see #setRespondsTo(DiceDataSpecification)
-	 * @see es.unizar.disco.dice.DPIM.DPIMPackage#getStoragateNode_RespondsTo()
+	 * @see es.unizar.disco.dice.DPIM.DPIMPackage#getDiceStorageResource_RespondsTo()
 	 * @model containment="true" ordered="false"
 	 * @generated
 	 */
 	DiceDataSpecification getRespondsTo();
 
 	/**
-	 * Sets the value of the '{@link es.unizar.disco.dice.DPIM.StoragateNode#getRespondsTo <em>Responds To</em>}' containment reference.
+	 * Sets the value of the '{@link es.unizar.disco.dice.DPIM.DiceStorageResource#getRespondsTo <em>Responds To</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Responds To</em>' containment reference.
@@ -60,14 +60,14 @@ public interface StoragateNode extends ComputationNode, StorageResource {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Crud Rate</em>' attribute.
 	 * @see #setCrudRate(String)
-	 * @see es.unizar.disco.dice.DPIM.DPIMPackage#getStoragateNode_CrudRate()
+	 * @see es.unizar.disco.dice.DPIM.DPIMPackage#getDiceStorageResource_CrudRate()
 	 * @model dataType="org.eclipse.papyrus.MARTE_Library.BasicNFP_Types.NFP_Frequency" ordered="false"
 	 * @generated
 	 */
 	String getCrudRate();
 
 	/**
-	 * Sets the value of the '{@link es.unizar.disco.dice.DPIM.StoragateNode#getCrudRate <em>Crud Rate</em>}' attribute.
+	 * Sets the value of the '{@link es.unizar.disco.dice.DPIM.DiceStorageResource#getCrudRate <em>Crud Rate</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Crud Rate</em>' attribute.
@@ -76,4 +76,4 @@ public interface StoragateNode extends ComputationNode, StorageResource {
 	 */
 	void setCrudRate(String value);
 
-} // StoragateNode
+} // DiceStorageResource

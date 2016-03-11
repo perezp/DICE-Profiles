@@ -8,23 +8,23 @@ import es.unizar.disco.dice.Complex_Data_Types.DiceChannelSpecification;
 
 /**
  * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>Channel</b></em>'.
+ * A representation of the model object '<em><b>Dice Channel</b></em>'.
  * <!-- end-user-doc -->
  *
  * <p>
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link es.unizar.disco.dice.DPIM.Channel#getRate <em>Rate</em>}</li>
- *   <li>{@link es.unizar.disco.dice.DPIM.Channel#getMessageBroker <em>Message Broker</em>}</li>
- *   <li>{@link es.unizar.disco.dice.DPIM.Channel#getChannelDescription <em>Channel Description</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DPIM.DiceChannel#getRate <em>Rate</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DPIM.DiceChannel#getMessageBroker <em>Message Broker</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DPIM.DiceChannel#getChannelDescription <em>Channel Description</em>}</li>
  * </ul>
  *
- * @see es.unizar.disco.dice.DPIM.DPIMPackage#getChannel()
+ * @see es.unizar.disco.dice.DPIM.DPIMPackage#getDiceChannel()
  * @model
  * @generated
  */
-public interface Channel extends DaConnector {
+public interface DiceChannel extends DaConnector {
 	/**
 	 * Returns the value of the '<em><b>Rate</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -35,14 +35,14 @@ public interface Channel extends DaConnector {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Rate</em>' attribute.
 	 * @see #setRate(String)
-	 * @see es.unizar.disco.dice.DPIM.DPIMPackage#getChannel_Rate()
+	 * @see es.unizar.disco.dice.DPIM.DPIMPackage#getDiceChannel_Rate()
 	 * @model dataType="org.eclipse.papyrus.MARTE_Library.BasicNFP_Types.NFP_Frequency" ordered="false"
 	 * @generated
 	 */
 	String getRate();
 
 	/**
-	 * Sets the value of the '{@link es.unizar.disco.dice.DPIM.Channel#getRate <em>Rate</em>}' attribute.
+	 * Sets the value of the '{@link es.unizar.disco.dice.DPIM.DiceChannel#getRate <em>Rate</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Rate</em>' attribute.
@@ -61,14 +61,14 @@ public interface Channel extends DaConnector {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Message Broker</em>' attribute.
 	 * @see #setMessageBroker(String)
-	 * @see es.unizar.disco.dice.DPIM.DPIMPackage#getChannel_MessageBroker()
+	 * @see es.unizar.disco.dice.DPIM.DPIMPackage#getDiceChannel_MessageBroker()
 	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
 	 * @generated
 	 */
 	String getMessageBroker();
 
 	/**
-	 * Sets the value of the '{@link es.unizar.disco.dice.DPIM.Channel#getMessageBroker <em>Message Broker</em>}' attribute.
+	 * Sets the value of the '{@link es.unizar.disco.dice.DPIM.DiceChannel#getMessageBroker <em>Message Broker</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Message Broker</em>' attribute.
@@ -87,14 +87,14 @@ public interface Channel extends DaConnector {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Channel Description</em>' containment reference.
 	 * @see #setChannelDescription(DiceChannelSpecification)
-	 * @see es.unizar.disco.dice.DPIM.DPIMPackage#getChannel_ChannelDescription()
+	 * @see es.unizar.disco.dice.DPIM.DPIMPackage#getDiceChannel_ChannelDescription()
 	 * @model containment="true" ordered="false"
 	 * @generated
 	 */
 	DiceChannelSpecification getChannelDescription();
 
 	/**
-	 * Sets the value of the '{@link es.unizar.disco.dice.DPIM.Channel#getChannelDescription <em>Channel Description</em>}' containment reference.
+	 * Sets the value of the '{@link es.unizar.disco.dice.DPIM.DiceChannel#getChannelDescription <em>Channel Description</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Channel Description</em>' containment reference.
@@ -103,4 +103,4 @@ public interface Channel extends DaConnector {
 	 */
 	void setChannelDescription(DiceChannelSpecification value);
 
-} // Channel
+} // DiceChannel

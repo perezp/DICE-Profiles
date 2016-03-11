@@ -22,58 +22,58 @@ public interface DPIMFactory extends EFactory {
 	DPIMFactory eINSTANCE = es.unizar.disco.dice.DPIM.impl.DPIMFactoryImpl.init();
 
 	/**
-	 * Returns a new object of class '<em>Computation Node</em>'.
+	 * Returns a new object of class '<em>Dice Component</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Computation Node</em>'.
+	 * @return a new object of class '<em>Dice Component</em>'.
 	 * @generated
 	 */
-	ComputationNode createComputationNode();
+	DiceComponent createDiceComponent();
 
 	/**
-	 * Returns a new object of class '<em>Filter Node</em>'.
+	 * Returns a new object of class '<em>Dice Filter Node</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Filter Node</em>'.
+	 * @return a new object of class '<em>Dice Filter Node</em>'.
 	 * @generated
 	 */
-	FilterNode createFilterNode();
+	DiceFilterNode createDiceFilterNode();
 
 	/**
-	 * Returns a new object of class '<em>Visualization Node</em>'.
+	 * Returns a new object of class '<em>Dice Visualization Node</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Visualization Node</em>'.
+	 * @return a new object of class '<em>Dice Visualization Node</em>'.
 	 * @generated
 	 */
-	VisualizationNode createVisualizationNode();
+	DiceVisualizationNode createDiceVisualizationNode();
 
 	/**
-	 * Returns a new object of class '<em>Source Node</em>'.
+	 * Returns a new object of class '<em>Dice Source Node</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Source Node</em>'.
+	 * @return a new object of class '<em>Dice Source Node</em>'.
 	 * @generated
 	 */
-	SourceNode createSourceNode();
+	DiceSourceNode createDiceSourceNode();
 
 	/**
-	 * Returns a new object of class '<em>Storagate Node</em>'.
+	 * Returns a new object of class '<em>Dice Storage Resource</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Storagate Node</em>'.
+	 * @return a new object of class '<em>Dice Storage Resource</em>'.
 	 * @generated
 	 */
-	StoragateNode createStoragateNode();
+	DiceStorageResource createDiceStorageResource();
 
 	/**
-	 * Returns a new object of class '<em>Channel</em>'.
+	 * Returns a new object of class '<em>Dice Channel</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Channel</em>'.
+	 * @return a new object of class '<em>Dice Channel</em>'.
 	 * @generated
 	 */
-	Channel createChannel();
+	DiceChannel createDiceChannel();
 
 	/**
 	 * Returns the package supported by this factory.

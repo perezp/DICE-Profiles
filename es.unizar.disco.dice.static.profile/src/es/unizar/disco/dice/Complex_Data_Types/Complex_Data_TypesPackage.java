@@ -13,7 +13,6 @@ import org.eclipse.emf.ecore.EPackage;
  * <ul>
  *   <li>each class,</li>
  *   <li>each feature of each class,</li>
- *   <li>each operation of each class,</li>
  *   <li>each enum,</li>
  *   <li>and each data type</li>
  * </ul>
@@ -176,6 +175,7 @@ public interface Complex_Data_TypesPackage extends EPackage {
 	 */
 	int DICE_CHANNEL_SPECIFICATION_FEATURE_COUNT = 2;
 
+
 	/**
 	 * Returns the meta object for class '{@link es.unizar.disco.dice.Complex_Data_Types.DiceDataVolume <em>Dice Data Volume</em>}'.
 	 * <!-- begin-user-doc -->
@@ -298,7 +298,6 @@ public interface Complex_Data_TypesPackage extends EPackage {
 	 * <ul>
 	 *   <li>each class,</li>
 	 *   <li>each feature of each class,</li>
-	 *   <li>each operation of each class,</li>
 	 *   <li>each enum,</li>
 	 *   <li>and each data type</li>
 	 * </ul>

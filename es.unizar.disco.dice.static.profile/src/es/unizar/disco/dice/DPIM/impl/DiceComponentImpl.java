@@ -8,8 +8,8 @@ import es.unizar.disco.dice.Basic_Enumeration_Types.ComputationType;
 import es.unizar.disco.dice.Basic_Enumeration_Types.ProcessingType;
 import es.unizar.disco.dice.Basic_Enumeration_Types.TechType;
 
-import es.unizar.disco.dice.DPIM.ComputationNode;
 import es.unizar.disco.dice.DPIM.DPIMPackage;
+import es.unizar.disco.dice.DPIM.DiceComponent;
 
 import org.eclipse.emf.common.notify.Notification;
 
@@ -19,21 +19,21 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Computation Node</b></em>'.
+ * An implementation of the model object '<em><b>Dice Component</b></em>'.
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link es.unizar.disco.dice.DPIM.impl.ComputationNodeImpl#getThroughput <em>Throughput</em>}</li>
- *   <li>{@link es.unizar.disco.dice.DPIM.impl.ComputationNodeImpl#getType <em>Type</em>}</li>
- *   <li>{@link es.unizar.disco.dice.DPIM.impl.ComputationNodeImpl#getTargetTech <em>Target Tech</em>}</li>
- *   <li>{@link es.unizar.disco.dice.DPIM.impl.ComputationNodeImpl#getProcType <em>Proc Type</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DPIM.impl.DiceComponentImpl#getThroughput <em>Throughput</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DPIM.impl.DiceComponentImpl#getType <em>Type</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DPIM.impl.DiceComponentImpl#getTargetTech <em>Target Tech</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DPIM.impl.DiceComponentImpl#getProcType <em>Proc Type</em>}</li>
  * </ul>
  *
  * @generated
  */
-public class ComputationNodeImpl extends DaComponentImpl implements ComputationNode {
+public class DiceComponentImpl extends DaComponentImpl implements DiceComponent {
 	/**
 	 * The default value of the '{@link #getThroughput() <em>Throughput</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -119,7 +119,7 @@ public class ComputationNodeImpl extends DaComponentImpl implements ComputationN
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected ComputationNodeImpl() {
+	protected DiceComponentImpl() {
 		super();
 	}
 
@@ -130,7 +130,7 @@ public class ComputationNodeImpl extends DaComponentImpl implements ComputationN
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return DPIMPackage.Literals.COMPUTATION_NODE;
+		return DPIMPackage.Literals.DICE_COMPONENT;
 	}
 
 	/**
@@ -151,7 +151,7 @@ public class ComputationNodeImpl extends DaComponentImpl implements ComputationN
 		String oldThroughput = throughput;
 		throughput = newThroughput;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, DPIMPackage.COMPUTATION_NODE__THROUGHPUT, oldThroughput, throughput));
+			eNotify(new ENotificationImpl(this, Notification.SET, DPIMPackage.DICE_COMPONENT__THROUGHPUT, oldThroughput, throughput));
 	}
 
 	/**
@@ -172,7 +172,7 @@ public class ComputationNodeImpl extends DaComponentImpl implements ComputationN
 		ComputationType oldType = type;
 		type = newType == null ? TYPE_EDEFAULT : newType;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, DPIMPackage.COMPUTATION_NODE__TYPE, oldType, type));
+			eNotify(new ENotificationImpl(this, Notification.SET, DPIMPackage.DICE_COMPONENT__TYPE, oldType, type));
 	}
 
 	/**
@@ -193,7 +193,7 @@ public class ComputationNodeImpl extends DaComponentImpl implements ComputationN
 		TechType oldTargetTech = targetTech;
 		targetTech = newTargetTech == null ? TARGET_TECH_EDEFAULT : newTargetTech;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, DPIMPackage.COMPUTATION_NODE__TARGET_TECH, oldTargetTech, targetTech));
+			eNotify(new ENotificationImpl(this, Notification.SET, DPIMPackage.DICE_COMPONENT__TARGET_TECH, oldTargetTech, targetTech));
 	}
 
 	/**
@@ -214,7 +214,7 @@ public class ComputationNodeImpl extends DaComponentImpl implements ComputationN
 		ProcessingType oldProcType = procType;
 		procType = newProcType == null ? PROC_TYPE_EDEFAULT : newProcType;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, DPIMPackage.COMPUTATION_NODE__PROC_TYPE, oldProcType, procType));
+			eNotify(new ENotificationImpl(this, Notification.SET, DPIMPackage.DICE_COMPONENT__PROC_TYPE, oldProcType, procType));
 	}
 
 	/**
@@ -225,13 +225,13 @@ public class ComputationNodeImpl extends DaComponentImpl implements ComputationN
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case DPIMPackage.COMPUTATION_NODE__THROUGHPUT:
+			case DPIMPackage.DICE_COMPONENT__THROUGHPUT:
 				return getThroughput();
-			case DPIMPackage.COMPUTATION_NODE__TYPE:
+			case DPIMPackage.DICE_COMPONENT__TYPE:
 				return getType();
-			case DPIMPackage.COMPUTATION_NODE__TARGET_TECH:
+			case DPIMPackage.DICE_COMPONENT__TARGET_TECH:
 				return getTargetTech();
-			case DPIMPackage.COMPUTATION_NODE__PROC_TYPE:
+			case DPIMPackage.DICE_COMPONENT__PROC_TYPE:
 				return getProcType();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -245,16 +245,16 @@ public class ComputationNodeImpl extends DaComponentImpl implements ComputationN
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case DPIMPackage.COMPUTATION_NODE__THROUGHPUT:
+			case DPIMPackage.DICE_COMPONENT__THROUGHPUT:
 				setThroughput((String)newValue);
 				return;
-			case DPIMPackage.COMPUTATION_NODE__TYPE:
+			case DPIMPackage.DICE_COMPONENT__TYPE:
 				setType((ComputationType)newValue);
 				return;
-			case DPIMPackage.COMPUTATION_NODE__TARGET_TECH:
+			case DPIMPackage.DICE_COMPONENT__TARGET_TECH:
 				setTargetTech((TechType)newValue);
 				return;
-			case DPIMPackage.COMPUTATION_NODE__PROC_TYPE:
+			case DPIMPackage.DICE_COMPONENT__PROC_TYPE:
 				setProcType((ProcessingType)newValue);
 				return;
 		}
@@ -269,16 +269,16 @@ public class ComputationNodeImpl extends DaComponentImpl implements ComputationN
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case DPIMPackage.COMPUTATION_NODE__THROUGHPUT:
+			case DPIMPackage.DICE_COMPONENT__THROUGHPUT:
 				setThroughput(THROUGHPUT_EDEFAULT);
 				return;
-			case DPIMPackage.COMPUTATION_NODE__TYPE:
+			case DPIMPackage.DICE_COMPONENT__TYPE:
 				setType(TYPE_EDEFAULT);
 				return;
-			case DPIMPackage.COMPUTATION_NODE__TARGET_TECH:
+			case DPIMPackage.DICE_COMPONENT__TARGET_TECH:
 				setTargetTech(TARGET_TECH_EDEFAULT);
 				return;
-			case DPIMPackage.COMPUTATION_NODE__PROC_TYPE:
+			case DPIMPackage.DICE_COMPONENT__PROC_TYPE:
 				setProcType(PROC_TYPE_EDEFAULT);
 				return;
 		}
@@ -293,13 +293,13 @@ public class ComputationNodeImpl extends DaComponentImpl implements ComputationN
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case DPIMPackage.COMPUTATION_NODE__THROUGHPUT:
+			case DPIMPackage.DICE_COMPONENT__THROUGHPUT:
 				return THROUGHPUT_EDEFAULT == null ? throughput != null : !THROUGHPUT_EDEFAULT.equals(throughput);
-			case DPIMPackage.COMPUTATION_NODE__TYPE:
+			case DPIMPackage.DICE_COMPONENT__TYPE:
 				return type != TYPE_EDEFAULT;
-			case DPIMPackage.COMPUTATION_NODE__TARGET_TECH:
+			case DPIMPackage.DICE_COMPONENT__TARGET_TECH:
 				return targetTech != TARGET_TECH_EDEFAULT;
-			case DPIMPackage.COMPUTATION_NODE__PROC_TYPE:
+			case DPIMPackage.DICE_COMPONENT__PROC_TYPE:
 				return procType != PROC_TYPE_EDEFAULT;
 		}
 		return super.eIsSet(featureID);
@@ -327,4 +327,4 @@ public class ComputationNodeImpl extends DaComponentImpl implements ComputationN
 		return result.toString();
 	}
 
-} //ComputationNodeImpl
+} //DiceComponentImpl

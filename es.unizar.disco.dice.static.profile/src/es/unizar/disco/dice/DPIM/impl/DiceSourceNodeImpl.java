@@ -8,7 +8,7 @@ import es.unizar.disco.dice.Complex_Data_Types.DiceDataSpecification;
 import es.unizar.disco.dice.Complex_Data_Types.DiceDataVolume;
 
 import es.unizar.disco.dice.DPIM.DPIMPackage;
-import es.unizar.disco.dice.DPIM.SourceNode;
+import es.unizar.disco.dice.DPIM.DiceSourceNode;
 
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -20,21 +20,21 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Source Node</b></em>'.
+ * An implementation of the model object '<em><b>Dice Source Node</b></em>'.
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link es.unizar.disco.dice.DPIM.impl.SourceNodeImpl#getStore <em>Store</em>}</li>
- *   <li>{@link es.unizar.disco.dice.DPIM.impl.SourceNodeImpl#getProvides <em>Provides</em>}</li>
- *   <li>{@link es.unizar.disco.dice.DPIM.impl.SourceNodeImpl#getSourceType <em>Source Type</em>}</li>
- *   <li>{@link es.unizar.disco.dice.DPIM.impl.SourceNodeImpl#getRate <em>Rate</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DPIM.impl.DiceSourceNodeImpl#getStore <em>Store</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DPIM.impl.DiceSourceNodeImpl#getProvides <em>Provides</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DPIM.impl.DiceSourceNodeImpl#getSourceType <em>Source Type</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DPIM.impl.DiceSourceNodeImpl#getRate <em>Rate</em>}</li>
  * </ul>
  *
  * @generated
  */
-public class SourceNodeImpl extends ComputationNodeImpl implements SourceNode {
+public class DiceSourceNodeImpl extends DiceComponentImpl implements DiceSourceNode {
 	/**
 	 * The cached value of the '{@link #getStore() <em>Store</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -100,7 +100,7 @@ public class SourceNodeImpl extends ComputationNodeImpl implements SourceNode {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected SourceNodeImpl() {
+	protected DiceSourceNodeImpl() {
 		super();
 	}
 
@@ -111,7 +111,7 @@ public class SourceNodeImpl extends ComputationNodeImpl implements SourceNode {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return DPIMPackage.Literals.SOURCE_NODE;
+		return DPIMPackage.Literals.DICE_SOURCE_NODE;
 	}
 
 	/**
@@ -132,7 +132,7 @@ public class SourceNodeImpl extends ComputationNodeImpl implements SourceNode {
 		DiceDataVolume oldStore = store;
 		store = newStore;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, DPIMPackage.SOURCE_NODE__STORE, oldStore, newStore);
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, DPIMPackage.DICE_SOURCE_NODE__STORE, oldStore, newStore);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
 		return msgs;
@@ -147,14 +147,14 @@ public class SourceNodeImpl extends ComputationNodeImpl implements SourceNode {
 		if (newStore != store) {
 			NotificationChain msgs = null;
 			if (store != null)
-				msgs = ((InternalEObject)store).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - DPIMPackage.SOURCE_NODE__STORE, null, msgs);
+				msgs = ((InternalEObject)store).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - DPIMPackage.DICE_SOURCE_NODE__STORE, null, msgs);
 			if (newStore != null)
-				msgs = ((InternalEObject)newStore).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - DPIMPackage.SOURCE_NODE__STORE, null, msgs);
+				msgs = ((InternalEObject)newStore).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - DPIMPackage.DICE_SOURCE_NODE__STORE, null, msgs);
 			msgs = basicSetStore(newStore, msgs);
 			if (msgs != null) msgs.dispatch();
 		}
 		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, DPIMPackage.SOURCE_NODE__STORE, newStore, newStore));
+			eNotify(new ENotificationImpl(this, Notification.SET, DPIMPackage.DICE_SOURCE_NODE__STORE, newStore, newStore));
 	}
 
 	/**
@@ -175,7 +175,7 @@ public class SourceNodeImpl extends ComputationNodeImpl implements SourceNode {
 		DiceDataSpecification oldProvides = provides;
 		provides = newProvides;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, DPIMPackage.SOURCE_NODE__PROVIDES, oldProvides, newProvides);
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, DPIMPackage.DICE_SOURCE_NODE__PROVIDES, oldProvides, newProvides);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
 		return msgs;
@@ -190,14 +190,14 @@ public class SourceNodeImpl extends ComputationNodeImpl implements SourceNode {
 		if (newProvides != provides) {
 			NotificationChain msgs = null;
 			if (provides != null)
-				msgs = ((InternalEObject)provides).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - DPIMPackage.SOURCE_NODE__PROVIDES, null, msgs);
+				msgs = ((InternalEObject)provides).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - DPIMPackage.DICE_SOURCE_NODE__PROVIDES, null, msgs);
 			if (newProvides != null)
-				msgs = ((InternalEObject)newProvides).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - DPIMPackage.SOURCE_NODE__PROVIDES, null, msgs);
+				msgs = ((InternalEObject)newProvides).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - DPIMPackage.DICE_SOURCE_NODE__PROVIDES, null, msgs);
 			msgs = basicSetProvides(newProvides, msgs);
 			if (msgs != null) msgs.dispatch();
 		}
 		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, DPIMPackage.SOURCE_NODE__PROVIDES, newProvides, newProvides));
+			eNotify(new ENotificationImpl(this, Notification.SET, DPIMPackage.DICE_SOURCE_NODE__PROVIDES, newProvides, newProvides));
 	}
 
 	/**
@@ -218,7 +218,7 @@ public class SourceNodeImpl extends ComputationNodeImpl implements SourceNode {
 		SourceType oldSourceType = sourceType;
 		sourceType = newSourceType == null ? SOURCE_TYPE_EDEFAULT : newSourceType;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, DPIMPackage.SOURCE_NODE__SOURCE_TYPE, oldSourceType, sourceType));
+			eNotify(new ENotificationImpl(this, Notification.SET, DPIMPackage.DICE_SOURCE_NODE__SOURCE_TYPE, oldSourceType, sourceType));
 	}
 
 	/**
@@ -239,7 +239,7 @@ public class SourceNodeImpl extends ComputationNodeImpl implements SourceNode {
 		String oldRate = rate;
 		rate = newRate;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, DPIMPackage.SOURCE_NODE__RATE, oldRate, rate));
+			eNotify(new ENotificationImpl(this, Notification.SET, DPIMPackage.DICE_SOURCE_NODE__RATE, oldRate, rate));
 	}
 
 	/**
@@ -250,9 +250,9 @@ public class SourceNodeImpl extends ComputationNodeImpl implements SourceNode {
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case DPIMPackage.SOURCE_NODE__STORE:
+			case DPIMPackage.DICE_SOURCE_NODE__STORE:
 				return basicSetStore(null, msgs);
-			case DPIMPackage.SOURCE_NODE__PROVIDES:
+			case DPIMPackage.DICE_SOURCE_NODE__PROVIDES:
 				return basicSetProvides(null, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
@@ -266,13 +266,13 @@ public class SourceNodeImpl extends ComputationNodeImpl implements SourceNode {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case DPIMPackage.SOURCE_NODE__STORE:
+			case DPIMPackage.DICE_SOURCE_NODE__STORE:
 				return getStore();
-			case DPIMPackage.SOURCE_NODE__PROVIDES:
+			case DPIMPackage.DICE_SOURCE_NODE__PROVIDES:
 				return getProvides();
-			case DPIMPackage.SOURCE_NODE__SOURCE_TYPE:
+			case DPIMPackage.DICE_SOURCE_NODE__SOURCE_TYPE:
 				return getSourceType();
-			case DPIMPackage.SOURCE_NODE__RATE:
+			case DPIMPackage.DICE_SOURCE_NODE__RATE:
 				return getRate();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -286,16 +286,16 @@ public class SourceNodeImpl extends ComputationNodeImpl implements SourceNode {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case DPIMPackage.SOURCE_NODE__STORE:
+			case DPIMPackage.DICE_SOURCE_NODE__STORE:
 				setStore((DiceDataVolume)newValue);
 				return;
-			case DPIMPackage.SOURCE_NODE__PROVIDES:
+			case DPIMPackage.DICE_SOURCE_NODE__PROVIDES:
 				setProvides((DiceDataSpecification)newValue);
 				return;
-			case DPIMPackage.SOURCE_NODE__SOURCE_TYPE:
+			case DPIMPackage.DICE_SOURCE_NODE__SOURCE_TYPE:
 				setSourceType((SourceType)newValue);
 				return;
-			case DPIMPackage.SOURCE_NODE__RATE:
+			case DPIMPackage.DICE_SOURCE_NODE__RATE:
 				setRate((String)newValue);
 				return;
 		}
@@ -310,16 +310,16 @@ public class SourceNodeImpl extends ComputationNodeImpl implements SourceNode {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case DPIMPackage.SOURCE_NODE__STORE:
+			case DPIMPackage.DICE_SOURCE_NODE__STORE:
 				setStore((DiceDataVolume)null);
 				return;
-			case DPIMPackage.SOURCE_NODE__PROVIDES:
+			case DPIMPackage.DICE_SOURCE_NODE__PROVIDES:
 				setProvides((DiceDataSpecification)null);
 				return;
-			case DPIMPackage.SOURCE_NODE__SOURCE_TYPE:
+			case DPIMPackage.DICE_SOURCE_NODE__SOURCE_TYPE:
 				setSourceType(SOURCE_TYPE_EDEFAULT);
 				return;
-			case DPIMPackage.SOURCE_NODE__RATE:
+			case DPIMPackage.DICE_SOURCE_NODE__RATE:
 				setRate(RATE_EDEFAULT);
 				return;
 		}
@@ -334,13 +334,13 @@ public class SourceNodeImpl extends ComputationNodeImpl implements SourceNode {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case DPIMPackage.SOURCE_NODE__STORE:
+			case DPIMPackage.DICE_SOURCE_NODE__STORE:
 				return store != null;
-			case DPIMPackage.SOURCE_NODE__PROVIDES:
+			case DPIMPackage.DICE_SOURCE_NODE__PROVIDES:
 				return provides != null;
-			case DPIMPackage.SOURCE_NODE__SOURCE_TYPE:
+			case DPIMPackage.DICE_SOURCE_NODE__SOURCE_TYPE:
 				return sourceType != SOURCE_TYPE_EDEFAULT;
-			case DPIMPackage.SOURCE_NODE__RATE:
+			case DPIMPackage.DICE_SOURCE_NODE__RATE:
 				return RATE_EDEFAULT == null ? rate != null : !RATE_EDEFAULT.equals(rate);
 		}
 		return super.eIsSet(featureID);
@@ -364,4 +364,4 @@ public class SourceNodeImpl extends ComputationNodeImpl implements SourceNode {
 		return result.toString();
 	}
 
-} //SourceNodeImpl
+} //DiceSourceNodeImpl

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ActionLanguage="http://www.omg.org/spec/ALF/20120827/ActionLanguage-Profile" xmlns:Ecore="http://www.eclipse.org/uml2/schemas/Ecore/5" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.omg.org/spec/ALF/20120827/ActionLanguage-Profile pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ http://www.eclipse.org/uml2/schemas/Ecore/5 pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA">
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Ecore="http://www.eclipse.org/uml2/schemas/Ecore/5" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/uml2/schemas/Ecore/5 pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA">
   <uml:Profile xmi:id="_MPXosOePEeWj7ZPL8JeBTQ" name="DICE">
     <packageImport xmi:type="uml:PackageImport" xmi:id="_MWb6AOePEeWj7ZPL8JeBTQ">
       <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
@@ -12,7 +12,7 @@
     </packageImport>
     <packagedElement xmi:type="uml:Package" xmi:id="_GCf1wOeaEeWj7ZPL8JeBTQ" name="DICE_UML_Extensions">
       <packagedElement xmi:type="uml:Profile" xmi:id="_gFr1YOebEeWj7ZPL8JeBTQ" name="DPIM">
-        <packagedElement xmi:type="uml:Stereotype" xmi:id="_C9h50OejEeWj7ZPL8JeBTQ" name="ComputationNode">
+        <packagedElement xmi:type="uml:Stereotype" xmi:id="_C9h50OejEeWj7ZPL8JeBTQ" name="DiceComponent">
           <generalization xmi:type="uml:Generalization" xmi:id="_VmeK4OejEeWj7ZPL8JeBTQ">
             <general xmi:type="uml:Stereotype" href="pathmap://DAM_PROFILES/DAM.profile.uml#_2vT30OPWEeKfvsJiOXhpew"/>
           </generalization>
@@ -37,7 +37,7 @@
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ncNn8OekEeWj7ZPL8JeBTQ" value="1"/>
           </ownedAttribute>
         </packagedElement>
-        <packagedElement xmi:type="uml:Stereotype" xmi:id="_cx7sAOejEeWj7ZPL8JeBTQ" name="FilterNode">
+        <packagedElement xmi:type="uml:Stereotype" xmi:id="_cx7sAOejEeWj7ZPL8JeBTQ" name="DiceFilterNode">
           <generalization xmi:type="uml:Generalization" xmi:id="_vBjosOekEeWj7ZPL8JeBTQ" general="_C9h50OejEeWj7ZPL8JeBTQ"/>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_3uwCUOekEeWj7ZPL8JeBTQ" name="inputRatio">
             <type xmi:type="uml:DataType" href="pathmap://Papyrus_PROFILES/MARTE_Library.library.uml#_UDZSQBFSEdyUJeMeN__D-A"/>
@@ -50,10 +50,10 @@
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5gshEOekEeWj7ZPL8JeBTQ" value="1"/>
           </ownedAttribute>
         </packagedElement>
-        <packagedElement xmi:type="uml:Stereotype" xmi:id="_ffmMIOejEeWj7ZPL8JeBTQ" name="VisualizationNode">
+        <packagedElement xmi:type="uml:Stereotype" xmi:id="_ffmMIOejEeWj7ZPL8JeBTQ" name="DiceVisualizationNode">
           <generalization xmi:type="uml:Generalization" xmi:id="_wat0AOekEeWj7ZPL8JeBTQ" general="_C9h50OejEeWj7ZPL8JeBTQ"/>
         </packagedElement>
-        <packagedElement xmi:type="uml:Stereotype" xmi:id="_iCtCEOejEeWj7ZPL8JeBTQ" name="SourceNode">
+        <packagedElement xmi:type="uml:Stereotype" xmi:id="_iCtCEOejEeWj7ZPL8JeBTQ" name="DiceSourceNode">
           <generalization xmi:type="uml:Generalization" xmi:id="_xT-XQOekEeWj7ZPL8JeBTQ" general="_C9h50OejEeWj7ZPL8JeBTQ"/>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_Sk0F0OelEeWj7ZPL8JeBTQ" name="store">
             <type xmi:type="uml:DataType" href="DICE_Library.uml#_avs9QOedEeWj7ZPL8JeBTQ"/>
@@ -76,8 +76,7 @@
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XPnBAOelEeWj7ZPL8JeBTQ" value="1"/>
           </ownedAttribute>
         </packagedElement>
-        <packagedElement xmi:type="uml:Stereotype" xmi:id="_kiO_kOejEeWj7ZPL8JeBTQ" name="StoragateNode">
-          <generalization xmi:type="uml:Generalization" xmi:id="_w2jbcOekEeWj7ZPL8JeBTQ" general="_C9h50OejEeWj7ZPL8JeBTQ"/>
+        <packagedElement xmi:type="uml:Stereotype" xmi:id="_kiO_kOejEeWj7ZPL8JeBTQ" name="DiceStorageResource">
           <generalization xmi:type="uml:Generalization" xmi:id="__26m0OelEeWj7ZPL8JeBTQ">
             <general xmi:type="uml:Stereotype" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_Sh-rwBGzEdyb1KzJ7GkiGA"/>
           </generalization>
@@ -92,7 +91,7 @@
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Pn3XEOemEeWj7ZPL8JeBTQ" value="1"/>
           </ownedAttribute>
         </packagedElement>
-        <packagedElement xmi:type="uml:Stereotype" xmi:id="_mvdsIOejEeWj7ZPL8JeBTQ" name="Channel">
+        <packagedElement xmi:type="uml:Stereotype" xmi:id="_mvdsIOejEeWj7ZPL8JeBTQ" name="DiceChannel">
           <generalization xmi:type="uml:Generalization" xmi:id="_XjHWYOemEeWj7ZPL8JeBTQ">
             <general xmi:type="uml:Stereotype" href="pathmap://DAM_PROFILES/DAM.profile.uml#_fdgTgOP9EeKmVK0_L5xJcQ"/>
           </generalization>
@@ -130,5 +129,4 @@
   <Ecore:EPackage xmi:id="_m6y98OeZEeWj7ZPL8JeBTQ" base_Package="_MPXosOePEeWj7ZPL8JeBTQ" packageName="DICE" nsPrefix="DICE" nsURI="http://es.unizar.disco.dice/profiles/DICE/1.0" basePackage="es.unizar.disco.dice"/>
   <Ecore:EPackage xmi:id="_NZRPAOeaEeWj7ZPL8JeBTQ" base_Package="_GCf1wOeaEeWj7ZPL8JeBTQ" packageName="DICE_UML_Extensions" nsPrefix="DICE_UML_Extensions" nsURI="http://es.unizar.disco.dice/profiles/DICE_UML_Extensions/1.0" basePackage="es.unizar.disco.dice"/>
   <Ecore:EPackage xmi:id="_ijGTAOebEeWj7ZPL8JeBTQ" base_Package="_gFr1YOebEeWj7ZPL8JeBTQ" packageName="DPIM" nsPrefix="DPIM" nsURI="http://es.unizar.disco.dice/profiles/DPIM/1.0" basePackage="es.unizar.disco.dice"/>
-  <ActionLanguage:TextualRepresentation xmi:id="_TBG1sOekEeWj7ZPL8JeBTQ" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
 </xmi:XMI>

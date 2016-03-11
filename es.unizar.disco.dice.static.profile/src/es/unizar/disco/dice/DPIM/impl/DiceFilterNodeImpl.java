@@ -3,7 +3,7 @@
 package es.unizar.disco.dice.DPIM.impl;
 
 import es.unizar.disco.dice.DPIM.DPIMPackage;
-import es.unizar.disco.dice.DPIM.FilterNode;
+import es.unizar.disco.dice.DPIM.DiceFilterNode;
 
 import org.eclipse.emf.common.notify.Notification;
 
@@ -13,19 +13,19 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Filter Node</b></em>'.
+ * An implementation of the model object '<em><b>Dice Filter Node</b></em>'.
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link es.unizar.disco.dice.DPIM.impl.FilterNodeImpl#getInputRatio <em>Input Ratio</em>}</li>
- *   <li>{@link es.unizar.disco.dice.DPIM.impl.FilterNodeImpl#getOutputRation <em>Output Ration</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DPIM.impl.DiceFilterNodeImpl#getInputRatio <em>Input Ratio</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DPIM.impl.DiceFilterNodeImpl#getOutputRation <em>Output Ration</em>}</li>
  * </ul>
  *
  * @generated
  */
-public class FilterNodeImpl extends ComputationNodeImpl implements FilterNode {
+public class DiceFilterNodeImpl extends DiceComponentImpl implements DiceFilterNode {
 	/**
 	 * The default value of the '{@link #getInputRatio() <em>Input Ratio</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -71,7 +71,7 @@ public class FilterNodeImpl extends ComputationNodeImpl implements FilterNode {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected FilterNodeImpl() {
+	protected DiceFilterNodeImpl() {
 		super();
 	}
 
@@ -82,7 +82,7 @@ public class FilterNodeImpl extends ComputationNodeImpl implements FilterNode {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return DPIMPackage.Literals.FILTER_NODE;
+		return DPIMPackage.Literals.DICE_FILTER_NODE;
 	}
 
 	/**
@@ -103,7 +103,7 @@ public class FilterNodeImpl extends ComputationNodeImpl implements FilterNode {
 		String oldInputRatio = inputRatio;
 		inputRatio = newInputRatio;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, DPIMPackage.FILTER_NODE__INPUT_RATIO, oldInputRatio, inputRatio));
+			eNotify(new ENotificationImpl(this, Notification.SET, DPIMPackage.DICE_FILTER_NODE__INPUT_RATIO, oldInputRatio, inputRatio));
 	}
 
 	/**
@@ -124,7 +124,7 @@ public class FilterNodeImpl extends ComputationNodeImpl implements FilterNode {
 		String oldOutputRation = outputRation;
 		outputRation = newOutputRation;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, DPIMPackage.FILTER_NODE__OUTPUT_RATION, oldOutputRation, outputRation));
+			eNotify(new ENotificationImpl(this, Notification.SET, DPIMPackage.DICE_FILTER_NODE__OUTPUT_RATION, oldOutputRation, outputRation));
 	}
 
 	/**
@@ -135,9 +135,9 @@ public class FilterNodeImpl extends ComputationNodeImpl implements FilterNode {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case DPIMPackage.FILTER_NODE__INPUT_RATIO:
+			case DPIMPackage.DICE_FILTER_NODE__INPUT_RATIO:
 				return getInputRatio();
-			case DPIMPackage.FILTER_NODE__OUTPUT_RATION:
+			case DPIMPackage.DICE_FILTER_NODE__OUTPUT_RATION:
 				return getOutputRation();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -151,10 +151,10 @@ public class FilterNodeImpl extends ComputationNodeImpl implements FilterNode {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case DPIMPackage.FILTER_NODE__INPUT_RATIO:
+			case DPIMPackage.DICE_FILTER_NODE__INPUT_RATIO:
 				setInputRatio((String)newValue);
 				return;
-			case DPIMPackage.FILTER_NODE__OUTPUT_RATION:
+			case DPIMPackage.DICE_FILTER_NODE__OUTPUT_RATION:
 				setOutputRation((String)newValue);
 				return;
 		}
@@ -169,10 +169,10 @@ public class FilterNodeImpl extends ComputationNodeImpl implements FilterNode {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case DPIMPackage.FILTER_NODE__INPUT_RATIO:
+			case DPIMPackage.DICE_FILTER_NODE__INPUT_RATIO:
 				setInputRatio(INPUT_RATIO_EDEFAULT);
 				return;
-			case DPIMPackage.FILTER_NODE__OUTPUT_RATION:
+			case DPIMPackage.DICE_FILTER_NODE__OUTPUT_RATION:
 				setOutputRation(OUTPUT_RATION_EDEFAULT);
 				return;
 		}
@@ -187,9 +187,9 @@ public class FilterNodeImpl extends ComputationNodeImpl implements FilterNode {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case DPIMPackage.FILTER_NODE__INPUT_RATIO:
+			case DPIMPackage.DICE_FILTER_NODE__INPUT_RATIO:
 				return INPUT_RATIO_EDEFAULT == null ? inputRatio != null : !INPUT_RATIO_EDEFAULT.equals(inputRatio);
-			case DPIMPackage.FILTER_NODE__OUTPUT_RATION:
+			case DPIMPackage.DICE_FILTER_NODE__OUTPUT_RATION:
 				return OUTPUT_RATION_EDEFAULT == null ? outputRation != null : !OUTPUT_RATION_EDEFAULT.equals(outputRation);
 		}
 		return super.eIsSet(featureID);
@@ -213,4 +213,4 @@ public class FilterNodeImpl extends ComputationNodeImpl implements FilterNode {
 		return result.toString();
 	}
 
-} //FilterNodeImpl
+} //DiceFilterNodeImpl

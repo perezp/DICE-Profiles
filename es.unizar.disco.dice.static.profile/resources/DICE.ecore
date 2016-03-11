@@ -7,7 +7,7 @@
       nsPrefix="DICE_UML_Extensions">
     <eSubpackages name="DPIM" nsURI="http://es.unizar.disco.dice/profiles/DPIM/1.0"
         nsPrefix="DPIM">
-      <eClassifiers xsi:type="ecore:EClass" name="ComputationNode" eSuperTypes="../../com.masdes.dam.static.profile/resources/DAM.ecore#//DAM_UML_Extensions/System/Core/DaComponent">
+      <eClassifiers xsi:type="ecore:EClass" name="DiceComponent" eSuperTypes="../../com.masdes.dam.static.profile/resources/DAM.ecore#//DAM_UML_Extensions/System/Core/DaComponent">
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="throughput" ordered="false"
             eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Frequency"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" ordered="false"
@@ -17,14 +17,14 @@
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="procType" ordered="false"
             eType="ecore:EEnum DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/ProcessingType"/>
       </eClassifiers>
-      <eClassifiers xsi:type="ecore:EClass" name="FilterNode" eSuperTypes="#//DICE_UML_Extensions/DPIM/ComputationNode">
+      <eClassifiers xsi:type="ecore:EClass" name="DiceFilterNode" eSuperTypes="#//DICE_UML_Extensions/DPIM/DiceComponent">
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="inputRatio" ordered="false"
             eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Frequency"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="outputRation" ordered="false"
             eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Frequency"/>
       </eClassifiers>
-      <eClassifiers xsi:type="ecore:EClass" name="VisualizationNode" eSuperTypes="#//DICE_UML_Extensions/DPIM/ComputationNode"/>
-      <eClassifiers xsi:type="ecore:EClass" name="SourceNode" eSuperTypes="#//DICE_UML_Extensions/DPIM/ComputationNode">
+      <eClassifiers xsi:type="ecore:EClass" name="DiceVisualizationNode" eSuperTypes="#//DICE_UML_Extensions/DPIM/DiceComponent"/>
+      <eClassifiers xsi:type="ecore:EClass" name="DiceSourceNode" eSuperTypes="#//DICE_UML_Extensions/DPIM/DiceComponent">
         <eStructuralFeatures xsi:type="ecore:EReference" name="store" ordered="false"
             eType="ecore:EClass DICE_Library.ecore#//Complex_DICE_Types/Complex_Data_Types/DiceDataVolume"
             containment="true"/>
@@ -36,14 +36,14 @@
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="rate" ordered="false"
             eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Frequency"/>
       </eClassifiers>
-      <eClassifiers xsi:type="ecore:EClass" name="StoragateNode" eSuperTypes="#//DICE_UML_Extensions/DPIM/ComputationNode ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE.ecore#//MARTE_Foundations/GRM/StorageResource">
+      <eClassifiers xsi:type="ecore:EClass" name="DiceStorageResource" eSuperTypes="../../org.eclipse.papyrus.marte.static.profile/resources/MARTE.ecore#//MARTE_Foundations/GRM/StorageResource">
         <eStructuralFeatures xsi:type="ecore:EReference" name="respondsTo" ordered="false"
             eType="ecore:EClass DICE_Library.ecore#//Complex_DICE_Types/Complex_Data_Types/DiceDataSpecification"
             containment="true"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="crudRate" ordered="false"
             eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Frequency"/>
       </eClassifiers>
-      <eClassifiers xsi:type="ecore:EClass" name="Channel" eSuperTypes="../../com.masdes.dam.static.profile/resources/DAM.ecore#//DAM_UML_Extensions/System/Core/DaConnector">
+      <eClassifiers xsi:type="ecore:EClass" name="DiceChannel" eSuperTypes="../../com.masdes.dam.static.profile/resources/DAM.ecore#//DAM_UML_Extensions/System/Core/DaConnector">
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="rate" ordered="false"
             eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Frequency"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="messageBroker" ordered="false"

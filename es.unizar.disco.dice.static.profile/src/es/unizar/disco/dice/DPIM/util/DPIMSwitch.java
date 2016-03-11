@@ -72,55 +72,53 @@ public class DPIMSwitch<T> extends Switch<T> {
 	@Override
 	protected T doSwitch(int classifierID, EObject theEObject) {
 		switch (classifierID) {
-			case DPIMPackage.COMPUTATION_NODE: {
-				ComputationNode computationNode = (ComputationNode)theEObject;
-				T result = caseComputationNode(computationNode);
-				if (result == null) result = caseDaComponent(computationNode);
-				if (result == null) result = caseResource(computationNode);
+			case DPIMPackage.DICE_COMPONENT: {
+				DiceComponent diceComponent = (DiceComponent)theEObject;
+				T result = caseDiceComponent(diceComponent);
+				if (result == null) result = caseDaComponent(diceComponent);
+				if (result == null) result = caseResource(diceComponent);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case DPIMPackage.FILTER_NODE: {
-				FilterNode filterNode = (FilterNode)theEObject;
-				T result = caseFilterNode(filterNode);
-				if (result == null) result = caseComputationNode(filterNode);
-				if (result == null) result = caseDaComponent(filterNode);
-				if (result == null) result = caseResource(filterNode);
+			case DPIMPackage.DICE_FILTER_NODE: {
+				DiceFilterNode diceFilterNode = (DiceFilterNode)theEObject;
+				T result = caseDiceFilterNode(diceFilterNode);
+				if (result == null) result = caseDiceComponent(diceFilterNode);
+				if (result == null) result = caseDaComponent(diceFilterNode);
+				if (result == null) result = caseResource(diceFilterNode);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case DPIMPackage.VISUALIZATION_NODE: {
-				VisualizationNode visualizationNode = (VisualizationNode)theEObject;
-				T result = caseVisualizationNode(visualizationNode);
-				if (result == null) result = caseComputationNode(visualizationNode);
-				if (result == null) result = caseDaComponent(visualizationNode);
-				if (result == null) result = caseResource(visualizationNode);
+			case DPIMPackage.DICE_VISUALIZATION_NODE: {
+				DiceVisualizationNode diceVisualizationNode = (DiceVisualizationNode)theEObject;
+				T result = caseDiceVisualizationNode(diceVisualizationNode);
+				if (result == null) result = caseDiceComponent(diceVisualizationNode);
+				if (result == null) result = caseDaComponent(diceVisualizationNode);
+				if (result == null) result = caseResource(diceVisualizationNode);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case DPIMPackage.SOURCE_NODE: {
-				SourceNode sourceNode = (SourceNode)theEObject;
-				T result = caseSourceNode(sourceNode);
-				if (result == null) result = caseComputationNode(sourceNode);
-				if (result == null) result = caseDaComponent(sourceNode);
-				if (result == null) result = caseResource(sourceNode);
+			case DPIMPackage.DICE_SOURCE_NODE: {
+				DiceSourceNode diceSourceNode = (DiceSourceNode)theEObject;
+				T result = caseDiceSourceNode(diceSourceNode);
+				if (result == null) result = caseDiceComponent(diceSourceNode);
+				if (result == null) result = caseDaComponent(diceSourceNode);
+				if (result == null) result = caseResource(diceSourceNode);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case DPIMPackage.STORAGATE_NODE: {
-				StoragateNode storagateNode = (StoragateNode)theEObject;
-				T result = caseStoragateNode(storagateNode);
-				if (result == null) result = caseComputationNode(storagateNode);
-				if (result == null) result = caseStorageResource(storagateNode);
-				if (result == null) result = caseDaComponent(storagateNode);
-				if (result == null) result = caseResource(storagateNode);
+			case DPIMPackage.DICE_STORAGE_RESOURCE: {
+				DiceStorageResource diceStorageResource = (DiceStorageResource)theEObject;
+				T result = caseDiceStorageResource(diceStorageResource);
+				if (result == null) result = caseStorageResource(diceStorageResource);
+				if (result == null) result = caseResource(diceStorageResource);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case DPIMPackage.CHANNEL: {
-				Channel channel = (Channel)theEObject;
-				T result = caseChannel(channel);
-				if (result == null) result = caseDaConnector(channel);
+			case DPIMPackage.DICE_CHANNEL: {
+				DiceChannel diceChannel = (DiceChannel)theEObject;
+				T result = caseDiceChannel(diceChannel);
+				if (result == null) result = caseDaConnector(diceChannel);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -129,92 +127,92 @@ public class DPIMSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Computation Node</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Dice Component</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Computation Node</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Dice Component</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseComputationNode(ComputationNode object) {
+	public T caseDiceComponent(DiceComponent object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Filter Node</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Dice Filter Node</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Filter Node</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Dice Filter Node</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseFilterNode(FilterNode object) {
+	public T caseDiceFilterNode(DiceFilterNode object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Visualization Node</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Dice Visualization Node</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Visualization Node</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Dice Visualization Node</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseVisualizationNode(VisualizationNode object) {
+	public T caseDiceVisualizationNode(DiceVisualizationNode object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Source Node</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Dice Source Node</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Source Node</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Dice Source Node</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseSourceNode(SourceNode object) {
+	public T caseDiceSourceNode(DiceSourceNode object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Storagate Node</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Dice Storage Resource</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Storagate Node</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Dice Storage Resource</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseStoragateNode(StoragateNode object) {
+	public T caseDiceStorageResource(DiceStorageResource object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Channel</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Dice Channel</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Channel</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Dice Channel</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseChannel(Channel object) {
+	public T caseDiceChannel(DiceChannel object) {
 		return null;
 	}
 

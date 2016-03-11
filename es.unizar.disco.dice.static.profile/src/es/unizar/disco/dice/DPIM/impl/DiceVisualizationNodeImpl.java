@@ -3,24 +3,24 @@
 package es.unizar.disco.dice.DPIM.impl;
 
 import es.unizar.disco.dice.DPIM.DPIMPackage;
-import es.unizar.disco.dice.DPIM.VisualizationNode;
+import es.unizar.disco.dice.DPIM.DiceVisualizationNode;
 
 import org.eclipse.emf.ecore.EClass;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Visualization Node</b></em>'.
+ * An implementation of the model object '<em><b>Dice Visualization Node</b></em>'.
  * <!-- end-user-doc -->
  *
  * @generated
  */
-public class VisualizationNodeImpl extends ComputationNodeImpl implements VisualizationNode {
+public class DiceVisualizationNodeImpl extends DiceComponentImpl implements DiceVisualizationNode {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected VisualizationNodeImpl() {
+	protected DiceVisualizationNodeImpl() {
 		super();
 	}
 
@@ -31,7 +31,7 @@ public class VisualizationNodeImpl extends ComputationNodeImpl implements Visual
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return DPIMPackage.Literals.VISUALIZATION_NODE;
+		return DPIMPackage.Literals.DICE_VISUALIZATION_NODE;
 	}
 
-} //VisualizationNodeImpl
+} //DiceVisualizationNodeImpl

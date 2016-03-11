@@ -138,7 +138,7 @@
       <layoutConstraint xmi:type="notation:Bounds" xmi:id="_15IZ_OejEeWj7ZPL8JeBTQ"/>
     </children>
     <element xmi:type="uml:Stereotype" href="DICE.profile.uml#_iCtCEOejEeWj7ZPL8JeBTQ"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_15IZ8eejEeWj7ZPL8JeBTQ" x="456" y="511" width="217"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_15IZ8eejEeWj7ZPL8JeBTQ" x="460" y="511" width="217"/>
   </children>
   <children xmi:type="notation:Shape" xmi:id="_15UAIOejEeWj7ZPL8JeBTQ" type="1026">
     <children xmi:type="notation:DecorationNode" xmi:id="_15UAIuejEeWj7ZPL8JeBTQ" type="1034"/>
@@ -163,7 +163,7 @@
       <layoutConstraint xmi:type="notation:Bounds" xmi:id="_15UALOejEeWj7ZPL8JeBTQ"/>
     </children>
     <element xmi:type="uml:Stereotype" href="DICE.profile.uml#_kiO_kOejEeWj7ZPL8JeBTQ"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_15UAIeejEeWj7ZPL8JeBTQ" x="738" y="507"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_15UAIeejEeWj7ZPL8JeBTQ" x="738" y="507" width="254"/>
   </children>
   <children xmi:type="notation:Shape" xmi:id="_15gNYOejEeWj7ZPL8JeBTQ" type="1026">
     <children xmi:type="notation:DecorationNode" xmi:id="_15gNYuejEeWj7ZPL8JeBTQ" type="1034"/>
@@ -281,16 +281,6 @@
     <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_waysguekEeWj7ZPL8JeBTQ" points="[5, -17, -76, 221]$[79, -251, -2, -13]"/>
     <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_wbLuEOekEeWj7ZPL8JeBTQ" id="(0.63,0.0)"/>
     <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_wbLuEeekEeWj7ZPL8JeBTQ" id="(0.497737556561086,1.0)"/>
-  </edges>
-  <edges xmi:type="notation:Connector" xmi:id="_w2o7AOekEeWj7ZPL8JeBTQ" type="4002" source="_15UAIOejEeWj7ZPL8JeBTQ" target="_DcWj0OejEeWj7ZPL8JeBTQ" routing="Tree">
-    <children xmi:type="notation:DecorationNode" xmi:id="_w2piEOekEeWj7ZPL8JeBTQ" type="6007">
-      <layoutConstraint xmi:type="notation:Location" xmi:id="_w2piEeekEeWj7ZPL8JeBTQ" x="-112" y="-21"/>
-    </children>
-    <styles xmi:type="notation:FontStyle" xmi:id="_w2o7AeekEeWj7ZPL8JeBTQ"/>
-    <element xmi:type="uml:Generalization" href="DICE.profile.uml#_w2jbcOekEeWj7ZPL8JeBTQ"/>
-    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_w2o7AuekEeWj7ZPL8JeBTQ" points="[-8, -24, 65, 196]$[-75, -252, -2, -32]"/>
-    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_w29EEOekEeWj7ZPL8JeBTQ" id="(0.32,0.0)"/>
-    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_w29EEeekEeWj7ZPL8JeBTQ" id="(0.497737556561086,1.0)"/>
   </edges>
   <edges xmi:type="notation:Connector" xmi:id="_xUD20OekEeWj7ZPL8JeBTQ" type="4002" source="_15IZ8OejEeWj7ZPL8JeBTQ" target="_DcWj0OejEeWj7ZPL8JeBTQ" routing="Tree">
     <children xmi:type="notation:DecorationNode" xmi:id="_xUD20-ekEeWj7ZPL8JeBTQ" type="6007">

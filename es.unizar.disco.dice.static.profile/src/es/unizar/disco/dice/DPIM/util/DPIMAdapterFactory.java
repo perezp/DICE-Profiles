@@ -74,28 +74,28 @@ public class DPIMAdapterFactory extends AdapterFactoryImpl {
 	protected DPIMSwitch<Adapter> modelSwitch =
 		new DPIMSwitch<Adapter>() {
 			@Override
-			public Adapter caseComputationNode(ComputationNode object) {
-				return createComputationNodeAdapter();
+			public Adapter caseDiceComponent(DiceComponent object) {
+				return createDiceComponentAdapter();
 			}
 			@Override
-			public Adapter caseFilterNode(FilterNode object) {
-				return createFilterNodeAdapter();
+			public Adapter caseDiceFilterNode(DiceFilterNode object) {
+				return createDiceFilterNodeAdapter();
 			}
 			@Override
-			public Adapter caseVisualizationNode(VisualizationNode object) {
-				return createVisualizationNodeAdapter();
+			public Adapter caseDiceVisualizationNode(DiceVisualizationNode object) {
+				return createDiceVisualizationNodeAdapter();
 			}
 			@Override
-			public Adapter caseSourceNode(SourceNode object) {
-				return createSourceNodeAdapter();
+			public Adapter caseDiceSourceNode(DiceSourceNode object) {
+				return createDiceSourceNodeAdapter();
 			}
 			@Override
-			public Adapter caseStoragateNode(StoragateNode object) {
-				return createStoragateNodeAdapter();
+			public Adapter caseDiceStorageResource(DiceStorageResource object) {
+				return createDiceStorageResourceAdapter();
 			}
 			@Override
-			public Adapter caseChannel(Channel object) {
-				return createChannelAdapter();
+			public Adapter caseDiceChannel(DiceChannel object) {
+				return createDiceChannelAdapter();
 			}
 			@Override
 			public Adapter caseResource(Resource object) {
@@ -134,86 +134,86 @@ public class DPIMAdapterFactory extends AdapterFactoryImpl {
 
 
 	/**
-	 * Creates a new adapter for an object of class '{@link es.unizar.disco.dice.DPIM.ComputationNode <em>Computation Node</em>}'.
+	 * Creates a new adapter for an object of class '{@link es.unizar.disco.dice.DPIM.DiceComponent <em>Dice Component</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see es.unizar.disco.dice.DPIM.ComputationNode
+	 * @see es.unizar.disco.dice.DPIM.DiceComponent
 	 * @generated
 	 */
-	public Adapter createComputationNodeAdapter() {
+	public Adapter createDiceComponentAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link es.unizar.disco.dice.DPIM.FilterNode <em>Filter Node</em>}'.
+	 * Creates a new adapter for an object of class '{@link es.unizar.disco.dice.DPIM.DiceFilterNode <em>Dice Filter Node</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see es.unizar.disco.dice.DPIM.FilterNode
+	 * @see es.unizar.disco.dice.DPIM.DiceFilterNode
 	 * @generated
 	 */
-	public Adapter createFilterNodeAdapter() {
+	public Adapter createDiceFilterNodeAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link es.unizar.disco.dice.DPIM.VisualizationNode <em>Visualization Node</em>}'.
+	 * Creates a new adapter for an object of class '{@link es.unizar.disco.dice.DPIM.DiceVisualizationNode <em>Dice Visualization Node</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see es.unizar.disco.dice.DPIM.VisualizationNode
+	 * @see es.unizar.disco.dice.DPIM.DiceVisualizationNode
 	 * @generated
 	 */
-	public Adapter createVisualizationNodeAdapter() {
+	public Adapter createDiceVisualizationNodeAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link es.unizar.disco.dice.DPIM.SourceNode <em>Source Node</em>}'.
+	 * Creates a new adapter for an object of class '{@link es.unizar.disco.dice.DPIM.DiceSourceNode <em>Dice Source Node</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see es.unizar.disco.dice.DPIM.SourceNode
+	 * @see es.unizar.disco.dice.DPIM.DiceSourceNode
 	 * @generated
 	 */
-	public Adapter createSourceNodeAdapter() {
+	public Adapter createDiceSourceNodeAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link es.unizar.disco.dice.DPIM.StoragateNode <em>Storagate Node</em>}'.
+	 * Creates a new adapter for an object of class '{@link es.unizar.disco.dice.DPIM.DiceStorageResource <em>Dice Storage Resource</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see es.unizar.disco.dice.DPIM.StoragateNode
+	 * @see es.unizar.disco.dice.DPIM.DiceStorageResource
 	 * @generated
 	 */
-	public Adapter createStoragateNodeAdapter() {
+	public Adapter createDiceStorageResourceAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link es.unizar.disco.dice.DPIM.Channel <em>Channel</em>}'.
+	 * Creates a new adapter for an object of class '{@link es.unizar.disco.dice.DPIM.DiceChannel <em>Dice Channel</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see es.unizar.disco.dice.DPIM.Channel
+	 * @see es.unizar.disco.dice.DPIM.DiceChannel
 	 * @generated
 	 */
-	public Adapter createChannelAdapter() {
+	public Adapter createDiceChannelAdapter() {
 		return null;
 	}
 

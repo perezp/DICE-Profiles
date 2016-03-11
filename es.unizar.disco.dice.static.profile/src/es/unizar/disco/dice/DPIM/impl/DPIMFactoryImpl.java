@@ -56,12 +56,12 @@ public class DPIMFactoryImpl extends EFactoryImpl implements DPIMFactory {
 	@Override
 	public EObject create(EClass eClass) {
 		switch (eClass.getClassifierID()) {
-			case DPIMPackage.COMPUTATION_NODE: return createComputationNode();
-			case DPIMPackage.FILTER_NODE: return createFilterNode();
-			case DPIMPackage.VISUALIZATION_NODE: return createVisualizationNode();
-			case DPIMPackage.SOURCE_NODE: return createSourceNode();
-			case DPIMPackage.STORAGATE_NODE: return createStoragateNode();
-			case DPIMPackage.CHANNEL: return createChannel();
+			case DPIMPackage.DICE_COMPONENT: return createDiceComponent();
+			case DPIMPackage.DICE_FILTER_NODE: return createDiceFilterNode();
+			case DPIMPackage.DICE_VISUALIZATION_NODE: return createDiceVisualizationNode();
+			case DPIMPackage.DICE_SOURCE_NODE: return createDiceSourceNode();
+			case DPIMPackage.DICE_STORAGE_RESOURCE: return createDiceStorageResource();
+			case DPIMPackage.DICE_CHANNEL: return createDiceChannel();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -72,9 +72,9 @@ public class DPIMFactoryImpl extends EFactoryImpl implements DPIMFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ComputationNode createComputationNode() {
-		ComputationNodeImpl computationNode = new ComputationNodeImpl();
-		return computationNode;
+	public DiceComponent createDiceComponent() {
+		DiceComponentImpl diceComponent = new DiceComponentImpl();
+		return diceComponent;
 	}
 
 	/**
@@ -82,9 +82,9 @@ public class DPIMFactoryImpl extends EFactoryImpl implements DPIMFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FilterNode createFilterNode() {
-		FilterNodeImpl filterNode = new FilterNodeImpl();
-		return filterNode;
+	public DiceFilterNode createDiceFilterNode() {
+		DiceFilterNodeImpl diceFilterNode = new DiceFilterNodeImpl();
+		return diceFilterNode;
 	}
 
 	/**
@@ -92,9 +92,9 @@ public class DPIMFactoryImpl extends EFactoryImpl implements DPIMFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public VisualizationNode createVisualizationNode() {
-		VisualizationNodeImpl visualizationNode = new VisualizationNodeImpl();
-		return visualizationNode;
+	public DiceVisualizationNode createDiceVisualizationNode() {
+		DiceVisualizationNodeImpl diceVisualizationNode = new DiceVisualizationNodeImpl();
+		return diceVisualizationNode;
 	}
 
 	/**
@@ -102,9 +102,9 @@ public class DPIMFactoryImpl extends EFactoryImpl implements DPIMFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SourceNode createSourceNode() {
-		SourceNodeImpl sourceNode = new SourceNodeImpl();
-		return sourceNode;
+	public DiceSourceNode createDiceSourceNode() {
+		DiceSourceNodeImpl diceSourceNode = new DiceSourceNodeImpl();
+		return diceSourceNode;
 	}
 
 	/**
@@ -112,9 +112,9 @@ public class DPIMFactoryImpl extends EFactoryImpl implements DPIMFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public StoragateNode createStoragateNode() {
-		StoragateNodeImpl storagateNode = new StoragateNodeImpl();
-		return storagateNode;
+	public DiceStorageResource createDiceStorageResource() {
+		DiceStorageResourceImpl diceStorageResource = new DiceStorageResourceImpl();
+		return diceStorageResource;
 	}
 
 	/**
@@ -122,9 +122,9 @@ public class DPIMFactoryImpl extends EFactoryImpl implements DPIMFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Channel createChannel() {
-		ChannelImpl channel = new ChannelImpl();
-		return channel;
+	public DiceChannel createDiceChannel() {
+		DiceChannelImpl diceChannel = new DiceChannelImpl();
+		return diceChannel;
 	}
 
 	/**

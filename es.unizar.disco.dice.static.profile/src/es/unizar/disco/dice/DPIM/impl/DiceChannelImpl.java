@@ -6,8 +6,8 @@ import com.masdes.dam.Core.impl.DaConnectorImpl;
 
 import es.unizar.disco.dice.Complex_Data_Types.DiceChannelSpecification;
 
-import es.unizar.disco.dice.DPIM.Channel;
 import es.unizar.disco.dice.DPIM.DPIMPackage;
+import es.unizar.disco.dice.DPIM.DiceChannel;
 
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -19,20 +19,20 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Channel</b></em>'.
+ * An implementation of the model object '<em><b>Dice Channel</b></em>'.
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link es.unizar.disco.dice.DPIM.impl.ChannelImpl#getRate <em>Rate</em>}</li>
- *   <li>{@link es.unizar.disco.dice.DPIM.impl.ChannelImpl#getMessageBroker <em>Message Broker</em>}</li>
- *   <li>{@link es.unizar.disco.dice.DPIM.impl.ChannelImpl#getChannelDescription <em>Channel Description</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DPIM.impl.DiceChannelImpl#getRate <em>Rate</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DPIM.impl.DiceChannelImpl#getMessageBroker <em>Message Broker</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DPIM.impl.DiceChannelImpl#getChannelDescription <em>Channel Description</em>}</li>
  * </ul>
  *
  * @generated
  */
-public class ChannelImpl extends DaConnectorImpl implements Channel {
+public class DiceChannelImpl extends DaConnectorImpl implements DiceChannel {
 	/**
 	 * The default value of the '{@link #getRate() <em>Rate</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -88,7 +88,7 @@ public class ChannelImpl extends DaConnectorImpl implements Channel {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected ChannelImpl() {
+	protected DiceChannelImpl() {
 		super();
 	}
 
@@ -99,7 +99,7 @@ public class ChannelImpl extends DaConnectorImpl implements Channel {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return DPIMPackage.Literals.CHANNEL;
+		return DPIMPackage.Literals.DICE_CHANNEL;
 	}
 
 	/**
@@ -120,7 +120,7 @@ public class ChannelImpl extends DaConnectorImpl implements Channel {
 		String oldRate = rate;
 		rate = newRate;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, DPIMPackage.CHANNEL__RATE, oldRate, rate));
+			eNotify(new ENotificationImpl(this, Notification.SET, DPIMPackage.DICE_CHANNEL__RATE, oldRate, rate));
 	}
 
 	/**
@@ -141,7 +141,7 @@ public class ChannelImpl extends DaConnectorImpl implements Channel {
 		String oldMessageBroker = messageBroker;
 		messageBroker = newMessageBroker;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, DPIMPackage.CHANNEL__MESSAGE_BROKER, oldMessageBroker, messageBroker));
+			eNotify(new ENotificationImpl(this, Notification.SET, DPIMPackage.DICE_CHANNEL__MESSAGE_BROKER, oldMessageBroker, messageBroker));
 	}
 
 	/**
@@ -162,7 +162,7 @@ public class ChannelImpl extends DaConnectorImpl implements Channel {
 		DiceChannelSpecification oldChannelDescription = channelDescription;
 		channelDescription = newChannelDescription;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, DPIMPackage.CHANNEL__CHANNEL_DESCRIPTION, oldChannelDescription, newChannelDescription);
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, DPIMPackage.DICE_CHANNEL__CHANNEL_DESCRIPTION, oldChannelDescription, newChannelDescription);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
 		return msgs;
@@ -177,14 +177,14 @@ public class ChannelImpl extends DaConnectorImpl implements Channel {
 		if (newChannelDescription != channelDescription) {
 			NotificationChain msgs = null;
 			if (channelDescription != null)
-				msgs = ((InternalEObject)channelDescription).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - DPIMPackage.CHANNEL__CHANNEL_DESCRIPTION, null, msgs);
+				msgs = ((InternalEObject)channelDescription).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - DPIMPackage.DICE_CHANNEL__CHANNEL_DESCRIPTION, null, msgs);
 			if (newChannelDescription != null)
-				msgs = ((InternalEObject)newChannelDescription).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - DPIMPackage.CHANNEL__CHANNEL_DESCRIPTION, null, msgs);
+				msgs = ((InternalEObject)newChannelDescription).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - DPIMPackage.DICE_CHANNEL__CHANNEL_DESCRIPTION, null, msgs);
 			msgs = basicSetChannelDescription(newChannelDescription, msgs);
 			if (msgs != null) msgs.dispatch();
 		}
 		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, DPIMPackage.CHANNEL__CHANNEL_DESCRIPTION, newChannelDescription, newChannelDescription));
+			eNotify(new ENotificationImpl(this, Notification.SET, DPIMPackage.DICE_CHANNEL__CHANNEL_DESCRIPTION, newChannelDescription, newChannelDescription));
 	}
 
 	/**
@@ -195,7 +195,7 @@ public class ChannelImpl extends DaConnectorImpl implements Channel {
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case DPIMPackage.CHANNEL__CHANNEL_DESCRIPTION:
+			case DPIMPackage.DICE_CHANNEL__CHANNEL_DESCRIPTION:
 				return basicSetChannelDescription(null, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
@@ -209,11 +209,11 @@ public class ChannelImpl extends DaConnectorImpl implements Channel {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case DPIMPackage.CHANNEL__RATE:
+			case DPIMPackage.DICE_CHANNEL__RATE:
 				return getRate();
-			case DPIMPackage.CHANNEL__MESSAGE_BROKER:
+			case DPIMPackage.DICE_CHANNEL__MESSAGE_BROKER:
 				return getMessageBroker();
-			case DPIMPackage.CHANNEL__CHANNEL_DESCRIPTION:
+			case DPIMPackage.DICE_CHANNEL__CHANNEL_DESCRIPTION:
 				return getChannelDescription();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -227,13 +227,13 @@ public class ChannelImpl extends DaConnectorImpl implements Channel {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case DPIMPackage.CHANNEL__RATE:
+			case DPIMPackage.DICE_CHANNEL__RATE:
 				setRate((String)newValue);
 				return;
-			case DPIMPackage.CHANNEL__MESSAGE_BROKER:
+			case DPIMPackage.DICE_CHANNEL__MESSAGE_BROKER:
 				setMessageBroker((String)newValue);
 				return;
-			case DPIMPackage.CHANNEL__CHANNEL_DESCRIPTION:
+			case DPIMPackage.DICE_CHANNEL__CHANNEL_DESCRIPTION:
 				setChannelDescription((DiceChannelSpecification)newValue);
 				return;
 		}
@@ -248,13 +248,13 @@ public class ChannelImpl extends DaConnectorImpl implements Channel {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case DPIMPackage.CHANNEL__RATE:
+			case DPIMPackage.DICE_CHANNEL__RATE:
 				setRate(RATE_EDEFAULT);
 				return;
-			case DPIMPackage.CHANNEL__MESSAGE_BROKER:
+			case DPIMPackage.DICE_CHANNEL__MESSAGE_BROKER:
 				setMessageBroker(MESSAGE_BROKER_EDEFAULT);
 				return;
-			case DPIMPackage.CHANNEL__CHANNEL_DESCRIPTION:
+			case DPIMPackage.DICE_CHANNEL__CHANNEL_DESCRIPTION:
 				setChannelDescription((DiceChannelSpecification)null);
 				return;
 		}
@@ -269,11 +269,11 @@ public class ChannelImpl extends DaConnectorImpl implements Channel {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case DPIMPackage.CHANNEL__RATE:
+			case DPIMPackage.DICE_CHANNEL__RATE:
 				return RATE_EDEFAULT == null ? rate != null : !RATE_EDEFAULT.equals(rate);
-			case DPIMPackage.CHANNEL__MESSAGE_BROKER:
+			case DPIMPackage.DICE_CHANNEL__MESSAGE_BROKER:
 				return MESSAGE_BROKER_EDEFAULT == null ? messageBroker != null : !MESSAGE_BROKER_EDEFAULT.equals(messageBroker);
-			case DPIMPackage.CHANNEL__CHANNEL_DESCRIPTION:
+			case DPIMPackage.DICE_CHANNEL__CHANNEL_DESCRIPTION:
 				return channelDescription != null;
 		}
 		return super.eIsSet(featureID);
@@ -297,4 +297,4 @@ public class ChannelImpl extends DaConnectorImpl implements Channel {
 		return result.toString();
 	}
 
-} //ChannelImpl
+} //DiceChannelImpl

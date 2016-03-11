@@ -9,24 +9,24 @@ import es.unizar.disco.dice.Complex_Data_Types.DiceDataVolume;
 
 /**
  * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>Source Node</b></em>'.
+ * A representation of the model object '<em><b>Dice Source Node</b></em>'.
  * <!-- end-user-doc -->
  *
  * <p>
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link es.unizar.disco.dice.DPIM.SourceNode#getStore <em>Store</em>}</li>
- *   <li>{@link es.unizar.disco.dice.DPIM.SourceNode#getProvides <em>Provides</em>}</li>
- *   <li>{@link es.unizar.disco.dice.DPIM.SourceNode#getSourceType <em>Source Type</em>}</li>
- *   <li>{@link es.unizar.disco.dice.DPIM.SourceNode#getRate <em>Rate</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DPIM.DiceSourceNode#getStore <em>Store</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DPIM.DiceSourceNode#getProvides <em>Provides</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DPIM.DiceSourceNode#getSourceType <em>Source Type</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DPIM.DiceSourceNode#getRate <em>Rate</em>}</li>
  * </ul>
  *
- * @see es.unizar.disco.dice.DPIM.DPIMPackage#getSourceNode()
+ * @see es.unizar.disco.dice.DPIM.DPIMPackage#getDiceSourceNode()
  * @model
  * @generated
  */
-public interface SourceNode extends ComputationNode {
+public interface DiceSourceNode extends DiceComponent {
 	/**
 	 * Returns the value of the '<em><b>Store</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
@@ -37,14 +37,14 @@ public interface SourceNode extends ComputationNode {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Store</em>' containment reference.
 	 * @see #setStore(DiceDataVolume)
-	 * @see es.unizar.disco.dice.DPIM.DPIMPackage#getSourceNode_Store()
+	 * @see es.unizar.disco.dice.DPIM.DPIMPackage#getDiceSourceNode_Store()
 	 * @model containment="true" ordered="false"
 	 * @generated
 	 */
 	DiceDataVolume getStore();
 
 	/**
-	 * Sets the value of the '{@link es.unizar.disco.dice.DPIM.SourceNode#getStore <em>Store</em>}' containment reference.
+	 * Sets the value of the '{@link es.unizar.disco.dice.DPIM.DiceSourceNode#getStore <em>Store</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Store</em>' containment reference.
@@ -63,14 +63,14 @@ public interface SourceNode extends ComputationNode {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Provides</em>' containment reference.
 	 * @see #setProvides(DiceDataSpecification)
-	 * @see es.unizar.disco.dice.DPIM.DPIMPackage#getSourceNode_Provides()
+	 * @see es.unizar.disco.dice.DPIM.DPIMPackage#getDiceSourceNode_Provides()
 	 * @model containment="true" ordered="false"
 	 * @generated
 	 */
 	DiceDataSpecification getProvides();
 
 	/**
-	 * Sets the value of the '{@link es.unizar.disco.dice.DPIM.SourceNode#getProvides <em>Provides</em>}' containment reference.
+	 * Sets the value of the '{@link es.unizar.disco.dice.DPIM.DiceSourceNode#getProvides <em>Provides</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Provides</em>' containment reference.
@@ -91,14 +91,14 @@ public interface SourceNode extends ComputationNode {
 	 * @return the value of the '<em>Source Type</em>' attribute.
 	 * @see es.unizar.disco.dice.Basic_Enumeration_Types.SourceType
 	 * @see #setSourceType(SourceType)
-	 * @see es.unizar.disco.dice.DPIM.DPIMPackage#getSourceNode_SourceType()
+	 * @see es.unizar.disco.dice.DPIM.DPIMPackage#getDiceSourceNode_SourceType()
 	 * @model ordered="false"
 	 * @generated
 	 */
 	SourceType getSourceType();
 
 	/**
-	 * Sets the value of the '{@link es.unizar.disco.dice.DPIM.SourceNode#getSourceType <em>Source Type</em>}' attribute.
+	 * Sets the value of the '{@link es.unizar.disco.dice.DPIM.DiceSourceNode#getSourceType <em>Source Type</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Source Type</em>' attribute.
@@ -118,14 +118,14 @@ public interface SourceNode extends ComputationNode {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Rate</em>' attribute.
 	 * @see #setRate(String)
-	 * @see es.unizar.disco.dice.DPIM.DPIMPackage#getSourceNode_Rate()
+	 * @see es.unizar.disco.dice.DPIM.DPIMPackage#getDiceSourceNode_Rate()
 	 * @model dataType="org.eclipse.papyrus.MARTE_Library.BasicNFP_Types.NFP_Frequency" ordered="false"
 	 * @generated
 	 */
 	String getRate();
 
 	/**
-	 * Sets the value of the '{@link es.unizar.disco.dice.DPIM.SourceNode#getRate <em>Rate</em>}' attribute.
+	 * Sets the value of the '{@link es.unizar.disco.dice.DPIM.DiceSourceNode#getRate <em>Rate</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Rate</em>' attribute.
@@ -134,4 +134,4 @@ public interface SourceNode extends ComputationNode {
 	 */
 	void setRate(String value);
 
-} // SourceNode
+} // DiceSourceNode

@@ -37,35 +37,35 @@
         basePackage="es.unizar.disco.dice" disposableProviderFactory="true" ecorePackage="DICE.ecore#//DICE_UML_Extensions">
       <nestedGenPackages xsi:type="genmodel:GenPackage" prefix="DPIM" basePackage="es.unizar.disco.dice"
           disposableProviderFactory="true" ecorePackage="DICE.ecore#//DICE_UML_Extensions/DPIM">
-        <genClasses xsi:type="genmodel:GenClass" ecoreClass="DICE.ecore#//DICE_UML_Extensions/DPIM/ComputationNode">
-          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DPIM/ComputationNode/throughput"/>
-          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DPIM/ComputationNode/type"/>
-          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DPIM/ComputationNode/targetTech"/>
-          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DPIM/ComputationNode/procType"/>
+        <genClasses xsi:type="genmodel:GenClass" ecoreClass="DICE.ecore#//DICE_UML_Extensions/DPIM/DiceComponent">
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DPIM/DiceComponent/throughput"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DPIM/DiceComponent/type"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DPIM/DiceComponent/targetTech"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DPIM/DiceComponent/procType"/>
         </genClasses>
-        <genClasses xsi:type="genmodel:GenClass" ecoreClass="DICE.ecore#//DICE_UML_Extensions/DPIM/FilterNode">
-          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DPIM/FilterNode/inputRatio"/>
-          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DPIM/FilterNode/outputRation"/>
+        <genClasses xsi:type="genmodel:GenClass" ecoreClass="DICE.ecore#//DICE_UML_Extensions/DPIM/DiceFilterNode">
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DPIM/DiceFilterNode/inputRatio"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DPIM/DiceFilterNode/outputRation"/>
         </genClasses>
-        <genClasses xsi:type="genmodel:GenClass" ecoreClass="DICE.ecore#//DICE_UML_Extensions/DPIM/VisualizationNode"/>
-        <genClasses xsi:type="genmodel:GenClass" ecoreClass="DICE.ecore#//DICE_UML_Extensions/DPIM/SourceNode">
+        <genClasses xsi:type="genmodel:GenClass" ecoreClass="DICE.ecore#//DICE_UML_Extensions/DPIM/DiceVisualizationNode"/>
+        <genClasses xsi:type="genmodel:GenClass" ecoreClass="DICE.ecore#//DICE_UML_Extensions/DPIM/DiceSourceNode">
           <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
-              createChild="true" ecoreFeature="ecore:EReference DICE.ecore#//DICE_UML_Extensions/DPIM/SourceNode/store"/>
+              createChild="true" ecoreFeature="ecore:EReference DICE.ecore#//DICE_UML_Extensions/DPIM/DiceSourceNode/store"/>
           <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
-              createChild="true" ecoreFeature="ecore:EReference DICE.ecore#//DICE_UML_Extensions/DPIM/SourceNode/provides"/>
-          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DPIM/SourceNode/sourceType"/>
-          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DPIM/SourceNode/rate"/>
+              createChild="true" ecoreFeature="ecore:EReference DICE.ecore#//DICE_UML_Extensions/DPIM/DiceSourceNode/provides"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DPIM/DiceSourceNode/sourceType"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DPIM/DiceSourceNode/rate"/>
         </genClasses>
-        <genClasses xsi:type="genmodel:GenClass" ecoreClass="DICE.ecore#//DICE_UML_Extensions/DPIM/StoragateNode">
+        <genClasses xsi:type="genmodel:GenClass" ecoreClass="DICE.ecore#//DICE_UML_Extensions/DPIM/DiceStorageResource">
           <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
-              createChild="true" ecoreFeature="ecore:EReference DICE.ecore#//DICE_UML_Extensions/DPIM/StoragateNode/respondsTo"/>
-          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DPIM/StoragateNode/crudRate"/>
+              createChild="true" ecoreFeature="ecore:EReference DICE.ecore#//DICE_UML_Extensions/DPIM/DiceStorageResource/respondsTo"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DPIM/DiceStorageResource/crudRate"/>
         </genClasses>
-        <genClasses xsi:type="genmodel:GenClass" ecoreClass="DICE.ecore#//DICE_UML_Extensions/DPIM/Channel">
-          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DPIM/Channel/rate"/>
-          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DPIM/Channel/messageBroker"/>
+        <genClasses xsi:type="genmodel:GenClass" ecoreClass="DICE.ecore#//DICE_UML_Extensions/DPIM/DiceChannel">
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DPIM/DiceChannel/rate"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DPIM/DiceChannel/messageBroker"/>
           <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
-              createChild="true" ecoreFeature="ecore:EReference DICE.ecore#//DICE_UML_Extensions/DPIM/Channel/channelDescription"/>
+              createChild="true" ecoreFeature="ecore:EReference DICE.ecore#//DICE_UML_Extensions/DPIM/DiceChannel/channelDescription"/>
         </genClasses>
       </nestedGenPackages>
     </nestedGenPackages>
