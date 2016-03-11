@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="DICE_Library" nsURI="http://es.unizar.disco.dice/libraries/DICE/DICE_Library/1.0"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="DICE_Library" nsURI="http://es.unizar.disco.dice/libraries/DICE_Library/1.0"
     nsPrefix="DICE_Library">
-  <eSubpackages name="Complex_DICE_Types" nsURI="http://es.unizar.disco.dice/libraries/DICE/Complex_DICE_Types/1.0"
+  <eSubpackages name="Complex_DICE_Types" nsURI="http://es.unizar.disco.dice/libraries/Complex_DICE_Types/1.0"
       nsPrefix="Complex_DICE_Types">
-    <eSubpackages name="Complex_Data_Types" nsURI="http://es.unizar.disco.dice/libraries/DICE/Complex_Data_Types/1.0"
+    <eSubpackages name="Complex_Data_Types" nsURI="http://es.unizar.disco.dice/libraries/Complex_Data_Types/1.0"
         nsPrefix="Complex_Data_Types">
       <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
         <details key="originalName" value="Data_Types"/>
@@ -31,15 +31,15 @@
       </eClassifiers>
     </eSubpackages>
   </eSubpackages>
-  <eSubpackages name="Basic_DICE_Types" nsURI="http://es.unizar.disco.dice/libraries/DICE/Basic_DICE_Types/1.0"
+  <eSubpackages name="Basic_DICE_Types" nsURI="http://es.unizar.disco.dice/libraries/Basic_DICE_Types/1.0"
       nsPrefix="Basic_DICE_Types">
-    <eSubpackages name="Basic_Data_Types" nsURI="http://es.unizar.disco.dice/libraries/DICE/Basic_Data_Types/1.0"
+    <eSubpackages name="Basic_Data_Types" nsURI="http://es.unizar.disco.dice/libraries/Basic_Data_Types/1.0"
         nsPrefix="Basic_Data_Types">
       <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
         <details key="originalName" value="Data_Types"/>
       </eAnnotations>
     </eSubpackages>
-    <eSubpackages name="Basic_Enumeration_Types" nsURI="http://es.unizar.disco.dice/libraries/DICE/Basic_Enumeration_Types/1.0"
+    <eSubpackages name="Basic_Enumeration_Types" nsURI="http://es.unizar.disco.dice/libraries/Basic_Enumeration_Types/1.0"
         nsPrefix="Basic_Enumeration_Types">
       <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
         <details key="originalName" value="Enumeration_Types"/>

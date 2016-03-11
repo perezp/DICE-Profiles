@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ActionLanguage="http://www.omg.org/spec/ALF/20120827/ActionLanguage-Profile" xmlns:Ecore="http://www.eclipse.org/uml2/schemas/Ecore/5" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:standard="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.omg.org/spec/ALF/20120827/ActionLanguage-Profile pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ http://www.eclipse.org/uml2/schemas/Ecore/5 pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA">
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Ecore="http://www.eclipse.org/uml2/schemas/Ecore/5" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:standard="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/uml2/schemas/Ecore/5 pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA">
   <uml:Model xmi:id="_mTBX0OePEeWj7ZPL8JeBTQ" name="DICE_Library">
     <packageImport xmi:type="uml:PackageImport" xmi:id="_mYCasOePEeWj7ZPL8JeBTQ">
       <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
@@ -107,13 +107,11 @@
       <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
     </profileApplication>
   </uml:Model>
-  <Ecore:EPackage xmi:id="_ynCuMOePEeWj7ZPL8JeBTQ" base_Package="_mTBX0OePEeWj7ZPL8JeBTQ" packageName="DICE_Library" nsPrefix="DICE_Library" nsURI="http://es.unizar.disco.dice/libraries/DICE/DICE_Library/1.0" basePackage="es.unizar.disco.dice"/>
+  <Ecore:EPackage xmi:id="_ynCuMOePEeWj7ZPL8JeBTQ" base_Package="_mTBX0OePEeWj7ZPL8JeBTQ" packageName="DICE_Library" nsPrefix="DICE_Library" nsURI="http://es.unizar.disco.dice/libraries/DICE_Library/1.0" basePackage="es.unizar.disco.dice"/>
   <standard:ModelLibrary xmi:id="_ynkSoOePEeWj7ZPL8JeBTQ" base_Package="_mTBX0OePEeWj7ZPL8JeBTQ"/>
-  <Ecore:EPackage xmi:id="_vBN2AOeaEeWj7ZPL8JeBTQ" base_Package="_-1XS8OeUEeWj7ZPL8JeBTQ" packageName="Basic_DICE_Types" nsPrefix="Basic_DICE_Types" nsURI="http://es.unizar.disco.dice/libraries/DICE/Basic_DICE_Types/1.0" basePackage="es.unizar.disco.dice"/>
-  <Ecore:EPackage xmi:id="_vwxDoOeaEeWj7ZPL8JeBTQ" base_Package="_yQjxwOeYEeWj7ZPL8JeBTQ" packageName="Basic_Data_Types" nsPrefix="Basic_Data_Types" nsURI="http://es.unizar.disco.dice/libraries/DICE/Basic_Data_Types/1.0" basePackage="es.unizar.disco.dice"/>
-  <Ecore:EPackage xmi:id="_wg11sOeaEeWj7ZPL8JeBTQ" base_Package="_diCmMOeWEeWj7ZPL8JeBTQ" packageName="Basic_Enumeration_Types" nsPrefix="Basic_Enumeration_Types" nsURI="http://es.unizar.disco.dice/libraries/DICE/Basic_Enumeration_Types/1.0" basePackage="es.unizar.disco.dice"/>
-  <Ecore:EPackage xmi:id="_xvTz8OeaEeWj7ZPL8JeBTQ" base_Package="_8J84wOeYEeWj7ZPL8JeBTQ" packageName="Complex_DICE_Types" nsPrefix="Complex_DICE_Types" nsURI="http://es.unizar.disco.dice/libraries/DICE/Complex_DICE_Types/1.0" basePackage="es.unizar.disco.dice"/>
-  <Ecore:EPackage xmi:id="_ydZB8OeaEeWj7ZPL8JeBTQ" base_Package="_GunKUOeZEeWj7ZPL8JeBTQ" packageName="Complex_Data_Types" nsPrefix="Complex_Data_Types" nsURI="http://es.unizar.disco.dice/libraries/DICE/Complex_Data_Types/1.0" basePackage="es.unizar.disco.dice"/>
-  <ActionLanguage:TextualRepresentation xmi:id="_M8EY0OeeEeWj7ZPL8JeBTQ" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
-  <ActionLanguage:TextualRepresentation xmi:id="_QdTD4OeeEeWj7ZPL8JeBTQ" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
+  <Ecore:EPackage xmi:id="_vBN2AOeaEeWj7ZPL8JeBTQ" base_Package="_-1XS8OeUEeWj7ZPL8JeBTQ" packageName="Basic_DICE_Types" nsPrefix="Basic_DICE_Types" nsURI="http://es.unizar.disco.dice/libraries/Basic_DICE_Types/1.0" basePackage="es.unizar.disco.dice"/>
+  <Ecore:EPackage xmi:id="_vwxDoOeaEeWj7ZPL8JeBTQ" base_Package="_yQjxwOeYEeWj7ZPL8JeBTQ" packageName="Basic_Data_Types" nsPrefix="Basic_Data_Types" nsURI="http://es.unizar.disco.dice/libraries/Basic_Data_Types/1.0" basePackage="es.unizar.disco.dice"/>
+  <Ecore:EPackage xmi:id="_wg11sOeaEeWj7ZPL8JeBTQ" base_Package="_diCmMOeWEeWj7ZPL8JeBTQ" packageName="Basic_Enumeration_Types" nsPrefix="Basic_Enumeration_Types" nsURI="http://es.unizar.disco.dice/libraries/Basic_Enumeration_Types/1.0" basePackage="es.unizar.disco.dice"/>
+  <Ecore:EPackage xmi:id="_xvTz8OeaEeWj7ZPL8JeBTQ" base_Package="_8J84wOeYEeWj7ZPL8JeBTQ" packageName="Complex_DICE_Types" nsPrefix="Complex_DICE_Types" nsURI="http://es.unizar.disco.dice/libraries/Complex_DICE_Types/1.0" basePackage="es.unizar.disco.dice"/>
+  <Ecore:EPackage xmi:id="_ydZB8OeaEeWj7ZPL8JeBTQ" base_Package="_GunKUOeZEeWj7ZPL8JeBTQ" packageName="Complex_Data_Types" nsPrefix="Complex_Data_Types" nsURI="http://es.unizar.disco.dice/libraries/Complex_Data_Types/1.0" basePackage="es.unizar.disco.dice"/>
 </xmi:XMI>

@@ -37,7 +37,7 @@ public interface Basic_Enumeration_TypesPackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	String eNS_URI = "http://es.unizar.disco.dice/libraries/DICE/Basic_Enumeration_Types/1.0";
+	String eNS_URI = "http://es.unizar.disco.dice/libraries/Basic_Enumeration_Types/1.0";
 
 	/**
 	 * The package namespace name.
