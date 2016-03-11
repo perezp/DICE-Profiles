@@ -160,8 +160,8 @@
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_k1SOUuPuEeKfvsJiOXhpew" source="displayNameLabelIcon">
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_k1SOU-PuEeKfvsJiOXhpew" key="displayNameLabelIcon_value" value="false"/>
       </eAnnotations>
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_k1S1YOPuEeKfvsJiOXhpew" source="QualifiedName">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_k1S1YePuEeKfvsJiOXhpew" key="QualifiedNameDepth" value="1000"/>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_07akwOe0EeWzStNBCWC3wg" source="QualifiedName">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_07akwee0EeWzStNBCWC3wg" key="QualifiedNameDepth" value="0"/>
       </eAnnotations>
       <children xmi:type="notation:DecorationNode" xmi:id="_k1S1YuPuEeKfvsJiOXhpew" type="1034"/>
       <children xmi:type="notation:BasicCompartment" xmi:id="_k1S1Y-PuEeKfvsJiOXhpew" type="1071">
@@ -317,8 +317,8 @@
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_BwZn4ePxEeKfvsJiOXhpew" source="displayNameLabelIcon">
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BwZn4uPxEeKfvsJiOXhpew" key="displayNameLabelIcon_value" value="false"/>
       </eAnnotations>
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_BwZn4-PxEeKfvsJiOXhpew" source="QualifiedName">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BwZn5OPxEeKfvsJiOXhpew" key="QualifiedNameDepth" value="1000"/>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_0A-80Oe0EeWzStNBCWC3wg" source="QualifiedName">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_0A_j4Oe0EeWzStNBCWC3wg" key="QualifiedNameDepth" value="0"/>
       </eAnnotations>
       <children xmi:type="notation:DecorationNode" xmi:id="_BwZn5ePxEeKfvsJiOXhpew" type="1034"/>
       <children xmi:type="notation:BasicCompartment" xmi:id="_BwZn5uPxEeKfvsJiOXhpew" type="1071">
@@ -664,8 +664,8 @@
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_q36HAvKzEeKzo-OjYGZWTQ" source="displayNameLabelIcon">
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_q36HA_KzEeKzo-OjYGZWTQ" key="displayNameLabelIcon_value" value="false"/>
       </eAnnotations>
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_q36HBPKzEeKzo-OjYGZWTQ" source="QualifiedName">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_q36HBfKzEeKzo-OjYGZWTQ" key="QualifiedNameDepth" value="1000"/>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_1sSoEOe0EeWzStNBCWC3wg" source="QualifiedName">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_1sSoEee0EeWzStNBCWC3wg" key="QualifiedNameDepth" value="0"/>
       </eAnnotations>
       <children xmi:type="notation:DecorationNode" xmi:id="_q36HBvKzEeKzo-OjYGZWTQ" type="1034"/>
       <children xmi:type="notation:BasicCompartment" xmi:id="_q36HB_KzEeKzo-OjYGZWTQ" type="1071">
@@ -1337,6 +1337,26 @@
       <element xmi:type="uml:Constraint" href="DAM.profile.uml#_2V9FYPK4EeKzo-OjYGZWTQ"/>
       <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2WROcfK4EeKzo-OjYGZWTQ" x="24" y="456" width="313"/>
     </children>
+    <children xmi:type="notation:Shape" xmi:id="_SWHn4Oe4EeWSrbBYV3rboA" type="1026" fontHeight="11">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_WkrTAOe4EeWSrbBYV3rboA" source="QualifiedName">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_WktIMOe4EeWSrbBYV3rboA" key="QualifiedNameDepth" value="0"/>
+      </eAnnotations>
+      <children xmi:type="notation:DecorationNode" xmi:id="_SWJdEOe4EeWSrbBYV3rboA" type="1034"/>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_SWJdEee4EeWSrbBYV3rboA" type="1071">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_SWJdEue4EeWSrbBYV3rboA"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_SWJdE-e4EeWSrbBYV3rboA"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_SWJdFOe4EeWSrbBYV3rboA"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_SWJdFee4EeWSrbBYV3rboA"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_SWJdFue4EeWSrbBYV3rboA" type="1019">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_SWJdF-e4EeWSrbBYV3rboA"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_SWJdGOe4EeWSrbBYV3rboA"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_SWJdGee4EeWSrbBYV3rboA"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_SWJdGue4EeWSrbBYV3rboA"/>
+      </children>
+      <element xmi:type="uml:Stereotype" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_eXMtwBKZEdyGYuetzx6T5A"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_SWIO8Oe4EeWSrbBYV3rboA" x="543" y="-170"/>
+    </children>
     <styles xmi:type="notation:DiagramStyle" xmi:id="_geRJgOSYEeKS_oRYZDPk2g"/>
     <styles xmi:type="notation:StringValueStyle" xmi:id="_IaLCsFfaEeWNr-UQmXwdqQ" name="diagram_compatibility_version" stringValue="1.1.0"/>
     <element xmi:type="uml:Profile" href="DAM.profile.uml#_dYZGQOI-EeKRk-i8_Z91aQ"/>
@@ -1373,6 +1393,16 @@
       <styles xmi:type="notation:FontStyle" xmi:id="_46dpgfK4EeKzo-OjYGZWTQ" fontName="Ubuntu" fontHeight="11"/>
       <element xsi:nil="true"/>
       <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_46dpgvK4EeKzo-OjYGZWTQ" points="[1, -30, 6, 125]$[1, -82, 6, 73]"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_SXGfUOe4EeWSrbBYV3rboA" type="4002" source="_STcQQOSdEeKS_oRYZDPk2g" target="_SWHn4Oe4EeWSrbBYV3rboA">
+      <children xmi:type="notation:DecorationNode" xmi:id="_SXGfU-e4EeWSrbBYV3rboA" type="6007">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_SXGfVOe4EeWSrbBYV3rboA" y="60"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_SXGfUee4EeWSrbBYV3rboA"/>
+      <element xmi:type="uml:Generalization" href="DAM.profile.uml#_vsgvMOPxEeKfvsJiOXhpew"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_SXGfUue4EeWSrbBYV3rboA" points="[-96, -16, 579, 94]$[-675, -110, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_TTYhYOe4EeWSrbBYV3rboA" id="(0.46113989637305697,0.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_TTZIcOe4EeWSrbBYV3rboA" id="(0.4770992366412214,1.0)"/>
     </edges>
   </notation:Diagram>
   <notation:Diagram xmi:id="_eWHdUOSwEeKuSu-I2xDxSA" type="PapyrusUMLProfileDiagram" name="Threats_class_diagram" measurementUnit="Pixel">
@@ -1463,8 +1493,8 @@
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_0bGFgOSyEeKuSu-I2xDxSA" source="displayNameLabelIcon">
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_0bGFgeSyEeKuSu-I2xDxSA" key="displayNameLabelIcon_value" value="false"/>
       </eAnnotations>
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_0bGFguSyEeKuSu-I2xDxSA" source="QualifiedName">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_0bGFg-SyEeKuSu-I2xDxSA" key="QualifiedNameDepth" value="1000"/>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_PjERcOe4EeWSrbBYV3rboA" source="QualifiedName">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_PjE4gOe4EeWSrbBYV3rboA" key="QualifiedNameDepth" value="0"/>
       </eAnnotations>
       <children xmi:type="notation:DecorationNode" xmi:id="_0bGFhOSyEeKuSu-I2xDxSA" type="1034"/>
       <children xmi:type="notation:BasicCompartment" xmi:id="_0bGFheSyEeKuSu-I2xDxSA" type="1071">
@@ -1480,7 +1510,7 @@
         <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0bGFjuSyEeKuSu-I2xDxSA"/>
       </children>
       <element xmi:type="uml:Stereotype" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_YzhUsBKXEdyGYuetzx6T5A"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0bE3YeSyEeKuSu-I2xDxSA" x="696" y="36" width="193"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0bE3YeSyEeKuSu-I2xDxSA" x="645" y="36" width="295"/>
     </children>
     <styles xmi:type="notation:DiagramStyle" xmi:id="_eWHdUeSwEeKuSu-I2xDxSA"/>
     <styles xmi:type="notation:StringValueStyle" xmi:id="_IcaeYFfaEeWNr-UQmXwdqQ" name="diagram_compatibility_version" stringValue="1.1.0"/>
