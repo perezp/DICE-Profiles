@@ -15,6 +15,8 @@ import es.unizar.disco.dice.Complex_Data_Types.Complex_Data_TypesPackage;
 import es.unizar.disco.dice.Complex_Data_Types.DiceChannelSpecification;
 import es.unizar.disco.dice.Complex_Data_Types.DiceDataSpecification;
 import es.unizar.disco.dice.Complex_Data_Types.DiceDataVolume;
+import es.unizar.disco.dice.DICE.DICEPackage;
+import es.unizar.disco.dice.DICE.impl.DICEPackageImpl;
 import es.unizar.disco.dice.DPIM.DPIMPackage;
 
 import es.unizar.disco.dice.DPIM.impl.DPIMPackageImpl;
@@ -110,16 +112,19 @@ public class Complex_Data_TypesPackageImpl extends EPackageImpl implements Compl
 		Basic_Enumeration_TypesPackage.eINSTANCE.eClass();
 
 		// Obtain or create and register interdependencies
+		DICEPackageImpl theDICEPackage = (DICEPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(DICEPackage.eNS_URI) instanceof DICEPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(DICEPackage.eNS_URI) : DICEPackage.eINSTANCE);
 		DPIMPackageImpl theDPIMPackage = (DPIMPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(DPIMPackage.eNS_URI) instanceof DPIMPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(DPIMPackage.eNS_URI) : DPIMPackage.eINSTANCE);
 		Basic_Enumeration_TypesPackageImpl theBasic_Enumeration_TypesPackage_1 = (Basic_Enumeration_TypesPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(es.unizar.disco.dice.Basic_Enumeration_Types.Basic_Enumeration_TypesPackage.eNS_URI) instanceof Basic_Enumeration_TypesPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(es.unizar.disco.dice.Basic_Enumeration_Types.Basic_Enumeration_TypesPackage.eNS_URI) : es.unizar.disco.dice.Basic_Enumeration_Types.Basic_Enumeration_TypesPackage.eINSTANCE);
 
 		// Create package meta-data objects
 		theComplex_Data_TypesPackage.createPackageContents();
+		theDICEPackage.createPackageContents();
 		theDPIMPackage.createPackageContents();
 		theBasic_Enumeration_TypesPackage_1.createPackageContents();
 
 		// Initialize created meta-data
 		theComplex_Data_TypesPackage.initializePackageContents();
+		theDICEPackage.initializePackageContents();
 		theDPIMPackage.initializePackageContents();
 		theBasic_Enumeration_TypesPackage_1.initializePackageContents();
 
