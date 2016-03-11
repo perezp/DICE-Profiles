@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/uml2/2.2.0/GenModel"
+    modelDirectory="/es.unizar.disco.dice.static.profile/src" modelPluginID="es.unizar.disco.dice.static.profile"
+    modelName="DICE" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.uml2.uml.ecore.importer" complianceLevel="8.0" copyrightFields="false"
+    usedGenPackages="../../com.masdes.dam.static.profile/resources/DAM.genmodel#//DAM ../../com.masdes.dam.static.profile/resources/DAM.genmodel#//DAM_Library ../../org.eclipse.emf.ecore/model/Ecore.genmodel#//ecore ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE.genmodel#//MARTE ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE.genmodel#//MARTE_Library ../../org.eclipse.uml2.types/model/Types.genmodel#//types ../../org.eclipse.uml2.uml/model/UML.genmodel#//uml ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE.genmodel#//MARTE_Library/BasicNFP_Types"
+    importOrganizing="true">
+  <genAnnotations source="http://www.eclipse.org/emf/2002/GenModel/importer/org.eclipse.uml2.uml.ecore.importer">
+    <details key="ECORE_TAGGED_VALUES" value="PROCESS"/>
+    <details key="UNION_PROPERTIES" value="REPORT"/>
+    <details key="UNTYPED_PROPERTIES" value="REPORT"/>
+    <details key="DUPLICATE_FEATURES" value="DISCARD"/>
+    <details key="SUBSETTING_PROPERTIES" value="REPORT"/>
+    <details key="VALIDATION_DELEGATES" value="IGNORE"/>
+    <details key="OPPOSITE_ROLE_NAMES" value="IGNORE"/>
+    <details key="COMMENTS" value="PROCESS"/>
+    <details key="DUPLICATE_FEATURE_INHERITANCE" value="DISCARD"/>
+    <details key="DUPLICATE_OPERATIONS" value="DISCARD"/>
+    <details key="PROPERTY_DEFAULT_EXPRESSIONS" value="IGNORE"/>
+    <details key="INVARIANT_CONSTRAINTS" value="PROCESS"/>
+    <details key="REDEFINING_PROPERTIES" value="REPORT"/>
+    <details key="ANNOTATION_DETAILS" value="PROCESS"/>
+    <details key="NON_API_INVARIANTS" value="IGNORE"/>
+    <details key="DUPLICATE_OPERATION_INHERITANCE" value="DISCARD"/>
+    <details key="REDEFINING_OPERATIONS" value="REPORT"/>
+    <details key="INVOCATION_DELEGATES" value="IGNORE"/>
+    <details key="DERIVED_FEATURES" value="PROCESS"/>
+    <details key="OPERATION_BODIES" value="IGNORE"/>
+    <details key="CAMEL_CASE_NAMES" value="IGNORE"/>
+    <details key="SUPER_CLASS_ORDER" value="PROCESS"/>
+  </genAnnotations>
+  <foreignModel>DICE.profile.uml</foreignModel>
+  <genPackages xsi:type="genmodel:GenPackage" prefix="DICE" basePackage="es.unizar.disco.dice"
+      disposableProviderFactory="true" ecorePackage="DICE.ecore#/">
+    <nestedGenPackages xsi:type="genmodel:GenPackage" prefix="DICE_UML_Extensions"
+        basePackage="es.unizar.disco.dice" disposableProviderFactory="true" ecorePackage="DICE.ecore#//DICE_UML_Extensions">
+      <nestedGenPackages xsi:type="genmodel:GenPackage" prefix="DPIM" basePackage="es.unizar.disco.dice"
+          disposableProviderFactory="true" ecorePackage="DICE.ecore#//DICE_UML_Extensions/DPIM">
+        <genClasses xsi:type="genmodel:GenClass" ecoreClass="DICE.ecore#//DICE_UML_Extensions/DPIM/ComputationNode">
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DPIM/ComputationNode/throughput"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DPIM/ComputationNode/type"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DPIM/ComputationNode/targetTech"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DPIM/ComputationNode/procType"/>
+        </genClasses>
+        <genClasses xsi:type="genmodel:GenClass" ecoreClass="DICE.ecore#//DICE_UML_Extensions/DPIM/FilterNode">
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DPIM/FilterNode/inputRatio"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DPIM/FilterNode/outputRation"/>
+        </genClasses>
+        <genClasses xsi:type="genmodel:GenClass" ecoreClass="DICE.ecore#//DICE_UML_Extensions/DPIM/VisualizationNode"/>
+        <genClasses xsi:type="genmodel:GenClass" ecoreClass="DICE.ecore#//DICE_UML_Extensions/DPIM/SourceNode">
+          <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+              createChild="true" ecoreFeature="ecore:EReference DICE.ecore#//DICE_UML_Extensions/DPIM/SourceNode/store"/>
+          <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+              createChild="true" ecoreFeature="ecore:EReference DICE.ecore#//DICE_UML_Extensions/DPIM/SourceNode/provides"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DPIM/SourceNode/sourceType"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DPIM/SourceNode/rate"/>
+        </genClasses>
+        <genClasses xsi:type="genmodel:GenClass" ecoreClass="DICE.ecore#//DICE_UML_Extensions/DPIM/StoragateNode">
+          <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+              createChild="true" ecoreFeature="ecore:EReference DICE.ecore#//DICE_UML_Extensions/DPIM/StoragateNode/respondsTo"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DPIM/StoragateNode/crudRate"/>
+        </genClasses>
+        <genClasses xsi:type="genmodel:GenClass" ecoreClass="DICE.ecore#//DICE_UML_Extensions/DPIM/Channel">
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DPIM/Channel/rate"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DPIM/Channel/messageBroker"/>
+          <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+              createChild="true" ecoreFeature="ecore:EReference DICE.ecore#//DICE_UML_Extensions/DPIM/Channel/channelDescription"/>
+        </genClasses>
+      </nestedGenPackages>
+    </nestedGenPackages>
+  </genPackages>
+  <genPackages xsi:type="genmodel:GenPackage" prefix="DICE_Library" basePackage="es.unizar.disco.dice"
+      disposableProviderFactory="true" ecorePackage="DICE_Library.ecore#/">
+    <nestedGenPackages xsi:type="genmodel:GenPackage" prefix="Complex_DICE_Types"
+        basePackage="es.unizar.disco.dice" disposableProviderFactory="true" ecorePackage="DICE_Library.ecore#//Complex_DICE_Types">
+      <nestedGenPackages xsi:type="genmodel:GenPackage" prefix="Complex_Data_Types"
+          basePackage="es.unizar.disco.dice" disposableProviderFactory="true" ecorePackage="DICE_Library.ecore#//Complex_DICE_Types/Complex_Data_Types">
+        <genClasses xsi:type="genmodel:GenClass" ecoreClass="DICE_Library.ecore#//Complex_DICE_Types/Complex_Data_Types/DiceDataVolume">
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE_Library.ecore#//Complex_DICE_Types/Complex_Data_Types/DiceDataVolume/volume"/>
+        </genClasses>
+        <genClasses xsi:type="genmodel:GenClass" ecoreClass="DICE_Library.ecore#//Complex_DICE_Types/Complex_Data_Types/DiceDataSpecification">
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE_Library.ecore#//Complex_DICE_Types/Complex_Data_Types/DiceDataSpecification/description"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE_Library.ecore#//Complex_DICE_Types/Complex_Data_Types/DiceDataSpecification/size"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE_Library.ecore#//Complex_DICE_Types/Complex_Data_Types/DiceDataSpecification/refModel"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE_Library.ecore#//Complex_DICE_Types/Complex_Data_Types/DiceDataSpecification/refDataFormat"/>
+        </genClasses>
+        <genClasses xsi:type="genmodel:GenClass" ecoreClass="DICE_Library.ecore#//Complex_DICE_Types/Complex_Data_Types/DiceChannelSpecification">
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE_Library.ecore#//Complex_DICE_Types/Complex_Data_Types/DiceChannelSpecification/rate"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE_Library.ecore#//Complex_DICE_Types/Complex_Data_Types/DiceChannelSpecification/size"/>
+        </genClasses>
+      </nestedGenPackages>
+    </nestedGenPackages>
+    <nestedGenPackages xsi:type="genmodel:GenPackage" prefix="Basic_DICE_Types" basePackage="es.unizar.disco.dice"
+        disposableProviderFactory="true" ecorePackage="DICE_Library.ecore#//Basic_DICE_Types">
+      <nestedGenPackages xsi:type="genmodel:GenPackage" prefix="Basic_Data_Types"
+          basePackage="es.unizar.disco.dice" disposableProviderFactory="true" ecorePackage="DICE_Library.ecore#//Basic_DICE_Types/Basic_Data_Types"/>
+      <nestedGenPackages xsi:type="genmodel:GenPackage" prefix="Basic_Enumeration_Types"
+          basePackage="es.unizar.disco.dice" disposableProviderFactory="true" ecorePackage="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types">
+        <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/RefType">
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/RefType/NoSQL"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/RefType/ER"/>
+        </genEnums>
+        <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/RefDataFormatType">
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/RefDataFormatType/RDF"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/RefDataFormatType/JSON"/>
+        </genEnums>
+        <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/TechType">
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/TechType/RDD"/>
+        </genEnums>
+        <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/ProcessingType">
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/ProcessingType/synch"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/ProcessingType/asynch"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/ProcessingType/policy"/>
+        </genEnums>
+        <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/SourceType">
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/SourceType/sharedStorage"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/SourceType/dataStream"/>
+        </genEnums>
+        <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/ComputationType">
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/ComputationType/distributed"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/ComputationType/parallel"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/ComputationType/distributedParallel"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/ComputationType/microBench"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/ComputationType/sorting"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/ComputationType/grep"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/ComputationType/wordCount"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/ComputationType/collabFiltering"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/ComputationType/naiveBayes"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/ComputationType/bfs"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/ComputationType/pageRank"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/ComputationType/kMeans"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/ComputationType/connectedComponents"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/ComputationType/relQuery"/>
+        </genEnums>
+      </nestedGenPackages>
+    </nestedGenPackages>
+  </genPackages>
+</genmodel:GenModel>

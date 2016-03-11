@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="DICE_Library" nsURI="http://es.unizar.disco.dice/libraries/DICE/DICE_Library/1.0"
+    nsPrefix="DICE_Library">
+  <eSubpackages name="Complex_DICE_Types" nsURI="http://es.unizar.disco.dice/libraries/DICE/Complex_DICE_Types/1.0"
+      nsPrefix="Complex_DICE_Types">
+    <eSubpackages name="Complex_Data_Types" nsURI="http://es.unizar.disco.dice/libraries/DICE/Complex_Data_Types/1.0"
+        nsPrefix="Complex_Data_Types">
+      <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details key="originalName" value="Data_Types"/>
+      </eAnnotations>
+      <eClassifiers xsi:type="ecore:EClass" name="DiceDataVolume">
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="volume" ordered="false"
+            eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_DataSize"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" name="DiceDataSpecification">
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" ordered="false"
+            eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="size" ordered="false"
+            eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_DataSize"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="refModel" ordered="false"
+            eType="#//Basic_DICE_Types/Basic_Enumeration_Types/RefType"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="refDataFormat" ordered="false"
+            eType="#//Basic_DICE_Types/Basic_Enumeration_Types/RefDataFormatType"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" name="DiceChannelSpecification">
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="rate" ordered="false"
+            eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Frequency"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="size" ordered="false"
+            eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_DataSize"/>
+      </eClassifiers>
+    </eSubpackages>
+  </eSubpackages>
+  <eSubpackages name="Basic_DICE_Types" nsURI="http://es.unizar.disco.dice/libraries/DICE/Basic_DICE_Types/1.0"
+      nsPrefix="Basic_DICE_Types">
+    <eSubpackages name="Basic_Data_Types" nsURI="http://es.unizar.disco.dice/libraries/DICE/Basic_Data_Types/1.0"
+        nsPrefix="Basic_Data_Types">
+      <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details key="originalName" value="Data_Types"/>
+      </eAnnotations>
+    </eSubpackages>
+    <eSubpackages name="Basic_Enumeration_Types" nsURI="http://es.unizar.disco.dice/libraries/DICE/Basic_Enumeration_Types/1.0"
+        nsPrefix="Basic_Enumeration_Types">
+      <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details key="originalName" value="Enumeration_Types"/>
+      </eAnnotations>
+      <eClassifiers xsi:type="ecore:EEnum" name="RefType">
+        <eLiterals name="NoSQL"/>
+        <eLiterals name="ER" value="1"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EEnum" name="RefDataFormatType">
+        <eLiterals name="RDF"/>
+        <eLiterals name="JSON" value="1"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EEnum" name="TechType">
+        <eLiterals name="RDD"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EEnum" name="ProcessingType">
+        <eLiterals name="synch"/>
+        <eLiterals name="asynch" value="1"/>
+        <eLiterals name="policy" value="2"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EEnum" name="SourceType">
+        <eLiterals name="sharedStorage"/>
+        <eLiterals name="dataStream" value="1"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EEnum" name="ComputationType">
+        <eLiterals name="distributed"/>
+        <eLiterals name="parallel" value="1"/>
+        <eLiterals name="distributedParallel" value="2"/>
+        <eLiterals name="microBench" value="3"/>
+        <eLiterals name="sorting" value="4"/>
+        <eLiterals name="grep" value="5"/>
+        <eLiterals name="wordCount" value="6"/>
+        <eLiterals name="collabFiltering" value="7"/>
+        <eLiterals name="naiveBayes" value="8"/>
+        <eLiterals name="bfs" value="9"/>
+        <eLiterals name="pageRank" value="10"/>
+        <eLiterals name="kMeans" value="11"/>
+        <eLiterals name="connectedComponents" value="12"/>
+        <eLiterals name="relQuery" value="13"/>
+      </eClassifiers>
+    </eSubpackages>
+  </eSubpackages>
+</ecore:EPackage>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated DICE -->
+      <package
+            uri="http://es.unizar.disco.dice/profiles/DICE/1.0"
+            class="es.unizar.disco.dice.DICE.DICEPackage"
+            genModel="resources/DICE.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated DICE -->
+      <package
+            uri="http://es.unizar.disco.dice/profiles/DPIM/1.0"
+            class="es.unizar.disco.dice.DPIM.DPIMPackage"
+            genModel="resources/DICE.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated DICE -->
+      <package
+            uri="http://es.unizar.disco.dice/libraries/DICE/Complex_Data_Types/1.0"
+            class="es.unizar.disco.dice.Complex_Data_Types.Complex_Data_TypesPackage"
+            genModel="resources/DICE.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated DICE -->
+      <package
+            uri="http://es.unizar.disco.dice/libraries/DICE/Basic_Enumeration_Types/1.0"
+            class="es.unizar.disco.dice.Basic_Enumeration_Types.Basic_Enumeration_TypesPackage"
+            genModel="resources/DICE.genmodel"/>
+   </extension>
+
+</plugin>
