@@ -104,15 +104,15 @@
       </profile>
       <profile
             location="pathmap://DAM_LIBRARIES/DAM_Library.uml#_-D83AOO-EeKfhZ42b6AKfg"
-            uri="http://com.masdes.dam/libraries/DAM/Complex_Data_Types/1.0">
+            uri="http://com.masdes.dam/libraries/Complex_Data_Types/1.0">
       </profile>
       <profile
             location="pathmap://DAM_LIBRARIES/DAM_Library.uml#_u647gOMhEeKpXO-aU5uALA"
-            uri="http://com.masdes.dam/libraries/DAM/Basic_Enumeration_Types/1.0">
+            uri="http://com.masdes.dam/libraries/Basic_Enumeration_Types/1.0">
       </profile>
       <profile
             location="pathmap://DAM_LIBRARIES/DAM_Library.uml#_OOOL0OMzEeK2x-cjwHbYGg"
-            uri="http://com.masdes.dam/libraries/DAM/Basic_Data_Types/1.0">
+            uri="http://com.masdes.dam/libraries/Basic_Data_Types/1.0">
       </profile>
    </extension>
    <extension
