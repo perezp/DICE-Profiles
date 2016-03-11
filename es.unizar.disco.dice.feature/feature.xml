@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
-      id="es.unizar.disco.dice.feature"
+      id="es.unizar.disco.dice.profile.feature"
       label="DICE Profile"
       version="0.4.0.qualifier"
       provider-name="Unizar - Disco">
