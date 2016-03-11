@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/papyrus/infra/viewpoints/policy/style" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
   <notation:Diagram xmi:id="_kv9GUGt_EeWuyN14ri69MA" type="PapyrusUMLClassDiagram" name="Basic_DA_Types" measurementUnit="Pixel">
-    <children xmi:type="notation:Shape" xmi:id="_pr-7cGt_EeWuyN14ri69MA" type="2007">
+    <children xmi:type="notation:Shape" xmi:id="_pr-7cGt_EeWuyN14ri69MA" type="2007" fillColor="14012867">
       <children xmi:type="notation:DecorationNode" xmi:id="_pr_igGt_EeWuyN14ri69MA" type="5026"/>
       <children xmi:type="notation:BasicCompartment" xmi:id="_pr_igWt_EeWuyN14ri69MA" type="7016">
-        <children xmi:type="notation:Shape" xmi:id="_qa3asGt_EeWuyN14ri69MA" type="3009">
+        <children xmi:type="notation:Shape" xmi:id="_qa3asGt_EeWuyN14ri69MA" type="3009" fillColor="14012867">
           <children xmi:type="notation:DecorationNode" xmi:id="_qa3asmt_EeWuyN14ri69MA" type="5017"/>
           <children xmi:type="notation:BasicCompartment" xmi:id="_qa3as2t_EeWuyN14ri69MA" type="7010">
             <children xmi:type="notation:Shape" xmi:id="_s9JxQGt_EeWuyN14ri69MA" type="3025">
@@ -683,7 +683,7 @@
           <element xmi:type="uml:Package" href="DAM_Library.uml#_u647gOMhEeKpXO-aU5uALA"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qa3asWt_EeWuyN14ri69MA" x="30" y="30" width="809"/>
         </children>
-        <children xmi:type="notation:Shape" xmi:id="_qAyt0Gt_EeWuyN14ri69MA" type="3009">
+        <children xmi:type="notation:Shape" xmi:id="_qAyt0Gt_EeWuyN14ri69MA" type="3009" fillColor="14012867">
           <children xmi:type="notation:DecorationNode" xmi:id="_qAyt0mt_EeWuyN14ri69MA" type="5017"/>
           <children xmi:type="notation:BasicCompartment" xmi:id="_qAzU4Gt_EeWuyN14ri69MA" type="7010">
             <children xmi:type="notation:Shape" xmi:id="_sFP44Gt_EeWuyN14ri69MA" type="3027">
@@ -886,7 +886,7 @@
       <element xsi:nil="true"/>
       <layoutConstraint xmi:type="notation:Bounds" xmi:id="_psFpImt_EeWuyN14ri69MA" x="200"/>
     </children>
-    <children xmi:type="notation:Shape" xmi:id="_hAm_YGuCEeWuyN14ri69MA" type="2007">
+    <children xmi:type="notation:Shape" xmi:id="_hAm_YGuCEeWuyN14ri69MA" type="2007" fillColor="14012867">
       <children xmi:type="notation:DecorationNode" xmi:id="_hAnmcGuCEeWuyN14ri69MA" type="5026"/>
       <children xmi:type="notation:BasicCompartment" xmi:id="_hAnmcWuCEeWuyN14ri69MA" type="7016">
         <children xmi:type="notation:Shape" xmi:id="_jzIKUGuCEeWuyN14ri69MA" type="3027">
@@ -1137,7 +1137,7 @@
     </edges>
   </notation:Diagram>
   <notation:Diagram xmi:id="_mdowIGt_EeWuyN14ri69MA" type="PapyrusUMLClassDiagram" name="Complex_DA_Types" measurementUnit="Pixel">
-    <children xmi:type="notation:Shape" xmi:id="_oDGSEGt_EeWuyN14ri69MA" type="2007">
+    <children xmi:type="notation:Shape" xmi:id="_oDGSEGt_EeWuyN14ri69MA" type="2007" fillColor="14012867">
       <children xmi:type="notation:DecorationNode" xmi:id="_oDG5IGt_EeWuyN14ri69MA" type="5026"/>
       <children xmi:type="notation:BasicCompartment" xmi:id="_oDG5IWt_EeWuyN14ri69MA" type="7016">
         <children xmi:type="notation:Shape" xmi:id="_R602kGuDEeWuyN14ri69MA" type="3027">
@@ -1624,7 +1624,7 @@
         <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oDG5I2t_EeWuyN14ri69MA"/>
       </children>
       <element xmi:type="uml:Package" href="DAM_Library.uml#_-D83AOO-EeKfhZ42b6AKfg"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oDGSEWt_EeWuyN14ri69MA" x="30" y="13" width="799"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oDGSEWt_EeWuyN14ri69MA" x="30" y="13" width="839" height="759"/>
     </children>
     <children xmi:type="notation:Shape" xmi:id="_0w7SwGuDEeWuyN14ri69MA" type="StereotypeComment">
       <styles xmi:type="notation:TitleStyle" xmi:id="_0w7SwWuDEeWuyN14ri69MA" showTitle="true"/>

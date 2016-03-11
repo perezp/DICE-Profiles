@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="DAM_Library" nsURI="http://com.masdes.dam/libraries/DAM/DAM_Library/1.0"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="DAM_Library" nsURI="http://com.masdes.dam/libraries/DAM_Library/1.0"
     nsPrefix="DAM_Library">
-  <eSubpackages name="Complex_DA_Types" nsURI="http://com.masdes.dam/libraries/DAM/Complex_DA_Types/1.0"
+  <eSubpackages name="Complex_DA_Types" nsURI="http://com.masdes.dam/libraries/Complex_DA_Types/1.0"
       nsPrefix="Complex_DA_Types">
-    <eSubpackages name="Complex_Data_Types" nsURI="http://com.masdes.dam/libraries/DAM/Complex_Data_Types/1.0"
+    <eSubpackages name="Complex_Data_Types" nsURI="http://com.masdes.dam/libraries/Complex_Data_Types/1.0"
         nsPrefix="Complex_Data_Types">
       <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
         <details key="originalName" value="Data_Types"/>
@@ -165,9 +165,9 @@
       </eClassifiers>
     </eSubpackages>
   </eSubpackages>
-  <eSubpackages name="Basic_DA_Types" nsURI="http://com.masdes.dam/libraries/DAM/Basic_DA_Types/1.0"
+  <eSubpackages name="Basic_DA_Types" nsURI="http://com.masdes.dam/libraries/Basic_DA_Types/1.0"
       nsPrefix="Basic_DA_Types">
-    <eSubpackages name="Basic_Data_Types" nsURI="http://com.masdes.dam/libraries/DAM/Basic_Data_Types/1.0"
+    <eSubpackages name="Basic_Data_Types" nsURI="http://com.masdes.dam/libraries/Basic_Data_Types/1.0"
         nsPrefix="Basic_Data_Types">
       <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
         <details key="originalName" value="Data_Types"/>
@@ -178,7 +178,7 @@
       <eClassifiers xsi:type="ecore:EDataType" name="DaCurrency" instanceClassName="java.lang.String"/>
       <eClassifiers xsi:type="ecore:EDataType" name="DaFrequency" instanceClassName="java.lang.String"/>
     </eSubpackages>
-    <eSubpackages name="Basic_Enumeration_Types" nsURI="http://com.masdes.dam/libraries/DAM/Basic_Enumeration_Types/1.0"
+    <eSubpackages name="Basic_Enumeration_Types" nsURI="http://com.masdes.dam/libraries/Basic_Enumeration_Types/1.0"
         nsPrefix="Basic_Enumeration_Types">
       <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
         <details key="originalName" value="Enumeration_Types"/>

@@ -39,7 +39,7 @@ public interface Complex_Data_TypesPackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	String eNS_URI = "http://com.masdes.dam/libraries/DAM/Complex_Data_Types/1.0";
+	String eNS_URI = "http://com.masdes.dam/libraries/Complex_Data_Types/1.0";
 
 	/**
 	 * The package namespace name.

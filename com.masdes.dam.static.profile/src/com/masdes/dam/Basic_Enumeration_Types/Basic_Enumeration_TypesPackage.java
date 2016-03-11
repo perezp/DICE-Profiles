@@ -37,7 +37,7 @@ public interface Basic_Enumeration_TypesPackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	String eNS_URI = "http://com.masdes.dam/libraries/DAM/Basic_Enumeration_Types/1.0";
+	String eNS_URI = "http://com.masdes.dam/libraries/Basic_Enumeration_Types/1.0";
 
 	/**
 	 * The package namespace name.

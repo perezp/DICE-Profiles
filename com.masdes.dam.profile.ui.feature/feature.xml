@@ -2,7 +2,7 @@
 <feature
       id="com.masdes.dam.profile.ui.feature"
       label="DICE DAM Profile UI Enhancements"
-      version="0.3.0.qualifier"
+      version="0.4.0.qualifier"
       provider-name="DisCo - Unizar">
 
    <description url="https://github.com/dice-project/DICE-Profiles">
@@ -219,6 +219,10 @@ after the cause of action arose. Each party waives its rights to a jury trial in
 any resulting litigation.
    </license>
 
+   <url>
+      <update url="http://dice-project.github.io/DICE-Profiles/updates"/>
+   </url>
+
    <requires>
       <import plugin="org.eclipse.core.runtime"/>
       <import plugin="com.masdes.dam.static.profile"/>
@@ -230,19 +234,19 @@ any resulting litigation.
       <import plugin="org.eclipse.uml2.uml"/>
       <import plugin="org.eclipse.uml2.uml.edit"/>
       <import plugin="org.eclipse.uml2.common.edit"/>
-      <import plugin="org.eclipse.emf.edit.ui" version="2.11.0" match="greaterOrEqual"/>
       <import plugin="org.eclipse.papyrus.infra.services.labelprovider" version="1.1.0" match="greaterOrEqual"/>
       <import plugin="org.eclipse.papyrus.uml.tools" version="1.1.0" match="greaterOrEqual"/>
       <import plugin="org.eclipse.papyrus.infra.emf" version="1.1.0" match="greaterOrEqual"/>
       <import plugin="org.eclipse.papyrus.emf.facet.custom.ui" version="1.1.0" match="greaterOrEqual"/>
       <import plugin="org.eclipse.papyrus.emf.facet.custom.core" version="1.1.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.emf.edit.ui" version="2.11.0" match="greaterOrEqual"/>
    </requires>
 
    <plugin
          id="com.masdes.dam.static.profile.ui"
          download-size="0"
          install-size="0"
-         version="0.3.0.qualifier"
+         version="0.4.0.qualifier"
          unpack="false"/>
 
 </feature>

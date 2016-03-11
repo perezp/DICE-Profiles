@@ -48,7 +48,7 @@
    <extension point="org.eclipse.emf.ecore.generated_package">
       <!-- @generated DAM -->
       <package
-            uri="http://com.masdes.dam/libraries/DAM/Complex_Data_Types/1.0"
+            uri="http://com.masdes.dam/libraries/Complex_Data_Types/1.0"
             class="com.masdes.dam.Complex_Data_Types.Complex_Data_TypesPackage"
             genModel="resources/DAM.genmodel"/>
    </extension>
@@ -56,7 +56,7 @@
    <extension point="org.eclipse.emf.ecore.generated_package">
       <!-- @generated DAM -->
       <package
-            uri="http://com.masdes.dam/libraries/DAM/Basic_Data_Types/1.0"
+            uri="http://com.masdes.dam/libraries/Basic_Data_Types/1.0"
             class="com.masdes.dam.Basic_Data_Types.Basic_Data_TypesPackage"
             genModel="resources/DAM.genmodel"/>
    </extension>
@@ -64,7 +64,7 @@
    <extension point="org.eclipse.emf.ecore.generated_package">
       <!-- @generated DAM -->
       <package
-            uri="http://com.masdes.dam/libraries/DAM/Basic_Enumeration_Types/1.0"
+            uri="http://com.masdes.dam/libraries/Basic_Enumeration_Types/1.0"
             class="com.masdes.dam.Basic_Enumeration_Types.Basic_Enumeration_TypesPackage"
             genModel="resources/DAM.genmodel"/>
    </extension>

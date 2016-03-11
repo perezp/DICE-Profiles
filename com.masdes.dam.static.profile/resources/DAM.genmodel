@@ -33,7 +33,6 @@
   <foreignModel>DAM.profile.uml</foreignModel>
   <genPackages xsi:type="genmodel:GenPackage" prefix="DAM" basePackage="com.masdes.dam"
       disposableProviderFactory="true" ecorePackage="DAM.ecore#/">
-    <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="DAM.ecore#//dummy"/>
     <nestedGenPackages xsi:type="genmodel:GenPackage" prefix="DAM_UML_Extensions"
         basePackage="com.masdes.dam" disposableProviderFactory="true" ecorePackage="DAM.ecore#//DAM_UML_Extensions">
       <nestedGenPackages xsi:type="genmodel:GenPackage" prefix="System" basePackage="com.masdes.dam"
