@@ -39,8 +39,35 @@
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_5e6nIOeeEeWj7ZPL8JeBTQ" name="ER"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Enumeration" xmi:id="_05JV4OeeEeWj7ZPL8JeBTQ" name="RefDataFormatType">
-          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_7KkQoOeeEeWj7ZPL8JeBTQ" name="RDF"/>
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_8W79IOeeEeWj7ZPL8JeBTQ" name="JSON"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:EnumerationLiteral" xmi:id="_7KkQoOeeEeWj7ZPL8JeBTQ" name="RDF"/>
+        <packagedElement xmi:type="uml:Enumeration" xmi:id="_upZtkClyEeaibdPncpUwfA" name="ContraintType">
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_2nOfwClyEeaibdPncpUwfA" name="Less"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_7TR_MClyEeaibdPncpUwfA" name="LessEqual"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_82F1wClyEeaibdPncpUwfA" name="Equal"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_91ZWoClyEeaibdPncpUwfA" name="GreaterEqual"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_98IQwClyEeaibdPncpUwfA" name="Greater"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Enumeration" xmi:id="_xeEbQCo7EeaibdPncpUwfA" name="DICEProperty">
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_0OTHMCo7EeaibdPncpUwfA" name="DataQualityLevel"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_4iKJECo7EeaibdPncpUwfA" name="PrivacyLevel"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Enumeration" xmi:id="_-pTbkCo9EeaibdPncpUwfA" name="WorkflowOperation">
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_35al4CpuEeaibdPncpUwfA" name="GroupBy"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_4LmiECpuEeaibdPncpUwfA" name="Sum"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_4PfjkCpuEeaibdPncpUwfA" name="Count"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_4UrlkCpuEeaibdPncpUwfA" name="Split"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Enumeration" xmi:id="_AjJ5ICo-EeaibdPncpUwfA" name="MapType">
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_a0Z-kCpuEeaibdPncpUwfA" name="RegexMapper"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_eS768CpuEeaibdPncpUwfA" name="FieldSelectionMapper"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_lEpfUCpuEeaibdPncpUwfA" name="ChainMapper"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Enumeration" xmi:id="_C5gsgCo-EeaibdPncpUwfA" name="ReduceType">
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_tsqeACpuEeaibdPncpUwfA" name="FieldSelectionReducer"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_uVDTsCpuEeaibdPncpUwfA" name="ChainReducer"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_vC4DACpuEeaibdPncpUwfA" name="IntSumReducer"/>
         </packagedElement>
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_yQjxwOeYEeWj7ZPL8JeBTQ" name="Data_Types"/>
@@ -49,7 +76,7 @@
       <packagedElement xmi:type="uml:Package" xmi:id="_GunKUOeZEeWj7ZPL8JeBTQ" name="Data_Types">
         <packagedElement xmi:type="uml:DataType" xmi:id="_avs9QOedEeWj7ZPL8JeBTQ" name="DiceDataVolume">
           <ownedAttribute xmi:type="uml:Property" xmi:id="_nA96kOedEeWj7ZPL8JeBTQ" name="volume">
-            <type xmi:type="uml:DataType" href="pathmap://Papyrus_LIBRARIES/MARTE_Library.library.uml#_5LrMcBFSEdyUJeMeN__D-A"/>
+            <type xmi:type="uml:DataType" href="pathmap://Papyrus_PROFILES/MARTE_Library.library.uml#_5LrMcBFSEdyUJeMeN__D-A"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3AkK0OedEeWj7ZPL8JeBTQ"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3An1MOedEeWj7ZPL8JeBTQ" value="1"/>
           </ownedAttribute>
@@ -61,7 +88,7 @@
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RW-ocOefEeWj7ZPL8JeBTQ" value="1"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_dsLqkOefEeWj7ZPL8JeBTQ" name="size" visibility="public">
-            <type xmi:type="uml:DataType" href="pathmap://Papyrus_LIBRARIES/MARTE_Library.library.uml#_5LrMcBFSEdyUJeMeN__D-A"/>
+            <type xmi:type="uml:DataType" href="pathmap://Papyrus_PROFILES/MARTE_Library.library.uml#_5LrMcBFSEdyUJeMeN__D-A"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_d5DB4OefEeWj7ZPL8JeBTQ"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_d5KWoOefEeWj7ZPL8JeBTQ" value="1"/>
           </ownedAttribute>
@@ -76,12 +103,12 @@
         </packagedElement>
         <packagedElement xmi:type="uml:DataType" xmi:id="_FX3yIOefEeWj7ZPL8JeBTQ" name="DiceChannelSpecification">
           <ownedAttribute xmi:type="uml:Property" xmi:id="_HmrzEOefEeWj7ZPL8JeBTQ" name="rate">
-            <type xmi:type="uml:DataType" href="pathmap://Papyrus_LIBRARIES/MARTE_Library.library.uml#_UDZSQBFSEdyUJeMeN__D-A"/>
+            <type xmi:type="uml:DataType" href="pathmap://Papyrus_PROFILES/MARTE_Library.library.uml#_UDZSQBFSEdyUJeMeN__D-A"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Lk6jMOefEeWj7ZPL8JeBTQ"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Lk8YYOefEeWj7ZPL8JeBTQ" value="1"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_NAODkOefEeWj7ZPL8JeBTQ" name="size">
-            <type xmi:type="uml:DataType" href="pathmap://Papyrus_LIBRARIES/MARTE_Library.library.uml#_5LrMcBFSEdyUJeMeN__D-A"/>
+            <type xmi:type="uml:DataType" href="pathmap://Papyrus_PROFILES/MARTE_Library.library.uml#_5LrMcBFSEdyUJeMeN__D-A"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_amrSMOefEeWj7ZPL8JeBTQ"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_amsgUOefEeWj7ZPL8JeBTQ" value="1"/>
           </ownedAttribute>
