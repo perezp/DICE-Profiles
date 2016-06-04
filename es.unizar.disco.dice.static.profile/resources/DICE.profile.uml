@@ -129,7 +129,7 @@
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_57tHYCpmEeaibdPncpUwfA"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_57vjoCpmEeaibdPncpUwfA" value="*"/>
           </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_stCmUCppEeaibdPncpUwfA" name="realise" type="_z6l3MCluEeaibdPncpUwfA"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_stCmUCppEeaibdPncpUwfA" name="realise"/>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_yUYpUCppEeaibdPncpUwfA" name="produceOutputData" type="_KUZx0ClvEeaibdPncpUwfA">
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1wBpwCppEeaibdPncpUwfA" value="1"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1wC34CppEeaibdPncpUwfA" value="*"/>
@@ -187,11 +187,7 @@
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedAttribute>
         </packagedElement>
-        <packagedElement xmi:type="uml:Stereotype" xmi:id="_z6l3MCluEeaibdPncpUwfA" name="Workflow">
-          <generalization xmi:type="uml:Generalization" xmi:id="_NZdSoCo9EeaibdPncpUwfA" general="_uKIUcCluEeaibdPncpUwfA"/>
-        </packagedElement>
         <packagedElement xmi:type="uml:Stereotype" xmi:id="_2HB5kCluEeaibdPncpUwfA" name="DirectAcyclicGraph">
-          <generalization xmi:type="uml:Generalization" xmi:id="_ZTkf0ClvEeaibdPncpUwfA" general="_z6l3MCluEeaibdPncpUwfA"/>
           <generalization xmi:type="uml:Generalization" xmi:id="_AFtIUCpjEeaibdPncpUwfA" general="_uKIUcCluEeaibdPncpUwfA"/>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_5tJY4CpkEeaibdPncpUwfA" name="hasSourceNode" type="_9mn3oCluEeaibdPncpUwfA">
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2egq8CpqEeaibdPncpUwfA" value="1"/>
@@ -199,7 +195,6 @@
           </ownedAttribute>
         </packagedElement>
         <packagedElement xmi:type="uml:Stereotype" xmi:id="_4a1vQCluEeaibdPncpUwfA" name="MapReduceJob">
-          <generalization xmi:type="uml:Generalization" xmi:id="_ZqcHsClvEeaibdPncpUwfA" general="_z6l3MCluEeaibdPncpUwfA"/>
           <generalization xmi:type="uml:Generalization" xmi:id="__hxU0CpiEeaibdPncpUwfA" general="_uKIUcCluEeaibdPncpUwfA"/>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_OTCFgCpqEeaibdPncpUwfA" name="mapResucePhases" type="_6kF6wCluEeaibdPncpUwfA">
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WPQVMCpqEeaibdPncpUwfA" value="1"/>
@@ -281,6 +276,87 @@
           <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_uHfAgCpoEeaibdPncpUwfA" name="extension_DIAElement" type="_uKIUcCluEeaibdPncpUwfA" aggregation="composite" association="_uHeZcCpoEeaibdPncpUwfA"/>
         </packagedElement>
       </packagedElement>
+      <packagedElement xmi:type="uml:Profile" xmi:id="_E-ctACpwEeaibdPncpUwfA" name="DTSM-Storm">
+        <packagedElement xmi:type="uml:Stereotype" xmi:id="_PGvysCpwEeaibdPncpUwfA" name="Bolt">
+          <generalization xmi:type="uml:Generalization" xmi:id="_aX8aICpwEeaibdPncpUwfA" general="_8x7EQCluEeaibdPncpUwfA"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_W9fMgCvQEeaY443vSxM6kg" name="MinTTF">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_METAMODELS/Ecore.metamodel.uml#EFloat"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_excRACvQEeaY443vSxM6kg" name="d">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_METAMODELS/Ecore.metamodel.uml#EFloat"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_hItDUCvQEeaY443vSxM6kg" name="alpha">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_METAMODELS/Ecore.metamodel.uml#EFloat"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_jRG6QCvQEeaY443vSxM6kg" name="sigma">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_METAMODELS/Ecore.metamodel.uml#EFloat"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_lvlu4CvQEeaY443vSxM6kg" name="minRebootTime">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_METAMODELS/Ecore.metamodel.uml#EFloat"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_owhwUCvQEeaY443vSxM6kg" name="maxRebootTime">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_METAMODELS/Ecore.metamodel.uml#EFloat"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Stereotype" xmi:id="_PlTW8CpwEeaibdPncpUwfA" name="Spout">
+          <generalization xmi:type="uml:Generalization" xmi:id="_Z8nJACpwEeaibdPncpUwfA" general="_9mn3oCluEeaibdPncpUwfA"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_tZ4hECvQEeaY443vSxM6kg" name="avgEmitRate">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_METAMODELS/Ecore.metamodel.uml#EFloat"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Stereotype" xmi:id="_QFHfcCpwEeaibdPncpUwfA" name="Topology">
+          <generalization xmi:type="uml:Generalization" xmi:id="_e5MXwCpwEeaibdPncpUwfA" general="_2HB5kCluEeaibdPncpUwfA"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_wZ1rECvQEeaY443vSxM6kg" name="queueThreshold">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_UqJSECvqEeaY443vSxM6kg" name="maxTaskParallelism">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_IrnqkCvqEeaY443vSxM6kg" name="maxSpoutPending">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_B3i5QCvrEeaY443vSxM6kg" name="isReliable">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Stereotype" xmi:id="_Qt0eMCpwEeaibdPncpUwfA" name="StormApplication">
+          <generalization xmi:type="uml:Generalization" xmi:id="_ch_P0CpwEeaibdPncpUwfA" general="_lG6AcCluEeaibdPncpUwfA"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_5_syECvQEeaY443vSxM6kg" name="hasMasterNode" type="_TIr-ICpwEeaibdPncpUwfA"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_AQcXYCvREeaY443vSxM6kg" name="hasSlaveNode" type="_TpGjkCpwEeaibdPncpUwfA"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Fm6s0CvREeaY443vSxM6kg" name="dependsOnZookeeper"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Stereotype" xmi:id="_TIr-ICpwEeaibdPncpUwfA" name="Nimbus">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_b3k_kCveEeaY443vSxM6kg" name="taskTimeout">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_DmI4ICviEeaY443vSxM6kg" name="supervisorTimeout">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_A5P-oCvjEeaY443vSxM6kg" name="monitorFrequency">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Stereotype" xmi:id="_TpGjkCpwEeaibdPncpUwfA" name="Supervisor">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_DzKLACvjEeaY443vSxM6kg" name="monitroFrequency">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_vuWjcCvjEeaY443vSxM6kg" name="workerSatrtTimeout">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_y2ZScCvjEeaY443vSxM6kg" name="workerTimeout">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_CJH1oCvkEeaY443vSxM6kg" name="heartbrackFrequency">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_IxaYQCvkEeaY443vSxM6kg" name="memoryCapacity">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_J3VegCvkEeaY443vSxM6kg" name="cpuCapacity">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedAttribute>
+        </packagedElement>
+      </packagedElement>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_mQAUgOeZEeWj7ZPL8JeBTQ">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_mQAUgeeZEeWj7ZPL8JeBTQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -299,4 +375,5 @@
   <Ecore:EPackage xmi:id="_NZRPAOeaEeWj7ZPL8JeBTQ" base_Package="_GCf1wOeaEeWj7ZPL8JeBTQ" packageName="DICE_UML_Extensions" nsPrefix="DICE_UML_Extensions" nsURI="http://es.unizar.disco.dice/profiles/DICE_UML_Extensions/1.0" basePackage="es.unizar.disco.dice"/>
   <Ecore:EPackage xmi:id="_ijGTAOebEeWj7ZPL8JeBTQ" base_Package="_gFr1YOebEeWj7ZPL8JeBTQ" packageName="DPIM" nsPrefix="DPIM" nsURI="http://es.unizar.disco.dice/profiles/DPIM/1.0" basePackage="es.unizar.disco.dice"/>
   <Ecore:EPackage xmi:id="_Q9gCMCluEeaibdPncpUwfA" base_Package="_Q9bJsCluEeaibdPncpUwfA" packageName="DPIM" nsPrefix="DPIM" nsURI="http://es.unizar.disco.dice/profiles/DPIM/1.0" basePackage="es.unizar.disco.dice"/>
+  <Ecore:EPackage xmi:id="_E-izoCpwEeaibdPncpUwfA" base_Package="_E-ctACpwEeaibdPncpUwfA" packageName="DPIM" nsPrefix="DPIM" nsURI="http://es.unizar.disco.dice/profiles/DPIM/1.0" basePackage="es.unizar.disco.dice"/>
 </xmi:XMI>
