@@ -40,8 +40,8 @@
         </packagedElement>
         <packagedElement xmi:type="uml:Enumeration" xmi:id="_05JV4OeeEeWj7ZPL8JeBTQ" name="RefDataFormatType">
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_8W79IOeeEeWj7ZPL8JeBTQ" name="JSON"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_7KkQoOeeEeWj7ZPL8JeBTQ" name="RDF"/>
         </packagedElement>
-        <packagedElement xmi:type="uml:EnumerationLiteral" xmi:id="_7KkQoOeeEeWj7ZPL8JeBTQ" name="RDF"/>
         <packagedElement xmi:type="uml:Enumeration" xmi:id="_upZtkClyEeaibdPncpUwfA" name="ContraintType">
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_2nOfwClyEeaibdPncpUwfA" name="Less"/>
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_7TR_MClyEeaibdPncpUwfA" name="LessEqual"/>
