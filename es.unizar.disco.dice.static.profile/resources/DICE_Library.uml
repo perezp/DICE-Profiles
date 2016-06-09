@@ -49,10 +49,6 @@
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_91ZWoClyEeaibdPncpUwfA" name="GreaterEqual"/>
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_98IQwClyEeaibdPncpUwfA" name="Greater"/>
         </packagedElement>
-        <packagedElement xmi:type="uml:Enumeration" xmi:id="_xeEbQCo7EeaibdPncpUwfA" name="DICEProperty">
-          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_0OTHMCo7EeaibdPncpUwfA" name="DataQualityLevel"/>
-          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_4iKJECo7EeaibdPncpUwfA" name="PrivacyLevel"/>
-        </packagedElement>
         <packagedElement xmi:type="uml:Enumeration" xmi:id="_-pTbkCo9EeaibdPncpUwfA" name="WorkflowOperation">
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_35al4CpuEeaibdPncpUwfA" name="GroupBy"/>
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_4LmiECpuEeaibdPncpUwfA" name="Sum"/>
@@ -70,7 +66,16 @@
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_vC4DACpuEeaibdPncpUwfA" name="IntSumReducer"/>
         </packagedElement>
       </packagedElement>
-      <packagedElement xmi:type="uml:Package" xmi:id="_yQjxwOeYEeWj7ZPL8JeBTQ" name="Data_Types"/>
+      <packagedElement xmi:type="uml:Package" xmi:id="_yQjxwOeYEeWj7ZPL8JeBTQ" name="Data_Types">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_KyBsgC5SEeaF_sH3mLTVKg" name="NFP_Privacy">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_pbLAEC5SEeaF_sH3mLTVKg" name="expr">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://Papyrus_PROFILES/MARTE_Library.library.uml#_bManMBEBEdyx6M3BlUjlCQ"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_25PuwC5SEeaF_sH3mLTVKg" name="source">
+            <type xmi:type="uml:Enumeration" href="pathmap://Papyrus_PROFILES/MARTE_Library.library.uml#_oMZzEBD-EdyybZnLxHsjyA"/>
+          </ownedAttribute>
+        </packagedElement>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_8J84wOeYEeWj7ZPL8JeBTQ" name="Complex_DICE_Types">
       <packagedElement xmi:type="uml:Package" xmi:id="_GunKUOeZEeWj7ZPL8JeBTQ" name="Data_Types">
