@@ -3,7 +3,7 @@ UML profiles for the DICE project
 
 # Installing the Profiles
 
-In Eclipse, go to + Help -> Install New Software...` and use http://dice-project.github.io/DICE-Profiles/updates as the URL for the update site.
+In Eclipse, go to `Help -> Install New Software...` and use http://dice-project.github.io/DICE-Profiles/updates as the URL for the update site.
 
 # Contents
 
