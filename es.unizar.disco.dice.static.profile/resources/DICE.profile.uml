@@ -267,7 +267,7 @@
             <generalization xmi:type="uml:Generalization" xmi:id="_ch_P0CpwEeaibdPncpUwfA" general="_lG6AcCluEeaibdPncpUwfA"/>
             <ownedAttribute xmi:type="uml:Property" xmi:id="_5_syECvQEeaY443vSxM6kg" name="hasMasterNode" type="_TIr-ICpwEeaibdPncpUwfA"/>
             <ownedAttribute xmi:type="uml:Property" xmi:id="_AQcXYCvREeaY443vSxM6kg" name="hasSlaveNode" type="_TpGjkCpwEeaibdPncpUwfA"/>
-            <ownedAttribute xmi:type="uml:Property" xmi:id="_Fm6s0CvREeaY443vSxM6kg" name="dependsOnZookeeper"/>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_Fm6s0CvREeaY443vSxM6kg" name="dependsOnZookeeper" type="_04nNgDQVEeaZAvb3skSphQ"/>
           </packagedElement>
           <packagedElement xmi:type="uml:Stereotype" xmi:id="_TIr-ICpwEeaibdPncpUwfA" name="Nimbus">
             <ownedAttribute xmi:type="uml:Property" xmi:id="_b3k_kCveEeaY443vSxM6kg" name="taskTimeout">
@@ -298,6 +298,38 @@
             </ownedAttribute>
             <ownedAttribute xmi:type="uml:Property" xmi:id="_J3VegCvkEeaY443vSxM6kg" name="cpuCapacity">
               <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            </ownedAttribute>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Stereotype" xmi:id="_04nNgDQVEeaZAvb3skSphQ" name="Zookeeper">
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_-4Km4DQVEeaZAvb3skSphQ" name="sessionTimeout">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Eozv0DQWEeaZAvb3skSphQ"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Eo2MEDQWEeaZAvb3skSphQ" value="1"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_H9GyIDQWEeaZAvb3skSphQ" name="connectionTimeout">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_H9GyITQWEeaZAvb3skSphQ"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_H9GyIjQWEeaZAvb3skSphQ" value="1"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_IKLk0DQWEeaZAvb3skSphQ" name="retryTime">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IKLk0TQWEeaZAvb3skSphQ"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IKLk0jQWEeaZAvb3skSphQ" value="1"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_IyY0UDQWEeaZAvb3skSphQ" name="retryInterval">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IyY0UTQWEeaZAvb3skSphQ"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IyY0UjQWEeaZAvb3skSphQ" value="1"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_QimoUDQWEeaZAvb3skSphQ" name="user">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QimoUTQWEeaZAvb3skSphQ" value="1"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QimoUjQWEeaZAvb3skSphQ" value="1"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_Qmj7QDQWEeaZAvb3skSphQ" name="password">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Qmj7QTQWEeaZAvb3skSphQ" value="1"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Qmj7QjQWEeaZAvb3skSphQ" value="1"/>
             </ownedAttribute>
           </packagedElement>
         </packagedElement>
