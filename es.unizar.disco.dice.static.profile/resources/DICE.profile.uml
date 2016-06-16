@@ -17,7 +17,7 @@
             <general xmi:type="uml:Stereotype" href="pathmap://DAM_PROFILES/DAM.profile.uml#_2vT30OPWEeKfvsJiOXhpew"/>
           </generalization>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_-6MKwOejEeWj7ZPL8JeBTQ" name="throughput">
-            <type xmi:type="uml:DataType" href="pathmap://Papyrus_PROFILES/MARTE_Library.library.uml#_UDZSQBFSEdyUJeMeN__D-A"/>
+            <type xmi:type="uml:DataType" href="pathmap://Papyrus_LIBRARIES/MARTE_Library.library.uml#_UDZSQBFSEdyUJeMeN__D-A"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_J-JAYOekEeWj7ZPL8JeBTQ"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_J-MDsOekEeWj7ZPL8JeBTQ" value="1"/>
           </ownedAttribute>
@@ -40,12 +40,12 @@
         <packagedElement xmi:type="uml:Stereotype" xmi:id="_cx7sAOejEeWj7ZPL8JeBTQ" name="DpimFilterNode">
           <generalization xmi:type="uml:Generalization" xmi:id="_vBjosOekEeWj7ZPL8JeBTQ" general="_C9h50OejEeWj7ZPL8JeBTQ"/>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_3uwCUOekEeWj7ZPL8JeBTQ" name="inputRatio">
-            <type xmi:type="uml:DataType" href="pathmap://Papyrus_PROFILES/MARTE_Library.library.uml#_UDZSQBFSEdyUJeMeN__D-A"/>
+            <type xmi:type="uml:DataType" href="pathmap://Papyrus_LIBRARIES/MARTE_Library.library.uml#_UDZSQBFSEdyUJeMeN__D-A"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_56hWUOekEeWj7ZPL8JeBTQ"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_56ikcOekEeWj7ZPL8JeBTQ" value="1"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_4rZQwOekEeWj7ZPL8JeBTQ" name="outputRation">
-            <type xmi:type="uml:DataType" href="pathmap://Papyrus_PROFILES/MARTE_Library.library.uml#_UDZSQBFSEdyUJeMeN__D-A"/>
+            <type xmi:type="uml:DataType" href="pathmap://Papyrus_LIBRARIES/MARTE_Library.library.uml#_UDZSQBFSEdyUJeMeN__D-A"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5grS8OekEeWj7ZPL8JeBTQ"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5gshEOekEeWj7ZPL8JeBTQ" value="1"/>
           </ownedAttribute>
@@ -71,7 +71,7 @@
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XpJiYOelEeWj7ZPL8JeBTQ" value="1"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_Tz69QOelEeWj7ZPL8JeBTQ" name="rate">
-            <type xmi:type="uml:DataType" href="pathmap://Papyrus_PROFILES/MARTE_Library.library.uml#_UDZSQBFSEdyUJeMeN__D-A"/>
+            <type xmi:type="uml:DataType" href="pathmap://Papyrus_LIBRARIES/MARTE_Library.library.uml#_UDZSQBFSEdyUJeMeN__D-A"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XPly4OelEeWj7ZPL8JeBTQ"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XPnBAOelEeWj7ZPL8JeBTQ" value="1"/>
           </ownedAttribute>
@@ -86,7 +86,7 @@
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KIu04OemEeWj7ZPL8JeBTQ" value="1"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_L2hMYOemEeWj7ZPL8JeBTQ" name="crudRate">
-            <type xmi:type="uml:DataType" href="pathmap://Papyrus_PROFILES/MARTE_Library.library.uml#_UDZSQBFSEdyUJeMeN__D-A"/>
+            <type xmi:type="uml:DataType" href="pathmap://Papyrus_LIBRARIES/MARTE_Library.library.uml#_UDZSQBFSEdyUJeMeN__D-A"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Pn2I8OemEeWj7ZPL8JeBTQ"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Pn3XEOemEeWj7ZPL8JeBTQ" value="1"/>
           </ownedAttribute>
@@ -96,7 +96,7 @@
             <general xmi:type="uml:Stereotype" href="pathmap://DAM_PROFILES/DAM.profile.uml#_fdgTgOP9EeKmVK0_L5xJcQ"/>
           </generalization>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_Yphk0OemEeWj7ZPL8JeBTQ" name="rate">
-            <type xmi:type="uml:DataType" href="pathmap://Papyrus_PROFILES/MARTE_Library.library.uml#_UDZSQBFSEdyUJeMeN__D-A"/>
+            <type xmi:type="uml:DataType" href="pathmap://Papyrus_LIBRARIES/MARTE_Library.library.uml#_UDZSQBFSEdyUJeMeN__D-A"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dv7d8OemEeWj7ZPL8JeBTQ"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dv9TIOemEeWj7ZPL8JeBTQ" value="1"/>
           </ownedAttribute>
@@ -132,7 +132,7 @@
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_57tHYCpmEeaibdPncpUwfA"/>
               <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_57vjoCpmEeaibdPncpUwfA" value="*"/>
             </ownedAttribute>
-            <ownedAttribute xmi:type="uml:Property" xmi:id="_stCmUCppEeaibdPncpUwfA" name="realise"/>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_stCmUCppEeaibdPncpUwfA" name="realise" type="_2HB5kCluEeaibdPncpUwfA"/>
             <ownedAttribute xmi:type="uml:Property" xmi:id="_yUYpUCppEeaibdPncpUwfA" name="produceOutputData" type="_KUZx0ClvEeaibdPncpUwfA">
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1wBpwCppEeaibdPncpUwfA" value="1"/>
               <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1wC34CppEeaibdPncpUwfA" value="*"/>
@@ -209,6 +209,16 @@
           <packagedElement xmi:type="uml:Extension" xmi:id="_DHOXcC5nEeaF_sH3mLTVKg" name="E_CoreData_Class1" memberEnd="_DHOXcS5nEeaF_sH3mLTVKg _DHOXci5nEeaF_sH3mLTVKg">
             <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_DHOXcS5nEeaF_sH3mLTVKg" name="extension_CoreData" type="_KUZx0ClvEeaibdPncpUwfA" aggregation="composite" association="_DHOXcC5nEeaF_sH3mLTVKg"/>
           </packagedElement>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_RPmGoDQVEeaZAvb3skSphQ" name="Interface1"/>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_RYcgoDQVEeaZAvb3skSphQ" name="Interface2"/>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_RYlqkDQVEeaZAvb3skSphQ" name="Interface3"/>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_RaV-EDQVEeaZAvb3skSphQ" name="Interface4"/>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_Ri-8sDQVEeaZAvb3skSphQ" name="Interface5"/>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_RjLxADQVEeaZAvb3skSphQ" name="Interface6"/>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_RkZR8DQVEeaZAvb3skSphQ" name="Interface7"/>
+          <packagedElement xmi:type="uml:Enumeration" xmi:id="_Rr8EYDQVEeaZAvb3skSphQ" name="Enumeration1"/>
+          <packagedElement xmi:type="uml:Enumeration" xmi:id="_RsEnQDQVEeaZAvb3skSphQ" name="Enumeration2"/>
+          <packagedElement xmi:type="uml:Enumeration" xmi:id="_RtduYDQVEeaZAvb3skSphQ" name="Enumeration3"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Profile" xmi:id="_E-ctACpwEeaibdPncpUwfA" name="Storm">
           <packagedElement xmi:type="uml:Stereotype" xmi:id="_PGvysCpwEeaibdPncpUwfA" name="StormBolt">
@@ -217,25 +227,25 @@
               <type xmi:type="uml:DataType" href="pathmap://DAM_PROFILES/DAM_Library.uml#_yBGBwOPBEeKfhZ42b6AKfg"/>
             </ownedAttribute>
             <ownedAttribute xmi:type="uml:Property" xmi:id="_excRACvQEeaY443vSxM6kg" name="d">
-              <type xmi:type="uml:DataType" href="pathmap://Papyrus_PROFILES/MARTE_Library.library.uml#_Yq-MQBFQEdyUJeMeN__D-A"/>
+              <type xmi:type="uml:DataType" href="pathmap://Papyrus_LIBRARIES/MARTE_Library.library.uml#_Yq-MQBFQEdyUJeMeN__D-A"/>
             </ownedAttribute>
             <ownedAttribute xmi:type="uml:Property" xmi:id="_hItDUCvQEeaY443vSxM6kg" name="alpha">
-              <type xmi:type="uml:DataType" href="pathmap://Papyrus_PROFILES/MARTE_Library.library.uml#_Yq-MQBFQEdyUJeMeN__D-A"/>
+              <type xmi:type="uml:DataType" href="pathmap://Papyrus_LIBRARIES/MARTE_Library.library.uml#_Yq-MQBFQEdyUJeMeN__D-A"/>
             </ownedAttribute>
             <ownedAttribute xmi:type="uml:Property" xmi:id="_jRG6QCvQEeaY443vSxM6kg" name="sigma">
-              <type xmi:type="uml:DataType" href="pathmap://Papyrus_PROFILES/MARTE_Library.library.uml#_Yq-MQBFQEdyUJeMeN__D-A"/>
+              <type xmi:type="uml:DataType" href="pathmap://Papyrus_LIBRARIES/MARTE_Library.library.uml#_Yq-MQBFQEdyUJeMeN__D-A"/>
             </ownedAttribute>
             <ownedAttribute xmi:type="uml:Property" xmi:id="_lvlu4CvQEeaY443vSxM6kg" name="minRebootTime">
-              <type xmi:type="uml:DataType" href="pathmap://Papyrus_PROFILES/MARTE_Library.library.uml#_Yq-MQBFQEdyUJeMeN__D-A"/>
+              <type xmi:type="uml:DataType" href="pathmap://Papyrus_LIBRARIES/MARTE_Library.library.uml#_Yq-MQBFQEdyUJeMeN__D-A"/>
             </ownedAttribute>
             <ownedAttribute xmi:type="uml:Property" xmi:id="_owhwUCvQEeaY443vSxM6kg" name="maxRebootTime">
-              <type xmi:type="uml:DataType" href="pathmap://Papyrus_PROFILES/MARTE_Library.library.uml#_Yq-MQBFQEdyUJeMeN__D-A"/>
+              <type xmi:type="uml:DataType" href="pathmap://Papyrus_LIBRARIES/MARTE_Library.library.uml#_Yq-MQBFQEdyUJeMeN__D-A"/>
             </ownedAttribute>
           </packagedElement>
           <packagedElement xmi:type="uml:Stereotype" xmi:id="_PlTW8CpwEeaibdPncpUwfA" name="StormSpout">
             <generalization xmi:type="uml:Generalization" xmi:id="_Z8nJACpwEeaibdPncpUwfA" general="_9mn3oCluEeaibdPncpUwfA"/>
             <ownedAttribute xmi:type="uml:Property" xmi:id="_tZ4hECvQEeaY443vSxM6kg" name="avgEmitRate">
-              <type xmi:type="uml:DataType" href="pathmap://Papyrus_PROFILES/MARTE_Library.library.uml#_Yq-MQBFQEdyUJeMeN__D-A"/>
+              <type xmi:type="uml:DataType" href="pathmap://Papyrus_LIBRARIES/MARTE_Library.library.uml#_Yq-MQBFQEdyUJeMeN__D-A"/>
             </ownedAttribute>
           </packagedElement>
           <packagedElement xmi:type="uml:Stereotype" xmi:id="_QFHfcCpwEeaibdPncpUwfA" name="StormScenarioTopology">
