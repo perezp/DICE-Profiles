@@ -209,16 +209,6 @@
           <packagedElement xmi:type="uml:Extension" xmi:id="_DHOXcC5nEeaF_sH3mLTVKg" name="E_CoreData_Class1" memberEnd="_DHOXcS5nEeaF_sH3mLTVKg _DHOXci5nEeaF_sH3mLTVKg">
             <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_DHOXcS5nEeaF_sH3mLTVKg" name="extension_CoreData" type="_KUZx0ClvEeaibdPncpUwfA" aggregation="composite" association="_DHOXcC5nEeaF_sH3mLTVKg"/>
           </packagedElement>
-          <packagedElement xmi:type="uml:Interface" xmi:id="_RPmGoDQVEeaZAvb3skSphQ" name="Interface1"/>
-          <packagedElement xmi:type="uml:Interface" xmi:id="_RYcgoDQVEeaZAvb3skSphQ" name="Interface2"/>
-          <packagedElement xmi:type="uml:Interface" xmi:id="_RYlqkDQVEeaZAvb3skSphQ" name="Interface3"/>
-          <packagedElement xmi:type="uml:Interface" xmi:id="_RaV-EDQVEeaZAvb3skSphQ" name="Interface4"/>
-          <packagedElement xmi:type="uml:Interface" xmi:id="_Ri-8sDQVEeaZAvb3skSphQ" name="Interface5"/>
-          <packagedElement xmi:type="uml:Interface" xmi:id="_RjLxADQVEeaZAvb3skSphQ" name="Interface6"/>
-          <packagedElement xmi:type="uml:Interface" xmi:id="_RkZR8DQVEeaZAvb3skSphQ" name="Interface7"/>
-          <packagedElement xmi:type="uml:Enumeration" xmi:id="_Rr8EYDQVEeaZAvb3skSphQ" name="Enumeration1"/>
-          <packagedElement xmi:type="uml:Enumeration" xmi:id="_RsEnQDQVEeaZAvb3skSphQ" name="Enumeration2"/>
-          <packagedElement xmi:type="uml:Enumeration" xmi:id="_RtduYDQVEeaZAvb3skSphQ" name="Enumeration3"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Profile" xmi:id="_E-ctACpwEeaibdPncpUwfA" name="Storm">
           <packagedElement xmi:type="uml:Stereotype" xmi:id="_PGvysCpwEeaibdPncpUwfA" name="StormBolt">
@@ -380,12 +370,6 @@
         <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA"/>
       </eAnnotations>
       <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Ecore.profile.uml#_0"/>
-    </profileApplication>
-    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_TBGOoOekEeWj7ZPL8JeBTQ">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_TBGOoeekEeWj7ZPL8JeBTQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
-        <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
-      </eAnnotations>
-      <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
     </profileApplication>
   </uml:Profile>
   <Ecore:EPackage xmi:id="_m6y98OeZEeWj7ZPL8JeBTQ" base_Package="_MPXosOePEeWj7ZPL8JeBTQ" packageName="DICE" nsPrefix="DICE" nsURI="http://es.unizar.disco.dice/profiles/DICE/1.0" basePackage="es.unizar.disco.dice"/>
