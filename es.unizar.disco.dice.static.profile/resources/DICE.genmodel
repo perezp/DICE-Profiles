@@ -37,36 +37,182 @@
         basePackage="es.unizar.disco.dice" disposableProviderFactory="true" ecorePackage="DICE.ecore#//DICE_UML_Extensions">
       <nestedGenPackages xsi:type="genmodel:GenPackage" prefix="DPIM" basePackage="es.unizar.disco.dice"
           disposableProviderFactory="true" ecorePackage="DICE.ecore#//DICE_UML_Extensions/DPIM">
-        <genClasses xsi:type="genmodel:GenClass" ecoreClass="DICE.ecore#//DICE_UML_Extensions/DPIM/DiceComponent">
-          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DPIM/DiceComponent/throughput"/>
-          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DPIM/DiceComponent/type"/>
-          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DPIM/DiceComponent/targetTech"/>
-          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DPIM/DiceComponent/procType"/>
+        <genClasses xsi:type="genmodel:GenClass" ecoreClass="DICE.ecore#//DICE_UML_Extensions/DPIM/DpimComputationNode">
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DPIM/DpimComputationNode/throughput"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DPIM/DpimComputationNode/type"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DPIM/DpimComputationNode/targetTech"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DPIM/DpimComputationNode/procType"/>
         </genClasses>
-        <genClasses xsi:type="genmodel:GenClass" ecoreClass="DICE.ecore#//DICE_UML_Extensions/DPIM/DiceFilterNode">
-          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DPIM/DiceFilterNode/inputRatio"/>
-          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DPIM/DiceFilterNode/outputRation"/>
+        <genClasses xsi:type="genmodel:GenClass" ecoreClass="DICE.ecore#//DICE_UML_Extensions/DPIM/DpimFilterNode">
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DPIM/DpimFilterNode/inputRatio"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DPIM/DpimFilterNode/outputRation"/>
         </genClasses>
-        <genClasses xsi:type="genmodel:GenClass" ecoreClass="DICE.ecore#//DICE_UML_Extensions/DPIM/DiceVisualizationNode"/>
-        <genClasses xsi:type="genmodel:GenClass" ecoreClass="DICE.ecore#//DICE_UML_Extensions/DPIM/DiceSourceNode">
+        <genClasses xsi:type="genmodel:GenClass" ecoreClass="DICE.ecore#//DICE_UML_Extensions/DPIM/DpimVisualizationNode"/>
+        <genClasses xsi:type="genmodel:GenClass" ecoreClass="DICE.ecore#//DICE_UML_Extensions/DPIM/DpimSourceNode">
           <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
-              createChild="true" ecoreFeature="ecore:EReference DICE.ecore#//DICE_UML_Extensions/DPIM/DiceSourceNode/store"/>
+              createChild="true" ecoreFeature="ecore:EReference DICE.ecore#//DICE_UML_Extensions/DPIM/DpimSourceNode/store"/>
           <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
-              createChild="true" ecoreFeature="ecore:EReference DICE.ecore#//DICE_UML_Extensions/DPIM/DiceSourceNode/provides"/>
-          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DPIM/DiceSourceNode/sourceType"/>
-          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DPIM/DiceSourceNode/rate"/>
+              createChild="true" ecoreFeature="ecore:EReference DICE.ecore#//DICE_UML_Extensions/DPIM/DpimSourceNode/provides"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DPIM/DpimSourceNode/sourceType"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DPIM/DpimSourceNode/rate"/>
         </genClasses>
-        <genClasses xsi:type="genmodel:GenClass" ecoreClass="DICE.ecore#//DICE_UML_Extensions/DPIM/DiceStorageResource">
+        <genClasses xsi:type="genmodel:GenClass" ecoreClass="DICE.ecore#//DICE_UML_Extensions/DPIM/DpimStorageNode">
           <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
-              createChild="true" ecoreFeature="ecore:EReference DICE.ecore#//DICE_UML_Extensions/DPIM/DiceStorageResource/respondsTo"/>
-          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DPIM/DiceStorageResource/crudRate"/>
+              createChild="true" ecoreFeature="ecore:EReference DICE.ecore#//DICE_UML_Extensions/DPIM/DpimStorageNode/respondsTo"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DPIM/DpimStorageNode/crudRate"/>
         </genClasses>
-        <genClasses xsi:type="genmodel:GenClass" ecoreClass="DICE.ecore#//DICE_UML_Extensions/DPIM/DiceChannel">
-          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DPIM/DiceChannel/rate"/>
-          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DPIM/DiceChannel/messageBroker"/>
+        <genClasses xsi:type="genmodel:GenClass" ecoreClass="DICE.ecore#//DICE_UML_Extensions/DPIM/DpimChannel">
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DPIM/DpimChannel/rate"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DPIM/DpimChannel/messageBroker"/>
           <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
-              createChild="true" ecoreFeature="ecore:EReference DICE.ecore#//DICE_UML_Extensions/DPIM/DiceChannel/channelDescription"/>
+              createChild="true" ecoreFeature="ecore:EReference DICE.ecore#//DICE_UML_Extensions/DPIM/DpimChannel/channelDescription"/>
         </genClasses>
+        <genClasses xsi:type="genmodel:GenClass" ecoreClass="DICE.ecore#//DICE_UML_Extensions/DPIM/DpimScenario"/>
+      </nestedGenPackages>
+      <nestedGenPackages xsi:type="genmodel:GenPackage" prefix="DTSM" basePackage="es.unizar.disco.dice"
+          disposableProviderFactory="true" ecorePackage="DICE.ecore#//DICE_UML_Extensions/DTSM">
+        <nestedGenPackages xsi:type="genmodel:GenPackage" prefix="Core" basePackage="es.unizar.disco.dice.dtsm"
+            disposableProviderFactory="true" ecorePackage="DICE.ecore#//DICE_UML_Extensions/DTSM/Core">
+          <genClasses xsi:type="genmodel:GenClass" ecoreClass="DICE.ecore#//DICE_UML_Extensions/DTSM/Core/CoreComputationNode">
+            <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+                propertySortChoices="true" ecoreFeature="ecore:EReference DICE.ecore#//DICE_UML_Extensions/DTSM/Core/CoreComputationNode/hasSuccessor"/>
+            <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+                propertySortChoices="true" ecoreFeature="ecore:EReference DICE.ecore#//DICE_UML_Extensions/DTSM/Core/CoreComputationNode/processInputData"/>
+            <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+                propertySortChoices="true" ecoreFeature="ecore:EReference DICE.ecore#//DICE_UML_Extensions/DTSM/Core/CoreComputationNode/realise"/>
+            <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+                propertySortChoices="true" ecoreFeature="ecore:EReference DICE.ecore#//DICE_UML_Extensions/DTSM/Core/CoreComputationNode/produceOutputData"/>
+          </genClasses>
+          <genClasses xsi:type="genmodel:GenClass" ecoreClass="DICE.ecore#//DICE_UML_Extensions/DTSM/Core/CoreData">
+            <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+                propertySortChoices="true" ecoreFeature="ecore:EReference DICE.ecore#//DICE_UML_Extensions/DTSM/Core/CoreData/location"/>
+            <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+                createChild="true" ecoreFeature="ecore:EReference DICE.ecore#//DICE_UML_Extensions/DTSM/Core/CoreData/hasSpecification"/>
+            <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+                createChild="true" ecoreFeature="ecore:EReference DICE.ecore#//DICE_UML_Extensions/DTSM/Core/CoreData/hasVolume"/>
+            <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+                propertySortChoices="true" ecoreFeature="ecore:EReference DICE.ecore#//DICE_UML_Extensions/DTSM/Core/CoreData/base_Class"/>
+          </genClasses>
+          <genClasses xsi:type="genmodel:GenClass" ecoreClass="DICE.ecore#//DICE_UML_Extensions/DTSM/Core/CoreDataSource"/>
+          <genClasses xsi:type="genmodel:GenClass" ecoreClass="DICE.ecore#//DICE_UML_Extensions/DTSM/Core/CoreDirectAcyclicGraph">
+            <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+                propertySortChoices="true" ecoreFeature="ecore:EReference DICE.ecore#//DICE_UML_Extensions/DTSM/Core/CoreDirectAcyclicGraph/hasSourceNode"/>
+            <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+                propertySortChoices="true" ecoreFeature="ecore:EReference DICE.ecore#//DICE_UML_Extensions/DTSM/Core/CoreDirectAcyclicGraph/base_Class"/>
+          </genClasses>
+          <genClasses xsi:type="genmodel:GenClass" ecoreClass="DICE.ecore#//DICE_UML_Extensions/DTSM/Core/CoreDAGSourceNode">
+            <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+                propertySortChoices="true" ecoreFeature="ecore:EReference DICE.ecore#//DICE_UML_Extensions/DTSM/Core/CoreDAGSourceNode/readFrom"/>
+          </genClasses>
+          <genClasses xsi:type="genmodel:GenClass" ecoreClass="DICE.ecore#//DICE_UML_Extensions/DTSM/Core/CoreDAGNode">
+            <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DTSM/Core/CoreDAGNode/parallelism"/>
+            <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DTSM/Core/CoreDAGNode/operation"/>
+            <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+                propertySortChoices="true" ecoreFeature="ecore:EReference DICE.ecore#//DICE_UML_Extensions/DTSM/Core/CoreDAGNode/hasSuccessor"/>
+          </genClasses>
+          <genClasses xsi:type="genmodel:GenClass" ecoreClass="DICE.ecore#//DICE_UML_Extensions/DTSM/Core/CoreStorageNode">
+            <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DTSM/Core/CoreStorageNode/database"/>
+            <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DTSM/Core/CoreStorageNode/user"/>
+            <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DTSM/Core/CoreStorageNode/password"/>
+          </genClasses>
+        </nestedGenPackages>
+        <nestedGenPackages xsi:type="genmodel:GenPackage" prefix="Storm" basePackage="es.unizar.disco.dice.dtsm"
+            disposableProviderFactory="true" ecorePackage="DICE.ecore#//DICE_UML_Extensions/DTSM/Storm">
+          <genClasses xsi:type="genmodel:GenClass" ecoreClass="DICE.ecore#//DICE_UML_Extensions/DTSM/Storm/StormBolt">
+            <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DTSM/Storm/StormBolt/d"/>
+            <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DTSM/Storm/StormBolt/alpha"/>
+            <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DTSM/Storm/StormBolt/sigma"/>
+            <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DTSM/Storm/StormBolt/minRebootTime"/>
+            <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DTSM/Storm/StormBolt/maxRebootTime"/>
+          </genClasses>
+          <genClasses xsi:type="genmodel:GenClass" ecoreClass="DICE.ecore#//DICE_UML_Extensions/DTSM/Storm/StormSpout">
+            <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DTSM/Storm/StormSpout/avgEmitRate"/>
+          </genClasses>
+          <genClasses xsi:type="genmodel:GenClass" ecoreClass="DICE.ecore#//DICE_UML_Extensions/DTSM/Storm/StormScenarioTopology">
+            <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DTSM/Storm/StormScenarioTopology/queueThreshold"/>
+            <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DTSM/Storm/StormScenarioTopology/maxTaskParallelism"/>
+            <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DTSM/Storm/StormScenarioTopology/maxSpoutPending"/>
+            <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DTSM/Storm/StormScenarioTopology/isReliable"/>
+          </genClasses>
+          <genClasses xsi:type="genmodel:GenClass" ecoreClass="DICE.ecore#//DICE_UML_Extensions/DTSM/Storm/StormApplication">
+            <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+                propertySortChoices="true" ecoreFeature="ecore:EReference DICE.ecore#//DICE_UML_Extensions/DTSM/Storm/StormApplication/hasMasterNode"/>
+            <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+                propertySortChoices="true" ecoreFeature="ecore:EReference DICE.ecore#//DICE_UML_Extensions/DTSM/Storm/StormApplication/hasSlaveNode"/>
+            <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+                propertySortChoices="true" ecoreFeature="ecore:EReference DICE.ecore#//DICE_UML_Extensions/DTSM/Storm/StormApplication/dependsOnZookeeper"/>
+          </genClasses>
+          <genClasses xsi:type="genmodel:GenClass" ecoreClass="DICE.ecore#//DICE_UML_Extensions/DTSM/Storm/Nimbus">
+            <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DTSM/Storm/Nimbus/taskTimeout"/>
+            <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DTSM/Storm/Nimbus/supervisorTimeout"/>
+            <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DTSM/Storm/Nimbus/monitorFrequency"/>
+            <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+                propertySortChoices="true" ecoreFeature="ecore:EReference DICE.ecore#//DICE_UML_Extensions/DTSM/Storm/Nimbus/base_Classifier"/>
+          </genClasses>
+          <genClasses xsi:type="genmodel:GenClass" ecoreClass="DICE.ecore#//DICE_UML_Extensions/DTSM/Storm/Supervisor">
+            <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DTSM/Storm/Supervisor/monitroFrequency"/>
+            <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DTSM/Storm/Supervisor/workerSatrtTimeout"/>
+            <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DTSM/Storm/Supervisor/workerTimeout"/>
+            <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DTSM/Storm/Supervisor/heartbrackFrequency"/>
+            <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DTSM/Storm/Supervisor/memoryCapacity"/>
+            <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DTSM/Storm/Supervisor/cpuCapacity"/>
+            <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+                propertySortChoices="true" ecoreFeature="ecore:EReference DICE.ecore#//DICE_UML_Extensions/DTSM/Storm/Supervisor/base_Classifier"/>
+          </genClasses>
+          <genClasses xsi:type="genmodel:GenClass" ecoreClass="DICE.ecore#//DICE_UML_Extensions/DTSM/Storm/Zookeeper">
+            <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DTSM/Storm/Zookeeper/sessionTimeout"/>
+            <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DTSM/Storm/Zookeeper/connectionTimeout"/>
+            <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DTSM/Storm/Zookeeper/retryTime"/>
+            <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DTSM/Storm/Zookeeper/retryInterval"/>
+            <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DTSM/Storm/Zookeeper/user"/>
+            <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DTSM/Storm/Zookeeper/password"/>
+            <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+                propertySortChoices="true" ecoreFeature="ecore:EReference DICE.ecore#//DICE_UML_Extensions/DTSM/Storm/Zookeeper/base_Classifier"/>
+          </genClasses>
+          <genClasses xsi:type="genmodel:GenClass" ecoreClass="DICE.ecore#//DICE_UML_Extensions/DTSM/Storm/StormStreamStep">
+            <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DTSM/Storm/StormStreamStep/numTuples"/>
+            <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DTSM/Storm/StormStreamStep/grouping"/>
+          </genClasses>
+        </nestedGenPackages>
+        <nestedGenPackages xsi:type="genmodel:GenPackage" prefix="Hadoop" basePackage="es.unizar.disco.dice.dtsm"
+            disposableProviderFactory="true" ecorePackage="DICE.ecore#//DICE_UML_Extensions/DTSM/Hadoop">
+          <genClasses xsi:type="genmodel:GenClass" ecoreClass="DICE.ecore#//DICE_UML_Extensions/DTSM/Hadoop/HadoopMapReduceJob">
+            <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+                propertySortChoices="true" ecoreFeature="ecore:EReference DICE.ecore#//DICE_UML_Extensions/DTSM/Hadoop/HadoopMapReduceJob/mapResucePhases"/>
+            <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+                propertySortChoices="true" ecoreFeature="ecore:EReference DICE.ecore#//DICE_UML_Extensions/DTSM/Hadoop/HadoopMapReduceJob/base_Classifier"/>
+          </genClasses>
+          <genClasses xsi:type="genmodel:GenClass" ecoreClass="DICE.ecore#//DICE_UML_Extensions/DTSM/Hadoop/HadoopMapReducePhase">
+            <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+                propertySortChoices="true" ecoreFeature="ecore:EReference DICE.ecore#//DICE_UML_Extensions/DTSM/Hadoop/HadoopMapReducePhase/hasMap"/>
+            <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+                propertySortChoices="true" ecoreFeature="ecore:EReference DICE.ecore#//DICE_UML_Extensions/DTSM/Hadoop/HadoopMapReducePhase/hasReduce"/>
+            <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+                propertySortChoices="true" ecoreFeature="ecore:EReference DICE.ecore#//DICE_UML_Extensions/DTSM/Hadoop/HadoopMapReducePhase/output"/>
+            <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+                propertySortChoices="true" ecoreFeature="ecore:EReference DICE.ecore#//DICE_UML_Extensions/DTSM/Hadoop/HadoopMapReducePhase/base_Classifier"/>
+          </genClasses>
+          <genClasses xsi:type="genmodel:GenClass" ecoreClass="DICE.ecore#//DICE_UML_Extensions/DTSM/Hadoop/HadoopMap">
+            <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DTSM/Hadoop/HadoopMap/type"/>
+          </genClasses>
+          <genClasses xsi:type="genmodel:GenClass" ecoreClass="DICE.ecore#//DICE_UML_Extensions/DTSM/Hadoop/HadoopOperation">
+            <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DTSM/Hadoop/HadoopOperation/parallelism"/>
+            <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DTSM/Hadoop/HadoopOperation/nTasks"/>
+          </genClasses>
+          <genClasses xsi:type="genmodel:GenClass" ecoreClass="DICE.ecore#//DICE_UML_Extensions/DTSM/Hadoop/HadoopReduce">
+            <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DTSM/Hadoop/HadoopReduce/type"/>
+          </genClasses>
+          <genClasses xsi:type="genmodel:GenClass" ecoreClass="DICE.ecore#//DICE_UML_Extensions/DTSM/Hadoop/HadoopScenario">
+            <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DTSM/Hadoop/HadoopScenario/jobSchedule"/>
+          </genClasses>
+          <genClasses xsi:type="genmodel:GenClass" ecoreClass="DICE.ecore#//DICE_UML_Extensions/DTSM/Hadoop/HadoopWorkloadEvent">
+            <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DTSM/Hadoop/HadoopWorkloadEvent/hadoopPopulation"/>
+            <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DTSM/Hadoop/HadoopWorkloadEvent/hadoopExtDelay"/>
+          </genClasses>
+          <genClasses xsi:type="genmodel:GenClass" ecoreClass="DICE.ecore#//DICE_UML_Extensions/DTSM/Hadoop/HadoopComputationNode">
+            <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DTSM/Hadoop/HadoopComputationNode/nCores"/>
+          </genClasses>
+        </nestedGenPackages>
       </nestedGenPackages>
     </nestedGenPackages>
   </genPackages>
@@ -94,19 +240,24 @@
     <nestedGenPackages xsi:type="genmodel:GenPackage" prefix="Basic_DICE_Types" basePackage="es.unizar.disco.dice"
         disposableProviderFactory="true" ecorePackage="DICE_Library.ecore#//Basic_DICE_Types">
       <nestedGenPackages xsi:type="genmodel:GenPackage" prefix="Basic_Data_Types"
-          basePackage="es.unizar.disco.dice" disposableProviderFactory="true" ecorePackage="DICE_Library.ecore#//Basic_DICE_Types/Basic_Data_Types"/>
+          basePackage="es.unizar.disco.dice" disposableProviderFactory="true" ecorePackage="DICE_Library.ecore#//Basic_DICE_Types/Basic_Data_Types">
+        <genClasses xsi:type="genmodel:GenClass" ecoreClass="DICE_Library.ecore#//Basic_DICE_Types/Basic_Data_Types/NFP_Privacy">
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE_Library.ecore#//Basic_DICE_Types/Basic_Data_Types/NFP_Privacy/expr"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE_Library.ecore#//Basic_DICE_Types/Basic_Data_Types/NFP_Privacy/source"/>
+        </genClasses>
+      </nestedGenPackages>
       <nestedGenPackages xsi:type="genmodel:GenPackage" prefix="Basic_Enumeration_Types"
           basePackage="es.unizar.disco.dice" disposableProviderFactory="true" ecorePackage="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types">
         <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/RefType">
-          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/RefType/NoSQL"/>
-          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/RefType/ER"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/RefType/noSql"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/RefType/entityRelationship"/>
         </genEnums>
         <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/RefDataFormatType">
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/RefDataFormatType/json"/>
           <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/RefDataFormatType/RDF"/>
-          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/RefDataFormatType/JSON"/>
         </genEnums>
         <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/TechType">
-          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/TechType/RDD"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/TechType/rdd"/>
         </genEnums>
         <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/ProcessingType">
           <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/ProcessingType/synch"/>
@@ -116,6 +267,38 @@
         <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/SourceType">
           <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/SourceType/sharedStorage"/>
           <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/SourceType/dataStream"/>
+        </genEnums>
+        <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/ConstraintType">
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/ConstraintType/less"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/ConstraintType/lessEqual"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/ConstraintType/equal"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/ConstraintType/greaterEqual"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/ConstraintType/greater"/>
+        </genEnums>
+        <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/WorkflowOperation">
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/WorkflowOperation/groupBy"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/WorkflowOperation/sum"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/WorkflowOperation/count"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/WorkflowOperation/split"/>
+        </genEnums>
+        <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/MapType">
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/MapType/regexMapper"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/MapType/fieldSelectionMapper"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/MapType/chainMapper"/>
+        </genEnums>
+        <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/ReduceType">
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/ReduceType/fieldSelectionReducer"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/ReduceType/chainReducer"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/ReduceType/intSumReducer"/>
+        </genEnums>
+        <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/StreamPolicy">
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/StreamPolicy/all"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/StreamPolicy/shuffle"/>
+        </genEnums>
+        <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/Scheduling">
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/Scheduling/capacity"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/Scheduling/fifo"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/Scheduling/fair"/>
         </genEnums>
         <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/ComputationType">
           <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/ComputationType/distributed"/>

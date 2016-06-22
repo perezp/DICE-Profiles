@@ -19,54 +19,54 @@ import org.eclipse.emf.common.util.Enumerator;
  */
 public enum RefType implements Enumerator {
 	/**
-	 * The '<em><b>No SQL</b></em>' literal object.
+	 * The '<em><b>No Sql</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #NO_SQL_VALUE
 	 * @generated
 	 * @ordered
 	 */
-	NO_SQL(0, "NoSQL", "NoSQL"),
+	NO_SQL(0, "noSql", "noSql"),
 
 	/**
-	 * The '<em><b>ER</b></em>' literal object.
+	 * The '<em><b>Entity Relationship</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #ER_VALUE
+	 * @see #ENTITY_RELATIONSHIP_VALUE
 	 * @generated
 	 * @ordered
 	 */
-	ER(1, "ER", "ER");
+	ENTITY_RELATIONSHIP(1, "entityRelationship", "entityRelationship");
 
 	/**
-	 * The '<em><b>No SQL</b></em>' literal value.
+	 * The '<em><b>No Sql</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of '<em><b>No SQL</b></em>' literal object isn't clear,
+	 * If the meaning of '<em><b>No Sql</b></em>' literal object isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #NO_SQL
-	 * @model name="NoSQL"
+	 * @model name="noSql"
 	 * @generated
 	 * @ordered
 	 */
 	public static final int NO_SQL_VALUE = 0;
 
 	/**
-	 * The '<em><b>ER</b></em>' literal value.
+	 * The '<em><b>Entity Relationship</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of '<em><b>ER</b></em>' literal object isn't clear,
+	 * If the meaning of '<em><b>Entity Relationship</b></em>' literal object isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @see #ER
-	 * @model
+	 * @see #ENTITY_RELATIONSHIP
+	 * @model name="entityRelationship"
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ER_VALUE = 1;
+	public static final int ENTITY_RELATIONSHIP_VALUE = 1;
 
 	/**
 	 * An array of all the '<em><b>Ref Type</b></em>' enumerators.
@@ -77,7 +77,7 @@ public enum RefType implements Enumerator {
 	private static final RefType[] VALUES_ARRAY =
 		new RefType[] {
 			NO_SQL,
-			ER,
+			ENTITY_RELATIONSHIP,
 		};
 
 	/**
@@ -135,7 +135,7 @@ public enum RefType implements Enumerator {
 	public static RefType get(int value) {
 		switch (value) {
 			case NO_SQL_VALUE: return NO_SQL;
-			case ER_VALUE: return ER;
+			case ENTITY_RELATIONSHIP_VALUE: return ENTITY_RELATIONSHIP;
 		}
 		return null;
 	}

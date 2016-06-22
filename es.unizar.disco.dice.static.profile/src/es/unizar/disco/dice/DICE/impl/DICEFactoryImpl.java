@@ -71,7 +71,7 @@ public class DICEFactoryImpl extends EFactoryImpl implements DICEFactory {
 	public Object createFromString(EDataType eDataType, String initialValue) {
 		switch (eDataType.getClassifierID()) {
 			case DICEPackage.DUMMY:
-				return createdummyFromString(eDataType, initialValue);
+				return createDummyFromString(eDataType, initialValue);
 			default:
 				throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
 		}
@@ -86,7 +86,7 @@ public class DICEFactoryImpl extends EFactoryImpl implements DICEFactory {
 	public String convertToString(EDataType eDataType, Object instanceValue) {
 		switch (eDataType.getClassifierID()) {
 			case DICEPackage.DUMMY:
-				return convertdummyToString(eDataType, instanceValue);
+				return convertDummyToString(eDataType, instanceValue);
 			default:
 				throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
 		}
@@ -97,8 +97,8 @@ public class DICEFactoryImpl extends EFactoryImpl implements DICEFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public dummy createdummyFromString(EDataType eDataType, String initialValue) {
-		dummy result = dummy.get(initialValue);
+	public Dummy createDummyFromString(EDataType eDataType, String initialValue) {
+		Dummy result = Dummy.get(initialValue);
 		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
 		return result;
 	}
@@ -108,7 +108,7 @@ public class DICEFactoryImpl extends EFactoryImpl implements DICEFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertdummyToString(EDataType eDataType, Object instanceValue) {
+	public String convertDummyToString(EDataType eDataType, Object instanceValue) {
 		return instanceValue == null ? null : instanceValue.toString();
 	}
 

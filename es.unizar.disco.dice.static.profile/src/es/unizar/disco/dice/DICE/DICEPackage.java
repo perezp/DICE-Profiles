@@ -54,25 +54,25 @@ public interface DICEPackage extends EPackage {
 	DICEPackage eINSTANCE = es.unizar.disco.dice.DICE.impl.DICEPackageImpl.init();
 
 	/**
-	 * The meta object id for the '{@link es.unizar.disco.dice.DICE.dummy <em>dummy</em>}' enum.
+	 * The meta object id for the '{@link es.unizar.disco.dice.DICE.Dummy <em>Dummy</em>}' enum.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see es.unizar.disco.dice.DICE.dummy
-	 * @see es.unizar.disco.dice.DICE.impl.DICEPackageImpl#getdummy()
+	 * @see es.unizar.disco.dice.DICE.Dummy
+	 * @see es.unizar.disco.dice.DICE.impl.DICEPackageImpl#getDummy()
 	 * @generated
 	 */
 	int DUMMY = 0;
 
 
 	/**
-	 * Returns the meta object for enum '{@link es.unizar.disco.dice.DICE.dummy <em>dummy</em>}'.
+	 * Returns the meta object for enum '{@link es.unizar.disco.dice.DICE.Dummy <em>Dummy</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for enum '<em>dummy</em>'.
-	 * @see es.unizar.disco.dice.DICE.dummy
+	 * @return the meta object for enum '<em>Dummy</em>'.
+	 * @see es.unizar.disco.dice.DICE.Dummy
 	 * @generated
 	 */
-	EEnum getdummy();
+	EEnum getDummy();
 
 	/**
 	 * Returns the factory that creates the instances of the model.
@@ -97,14 +97,14 @@ public interface DICEPackage extends EPackage {
 	 */
 	interface Literals {
 		/**
-		 * The meta object literal for the '{@link es.unizar.disco.dice.DICE.dummy <em>dummy</em>}' enum.
+		 * The meta object literal for the '{@link es.unizar.disco.dice.DICE.Dummy <em>Dummy</em>}' enum.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see es.unizar.disco.dice.DICE.dummy
-		 * @see es.unizar.disco.dice.DICE.impl.DICEPackageImpl#getdummy()
+		 * @see es.unizar.disco.dice.DICE.Dummy
+		 * @see es.unizar.disco.dice.DICE.impl.DICEPackageImpl#getDummy()
 		 * @generated
 		 */
-		EEnum DUMMY = eINSTANCE.getdummy();
+		EEnum DUMMY = eINSTANCE.getDummy();
 
 	}
 

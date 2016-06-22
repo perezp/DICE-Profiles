@@ -8,24 +8,42 @@ import com.masdes.dam.Complex_Data_Types.Complex_Data_TypesPackage;
 
 import com.masdes.dam.DAM.DAMPackage;
 
+import es.unizar.disco.dice.Basic_Data_Types.impl.Basic_Data_TypesPackageImpl;
+
 import es.unizar.disco.dice.Basic_Enumeration_Types.Basic_Enumeration_TypesFactory;
 import es.unizar.disco.dice.Basic_Enumeration_Types.Basic_Enumeration_TypesPackage;
 import es.unizar.disco.dice.Basic_Enumeration_Types.ComputationType;
+import es.unizar.disco.dice.Basic_Enumeration_Types.ConstraintType;
+import es.unizar.disco.dice.Basic_Enumeration_Types.MapType;
 import es.unizar.disco.dice.Basic_Enumeration_Types.ProcessingType;
+import es.unizar.disco.dice.Basic_Enumeration_Types.ReduceType;
 import es.unizar.disco.dice.Basic_Enumeration_Types.RefDataFormatType;
 import es.unizar.disco.dice.Basic_Enumeration_Types.RefType;
+import es.unizar.disco.dice.Basic_Enumeration_Types.Scheduling;
 import es.unizar.disco.dice.Basic_Enumeration_Types.SourceType;
+import es.unizar.disco.dice.Basic_Enumeration_Types.StreamPolicy;
 import es.unizar.disco.dice.Basic_Enumeration_Types.TechType;
+import es.unizar.disco.dice.Basic_Enumeration_Types.WorkflowOperation;
 
 import es.unizar.disco.dice.Complex_Data_Types.impl.Complex_Data_TypesPackageImpl;
 
 import es.unizar.disco.dice.DICE.DICEPackage;
-
 import es.unizar.disco.dice.DICE.impl.DICEPackageImpl;
-
 import es.unizar.disco.dice.DPIM.DPIMPackage;
 
 import es.unizar.disco.dice.DPIM.impl.DPIMPackageImpl;
+
+import es.unizar.disco.dice.dtsm.Core.CorePackage;
+
+import es.unizar.disco.dice.dtsm.Core.impl.CorePackageImpl;
+
+import es.unizar.disco.dice.dtsm.Hadoop.HadoopPackage;
+
+import es.unizar.disco.dice.dtsm.Hadoop.impl.HadoopPackageImpl;
+
+import es.unizar.disco.dice.dtsm.Storm.StormPackage;
+
+import es.unizar.disco.dice.dtsm.Storm.impl.StormPackageImpl;
 
 import org.eclipse.emf.ecore.EEnum;
 import org.eclipse.emf.ecore.EPackage;
@@ -73,6 +91,48 @@ public class Basic_Enumeration_TypesPackageImpl extends EPackageImpl implements 
 	 * @generated
 	 */
 	private EEnum sourceTypeEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum constraintTypeEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum workflowOperationEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum mapTypeEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum reduceTypeEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum streamPolicyEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum schedulingEEnum = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -136,19 +196,31 @@ public class Basic_Enumeration_TypesPackageImpl extends EPackageImpl implements 
 		// Obtain or create and register interdependencies
 		DICEPackageImpl theDICEPackage = (DICEPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(DICEPackage.eNS_URI) instanceof DICEPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(DICEPackage.eNS_URI) : DICEPackage.eINSTANCE);
 		DPIMPackageImpl theDPIMPackage = (DPIMPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(DPIMPackage.eNS_URI) instanceof DPIMPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(DPIMPackage.eNS_URI) : DPIMPackage.eINSTANCE);
+		CorePackageImpl theCorePackage = (CorePackageImpl)(EPackage.Registry.INSTANCE.getEPackage(CorePackage.eNS_URI) instanceof CorePackageImpl ? EPackage.Registry.INSTANCE.getEPackage(CorePackage.eNS_URI) : CorePackage.eINSTANCE);
+		StormPackageImpl theStormPackage = (StormPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(StormPackage.eNS_URI) instanceof StormPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(StormPackage.eNS_URI) : StormPackage.eINSTANCE);
+		HadoopPackageImpl theHadoopPackage = (HadoopPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(HadoopPackage.eNS_URI) instanceof HadoopPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(HadoopPackage.eNS_URI) : HadoopPackage.eINSTANCE);
 		Complex_Data_TypesPackageImpl theComplex_Data_TypesPackage_1 = (Complex_Data_TypesPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(es.unizar.disco.dice.Complex_Data_Types.Complex_Data_TypesPackage.eNS_URI) instanceof Complex_Data_TypesPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(es.unizar.disco.dice.Complex_Data_Types.Complex_Data_TypesPackage.eNS_URI) : es.unizar.disco.dice.Complex_Data_Types.Complex_Data_TypesPackage.eINSTANCE);
+		Basic_Data_TypesPackageImpl theBasic_Data_TypesPackage_1 = (Basic_Data_TypesPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(es.unizar.disco.dice.Basic_Data_Types.Basic_Data_TypesPackage.eNS_URI) instanceof Basic_Data_TypesPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(es.unizar.disco.dice.Basic_Data_Types.Basic_Data_TypesPackage.eNS_URI) : es.unizar.disco.dice.Basic_Data_Types.Basic_Data_TypesPackage.eINSTANCE);
 
 		// Create package meta-data objects
 		theBasic_Enumeration_TypesPackage.createPackageContents();
 		theDICEPackage.createPackageContents();
 		theDPIMPackage.createPackageContents();
+		theCorePackage.createPackageContents();
+		theStormPackage.createPackageContents();
+		theHadoopPackage.createPackageContents();
 		theComplex_Data_TypesPackage_1.createPackageContents();
+		theBasic_Data_TypesPackage_1.createPackageContents();
 
 		// Initialize created meta-data
 		theBasic_Enumeration_TypesPackage.initializePackageContents();
 		theDICEPackage.initializePackageContents();
 		theDPIMPackage.initializePackageContents();
+		theCorePackage.initializePackageContents();
+		theStormPackage.initializePackageContents();
+		theHadoopPackage.initializePackageContents();
 		theComplex_Data_TypesPackage_1.initializePackageContents();
+		theBasic_Data_TypesPackage_1.initializePackageContents();
 
 		// Mark meta-data to indicate it can't be changed
 		theBasic_Enumeration_TypesPackage.freeze();
@@ -209,6 +281,60 @@ public class Basic_Enumeration_TypesPackageImpl extends EPackageImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EEnum getConstraintType() {
+		return constraintTypeEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EEnum getWorkflowOperation() {
+		return workflowOperationEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EEnum getMapType() {
+		return mapTypeEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EEnum getReduceType() {
+		return reduceTypeEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EEnum getStreamPolicy() {
+		return streamPolicyEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EEnum getScheduling() {
+		return schedulingEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EEnum getComputationType() {
 		return computationTypeEEnum;
 	}
@@ -246,6 +372,12 @@ public class Basic_Enumeration_TypesPackageImpl extends EPackageImpl implements 
 		techTypeEEnum = createEEnum(TECH_TYPE);
 		processingTypeEEnum = createEEnum(PROCESSING_TYPE);
 		sourceTypeEEnum = createEEnum(SOURCE_TYPE);
+		constraintTypeEEnum = createEEnum(CONSTRAINT_TYPE);
+		workflowOperationEEnum = createEEnum(WORKFLOW_OPERATION);
+		mapTypeEEnum = createEEnum(MAP_TYPE);
+		reduceTypeEEnum = createEEnum(REDUCE_TYPE);
+		streamPolicyEEnum = createEEnum(STREAM_POLICY);
+		schedulingEEnum = createEEnum(SCHEDULING);
 		computationTypeEEnum = createEEnum(COMPUTATION_TYPE);
 	}
 
@@ -275,11 +407,11 @@ public class Basic_Enumeration_TypesPackageImpl extends EPackageImpl implements 
 		// Initialize enums and add enum literals
 		initEEnum(refTypeEEnum, RefType.class, "RefType");
 		addEEnumLiteral(refTypeEEnum, RefType.NO_SQL);
-		addEEnumLiteral(refTypeEEnum, RefType.ER);
+		addEEnumLiteral(refTypeEEnum, RefType.ENTITY_RELATIONSHIP);
 
 		initEEnum(refDataFormatTypeEEnum, RefDataFormatType.class, "RefDataFormatType");
-		addEEnumLiteral(refDataFormatTypeEEnum, RefDataFormatType.RDF);
 		addEEnumLiteral(refDataFormatTypeEEnum, RefDataFormatType.JSON);
+		addEEnumLiteral(refDataFormatTypeEEnum, RefDataFormatType.RDF);
 
 		initEEnum(techTypeEEnum, TechType.class, "TechType");
 		addEEnumLiteral(techTypeEEnum, TechType.RDD);
@@ -292,6 +424,38 @@ public class Basic_Enumeration_TypesPackageImpl extends EPackageImpl implements 
 		initEEnum(sourceTypeEEnum, SourceType.class, "SourceType");
 		addEEnumLiteral(sourceTypeEEnum, SourceType.SHARED_STORAGE);
 		addEEnumLiteral(sourceTypeEEnum, SourceType.DATA_STREAM);
+
+		initEEnum(constraintTypeEEnum, ConstraintType.class, "ConstraintType");
+		addEEnumLiteral(constraintTypeEEnum, ConstraintType.LESS);
+		addEEnumLiteral(constraintTypeEEnum, ConstraintType.LESS_EQUAL);
+		addEEnumLiteral(constraintTypeEEnum, ConstraintType.EQUAL);
+		addEEnumLiteral(constraintTypeEEnum, ConstraintType.GREATER_EQUAL);
+		addEEnumLiteral(constraintTypeEEnum, ConstraintType.GREATER);
+
+		initEEnum(workflowOperationEEnum, WorkflowOperation.class, "WorkflowOperation");
+		addEEnumLiteral(workflowOperationEEnum, WorkflowOperation.GROUP_BY);
+		addEEnumLiteral(workflowOperationEEnum, WorkflowOperation.SUM);
+		addEEnumLiteral(workflowOperationEEnum, WorkflowOperation.COUNT);
+		addEEnumLiteral(workflowOperationEEnum, WorkflowOperation.SPLIT);
+
+		initEEnum(mapTypeEEnum, MapType.class, "MapType");
+		addEEnumLiteral(mapTypeEEnum, MapType.REGEX_MAPPER);
+		addEEnumLiteral(mapTypeEEnum, MapType.FIELD_SELECTION_MAPPER);
+		addEEnumLiteral(mapTypeEEnum, MapType.CHAIN_MAPPER);
+
+		initEEnum(reduceTypeEEnum, ReduceType.class, "ReduceType");
+		addEEnumLiteral(reduceTypeEEnum, ReduceType.FIELD_SELECTION_REDUCER);
+		addEEnumLiteral(reduceTypeEEnum, ReduceType.CHAIN_REDUCER);
+		addEEnumLiteral(reduceTypeEEnum, ReduceType.INT_SUM_REDUCER);
+
+		initEEnum(streamPolicyEEnum, StreamPolicy.class, "StreamPolicy");
+		addEEnumLiteral(streamPolicyEEnum, StreamPolicy.ALL);
+		addEEnumLiteral(streamPolicyEEnum, StreamPolicy.SHUFFLE);
+
+		initEEnum(schedulingEEnum, Scheduling.class, "Scheduling");
+		addEEnumLiteral(schedulingEEnum, Scheduling.CAPACITY);
+		addEEnumLiteral(schedulingEEnum, Scheduling.FIFO);
+		addEEnumLiteral(schedulingEEnum, Scheduling.FAIR);
 
 		initEEnum(computationTypeEEnum, ComputationType.class, "ComputationType");
 		addEEnumLiteral(computationTypeEEnum, ComputationType.DISTRIBUTED);

@@ -19,25 +19,25 @@ import org.eclipse.emf.common.util.Enumerator;
  */
 public enum TechType implements Enumerator {
 	/**
-	 * The '<em><b>RDD</b></em>' literal object.
+	 * The '<em><b>Rdd</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #RDD_VALUE
 	 * @generated
 	 * @ordered
 	 */
-	RDD(0, "RDD", "RDD");
+	RDD(0, "rdd", "rdd");
 
 	/**
-	 * The '<em><b>RDD</b></em>' literal value.
+	 * The '<em><b>Rdd</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of '<em><b>RDD</b></em>' literal object isn't clear,
+	 * If the meaning of '<em><b>Rdd</b></em>' literal object isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #RDD
-	 * @model
+	 * @model name="rdd"
 	 * @generated
 	 * @ordered
 	 */

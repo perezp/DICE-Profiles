@@ -25,8 +25,40 @@
    <extension point="org.eclipse.emf.ecore.generated_package">
       <!-- @generated DICE -->
       <package
+            uri="http://es.unizar.disco.dice/profiles/DTSM/Core/1.0"
+            class="es.unizar.disco.dice.dtsm.Core.CorePackage"
+            genModel="resources/DICE.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated DICE -->
+      <package
+            uri="http://es.unizar.disco.dice/profiles/DTSM/Storm/1.0"
+            class="es.unizar.disco.dice.dtsm.Storm.StormPackage"
+            genModel="resources/DICE.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated DICE -->
+      <package
+            uri="http://es.unizar.disco.dice/profiles/DTSM/Hadoop/1.0"
+            class="es.unizar.disco.dice.dtsm.Hadoop.HadoopPackage"
+            genModel="resources/DICE.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated DICE -->
+      <package
             uri="http://es.unizar.disco.dice/libraries/Complex_Data_Types/1.0"
             class="es.unizar.disco.dice.Complex_Data_Types.Complex_Data_TypesPackage"
+            genModel="resources/DICE.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated DICE -->
+      <package
+            uri="http://es.unizar.disco.dice/libraries/Basic_Data_Types/1.0"
+            class="es.unizar.disco.dice.Basic_Data_Types.Basic_Data_TypesPackage"
             genModel="resources/DICE.genmodel"/>
    </extension>
 
@@ -87,6 +119,14 @@
       <profile
             location="pathmap://DICE_LIBRARIES/DICE_Library.uml#_yQjxwOeYEeWj7ZPL8JeBTQ"
             uri="http://es.unizar.disco.dice/libraries/Basic_Data_Types/1.0">
+      </profile>
+      <profile
+            location="pathmap://DICE_PROFILES/DICE.profile.uml#_E-ctACpwEeaibdPncpUwfA"
+            uri="http://es.unizar.disco.dice/profiles/DTSM/Storm/1.0">
+      </profile>
+      <profile
+            location="pathmap://DICE_PROFILES/DICE.profile.uml#_lhjuYC5LEeaF_sH3mLTVKg"
+            uri="http://es.unizar.disco.dice/profiles/DTSM/Hadoop/1.0">
       </profile>
    </extension>
 

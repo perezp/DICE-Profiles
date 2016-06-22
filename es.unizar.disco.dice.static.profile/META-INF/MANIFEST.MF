@@ -2,12 +2,15 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: %pluginName
 Bundle-SymbolicName: es.unizar.disco.dice.static.profile;singleton:=true
-Bundle-Version: 0.4.0.qualifier
+Bundle-Version: 0.5.0.qualifier
 Bundle-ClassPath: .
 Bundle-Vendor: %providerName
 Bundle-Localization: plugin
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
-Export-Package: es.unizar.disco.dice.Basic_Enumeration_Types,
+Export-Package: es.unizar.disco.dice.Basic_Data_Types,
+ es.unizar.disco.dice.Basic_Data_Types.impl,
+ es.unizar.disco.dice.Basic_Data_Types.util,
+ es.unizar.disco.dice.Basic_Enumeration_Types,
  es.unizar.disco.dice.Basic_Enumeration_Types.impl,
  es.unizar.disco.dice.Complex_Data_Types,
  es.unizar.disco.dice.Complex_Data_Types.impl,
@@ -16,7 +19,16 @@ Export-Package: es.unizar.disco.dice.Basic_Enumeration_Types,
  es.unizar.disco.dice.DICE.impl,
  es.unizar.disco.dice.DPIM,
  es.unizar.disco.dice.DPIM.impl,
- es.unizar.disco.dice.DPIM.util
+ es.unizar.disco.dice.DPIM.util,
+ es.unizar.disco.dice.dtsm.Core,
+ es.unizar.disco.dice.dtsm.Core.impl,
+ es.unizar.disco.dice.dtsm.Core.util,
+ es.unizar.disco.dice.dtsm.Hadoop,
+ es.unizar.disco.dice.dtsm.Hadoop.impl,
+ es.unizar.disco.dice.dtsm.Hadoop.util,
+ es.unizar.disco.dice.dtsm.Storm,
+ es.unizar.disco.dice.dtsm.Storm.impl,
+ es.unizar.disco.dice.dtsm.Storm.util
 Require-Bundle: org.eclipse.core.runtime,
  org.eclipse.emf.ecore;visibility:=reexport,
  com.masdes.dam.static.profile;visibility:=reexport,

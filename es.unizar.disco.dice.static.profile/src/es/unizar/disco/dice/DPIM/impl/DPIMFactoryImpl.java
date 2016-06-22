@@ -56,12 +56,13 @@ public class DPIMFactoryImpl extends EFactoryImpl implements DPIMFactory {
 	@Override
 	public EObject create(EClass eClass) {
 		switch (eClass.getClassifierID()) {
-			case DPIMPackage.DICE_COMPONENT: return createDiceComponent();
-			case DPIMPackage.DICE_FILTER_NODE: return createDiceFilterNode();
-			case DPIMPackage.DICE_VISUALIZATION_NODE: return createDiceVisualizationNode();
-			case DPIMPackage.DICE_SOURCE_NODE: return createDiceSourceNode();
-			case DPIMPackage.DICE_STORAGE_RESOURCE: return createDiceStorageResource();
-			case DPIMPackage.DICE_CHANNEL: return createDiceChannel();
+			case DPIMPackage.DPIM_COMPUTATION_NODE: return createDpimComputationNode();
+			case DPIMPackage.DPIM_FILTER_NODE: return createDpimFilterNode();
+			case DPIMPackage.DPIM_VISUALIZATION_NODE: return createDpimVisualizationNode();
+			case DPIMPackage.DPIM_SOURCE_NODE: return createDpimSourceNode();
+			case DPIMPackage.DPIM_STORAGE_NODE: return createDpimStorageNode();
+			case DPIMPackage.DPIM_CHANNEL: return createDpimChannel();
+			case DPIMPackage.DPIM_SCENARIO: return createDpimScenario();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -72,9 +73,9 @@ public class DPIMFactoryImpl extends EFactoryImpl implements DPIMFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DiceComponent createDiceComponent() {
-		DiceComponentImpl diceComponent = new DiceComponentImpl();
-		return diceComponent;
+	public DpimComputationNode createDpimComputationNode() {
+		DpimComputationNodeImpl dpimComputationNode = new DpimComputationNodeImpl();
+		return dpimComputationNode;
 	}
 
 	/**
@@ -82,9 +83,9 @@ public class DPIMFactoryImpl extends EFactoryImpl implements DPIMFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DiceFilterNode createDiceFilterNode() {
-		DiceFilterNodeImpl diceFilterNode = new DiceFilterNodeImpl();
-		return diceFilterNode;
+	public DpimFilterNode createDpimFilterNode() {
+		DpimFilterNodeImpl dpimFilterNode = new DpimFilterNodeImpl();
+		return dpimFilterNode;
 	}
 
 	/**
@@ -92,9 +93,9 @@ public class DPIMFactoryImpl extends EFactoryImpl implements DPIMFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DiceVisualizationNode createDiceVisualizationNode() {
-		DiceVisualizationNodeImpl diceVisualizationNode = new DiceVisualizationNodeImpl();
-		return diceVisualizationNode;
+	public DpimVisualizationNode createDpimVisualizationNode() {
+		DpimVisualizationNodeImpl dpimVisualizationNode = new DpimVisualizationNodeImpl();
+		return dpimVisualizationNode;
 	}
 
 	/**
@@ -102,9 +103,9 @@ public class DPIMFactoryImpl extends EFactoryImpl implements DPIMFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DiceSourceNode createDiceSourceNode() {
-		DiceSourceNodeImpl diceSourceNode = new DiceSourceNodeImpl();
-		return diceSourceNode;
+	public DpimSourceNode createDpimSourceNode() {
+		DpimSourceNodeImpl dpimSourceNode = new DpimSourceNodeImpl();
+		return dpimSourceNode;
 	}
 
 	/**
@@ -112,9 +113,9 @@ public class DPIMFactoryImpl extends EFactoryImpl implements DPIMFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DiceStorageResource createDiceStorageResource() {
-		DiceStorageResourceImpl diceStorageResource = new DiceStorageResourceImpl();
-		return diceStorageResource;
+	public DpimStorageNode createDpimStorageNode() {
+		DpimStorageNodeImpl dpimStorageNode = new DpimStorageNodeImpl();
+		return dpimStorageNode;
 	}
 
 	/**
@@ -122,9 +123,19 @@ public class DPIMFactoryImpl extends EFactoryImpl implements DPIMFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DiceChannel createDiceChannel() {
-		DiceChannelImpl diceChannel = new DiceChannelImpl();
-		return diceChannel;
+	public DpimChannel createDpimChannel() {
+		DpimChannelImpl dpimChannel = new DpimChannelImpl();
+		return dpimChannel;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public DpimScenario createDpimScenario() {
+		DpimScenarioImpl dpimScenario = new DpimScenarioImpl();
+		return dpimScenario;
 	}
 
 	/**

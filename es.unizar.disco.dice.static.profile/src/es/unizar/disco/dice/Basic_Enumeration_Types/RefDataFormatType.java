@@ -19,6 +19,16 @@ import org.eclipse.emf.common.util.Enumerator;
  */
 public enum RefDataFormatType implements Enumerator {
 	/**
+	 * The '<em><b>Json</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #JSON_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	JSON(0, "json", "json"),
+
+	/**
 	 * The '<em><b>RDF</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -26,17 +36,22 @@ public enum RefDataFormatType implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	RDF(0, "RDF", "RDF"),
+	RDF(1, "RDF", "RDF");
 
 	/**
-	 * The '<em><b>JSON</b></em>' literal object.
+	 * The '<em><b>Json</b></em>' literal value.
 	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of '<em><b>Json</b></em>' literal object isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
 	 * <!-- end-user-doc -->
-	 * @see #JSON_VALUE
+	 * @see #JSON
+	 * @model name="json"
 	 * @generated
 	 * @ordered
 	 */
-	JSON(1, "JSON", "JSON");
+	public static final int JSON_VALUE = 0;
 
 	/**
 	 * The '<em><b>RDF</b></em>' literal value.
@@ -51,22 +66,7 @@ public enum RefDataFormatType implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int RDF_VALUE = 0;
-
-	/**
-	 * The '<em><b>JSON</b></em>' literal value.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>JSON</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @see #JSON
-	 * @model
-	 * @generated
-	 * @ordered
-	 */
-	public static final int JSON_VALUE = 1;
+	public static final int RDF_VALUE = 1;
 
 	/**
 	 * An array of all the '<em><b>Ref Data Format Type</b></em>' enumerators.
@@ -76,8 +76,8 @@ public enum RefDataFormatType implements Enumerator {
 	 */
 	private static final RefDataFormatType[] VALUES_ARRAY =
 		new RefDataFormatType[] {
-			RDF,
 			JSON,
+			RDF,
 		};
 
 	/**
@@ -134,8 +134,8 @@ public enum RefDataFormatType implements Enumerator {
 	 */
 	public static RefDataFormatType get(int value) {
 		switch (value) {
-			case RDF_VALUE: return RDF;
 			case JSON_VALUE: return JSON;
+			case RDF_VALUE: return RDF;
 		}
 		return null;
 	}

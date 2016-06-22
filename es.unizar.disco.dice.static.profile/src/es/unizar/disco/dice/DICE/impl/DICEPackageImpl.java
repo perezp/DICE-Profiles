@@ -10,17 +10,31 @@ import com.masdes.dam.Complex_Data_Types.Complex_Data_TypesPackage;
 
 import com.masdes.dam.DAM.DAMPackage;
 
+import es.unizar.disco.dice.Basic_Data_Types.impl.Basic_Data_TypesPackageImpl;
+
 import es.unizar.disco.dice.Basic_Enumeration_Types.impl.Basic_Enumeration_TypesPackageImpl;
 
 import es.unizar.disco.dice.Complex_Data_Types.impl.Complex_Data_TypesPackageImpl;
 
 import es.unizar.disco.dice.DICE.DICEFactory;
 import es.unizar.disco.dice.DICE.DICEPackage;
-import es.unizar.disco.dice.DICE.dummy;
+import es.unizar.disco.dice.DICE.Dummy;
 
 import es.unizar.disco.dice.DPIM.DPIMPackage;
 
 import es.unizar.disco.dice.DPIM.impl.DPIMPackageImpl;
+
+import es.unizar.disco.dice.dtsm.Core.CorePackage;
+
+import es.unizar.disco.dice.dtsm.Core.impl.CorePackageImpl;
+
+import es.unizar.disco.dice.dtsm.Hadoop.HadoopPackage;
+
+import es.unizar.disco.dice.dtsm.Hadoop.impl.HadoopPackageImpl;
+
+import es.unizar.disco.dice.dtsm.Storm.StormPackage;
+
+import es.unizar.disco.dice.dtsm.Storm.impl.StormPackageImpl;
 
 import org.eclipse.emf.ecore.EEnum;
 import org.eclipse.emf.ecore.EPackage;
@@ -95,19 +109,31 @@ public class DICEPackageImpl extends EPackageImpl implements DICEPackage {
 
 		// Obtain or create and register interdependencies
 		DPIMPackageImpl theDPIMPackage = (DPIMPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(DPIMPackage.eNS_URI) instanceof DPIMPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(DPIMPackage.eNS_URI) : DPIMPackage.eINSTANCE);
+		CorePackageImpl theCorePackage = (CorePackageImpl)(EPackage.Registry.INSTANCE.getEPackage(CorePackage.eNS_URI) instanceof CorePackageImpl ? EPackage.Registry.INSTANCE.getEPackage(CorePackage.eNS_URI) : CorePackage.eINSTANCE);
+		StormPackageImpl theStormPackage = (StormPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(StormPackage.eNS_URI) instanceof StormPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(StormPackage.eNS_URI) : StormPackage.eINSTANCE);
+		HadoopPackageImpl theHadoopPackage = (HadoopPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(HadoopPackage.eNS_URI) instanceof HadoopPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(HadoopPackage.eNS_URI) : HadoopPackage.eINSTANCE);
 		Complex_Data_TypesPackageImpl theComplex_Data_TypesPackage_1 = (Complex_Data_TypesPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(es.unizar.disco.dice.Complex_Data_Types.Complex_Data_TypesPackage.eNS_URI) instanceof Complex_Data_TypesPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(es.unizar.disco.dice.Complex_Data_Types.Complex_Data_TypesPackage.eNS_URI) : es.unizar.disco.dice.Complex_Data_Types.Complex_Data_TypesPackage.eINSTANCE);
+		Basic_Data_TypesPackageImpl theBasic_Data_TypesPackage_1 = (Basic_Data_TypesPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(es.unizar.disco.dice.Basic_Data_Types.Basic_Data_TypesPackage.eNS_URI) instanceof Basic_Data_TypesPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(es.unizar.disco.dice.Basic_Data_Types.Basic_Data_TypesPackage.eNS_URI) : es.unizar.disco.dice.Basic_Data_Types.Basic_Data_TypesPackage.eINSTANCE);
 		Basic_Enumeration_TypesPackageImpl theBasic_Enumeration_TypesPackage_1 = (Basic_Enumeration_TypesPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(es.unizar.disco.dice.Basic_Enumeration_Types.Basic_Enumeration_TypesPackage.eNS_URI) instanceof Basic_Enumeration_TypesPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(es.unizar.disco.dice.Basic_Enumeration_Types.Basic_Enumeration_TypesPackage.eNS_URI) : es.unizar.disco.dice.Basic_Enumeration_Types.Basic_Enumeration_TypesPackage.eINSTANCE);
 
 		// Create package meta-data objects
 		theDICEPackage.createPackageContents();
 		theDPIMPackage.createPackageContents();
+		theCorePackage.createPackageContents();
+		theStormPackage.createPackageContents();
+		theHadoopPackage.createPackageContents();
 		theComplex_Data_TypesPackage_1.createPackageContents();
+		theBasic_Data_TypesPackage_1.createPackageContents();
 		theBasic_Enumeration_TypesPackage_1.createPackageContents();
 
 		// Initialize created meta-data
 		theDICEPackage.initializePackageContents();
 		theDPIMPackage.initializePackageContents();
+		theCorePackage.initializePackageContents();
+		theStormPackage.initializePackageContents();
+		theHadoopPackage.initializePackageContents();
 		theComplex_Data_TypesPackage_1.initializePackageContents();
+		theBasic_Data_TypesPackage_1.initializePackageContents();
 		theBasic_Enumeration_TypesPackage_1.initializePackageContents();
 
 		// Mark meta-data to indicate it can't be changed
@@ -124,7 +150,7 @@ public class DICEPackageImpl extends EPackageImpl implements DICEPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EEnum getdummy() {
+	public EEnum getDummy() {
 		return dummyEEnum;
 	}
 
@@ -184,12 +210,18 @@ public class DICEPackageImpl extends EPackageImpl implements DICEPackage {
 
 		// Obtain other dependent packages
 		DPIMPackage theDPIMPackage = (DPIMPackage)EPackage.Registry.INSTANCE.getEPackage(DPIMPackage.eNS_URI);
+		CorePackage theCorePackage = (CorePackage)EPackage.Registry.INSTANCE.getEPackage(CorePackage.eNS_URI);
+		StormPackage theStormPackage = (StormPackage)EPackage.Registry.INSTANCE.getEPackage(StormPackage.eNS_URI);
+		HadoopPackage theHadoopPackage = (HadoopPackage)EPackage.Registry.INSTANCE.getEPackage(HadoopPackage.eNS_URI);
 
 		// Add subpackages
 		getESubpackages().add(theDPIMPackage);
+		getESubpackages().add(theCorePackage);
+		getESubpackages().add(theStormPackage);
+		getESubpackages().add(theHadoopPackage);
 
 		// Initialize enums and add enum literals
-		initEEnum(dummyEEnum, dummy.class, "dummy");
+		initEEnum(dummyEEnum, Dummy.class, "Dummy");
 
 		// Create resource
 		createResource(eNS_URI);

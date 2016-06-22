@@ -8,26 +8,37 @@ import com.masdes.dam.Basic_Enumeration_Types.Basic_Enumeration_TypesPackage;
 
 import com.masdes.dam.Complex_Data_Types.Complex_Data_TypesPackage;
 
-import com.masdes.dam.Core.CorePackage;
-
 import com.masdes.dam.DAM.DAMPackage;
+
+import es.unizar.disco.dice.Basic_Data_Types.impl.Basic_Data_TypesPackageImpl;
 
 import es.unizar.disco.dice.Basic_Enumeration_Types.impl.Basic_Enumeration_TypesPackageImpl;
 
 import es.unizar.disco.dice.Complex_Data_Types.impl.Complex_Data_TypesPackageImpl;
 
 import es.unizar.disco.dice.DICE.DICEPackage;
-
 import es.unizar.disco.dice.DICE.impl.DICEPackageImpl;
-
 import es.unizar.disco.dice.DPIM.DPIMFactory;
 import es.unizar.disco.dice.DPIM.DPIMPackage;
-import es.unizar.disco.dice.DPIM.DiceChannel;
-import es.unizar.disco.dice.DPIM.DiceComponent;
-import es.unizar.disco.dice.DPIM.DiceFilterNode;
-import es.unizar.disco.dice.DPIM.DiceSourceNode;
-import es.unizar.disco.dice.DPIM.DiceStorageResource;
-import es.unizar.disco.dice.DPIM.DiceVisualizationNode;
+import es.unizar.disco.dice.DPIM.DpimChannel;
+import es.unizar.disco.dice.DPIM.DpimComputationNode;
+import es.unizar.disco.dice.DPIM.DpimFilterNode;
+import es.unizar.disco.dice.DPIM.DpimScenario;
+import es.unizar.disco.dice.DPIM.DpimSourceNode;
+import es.unizar.disco.dice.DPIM.DpimStorageNode;
+import es.unizar.disco.dice.DPIM.DpimVisualizationNode;
+
+import es.unizar.disco.dice.dtsm.Core.CorePackage;
+
+import es.unizar.disco.dice.dtsm.Core.impl.CorePackageImpl;
+
+import es.unizar.disco.dice.dtsm.Hadoop.HadoopPackage;
+
+import es.unizar.disco.dice.dtsm.Hadoop.impl.HadoopPackageImpl;
+
+import es.unizar.disco.dice.dtsm.Storm.StormPackage;
+
+import es.unizar.disco.dice.dtsm.Storm.impl.StormPackageImpl;
 
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
@@ -35,6 +46,8 @@ import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
 
 import org.eclipse.emf.ecore.impl.EPackageImpl;
+
+import org.eclipse.papyrus.MARTE.MARTE_AnalysisModel.GQAM.GQAMPackage;
 
 import org.eclipse.papyrus.MARTE.MARTE_Foundations.GRM.GRMPackage;
 
@@ -54,42 +67,49 @@ public class DPIMPackageImpl extends EPackageImpl implements DPIMPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass diceComponentEClass = null;
+	private EClass dpimComputationNodeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass diceFilterNodeEClass = null;
+	private EClass dpimFilterNodeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass diceVisualizationNodeEClass = null;
+	private EClass dpimVisualizationNodeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass diceSourceNodeEClass = null;
+	private EClass dpimSourceNodeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass diceStorageResourceEClass = null;
+	private EClass dpimStorageNodeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass diceChannelEClass = null;
+	private EClass dpimChannelEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass dpimScenarioEClass = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -145,19 +165,31 @@ public class DPIMPackageImpl extends EPackageImpl implements DPIMPackage {
 
 		// Obtain or create and register interdependencies
 		DICEPackageImpl theDICEPackage = (DICEPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(DICEPackage.eNS_URI) instanceof DICEPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(DICEPackage.eNS_URI) : DICEPackage.eINSTANCE);
+		CorePackageImpl theCorePackage = (CorePackageImpl)(EPackage.Registry.INSTANCE.getEPackage(CorePackage.eNS_URI) instanceof CorePackageImpl ? EPackage.Registry.INSTANCE.getEPackage(CorePackage.eNS_URI) : CorePackage.eINSTANCE);
+		StormPackageImpl theStormPackage = (StormPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(StormPackage.eNS_URI) instanceof StormPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(StormPackage.eNS_URI) : StormPackage.eINSTANCE);
+		HadoopPackageImpl theHadoopPackage = (HadoopPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(HadoopPackage.eNS_URI) instanceof HadoopPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(HadoopPackage.eNS_URI) : HadoopPackage.eINSTANCE);
 		Complex_Data_TypesPackageImpl theComplex_Data_TypesPackage_1 = (Complex_Data_TypesPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(es.unizar.disco.dice.Complex_Data_Types.Complex_Data_TypesPackage.eNS_URI) instanceof Complex_Data_TypesPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(es.unizar.disco.dice.Complex_Data_Types.Complex_Data_TypesPackage.eNS_URI) : es.unizar.disco.dice.Complex_Data_Types.Complex_Data_TypesPackage.eINSTANCE);
+		Basic_Data_TypesPackageImpl theBasic_Data_TypesPackage_1 = (Basic_Data_TypesPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(es.unizar.disco.dice.Basic_Data_Types.Basic_Data_TypesPackage.eNS_URI) instanceof Basic_Data_TypesPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(es.unizar.disco.dice.Basic_Data_Types.Basic_Data_TypesPackage.eNS_URI) : es.unizar.disco.dice.Basic_Data_Types.Basic_Data_TypesPackage.eINSTANCE);
 		Basic_Enumeration_TypesPackageImpl theBasic_Enumeration_TypesPackage_1 = (Basic_Enumeration_TypesPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(es.unizar.disco.dice.Basic_Enumeration_Types.Basic_Enumeration_TypesPackage.eNS_URI) instanceof Basic_Enumeration_TypesPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(es.unizar.disco.dice.Basic_Enumeration_Types.Basic_Enumeration_TypesPackage.eNS_URI) : es.unizar.disco.dice.Basic_Enumeration_Types.Basic_Enumeration_TypesPackage.eINSTANCE);
 
 		// Create package meta-data objects
 		theDPIMPackage.createPackageContents();
 		theDICEPackage.createPackageContents();
+		theCorePackage.createPackageContents();
+		theStormPackage.createPackageContents();
+		theHadoopPackage.createPackageContents();
 		theComplex_Data_TypesPackage_1.createPackageContents();
+		theBasic_Data_TypesPackage_1.createPackageContents();
 		theBasic_Enumeration_TypesPackage_1.createPackageContents();
 
 		// Initialize created meta-data
 		theDPIMPackage.initializePackageContents();
 		theDICEPackage.initializePackageContents();
+		theCorePackage.initializePackageContents();
+		theStormPackage.initializePackageContents();
+		theHadoopPackage.initializePackageContents();
 		theComplex_Data_TypesPackage_1.initializePackageContents();
+		theBasic_Data_TypesPackage_1.initializePackageContents();
 		theBasic_Enumeration_TypesPackage_1.initializePackageContents();
 
 		// Mark meta-data to indicate it can't be changed
@@ -174,8 +206,8 @@ public class DPIMPackageImpl extends EPackageImpl implements DPIMPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getDiceComponent() {
-		return diceComponentEClass;
+	public EClass getDpimComputationNode() {
+		return dpimComputationNodeEClass;
 	}
 
 	/**
@@ -183,8 +215,8 @@ public class DPIMPackageImpl extends EPackageImpl implements DPIMPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDiceComponent_Throughput() {
-		return (EAttribute)diceComponentEClass.getEStructuralFeatures().get(0);
+	public EAttribute getDpimComputationNode_Throughput() {
+		return (EAttribute)dpimComputationNodeEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -192,8 +224,8 @@ public class DPIMPackageImpl extends EPackageImpl implements DPIMPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDiceComponent_Type() {
-		return (EAttribute)diceComponentEClass.getEStructuralFeatures().get(1);
+	public EAttribute getDpimComputationNode_Type() {
+		return (EAttribute)dpimComputationNodeEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -201,8 +233,8 @@ public class DPIMPackageImpl extends EPackageImpl implements DPIMPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDiceComponent_TargetTech() {
-		return (EAttribute)diceComponentEClass.getEStructuralFeatures().get(2);
+	public EAttribute getDpimComputationNode_TargetTech() {
+		return (EAttribute)dpimComputationNodeEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -210,8 +242,8 @@ public class DPIMPackageImpl extends EPackageImpl implements DPIMPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDiceComponent_ProcType() {
-		return (EAttribute)diceComponentEClass.getEStructuralFeatures().get(3);
+	public EAttribute getDpimComputationNode_ProcType() {
+		return (EAttribute)dpimComputationNodeEClass.getEStructuralFeatures().get(3);
 	}
 
 	/**
@@ -219,8 +251,8 @@ public class DPIMPackageImpl extends EPackageImpl implements DPIMPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getDiceFilterNode() {
-		return diceFilterNodeEClass;
+	public EClass getDpimFilterNode() {
+		return dpimFilterNodeEClass;
 	}
 
 	/**
@@ -228,8 +260,8 @@ public class DPIMPackageImpl extends EPackageImpl implements DPIMPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDiceFilterNode_InputRatio() {
-		return (EAttribute)diceFilterNodeEClass.getEStructuralFeatures().get(0);
+	public EAttribute getDpimFilterNode_InputRatio() {
+		return (EAttribute)dpimFilterNodeEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -237,8 +269,8 @@ public class DPIMPackageImpl extends EPackageImpl implements DPIMPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDiceFilterNode_OutputRation() {
-		return (EAttribute)diceFilterNodeEClass.getEStructuralFeatures().get(1);
+	public EAttribute getDpimFilterNode_OutputRation() {
+		return (EAttribute)dpimFilterNodeEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -246,8 +278,8 @@ public class DPIMPackageImpl extends EPackageImpl implements DPIMPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getDiceVisualizationNode() {
-		return diceVisualizationNodeEClass;
+	public EClass getDpimVisualizationNode() {
+		return dpimVisualizationNodeEClass;
 	}
 
 	/**
@@ -255,8 +287,8 @@ public class DPIMPackageImpl extends EPackageImpl implements DPIMPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getDiceSourceNode() {
-		return diceSourceNodeEClass;
+	public EClass getDpimSourceNode() {
+		return dpimSourceNodeEClass;
 	}
 
 	/**
@@ -264,8 +296,8 @@ public class DPIMPackageImpl extends EPackageImpl implements DPIMPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getDiceSourceNode_Store() {
-		return (EReference)diceSourceNodeEClass.getEStructuralFeatures().get(0);
+	public EReference getDpimSourceNode_Store() {
+		return (EReference)dpimSourceNodeEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -273,8 +305,8 @@ public class DPIMPackageImpl extends EPackageImpl implements DPIMPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getDiceSourceNode_Provides() {
-		return (EReference)diceSourceNodeEClass.getEStructuralFeatures().get(1);
+	public EReference getDpimSourceNode_Provides() {
+		return (EReference)dpimSourceNodeEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -282,8 +314,8 @@ public class DPIMPackageImpl extends EPackageImpl implements DPIMPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDiceSourceNode_SourceType() {
-		return (EAttribute)diceSourceNodeEClass.getEStructuralFeatures().get(2);
+	public EAttribute getDpimSourceNode_SourceType() {
+		return (EAttribute)dpimSourceNodeEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -291,8 +323,8 @@ public class DPIMPackageImpl extends EPackageImpl implements DPIMPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDiceSourceNode_Rate() {
-		return (EAttribute)diceSourceNodeEClass.getEStructuralFeatures().get(3);
+	public EAttribute getDpimSourceNode_Rate() {
+		return (EAttribute)dpimSourceNodeEClass.getEStructuralFeatures().get(3);
 	}
 
 	/**
@@ -300,8 +332,8 @@ public class DPIMPackageImpl extends EPackageImpl implements DPIMPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getDiceStorageResource() {
-		return diceStorageResourceEClass;
+	public EClass getDpimStorageNode() {
+		return dpimStorageNodeEClass;
 	}
 
 	/**
@@ -309,8 +341,8 @@ public class DPIMPackageImpl extends EPackageImpl implements DPIMPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getDiceStorageResource_RespondsTo() {
-		return (EReference)diceStorageResourceEClass.getEStructuralFeatures().get(0);
+	public EReference getDpimStorageNode_RespondsTo() {
+		return (EReference)dpimStorageNodeEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -318,8 +350,8 @@ public class DPIMPackageImpl extends EPackageImpl implements DPIMPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDiceStorageResource_CrudRate() {
-		return (EAttribute)diceStorageResourceEClass.getEStructuralFeatures().get(1);
+	public EAttribute getDpimStorageNode_CrudRate() {
+		return (EAttribute)dpimStorageNodeEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -327,8 +359,8 @@ public class DPIMPackageImpl extends EPackageImpl implements DPIMPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getDiceChannel() {
-		return diceChannelEClass;
+	public EClass getDpimChannel() {
+		return dpimChannelEClass;
 	}
 
 	/**
@@ -336,8 +368,8 @@ public class DPIMPackageImpl extends EPackageImpl implements DPIMPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDiceChannel_Rate() {
-		return (EAttribute)diceChannelEClass.getEStructuralFeatures().get(0);
+	public EAttribute getDpimChannel_Rate() {
+		return (EAttribute)dpimChannelEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -345,8 +377,8 @@ public class DPIMPackageImpl extends EPackageImpl implements DPIMPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDiceChannel_MessageBroker() {
-		return (EAttribute)diceChannelEClass.getEStructuralFeatures().get(1);
+	public EAttribute getDpimChannel_MessageBroker() {
+		return (EAttribute)dpimChannelEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -354,8 +386,17 @@ public class DPIMPackageImpl extends EPackageImpl implements DPIMPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getDiceChannel_ChannelDescription() {
-		return (EReference)diceChannelEClass.getEStructuralFeatures().get(2);
+	public EReference getDpimChannel_ChannelDescription() {
+		return (EReference)dpimChannelEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getDpimScenario() {
+		return dpimScenarioEClass;
 	}
 
 	/**
@@ -386,32 +427,34 @@ public class DPIMPackageImpl extends EPackageImpl implements DPIMPackage {
 		isCreated = true;
 
 		// Create classes and their features
-		diceComponentEClass = createEClass(DICE_COMPONENT);
-		createEAttribute(diceComponentEClass, DICE_COMPONENT__THROUGHPUT);
-		createEAttribute(diceComponentEClass, DICE_COMPONENT__TYPE);
-		createEAttribute(diceComponentEClass, DICE_COMPONENT__TARGET_TECH);
-		createEAttribute(diceComponentEClass, DICE_COMPONENT__PROC_TYPE);
+		dpimComputationNodeEClass = createEClass(DPIM_COMPUTATION_NODE);
+		createEAttribute(dpimComputationNodeEClass, DPIM_COMPUTATION_NODE__THROUGHPUT);
+		createEAttribute(dpimComputationNodeEClass, DPIM_COMPUTATION_NODE__TYPE);
+		createEAttribute(dpimComputationNodeEClass, DPIM_COMPUTATION_NODE__TARGET_TECH);
+		createEAttribute(dpimComputationNodeEClass, DPIM_COMPUTATION_NODE__PROC_TYPE);
 
-		diceFilterNodeEClass = createEClass(DICE_FILTER_NODE);
-		createEAttribute(diceFilterNodeEClass, DICE_FILTER_NODE__INPUT_RATIO);
-		createEAttribute(diceFilterNodeEClass, DICE_FILTER_NODE__OUTPUT_RATION);
+		dpimFilterNodeEClass = createEClass(DPIM_FILTER_NODE);
+		createEAttribute(dpimFilterNodeEClass, DPIM_FILTER_NODE__INPUT_RATIO);
+		createEAttribute(dpimFilterNodeEClass, DPIM_FILTER_NODE__OUTPUT_RATION);
 
-		diceVisualizationNodeEClass = createEClass(DICE_VISUALIZATION_NODE);
+		dpimVisualizationNodeEClass = createEClass(DPIM_VISUALIZATION_NODE);
 
-		diceSourceNodeEClass = createEClass(DICE_SOURCE_NODE);
-		createEReference(diceSourceNodeEClass, DICE_SOURCE_NODE__STORE);
-		createEReference(diceSourceNodeEClass, DICE_SOURCE_NODE__PROVIDES);
-		createEAttribute(diceSourceNodeEClass, DICE_SOURCE_NODE__SOURCE_TYPE);
-		createEAttribute(diceSourceNodeEClass, DICE_SOURCE_NODE__RATE);
+		dpimSourceNodeEClass = createEClass(DPIM_SOURCE_NODE);
+		createEReference(dpimSourceNodeEClass, DPIM_SOURCE_NODE__STORE);
+		createEReference(dpimSourceNodeEClass, DPIM_SOURCE_NODE__PROVIDES);
+		createEAttribute(dpimSourceNodeEClass, DPIM_SOURCE_NODE__SOURCE_TYPE);
+		createEAttribute(dpimSourceNodeEClass, DPIM_SOURCE_NODE__RATE);
 
-		diceStorageResourceEClass = createEClass(DICE_STORAGE_RESOURCE);
-		createEReference(diceStorageResourceEClass, DICE_STORAGE_RESOURCE__RESPONDS_TO);
-		createEAttribute(diceStorageResourceEClass, DICE_STORAGE_RESOURCE__CRUD_RATE);
+		dpimStorageNodeEClass = createEClass(DPIM_STORAGE_NODE);
+		createEReference(dpimStorageNodeEClass, DPIM_STORAGE_NODE__RESPONDS_TO);
+		createEAttribute(dpimStorageNodeEClass, DPIM_STORAGE_NODE__CRUD_RATE);
 
-		diceChannelEClass = createEClass(DICE_CHANNEL);
-		createEAttribute(diceChannelEClass, DICE_CHANNEL__RATE);
-		createEAttribute(diceChannelEClass, DICE_CHANNEL__MESSAGE_BROKER);
-		createEReference(diceChannelEClass, DICE_CHANNEL__CHANNEL_DESCRIPTION);
+		dpimChannelEClass = createEClass(DPIM_CHANNEL);
+		createEAttribute(dpimChannelEClass, DPIM_CHANNEL__RATE);
+		createEAttribute(dpimChannelEClass, DPIM_CHANNEL__MESSAGE_BROKER);
+		createEReference(dpimChannelEClass, DPIM_CHANNEL__CHANNEL_DESCRIPTION);
+
+		dpimScenarioEClass = createEClass(DPIM_SCENARIO);
 	}
 
 	/**
@@ -438,52 +481,56 @@ public class DPIMPackageImpl extends EPackageImpl implements DPIMPackage {
 		setNsURI(eNS_URI);
 
 		// Obtain other dependent packages
-		CorePackage theCorePackage = (CorePackage)EPackage.Registry.INSTANCE.getEPackage(CorePackage.eNS_URI);
+		com.masdes.dam.Core.CorePackage theCorePackage_1 = (com.masdes.dam.Core.CorePackage)EPackage.Registry.INSTANCE.getEPackage(com.masdes.dam.Core.CorePackage.eNS_URI);
 		BasicNFP_TypesPackage theBasicNFP_TypesPackage = (BasicNFP_TypesPackage)EPackage.Registry.INSTANCE.getEPackage(BasicNFP_TypesPackage.eNS_URI);
 		es.unizar.disco.dice.Basic_Enumeration_Types.Basic_Enumeration_TypesPackage theBasic_Enumeration_TypesPackage_1 = (es.unizar.disco.dice.Basic_Enumeration_Types.Basic_Enumeration_TypesPackage)EPackage.Registry.INSTANCE.getEPackage(es.unizar.disco.dice.Basic_Enumeration_Types.Basic_Enumeration_TypesPackage.eNS_URI);
 		es.unizar.disco.dice.Complex_Data_Types.Complex_Data_TypesPackage theComplex_Data_TypesPackage_1 = (es.unizar.disco.dice.Complex_Data_Types.Complex_Data_TypesPackage)EPackage.Registry.INSTANCE.getEPackage(es.unizar.disco.dice.Complex_Data_Types.Complex_Data_TypesPackage.eNS_URI);
 		GRMPackage theGRMPackage = (GRMPackage)EPackage.Registry.INSTANCE.getEPackage(GRMPackage.eNS_URI);
 		TypesPackage theTypesPackage = (TypesPackage)EPackage.Registry.INSTANCE.getEPackage(TypesPackage.eNS_URI);
+		GQAMPackage theGQAMPackage = (GQAMPackage)EPackage.Registry.INSTANCE.getEPackage(GQAMPackage.eNS_URI);
 
 		// Create type parameters
 
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
-		diceComponentEClass.getESuperTypes().add(theCorePackage.getDaComponent());
-		diceFilterNodeEClass.getESuperTypes().add(this.getDiceComponent());
-		diceVisualizationNodeEClass.getESuperTypes().add(this.getDiceComponent());
-		diceSourceNodeEClass.getESuperTypes().add(this.getDiceComponent());
-		diceStorageResourceEClass.getESuperTypes().add(theGRMPackage.getStorageResource());
-		diceChannelEClass.getESuperTypes().add(theCorePackage.getDaConnector());
+		dpimComputationNodeEClass.getESuperTypes().add(theCorePackage_1.getDaComponent());
+		dpimFilterNodeEClass.getESuperTypes().add(this.getDpimComputationNode());
+		dpimVisualizationNodeEClass.getESuperTypes().add(this.getDpimComputationNode());
+		dpimSourceNodeEClass.getESuperTypes().add(this.getDpimComputationNode());
+		dpimStorageNodeEClass.getESuperTypes().add(theGRMPackage.getStorageResource());
+		dpimChannelEClass.getESuperTypes().add(theCorePackage_1.getDaConnector());
+		dpimScenarioEClass.getESuperTypes().add(theGQAMPackage.getGaScenario());
 
 		// Initialize classes and features; add operations and parameters
-		initEClass(diceComponentEClass, DiceComponent.class, "DiceComponent", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getDiceComponent_Throughput(), theBasicNFP_TypesPackage.getNFP_Frequency(), "throughput", null, 0, 1, DiceComponent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getDiceComponent_Type(), theBasic_Enumeration_TypesPackage_1.getComputationType(), "type", null, 0, 1, DiceComponent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getDiceComponent_TargetTech(), theBasic_Enumeration_TypesPackage_1.getTechType(), "targetTech", null, 0, 1, DiceComponent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getDiceComponent_ProcType(), theBasic_Enumeration_TypesPackage_1.getProcessingType(), "procType", null, 0, 1, DiceComponent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEClass(dpimComputationNodeEClass, DpimComputationNode.class, "DpimComputationNode", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getDpimComputationNode_Throughput(), theBasicNFP_TypesPackage.getNFP_Frequency(), "throughput", null, 0, 1, DpimComputationNode.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDpimComputationNode_Type(), theBasic_Enumeration_TypesPackage_1.getComputationType(), "type", null, 0, 1, DpimComputationNode.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDpimComputationNode_TargetTech(), theBasic_Enumeration_TypesPackage_1.getTechType(), "targetTech", null, 0, 1, DpimComputationNode.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDpimComputationNode_ProcType(), theBasic_Enumeration_TypesPackage_1.getProcessingType(), "procType", null, 0, 1, DpimComputationNode.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
-		initEClass(diceFilterNodeEClass, DiceFilterNode.class, "DiceFilterNode", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getDiceFilterNode_InputRatio(), theBasicNFP_TypesPackage.getNFP_Frequency(), "inputRatio", null, 0, 1, DiceFilterNode.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getDiceFilterNode_OutputRation(), theBasicNFP_TypesPackage.getNFP_Frequency(), "outputRation", null, 0, 1, DiceFilterNode.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEClass(dpimFilterNodeEClass, DpimFilterNode.class, "DpimFilterNode", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getDpimFilterNode_InputRatio(), theBasicNFP_TypesPackage.getNFP_Frequency(), "inputRatio", null, 0, 1, DpimFilterNode.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDpimFilterNode_OutputRation(), theBasicNFP_TypesPackage.getNFP_Frequency(), "outputRation", null, 0, 1, DpimFilterNode.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
-		initEClass(diceVisualizationNodeEClass, DiceVisualizationNode.class, "DiceVisualizationNode", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(dpimVisualizationNodeEClass, DpimVisualizationNode.class, "DpimVisualizationNode", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-		initEClass(diceSourceNodeEClass, DiceSourceNode.class, "DiceSourceNode", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getDiceSourceNode_Store(), theComplex_Data_TypesPackage_1.getDiceDataVolume(), null, "store", null, 0, 1, DiceSourceNode.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getDiceSourceNode_Provides(), theComplex_Data_TypesPackage_1.getDiceDataSpecification(), null, "provides", null, 0, 1, DiceSourceNode.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getDiceSourceNode_SourceType(), theBasic_Enumeration_TypesPackage_1.getSourceType(), "sourceType", null, 0, 1, DiceSourceNode.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getDiceSourceNode_Rate(), theBasicNFP_TypesPackage.getNFP_Frequency(), "rate", null, 0, 1, DiceSourceNode.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEClass(dpimSourceNodeEClass, DpimSourceNode.class, "DpimSourceNode", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getDpimSourceNode_Store(), theComplex_Data_TypesPackage_1.getDiceDataVolume(), null, "store", null, 0, 1, DpimSourceNode.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEReference(getDpimSourceNode_Provides(), theComplex_Data_TypesPackage_1.getDiceDataSpecification(), null, "provides", null, 0, 1, DpimSourceNode.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDpimSourceNode_SourceType(), theBasic_Enumeration_TypesPackage_1.getSourceType(), "sourceType", null, 0, 1, DpimSourceNode.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDpimSourceNode_Rate(), theBasicNFP_TypesPackage.getNFP_Frequency(), "rate", null, 0, 1, DpimSourceNode.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
-		initEClass(diceStorageResourceEClass, DiceStorageResource.class, "DiceStorageResource", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getDiceStorageResource_RespondsTo(), theComplex_Data_TypesPackage_1.getDiceDataSpecification(), null, "respondsTo", null, 0, 1, DiceStorageResource.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getDiceStorageResource_CrudRate(), theBasicNFP_TypesPackage.getNFP_Frequency(), "crudRate", null, 0, 1, DiceStorageResource.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEClass(dpimStorageNodeEClass, DpimStorageNode.class, "DpimStorageNode", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getDpimStorageNode_RespondsTo(), theComplex_Data_TypesPackage_1.getDiceDataSpecification(), null, "respondsTo", null, 0, 1, DpimStorageNode.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDpimStorageNode_CrudRate(), theBasicNFP_TypesPackage.getNFP_Frequency(), "crudRate", null, 0, 1, DpimStorageNode.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
-		initEClass(diceChannelEClass, DiceChannel.class, "DiceChannel", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getDiceChannel_Rate(), theBasicNFP_TypesPackage.getNFP_Frequency(), "rate", null, 0, 1, DiceChannel.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getDiceChannel_MessageBroker(), theTypesPackage.getString(), "messageBroker", null, 0, 1, DiceChannel.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getDiceChannel_ChannelDescription(), theComplex_Data_TypesPackage_1.getDiceChannelSpecification(), null, "channelDescription", null, 0, 1, DiceChannel.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEClass(dpimChannelEClass, DpimChannel.class, "DpimChannel", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getDpimChannel_Rate(), theBasicNFP_TypesPackage.getNFP_Frequency(), "rate", null, 0, 1, DpimChannel.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDpimChannel_MessageBroker(), theTypesPackage.getString(), "messageBroker", null, 0, 1, DpimChannel.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEReference(getDpimChannel_ChannelDescription(), theComplex_Data_TypesPackage_1.getDiceChannelSpecification(), null, "channelDescription", null, 0, 1, DpimChannel.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+
+		initEClass(dpimScenarioEClass, DpimScenario.class, "DpimScenario", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 	}
 
 } //DPIMPackageImpl

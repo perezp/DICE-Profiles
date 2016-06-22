@@ -100,7 +100,7 @@ public class DiceDataSpecificationImpl extends MinimalEObjectImpl.Container impl
 	 * @generated
 	 * @ordered
 	 */
-	protected static final RefDataFormatType REF_DATA_FORMAT_EDEFAULT = RefDataFormatType.RDF;
+	protected static final RefDataFormatType REF_DATA_FORMAT_EDEFAULT = RefDataFormatType.JSON;
 
 	/**
 	 * The cached value of the '{@link #getRefDataFormat() <em>Ref Data Format</em>}' attribute.

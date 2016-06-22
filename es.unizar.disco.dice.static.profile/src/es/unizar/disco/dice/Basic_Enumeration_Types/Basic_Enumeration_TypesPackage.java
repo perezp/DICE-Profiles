@@ -105,6 +105,66 @@ public interface Basic_Enumeration_TypesPackage extends EPackage {
 	int SOURCE_TYPE = 4;
 
 	/**
+	 * The meta object id for the '{@link es.unizar.disco.dice.Basic_Enumeration_Types.ConstraintType <em>Constraint Type</em>}' enum.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see es.unizar.disco.dice.Basic_Enumeration_Types.ConstraintType
+	 * @see es.unizar.disco.dice.Basic_Enumeration_Types.impl.Basic_Enumeration_TypesPackageImpl#getConstraintType()
+	 * @generated
+	 */
+	int CONSTRAINT_TYPE = 5;
+
+	/**
+	 * The meta object id for the '{@link es.unizar.disco.dice.Basic_Enumeration_Types.WorkflowOperation <em>Workflow Operation</em>}' enum.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see es.unizar.disco.dice.Basic_Enumeration_Types.WorkflowOperation
+	 * @see es.unizar.disco.dice.Basic_Enumeration_Types.impl.Basic_Enumeration_TypesPackageImpl#getWorkflowOperation()
+	 * @generated
+	 */
+	int WORKFLOW_OPERATION = 6;
+
+	/**
+	 * The meta object id for the '{@link es.unizar.disco.dice.Basic_Enumeration_Types.MapType <em>Map Type</em>}' enum.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see es.unizar.disco.dice.Basic_Enumeration_Types.MapType
+	 * @see es.unizar.disco.dice.Basic_Enumeration_Types.impl.Basic_Enumeration_TypesPackageImpl#getMapType()
+	 * @generated
+	 */
+	int MAP_TYPE = 7;
+
+	/**
+	 * The meta object id for the '{@link es.unizar.disco.dice.Basic_Enumeration_Types.ReduceType <em>Reduce Type</em>}' enum.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see es.unizar.disco.dice.Basic_Enumeration_Types.ReduceType
+	 * @see es.unizar.disco.dice.Basic_Enumeration_Types.impl.Basic_Enumeration_TypesPackageImpl#getReduceType()
+	 * @generated
+	 */
+	int REDUCE_TYPE = 8;
+
+	/**
+	 * The meta object id for the '{@link es.unizar.disco.dice.Basic_Enumeration_Types.StreamPolicy <em>Stream Policy</em>}' enum.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see es.unizar.disco.dice.Basic_Enumeration_Types.StreamPolicy
+	 * @see es.unizar.disco.dice.Basic_Enumeration_Types.impl.Basic_Enumeration_TypesPackageImpl#getStreamPolicy()
+	 * @generated
+	 */
+	int STREAM_POLICY = 9;
+
+	/**
+	 * The meta object id for the '{@link es.unizar.disco.dice.Basic_Enumeration_Types.Scheduling <em>Scheduling</em>}' enum.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see es.unizar.disco.dice.Basic_Enumeration_Types.Scheduling
+	 * @see es.unizar.disco.dice.Basic_Enumeration_Types.impl.Basic_Enumeration_TypesPackageImpl#getScheduling()
+	 * @generated
+	 */
+	int SCHEDULING = 10;
+
+	/**
 	 * The meta object id for the '{@link es.unizar.disco.dice.Basic_Enumeration_Types.ComputationType <em>Computation Type</em>}' enum.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -112,7 +172,7 @@ public interface Basic_Enumeration_TypesPackage extends EPackage {
 	 * @see es.unizar.disco.dice.Basic_Enumeration_Types.impl.Basic_Enumeration_TypesPackageImpl#getComputationType()
 	 * @generated
 	 */
-	int COMPUTATION_TYPE = 5;
+	int COMPUTATION_TYPE = 11;
 
 
 	/**
@@ -164,6 +224,66 @@ public interface Basic_Enumeration_TypesPackage extends EPackage {
 	 * @generated
 	 */
 	EEnum getSourceType();
+
+	/**
+	 * Returns the meta object for enum '{@link es.unizar.disco.dice.Basic_Enumeration_Types.ConstraintType <em>Constraint Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for enum '<em>Constraint Type</em>'.
+	 * @see es.unizar.disco.dice.Basic_Enumeration_Types.ConstraintType
+	 * @generated
+	 */
+	EEnum getConstraintType();
+
+	/**
+	 * Returns the meta object for enum '{@link es.unizar.disco.dice.Basic_Enumeration_Types.WorkflowOperation <em>Workflow Operation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for enum '<em>Workflow Operation</em>'.
+	 * @see es.unizar.disco.dice.Basic_Enumeration_Types.WorkflowOperation
+	 * @generated
+	 */
+	EEnum getWorkflowOperation();
+
+	/**
+	 * Returns the meta object for enum '{@link es.unizar.disco.dice.Basic_Enumeration_Types.MapType <em>Map Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for enum '<em>Map Type</em>'.
+	 * @see es.unizar.disco.dice.Basic_Enumeration_Types.MapType
+	 * @generated
+	 */
+	EEnum getMapType();
+
+	/**
+	 * Returns the meta object for enum '{@link es.unizar.disco.dice.Basic_Enumeration_Types.ReduceType <em>Reduce Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for enum '<em>Reduce Type</em>'.
+	 * @see es.unizar.disco.dice.Basic_Enumeration_Types.ReduceType
+	 * @generated
+	 */
+	EEnum getReduceType();
+
+	/**
+	 * Returns the meta object for enum '{@link es.unizar.disco.dice.Basic_Enumeration_Types.StreamPolicy <em>Stream Policy</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for enum '<em>Stream Policy</em>'.
+	 * @see es.unizar.disco.dice.Basic_Enumeration_Types.StreamPolicy
+	 * @generated
+	 */
+	EEnum getStreamPolicy();
+
+	/**
+	 * Returns the meta object for enum '{@link es.unizar.disco.dice.Basic_Enumeration_Types.Scheduling <em>Scheduling</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for enum '<em>Scheduling</em>'.
+	 * @see es.unizar.disco.dice.Basic_Enumeration_Types.Scheduling
+	 * @generated
+	 */
+	EEnum getScheduling();
 
 	/**
 	 * Returns the meta object for enum '{@link es.unizar.disco.dice.Basic_Enumeration_Types.ComputationType <em>Computation Type</em>}'.
@@ -246,6 +366,66 @@ public interface Basic_Enumeration_TypesPackage extends EPackage {
 		 * @generated
 		 */
 		EEnum SOURCE_TYPE = eINSTANCE.getSourceType();
+
+		/**
+		 * The meta object literal for the '{@link es.unizar.disco.dice.Basic_Enumeration_Types.ConstraintType <em>Constraint Type</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see es.unizar.disco.dice.Basic_Enumeration_Types.ConstraintType
+		 * @see es.unizar.disco.dice.Basic_Enumeration_Types.impl.Basic_Enumeration_TypesPackageImpl#getConstraintType()
+		 * @generated
+		 */
+		EEnum CONSTRAINT_TYPE = eINSTANCE.getConstraintType();
+
+		/**
+		 * The meta object literal for the '{@link es.unizar.disco.dice.Basic_Enumeration_Types.WorkflowOperation <em>Workflow Operation</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see es.unizar.disco.dice.Basic_Enumeration_Types.WorkflowOperation
+		 * @see es.unizar.disco.dice.Basic_Enumeration_Types.impl.Basic_Enumeration_TypesPackageImpl#getWorkflowOperation()
+		 * @generated
+		 */
+		EEnum WORKFLOW_OPERATION = eINSTANCE.getWorkflowOperation();
+
+		/**
+		 * The meta object literal for the '{@link es.unizar.disco.dice.Basic_Enumeration_Types.MapType <em>Map Type</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see es.unizar.disco.dice.Basic_Enumeration_Types.MapType
+		 * @see es.unizar.disco.dice.Basic_Enumeration_Types.impl.Basic_Enumeration_TypesPackageImpl#getMapType()
+		 * @generated
+		 */
+		EEnum MAP_TYPE = eINSTANCE.getMapType();
+
+		/**
+		 * The meta object literal for the '{@link es.unizar.disco.dice.Basic_Enumeration_Types.ReduceType <em>Reduce Type</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see es.unizar.disco.dice.Basic_Enumeration_Types.ReduceType
+		 * @see es.unizar.disco.dice.Basic_Enumeration_Types.impl.Basic_Enumeration_TypesPackageImpl#getReduceType()
+		 * @generated
+		 */
+		EEnum REDUCE_TYPE = eINSTANCE.getReduceType();
+
+		/**
+		 * The meta object literal for the '{@link es.unizar.disco.dice.Basic_Enumeration_Types.StreamPolicy <em>Stream Policy</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see es.unizar.disco.dice.Basic_Enumeration_Types.StreamPolicy
+		 * @see es.unizar.disco.dice.Basic_Enumeration_Types.impl.Basic_Enumeration_TypesPackageImpl#getStreamPolicy()
+		 * @generated
+		 */
+		EEnum STREAM_POLICY = eINSTANCE.getStreamPolicy();
+
+		/**
+		 * The meta object literal for the '{@link es.unizar.disco.dice.Basic_Enumeration_Types.Scheduling <em>Scheduling</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see es.unizar.disco.dice.Basic_Enumeration_Types.Scheduling
+		 * @see es.unizar.disco.dice.Basic_Enumeration_Types.impl.Basic_Enumeration_TypesPackageImpl#getScheduling()
+		 * @generated
+		 */
+		EEnum SCHEDULING = eINSTANCE.getScheduling();
 
 		/**
 		 * The meta object literal for the '{@link es.unizar.disco.dice.Basic_Enumeration_Types.ComputationType <em>Computation Type</em>}' enum.

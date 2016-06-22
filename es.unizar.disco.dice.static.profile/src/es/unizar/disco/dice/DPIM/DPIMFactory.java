@@ -22,58 +22,67 @@ public interface DPIMFactory extends EFactory {
 	DPIMFactory eINSTANCE = es.unizar.disco.dice.DPIM.impl.DPIMFactoryImpl.init();
 
 	/**
-	 * Returns a new object of class '<em>Dice Component</em>'.
+	 * Returns a new object of class '<em>Dpim Computation Node</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Dice Component</em>'.
+	 * @return a new object of class '<em>Dpim Computation Node</em>'.
 	 * @generated
 	 */
-	DiceComponent createDiceComponent();
+	DpimComputationNode createDpimComputationNode();
 
 	/**
-	 * Returns a new object of class '<em>Dice Filter Node</em>'.
+	 * Returns a new object of class '<em>Dpim Filter Node</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Dice Filter Node</em>'.
+	 * @return a new object of class '<em>Dpim Filter Node</em>'.
 	 * @generated
 	 */
-	DiceFilterNode createDiceFilterNode();
+	DpimFilterNode createDpimFilterNode();
 
 	/**
-	 * Returns a new object of class '<em>Dice Visualization Node</em>'.
+	 * Returns a new object of class '<em>Dpim Visualization Node</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Dice Visualization Node</em>'.
+	 * @return a new object of class '<em>Dpim Visualization Node</em>'.
 	 * @generated
 	 */
-	DiceVisualizationNode createDiceVisualizationNode();
+	DpimVisualizationNode createDpimVisualizationNode();
 
 	/**
-	 * Returns a new object of class '<em>Dice Source Node</em>'.
+	 * Returns a new object of class '<em>Dpim Source Node</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Dice Source Node</em>'.
+	 * @return a new object of class '<em>Dpim Source Node</em>'.
 	 * @generated
 	 */
-	DiceSourceNode createDiceSourceNode();
+	DpimSourceNode createDpimSourceNode();
 
 	/**
-	 * Returns a new object of class '<em>Dice Storage Resource</em>'.
+	 * Returns a new object of class '<em>Dpim Storage Node</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Dice Storage Resource</em>'.
+	 * @return a new object of class '<em>Dpim Storage Node</em>'.
 	 * @generated
 	 */
-	DiceStorageResource createDiceStorageResource();
+	DpimStorageNode createDpimStorageNode();
 
 	/**
-	 * Returns a new object of class '<em>Dice Channel</em>'.
+	 * Returns a new object of class '<em>Dpim Channel</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Dice Channel</em>'.
+	 * @return a new object of class '<em>Dpim Channel</em>'.
 	 * @generated
 	 */
-	DiceChannel createDiceChannel();
+	DpimChannel createDpimChannel();
+
+	/**
+	 * Returns a new object of class '<em>Dpim Scenario</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Dpim Scenario</em>'.
+	 * @generated
+	 */
+	DpimScenario createDpimScenario();
 
 	/**
 	 * Returns the package supported by this factory.

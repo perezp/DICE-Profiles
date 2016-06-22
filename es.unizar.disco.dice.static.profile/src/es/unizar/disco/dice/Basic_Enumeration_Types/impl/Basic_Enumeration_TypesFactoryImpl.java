@@ -80,6 +80,18 @@ public class Basic_Enumeration_TypesFactoryImpl extends EFactoryImpl implements 
 				return createProcessingTypeFromString(eDataType, initialValue);
 			case Basic_Enumeration_TypesPackage.SOURCE_TYPE:
 				return createSourceTypeFromString(eDataType, initialValue);
+			case Basic_Enumeration_TypesPackage.CONSTRAINT_TYPE:
+				return createConstraintTypeFromString(eDataType, initialValue);
+			case Basic_Enumeration_TypesPackage.WORKFLOW_OPERATION:
+				return createWorkflowOperationFromString(eDataType, initialValue);
+			case Basic_Enumeration_TypesPackage.MAP_TYPE:
+				return createMapTypeFromString(eDataType, initialValue);
+			case Basic_Enumeration_TypesPackage.REDUCE_TYPE:
+				return createReduceTypeFromString(eDataType, initialValue);
+			case Basic_Enumeration_TypesPackage.STREAM_POLICY:
+				return createStreamPolicyFromString(eDataType, initialValue);
+			case Basic_Enumeration_TypesPackage.SCHEDULING:
+				return createSchedulingFromString(eDataType, initialValue);
 			case Basic_Enumeration_TypesPackage.COMPUTATION_TYPE:
 				return createComputationTypeFromString(eDataType, initialValue);
 			default:
@@ -105,6 +117,18 @@ public class Basic_Enumeration_TypesFactoryImpl extends EFactoryImpl implements 
 				return convertProcessingTypeToString(eDataType, instanceValue);
 			case Basic_Enumeration_TypesPackage.SOURCE_TYPE:
 				return convertSourceTypeToString(eDataType, instanceValue);
+			case Basic_Enumeration_TypesPackage.CONSTRAINT_TYPE:
+				return convertConstraintTypeToString(eDataType, instanceValue);
+			case Basic_Enumeration_TypesPackage.WORKFLOW_OPERATION:
+				return convertWorkflowOperationToString(eDataType, instanceValue);
+			case Basic_Enumeration_TypesPackage.MAP_TYPE:
+				return convertMapTypeToString(eDataType, instanceValue);
+			case Basic_Enumeration_TypesPackage.REDUCE_TYPE:
+				return convertReduceTypeToString(eDataType, instanceValue);
+			case Basic_Enumeration_TypesPackage.STREAM_POLICY:
+				return convertStreamPolicyToString(eDataType, instanceValue);
+			case Basic_Enumeration_TypesPackage.SCHEDULING:
+				return convertSchedulingToString(eDataType, instanceValue);
 			case Basic_Enumeration_TypesPackage.COMPUTATION_TYPE:
 				return convertComputationTypeToString(eDataType, instanceValue);
 			default:
@@ -209,6 +233,126 @@ public class Basic_Enumeration_TypesFactoryImpl extends EFactoryImpl implements 
 	 * @generated
 	 */
 	public String convertSourceTypeToString(EDataType eDataType, Object instanceValue) {
+		return instanceValue == null ? null : instanceValue.toString();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ConstraintType createConstraintTypeFromString(EDataType eDataType, String initialValue) {
+		ConstraintType result = ConstraintType.get(initialValue);
+		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+		return result;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String convertConstraintTypeToString(EDataType eDataType, Object instanceValue) {
+		return instanceValue == null ? null : instanceValue.toString();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public WorkflowOperation createWorkflowOperationFromString(EDataType eDataType, String initialValue) {
+		WorkflowOperation result = WorkflowOperation.get(initialValue);
+		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+		return result;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String convertWorkflowOperationToString(EDataType eDataType, Object instanceValue) {
+		return instanceValue == null ? null : instanceValue.toString();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public MapType createMapTypeFromString(EDataType eDataType, String initialValue) {
+		MapType result = MapType.get(initialValue);
+		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+		return result;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String convertMapTypeToString(EDataType eDataType, Object instanceValue) {
+		return instanceValue == null ? null : instanceValue.toString();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ReduceType createReduceTypeFromString(EDataType eDataType, String initialValue) {
+		ReduceType result = ReduceType.get(initialValue);
+		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+		return result;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String convertReduceTypeToString(EDataType eDataType, Object instanceValue) {
+		return instanceValue == null ? null : instanceValue.toString();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public StreamPolicy createStreamPolicyFromString(EDataType eDataType, String initialValue) {
+		StreamPolicy result = StreamPolicy.get(initialValue);
+		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+		return result;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String convertStreamPolicyToString(EDataType eDataType, Object instanceValue) {
+		return instanceValue == null ? null : instanceValue.toString();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Scheduling createSchedulingFromString(EDataType eDataType, String initialValue) {
+		Scheduling result = Scheduling.get(initialValue);
+		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+		return result;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String convertSchedulingToString(EDataType eDataType, Object instanceValue) {
 		return instanceValue == null ? null : instanceValue.toString();
 	}
 

@@ -23,7 +23,7 @@
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_KGEgQOeXEeWj7ZPL8JeBTQ" name="relQuery"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Enumeration" xmi:id="_MVuOsOeXEeWj7ZPL8JeBTQ" name="TechType">
-          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_s99sMOeXEeWj7ZPL8JeBTQ" name="RDD"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_s99sMOeXEeWj7ZPL8JeBTQ" name="rdd"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Enumeration" xmi:id="_udV0QOeXEeWj7ZPL8JeBTQ" name="ProcessingType">
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_wJX4QOeXEeWj7ZPL8JeBTQ" name="synch"/>
@@ -35,35 +35,44 @@
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_PpFAYOeYEeWj7ZPL8JeBTQ" name="dataStream"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Enumeration" xmi:id="_0KMlMOeeEeWj7ZPL8JeBTQ" name="RefType">
-          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_3vOLIOeeEeWj7ZPL8JeBTQ" name="NoSQL"/>
-          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_5e6nIOeeEeWj7ZPL8JeBTQ" name="ER"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_3vOLIOeeEeWj7ZPL8JeBTQ" name="noSql"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_5e6nIOeeEeWj7ZPL8JeBTQ" name="entityRelationship"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Enumeration" xmi:id="_05JV4OeeEeWj7ZPL8JeBTQ" name="RefDataFormatType">
-          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_8W79IOeeEeWj7ZPL8JeBTQ" name="JSON"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_8W79IOeeEeWj7ZPL8JeBTQ" name="json"/>
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_7KkQoOeeEeWj7ZPL8JeBTQ" name="RDF"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Enumeration" xmi:id="_upZtkClyEeaibdPncpUwfA" name="ConstraintType">
-          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_2nOfwClyEeaibdPncpUwfA" name="Less"/>
-          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_7TR_MClyEeaibdPncpUwfA" name="LessEqual"/>
-          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_82F1wClyEeaibdPncpUwfA" name="Equal"/>
-          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_91ZWoClyEeaibdPncpUwfA" name="GreaterEqual"/>
-          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_98IQwClyEeaibdPncpUwfA" name="Greater"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_2nOfwClyEeaibdPncpUwfA" name="less"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_7TR_MClyEeaibdPncpUwfA" name="lessEqual"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_82F1wClyEeaibdPncpUwfA" name="equal"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_91ZWoClyEeaibdPncpUwfA" name="greaterEqual"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_98IQwClyEeaibdPncpUwfA" name="greater"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Enumeration" xmi:id="_-pTbkCo9EeaibdPncpUwfA" name="WorkflowOperation">
-          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_35al4CpuEeaibdPncpUwfA" name="GroupBy"/>
-          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_4LmiECpuEeaibdPncpUwfA" name="Sum"/>
-          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_4PfjkCpuEeaibdPncpUwfA" name="Count"/>
-          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_4UrlkCpuEeaibdPncpUwfA" name="Split"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_35al4CpuEeaibdPncpUwfA" name="groupBy"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_4LmiECpuEeaibdPncpUwfA" name="sum"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_4PfjkCpuEeaibdPncpUwfA" name="count"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_4UrlkCpuEeaibdPncpUwfA" name="split"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Enumeration" xmi:id="_AjJ5ICo-EeaibdPncpUwfA" name="MapType">
-          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_a0Z-kCpuEeaibdPncpUwfA" name="RegexMapper"/>
-          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_eS768CpuEeaibdPncpUwfA" name="FieldSelectionMapper"/>
-          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_lEpfUCpuEeaibdPncpUwfA" name="ChainMapper"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_a0Z-kCpuEeaibdPncpUwfA" name="regexMapper"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_eS768CpuEeaibdPncpUwfA" name="fieldSelectionMapper"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_lEpfUCpuEeaibdPncpUwfA" name="chainMapper"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Enumeration" xmi:id="_C5gsgCo-EeaibdPncpUwfA" name="ReduceType">
-          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_tsqeACpuEeaibdPncpUwfA" name="FieldSelectionReducer"/>
-          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_uVDTsCpuEeaibdPncpUwfA" name="ChainReducer"/>
-          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_vC4DACpuEeaibdPncpUwfA" name="IntSumReducer"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_tsqeACpuEeaibdPncpUwfA" name="fieldSelectionReducer"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_uVDTsCpuEeaibdPncpUwfA" name="chainReducer"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_vC4DACpuEeaibdPncpUwfA" name="intSumReducer"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Enumeration" xmi:id="_v1__8DiOEeaFI4EbHcf0UA" name="StreamPolicy">
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_zBvjMDiOEeaFI4EbHcf0UA" name="all"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_0dJxQDiOEeaFI4EbHcf0UA" name="shuffle"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Enumeration" xmi:id="_AOBLsDiZEeaFI4EbHcf0UA" name="Scheduling">
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_P-A5sDiZEeaFI4EbHcf0UA" name="capacity"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_RWUJYDiZEeaFI4EbHcf0UA" name="fifo"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_SaOdcDiZEeaFI4EbHcf0UA" name="fair"/>
         </packagedElement>
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_yQjxwOeYEeWj7ZPL8JeBTQ" name="Data_Types">

@@ -9,6 +9,8 @@ import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
 
+import org.eclipse.papyrus.MARTE.MARTE_AnalysisModel.GQAM.GQAMPackage;
+
 import org.eclipse.papyrus.MARTE.MARTE_Foundations.GRM.GRMPackage;
 
 /**
@@ -60,14 +62,14 @@ public interface DPIMPackage extends EPackage {
 	DPIMPackage eINSTANCE = es.unizar.disco.dice.DPIM.impl.DPIMPackageImpl.init();
 
 	/**
-	 * The meta object id for the '{@link es.unizar.disco.dice.DPIM.impl.DiceComponentImpl <em>Dice Component</em>}' class.
+	 * The meta object id for the '{@link es.unizar.disco.dice.DPIM.impl.DpimComputationNodeImpl <em>Dpim Computation Node</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see es.unizar.disco.dice.DPIM.impl.DiceComponentImpl
-	 * @see es.unizar.disco.dice.DPIM.impl.DPIMPackageImpl#getDiceComponent()
+	 * @see es.unizar.disco.dice.DPIM.impl.DpimComputationNodeImpl
+	 * @see es.unizar.disco.dice.DPIM.impl.DPIMPackageImpl#getDpimComputationNode()
 	 * @generated
 	 */
-	int DICE_COMPONENT = 0;
+	int DPIM_COMPUTATION_NODE = 0;
 
 	/**
 	 * The feature id for the '<em><b>Res Mult</b></em>' attribute.
@@ -76,7 +78,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_COMPONENT__RES_MULT = CorePackage.DA_COMPONENT__RES_MULT;
+	int DPIM_COMPUTATION_NODE__RES_MULT = CorePackage.DA_COMPONENT__RES_MULT;
 
 	/**
 	 * The feature id for the '<em><b>Is Protected</b></em>' attribute.
@@ -85,7 +87,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_COMPONENT__IS_PROTECTED = CorePackage.DA_COMPONENT__IS_PROTECTED;
+	int DPIM_COMPUTATION_NODE__IS_PROTECTED = CorePackage.DA_COMPONENT__IS_PROTECTED;
 
 	/**
 	 * The feature id for the '<em><b>Is Active</b></em>' attribute.
@@ -94,7 +96,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_COMPONENT__IS_ACTIVE = CorePackage.DA_COMPONENT__IS_ACTIVE;
+	int DPIM_COMPUTATION_NODE__IS_ACTIVE = CorePackage.DA_COMPONENT__IS_ACTIVE;
 
 	/**
 	 * The feature id for the '<em><b>Base Property</b></em>' reference.
@@ -103,7 +105,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_COMPONENT__BASE_PROPERTY = CorePackage.DA_COMPONENT__BASE_PROPERTY;
+	int DPIM_COMPUTATION_NODE__BASE_PROPERTY = CorePackage.DA_COMPONENT__BASE_PROPERTY;
 
 	/**
 	 * The feature id for the '<em><b>Base Instance Specification</b></em>' reference.
@@ -112,7 +114,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_COMPONENT__BASE_INSTANCE_SPECIFICATION = CorePackage.DA_COMPONENT__BASE_INSTANCE_SPECIFICATION;
+	int DPIM_COMPUTATION_NODE__BASE_INSTANCE_SPECIFICATION = CorePackage.DA_COMPONENT__BASE_INSTANCE_SPECIFICATION;
 
 	/**
 	 * The feature id for the '<em><b>Base Classifier</b></em>' reference.
@@ -121,7 +123,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_COMPONENT__BASE_CLASSIFIER = CorePackage.DA_COMPONENT__BASE_CLASSIFIER;
+	int DPIM_COMPUTATION_NODE__BASE_CLASSIFIER = CorePackage.DA_COMPONENT__BASE_CLASSIFIER;
 
 	/**
 	 * The feature id for the '<em><b>Base Lifeline</b></em>' reference.
@@ -130,7 +132,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_COMPONENT__BASE_LIFELINE = CorePackage.DA_COMPONENT__BASE_LIFELINE;
+	int DPIM_COMPUTATION_NODE__BASE_LIFELINE = CorePackage.DA_COMPONENT__BASE_LIFELINE;
 
 	/**
 	 * The feature id for the '<em><b>Base Connectable Element</b></em>' reference.
@@ -139,7 +141,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_COMPONENT__BASE_CONNECTABLE_ELEMENT = CorePackage.DA_COMPONENT__BASE_CONNECTABLE_ELEMENT;
+	int DPIM_COMPUTATION_NODE__BASE_CONNECTABLE_ELEMENT = CorePackage.DA_COMPONENT__BASE_CONNECTABLE_ELEMENT;
 
 	/**
 	 * The feature id for the '<em><b>Stateful</b></em>' attribute.
@@ -148,7 +150,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_COMPONENT__STATEFUL = CorePackage.DA_COMPONENT__STATEFUL;
+	int DPIM_COMPUTATION_NODE__STATEFUL = CorePackage.DA_COMPONENT__STATEFUL;
 
 	/**
 	 * The feature id for the '<em><b>Origin</b></em>' attribute.
@@ -157,7 +159,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_COMPONENT__ORIGIN = CorePackage.DA_COMPONENT__ORIGIN;
+	int DPIM_COMPUTATION_NODE__ORIGIN = CorePackage.DA_COMPONENT__ORIGIN;
 
 	/**
 	 * The feature id for the '<em><b>Failure Coverage</b></em>' attribute list.
@@ -166,7 +168,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_COMPONENT__FAILURE_COVERAGE = CorePackage.DA_COMPONENT__FAILURE_COVERAGE;
+	int DPIM_COMPUTATION_NODE__FAILURE_COVERAGE = CorePackage.DA_COMPONENT__FAILURE_COVERAGE;
 
 	/**
 	 * The feature id for the '<em><b>Perc Perm Fault</b></em>' attribute list.
@@ -175,7 +177,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_COMPONENT__PERC_PERM_FAULT = CorePackage.DA_COMPONENT__PERC_PERM_FAULT;
+	int DPIM_COMPUTATION_NODE__PERC_PERM_FAULT = CorePackage.DA_COMPONENT__PERC_PERM_FAULT;
 
 	/**
 	 * The feature id for the '<em><b>Ss Avail</b></em>' attribute list.
@@ -184,7 +186,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_COMPONENT__SS_AVAIL = CorePackage.DA_COMPONENT__SS_AVAIL;
+	int DPIM_COMPUTATION_NODE__SS_AVAIL = CorePackage.DA_COMPONENT__SS_AVAIL;
 
 	/**
 	 * The feature id for the '<em><b>Unreliability</b></em>' attribute list.
@@ -193,7 +195,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_COMPONENT__UNRELIABILITY = CorePackage.DA_COMPONENT__UNRELIABILITY;
+	int DPIM_COMPUTATION_NODE__UNRELIABILITY = CorePackage.DA_COMPONENT__UNRELIABILITY;
 
 	/**
 	 * The feature id for the '<em><b>Reliability</b></em>' attribute list.
@@ -202,7 +204,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_COMPONENT__RELIABILITY = CorePackage.DA_COMPONENT__RELIABILITY;
+	int DPIM_COMPUTATION_NODE__RELIABILITY = CorePackage.DA_COMPONENT__RELIABILITY;
 
 	/**
 	 * The feature id for the '<em><b>Mission Time</b></em>' attribute list.
@@ -211,7 +213,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_COMPONENT__MISSION_TIME = CorePackage.DA_COMPONENT__MISSION_TIME;
+	int DPIM_COMPUTATION_NODE__MISSION_TIME = CorePackage.DA_COMPONENT__MISSION_TIME;
 
 	/**
 	 * The feature id for the '<em><b>Avail Level</b></em>' attribute list.
@@ -220,7 +222,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_COMPONENT__AVAIL_LEVEL = CorePackage.DA_COMPONENT__AVAIL_LEVEL;
+	int DPIM_COMPUTATION_NODE__AVAIL_LEVEL = CorePackage.DA_COMPONENT__AVAIL_LEVEL;
 
 	/**
 	 * The feature id for the '<em><b>Reliability Level</b></em>' attribute list.
@@ -229,7 +231,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_COMPONENT__RELIABILITY_LEVEL = CorePackage.DA_COMPONENT__RELIABILITY_LEVEL;
+	int DPIM_COMPUTATION_NODE__RELIABILITY_LEVEL = CorePackage.DA_COMPONENT__RELIABILITY_LEVEL;
 
 	/**
 	 * The feature id for the '<em><b>Safety Level</b></em>' attribute list.
@@ -238,7 +240,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_COMPONENT__SAFETY_LEVEL = CorePackage.DA_COMPONENT__SAFETY_LEVEL;
+	int DPIM_COMPUTATION_NODE__SAFETY_LEVEL = CorePackage.DA_COMPONENT__SAFETY_LEVEL;
 
 	/**
 	 * The feature id for the '<em><b>Complexity</b></em>' attribute list.
@@ -247,7 +249,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_COMPONENT__COMPLEXITY = CorePackage.DA_COMPONENT__COMPLEXITY;
+	int DPIM_COMPUTATION_NODE__COMPLEXITY = CorePackage.DA_COMPONENT__COMPLEXITY;
 
 	/**
 	 * The feature id for the '<em><b>Fault</b></em>' containment reference list.
@@ -256,7 +258,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_COMPONENT__FAULT = CorePackage.DA_COMPONENT__FAULT;
+	int DPIM_COMPUTATION_NODE__FAULT = CorePackage.DA_COMPONENT__FAULT;
 
 	/**
 	 * The feature id for the '<em><b>Error</b></em>' containment reference list.
@@ -265,7 +267,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_COMPONENT__ERROR = CorePackage.DA_COMPONENT__ERROR;
+	int DPIM_COMPUTATION_NODE__ERROR = CorePackage.DA_COMPONENT__ERROR;
 
 	/**
 	 * The feature id for the '<em><b>Failure</b></em>' containment reference list.
@@ -274,7 +276,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_COMPONENT__FAILURE = CorePackage.DA_COMPONENT__FAILURE;
+	int DPIM_COMPUTATION_NODE__FAILURE = CorePackage.DA_COMPONENT__FAILURE;
 
 	/**
 	 * The feature id for the '<em><b>Hazard</b></em>' containment reference list.
@@ -283,7 +285,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_COMPONENT__HAZARD = CorePackage.DA_COMPONENT__HAZARD;
+	int DPIM_COMPUTATION_NODE__HAZARD = CorePackage.DA_COMPONENT__HAZARD;
 
 	/**
 	 * The feature id for the '<em><b>Repair</b></em>' containment reference list.
@@ -292,7 +294,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_COMPONENT__REPAIR = CorePackage.DA_COMPONENT__REPAIR;
+	int DPIM_COMPUTATION_NODE__REPAIR = CorePackage.DA_COMPONENT__REPAIR;
 
 	/**
 	 * The feature id for the '<em><b>Substituted By</b></em>' reference list.
@@ -301,7 +303,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_COMPONENT__SUBSTITUTED_BY = CorePackage.DA_COMPONENT__SUBSTITUTED_BY;
+	int DPIM_COMPUTATION_NODE__SUBSTITUTED_BY = CorePackage.DA_COMPONENT__SUBSTITUTED_BY;
 
 	/**
 	 * The feature id for the '<em><b>Throughput</b></em>' attribute.
@@ -310,7 +312,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_COMPONENT__THROUGHPUT = CorePackage.DA_COMPONENT_FEATURE_COUNT + 0;
+	int DPIM_COMPUTATION_NODE__THROUGHPUT = CorePackage.DA_COMPONENT_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Type</b></em>' attribute.
@@ -319,7 +321,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_COMPONENT__TYPE = CorePackage.DA_COMPONENT_FEATURE_COUNT + 1;
+	int DPIM_COMPUTATION_NODE__TYPE = CorePackage.DA_COMPONENT_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Target Tech</b></em>' attribute.
@@ -328,7 +330,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_COMPONENT__TARGET_TECH = CorePackage.DA_COMPONENT_FEATURE_COUNT + 2;
+	int DPIM_COMPUTATION_NODE__TARGET_TECH = CorePackage.DA_COMPONENT_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Proc Type</b></em>' attribute.
@@ -337,26 +339,26 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_COMPONENT__PROC_TYPE = CorePackage.DA_COMPONENT_FEATURE_COUNT + 3;
+	int DPIM_COMPUTATION_NODE__PROC_TYPE = CorePackage.DA_COMPONENT_FEATURE_COUNT + 3;
 
 	/**
-	 * The number of structural features of the '<em>Dice Component</em>' class.
+	 * The number of structural features of the '<em>Dpim Computation Node</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_COMPONENT_FEATURE_COUNT = CorePackage.DA_COMPONENT_FEATURE_COUNT + 4;
+	int DPIM_COMPUTATION_NODE_FEATURE_COUNT = CorePackage.DA_COMPONENT_FEATURE_COUNT + 4;
 
 	/**
-	 * The meta object id for the '{@link es.unizar.disco.dice.DPIM.impl.DiceFilterNodeImpl <em>Dice Filter Node</em>}' class.
+	 * The meta object id for the '{@link es.unizar.disco.dice.DPIM.impl.DpimFilterNodeImpl <em>Dpim Filter Node</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see es.unizar.disco.dice.DPIM.impl.DiceFilterNodeImpl
-	 * @see es.unizar.disco.dice.DPIM.impl.DPIMPackageImpl#getDiceFilterNode()
+	 * @see es.unizar.disco.dice.DPIM.impl.DpimFilterNodeImpl
+	 * @see es.unizar.disco.dice.DPIM.impl.DPIMPackageImpl#getDpimFilterNode()
 	 * @generated
 	 */
-	int DICE_FILTER_NODE = 1;
+	int DPIM_FILTER_NODE = 1;
 
 	/**
 	 * The feature id for the '<em><b>Res Mult</b></em>' attribute.
@@ -365,7 +367,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_FILTER_NODE__RES_MULT = DICE_COMPONENT__RES_MULT;
+	int DPIM_FILTER_NODE__RES_MULT = DPIM_COMPUTATION_NODE__RES_MULT;
 
 	/**
 	 * The feature id for the '<em><b>Is Protected</b></em>' attribute.
@@ -374,7 +376,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_FILTER_NODE__IS_PROTECTED = DICE_COMPONENT__IS_PROTECTED;
+	int DPIM_FILTER_NODE__IS_PROTECTED = DPIM_COMPUTATION_NODE__IS_PROTECTED;
 
 	/**
 	 * The feature id for the '<em><b>Is Active</b></em>' attribute.
@@ -383,7 +385,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_FILTER_NODE__IS_ACTIVE = DICE_COMPONENT__IS_ACTIVE;
+	int DPIM_FILTER_NODE__IS_ACTIVE = DPIM_COMPUTATION_NODE__IS_ACTIVE;
 
 	/**
 	 * The feature id for the '<em><b>Base Property</b></em>' reference.
@@ -392,7 +394,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_FILTER_NODE__BASE_PROPERTY = DICE_COMPONENT__BASE_PROPERTY;
+	int DPIM_FILTER_NODE__BASE_PROPERTY = DPIM_COMPUTATION_NODE__BASE_PROPERTY;
 
 	/**
 	 * The feature id for the '<em><b>Base Instance Specification</b></em>' reference.
@@ -401,7 +403,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_FILTER_NODE__BASE_INSTANCE_SPECIFICATION = DICE_COMPONENT__BASE_INSTANCE_SPECIFICATION;
+	int DPIM_FILTER_NODE__BASE_INSTANCE_SPECIFICATION = DPIM_COMPUTATION_NODE__BASE_INSTANCE_SPECIFICATION;
 
 	/**
 	 * The feature id for the '<em><b>Base Classifier</b></em>' reference.
@@ -410,7 +412,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_FILTER_NODE__BASE_CLASSIFIER = DICE_COMPONENT__BASE_CLASSIFIER;
+	int DPIM_FILTER_NODE__BASE_CLASSIFIER = DPIM_COMPUTATION_NODE__BASE_CLASSIFIER;
 
 	/**
 	 * The feature id for the '<em><b>Base Lifeline</b></em>' reference.
@@ -419,7 +421,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_FILTER_NODE__BASE_LIFELINE = DICE_COMPONENT__BASE_LIFELINE;
+	int DPIM_FILTER_NODE__BASE_LIFELINE = DPIM_COMPUTATION_NODE__BASE_LIFELINE;
 
 	/**
 	 * The feature id for the '<em><b>Base Connectable Element</b></em>' reference.
@@ -428,7 +430,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_FILTER_NODE__BASE_CONNECTABLE_ELEMENT = DICE_COMPONENT__BASE_CONNECTABLE_ELEMENT;
+	int DPIM_FILTER_NODE__BASE_CONNECTABLE_ELEMENT = DPIM_COMPUTATION_NODE__BASE_CONNECTABLE_ELEMENT;
 
 	/**
 	 * The feature id for the '<em><b>Stateful</b></em>' attribute.
@@ -437,7 +439,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_FILTER_NODE__STATEFUL = DICE_COMPONENT__STATEFUL;
+	int DPIM_FILTER_NODE__STATEFUL = DPIM_COMPUTATION_NODE__STATEFUL;
 
 	/**
 	 * The feature id for the '<em><b>Origin</b></em>' attribute.
@@ -446,7 +448,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_FILTER_NODE__ORIGIN = DICE_COMPONENT__ORIGIN;
+	int DPIM_FILTER_NODE__ORIGIN = DPIM_COMPUTATION_NODE__ORIGIN;
 
 	/**
 	 * The feature id for the '<em><b>Failure Coverage</b></em>' attribute list.
@@ -455,7 +457,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_FILTER_NODE__FAILURE_COVERAGE = DICE_COMPONENT__FAILURE_COVERAGE;
+	int DPIM_FILTER_NODE__FAILURE_COVERAGE = DPIM_COMPUTATION_NODE__FAILURE_COVERAGE;
 
 	/**
 	 * The feature id for the '<em><b>Perc Perm Fault</b></em>' attribute list.
@@ -464,7 +466,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_FILTER_NODE__PERC_PERM_FAULT = DICE_COMPONENT__PERC_PERM_FAULT;
+	int DPIM_FILTER_NODE__PERC_PERM_FAULT = DPIM_COMPUTATION_NODE__PERC_PERM_FAULT;
 
 	/**
 	 * The feature id for the '<em><b>Ss Avail</b></em>' attribute list.
@@ -473,7 +475,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_FILTER_NODE__SS_AVAIL = DICE_COMPONENT__SS_AVAIL;
+	int DPIM_FILTER_NODE__SS_AVAIL = DPIM_COMPUTATION_NODE__SS_AVAIL;
 
 	/**
 	 * The feature id for the '<em><b>Unreliability</b></em>' attribute list.
@@ -482,7 +484,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_FILTER_NODE__UNRELIABILITY = DICE_COMPONENT__UNRELIABILITY;
+	int DPIM_FILTER_NODE__UNRELIABILITY = DPIM_COMPUTATION_NODE__UNRELIABILITY;
 
 	/**
 	 * The feature id for the '<em><b>Reliability</b></em>' attribute list.
@@ -491,7 +493,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_FILTER_NODE__RELIABILITY = DICE_COMPONENT__RELIABILITY;
+	int DPIM_FILTER_NODE__RELIABILITY = DPIM_COMPUTATION_NODE__RELIABILITY;
 
 	/**
 	 * The feature id for the '<em><b>Mission Time</b></em>' attribute list.
@@ -500,7 +502,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_FILTER_NODE__MISSION_TIME = DICE_COMPONENT__MISSION_TIME;
+	int DPIM_FILTER_NODE__MISSION_TIME = DPIM_COMPUTATION_NODE__MISSION_TIME;
 
 	/**
 	 * The feature id for the '<em><b>Avail Level</b></em>' attribute list.
@@ -509,7 +511,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_FILTER_NODE__AVAIL_LEVEL = DICE_COMPONENT__AVAIL_LEVEL;
+	int DPIM_FILTER_NODE__AVAIL_LEVEL = DPIM_COMPUTATION_NODE__AVAIL_LEVEL;
 
 	/**
 	 * The feature id for the '<em><b>Reliability Level</b></em>' attribute list.
@@ -518,7 +520,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_FILTER_NODE__RELIABILITY_LEVEL = DICE_COMPONENT__RELIABILITY_LEVEL;
+	int DPIM_FILTER_NODE__RELIABILITY_LEVEL = DPIM_COMPUTATION_NODE__RELIABILITY_LEVEL;
 
 	/**
 	 * The feature id for the '<em><b>Safety Level</b></em>' attribute list.
@@ -527,7 +529,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_FILTER_NODE__SAFETY_LEVEL = DICE_COMPONENT__SAFETY_LEVEL;
+	int DPIM_FILTER_NODE__SAFETY_LEVEL = DPIM_COMPUTATION_NODE__SAFETY_LEVEL;
 
 	/**
 	 * The feature id for the '<em><b>Complexity</b></em>' attribute list.
@@ -536,7 +538,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_FILTER_NODE__COMPLEXITY = DICE_COMPONENT__COMPLEXITY;
+	int DPIM_FILTER_NODE__COMPLEXITY = DPIM_COMPUTATION_NODE__COMPLEXITY;
 
 	/**
 	 * The feature id for the '<em><b>Fault</b></em>' containment reference list.
@@ -545,7 +547,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_FILTER_NODE__FAULT = DICE_COMPONENT__FAULT;
+	int DPIM_FILTER_NODE__FAULT = DPIM_COMPUTATION_NODE__FAULT;
 
 	/**
 	 * The feature id for the '<em><b>Error</b></em>' containment reference list.
@@ -554,7 +556,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_FILTER_NODE__ERROR = DICE_COMPONENT__ERROR;
+	int DPIM_FILTER_NODE__ERROR = DPIM_COMPUTATION_NODE__ERROR;
 
 	/**
 	 * The feature id for the '<em><b>Failure</b></em>' containment reference list.
@@ -563,7 +565,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_FILTER_NODE__FAILURE = DICE_COMPONENT__FAILURE;
+	int DPIM_FILTER_NODE__FAILURE = DPIM_COMPUTATION_NODE__FAILURE;
 
 	/**
 	 * The feature id for the '<em><b>Hazard</b></em>' containment reference list.
@@ -572,7 +574,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_FILTER_NODE__HAZARD = DICE_COMPONENT__HAZARD;
+	int DPIM_FILTER_NODE__HAZARD = DPIM_COMPUTATION_NODE__HAZARD;
 
 	/**
 	 * The feature id for the '<em><b>Repair</b></em>' containment reference list.
@@ -581,7 +583,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_FILTER_NODE__REPAIR = DICE_COMPONENT__REPAIR;
+	int DPIM_FILTER_NODE__REPAIR = DPIM_COMPUTATION_NODE__REPAIR;
 
 	/**
 	 * The feature id for the '<em><b>Substituted By</b></em>' reference list.
@@ -590,7 +592,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_FILTER_NODE__SUBSTITUTED_BY = DICE_COMPONENT__SUBSTITUTED_BY;
+	int DPIM_FILTER_NODE__SUBSTITUTED_BY = DPIM_COMPUTATION_NODE__SUBSTITUTED_BY;
 
 	/**
 	 * The feature id for the '<em><b>Throughput</b></em>' attribute.
@@ -599,7 +601,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_FILTER_NODE__THROUGHPUT = DICE_COMPONENT__THROUGHPUT;
+	int DPIM_FILTER_NODE__THROUGHPUT = DPIM_COMPUTATION_NODE__THROUGHPUT;
 
 	/**
 	 * The feature id for the '<em><b>Type</b></em>' attribute.
@@ -608,7 +610,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_FILTER_NODE__TYPE = DICE_COMPONENT__TYPE;
+	int DPIM_FILTER_NODE__TYPE = DPIM_COMPUTATION_NODE__TYPE;
 
 	/**
 	 * The feature id for the '<em><b>Target Tech</b></em>' attribute.
@@ -617,7 +619,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_FILTER_NODE__TARGET_TECH = DICE_COMPONENT__TARGET_TECH;
+	int DPIM_FILTER_NODE__TARGET_TECH = DPIM_COMPUTATION_NODE__TARGET_TECH;
 
 	/**
 	 * The feature id for the '<em><b>Proc Type</b></em>' attribute.
@@ -626,7 +628,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_FILTER_NODE__PROC_TYPE = DICE_COMPONENT__PROC_TYPE;
+	int DPIM_FILTER_NODE__PROC_TYPE = DPIM_COMPUTATION_NODE__PROC_TYPE;
 
 	/**
 	 * The feature id for the '<em><b>Input Ratio</b></em>' attribute.
@@ -635,7 +637,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_FILTER_NODE__INPUT_RATIO = DICE_COMPONENT_FEATURE_COUNT + 0;
+	int DPIM_FILTER_NODE__INPUT_RATIO = DPIM_COMPUTATION_NODE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Output Ration</b></em>' attribute.
@@ -644,26 +646,26 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_FILTER_NODE__OUTPUT_RATION = DICE_COMPONENT_FEATURE_COUNT + 1;
+	int DPIM_FILTER_NODE__OUTPUT_RATION = DPIM_COMPUTATION_NODE_FEATURE_COUNT + 1;
 
 	/**
-	 * The number of structural features of the '<em>Dice Filter Node</em>' class.
+	 * The number of structural features of the '<em>Dpim Filter Node</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_FILTER_NODE_FEATURE_COUNT = DICE_COMPONENT_FEATURE_COUNT + 2;
+	int DPIM_FILTER_NODE_FEATURE_COUNT = DPIM_COMPUTATION_NODE_FEATURE_COUNT + 2;
 
 	/**
-	 * The meta object id for the '{@link es.unizar.disco.dice.DPIM.impl.DiceVisualizationNodeImpl <em>Dice Visualization Node</em>}' class.
+	 * The meta object id for the '{@link es.unizar.disco.dice.DPIM.impl.DpimVisualizationNodeImpl <em>Dpim Visualization Node</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see es.unizar.disco.dice.DPIM.impl.DiceVisualizationNodeImpl
-	 * @see es.unizar.disco.dice.DPIM.impl.DPIMPackageImpl#getDiceVisualizationNode()
+	 * @see es.unizar.disco.dice.DPIM.impl.DpimVisualizationNodeImpl
+	 * @see es.unizar.disco.dice.DPIM.impl.DPIMPackageImpl#getDpimVisualizationNode()
 	 * @generated
 	 */
-	int DICE_VISUALIZATION_NODE = 2;
+	int DPIM_VISUALIZATION_NODE = 2;
 
 	/**
 	 * The feature id for the '<em><b>Res Mult</b></em>' attribute.
@@ -672,7 +674,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_VISUALIZATION_NODE__RES_MULT = DICE_COMPONENT__RES_MULT;
+	int DPIM_VISUALIZATION_NODE__RES_MULT = DPIM_COMPUTATION_NODE__RES_MULT;
 
 	/**
 	 * The feature id for the '<em><b>Is Protected</b></em>' attribute.
@@ -681,7 +683,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_VISUALIZATION_NODE__IS_PROTECTED = DICE_COMPONENT__IS_PROTECTED;
+	int DPIM_VISUALIZATION_NODE__IS_PROTECTED = DPIM_COMPUTATION_NODE__IS_PROTECTED;
 
 	/**
 	 * The feature id for the '<em><b>Is Active</b></em>' attribute.
@@ -690,7 +692,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_VISUALIZATION_NODE__IS_ACTIVE = DICE_COMPONENT__IS_ACTIVE;
+	int DPIM_VISUALIZATION_NODE__IS_ACTIVE = DPIM_COMPUTATION_NODE__IS_ACTIVE;
 
 	/**
 	 * The feature id for the '<em><b>Base Property</b></em>' reference.
@@ -699,7 +701,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_VISUALIZATION_NODE__BASE_PROPERTY = DICE_COMPONENT__BASE_PROPERTY;
+	int DPIM_VISUALIZATION_NODE__BASE_PROPERTY = DPIM_COMPUTATION_NODE__BASE_PROPERTY;
 
 	/**
 	 * The feature id for the '<em><b>Base Instance Specification</b></em>' reference.
@@ -708,7 +710,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_VISUALIZATION_NODE__BASE_INSTANCE_SPECIFICATION = DICE_COMPONENT__BASE_INSTANCE_SPECIFICATION;
+	int DPIM_VISUALIZATION_NODE__BASE_INSTANCE_SPECIFICATION = DPIM_COMPUTATION_NODE__BASE_INSTANCE_SPECIFICATION;
 
 	/**
 	 * The feature id for the '<em><b>Base Classifier</b></em>' reference.
@@ -717,7 +719,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_VISUALIZATION_NODE__BASE_CLASSIFIER = DICE_COMPONENT__BASE_CLASSIFIER;
+	int DPIM_VISUALIZATION_NODE__BASE_CLASSIFIER = DPIM_COMPUTATION_NODE__BASE_CLASSIFIER;
 
 	/**
 	 * The feature id for the '<em><b>Base Lifeline</b></em>' reference.
@@ -726,7 +728,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_VISUALIZATION_NODE__BASE_LIFELINE = DICE_COMPONENT__BASE_LIFELINE;
+	int DPIM_VISUALIZATION_NODE__BASE_LIFELINE = DPIM_COMPUTATION_NODE__BASE_LIFELINE;
 
 	/**
 	 * The feature id for the '<em><b>Base Connectable Element</b></em>' reference.
@@ -735,7 +737,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_VISUALIZATION_NODE__BASE_CONNECTABLE_ELEMENT = DICE_COMPONENT__BASE_CONNECTABLE_ELEMENT;
+	int DPIM_VISUALIZATION_NODE__BASE_CONNECTABLE_ELEMENT = DPIM_COMPUTATION_NODE__BASE_CONNECTABLE_ELEMENT;
 
 	/**
 	 * The feature id for the '<em><b>Stateful</b></em>' attribute.
@@ -744,7 +746,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_VISUALIZATION_NODE__STATEFUL = DICE_COMPONENT__STATEFUL;
+	int DPIM_VISUALIZATION_NODE__STATEFUL = DPIM_COMPUTATION_NODE__STATEFUL;
 
 	/**
 	 * The feature id for the '<em><b>Origin</b></em>' attribute.
@@ -753,7 +755,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_VISUALIZATION_NODE__ORIGIN = DICE_COMPONENT__ORIGIN;
+	int DPIM_VISUALIZATION_NODE__ORIGIN = DPIM_COMPUTATION_NODE__ORIGIN;
 
 	/**
 	 * The feature id for the '<em><b>Failure Coverage</b></em>' attribute list.
@@ -762,7 +764,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_VISUALIZATION_NODE__FAILURE_COVERAGE = DICE_COMPONENT__FAILURE_COVERAGE;
+	int DPIM_VISUALIZATION_NODE__FAILURE_COVERAGE = DPIM_COMPUTATION_NODE__FAILURE_COVERAGE;
 
 	/**
 	 * The feature id for the '<em><b>Perc Perm Fault</b></em>' attribute list.
@@ -771,7 +773,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_VISUALIZATION_NODE__PERC_PERM_FAULT = DICE_COMPONENT__PERC_PERM_FAULT;
+	int DPIM_VISUALIZATION_NODE__PERC_PERM_FAULT = DPIM_COMPUTATION_NODE__PERC_PERM_FAULT;
 
 	/**
 	 * The feature id for the '<em><b>Ss Avail</b></em>' attribute list.
@@ -780,7 +782,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_VISUALIZATION_NODE__SS_AVAIL = DICE_COMPONENT__SS_AVAIL;
+	int DPIM_VISUALIZATION_NODE__SS_AVAIL = DPIM_COMPUTATION_NODE__SS_AVAIL;
 
 	/**
 	 * The feature id for the '<em><b>Unreliability</b></em>' attribute list.
@@ -789,7 +791,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_VISUALIZATION_NODE__UNRELIABILITY = DICE_COMPONENT__UNRELIABILITY;
+	int DPIM_VISUALIZATION_NODE__UNRELIABILITY = DPIM_COMPUTATION_NODE__UNRELIABILITY;
 
 	/**
 	 * The feature id for the '<em><b>Reliability</b></em>' attribute list.
@@ -798,7 +800,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_VISUALIZATION_NODE__RELIABILITY = DICE_COMPONENT__RELIABILITY;
+	int DPIM_VISUALIZATION_NODE__RELIABILITY = DPIM_COMPUTATION_NODE__RELIABILITY;
 
 	/**
 	 * The feature id for the '<em><b>Mission Time</b></em>' attribute list.
@@ -807,7 +809,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_VISUALIZATION_NODE__MISSION_TIME = DICE_COMPONENT__MISSION_TIME;
+	int DPIM_VISUALIZATION_NODE__MISSION_TIME = DPIM_COMPUTATION_NODE__MISSION_TIME;
 
 	/**
 	 * The feature id for the '<em><b>Avail Level</b></em>' attribute list.
@@ -816,7 +818,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_VISUALIZATION_NODE__AVAIL_LEVEL = DICE_COMPONENT__AVAIL_LEVEL;
+	int DPIM_VISUALIZATION_NODE__AVAIL_LEVEL = DPIM_COMPUTATION_NODE__AVAIL_LEVEL;
 
 	/**
 	 * The feature id for the '<em><b>Reliability Level</b></em>' attribute list.
@@ -825,7 +827,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_VISUALIZATION_NODE__RELIABILITY_LEVEL = DICE_COMPONENT__RELIABILITY_LEVEL;
+	int DPIM_VISUALIZATION_NODE__RELIABILITY_LEVEL = DPIM_COMPUTATION_NODE__RELIABILITY_LEVEL;
 
 	/**
 	 * The feature id for the '<em><b>Safety Level</b></em>' attribute list.
@@ -834,7 +836,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_VISUALIZATION_NODE__SAFETY_LEVEL = DICE_COMPONENT__SAFETY_LEVEL;
+	int DPIM_VISUALIZATION_NODE__SAFETY_LEVEL = DPIM_COMPUTATION_NODE__SAFETY_LEVEL;
 
 	/**
 	 * The feature id for the '<em><b>Complexity</b></em>' attribute list.
@@ -843,7 +845,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_VISUALIZATION_NODE__COMPLEXITY = DICE_COMPONENT__COMPLEXITY;
+	int DPIM_VISUALIZATION_NODE__COMPLEXITY = DPIM_COMPUTATION_NODE__COMPLEXITY;
 
 	/**
 	 * The feature id for the '<em><b>Fault</b></em>' containment reference list.
@@ -852,7 +854,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_VISUALIZATION_NODE__FAULT = DICE_COMPONENT__FAULT;
+	int DPIM_VISUALIZATION_NODE__FAULT = DPIM_COMPUTATION_NODE__FAULT;
 
 	/**
 	 * The feature id for the '<em><b>Error</b></em>' containment reference list.
@@ -861,7 +863,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_VISUALIZATION_NODE__ERROR = DICE_COMPONENT__ERROR;
+	int DPIM_VISUALIZATION_NODE__ERROR = DPIM_COMPUTATION_NODE__ERROR;
 
 	/**
 	 * The feature id for the '<em><b>Failure</b></em>' containment reference list.
@@ -870,7 +872,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_VISUALIZATION_NODE__FAILURE = DICE_COMPONENT__FAILURE;
+	int DPIM_VISUALIZATION_NODE__FAILURE = DPIM_COMPUTATION_NODE__FAILURE;
 
 	/**
 	 * The feature id for the '<em><b>Hazard</b></em>' containment reference list.
@@ -879,7 +881,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_VISUALIZATION_NODE__HAZARD = DICE_COMPONENT__HAZARD;
+	int DPIM_VISUALIZATION_NODE__HAZARD = DPIM_COMPUTATION_NODE__HAZARD;
 
 	/**
 	 * The feature id for the '<em><b>Repair</b></em>' containment reference list.
@@ -888,7 +890,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_VISUALIZATION_NODE__REPAIR = DICE_COMPONENT__REPAIR;
+	int DPIM_VISUALIZATION_NODE__REPAIR = DPIM_COMPUTATION_NODE__REPAIR;
 
 	/**
 	 * The feature id for the '<em><b>Substituted By</b></em>' reference list.
@@ -897,7 +899,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_VISUALIZATION_NODE__SUBSTITUTED_BY = DICE_COMPONENT__SUBSTITUTED_BY;
+	int DPIM_VISUALIZATION_NODE__SUBSTITUTED_BY = DPIM_COMPUTATION_NODE__SUBSTITUTED_BY;
 
 	/**
 	 * The feature id for the '<em><b>Throughput</b></em>' attribute.
@@ -906,7 +908,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_VISUALIZATION_NODE__THROUGHPUT = DICE_COMPONENT__THROUGHPUT;
+	int DPIM_VISUALIZATION_NODE__THROUGHPUT = DPIM_COMPUTATION_NODE__THROUGHPUT;
 
 	/**
 	 * The feature id for the '<em><b>Type</b></em>' attribute.
@@ -915,7 +917,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_VISUALIZATION_NODE__TYPE = DICE_COMPONENT__TYPE;
+	int DPIM_VISUALIZATION_NODE__TYPE = DPIM_COMPUTATION_NODE__TYPE;
 
 	/**
 	 * The feature id for the '<em><b>Target Tech</b></em>' attribute.
@@ -924,7 +926,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_VISUALIZATION_NODE__TARGET_TECH = DICE_COMPONENT__TARGET_TECH;
+	int DPIM_VISUALIZATION_NODE__TARGET_TECH = DPIM_COMPUTATION_NODE__TARGET_TECH;
 
 	/**
 	 * The feature id for the '<em><b>Proc Type</b></em>' attribute.
@@ -933,26 +935,26 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_VISUALIZATION_NODE__PROC_TYPE = DICE_COMPONENT__PROC_TYPE;
+	int DPIM_VISUALIZATION_NODE__PROC_TYPE = DPIM_COMPUTATION_NODE__PROC_TYPE;
 
 	/**
-	 * The number of structural features of the '<em>Dice Visualization Node</em>' class.
+	 * The number of structural features of the '<em>Dpim Visualization Node</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_VISUALIZATION_NODE_FEATURE_COUNT = DICE_COMPONENT_FEATURE_COUNT + 0;
+	int DPIM_VISUALIZATION_NODE_FEATURE_COUNT = DPIM_COMPUTATION_NODE_FEATURE_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link es.unizar.disco.dice.DPIM.impl.DiceSourceNodeImpl <em>Dice Source Node</em>}' class.
+	 * The meta object id for the '{@link es.unizar.disco.dice.DPIM.impl.DpimSourceNodeImpl <em>Dpim Source Node</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see es.unizar.disco.dice.DPIM.impl.DiceSourceNodeImpl
-	 * @see es.unizar.disco.dice.DPIM.impl.DPIMPackageImpl#getDiceSourceNode()
+	 * @see es.unizar.disco.dice.DPIM.impl.DpimSourceNodeImpl
+	 * @see es.unizar.disco.dice.DPIM.impl.DPIMPackageImpl#getDpimSourceNode()
 	 * @generated
 	 */
-	int DICE_SOURCE_NODE = 3;
+	int DPIM_SOURCE_NODE = 3;
 
 	/**
 	 * The feature id for the '<em><b>Res Mult</b></em>' attribute.
@@ -961,7 +963,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_SOURCE_NODE__RES_MULT = DICE_COMPONENT__RES_MULT;
+	int DPIM_SOURCE_NODE__RES_MULT = DPIM_COMPUTATION_NODE__RES_MULT;
 
 	/**
 	 * The feature id for the '<em><b>Is Protected</b></em>' attribute.
@@ -970,7 +972,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_SOURCE_NODE__IS_PROTECTED = DICE_COMPONENT__IS_PROTECTED;
+	int DPIM_SOURCE_NODE__IS_PROTECTED = DPIM_COMPUTATION_NODE__IS_PROTECTED;
 
 	/**
 	 * The feature id for the '<em><b>Is Active</b></em>' attribute.
@@ -979,7 +981,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_SOURCE_NODE__IS_ACTIVE = DICE_COMPONENT__IS_ACTIVE;
+	int DPIM_SOURCE_NODE__IS_ACTIVE = DPIM_COMPUTATION_NODE__IS_ACTIVE;
 
 	/**
 	 * The feature id for the '<em><b>Base Property</b></em>' reference.
@@ -988,7 +990,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_SOURCE_NODE__BASE_PROPERTY = DICE_COMPONENT__BASE_PROPERTY;
+	int DPIM_SOURCE_NODE__BASE_PROPERTY = DPIM_COMPUTATION_NODE__BASE_PROPERTY;
 
 	/**
 	 * The feature id for the '<em><b>Base Instance Specification</b></em>' reference.
@@ -997,7 +999,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_SOURCE_NODE__BASE_INSTANCE_SPECIFICATION = DICE_COMPONENT__BASE_INSTANCE_SPECIFICATION;
+	int DPIM_SOURCE_NODE__BASE_INSTANCE_SPECIFICATION = DPIM_COMPUTATION_NODE__BASE_INSTANCE_SPECIFICATION;
 
 	/**
 	 * The feature id for the '<em><b>Base Classifier</b></em>' reference.
@@ -1006,7 +1008,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_SOURCE_NODE__BASE_CLASSIFIER = DICE_COMPONENT__BASE_CLASSIFIER;
+	int DPIM_SOURCE_NODE__BASE_CLASSIFIER = DPIM_COMPUTATION_NODE__BASE_CLASSIFIER;
 
 	/**
 	 * The feature id for the '<em><b>Base Lifeline</b></em>' reference.
@@ -1015,7 +1017,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_SOURCE_NODE__BASE_LIFELINE = DICE_COMPONENT__BASE_LIFELINE;
+	int DPIM_SOURCE_NODE__BASE_LIFELINE = DPIM_COMPUTATION_NODE__BASE_LIFELINE;
 
 	/**
 	 * The feature id for the '<em><b>Base Connectable Element</b></em>' reference.
@@ -1024,7 +1026,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_SOURCE_NODE__BASE_CONNECTABLE_ELEMENT = DICE_COMPONENT__BASE_CONNECTABLE_ELEMENT;
+	int DPIM_SOURCE_NODE__BASE_CONNECTABLE_ELEMENT = DPIM_COMPUTATION_NODE__BASE_CONNECTABLE_ELEMENT;
 
 	/**
 	 * The feature id for the '<em><b>Stateful</b></em>' attribute.
@@ -1033,7 +1035,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_SOURCE_NODE__STATEFUL = DICE_COMPONENT__STATEFUL;
+	int DPIM_SOURCE_NODE__STATEFUL = DPIM_COMPUTATION_NODE__STATEFUL;
 
 	/**
 	 * The feature id for the '<em><b>Origin</b></em>' attribute.
@@ -1042,7 +1044,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_SOURCE_NODE__ORIGIN = DICE_COMPONENT__ORIGIN;
+	int DPIM_SOURCE_NODE__ORIGIN = DPIM_COMPUTATION_NODE__ORIGIN;
 
 	/**
 	 * The feature id for the '<em><b>Failure Coverage</b></em>' attribute list.
@@ -1051,7 +1053,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_SOURCE_NODE__FAILURE_COVERAGE = DICE_COMPONENT__FAILURE_COVERAGE;
+	int DPIM_SOURCE_NODE__FAILURE_COVERAGE = DPIM_COMPUTATION_NODE__FAILURE_COVERAGE;
 
 	/**
 	 * The feature id for the '<em><b>Perc Perm Fault</b></em>' attribute list.
@@ -1060,7 +1062,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_SOURCE_NODE__PERC_PERM_FAULT = DICE_COMPONENT__PERC_PERM_FAULT;
+	int DPIM_SOURCE_NODE__PERC_PERM_FAULT = DPIM_COMPUTATION_NODE__PERC_PERM_FAULT;
 
 	/**
 	 * The feature id for the '<em><b>Ss Avail</b></em>' attribute list.
@@ -1069,7 +1071,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_SOURCE_NODE__SS_AVAIL = DICE_COMPONENT__SS_AVAIL;
+	int DPIM_SOURCE_NODE__SS_AVAIL = DPIM_COMPUTATION_NODE__SS_AVAIL;
 
 	/**
 	 * The feature id for the '<em><b>Unreliability</b></em>' attribute list.
@@ -1078,7 +1080,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_SOURCE_NODE__UNRELIABILITY = DICE_COMPONENT__UNRELIABILITY;
+	int DPIM_SOURCE_NODE__UNRELIABILITY = DPIM_COMPUTATION_NODE__UNRELIABILITY;
 
 	/**
 	 * The feature id for the '<em><b>Reliability</b></em>' attribute list.
@@ -1087,7 +1089,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_SOURCE_NODE__RELIABILITY = DICE_COMPONENT__RELIABILITY;
+	int DPIM_SOURCE_NODE__RELIABILITY = DPIM_COMPUTATION_NODE__RELIABILITY;
 
 	/**
 	 * The feature id for the '<em><b>Mission Time</b></em>' attribute list.
@@ -1096,7 +1098,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_SOURCE_NODE__MISSION_TIME = DICE_COMPONENT__MISSION_TIME;
+	int DPIM_SOURCE_NODE__MISSION_TIME = DPIM_COMPUTATION_NODE__MISSION_TIME;
 
 	/**
 	 * The feature id for the '<em><b>Avail Level</b></em>' attribute list.
@@ -1105,7 +1107,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_SOURCE_NODE__AVAIL_LEVEL = DICE_COMPONENT__AVAIL_LEVEL;
+	int DPIM_SOURCE_NODE__AVAIL_LEVEL = DPIM_COMPUTATION_NODE__AVAIL_LEVEL;
 
 	/**
 	 * The feature id for the '<em><b>Reliability Level</b></em>' attribute list.
@@ -1114,7 +1116,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_SOURCE_NODE__RELIABILITY_LEVEL = DICE_COMPONENT__RELIABILITY_LEVEL;
+	int DPIM_SOURCE_NODE__RELIABILITY_LEVEL = DPIM_COMPUTATION_NODE__RELIABILITY_LEVEL;
 
 	/**
 	 * The feature id for the '<em><b>Safety Level</b></em>' attribute list.
@@ -1123,7 +1125,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_SOURCE_NODE__SAFETY_LEVEL = DICE_COMPONENT__SAFETY_LEVEL;
+	int DPIM_SOURCE_NODE__SAFETY_LEVEL = DPIM_COMPUTATION_NODE__SAFETY_LEVEL;
 
 	/**
 	 * The feature id for the '<em><b>Complexity</b></em>' attribute list.
@@ -1132,7 +1134,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_SOURCE_NODE__COMPLEXITY = DICE_COMPONENT__COMPLEXITY;
+	int DPIM_SOURCE_NODE__COMPLEXITY = DPIM_COMPUTATION_NODE__COMPLEXITY;
 
 	/**
 	 * The feature id for the '<em><b>Fault</b></em>' containment reference list.
@@ -1141,7 +1143,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_SOURCE_NODE__FAULT = DICE_COMPONENT__FAULT;
+	int DPIM_SOURCE_NODE__FAULT = DPIM_COMPUTATION_NODE__FAULT;
 
 	/**
 	 * The feature id for the '<em><b>Error</b></em>' containment reference list.
@@ -1150,7 +1152,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_SOURCE_NODE__ERROR = DICE_COMPONENT__ERROR;
+	int DPIM_SOURCE_NODE__ERROR = DPIM_COMPUTATION_NODE__ERROR;
 
 	/**
 	 * The feature id for the '<em><b>Failure</b></em>' containment reference list.
@@ -1159,7 +1161,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_SOURCE_NODE__FAILURE = DICE_COMPONENT__FAILURE;
+	int DPIM_SOURCE_NODE__FAILURE = DPIM_COMPUTATION_NODE__FAILURE;
 
 	/**
 	 * The feature id for the '<em><b>Hazard</b></em>' containment reference list.
@@ -1168,7 +1170,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_SOURCE_NODE__HAZARD = DICE_COMPONENT__HAZARD;
+	int DPIM_SOURCE_NODE__HAZARD = DPIM_COMPUTATION_NODE__HAZARD;
 
 	/**
 	 * The feature id for the '<em><b>Repair</b></em>' containment reference list.
@@ -1177,7 +1179,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_SOURCE_NODE__REPAIR = DICE_COMPONENT__REPAIR;
+	int DPIM_SOURCE_NODE__REPAIR = DPIM_COMPUTATION_NODE__REPAIR;
 
 	/**
 	 * The feature id for the '<em><b>Substituted By</b></em>' reference list.
@@ -1186,7 +1188,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_SOURCE_NODE__SUBSTITUTED_BY = DICE_COMPONENT__SUBSTITUTED_BY;
+	int DPIM_SOURCE_NODE__SUBSTITUTED_BY = DPIM_COMPUTATION_NODE__SUBSTITUTED_BY;
 
 	/**
 	 * The feature id for the '<em><b>Throughput</b></em>' attribute.
@@ -1195,7 +1197,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_SOURCE_NODE__THROUGHPUT = DICE_COMPONENT__THROUGHPUT;
+	int DPIM_SOURCE_NODE__THROUGHPUT = DPIM_COMPUTATION_NODE__THROUGHPUT;
 
 	/**
 	 * The feature id for the '<em><b>Type</b></em>' attribute.
@@ -1204,7 +1206,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_SOURCE_NODE__TYPE = DICE_COMPONENT__TYPE;
+	int DPIM_SOURCE_NODE__TYPE = DPIM_COMPUTATION_NODE__TYPE;
 
 	/**
 	 * The feature id for the '<em><b>Target Tech</b></em>' attribute.
@@ -1213,7 +1215,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_SOURCE_NODE__TARGET_TECH = DICE_COMPONENT__TARGET_TECH;
+	int DPIM_SOURCE_NODE__TARGET_TECH = DPIM_COMPUTATION_NODE__TARGET_TECH;
 
 	/**
 	 * The feature id for the '<em><b>Proc Type</b></em>' attribute.
@@ -1222,7 +1224,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_SOURCE_NODE__PROC_TYPE = DICE_COMPONENT__PROC_TYPE;
+	int DPIM_SOURCE_NODE__PROC_TYPE = DPIM_COMPUTATION_NODE__PROC_TYPE;
 
 	/**
 	 * The feature id for the '<em><b>Store</b></em>' containment reference.
@@ -1231,7 +1233,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_SOURCE_NODE__STORE = DICE_COMPONENT_FEATURE_COUNT + 0;
+	int DPIM_SOURCE_NODE__STORE = DPIM_COMPUTATION_NODE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Provides</b></em>' containment reference.
@@ -1240,7 +1242,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_SOURCE_NODE__PROVIDES = DICE_COMPONENT_FEATURE_COUNT + 1;
+	int DPIM_SOURCE_NODE__PROVIDES = DPIM_COMPUTATION_NODE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Source Type</b></em>' attribute.
@@ -1249,7 +1251,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_SOURCE_NODE__SOURCE_TYPE = DICE_COMPONENT_FEATURE_COUNT + 2;
+	int DPIM_SOURCE_NODE__SOURCE_TYPE = DPIM_COMPUTATION_NODE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Rate</b></em>' attribute.
@@ -1258,26 +1260,26 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_SOURCE_NODE__RATE = DICE_COMPONENT_FEATURE_COUNT + 3;
+	int DPIM_SOURCE_NODE__RATE = DPIM_COMPUTATION_NODE_FEATURE_COUNT + 3;
 
 	/**
-	 * The number of structural features of the '<em>Dice Source Node</em>' class.
+	 * The number of structural features of the '<em>Dpim Source Node</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_SOURCE_NODE_FEATURE_COUNT = DICE_COMPONENT_FEATURE_COUNT + 4;
+	int DPIM_SOURCE_NODE_FEATURE_COUNT = DPIM_COMPUTATION_NODE_FEATURE_COUNT + 4;
 
 	/**
-	 * The meta object id for the '{@link es.unizar.disco.dice.DPIM.impl.DiceStorageResourceImpl <em>Dice Storage Resource</em>}' class.
+	 * The meta object id for the '{@link es.unizar.disco.dice.DPIM.impl.DpimStorageNodeImpl <em>Dpim Storage Node</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see es.unizar.disco.dice.DPIM.impl.DiceStorageResourceImpl
-	 * @see es.unizar.disco.dice.DPIM.impl.DPIMPackageImpl#getDiceStorageResource()
+	 * @see es.unizar.disco.dice.DPIM.impl.DpimStorageNodeImpl
+	 * @see es.unizar.disco.dice.DPIM.impl.DPIMPackageImpl#getDpimStorageNode()
 	 * @generated
 	 */
-	int DICE_STORAGE_RESOURCE = 4;
+	int DPIM_STORAGE_NODE = 4;
 
 	/**
 	 * The feature id for the '<em><b>Res Mult</b></em>' attribute.
@@ -1286,7 +1288,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_STORAGE_RESOURCE__RES_MULT = GRMPackage.STORAGE_RESOURCE__RES_MULT;
+	int DPIM_STORAGE_NODE__RES_MULT = GRMPackage.STORAGE_RESOURCE__RES_MULT;
 
 	/**
 	 * The feature id for the '<em><b>Is Protected</b></em>' attribute.
@@ -1295,7 +1297,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_STORAGE_RESOURCE__IS_PROTECTED = GRMPackage.STORAGE_RESOURCE__IS_PROTECTED;
+	int DPIM_STORAGE_NODE__IS_PROTECTED = GRMPackage.STORAGE_RESOURCE__IS_PROTECTED;
 
 	/**
 	 * The feature id for the '<em><b>Is Active</b></em>' attribute.
@@ -1304,7 +1306,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_STORAGE_RESOURCE__IS_ACTIVE = GRMPackage.STORAGE_RESOURCE__IS_ACTIVE;
+	int DPIM_STORAGE_NODE__IS_ACTIVE = GRMPackage.STORAGE_RESOURCE__IS_ACTIVE;
 
 	/**
 	 * The feature id for the '<em><b>Base Property</b></em>' reference.
@@ -1313,7 +1315,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_STORAGE_RESOURCE__BASE_PROPERTY = GRMPackage.STORAGE_RESOURCE__BASE_PROPERTY;
+	int DPIM_STORAGE_NODE__BASE_PROPERTY = GRMPackage.STORAGE_RESOURCE__BASE_PROPERTY;
 
 	/**
 	 * The feature id for the '<em><b>Base Instance Specification</b></em>' reference.
@@ -1322,7 +1324,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_STORAGE_RESOURCE__BASE_INSTANCE_SPECIFICATION = GRMPackage.STORAGE_RESOURCE__BASE_INSTANCE_SPECIFICATION;
+	int DPIM_STORAGE_NODE__BASE_INSTANCE_SPECIFICATION = GRMPackage.STORAGE_RESOURCE__BASE_INSTANCE_SPECIFICATION;
 
 	/**
 	 * The feature id for the '<em><b>Base Classifier</b></em>' reference.
@@ -1331,7 +1333,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_STORAGE_RESOURCE__BASE_CLASSIFIER = GRMPackage.STORAGE_RESOURCE__BASE_CLASSIFIER;
+	int DPIM_STORAGE_NODE__BASE_CLASSIFIER = GRMPackage.STORAGE_RESOURCE__BASE_CLASSIFIER;
 
 	/**
 	 * The feature id for the '<em><b>Base Lifeline</b></em>' reference.
@@ -1340,7 +1342,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_STORAGE_RESOURCE__BASE_LIFELINE = GRMPackage.STORAGE_RESOURCE__BASE_LIFELINE;
+	int DPIM_STORAGE_NODE__BASE_LIFELINE = GRMPackage.STORAGE_RESOURCE__BASE_LIFELINE;
 
 	/**
 	 * The feature id for the '<em><b>Base Connectable Element</b></em>' reference.
@@ -1349,7 +1351,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_STORAGE_RESOURCE__BASE_CONNECTABLE_ELEMENT = GRMPackage.STORAGE_RESOURCE__BASE_CONNECTABLE_ELEMENT;
+	int DPIM_STORAGE_NODE__BASE_CONNECTABLE_ELEMENT = GRMPackage.STORAGE_RESOURCE__BASE_CONNECTABLE_ELEMENT;
 
 	/**
 	 * The feature id for the '<em><b>Element Size</b></em>' attribute.
@@ -1358,7 +1360,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_STORAGE_RESOURCE__ELEMENT_SIZE = GRMPackage.STORAGE_RESOURCE__ELEMENT_SIZE;
+	int DPIM_STORAGE_NODE__ELEMENT_SIZE = GRMPackage.STORAGE_RESOURCE__ELEMENT_SIZE;
 
 	/**
 	 * The feature id for the '<em><b>Responds To</b></em>' containment reference.
@@ -1367,7 +1369,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_STORAGE_RESOURCE__RESPONDS_TO = GRMPackage.STORAGE_RESOURCE_FEATURE_COUNT + 0;
+	int DPIM_STORAGE_NODE__RESPONDS_TO = GRMPackage.STORAGE_RESOURCE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Crud Rate</b></em>' attribute.
@@ -1376,26 +1378,26 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_STORAGE_RESOURCE__CRUD_RATE = GRMPackage.STORAGE_RESOURCE_FEATURE_COUNT + 1;
+	int DPIM_STORAGE_NODE__CRUD_RATE = GRMPackage.STORAGE_RESOURCE_FEATURE_COUNT + 1;
 
 	/**
-	 * The number of structural features of the '<em>Dice Storage Resource</em>' class.
+	 * The number of structural features of the '<em>Dpim Storage Node</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_STORAGE_RESOURCE_FEATURE_COUNT = GRMPackage.STORAGE_RESOURCE_FEATURE_COUNT + 2;
+	int DPIM_STORAGE_NODE_FEATURE_COUNT = GRMPackage.STORAGE_RESOURCE_FEATURE_COUNT + 2;
 
 	/**
-	 * The meta object id for the '{@link es.unizar.disco.dice.DPIM.impl.DiceChannelImpl <em>Dice Channel</em>}' class.
+	 * The meta object id for the '{@link es.unizar.disco.dice.DPIM.impl.DpimChannelImpl <em>Dpim Channel</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see es.unizar.disco.dice.DPIM.impl.DiceChannelImpl
-	 * @see es.unizar.disco.dice.DPIM.impl.DPIMPackageImpl#getDiceChannel()
+	 * @see es.unizar.disco.dice.DPIM.impl.DpimChannelImpl
+	 * @see es.unizar.disco.dice.DPIM.impl.DPIMPackageImpl#getDpimChannel()
 	 * @generated
 	 */
-	int DICE_CHANNEL = 5;
+	int DPIM_CHANNEL = 5;
 
 	/**
 	 * The feature id for the '<em><b>Coupling</b></em>' attribute list.
@@ -1404,7 +1406,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_CHANNEL__COUPLING = CorePackage.DA_CONNECTOR__COUPLING;
+	int DPIM_CHANNEL__COUPLING = CorePackage.DA_CONNECTOR__COUPLING;
 
 	/**
 	 * The feature id for the '<em><b>Error Prop</b></em>' containment reference list.
@@ -1413,7 +1415,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_CHANNEL__ERROR_PROP = CorePackage.DA_CONNECTOR__ERROR_PROP;
+	int DPIM_CHANNEL__ERROR_PROP = CorePackage.DA_CONNECTOR__ERROR_PROP;
 
 	/**
 	 * The feature id for the '<em><b>Failure</b></em>' containment reference list.
@@ -1422,7 +1424,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_CHANNEL__FAILURE = CorePackage.DA_CONNECTOR__FAILURE;
+	int DPIM_CHANNEL__FAILURE = CorePackage.DA_CONNECTOR__FAILURE;
 
 	/**
 	 * The feature id for the '<em><b>Hazard</b></em>' containment reference list.
@@ -1431,7 +1433,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_CHANNEL__HAZARD = CorePackage.DA_CONNECTOR__HAZARD;
+	int DPIM_CHANNEL__HAZARD = CorePackage.DA_CONNECTOR__HAZARD;
 
 	/**
 	 * The feature id for the '<em><b>Base Invocation Action</b></em>' reference.
@@ -1440,7 +1442,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_CHANNEL__BASE_INVOCATION_ACTION = CorePackage.DA_CONNECTOR__BASE_INVOCATION_ACTION;
+	int DPIM_CHANNEL__BASE_INVOCATION_ACTION = CorePackage.DA_CONNECTOR__BASE_INVOCATION_ACTION;
 
 	/**
 	 * The feature id for the '<em><b>Base Extend</b></em>' reference.
@@ -1449,7 +1451,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_CHANNEL__BASE_EXTEND = CorePackage.DA_CONNECTOR__BASE_EXTEND;
+	int DPIM_CHANNEL__BASE_EXTEND = CorePackage.DA_CONNECTOR__BASE_EXTEND;
 
 	/**
 	 * The feature id for the '<em><b>Base Include</b></em>' reference.
@@ -1458,7 +1460,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_CHANNEL__BASE_INCLUDE = CorePackage.DA_CONNECTOR__BASE_INCLUDE;
+	int DPIM_CHANNEL__BASE_INCLUDE = CorePackage.DA_CONNECTOR__BASE_INCLUDE;
 
 	/**
 	 * The feature id for the '<em><b>Base Message</b></em>' reference.
@@ -1467,7 +1469,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_CHANNEL__BASE_MESSAGE = CorePackage.DA_CONNECTOR__BASE_MESSAGE;
+	int DPIM_CHANNEL__BASE_MESSAGE = CorePackage.DA_CONNECTOR__BASE_MESSAGE;
 
 	/**
 	 * The feature id for the '<em><b>Base Connector</b></em>' reference.
@@ -1476,7 +1478,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_CHANNEL__BASE_CONNECTOR = CorePackage.DA_CONNECTOR__BASE_CONNECTOR;
+	int DPIM_CHANNEL__BASE_CONNECTOR = CorePackage.DA_CONNECTOR__BASE_CONNECTOR;
 
 	/**
 	 * The feature id for the '<em><b>Base Dependency</b></em>' reference.
@@ -1485,7 +1487,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_CHANNEL__BASE_DEPENDENCY = CorePackage.DA_CONNECTOR__BASE_DEPENDENCY;
+	int DPIM_CHANNEL__BASE_DEPENDENCY = CorePackage.DA_CONNECTOR__BASE_DEPENDENCY;
 
 	/**
 	 * The feature id for the '<em><b>Base Association</b></em>' reference.
@@ -1494,7 +1496,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_CHANNEL__BASE_ASSOCIATION = CorePackage.DA_CONNECTOR__BASE_ASSOCIATION;
+	int DPIM_CHANNEL__BASE_ASSOCIATION = CorePackage.DA_CONNECTOR__BASE_ASSOCIATION;
 
 	/**
 	 * The feature id for the '<em><b>Rate</b></em>' attribute.
@@ -1503,7 +1505,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_CHANNEL__RATE = CorePackage.DA_CONNECTOR_FEATURE_COUNT + 0;
+	int DPIM_CHANNEL__RATE = CorePackage.DA_CONNECTOR_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Message Broker</b></em>' attribute.
@@ -1512,7 +1514,7 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_CHANNEL__MESSAGE_BROKER = CorePackage.DA_CONNECTOR_FEATURE_COUNT + 1;
+	int DPIM_CHANNEL__MESSAGE_BROKER = CorePackage.DA_CONNECTOR_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Channel Description</b></em>' containment reference.
@@ -1521,242 +1523,523 @@ public interface DPIMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_CHANNEL__CHANNEL_DESCRIPTION = CorePackage.DA_CONNECTOR_FEATURE_COUNT + 2;
+	int DPIM_CHANNEL__CHANNEL_DESCRIPTION = CorePackage.DA_CONNECTOR_FEATURE_COUNT + 2;
 
 	/**
-	 * The number of structural features of the '<em>Dice Channel</em>' class.
+	 * The number of structural features of the '<em>Dpim Channel</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DICE_CHANNEL_FEATURE_COUNT = CorePackage.DA_CONNECTOR_FEATURE_COUNT + 3;
-
+	int DPIM_CHANNEL_FEATURE_COUNT = CorePackage.DA_CONNECTOR_FEATURE_COUNT + 3;
 
 	/**
-	 * Returns the meta object for class '{@link es.unizar.disco.dice.DPIM.DiceComponent <em>Dice Component</em>}'.
+	 * The meta object id for the '{@link es.unizar.disco.dice.DPIM.impl.DpimScenarioImpl <em>Dpim Scenario</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Dice Component</em>'.
-	 * @see es.unizar.disco.dice.DPIM.DiceComponent
+	 * @see es.unizar.disco.dice.DPIM.impl.DpimScenarioImpl
+	 * @see es.unizar.disco.dice.DPIM.impl.DPIMPackageImpl#getDpimScenario()
 	 * @generated
 	 */
-	EClass getDiceComponent();
+	int DPIM_SCENARIO = 6;
 
 	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DPIM.DiceComponent#getThroughput <em>Throughput</em>}'.
+	 * The feature id for the '<em><b>Exec Time</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DPIM_SCENARIO__EXEC_TIME = GQAMPackage.GA_SCENARIO__EXEC_TIME;
+
+	/**
+	 * The feature id for the '<em><b>Allocated Memory</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DPIM_SCENARIO__ALLOCATED_MEMORY = GQAMPackage.GA_SCENARIO__ALLOCATED_MEMORY;
+
+	/**
+	 * The feature id for the '<em><b>Used Memory</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DPIM_SCENARIO__USED_MEMORY = GQAMPackage.GA_SCENARIO__USED_MEMORY;
+
+	/**
+	 * The feature id for the '<em><b>Power Peak</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DPIM_SCENARIO__POWER_PEAK = GQAMPackage.GA_SCENARIO__POWER_PEAK;
+
+	/**
+	 * The feature id for the '<em><b>Energy</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DPIM_SCENARIO__ENERGY = GQAMPackage.GA_SCENARIO__ENERGY;
+
+	/**
+	 * The feature id for the '<em><b>Base Named Element</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DPIM_SCENARIO__BASE_NAMED_ELEMENT = GQAMPackage.GA_SCENARIO__BASE_NAMED_ELEMENT;
+
+	/**
+	 * The feature id for the '<em><b>Sub Usage</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DPIM_SCENARIO__SUB_USAGE = GQAMPackage.GA_SCENARIO__SUB_USAGE;
+
+	/**
+	 * The feature id for the '<em><b>Used Resources</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DPIM_SCENARIO__USED_RESOURCES = GQAMPackage.GA_SCENARIO__USED_RESOURCES;
+
+	/**
+	 * The feature id for the '<em><b>Msg Size</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DPIM_SCENARIO__MSG_SIZE = GQAMPackage.GA_SCENARIO__MSG_SIZE;
+
+	/**
+	 * The feature id for the '<em><b>On</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DPIM_SCENARIO__ON = GQAMPackage.GA_SCENARIO__ON;
+
+	/**
+	 * The feature id for the '<em><b>Base Action</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DPIM_SCENARIO__BASE_ACTION = GQAMPackage.GA_SCENARIO__BASE_ACTION;
+
+	/**
+	 * The feature id for the '<em><b>Base Behavior</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DPIM_SCENARIO__BASE_BEHAVIOR = GQAMPackage.GA_SCENARIO__BASE_BEHAVIOR;
+
+	/**
+	 * The feature id for the '<em><b>Base Message</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DPIM_SCENARIO__BASE_MESSAGE = GQAMPackage.GA_SCENARIO__BASE_MESSAGE;
+
+	/**
+	 * The feature id for the '<em><b>Duration</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DPIM_SCENARIO__DURATION = GQAMPackage.GA_SCENARIO__DURATION;
+
+	/**
+	 * The feature id for the '<em><b>Start</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DPIM_SCENARIO__START = GQAMPackage.GA_SCENARIO__START;
+
+	/**
+	 * The feature id for the '<em><b>Finish</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DPIM_SCENARIO__FINISH = GQAMPackage.GA_SCENARIO__FINISH;
+
+	/**
+	 * The feature id for the '<em><b>Cause</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DPIM_SCENARIO__CAUSE = GQAMPackage.GA_SCENARIO__CAUSE;
+
+	/**
+	 * The feature id for the '<em><b>Host Demand</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DPIM_SCENARIO__HOST_DEMAND = GQAMPackage.GA_SCENARIO__HOST_DEMAND;
+
+	/**
+	 * The feature id for the '<em><b>Host Demand Ops</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DPIM_SCENARIO__HOST_DEMAND_OPS = GQAMPackage.GA_SCENARIO__HOST_DEMAND_OPS;
+
+	/**
+	 * The feature id for the '<em><b>Inter Occ T</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DPIM_SCENARIO__INTER_OCC_T = GQAMPackage.GA_SCENARIO__INTER_OCC_T;
+
+	/**
+	 * The feature id for the '<em><b>Throughput</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DPIM_SCENARIO__THROUGHPUT = GQAMPackage.GA_SCENARIO__THROUGHPUT;
+
+	/**
+	 * The feature id for the '<em><b>Resp T</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DPIM_SCENARIO__RESP_T = GQAMPackage.GA_SCENARIO__RESP_T;
+
+	/**
+	 * The feature id for the '<em><b>Utilization</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DPIM_SCENARIO__UTILIZATION = GQAMPackage.GA_SCENARIO__UTILIZATION;
+
+	/**
+	 * The feature id for the '<em><b>Utilization On Host</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DPIM_SCENARIO__UTILIZATION_ON_HOST = GQAMPackage.GA_SCENARIO__UTILIZATION_ON_HOST;
+
+	/**
+	 * The feature id for the '<em><b>Root</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DPIM_SCENARIO__ROOT = GQAMPackage.GA_SCENARIO__ROOT;
+
+	/**
+	 * The feature id for the '<em><b>Steps</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DPIM_SCENARIO__STEPS = GQAMPackage.GA_SCENARIO__STEPS;
+
+	/**
+	 * The feature id for the '<em><b>Parent Step</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DPIM_SCENARIO__PARENT_STEP = GQAMPackage.GA_SCENARIO__PARENT_STEP;
+
+	/**
+	 * The feature id for the '<em><b>Timing</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DPIM_SCENARIO__TIMING = GQAMPackage.GA_SCENARIO__TIMING;
+
+	/**
+	 * The number of structural features of the '<em>Dpim Scenario</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DPIM_SCENARIO_FEATURE_COUNT = GQAMPackage.GA_SCENARIO_FEATURE_COUNT + 0;
+
+
+	/**
+	 * Returns the meta object for class '{@link es.unizar.disco.dice.DPIM.DpimComputationNode <em>Dpim Computation Node</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Dpim Computation Node</em>'.
+	 * @see es.unizar.disco.dice.DPIM.DpimComputationNode
+	 * @generated
+	 */
+	EClass getDpimComputationNode();
+
+	/**
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DPIM.DpimComputationNode#getThroughput <em>Throughput</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Throughput</em>'.
-	 * @see es.unizar.disco.dice.DPIM.DiceComponent#getThroughput()
-	 * @see #getDiceComponent()
+	 * @see es.unizar.disco.dice.DPIM.DpimComputationNode#getThroughput()
+	 * @see #getDpimComputationNode()
 	 * @generated
 	 */
-	EAttribute getDiceComponent_Throughput();
+	EAttribute getDpimComputationNode_Throughput();
 
 	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DPIM.DiceComponent#getType <em>Type</em>}'.
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DPIM.DpimComputationNode#getType <em>Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Type</em>'.
-	 * @see es.unizar.disco.dice.DPIM.DiceComponent#getType()
-	 * @see #getDiceComponent()
+	 * @see es.unizar.disco.dice.DPIM.DpimComputationNode#getType()
+	 * @see #getDpimComputationNode()
 	 * @generated
 	 */
-	EAttribute getDiceComponent_Type();
+	EAttribute getDpimComputationNode_Type();
 
 	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DPIM.DiceComponent#getTargetTech <em>Target Tech</em>}'.
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DPIM.DpimComputationNode#getTargetTech <em>Target Tech</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Target Tech</em>'.
-	 * @see es.unizar.disco.dice.DPIM.DiceComponent#getTargetTech()
-	 * @see #getDiceComponent()
+	 * @see es.unizar.disco.dice.DPIM.DpimComputationNode#getTargetTech()
+	 * @see #getDpimComputationNode()
 	 * @generated
 	 */
-	EAttribute getDiceComponent_TargetTech();
+	EAttribute getDpimComputationNode_TargetTech();
 
 	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DPIM.DiceComponent#getProcType <em>Proc Type</em>}'.
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DPIM.DpimComputationNode#getProcType <em>Proc Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Proc Type</em>'.
-	 * @see es.unizar.disco.dice.DPIM.DiceComponent#getProcType()
-	 * @see #getDiceComponent()
+	 * @see es.unizar.disco.dice.DPIM.DpimComputationNode#getProcType()
+	 * @see #getDpimComputationNode()
 	 * @generated
 	 */
-	EAttribute getDiceComponent_ProcType();
+	EAttribute getDpimComputationNode_ProcType();
 
 	/**
-	 * Returns the meta object for class '{@link es.unizar.disco.dice.DPIM.DiceFilterNode <em>Dice Filter Node</em>}'.
+	 * Returns the meta object for class '{@link es.unizar.disco.dice.DPIM.DpimFilterNode <em>Dpim Filter Node</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Dice Filter Node</em>'.
-	 * @see es.unizar.disco.dice.DPIM.DiceFilterNode
+	 * @return the meta object for class '<em>Dpim Filter Node</em>'.
+	 * @see es.unizar.disco.dice.DPIM.DpimFilterNode
 	 * @generated
 	 */
-	EClass getDiceFilterNode();
+	EClass getDpimFilterNode();
 
 	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DPIM.DiceFilterNode#getInputRatio <em>Input Ratio</em>}'.
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DPIM.DpimFilterNode#getInputRatio <em>Input Ratio</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Input Ratio</em>'.
-	 * @see es.unizar.disco.dice.DPIM.DiceFilterNode#getInputRatio()
-	 * @see #getDiceFilterNode()
+	 * @see es.unizar.disco.dice.DPIM.DpimFilterNode#getInputRatio()
+	 * @see #getDpimFilterNode()
 	 * @generated
 	 */
-	EAttribute getDiceFilterNode_InputRatio();
+	EAttribute getDpimFilterNode_InputRatio();
 
 	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DPIM.DiceFilterNode#getOutputRation <em>Output Ration</em>}'.
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DPIM.DpimFilterNode#getOutputRation <em>Output Ration</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Output Ration</em>'.
-	 * @see es.unizar.disco.dice.DPIM.DiceFilterNode#getOutputRation()
-	 * @see #getDiceFilterNode()
+	 * @see es.unizar.disco.dice.DPIM.DpimFilterNode#getOutputRation()
+	 * @see #getDpimFilterNode()
 	 * @generated
 	 */
-	EAttribute getDiceFilterNode_OutputRation();
+	EAttribute getDpimFilterNode_OutputRation();
 
 	/**
-	 * Returns the meta object for class '{@link es.unizar.disco.dice.DPIM.DiceVisualizationNode <em>Dice Visualization Node</em>}'.
+	 * Returns the meta object for class '{@link es.unizar.disco.dice.DPIM.DpimVisualizationNode <em>Dpim Visualization Node</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Dice Visualization Node</em>'.
-	 * @see es.unizar.disco.dice.DPIM.DiceVisualizationNode
+	 * @return the meta object for class '<em>Dpim Visualization Node</em>'.
+	 * @see es.unizar.disco.dice.DPIM.DpimVisualizationNode
 	 * @generated
 	 */
-	EClass getDiceVisualizationNode();
+	EClass getDpimVisualizationNode();
 
 	/**
-	 * Returns the meta object for class '{@link es.unizar.disco.dice.DPIM.DiceSourceNode <em>Dice Source Node</em>}'.
+	 * Returns the meta object for class '{@link es.unizar.disco.dice.DPIM.DpimSourceNode <em>Dpim Source Node</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Dice Source Node</em>'.
-	 * @see es.unizar.disco.dice.DPIM.DiceSourceNode
+	 * @return the meta object for class '<em>Dpim Source Node</em>'.
+	 * @see es.unizar.disco.dice.DPIM.DpimSourceNode
 	 * @generated
 	 */
-	EClass getDiceSourceNode();
+	EClass getDpimSourceNode();
 
 	/**
-	 * Returns the meta object for the containment reference '{@link es.unizar.disco.dice.DPIM.DiceSourceNode#getStore <em>Store</em>}'.
+	 * Returns the meta object for the containment reference '{@link es.unizar.disco.dice.DPIM.DpimSourceNode#getStore <em>Store</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the containment reference '<em>Store</em>'.
-	 * @see es.unizar.disco.dice.DPIM.DiceSourceNode#getStore()
-	 * @see #getDiceSourceNode()
+	 * @see es.unizar.disco.dice.DPIM.DpimSourceNode#getStore()
+	 * @see #getDpimSourceNode()
 	 * @generated
 	 */
-	EReference getDiceSourceNode_Store();
+	EReference getDpimSourceNode_Store();
 
 	/**
-	 * Returns the meta object for the containment reference '{@link es.unizar.disco.dice.DPIM.DiceSourceNode#getProvides <em>Provides</em>}'.
+	 * Returns the meta object for the containment reference '{@link es.unizar.disco.dice.DPIM.DpimSourceNode#getProvides <em>Provides</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the containment reference '<em>Provides</em>'.
-	 * @see es.unizar.disco.dice.DPIM.DiceSourceNode#getProvides()
-	 * @see #getDiceSourceNode()
+	 * @see es.unizar.disco.dice.DPIM.DpimSourceNode#getProvides()
+	 * @see #getDpimSourceNode()
 	 * @generated
 	 */
-	EReference getDiceSourceNode_Provides();
+	EReference getDpimSourceNode_Provides();
 
 	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DPIM.DiceSourceNode#getSourceType <em>Source Type</em>}'.
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DPIM.DpimSourceNode#getSourceType <em>Source Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Source Type</em>'.
-	 * @see es.unizar.disco.dice.DPIM.DiceSourceNode#getSourceType()
-	 * @see #getDiceSourceNode()
+	 * @see es.unizar.disco.dice.DPIM.DpimSourceNode#getSourceType()
+	 * @see #getDpimSourceNode()
 	 * @generated
 	 */
-	EAttribute getDiceSourceNode_SourceType();
+	EAttribute getDpimSourceNode_SourceType();
 
 	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DPIM.DiceSourceNode#getRate <em>Rate</em>}'.
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DPIM.DpimSourceNode#getRate <em>Rate</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Rate</em>'.
-	 * @see es.unizar.disco.dice.DPIM.DiceSourceNode#getRate()
-	 * @see #getDiceSourceNode()
+	 * @see es.unizar.disco.dice.DPIM.DpimSourceNode#getRate()
+	 * @see #getDpimSourceNode()
 	 * @generated
 	 */
-	EAttribute getDiceSourceNode_Rate();
+	EAttribute getDpimSourceNode_Rate();
 
 	/**
-	 * Returns the meta object for class '{@link es.unizar.disco.dice.DPIM.DiceStorageResource <em>Dice Storage Resource</em>}'.
+	 * Returns the meta object for class '{@link es.unizar.disco.dice.DPIM.DpimStorageNode <em>Dpim Storage Node</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Dice Storage Resource</em>'.
-	 * @see es.unizar.disco.dice.DPIM.DiceStorageResource
+	 * @return the meta object for class '<em>Dpim Storage Node</em>'.
+	 * @see es.unizar.disco.dice.DPIM.DpimStorageNode
 	 * @generated
 	 */
-	EClass getDiceStorageResource();
+	EClass getDpimStorageNode();
 
 	/**
-	 * Returns the meta object for the containment reference '{@link es.unizar.disco.dice.DPIM.DiceStorageResource#getRespondsTo <em>Responds To</em>}'.
+	 * Returns the meta object for the containment reference '{@link es.unizar.disco.dice.DPIM.DpimStorageNode#getRespondsTo <em>Responds To</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the containment reference '<em>Responds To</em>'.
-	 * @see es.unizar.disco.dice.DPIM.DiceStorageResource#getRespondsTo()
-	 * @see #getDiceStorageResource()
+	 * @see es.unizar.disco.dice.DPIM.DpimStorageNode#getRespondsTo()
+	 * @see #getDpimStorageNode()
 	 * @generated
 	 */
-	EReference getDiceStorageResource_RespondsTo();
+	EReference getDpimStorageNode_RespondsTo();
 
 	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DPIM.DiceStorageResource#getCrudRate <em>Crud Rate</em>}'.
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DPIM.DpimStorageNode#getCrudRate <em>Crud Rate</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Crud Rate</em>'.
-	 * @see es.unizar.disco.dice.DPIM.DiceStorageResource#getCrudRate()
-	 * @see #getDiceStorageResource()
+	 * @see es.unizar.disco.dice.DPIM.DpimStorageNode#getCrudRate()
+	 * @see #getDpimStorageNode()
 	 * @generated
 	 */
-	EAttribute getDiceStorageResource_CrudRate();
+	EAttribute getDpimStorageNode_CrudRate();
 
 	/**
-	 * Returns the meta object for class '{@link es.unizar.disco.dice.DPIM.DiceChannel <em>Dice Channel</em>}'.
+	 * Returns the meta object for class '{@link es.unizar.disco.dice.DPIM.DpimChannel <em>Dpim Channel</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Dice Channel</em>'.
-	 * @see es.unizar.disco.dice.DPIM.DiceChannel
+	 * @return the meta object for class '<em>Dpim Channel</em>'.
+	 * @see es.unizar.disco.dice.DPIM.DpimChannel
 	 * @generated
 	 */
-	EClass getDiceChannel();
+	EClass getDpimChannel();
 
 	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DPIM.DiceChannel#getRate <em>Rate</em>}'.
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DPIM.DpimChannel#getRate <em>Rate</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Rate</em>'.
-	 * @see es.unizar.disco.dice.DPIM.DiceChannel#getRate()
-	 * @see #getDiceChannel()
+	 * @see es.unizar.disco.dice.DPIM.DpimChannel#getRate()
+	 * @see #getDpimChannel()
 	 * @generated
 	 */
-	EAttribute getDiceChannel_Rate();
+	EAttribute getDpimChannel_Rate();
 
 	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DPIM.DiceChannel#getMessageBroker <em>Message Broker</em>}'.
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DPIM.DpimChannel#getMessageBroker <em>Message Broker</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Message Broker</em>'.
-	 * @see es.unizar.disco.dice.DPIM.DiceChannel#getMessageBroker()
-	 * @see #getDiceChannel()
+	 * @see es.unizar.disco.dice.DPIM.DpimChannel#getMessageBroker()
+	 * @see #getDpimChannel()
 	 * @generated
 	 */
-	EAttribute getDiceChannel_MessageBroker();
+	EAttribute getDpimChannel_MessageBroker();
 
 	/**
-	 * Returns the meta object for the containment reference '{@link es.unizar.disco.dice.DPIM.DiceChannel#getChannelDescription <em>Channel Description</em>}'.
+	 * Returns the meta object for the containment reference '{@link es.unizar.disco.dice.DPIM.DpimChannel#getChannelDescription <em>Channel Description</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the containment reference '<em>Channel Description</em>'.
-	 * @see es.unizar.disco.dice.DPIM.DiceChannel#getChannelDescription()
-	 * @see #getDiceChannel()
+	 * @see es.unizar.disco.dice.DPIM.DpimChannel#getChannelDescription()
+	 * @see #getDpimChannel()
 	 * @generated
 	 */
-	EReference getDiceChannel_ChannelDescription();
+	EReference getDpimChannel_ChannelDescription();
+
+	/**
+	 * Returns the meta object for class '{@link es.unizar.disco.dice.DPIM.DpimScenario <em>Dpim Scenario</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Dpim Scenario</em>'.
+	 * @see es.unizar.disco.dice.DPIM.DpimScenario
+	 * @generated
+	 */
+	EClass getDpimScenario();
 
 	/**
 	 * Returns the factory that creates the instances of the model.
@@ -1781,14 +2064,14 @@ public interface DPIMPackage extends EPackage {
 	 */
 	interface Literals {
 		/**
-		 * The meta object literal for the '{@link es.unizar.disco.dice.DPIM.impl.DiceComponentImpl <em>Dice Component</em>}' class.
+		 * The meta object literal for the '{@link es.unizar.disco.dice.DPIM.impl.DpimComputationNodeImpl <em>Dpim Computation Node</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see es.unizar.disco.dice.DPIM.impl.DiceComponentImpl
-		 * @see es.unizar.disco.dice.DPIM.impl.DPIMPackageImpl#getDiceComponent()
+		 * @see es.unizar.disco.dice.DPIM.impl.DpimComputationNodeImpl
+		 * @see es.unizar.disco.dice.DPIM.impl.DPIMPackageImpl#getDpimComputationNode()
 		 * @generated
 		 */
-		EClass DICE_COMPONENT = eINSTANCE.getDiceComponent();
+		EClass DPIM_COMPUTATION_NODE = eINSTANCE.getDpimComputationNode();
 
 		/**
 		 * The meta object literal for the '<em><b>Throughput</b></em>' attribute feature.
@@ -1796,7 +2079,7 @@ public interface DPIMPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute DICE_COMPONENT__THROUGHPUT = eINSTANCE.getDiceComponent_Throughput();
+		EAttribute DPIM_COMPUTATION_NODE__THROUGHPUT = eINSTANCE.getDpimComputationNode_Throughput();
 
 		/**
 		 * The meta object literal for the '<em><b>Type</b></em>' attribute feature.
@@ -1804,7 +2087,7 @@ public interface DPIMPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute DICE_COMPONENT__TYPE = eINSTANCE.getDiceComponent_Type();
+		EAttribute DPIM_COMPUTATION_NODE__TYPE = eINSTANCE.getDpimComputationNode_Type();
 
 		/**
 		 * The meta object literal for the '<em><b>Target Tech</b></em>' attribute feature.
@@ -1812,7 +2095,7 @@ public interface DPIMPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute DICE_COMPONENT__TARGET_TECH = eINSTANCE.getDiceComponent_TargetTech();
+		EAttribute DPIM_COMPUTATION_NODE__TARGET_TECH = eINSTANCE.getDpimComputationNode_TargetTech();
 
 		/**
 		 * The meta object literal for the '<em><b>Proc Type</b></em>' attribute feature.
@@ -1820,17 +2103,17 @@ public interface DPIMPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute DICE_COMPONENT__PROC_TYPE = eINSTANCE.getDiceComponent_ProcType();
+		EAttribute DPIM_COMPUTATION_NODE__PROC_TYPE = eINSTANCE.getDpimComputationNode_ProcType();
 
 		/**
-		 * The meta object literal for the '{@link es.unizar.disco.dice.DPIM.impl.DiceFilterNodeImpl <em>Dice Filter Node</em>}' class.
+		 * The meta object literal for the '{@link es.unizar.disco.dice.DPIM.impl.DpimFilterNodeImpl <em>Dpim Filter Node</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see es.unizar.disco.dice.DPIM.impl.DiceFilterNodeImpl
-		 * @see es.unizar.disco.dice.DPIM.impl.DPIMPackageImpl#getDiceFilterNode()
+		 * @see es.unizar.disco.dice.DPIM.impl.DpimFilterNodeImpl
+		 * @see es.unizar.disco.dice.DPIM.impl.DPIMPackageImpl#getDpimFilterNode()
 		 * @generated
 		 */
-		EClass DICE_FILTER_NODE = eINSTANCE.getDiceFilterNode();
+		EClass DPIM_FILTER_NODE = eINSTANCE.getDpimFilterNode();
 
 		/**
 		 * The meta object literal for the '<em><b>Input Ratio</b></em>' attribute feature.
@@ -1838,7 +2121,7 @@ public interface DPIMPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute DICE_FILTER_NODE__INPUT_RATIO = eINSTANCE.getDiceFilterNode_InputRatio();
+		EAttribute DPIM_FILTER_NODE__INPUT_RATIO = eINSTANCE.getDpimFilterNode_InputRatio();
 
 		/**
 		 * The meta object literal for the '<em><b>Output Ration</b></em>' attribute feature.
@@ -1846,27 +2129,27 @@ public interface DPIMPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute DICE_FILTER_NODE__OUTPUT_RATION = eINSTANCE.getDiceFilterNode_OutputRation();
+		EAttribute DPIM_FILTER_NODE__OUTPUT_RATION = eINSTANCE.getDpimFilterNode_OutputRation();
 
 		/**
-		 * The meta object literal for the '{@link es.unizar.disco.dice.DPIM.impl.DiceVisualizationNodeImpl <em>Dice Visualization Node</em>}' class.
+		 * The meta object literal for the '{@link es.unizar.disco.dice.DPIM.impl.DpimVisualizationNodeImpl <em>Dpim Visualization Node</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see es.unizar.disco.dice.DPIM.impl.DiceVisualizationNodeImpl
-		 * @see es.unizar.disco.dice.DPIM.impl.DPIMPackageImpl#getDiceVisualizationNode()
+		 * @see es.unizar.disco.dice.DPIM.impl.DpimVisualizationNodeImpl
+		 * @see es.unizar.disco.dice.DPIM.impl.DPIMPackageImpl#getDpimVisualizationNode()
 		 * @generated
 		 */
-		EClass DICE_VISUALIZATION_NODE = eINSTANCE.getDiceVisualizationNode();
+		EClass DPIM_VISUALIZATION_NODE = eINSTANCE.getDpimVisualizationNode();
 
 		/**
-		 * The meta object literal for the '{@link es.unizar.disco.dice.DPIM.impl.DiceSourceNodeImpl <em>Dice Source Node</em>}' class.
+		 * The meta object literal for the '{@link es.unizar.disco.dice.DPIM.impl.DpimSourceNodeImpl <em>Dpim Source Node</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see es.unizar.disco.dice.DPIM.impl.DiceSourceNodeImpl
-		 * @see es.unizar.disco.dice.DPIM.impl.DPIMPackageImpl#getDiceSourceNode()
+		 * @see es.unizar.disco.dice.DPIM.impl.DpimSourceNodeImpl
+		 * @see es.unizar.disco.dice.DPIM.impl.DPIMPackageImpl#getDpimSourceNode()
 		 * @generated
 		 */
-		EClass DICE_SOURCE_NODE = eINSTANCE.getDiceSourceNode();
+		EClass DPIM_SOURCE_NODE = eINSTANCE.getDpimSourceNode();
 
 		/**
 		 * The meta object literal for the '<em><b>Store</b></em>' containment reference feature.
@@ -1874,7 +2157,7 @@ public interface DPIMPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference DICE_SOURCE_NODE__STORE = eINSTANCE.getDiceSourceNode_Store();
+		EReference DPIM_SOURCE_NODE__STORE = eINSTANCE.getDpimSourceNode_Store();
 
 		/**
 		 * The meta object literal for the '<em><b>Provides</b></em>' containment reference feature.
@@ -1882,7 +2165,7 @@ public interface DPIMPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference DICE_SOURCE_NODE__PROVIDES = eINSTANCE.getDiceSourceNode_Provides();
+		EReference DPIM_SOURCE_NODE__PROVIDES = eINSTANCE.getDpimSourceNode_Provides();
 
 		/**
 		 * The meta object literal for the '<em><b>Source Type</b></em>' attribute feature.
@@ -1890,7 +2173,7 @@ public interface DPIMPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute DICE_SOURCE_NODE__SOURCE_TYPE = eINSTANCE.getDiceSourceNode_SourceType();
+		EAttribute DPIM_SOURCE_NODE__SOURCE_TYPE = eINSTANCE.getDpimSourceNode_SourceType();
 
 		/**
 		 * The meta object literal for the '<em><b>Rate</b></em>' attribute feature.
@@ -1898,17 +2181,17 @@ public interface DPIMPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute DICE_SOURCE_NODE__RATE = eINSTANCE.getDiceSourceNode_Rate();
+		EAttribute DPIM_SOURCE_NODE__RATE = eINSTANCE.getDpimSourceNode_Rate();
 
 		/**
-		 * The meta object literal for the '{@link es.unizar.disco.dice.DPIM.impl.DiceStorageResourceImpl <em>Dice Storage Resource</em>}' class.
+		 * The meta object literal for the '{@link es.unizar.disco.dice.DPIM.impl.DpimStorageNodeImpl <em>Dpim Storage Node</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see es.unizar.disco.dice.DPIM.impl.DiceStorageResourceImpl
-		 * @see es.unizar.disco.dice.DPIM.impl.DPIMPackageImpl#getDiceStorageResource()
+		 * @see es.unizar.disco.dice.DPIM.impl.DpimStorageNodeImpl
+		 * @see es.unizar.disco.dice.DPIM.impl.DPIMPackageImpl#getDpimStorageNode()
 		 * @generated
 		 */
-		EClass DICE_STORAGE_RESOURCE = eINSTANCE.getDiceStorageResource();
+		EClass DPIM_STORAGE_NODE = eINSTANCE.getDpimStorageNode();
 
 		/**
 		 * The meta object literal for the '<em><b>Responds To</b></em>' containment reference feature.
@@ -1916,7 +2199,7 @@ public interface DPIMPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference DICE_STORAGE_RESOURCE__RESPONDS_TO = eINSTANCE.getDiceStorageResource_RespondsTo();
+		EReference DPIM_STORAGE_NODE__RESPONDS_TO = eINSTANCE.getDpimStorageNode_RespondsTo();
 
 		/**
 		 * The meta object literal for the '<em><b>Crud Rate</b></em>' attribute feature.
@@ -1924,17 +2207,17 @@ public interface DPIMPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute DICE_STORAGE_RESOURCE__CRUD_RATE = eINSTANCE.getDiceStorageResource_CrudRate();
+		EAttribute DPIM_STORAGE_NODE__CRUD_RATE = eINSTANCE.getDpimStorageNode_CrudRate();
 
 		/**
-		 * The meta object literal for the '{@link es.unizar.disco.dice.DPIM.impl.DiceChannelImpl <em>Dice Channel</em>}' class.
+		 * The meta object literal for the '{@link es.unizar.disco.dice.DPIM.impl.DpimChannelImpl <em>Dpim Channel</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see es.unizar.disco.dice.DPIM.impl.DiceChannelImpl
-		 * @see es.unizar.disco.dice.DPIM.impl.DPIMPackageImpl#getDiceChannel()
+		 * @see es.unizar.disco.dice.DPIM.impl.DpimChannelImpl
+		 * @see es.unizar.disco.dice.DPIM.impl.DPIMPackageImpl#getDpimChannel()
 		 * @generated
 		 */
-		EClass DICE_CHANNEL = eINSTANCE.getDiceChannel();
+		EClass DPIM_CHANNEL = eINSTANCE.getDpimChannel();
 
 		/**
 		 * The meta object literal for the '<em><b>Rate</b></em>' attribute feature.
@@ -1942,7 +2225,7 @@ public interface DPIMPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute DICE_CHANNEL__RATE = eINSTANCE.getDiceChannel_Rate();
+		EAttribute DPIM_CHANNEL__RATE = eINSTANCE.getDpimChannel_Rate();
 
 		/**
 		 * The meta object literal for the '<em><b>Message Broker</b></em>' attribute feature.
@@ -1950,7 +2233,7 @@ public interface DPIMPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute DICE_CHANNEL__MESSAGE_BROKER = eINSTANCE.getDiceChannel_MessageBroker();
+		EAttribute DPIM_CHANNEL__MESSAGE_BROKER = eINSTANCE.getDpimChannel_MessageBroker();
 
 		/**
 		 * The meta object literal for the '<em><b>Channel Description</b></em>' containment reference feature.
@@ -1958,7 +2241,17 @@ public interface DPIMPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference DICE_CHANNEL__CHANNEL_DESCRIPTION = eINSTANCE.getDiceChannel_ChannelDescription();
+		EReference DPIM_CHANNEL__CHANNEL_DESCRIPTION = eINSTANCE.getDpimChannel_ChannelDescription();
+
+		/**
+		 * The meta object literal for the '{@link es.unizar.disco.dice.DPIM.impl.DpimScenarioImpl <em>Dpim Scenario</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see es.unizar.disco.dice.DPIM.impl.DpimScenarioImpl
+		 * @see es.unizar.disco.dice.DPIM.impl.DPIMPackageImpl#getDpimScenario()
+		 * @generated
+		 */
+		EClass DPIM_SCENARIO = eINSTANCE.getDpimScenario();
 
 	}
 
