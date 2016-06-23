@@ -304,13 +304,13 @@ public interface CorePackage extends EPackage {
 	int CORE_COMPUTATION_NODE__SUBSTITUTED_BY = DPIMPackage.DPIM_COMPUTATION_NODE__SUBSTITUTED_BY;
 
 	/**
-	 * The feature id for the '<em><b>Throughput</b></em>' attribute.
+	 * The feature id for the '<em><b>Node Throughput</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CORE_COMPUTATION_NODE__THROUGHPUT = DPIMPackage.DPIM_COMPUTATION_NODE__THROUGHPUT;
+	int CORE_COMPUTATION_NODE__NODE_THROUGHPUT = DPIMPackage.DPIM_COMPUTATION_NODE__NODE_THROUGHPUT;
 
 	/**
 	 * The feature id for the '<em><b>Type</b></em>' attribute.
@@ -857,13 +857,373 @@ public interface CorePackage extends EPackage {
 	int CORE_DAG_NODE = 5;
 
 	/**
+	 * The feature id for the '<em><b>Exec Time</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORE_DAG_NODE__EXEC_TIME = GQAMPackage.GA_STEP__EXEC_TIME;
+
+	/**
+	 * The feature id for the '<em><b>Allocated Memory</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORE_DAG_NODE__ALLOCATED_MEMORY = GQAMPackage.GA_STEP__ALLOCATED_MEMORY;
+
+	/**
+	 * The feature id for the '<em><b>Used Memory</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORE_DAG_NODE__USED_MEMORY = GQAMPackage.GA_STEP__USED_MEMORY;
+
+	/**
+	 * The feature id for the '<em><b>Power Peak</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORE_DAG_NODE__POWER_PEAK = GQAMPackage.GA_STEP__POWER_PEAK;
+
+	/**
+	 * The feature id for the '<em><b>Energy</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORE_DAG_NODE__ENERGY = GQAMPackage.GA_STEP__ENERGY;
+
+	/**
+	 * The feature id for the '<em><b>Base Named Element</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORE_DAG_NODE__BASE_NAMED_ELEMENT = GQAMPackage.GA_STEP__BASE_NAMED_ELEMENT;
+
+	/**
+	 * The feature id for the '<em><b>Sub Usage</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORE_DAG_NODE__SUB_USAGE = GQAMPackage.GA_STEP__SUB_USAGE;
+
+	/**
+	 * The feature id for the '<em><b>Used Resources</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORE_DAG_NODE__USED_RESOURCES = GQAMPackage.GA_STEP__USED_RESOURCES;
+
+	/**
+	 * The feature id for the '<em><b>Msg Size</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORE_DAG_NODE__MSG_SIZE = GQAMPackage.GA_STEP__MSG_SIZE;
+
+	/**
+	 * The feature id for the '<em><b>On</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORE_DAG_NODE__ON = GQAMPackage.GA_STEP__ON;
+
+	/**
+	 * The feature id for the '<em><b>Base Action</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORE_DAG_NODE__BASE_ACTION = GQAMPackage.GA_STEP__BASE_ACTION;
+
+	/**
+	 * The feature id for the '<em><b>Base Behavior</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORE_DAG_NODE__BASE_BEHAVIOR = GQAMPackage.GA_STEP__BASE_BEHAVIOR;
+
+	/**
+	 * The feature id for the '<em><b>Base Message</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORE_DAG_NODE__BASE_MESSAGE = GQAMPackage.GA_STEP__BASE_MESSAGE;
+
+	/**
+	 * The feature id for the '<em><b>Duration</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORE_DAG_NODE__DURATION = GQAMPackage.GA_STEP__DURATION;
+
+	/**
+	 * The feature id for the '<em><b>Start</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORE_DAG_NODE__START = GQAMPackage.GA_STEP__START;
+
+	/**
+	 * The feature id for the '<em><b>Finish</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORE_DAG_NODE__FINISH = GQAMPackage.GA_STEP__FINISH;
+
+	/**
+	 * The feature id for the '<em><b>Cause</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORE_DAG_NODE__CAUSE = GQAMPackage.GA_STEP__CAUSE;
+
+	/**
+	 * The feature id for the '<em><b>Host Demand</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORE_DAG_NODE__HOST_DEMAND = GQAMPackage.GA_STEP__HOST_DEMAND;
+
+	/**
+	 * The feature id for the '<em><b>Host Demand Ops</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORE_DAG_NODE__HOST_DEMAND_OPS = GQAMPackage.GA_STEP__HOST_DEMAND_OPS;
+
+	/**
+	 * The feature id for the '<em><b>Inter Occ T</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORE_DAG_NODE__INTER_OCC_T = GQAMPackage.GA_STEP__INTER_OCC_T;
+
+	/**
+	 * The feature id for the '<em><b>Throughput</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORE_DAG_NODE__THROUGHPUT = GQAMPackage.GA_STEP__THROUGHPUT;
+
+	/**
+	 * The feature id for the '<em><b>Resp T</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORE_DAG_NODE__RESP_T = GQAMPackage.GA_STEP__RESP_T;
+
+	/**
+	 * The feature id for the '<em><b>Utilization</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORE_DAG_NODE__UTILIZATION = GQAMPackage.GA_STEP__UTILIZATION;
+
+	/**
+	 * The feature id for the '<em><b>Utilization On Host</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORE_DAG_NODE__UTILIZATION_ON_HOST = GQAMPackage.GA_STEP__UTILIZATION_ON_HOST;
+
+	/**
+	 * The feature id for the '<em><b>Root</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORE_DAG_NODE__ROOT = GQAMPackage.GA_STEP__ROOT;
+
+	/**
+	 * The feature id for the '<em><b>Steps</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORE_DAG_NODE__STEPS = GQAMPackage.GA_STEP__STEPS;
+
+	/**
+	 * The feature id for the '<em><b>Parent Step</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORE_DAG_NODE__PARENT_STEP = GQAMPackage.GA_STEP__PARENT_STEP;
+
+	/**
+	 * The feature id for the '<em><b>Timing</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORE_DAG_NODE__TIMING = GQAMPackage.GA_STEP__TIMING;
+
+	/**
+	 * The feature id for the '<em><b>Is Atomic</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORE_DAG_NODE__IS_ATOMIC = GQAMPackage.GA_STEP__IS_ATOMIC;
+
+	/**
+	 * The feature id for the '<em><b>Block T</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORE_DAG_NODE__BLOCK_T = GQAMPackage.GA_STEP__BLOCK_T;
+
+	/**
+	 * The feature id for the '<em><b>Rep</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORE_DAG_NODE__REP = GQAMPackage.GA_STEP__REP;
+
+	/**
+	 * The feature id for the '<em><b>Prob</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORE_DAG_NODE__PROB = GQAMPackage.GA_STEP__PROB;
+
+	/**
+	 * The feature id for the '<em><b>Priority</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORE_DAG_NODE__PRIORITY = GQAMPackage.GA_STEP__PRIORITY;
+
+	/**
+	 * The feature id for the '<em><b>Concur Res</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORE_DAG_NODE__CONCUR_RES = GQAMPackage.GA_STEP__CONCUR_RES;
+
+	/**
+	 * The feature id for the '<em><b>Host</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORE_DAG_NODE__HOST = GQAMPackage.GA_STEP__HOST;
+
+	/**
+	 * The feature id for the '<em><b>Serv Demand</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORE_DAG_NODE__SERV_DEMAND = GQAMPackage.GA_STEP__SERV_DEMAND;
+
+	/**
+	 * The feature id for the '<em><b>Serv Count</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORE_DAG_NODE__SERV_COUNT = GQAMPackage.GA_STEP__SERV_COUNT;
+
+	/**
+	 * The feature id for the '<em><b>Self Delay</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORE_DAG_NODE__SELF_DELAY = GQAMPackage.GA_STEP__SELF_DELAY;
+
+	/**
+	 * The feature id for the '<em><b>Scenario</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORE_DAG_NODE__SCENARIO = GQAMPackage.GA_STEP__SCENARIO;
+
+	/**
+	 * The feature id for the '<em><b>Child Scenario</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORE_DAG_NODE__CHILD_SCENARIO = GQAMPackage.GA_STEP__CHILD_SCENARIO;
+
+	/**
 	 * The feature id for the '<em><b>Res Mult</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CORE_DAG_NODE__RES_MULT = DPIMPackage.DPIM_SOURCE_NODE__RES_MULT;
+	int CORE_DAG_NODE__RES_MULT = GQAMPackage.GA_STEP_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Is Protected</b></em>' attribute.
@@ -872,7 +1232,7 @@ public interface CorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CORE_DAG_NODE__IS_PROTECTED = DPIMPackage.DPIM_SOURCE_NODE__IS_PROTECTED;
+	int CORE_DAG_NODE__IS_PROTECTED = GQAMPackage.GA_STEP_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Is Active</b></em>' attribute.
@@ -881,7 +1241,7 @@ public interface CorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CORE_DAG_NODE__IS_ACTIVE = DPIMPackage.DPIM_SOURCE_NODE__IS_ACTIVE;
+	int CORE_DAG_NODE__IS_ACTIVE = GQAMPackage.GA_STEP_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Base Property</b></em>' reference.
@@ -890,7 +1250,7 @@ public interface CorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CORE_DAG_NODE__BASE_PROPERTY = DPIMPackage.DPIM_SOURCE_NODE__BASE_PROPERTY;
+	int CORE_DAG_NODE__BASE_PROPERTY = GQAMPackage.GA_STEP_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Base Instance Specification</b></em>' reference.
@@ -899,7 +1259,7 @@ public interface CorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CORE_DAG_NODE__BASE_INSTANCE_SPECIFICATION = DPIMPackage.DPIM_SOURCE_NODE__BASE_INSTANCE_SPECIFICATION;
+	int CORE_DAG_NODE__BASE_INSTANCE_SPECIFICATION = GQAMPackage.GA_STEP_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Base Classifier</b></em>' reference.
@@ -908,7 +1268,7 @@ public interface CorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CORE_DAG_NODE__BASE_CLASSIFIER = DPIMPackage.DPIM_SOURCE_NODE__BASE_CLASSIFIER;
+	int CORE_DAG_NODE__BASE_CLASSIFIER = GQAMPackage.GA_STEP_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Base Lifeline</b></em>' reference.
@@ -917,7 +1277,7 @@ public interface CorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CORE_DAG_NODE__BASE_LIFELINE = DPIMPackage.DPIM_SOURCE_NODE__BASE_LIFELINE;
+	int CORE_DAG_NODE__BASE_LIFELINE = GQAMPackage.GA_STEP_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Base Connectable Element</b></em>' reference.
@@ -926,7 +1286,7 @@ public interface CorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CORE_DAG_NODE__BASE_CONNECTABLE_ELEMENT = DPIMPackage.DPIM_SOURCE_NODE__BASE_CONNECTABLE_ELEMENT;
+	int CORE_DAG_NODE__BASE_CONNECTABLE_ELEMENT = GQAMPackage.GA_STEP_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Stateful</b></em>' attribute.
@@ -935,7 +1295,7 @@ public interface CorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CORE_DAG_NODE__STATEFUL = DPIMPackage.DPIM_SOURCE_NODE__STATEFUL;
+	int CORE_DAG_NODE__STATEFUL = GQAMPackage.GA_STEP_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Origin</b></em>' attribute.
@@ -944,7 +1304,7 @@ public interface CorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CORE_DAG_NODE__ORIGIN = DPIMPackage.DPIM_SOURCE_NODE__ORIGIN;
+	int CORE_DAG_NODE__ORIGIN = GQAMPackage.GA_STEP_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Failure Coverage</b></em>' attribute list.
@@ -953,7 +1313,7 @@ public interface CorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CORE_DAG_NODE__FAILURE_COVERAGE = DPIMPackage.DPIM_SOURCE_NODE__FAILURE_COVERAGE;
+	int CORE_DAG_NODE__FAILURE_COVERAGE = GQAMPackage.GA_STEP_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Perc Perm Fault</b></em>' attribute list.
@@ -962,7 +1322,7 @@ public interface CorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CORE_DAG_NODE__PERC_PERM_FAULT = DPIMPackage.DPIM_SOURCE_NODE__PERC_PERM_FAULT;
+	int CORE_DAG_NODE__PERC_PERM_FAULT = GQAMPackage.GA_STEP_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Ss Avail</b></em>' attribute list.
@@ -971,7 +1331,7 @@ public interface CorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CORE_DAG_NODE__SS_AVAIL = DPIMPackage.DPIM_SOURCE_NODE__SS_AVAIL;
+	int CORE_DAG_NODE__SS_AVAIL = GQAMPackage.GA_STEP_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Unreliability</b></em>' attribute list.
@@ -980,7 +1340,7 @@ public interface CorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CORE_DAG_NODE__UNRELIABILITY = DPIMPackage.DPIM_SOURCE_NODE__UNRELIABILITY;
+	int CORE_DAG_NODE__UNRELIABILITY = GQAMPackage.GA_STEP_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Reliability</b></em>' attribute list.
@@ -989,7 +1349,7 @@ public interface CorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CORE_DAG_NODE__RELIABILITY = DPIMPackage.DPIM_SOURCE_NODE__RELIABILITY;
+	int CORE_DAG_NODE__RELIABILITY = GQAMPackage.GA_STEP_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Mission Time</b></em>' attribute list.
@@ -998,7 +1358,7 @@ public interface CorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CORE_DAG_NODE__MISSION_TIME = DPIMPackage.DPIM_SOURCE_NODE__MISSION_TIME;
+	int CORE_DAG_NODE__MISSION_TIME = GQAMPackage.GA_STEP_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>Avail Level</b></em>' attribute list.
@@ -1007,7 +1367,7 @@ public interface CorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CORE_DAG_NODE__AVAIL_LEVEL = DPIMPackage.DPIM_SOURCE_NODE__AVAIL_LEVEL;
+	int CORE_DAG_NODE__AVAIL_LEVEL = GQAMPackage.GA_STEP_FEATURE_COUNT + 16;
 
 	/**
 	 * The feature id for the '<em><b>Reliability Level</b></em>' attribute list.
@@ -1016,7 +1376,7 @@ public interface CorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CORE_DAG_NODE__RELIABILITY_LEVEL = DPIMPackage.DPIM_SOURCE_NODE__RELIABILITY_LEVEL;
+	int CORE_DAG_NODE__RELIABILITY_LEVEL = GQAMPackage.GA_STEP_FEATURE_COUNT + 17;
 
 	/**
 	 * The feature id for the '<em><b>Safety Level</b></em>' attribute list.
@@ -1025,7 +1385,7 @@ public interface CorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CORE_DAG_NODE__SAFETY_LEVEL = DPIMPackage.DPIM_SOURCE_NODE__SAFETY_LEVEL;
+	int CORE_DAG_NODE__SAFETY_LEVEL = GQAMPackage.GA_STEP_FEATURE_COUNT + 18;
 
 	/**
 	 * The feature id for the '<em><b>Complexity</b></em>' attribute list.
@@ -1034,7 +1394,7 @@ public interface CorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CORE_DAG_NODE__COMPLEXITY = DPIMPackage.DPIM_SOURCE_NODE__COMPLEXITY;
+	int CORE_DAG_NODE__COMPLEXITY = GQAMPackage.GA_STEP_FEATURE_COUNT + 19;
 
 	/**
 	 * The feature id for the '<em><b>Fault</b></em>' containment reference list.
@@ -1043,7 +1403,7 @@ public interface CorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CORE_DAG_NODE__FAULT = DPIMPackage.DPIM_SOURCE_NODE__FAULT;
+	int CORE_DAG_NODE__FAULT = GQAMPackage.GA_STEP_FEATURE_COUNT + 20;
 
 	/**
 	 * The feature id for the '<em><b>Error</b></em>' containment reference list.
@@ -1052,7 +1412,7 @@ public interface CorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CORE_DAG_NODE__ERROR = DPIMPackage.DPIM_SOURCE_NODE__ERROR;
+	int CORE_DAG_NODE__ERROR = GQAMPackage.GA_STEP_FEATURE_COUNT + 21;
 
 	/**
 	 * The feature id for the '<em><b>Failure</b></em>' containment reference list.
@@ -1061,7 +1421,7 @@ public interface CorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CORE_DAG_NODE__FAILURE = DPIMPackage.DPIM_SOURCE_NODE__FAILURE;
+	int CORE_DAG_NODE__FAILURE = GQAMPackage.GA_STEP_FEATURE_COUNT + 22;
 
 	/**
 	 * The feature id for the '<em><b>Hazard</b></em>' containment reference list.
@@ -1070,7 +1430,7 @@ public interface CorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CORE_DAG_NODE__HAZARD = DPIMPackage.DPIM_SOURCE_NODE__HAZARD;
+	int CORE_DAG_NODE__HAZARD = GQAMPackage.GA_STEP_FEATURE_COUNT + 23;
 
 	/**
 	 * The feature id for the '<em><b>Repair</b></em>' containment reference list.
@@ -1079,7 +1439,7 @@ public interface CorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CORE_DAG_NODE__REPAIR = DPIMPackage.DPIM_SOURCE_NODE__REPAIR;
+	int CORE_DAG_NODE__REPAIR = GQAMPackage.GA_STEP_FEATURE_COUNT + 24;
 
 	/**
 	 * The feature id for the '<em><b>Substituted By</b></em>' reference list.
@@ -1088,16 +1448,16 @@ public interface CorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CORE_DAG_NODE__SUBSTITUTED_BY = DPIMPackage.DPIM_SOURCE_NODE__SUBSTITUTED_BY;
+	int CORE_DAG_NODE__SUBSTITUTED_BY = GQAMPackage.GA_STEP_FEATURE_COUNT + 25;
 
 	/**
-	 * The feature id for the '<em><b>Throughput</b></em>' attribute.
+	 * The feature id for the '<em><b>Node Throughput</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CORE_DAG_NODE__THROUGHPUT = DPIMPackage.DPIM_SOURCE_NODE__THROUGHPUT;
+	int CORE_DAG_NODE__NODE_THROUGHPUT = GQAMPackage.GA_STEP_FEATURE_COUNT + 26;
 
 	/**
 	 * The feature id for the '<em><b>Type</b></em>' attribute.
@@ -1106,7 +1466,7 @@ public interface CorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CORE_DAG_NODE__TYPE = DPIMPackage.DPIM_SOURCE_NODE__TYPE;
+	int CORE_DAG_NODE__TYPE = GQAMPackage.GA_STEP_FEATURE_COUNT + 27;
 
 	/**
 	 * The feature id for the '<em><b>Target Tech</b></em>' attribute.
@@ -1115,7 +1475,7 @@ public interface CorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CORE_DAG_NODE__TARGET_TECH = DPIMPackage.DPIM_SOURCE_NODE__TARGET_TECH;
+	int CORE_DAG_NODE__TARGET_TECH = GQAMPackage.GA_STEP_FEATURE_COUNT + 28;
 
 	/**
 	 * The feature id for the '<em><b>Proc Type</b></em>' attribute.
@@ -1124,7 +1484,7 @@ public interface CorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CORE_DAG_NODE__PROC_TYPE = DPIMPackage.DPIM_SOURCE_NODE__PROC_TYPE;
+	int CORE_DAG_NODE__PROC_TYPE = GQAMPackage.GA_STEP_FEATURE_COUNT + 29;
 
 	/**
 	 * The feature id for the '<em><b>Store</b></em>' containment reference.
@@ -1133,7 +1493,7 @@ public interface CorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CORE_DAG_NODE__STORE = DPIMPackage.DPIM_SOURCE_NODE__STORE;
+	int CORE_DAG_NODE__STORE = GQAMPackage.GA_STEP_FEATURE_COUNT + 30;
 
 	/**
 	 * The feature id for the '<em><b>Provides</b></em>' containment reference.
@@ -1142,7 +1502,7 @@ public interface CorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CORE_DAG_NODE__PROVIDES = DPIMPackage.DPIM_SOURCE_NODE__PROVIDES;
+	int CORE_DAG_NODE__PROVIDES = GQAMPackage.GA_STEP_FEATURE_COUNT + 31;
 
 	/**
 	 * The feature id for the '<em><b>Source Type</b></em>' attribute.
@@ -1151,7 +1511,7 @@ public interface CorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CORE_DAG_NODE__SOURCE_TYPE = DPIMPackage.DPIM_SOURCE_NODE__SOURCE_TYPE;
+	int CORE_DAG_NODE__SOURCE_TYPE = GQAMPackage.GA_STEP_FEATURE_COUNT + 32;
 
 	/**
 	 * The feature id for the '<em><b>Rate</b></em>' attribute.
@@ -1160,7 +1520,7 @@ public interface CorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CORE_DAG_NODE__RATE = DPIMPackage.DPIM_SOURCE_NODE__RATE;
+	int CORE_DAG_NODE__RATE = GQAMPackage.GA_STEP_FEATURE_COUNT + 33;
 
 	/**
 	 * The feature id for the '<em><b>Parallelism</b></em>' attribute.
@@ -1169,7 +1529,7 @@ public interface CorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CORE_DAG_NODE__PARALLELISM = DPIMPackage.DPIM_SOURCE_NODE_FEATURE_COUNT + 0;
+	int CORE_DAG_NODE__PARALLELISM = GQAMPackage.GA_STEP_FEATURE_COUNT + 34;
 
 	/**
 	 * The feature id for the '<em><b>Operation</b></em>' attribute.
@@ -1178,7 +1538,7 @@ public interface CorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CORE_DAG_NODE__OPERATION = DPIMPackage.DPIM_SOURCE_NODE_FEATURE_COUNT + 1;
+	int CORE_DAG_NODE__OPERATION = GQAMPackage.GA_STEP_FEATURE_COUNT + 35;
 
 	/**
 	 * The feature id for the '<em><b>Has Successor</b></em>' reference list.
@@ -1187,7 +1547,7 @@ public interface CorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CORE_DAG_NODE__HAS_SUCCESSOR = DPIMPackage.DPIM_SOURCE_NODE_FEATURE_COUNT + 2;
+	int CORE_DAG_NODE__HAS_SUCCESSOR = GQAMPackage.GA_STEP_FEATURE_COUNT + 36;
 
 	/**
 	 * The number of structural features of the '<em>DAG Node</em>' class.
@@ -1196,7 +1556,7 @@ public interface CorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CORE_DAG_NODE_FEATURE_COUNT = DPIMPackage.DPIM_SOURCE_NODE_FEATURE_COUNT + 3;
+	int CORE_DAG_NODE_FEATURE_COUNT = GQAMPackage.GA_STEP_FEATURE_COUNT + 37;
 
 	/**
 	 * The meta object id for the '{@link es.unizar.disco.dice.dtsm.Core.impl.CoreDAGSourceNodeImpl <em>DAG Source Node</em>}' class.
@@ -1207,6 +1567,366 @@ public interface CorePackage extends EPackage {
 	 * @generated
 	 */
 	int CORE_DAG_SOURCE_NODE = 4;
+
+	/**
+	 * The feature id for the '<em><b>Exec Time</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORE_DAG_SOURCE_NODE__EXEC_TIME = CORE_DAG_NODE__EXEC_TIME;
+
+	/**
+	 * The feature id for the '<em><b>Allocated Memory</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORE_DAG_SOURCE_NODE__ALLOCATED_MEMORY = CORE_DAG_NODE__ALLOCATED_MEMORY;
+
+	/**
+	 * The feature id for the '<em><b>Used Memory</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORE_DAG_SOURCE_NODE__USED_MEMORY = CORE_DAG_NODE__USED_MEMORY;
+
+	/**
+	 * The feature id for the '<em><b>Power Peak</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORE_DAG_SOURCE_NODE__POWER_PEAK = CORE_DAG_NODE__POWER_PEAK;
+
+	/**
+	 * The feature id for the '<em><b>Energy</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORE_DAG_SOURCE_NODE__ENERGY = CORE_DAG_NODE__ENERGY;
+
+	/**
+	 * The feature id for the '<em><b>Base Named Element</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORE_DAG_SOURCE_NODE__BASE_NAMED_ELEMENT = CORE_DAG_NODE__BASE_NAMED_ELEMENT;
+
+	/**
+	 * The feature id for the '<em><b>Sub Usage</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORE_DAG_SOURCE_NODE__SUB_USAGE = CORE_DAG_NODE__SUB_USAGE;
+
+	/**
+	 * The feature id for the '<em><b>Used Resources</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORE_DAG_SOURCE_NODE__USED_RESOURCES = CORE_DAG_NODE__USED_RESOURCES;
+
+	/**
+	 * The feature id for the '<em><b>Msg Size</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORE_DAG_SOURCE_NODE__MSG_SIZE = CORE_DAG_NODE__MSG_SIZE;
+
+	/**
+	 * The feature id for the '<em><b>On</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORE_DAG_SOURCE_NODE__ON = CORE_DAG_NODE__ON;
+
+	/**
+	 * The feature id for the '<em><b>Base Action</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORE_DAG_SOURCE_NODE__BASE_ACTION = CORE_DAG_NODE__BASE_ACTION;
+
+	/**
+	 * The feature id for the '<em><b>Base Behavior</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORE_DAG_SOURCE_NODE__BASE_BEHAVIOR = CORE_DAG_NODE__BASE_BEHAVIOR;
+
+	/**
+	 * The feature id for the '<em><b>Base Message</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORE_DAG_SOURCE_NODE__BASE_MESSAGE = CORE_DAG_NODE__BASE_MESSAGE;
+
+	/**
+	 * The feature id for the '<em><b>Duration</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORE_DAG_SOURCE_NODE__DURATION = CORE_DAG_NODE__DURATION;
+
+	/**
+	 * The feature id for the '<em><b>Start</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORE_DAG_SOURCE_NODE__START = CORE_DAG_NODE__START;
+
+	/**
+	 * The feature id for the '<em><b>Finish</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORE_DAG_SOURCE_NODE__FINISH = CORE_DAG_NODE__FINISH;
+
+	/**
+	 * The feature id for the '<em><b>Cause</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORE_DAG_SOURCE_NODE__CAUSE = CORE_DAG_NODE__CAUSE;
+
+	/**
+	 * The feature id for the '<em><b>Host Demand</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORE_DAG_SOURCE_NODE__HOST_DEMAND = CORE_DAG_NODE__HOST_DEMAND;
+
+	/**
+	 * The feature id for the '<em><b>Host Demand Ops</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORE_DAG_SOURCE_NODE__HOST_DEMAND_OPS = CORE_DAG_NODE__HOST_DEMAND_OPS;
+
+	/**
+	 * The feature id for the '<em><b>Inter Occ T</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORE_DAG_SOURCE_NODE__INTER_OCC_T = CORE_DAG_NODE__INTER_OCC_T;
+
+	/**
+	 * The feature id for the '<em><b>Throughput</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORE_DAG_SOURCE_NODE__THROUGHPUT = CORE_DAG_NODE__THROUGHPUT;
+
+	/**
+	 * The feature id for the '<em><b>Resp T</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORE_DAG_SOURCE_NODE__RESP_T = CORE_DAG_NODE__RESP_T;
+
+	/**
+	 * The feature id for the '<em><b>Utilization</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORE_DAG_SOURCE_NODE__UTILIZATION = CORE_DAG_NODE__UTILIZATION;
+
+	/**
+	 * The feature id for the '<em><b>Utilization On Host</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORE_DAG_SOURCE_NODE__UTILIZATION_ON_HOST = CORE_DAG_NODE__UTILIZATION_ON_HOST;
+
+	/**
+	 * The feature id for the '<em><b>Root</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORE_DAG_SOURCE_NODE__ROOT = CORE_DAG_NODE__ROOT;
+
+	/**
+	 * The feature id for the '<em><b>Steps</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORE_DAG_SOURCE_NODE__STEPS = CORE_DAG_NODE__STEPS;
+
+	/**
+	 * The feature id for the '<em><b>Parent Step</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORE_DAG_SOURCE_NODE__PARENT_STEP = CORE_DAG_NODE__PARENT_STEP;
+
+	/**
+	 * The feature id for the '<em><b>Timing</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORE_DAG_SOURCE_NODE__TIMING = CORE_DAG_NODE__TIMING;
+
+	/**
+	 * The feature id for the '<em><b>Is Atomic</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORE_DAG_SOURCE_NODE__IS_ATOMIC = CORE_DAG_NODE__IS_ATOMIC;
+
+	/**
+	 * The feature id for the '<em><b>Block T</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORE_DAG_SOURCE_NODE__BLOCK_T = CORE_DAG_NODE__BLOCK_T;
+
+	/**
+	 * The feature id for the '<em><b>Rep</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORE_DAG_SOURCE_NODE__REP = CORE_DAG_NODE__REP;
+
+	/**
+	 * The feature id for the '<em><b>Prob</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORE_DAG_SOURCE_NODE__PROB = CORE_DAG_NODE__PROB;
+
+	/**
+	 * The feature id for the '<em><b>Priority</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORE_DAG_SOURCE_NODE__PRIORITY = CORE_DAG_NODE__PRIORITY;
+
+	/**
+	 * The feature id for the '<em><b>Concur Res</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORE_DAG_SOURCE_NODE__CONCUR_RES = CORE_DAG_NODE__CONCUR_RES;
+
+	/**
+	 * The feature id for the '<em><b>Host</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORE_DAG_SOURCE_NODE__HOST = CORE_DAG_NODE__HOST;
+
+	/**
+	 * The feature id for the '<em><b>Serv Demand</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORE_DAG_SOURCE_NODE__SERV_DEMAND = CORE_DAG_NODE__SERV_DEMAND;
+
+	/**
+	 * The feature id for the '<em><b>Serv Count</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORE_DAG_SOURCE_NODE__SERV_COUNT = CORE_DAG_NODE__SERV_COUNT;
+
+	/**
+	 * The feature id for the '<em><b>Self Delay</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORE_DAG_SOURCE_NODE__SELF_DELAY = CORE_DAG_NODE__SELF_DELAY;
+
+	/**
+	 * The feature id for the '<em><b>Scenario</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORE_DAG_SOURCE_NODE__SCENARIO = CORE_DAG_NODE__SCENARIO;
+
+	/**
+	 * The feature id for the '<em><b>Child Scenario</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORE_DAG_SOURCE_NODE__CHILD_SCENARIO = CORE_DAG_NODE__CHILD_SCENARIO;
 
 	/**
 	 * The feature id for the '<em><b>Res Mult</b></em>' attribute.
@@ -1443,13 +2163,13 @@ public interface CorePackage extends EPackage {
 	int CORE_DAG_SOURCE_NODE__SUBSTITUTED_BY = CORE_DAG_NODE__SUBSTITUTED_BY;
 
 	/**
-	 * The feature id for the '<em><b>Throughput</b></em>' attribute.
+	 * The feature id for the '<em><b>Node Throughput</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CORE_DAG_SOURCE_NODE__THROUGHPUT = CORE_DAG_NODE__THROUGHPUT;
+	int CORE_DAG_SOURCE_NODE__NODE_THROUGHPUT = CORE_DAG_NODE__NODE_THROUGHPUT;
 
 	/**
 	 * The feature id for the '<em><b>Type</b></em>' attribute.

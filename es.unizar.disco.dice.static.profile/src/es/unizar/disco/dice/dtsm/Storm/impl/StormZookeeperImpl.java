@@ -3,7 +3,7 @@
 package es.unizar.disco.dice.dtsm.Storm.impl;
 
 import es.unizar.disco.dice.dtsm.Storm.StormPackage;
-import es.unizar.disco.dice.dtsm.Storm.Zookeeper;
+import es.unizar.disco.dice.dtsm.Storm.StormZookeeper;
 
 import org.eclipse.emf.common.notify.Notification;
 
@@ -23,18 +23,18 @@ import org.eclipse.uml2.uml.Classifier;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link es.unizar.disco.dice.dtsm.Storm.impl.ZookeeperImpl#getSessionTimeout <em>Session Timeout</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Storm.impl.ZookeeperImpl#getConnectionTimeout <em>Connection Timeout</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Storm.impl.ZookeeperImpl#getRetryTime <em>Retry Time</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Storm.impl.ZookeeperImpl#getRetryInterval <em>Retry Interval</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Storm.impl.ZookeeperImpl#getUser <em>User</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Storm.impl.ZookeeperImpl#getPassword <em>Password</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Storm.impl.ZookeeperImpl#getBase_Classifier <em>Base Classifier</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.dtsm.Storm.impl.StormZookeeperImpl#getSessionTimeout <em>Session Timeout</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.dtsm.Storm.impl.StormZookeeperImpl#getConnectionTimeout <em>Connection Timeout</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.dtsm.Storm.impl.StormZookeeperImpl#getRetryTime <em>Retry Time</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.dtsm.Storm.impl.StormZookeeperImpl#getRetryInterval <em>Retry Interval</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.dtsm.Storm.impl.StormZookeeperImpl#getUser <em>User</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.dtsm.Storm.impl.StormZookeeperImpl#getPassword <em>Password</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.dtsm.Storm.impl.StormZookeeperImpl#getBase_Classifier <em>Base Classifier</em>}</li>
  * </ul>
  *
  * @generated
  */
-public class ZookeeperImpl extends MinimalEObjectImpl.Container implements Zookeeper {
+public class StormZookeeperImpl extends MinimalEObjectImpl.Container implements StormZookeeper {
 	/**
 	 * The default value of the '{@link #getSessionTimeout() <em>Session Timeout</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -170,7 +170,7 @@ public class ZookeeperImpl extends MinimalEObjectImpl.Container implements Zooke
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected ZookeeperImpl() {
+	protected StormZookeeperImpl() {
 		super();
 	}
 
@@ -181,7 +181,7 @@ public class ZookeeperImpl extends MinimalEObjectImpl.Container implements Zooke
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return StormPackage.Literals.ZOOKEEPER;
+		return StormPackage.Literals.STORM_ZOOKEEPER;
 	}
 
 	/**
@@ -202,7 +202,7 @@ public class ZookeeperImpl extends MinimalEObjectImpl.Container implements Zooke
 		int oldSessionTimeout = sessionTimeout;
 		sessionTimeout = newSessionTimeout;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, StormPackage.ZOOKEEPER__SESSION_TIMEOUT, oldSessionTimeout, sessionTimeout));
+			eNotify(new ENotificationImpl(this, Notification.SET, StormPackage.STORM_ZOOKEEPER__SESSION_TIMEOUT, oldSessionTimeout, sessionTimeout));
 	}
 
 	/**
@@ -223,7 +223,7 @@ public class ZookeeperImpl extends MinimalEObjectImpl.Container implements Zooke
 		int oldConnectionTimeout = connectionTimeout;
 		connectionTimeout = newConnectionTimeout;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, StormPackage.ZOOKEEPER__CONNECTION_TIMEOUT, oldConnectionTimeout, connectionTimeout));
+			eNotify(new ENotificationImpl(this, Notification.SET, StormPackage.STORM_ZOOKEEPER__CONNECTION_TIMEOUT, oldConnectionTimeout, connectionTimeout));
 	}
 
 	/**
@@ -244,7 +244,7 @@ public class ZookeeperImpl extends MinimalEObjectImpl.Container implements Zooke
 		int oldRetryTime = retryTime;
 		retryTime = newRetryTime;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, StormPackage.ZOOKEEPER__RETRY_TIME, oldRetryTime, retryTime));
+			eNotify(new ENotificationImpl(this, Notification.SET, StormPackage.STORM_ZOOKEEPER__RETRY_TIME, oldRetryTime, retryTime));
 	}
 
 	/**
@@ -265,7 +265,7 @@ public class ZookeeperImpl extends MinimalEObjectImpl.Container implements Zooke
 		int oldRetryInterval = retryInterval;
 		retryInterval = newRetryInterval;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, StormPackage.ZOOKEEPER__RETRY_INTERVAL, oldRetryInterval, retryInterval));
+			eNotify(new ENotificationImpl(this, Notification.SET, StormPackage.STORM_ZOOKEEPER__RETRY_INTERVAL, oldRetryInterval, retryInterval));
 	}
 
 	/**
@@ -286,7 +286,7 @@ public class ZookeeperImpl extends MinimalEObjectImpl.Container implements Zooke
 		String oldUser = user;
 		user = newUser;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, StormPackage.ZOOKEEPER__USER, oldUser, user));
+			eNotify(new ENotificationImpl(this, Notification.SET, StormPackage.STORM_ZOOKEEPER__USER, oldUser, user));
 	}
 
 	/**
@@ -307,7 +307,7 @@ public class ZookeeperImpl extends MinimalEObjectImpl.Container implements Zooke
 		String oldPassword = password;
 		password = newPassword;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, StormPackage.ZOOKEEPER__PASSWORD, oldPassword, password));
+			eNotify(new ENotificationImpl(this, Notification.SET, StormPackage.STORM_ZOOKEEPER__PASSWORD, oldPassword, password));
 	}
 
 	/**
@@ -321,7 +321,7 @@ public class ZookeeperImpl extends MinimalEObjectImpl.Container implements Zooke
 			base_Classifier = (Classifier)eResolveProxy(oldBase_Classifier);
 			if (base_Classifier != oldBase_Classifier) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, StormPackage.ZOOKEEPER__BASE_CLASSIFIER, oldBase_Classifier, base_Classifier));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, StormPackage.STORM_ZOOKEEPER__BASE_CLASSIFIER, oldBase_Classifier, base_Classifier));
 			}
 		}
 		return base_Classifier;
@@ -345,7 +345,7 @@ public class ZookeeperImpl extends MinimalEObjectImpl.Container implements Zooke
 		Classifier oldBase_Classifier = base_Classifier;
 		base_Classifier = newBase_Classifier;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, StormPackage.ZOOKEEPER__BASE_CLASSIFIER, oldBase_Classifier, base_Classifier));
+			eNotify(new ENotificationImpl(this, Notification.SET, StormPackage.STORM_ZOOKEEPER__BASE_CLASSIFIER, oldBase_Classifier, base_Classifier));
 	}
 
 	/**
@@ -356,19 +356,19 @@ public class ZookeeperImpl extends MinimalEObjectImpl.Container implements Zooke
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case StormPackage.ZOOKEEPER__SESSION_TIMEOUT:
+			case StormPackage.STORM_ZOOKEEPER__SESSION_TIMEOUT:
 				return getSessionTimeout();
-			case StormPackage.ZOOKEEPER__CONNECTION_TIMEOUT:
+			case StormPackage.STORM_ZOOKEEPER__CONNECTION_TIMEOUT:
 				return getConnectionTimeout();
-			case StormPackage.ZOOKEEPER__RETRY_TIME:
+			case StormPackage.STORM_ZOOKEEPER__RETRY_TIME:
 				return getRetryTime();
-			case StormPackage.ZOOKEEPER__RETRY_INTERVAL:
+			case StormPackage.STORM_ZOOKEEPER__RETRY_INTERVAL:
 				return getRetryInterval();
-			case StormPackage.ZOOKEEPER__USER:
+			case StormPackage.STORM_ZOOKEEPER__USER:
 				return getUser();
-			case StormPackage.ZOOKEEPER__PASSWORD:
+			case StormPackage.STORM_ZOOKEEPER__PASSWORD:
 				return getPassword();
-			case StormPackage.ZOOKEEPER__BASE_CLASSIFIER:
+			case StormPackage.STORM_ZOOKEEPER__BASE_CLASSIFIER:
 				if (resolve) return getBase_Classifier();
 				return basicGetBase_Classifier();
 		}
@@ -383,25 +383,25 @@ public class ZookeeperImpl extends MinimalEObjectImpl.Container implements Zooke
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case StormPackage.ZOOKEEPER__SESSION_TIMEOUT:
+			case StormPackage.STORM_ZOOKEEPER__SESSION_TIMEOUT:
 				setSessionTimeout((Integer)newValue);
 				return;
-			case StormPackage.ZOOKEEPER__CONNECTION_TIMEOUT:
+			case StormPackage.STORM_ZOOKEEPER__CONNECTION_TIMEOUT:
 				setConnectionTimeout((Integer)newValue);
 				return;
-			case StormPackage.ZOOKEEPER__RETRY_TIME:
+			case StormPackage.STORM_ZOOKEEPER__RETRY_TIME:
 				setRetryTime((Integer)newValue);
 				return;
-			case StormPackage.ZOOKEEPER__RETRY_INTERVAL:
+			case StormPackage.STORM_ZOOKEEPER__RETRY_INTERVAL:
 				setRetryInterval((Integer)newValue);
 				return;
-			case StormPackage.ZOOKEEPER__USER:
+			case StormPackage.STORM_ZOOKEEPER__USER:
 				setUser((String)newValue);
 				return;
-			case StormPackage.ZOOKEEPER__PASSWORD:
+			case StormPackage.STORM_ZOOKEEPER__PASSWORD:
 				setPassword((String)newValue);
 				return;
-			case StormPackage.ZOOKEEPER__BASE_CLASSIFIER:
+			case StormPackage.STORM_ZOOKEEPER__BASE_CLASSIFIER:
 				setBase_Classifier((Classifier)newValue);
 				return;
 		}
@@ -416,25 +416,25 @@ public class ZookeeperImpl extends MinimalEObjectImpl.Container implements Zooke
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case StormPackage.ZOOKEEPER__SESSION_TIMEOUT:
+			case StormPackage.STORM_ZOOKEEPER__SESSION_TIMEOUT:
 				setSessionTimeout(SESSION_TIMEOUT_EDEFAULT);
 				return;
-			case StormPackage.ZOOKEEPER__CONNECTION_TIMEOUT:
+			case StormPackage.STORM_ZOOKEEPER__CONNECTION_TIMEOUT:
 				setConnectionTimeout(CONNECTION_TIMEOUT_EDEFAULT);
 				return;
-			case StormPackage.ZOOKEEPER__RETRY_TIME:
+			case StormPackage.STORM_ZOOKEEPER__RETRY_TIME:
 				setRetryTime(RETRY_TIME_EDEFAULT);
 				return;
-			case StormPackage.ZOOKEEPER__RETRY_INTERVAL:
+			case StormPackage.STORM_ZOOKEEPER__RETRY_INTERVAL:
 				setRetryInterval(RETRY_INTERVAL_EDEFAULT);
 				return;
-			case StormPackage.ZOOKEEPER__USER:
+			case StormPackage.STORM_ZOOKEEPER__USER:
 				setUser(USER_EDEFAULT);
 				return;
-			case StormPackage.ZOOKEEPER__PASSWORD:
+			case StormPackage.STORM_ZOOKEEPER__PASSWORD:
 				setPassword(PASSWORD_EDEFAULT);
 				return;
-			case StormPackage.ZOOKEEPER__BASE_CLASSIFIER:
+			case StormPackage.STORM_ZOOKEEPER__BASE_CLASSIFIER:
 				setBase_Classifier((Classifier)null);
 				return;
 		}
@@ -449,19 +449,19 @@ public class ZookeeperImpl extends MinimalEObjectImpl.Container implements Zooke
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case StormPackage.ZOOKEEPER__SESSION_TIMEOUT:
+			case StormPackage.STORM_ZOOKEEPER__SESSION_TIMEOUT:
 				return sessionTimeout != SESSION_TIMEOUT_EDEFAULT;
-			case StormPackage.ZOOKEEPER__CONNECTION_TIMEOUT:
+			case StormPackage.STORM_ZOOKEEPER__CONNECTION_TIMEOUT:
 				return connectionTimeout != CONNECTION_TIMEOUT_EDEFAULT;
-			case StormPackage.ZOOKEEPER__RETRY_TIME:
+			case StormPackage.STORM_ZOOKEEPER__RETRY_TIME:
 				return retryTime != RETRY_TIME_EDEFAULT;
-			case StormPackage.ZOOKEEPER__RETRY_INTERVAL:
+			case StormPackage.STORM_ZOOKEEPER__RETRY_INTERVAL:
 				return retryInterval != RETRY_INTERVAL_EDEFAULT;
-			case StormPackage.ZOOKEEPER__USER:
+			case StormPackage.STORM_ZOOKEEPER__USER:
 				return USER_EDEFAULT == null ? user != null : !USER_EDEFAULT.equals(user);
-			case StormPackage.ZOOKEEPER__PASSWORD:
+			case StormPackage.STORM_ZOOKEEPER__PASSWORD:
 				return PASSWORD_EDEFAULT == null ? password != null : !PASSWORD_EDEFAULT.equals(password);
-			case StormPackage.ZOOKEEPER__BASE_CLASSIFIER:
+			case StormPackage.STORM_ZOOKEEPER__BASE_CLASSIFIER:
 				return base_Classifier != null;
 		}
 		return super.eIsSet(featureID);
@@ -493,4 +493,4 @@ public class ZookeeperImpl extends MinimalEObjectImpl.Container implements Zooke
 		return result.toString();
 	}
 
-} //ZookeeperImpl
+} //StormZookeeperImpl

@@ -17,7 +17,9 @@ import es.unizar.disco.dice.Basic_Enumeration_Types.impl.Basic_Enumeration_Types
 import es.unizar.disco.dice.Complex_Data_Types.impl.Complex_Data_TypesPackageImpl;
 
 import es.unizar.disco.dice.DICE.DICEPackage;
+
 import es.unizar.disco.dice.DICE.impl.DICEPackageImpl;
+
 import es.unizar.disco.dice.DPIM.DPIMPackage;
 
 import es.unizar.disco.dice.DPIM.impl.DPIMPackageImpl;
@@ -30,21 +32,24 @@ import es.unizar.disco.dice.dtsm.Hadoop.HadoopPackage;
 
 import es.unizar.disco.dice.dtsm.Hadoop.impl.HadoopPackageImpl;
 
-import es.unizar.disco.dice.dtsm.Storm.Nimbus;
 import es.unizar.disco.dice.dtsm.Storm.StormApplication;
 import es.unizar.disco.dice.dtsm.Storm.StormBolt;
 import es.unizar.disco.dice.dtsm.Storm.StormFactory;
+import es.unizar.disco.dice.dtsm.Storm.StormNimbus;
 import es.unizar.disco.dice.dtsm.Storm.StormPackage;
 import es.unizar.disco.dice.dtsm.Storm.StormScenarioTopology;
 import es.unizar.disco.dice.dtsm.Storm.StormSpout;
 import es.unizar.disco.dice.dtsm.Storm.StormStreamStep;
-import es.unizar.disco.dice.dtsm.Storm.Supervisor;
-import es.unizar.disco.dice.dtsm.Storm.Zookeeper;
+import es.unizar.disco.dice.dtsm.Storm.StormSupervisor;
+import es.unizar.disco.dice.dtsm.Storm.StormZookeeper;
+
+import es.unizar.disco.dice.dtsm.Storm.util.StormValidator;
 
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
+import org.eclipse.emf.ecore.EValidator;
 
 import org.eclipse.emf.ecore.impl.EPackageImpl;
 
@@ -96,21 +101,21 @@ public class StormPackageImpl extends EPackageImpl implements StormPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass nimbusEClass = null;
+	private EClass stormNimbusEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass supervisorEClass = null;
+	private EClass stormSupervisorEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass zookeeperEClass = null;
+	private EClass stormZookeeperEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -199,6 +204,15 @@ public class StormPackageImpl extends EPackageImpl implements StormPackage {
 		theComplex_Data_TypesPackage_1.initializePackageContents();
 		theBasic_Data_TypesPackage_1.initializePackageContents();
 		theBasic_Enumeration_TypesPackage_1.initializePackageContents();
+
+		// Register package validator
+		EValidator.Registry.INSTANCE.put
+			(theStormPackage, 
+			 new EValidator.Descriptor() {
+				 public EValidator getEValidator() {
+					 return StormValidator.INSTANCE;
+				 }
+			 });
 
 		// Mark meta-data to indicate it can't be changed
 		theStormPackage.freeze();
@@ -367,8 +381,8 @@ public class StormPackageImpl extends EPackageImpl implements StormPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getNimbus() {
-		return nimbusEClass;
+	public EClass getStormNimbus() {
+		return stormNimbusEClass;
 	}
 
 	/**
@@ -376,8 +390,8 @@ public class StormPackageImpl extends EPackageImpl implements StormPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getNimbus_TaskTimeout() {
-		return (EAttribute)nimbusEClass.getEStructuralFeatures().get(0);
+	public EAttribute getStormNimbus_TaskTimeout() {
+		return (EAttribute)stormNimbusEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -385,8 +399,8 @@ public class StormPackageImpl extends EPackageImpl implements StormPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getNimbus_SupervisorTimeout() {
-		return (EAttribute)nimbusEClass.getEStructuralFeatures().get(1);
+	public EAttribute getStormNimbus_SupervisorTimeout() {
+		return (EAttribute)stormNimbusEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -394,8 +408,8 @@ public class StormPackageImpl extends EPackageImpl implements StormPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getNimbus_MonitorFrequency() {
-		return (EAttribute)nimbusEClass.getEStructuralFeatures().get(2);
+	public EAttribute getStormNimbus_MonitorFrequency() {
+		return (EAttribute)stormNimbusEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -403,8 +417,8 @@ public class StormPackageImpl extends EPackageImpl implements StormPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getNimbus_Base_Classifier() {
-		return (EReference)nimbusEClass.getEStructuralFeatures().get(3);
+	public EReference getStormNimbus_Base_Classifier() {
+		return (EReference)stormNimbusEClass.getEStructuralFeatures().get(3);
 	}
 
 	/**
@@ -412,8 +426,8 @@ public class StormPackageImpl extends EPackageImpl implements StormPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getSupervisor() {
-		return supervisorEClass;
+	public EClass getStormSupervisor() {
+		return stormSupervisorEClass;
 	}
 
 	/**
@@ -421,8 +435,8 @@ public class StormPackageImpl extends EPackageImpl implements StormPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSupervisor_MonitroFrequency() {
-		return (EAttribute)supervisorEClass.getEStructuralFeatures().get(0);
+	public EAttribute getStormSupervisor_MonitroFrequency() {
+		return (EAttribute)stormSupervisorEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -430,8 +444,8 @@ public class StormPackageImpl extends EPackageImpl implements StormPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSupervisor_WorkerSatrtTimeout() {
-		return (EAttribute)supervisorEClass.getEStructuralFeatures().get(1);
+	public EAttribute getStormSupervisor_WorkerSatrtTimeout() {
+		return (EAttribute)stormSupervisorEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -439,8 +453,8 @@ public class StormPackageImpl extends EPackageImpl implements StormPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSupervisor_WorkerTimeout() {
-		return (EAttribute)supervisorEClass.getEStructuralFeatures().get(2);
+	public EAttribute getStormSupervisor_WorkerTimeout() {
+		return (EAttribute)stormSupervisorEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -448,8 +462,8 @@ public class StormPackageImpl extends EPackageImpl implements StormPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSupervisor_HeartbrackFrequency() {
-		return (EAttribute)supervisorEClass.getEStructuralFeatures().get(3);
+	public EAttribute getStormSupervisor_HeartbrackFrequency() {
+		return (EAttribute)stormSupervisorEClass.getEStructuralFeatures().get(3);
 	}
 
 	/**
@@ -457,8 +471,8 @@ public class StormPackageImpl extends EPackageImpl implements StormPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSupervisor_MemoryCapacity() {
-		return (EAttribute)supervisorEClass.getEStructuralFeatures().get(4);
+	public EAttribute getStormSupervisor_MemoryCapacity() {
+		return (EAttribute)stormSupervisorEClass.getEStructuralFeatures().get(4);
 	}
 
 	/**
@@ -466,8 +480,8 @@ public class StormPackageImpl extends EPackageImpl implements StormPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSupervisor_CpuCapacity() {
-		return (EAttribute)supervisorEClass.getEStructuralFeatures().get(5);
+	public EAttribute getStormSupervisor_CpuCapacity() {
+		return (EAttribute)stormSupervisorEClass.getEStructuralFeatures().get(5);
 	}
 
 	/**
@@ -475,8 +489,8 @@ public class StormPackageImpl extends EPackageImpl implements StormPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getSupervisor_Base_Classifier() {
-		return (EReference)supervisorEClass.getEStructuralFeatures().get(6);
+	public EReference getStormSupervisor_Base_Classifier() {
+		return (EReference)stormSupervisorEClass.getEStructuralFeatures().get(6);
 	}
 
 	/**
@@ -484,8 +498,8 @@ public class StormPackageImpl extends EPackageImpl implements StormPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getZookeeper() {
-		return zookeeperEClass;
+	public EClass getStormZookeeper() {
+		return stormZookeeperEClass;
 	}
 
 	/**
@@ -493,8 +507,8 @@ public class StormPackageImpl extends EPackageImpl implements StormPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getZookeeper_SessionTimeout() {
-		return (EAttribute)zookeeperEClass.getEStructuralFeatures().get(0);
+	public EAttribute getStormZookeeper_SessionTimeout() {
+		return (EAttribute)stormZookeeperEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -502,8 +516,8 @@ public class StormPackageImpl extends EPackageImpl implements StormPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getZookeeper_ConnectionTimeout() {
-		return (EAttribute)zookeeperEClass.getEStructuralFeatures().get(1);
+	public EAttribute getStormZookeeper_ConnectionTimeout() {
+		return (EAttribute)stormZookeeperEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -511,8 +525,8 @@ public class StormPackageImpl extends EPackageImpl implements StormPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getZookeeper_RetryTime() {
-		return (EAttribute)zookeeperEClass.getEStructuralFeatures().get(2);
+	public EAttribute getStormZookeeper_RetryTime() {
+		return (EAttribute)stormZookeeperEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -520,8 +534,8 @@ public class StormPackageImpl extends EPackageImpl implements StormPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getZookeeper_RetryInterval() {
-		return (EAttribute)zookeeperEClass.getEStructuralFeatures().get(3);
+	public EAttribute getStormZookeeper_RetryInterval() {
+		return (EAttribute)stormZookeeperEClass.getEStructuralFeatures().get(3);
 	}
 
 	/**
@@ -529,8 +543,8 @@ public class StormPackageImpl extends EPackageImpl implements StormPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getZookeeper_User() {
-		return (EAttribute)zookeeperEClass.getEStructuralFeatures().get(4);
+	public EAttribute getStormZookeeper_User() {
+		return (EAttribute)stormZookeeperEClass.getEStructuralFeatures().get(4);
 	}
 
 	/**
@@ -538,8 +552,8 @@ public class StormPackageImpl extends EPackageImpl implements StormPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getZookeeper_Password() {
-		return (EAttribute)zookeeperEClass.getEStructuralFeatures().get(5);
+	public EAttribute getStormZookeeper_Password() {
+		return (EAttribute)stormZookeeperEClass.getEStructuralFeatures().get(5);
 	}
 
 	/**
@@ -547,8 +561,8 @@ public class StormPackageImpl extends EPackageImpl implements StormPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getZookeeper_Base_Classifier() {
-		return (EReference)zookeeperEClass.getEStructuralFeatures().get(6);
+	public EReference getStormZookeeper_Base_Classifier() {
+		return (EReference)stormZookeeperEClass.getEStructuralFeatures().get(6);
 	}
 
 	/**
@@ -627,29 +641,29 @@ public class StormPackageImpl extends EPackageImpl implements StormPackage {
 		createEReference(stormApplicationEClass, STORM_APPLICATION__HAS_SLAVE_NODE);
 		createEReference(stormApplicationEClass, STORM_APPLICATION__DEPENDS_ON_ZOOKEEPER);
 
-		nimbusEClass = createEClass(NIMBUS);
-		createEAttribute(nimbusEClass, NIMBUS__TASK_TIMEOUT);
-		createEAttribute(nimbusEClass, NIMBUS__SUPERVISOR_TIMEOUT);
-		createEAttribute(nimbusEClass, NIMBUS__MONITOR_FREQUENCY);
-		createEReference(nimbusEClass, NIMBUS__BASE_CLASSIFIER);
+		stormNimbusEClass = createEClass(STORM_NIMBUS);
+		createEAttribute(stormNimbusEClass, STORM_NIMBUS__TASK_TIMEOUT);
+		createEAttribute(stormNimbusEClass, STORM_NIMBUS__SUPERVISOR_TIMEOUT);
+		createEAttribute(stormNimbusEClass, STORM_NIMBUS__MONITOR_FREQUENCY);
+		createEReference(stormNimbusEClass, STORM_NIMBUS__BASE_CLASSIFIER);
 
-		supervisorEClass = createEClass(SUPERVISOR);
-		createEAttribute(supervisorEClass, SUPERVISOR__MONITRO_FREQUENCY);
-		createEAttribute(supervisorEClass, SUPERVISOR__WORKER_SATRT_TIMEOUT);
-		createEAttribute(supervisorEClass, SUPERVISOR__WORKER_TIMEOUT);
-		createEAttribute(supervisorEClass, SUPERVISOR__HEARTBRACK_FREQUENCY);
-		createEAttribute(supervisorEClass, SUPERVISOR__MEMORY_CAPACITY);
-		createEAttribute(supervisorEClass, SUPERVISOR__CPU_CAPACITY);
-		createEReference(supervisorEClass, SUPERVISOR__BASE_CLASSIFIER);
+		stormSupervisorEClass = createEClass(STORM_SUPERVISOR);
+		createEAttribute(stormSupervisorEClass, STORM_SUPERVISOR__MONITRO_FREQUENCY);
+		createEAttribute(stormSupervisorEClass, STORM_SUPERVISOR__WORKER_SATRT_TIMEOUT);
+		createEAttribute(stormSupervisorEClass, STORM_SUPERVISOR__WORKER_TIMEOUT);
+		createEAttribute(stormSupervisorEClass, STORM_SUPERVISOR__HEARTBRACK_FREQUENCY);
+		createEAttribute(stormSupervisorEClass, STORM_SUPERVISOR__MEMORY_CAPACITY);
+		createEAttribute(stormSupervisorEClass, STORM_SUPERVISOR__CPU_CAPACITY);
+		createEReference(stormSupervisorEClass, STORM_SUPERVISOR__BASE_CLASSIFIER);
 
-		zookeeperEClass = createEClass(ZOOKEEPER);
-		createEAttribute(zookeeperEClass, ZOOKEEPER__SESSION_TIMEOUT);
-		createEAttribute(zookeeperEClass, ZOOKEEPER__CONNECTION_TIMEOUT);
-		createEAttribute(zookeeperEClass, ZOOKEEPER__RETRY_TIME);
-		createEAttribute(zookeeperEClass, ZOOKEEPER__RETRY_INTERVAL);
-		createEAttribute(zookeeperEClass, ZOOKEEPER__USER);
-		createEAttribute(zookeeperEClass, ZOOKEEPER__PASSWORD);
-		createEReference(zookeeperEClass, ZOOKEEPER__BASE_CLASSIFIER);
+		stormZookeeperEClass = createEClass(STORM_ZOOKEEPER);
+		createEAttribute(stormZookeeperEClass, STORM_ZOOKEEPER__SESSION_TIMEOUT);
+		createEAttribute(stormZookeeperEClass, STORM_ZOOKEEPER__CONNECTION_TIMEOUT);
+		createEAttribute(stormZookeeperEClass, STORM_ZOOKEEPER__RETRY_TIME);
+		createEAttribute(stormZookeeperEClass, STORM_ZOOKEEPER__RETRY_INTERVAL);
+		createEAttribute(stormZookeeperEClass, STORM_ZOOKEEPER__USER);
+		createEAttribute(stormZookeeperEClass, STORM_ZOOKEEPER__PASSWORD);
+		createEReference(stormZookeeperEClass, STORM_ZOOKEEPER__BASE_CLASSIFIER);
 
 		stormStreamStepEClass = createEClass(STORM_STREAM_STEP);
 		createEAttribute(stormStreamStepEClass, STORM_STREAM_STEP__NUM_TUPLES);
@@ -716,37 +730,63 @@ public class StormPackageImpl extends EPackageImpl implements StormPackage {
 		initEAttribute(getStormScenarioTopology_IsReliable(), theTypesPackage.getBoolean(), "isReliable", null, 0, 1, StormScenarioTopology.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(stormApplicationEClass, StormApplication.class, "StormApplication", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getStormApplication_HasMasterNode(), this.getNimbus(), null, "hasMasterNode", null, 0, 1, StormApplication.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getStormApplication_HasSlaveNode(), this.getSupervisor(), null, "hasSlaveNode", null, 0, 1, StormApplication.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getStormApplication_DependsOnZookeeper(), this.getZookeeper(), null, "dependsOnZookeeper", null, 0, 1, StormApplication.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEReference(getStormApplication_HasMasterNode(), this.getStormNimbus(), null, "hasMasterNode", null, 0, 1, StormApplication.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEReference(getStormApplication_HasSlaveNode(), this.getStormSupervisor(), null, "hasSlaveNode", null, 0, 1, StormApplication.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEReference(getStormApplication_DependsOnZookeeper(), this.getStormZookeeper(), null, "dependsOnZookeeper", null, 0, 1, StormApplication.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
-		initEClass(nimbusEClass, Nimbus.class, "Nimbus", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getNimbus_TaskTimeout(), theTypesPackage.getInteger(), "taskTimeout", null, 0, 1, Nimbus.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getNimbus_SupervisorTimeout(), theTypesPackage.getInteger(), "supervisorTimeout", null, 0, 1, Nimbus.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getNimbus_MonitorFrequency(), theTypesPackage.getInteger(), "monitorFrequency", null, 0, 1, Nimbus.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getNimbus_Base_Classifier(), theUMLPackage.getClassifier(), null, "base_Classifier", null, 1, 1, Nimbus.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEClass(stormNimbusEClass, StormNimbus.class, "StormNimbus", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getStormNimbus_TaskTimeout(), theTypesPackage.getInteger(), "taskTimeout", null, 0, 1, StormNimbus.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getStormNimbus_SupervisorTimeout(), theTypesPackage.getInteger(), "supervisorTimeout", null, 0, 1, StormNimbus.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getStormNimbus_MonitorFrequency(), theTypesPackage.getInteger(), "monitorFrequency", null, 0, 1, StormNimbus.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEReference(getStormNimbus_Base_Classifier(), theUMLPackage.getClassifier(), null, "base_Classifier", null, 1, 1, StormNimbus.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
-		initEClass(supervisorEClass, Supervisor.class, "Supervisor", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getSupervisor_MonitroFrequency(), theTypesPackage.getInteger(), "monitroFrequency", null, 0, 1, Supervisor.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getSupervisor_WorkerSatrtTimeout(), theTypesPackage.getInteger(), "workerSatrtTimeout", null, 0, 1, Supervisor.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getSupervisor_WorkerTimeout(), theTypesPackage.getInteger(), "workerTimeout", null, 0, 1, Supervisor.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getSupervisor_HeartbrackFrequency(), theTypesPackage.getInteger(), "heartbrackFrequency", null, 0, 1, Supervisor.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getSupervisor_MemoryCapacity(), theTypesPackage.getInteger(), "memoryCapacity", null, 0, 1, Supervisor.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getSupervisor_CpuCapacity(), theTypesPackage.getInteger(), "cpuCapacity", null, 0, 1, Supervisor.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getSupervisor_Base_Classifier(), theUMLPackage.getClassifier(), null, "base_Classifier", null, 1, 1, Supervisor.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEClass(stormSupervisorEClass, StormSupervisor.class, "StormSupervisor", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getStormSupervisor_MonitroFrequency(), theTypesPackage.getInteger(), "monitroFrequency", null, 0, 1, StormSupervisor.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getStormSupervisor_WorkerSatrtTimeout(), theTypesPackage.getInteger(), "workerSatrtTimeout", null, 0, 1, StormSupervisor.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getStormSupervisor_WorkerTimeout(), theTypesPackage.getInteger(), "workerTimeout", null, 0, 1, StormSupervisor.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getStormSupervisor_HeartbrackFrequency(), theTypesPackage.getInteger(), "heartbrackFrequency", null, 0, 1, StormSupervisor.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getStormSupervisor_MemoryCapacity(), theTypesPackage.getInteger(), "memoryCapacity", null, 0, 1, StormSupervisor.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getStormSupervisor_CpuCapacity(), theTypesPackage.getInteger(), "cpuCapacity", null, 0, 1, StormSupervisor.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEReference(getStormSupervisor_Base_Classifier(), theUMLPackage.getClassifier(), null, "base_Classifier", null, 1, 1, StormSupervisor.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
-		initEClass(zookeeperEClass, Zookeeper.class, "Zookeeper", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getZookeeper_SessionTimeout(), theTypesPackage.getInteger(), "sessionTimeout", null, 0, 1, Zookeeper.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getZookeeper_ConnectionTimeout(), theTypesPackage.getInteger(), "connectionTimeout", null, 0, 1, Zookeeper.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getZookeeper_RetryTime(), theTypesPackage.getInteger(), "retryTime", null, 0, 1, Zookeeper.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getZookeeper_RetryInterval(), theTypesPackage.getInteger(), "retryInterval", null, 0, 1, Zookeeper.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getZookeeper_User(), theTypesPackage.getString(), "user", null, 0, 1, Zookeeper.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getZookeeper_Password(), theTypesPackage.getString(), "password", null, 0, 1, Zookeeper.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getZookeeper_Base_Classifier(), theUMLPackage.getClassifier(), null, "base_Classifier", null, 1, 1, Zookeeper.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEClass(stormZookeeperEClass, StormZookeeper.class, "StormZookeeper", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getStormZookeeper_SessionTimeout(), theTypesPackage.getInteger(), "sessionTimeout", null, 0, 1, StormZookeeper.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getStormZookeeper_ConnectionTimeout(), theTypesPackage.getInteger(), "connectionTimeout", null, 0, 1, StormZookeeper.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getStormZookeeper_RetryTime(), theTypesPackage.getInteger(), "retryTime", null, 0, 1, StormZookeeper.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getStormZookeeper_RetryInterval(), theTypesPackage.getInteger(), "retryInterval", null, 0, 1, StormZookeeper.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getStormZookeeper_User(), theTypesPackage.getString(), "user", null, 0, 1, StormZookeeper.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getStormZookeeper_Password(), theTypesPackage.getString(), "password", null, 0, 1, StormZookeeper.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEReference(getStormZookeeper_Base_Classifier(), theUMLPackage.getClassifier(), null, "base_Classifier", null, 1, 1, StormZookeeper.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(stormStreamStepEClass, StormStreamStep.class, "StormStreamStep", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getStormStreamStep_NumTuples(), theBasicNFP_TypesPackage.getNFP_Integer(), "numTuples", null, 1, 1, StormStreamStep.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getStormStreamStep_Grouping(), theBasic_Enumeration_TypesPackage_1.getStreamPolicy(), "grouping", null, 1, 1, StormStreamStep.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+
+		// Create annotations
+		// duplicates
+		createDuplicatesAnnotations();
+	}
+
+	/**
+	 * Initializes the annotations for <b>duplicates</b>.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void createDuplicatesAnnotations() {
+		String source = "duplicates";	
+		addAnnotation
+		  (stormBoltEClass, 
+		   source, 
+		   new String[] {
+		   });
+		addAnnotation
+		  (stormBoltEClass, 
+		   new boolean[] { true },
+		   "failure",
+		   new String[] {
+			 "upperBound", "1"
+		   });
 	}
 
 } //StormPackageImpl

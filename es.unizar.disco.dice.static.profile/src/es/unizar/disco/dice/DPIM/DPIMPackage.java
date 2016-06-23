@@ -306,13 +306,13 @@ public interface DPIMPackage extends EPackage {
 	int DPIM_COMPUTATION_NODE__SUBSTITUTED_BY = CorePackage.DA_COMPONENT__SUBSTITUTED_BY;
 
 	/**
-	 * The feature id for the '<em><b>Throughput</b></em>' attribute.
+	 * The feature id for the '<em><b>Node Throughput</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DPIM_COMPUTATION_NODE__THROUGHPUT = CorePackage.DA_COMPONENT_FEATURE_COUNT + 0;
+	int DPIM_COMPUTATION_NODE__NODE_THROUGHPUT = CorePackage.DA_COMPONENT_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Type</b></em>' attribute.
@@ -595,13 +595,13 @@ public interface DPIMPackage extends EPackage {
 	int DPIM_FILTER_NODE__SUBSTITUTED_BY = DPIM_COMPUTATION_NODE__SUBSTITUTED_BY;
 
 	/**
-	 * The feature id for the '<em><b>Throughput</b></em>' attribute.
+	 * The feature id for the '<em><b>Node Throughput</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DPIM_FILTER_NODE__THROUGHPUT = DPIM_COMPUTATION_NODE__THROUGHPUT;
+	int DPIM_FILTER_NODE__NODE_THROUGHPUT = DPIM_COMPUTATION_NODE__NODE_THROUGHPUT;
 
 	/**
 	 * The feature id for the '<em><b>Type</b></em>' attribute.
@@ -902,13 +902,13 @@ public interface DPIMPackage extends EPackage {
 	int DPIM_VISUALIZATION_NODE__SUBSTITUTED_BY = DPIM_COMPUTATION_NODE__SUBSTITUTED_BY;
 
 	/**
-	 * The feature id for the '<em><b>Throughput</b></em>' attribute.
+	 * The feature id for the '<em><b>Node Throughput</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DPIM_VISUALIZATION_NODE__THROUGHPUT = DPIM_COMPUTATION_NODE__THROUGHPUT;
+	int DPIM_VISUALIZATION_NODE__NODE_THROUGHPUT = DPIM_COMPUTATION_NODE__NODE_THROUGHPUT;
 
 	/**
 	 * The feature id for the '<em><b>Type</b></em>' attribute.
@@ -1191,13 +1191,13 @@ public interface DPIMPackage extends EPackage {
 	int DPIM_SOURCE_NODE__SUBSTITUTED_BY = DPIM_COMPUTATION_NODE__SUBSTITUTED_BY;
 
 	/**
-	 * The feature id for the '<em><b>Throughput</b></em>' attribute.
+	 * The feature id for the '<em><b>Node Throughput</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DPIM_SOURCE_NODE__THROUGHPUT = DPIM_COMPUTATION_NODE__THROUGHPUT;
+	int DPIM_SOURCE_NODE__NODE_THROUGHPUT = DPIM_COMPUTATION_NODE__NODE_THROUGHPUT;
 
 	/**
 	 * The feature id for the '<em><b>Type</b></em>' attribute.
@@ -1817,15 +1817,15 @@ public interface DPIMPackage extends EPackage {
 	EClass getDpimComputationNode();
 
 	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DPIM.DpimComputationNode#getThroughput <em>Throughput</em>}'.
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DPIM.DpimComputationNode#getNodeThroughput <em>Node Throughput</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Throughput</em>'.
-	 * @see es.unizar.disco.dice.DPIM.DpimComputationNode#getThroughput()
+	 * @return the meta object for the attribute '<em>Node Throughput</em>'.
+	 * @see es.unizar.disco.dice.DPIM.DpimComputationNode#getNodeThroughput()
 	 * @see #getDpimComputationNode()
 	 * @generated
 	 */
-	EAttribute getDpimComputationNode_Throughput();
+	EAttribute getDpimComputationNode_NodeThroughput();
 
 	/**
 	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DPIM.DpimComputationNode#getType <em>Type</em>}'.
@@ -2074,12 +2074,12 @@ public interface DPIMPackage extends EPackage {
 		EClass DPIM_COMPUTATION_NODE = eINSTANCE.getDpimComputationNode();
 
 		/**
-		 * The meta object literal for the '<em><b>Throughput</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>Node Throughput</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute DPIM_COMPUTATION_NODE__THROUGHPUT = eINSTANCE.getDpimComputationNode_Throughput();
+		EAttribute DPIM_COMPUTATION_NODE__NODE_THROUGHPUT = eINSTANCE.getDpimComputationNode_NodeThroughput();
 
 		/**
 		 * The meta object literal for the '<em><b>Type</b></em>' attribute feature.

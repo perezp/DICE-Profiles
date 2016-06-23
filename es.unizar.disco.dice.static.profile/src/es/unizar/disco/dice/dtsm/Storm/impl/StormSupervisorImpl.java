@@ -3,7 +3,7 @@
 package es.unizar.disco.dice.dtsm.Storm.impl;
 
 import es.unizar.disco.dice.dtsm.Storm.StormPackage;
-import es.unizar.disco.dice.dtsm.Storm.Supervisor;
+import es.unizar.disco.dice.dtsm.Storm.StormSupervisor;
 
 import org.eclipse.emf.common.notify.Notification;
 
@@ -23,18 +23,18 @@ import org.eclipse.uml2.uml.Classifier;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link es.unizar.disco.dice.dtsm.Storm.impl.SupervisorImpl#getMonitroFrequency <em>Monitro Frequency</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Storm.impl.SupervisorImpl#getWorkerSatrtTimeout <em>Worker Satrt Timeout</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Storm.impl.SupervisorImpl#getWorkerTimeout <em>Worker Timeout</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Storm.impl.SupervisorImpl#getHeartbrackFrequency <em>Heartbrack Frequency</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Storm.impl.SupervisorImpl#getMemoryCapacity <em>Memory Capacity</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Storm.impl.SupervisorImpl#getCpuCapacity <em>Cpu Capacity</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Storm.impl.SupervisorImpl#getBase_Classifier <em>Base Classifier</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.dtsm.Storm.impl.StormSupervisorImpl#getMonitroFrequency <em>Monitro Frequency</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.dtsm.Storm.impl.StormSupervisorImpl#getWorkerSatrtTimeout <em>Worker Satrt Timeout</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.dtsm.Storm.impl.StormSupervisorImpl#getWorkerTimeout <em>Worker Timeout</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.dtsm.Storm.impl.StormSupervisorImpl#getHeartbrackFrequency <em>Heartbrack Frequency</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.dtsm.Storm.impl.StormSupervisorImpl#getMemoryCapacity <em>Memory Capacity</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.dtsm.Storm.impl.StormSupervisorImpl#getCpuCapacity <em>Cpu Capacity</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.dtsm.Storm.impl.StormSupervisorImpl#getBase_Classifier <em>Base Classifier</em>}</li>
  * </ul>
  *
  * @generated
  */
-public class SupervisorImpl extends MinimalEObjectImpl.Container implements Supervisor {
+public class StormSupervisorImpl extends MinimalEObjectImpl.Container implements StormSupervisor {
 	/**
 	 * The default value of the '{@link #getMonitroFrequency() <em>Monitro Frequency</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -170,7 +170,7 @@ public class SupervisorImpl extends MinimalEObjectImpl.Container implements Supe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected SupervisorImpl() {
+	protected StormSupervisorImpl() {
 		super();
 	}
 
@@ -181,7 +181,7 @@ public class SupervisorImpl extends MinimalEObjectImpl.Container implements Supe
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return StormPackage.Literals.SUPERVISOR;
+		return StormPackage.Literals.STORM_SUPERVISOR;
 	}
 
 	/**
@@ -202,7 +202,7 @@ public class SupervisorImpl extends MinimalEObjectImpl.Container implements Supe
 		int oldMonitroFrequency = monitroFrequency;
 		monitroFrequency = newMonitroFrequency;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, StormPackage.SUPERVISOR__MONITRO_FREQUENCY, oldMonitroFrequency, monitroFrequency));
+			eNotify(new ENotificationImpl(this, Notification.SET, StormPackage.STORM_SUPERVISOR__MONITRO_FREQUENCY, oldMonitroFrequency, monitroFrequency));
 	}
 
 	/**
@@ -223,7 +223,7 @@ public class SupervisorImpl extends MinimalEObjectImpl.Container implements Supe
 		int oldWorkerSatrtTimeout = workerSatrtTimeout;
 		workerSatrtTimeout = newWorkerSatrtTimeout;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, StormPackage.SUPERVISOR__WORKER_SATRT_TIMEOUT, oldWorkerSatrtTimeout, workerSatrtTimeout));
+			eNotify(new ENotificationImpl(this, Notification.SET, StormPackage.STORM_SUPERVISOR__WORKER_SATRT_TIMEOUT, oldWorkerSatrtTimeout, workerSatrtTimeout));
 	}
 
 	/**
@@ -244,7 +244,7 @@ public class SupervisorImpl extends MinimalEObjectImpl.Container implements Supe
 		int oldWorkerTimeout = workerTimeout;
 		workerTimeout = newWorkerTimeout;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, StormPackage.SUPERVISOR__WORKER_TIMEOUT, oldWorkerTimeout, workerTimeout));
+			eNotify(new ENotificationImpl(this, Notification.SET, StormPackage.STORM_SUPERVISOR__WORKER_TIMEOUT, oldWorkerTimeout, workerTimeout));
 	}
 
 	/**
@@ -265,7 +265,7 @@ public class SupervisorImpl extends MinimalEObjectImpl.Container implements Supe
 		int oldHeartbrackFrequency = heartbrackFrequency;
 		heartbrackFrequency = newHeartbrackFrequency;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, StormPackage.SUPERVISOR__HEARTBRACK_FREQUENCY, oldHeartbrackFrequency, heartbrackFrequency));
+			eNotify(new ENotificationImpl(this, Notification.SET, StormPackage.STORM_SUPERVISOR__HEARTBRACK_FREQUENCY, oldHeartbrackFrequency, heartbrackFrequency));
 	}
 
 	/**
@@ -286,7 +286,7 @@ public class SupervisorImpl extends MinimalEObjectImpl.Container implements Supe
 		int oldMemoryCapacity = memoryCapacity;
 		memoryCapacity = newMemoryCapacity;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, StormPackage.SUPERVISOR__MEMORY_CAPACITY, oldMemoryCapacity, memoryCapacity));
+			eNotify(new ENotificationImpl(this, Notification.SET, StormPackage.STORM_SUPERVISOR__MEMORY_CAPACITY, oldMemoryCapacity, memoryCapacity));
 	}
 
 	/**
@@ -307,7 +307,7 @@ public class SupervisorImpl extends MinimalEObjectImpl.Container implements Supe
 		int oldCpuCapacity = cpuCapacity;
 		cpuCapacity = newCpuCapacity;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, StormPackage.SUPERVISOR__CPU_CAPACITY, oldCpuCapacity, cpuCapacity));
+			eNotify(new ENotificationImpl(this, Notification.SET, StormPackage.STORM_SUPERVISOR__CPU_CAPACITY, oldCpuCapacity, cpuCapacity));
 	}
 
 	/**
@@ -321,7 +321,7 @@ public class SupervisorImpl extends MinimalEObjectImpl.Container implements Supe
 			base_Classifier = (Classifier)eResolveProxy(oldBase_Classifier);
 			if (base_Classifier != oldBase_Classifier) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, StormPackage.SUPERVISOR__BASE_CLASSIFIER, oldBase_Classifier, base_Classifier));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, StormPackage.STORM_SUPERVISOR__BASE_CLASSIFIER, oldBase_Classifier, base_Classifier));
 			}
 		}
 		return base_Classifier;
@@ -345,7 +345,7 @@ public class SupervisorImpl extends MinimalEObjectImpl.Container implements Supe
 		Classifier oldBase_Classifier = base_Classifier;
 		base_Classifier = newBase_Classifier;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, StormPackage.SUPERVISOR__BASE_CLASSIFIER, oldBase_Classifier, base_Classifier));
+			eNotify(new ENotificationImpl(this, Notification.SET, StormPackage.STORM_SUPERVISOR__BASE_CLASSIFIER, oldBase_Classifier, base_Classifier));
 	}
 
 	/**
@@ -356,19 +356,19 @@ public class SupervisorImpl extends MinimalEObjectImpl.Container implements Supe
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case StormPackage.SUPERVISOR__MONITRO_FREQUENCY:
+			case StormPackage.STORM_SUPERVISOR__MONITRO_FREQUENCY:
 				return getMonitroFrequency();
-			case StormPackage.SUPERVISOR__WORKER_SATRT_TIMEOUT:
+			case StormPackage.STORM_SUPERVISOR__WORKER_SATRT_TIMEOUT:
 				return getWorkerSatrtTimeout();
-			case StormPackage.SUPERVISOR__WORKER_TIMEOUT:
+			case StormPackage.STORM_SUPERVISOR__WORKER_TIMEOUT:
 				return getWorkerTimeout();
-			case StormPackage.SUPERVISOR__HEARTBRACK_FREQUENCY:
+			case StormPackage.STORM_SUPERVISOR__HEARTBRACK_FREQUENCY:
 				return getHeartbrackFrequency();
-			case StormPackage.SUPERVISOR__MEMORY_CAPACITY:
+			case StormPackage.STORM_SUPERVISOR__MEMORY_CAPACITY:
 				return getMemoryCapacity();
-			case StormPackage.SUPERVISOR__CPU_CAPACITY:
+			case StormPackage.STORM_SUPERVISOR__CPU_CAPACITY:
 				return getCpuCapacity();
-			case StormPackage.SUPERVISOR__BASE_CLASSIFIER:
+			case StormPackage.STORM_SUPERVISOR__BASE_CLASSIFIER:
 				if (resolve) return getBase_Classifier();
 				return basicGetBase_Classifier();
 		}
@@ -383,25 +383,25 @@ public class SupervisorImpl extends MinimalEObjectImpl.Container implements Supe
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case StormPackage.SUPERVISOR__MONITRO_FREQUENCY:
+			case StormPackage.STORM_SUPERVISOR__MONITRO_FREQUENCY:
 				setMonitroFrequency((Integer)newValue);
 				return;
-			case StormPackage.SUPERVISOR__WORKER_SATRT_TIMEOUT:
+			case StormPackage.STORM_SUPERVISOR__WORKER_SATRT_TIMEOUT:
 				setWorkerSatrtTimeout((Integer)newValue);
 				return;
-			case StormPackage.SUPERVISOR__WORKER_TIMEOUT:
+			case StormPackage.STORM_SUPERVISOR__WORKER_TIMEOUT:
 				setWorkerTimeout((Integer)newValue);
 				return;
-			case StormPackage.SUPERVISOR__HEARTBRACK_FREQUENCY:
+			case StormPackage.STORM_SUPERVISOR__HEARTBRACK_FREQUENCY:
 				setHeartbrackFrequency((Integer)newValue);
 				return;
-			case StormPackage.SUPERVISOR__MEMORY_CAPACITY:
+			case StormPackage.STORM_SUPERVISOR__MEMORY_CAPACITY:
 				setMemoryCapacity((Integer)newValue);
 				return;
-			case StormPackage.SUPERVISOR__CPU_CAPACITY:
+			case StormPackage.STORM_SUPERVISOR__CPU_CAPACITY:
 				setCpuCapacity((Integer)newValue);
 				return;
-			case StormPackage.SUPERVISOR__BASE_CLASSIFIER:
+			case StormPackage.STORM_SUPERVISOR__BASE_CLASSIFIER:
 				setBase_Classifier((Classifier)newValue);
 				return;
 		}
@@ -416,25 +416,25 @@ public class SupervisorImpl extends MinimalEObjectImpl.Container implements Supe
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case StormPackage.SUPERVISOR__MONITRO_FREQUENCY:
+			case StormPackage.STORM_SUPERVISOR__MONITRO_FREQUENCY:
 				setMonitroFrequency(MONITRO_FREQUENCY_EDEFAULT);
 				return;
-			case StormPackage.SUPERVISOR__WORKER_SATRT_TIMEOUT:
+			case StormPackage.STORM_SUPERVISOR__WORKER_SATRT_TIMEOUT:
 				setWorkerSatrtTimeout(WORKER_SATRT_TIMEOUT_EDEFAULT);
 				return;
-			case StormPackage.SUPERVISOR__WORKER_TIMEOUT:
+			case StormPackage.STORM_SUPERVISOR__WORKER_TIMEOUT:
 				setWorkerTimeout(WORKER_TIMEOUT_EDEFAULT);
 				return;
-			case StormPackage.SUPERVISOR__HEARTBRACK_FREQUENCY:
+			case StormPackage.STORM_SUPERVISOR__HEARTBRACK_FREQUENCY:
 				setHeartbrackFrequency(HEARTBRACK_FREQUENCY_EDEFAULT);
 				return;
-			case StormPackage.SUPERVISOR__MEMORY_CAPACITY:
+			case StormPackage.STORM_SUPERVISOR__MEMORY_CAPACITY:
 				setMemoryCapacity(MEMORY_CAPACITY_EDEFAULT);
 				return;
-			case StormPackage.SUPERVISOR__CPU_CAPACITY:
+			case StormPackage.STORM_SUPERVISOR__CPU_CAPACITY:
 				setCpuCapacity(CPU_CAPACITY_EDEFAULT);
 				return;
-			case StormPackage.SUPERVISOR__BASE_CLASSIFIER:
+			case StormPackage.STORM_SUPERVISOR__BASE_CLASSIFIER:
 				setBase_Classifier((Classifier)null);
 				return;
 		}
@@ -449,19 +449,19 @@ public class SupervisorImpl extends MinimalEObjectImpl.Container implements Supe
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case StormPackage.SUPERVISOR__MONITRO_FREQUENCY:
+			case StormPackage.STORM_SUPERVISOR__MONITRO_FREQUENCY:
 				return monitroFrequency != MONITRO_FREQUENCY_EDEFAULT;
-			case StormPackage.SUPERVISOR__WORKER_SATRT_TIMEOUT:
+			case StormPackage.STORM_SUPERVISOR__WORKER_SATRT_TIMEOUT:
 				return workerSatrtTimeout != WORKER_SATRT_TIMEOUT_EDEFAULT;
-			case StormPackage.SUPERVISOR__WORKER_TIMEOUT:
+			case StormPackage.STORM_SUPERVISOR__WORKER_TIMEOUT:
 				return workerTimeout != WORKER_TIMEOUT_EDEFAULT;
-			case StormPackage.SUPERVISOR__HEARTBRACK_FREQUENCY:
+			case StormPackage.STORM_SUPERVISOR__HEARTBRACK_FREQUENCY:
 				return heartbrackFrequency != HEARTBRACK_FREQUENCY_EDEFAULT;
-			case StormPackage.SUPERVISOR__MEMORY_CAPACITY:
+			case StormPackage.STORM_SUPERVISOR__MEMORY_CAPACITY:
 				return memoryCapacity != MEMORY_CAPACITY_EDEFAULT;
-			case StormPackage.SUPERVISOR__CPU_CAPACITY:
+			case StormPackage.STORM_SUPERVISOR__CPU_CAPACITY:
 				return cpuCapacity != CPU_CAPACITY_EDEFAULT;
-			case StormPackage.SUPERVISOR__BASE_CLASSIFIER:
+			case StormPackage.STORM_SUPERVISOR__BASE_CLASSIFIER:
 				return base_Classifier != null;
 		}
 		return super.eIsSet(featureID);
@@ -493,4 +493,4 @@ public class SupervisorImpl extends MinimalEObjectImpl.Container implements Supe
 		return result.toString();
 	}
 
-} //SupervisorImpl
+} //StormSupervisorImpl

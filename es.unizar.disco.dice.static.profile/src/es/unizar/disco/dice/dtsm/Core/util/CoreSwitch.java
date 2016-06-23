@@ -16,6 +16,7 @@ import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.util.Switch;
 
 import org.eclipse.papyrus.MARTE.MARTE_AnalysisModel.GQAM.GaScenario;
+import org.eclipse.papyrus.MARTE.MARTE_AnalysisModel.GQAM.GaStep;
 
 import org.eclipse.papyrus.MARTE.MARTE_Foundations.GRM.Resource;
 import org.eclipse.papyrus.MARTE.MARTE_Foundations.GRM.ResourceUsage;
@@ -119,9 +120,14 @@ public class CoreSwitch<T> extends Switch<T> {
 				CoreDAGSourceNode coreDAGSourceNode = (CoreDAGSourceNode)theEObject;
 				T result = caseCoreDAGSourceNode(coreDAGSourceNode);
 				if (result == null) result = caseCoreDAGNode(coreDAGSourceNode);
+				if (result == null) result = caseGaStep(coreDAGSourceNode);
 				if (result == null) result = caseDpimSourceNode(coreDAGSourceNode);
+				if (result == null) result = caseGaScenario(coreDAGSourceNode);
 				if (result == null) result = caseDpimComputationNode(coreDAGSourceNode);
+				if (result == null) result = caseResourceUsage(coreDAGSourceNode);
+				if (result == null) result = caseTimedProcessing(coreDAGSourceNode);
 				if (result == null) result = caseDaComponent(coreDAGSourceNode);
+				if (result == null) result = caseTimedElement(coreDAGSourceNode);
 				if (result == null) result = caseResource(coreDAGSourceNode);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
@@ -129,9 +135,14 @@ public class CoreSwitch<T> extends Switch<T> {
 			case CorePackage.CORE_DAG_NODE: {
 				CoreDAGNode coreDAGNode = (CoreDAGNode)theEObject;
 				T result = caseCoreDAGNode(coreDAGNode);
+				if (result == null) result = caseGaStep(coreDAGNode);
 				if (result == null) result = caseDpimSourceNode(coreDAGNode);
+				if (result == null) result = caseGaScenario(coreDAGNode);
 				if (result == null) result = caseDpimComputationNode(coreDAGNode);
+				if (result == null) result = caseResourceUsage(coreDAGNode);
+				if (result == null) result = caseTimedProcessing(coreDAGNode);
 				if (result == null) result = caseDaComponent(coreDAGNode);
+				if (result == null) result = caseTimedElement(coreDAGNode);
 				if (result == null) result = caseResource(coreDAGNode);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
@@ -387,6 +398,21 @@ public class CoreSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseGaScenario(GaScenario object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Ga Step</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Ga Step</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseGaStep(GaStep object) {
 		return null;
 	}
 

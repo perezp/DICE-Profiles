@@ -103,20 +103,40 @@ public class StormAdapterFactory extends AdapterFactoryImpl {
 				return createStormApplicationAdapter();
 			}
 			@Override
-			public Adapter caseNimbus(Nimbus object) {
-				return createNimbusAdapter();
+			public Adapter caseStormNimbus(StormNimbus object) {
+				return createStormNimbusAdapter();
 			}
 			@Override
-			public Adapter caseSupervisor(Supervisor object) {
-				return createSupervisorAdapter();
+			public Adapter caseStormSupervisor(StormSupervisor object) {
+				return createStormSupervisorAdapter();
 			}
 			@Override
-			public Adapter caseZookeeper(Zookeeper object) {
-				return createZookeeperAdapter();
+			public Adapter caseStormZookeeper(StormZookeeper object) {
+				return createStormZookeeperAdapter();
 			}
 			@Override
 			public Adapter caseStormStreamStep(StormStreamStep object) {
 				return createStormStreamStepAdapter();
+			}
+			@Override
+			public Adapter caseResourceUsage(ResourceUsage object) {
+				return createResourceUsageAdapter();
+			}
+			@Override
+			public Adapter caseTimedElement(TimedElement object) {
+				return createTimedElementAdapter();
+			}
+			@Override
+			public Adapter caseTimedProcessing(TimedProcessing object) {
+				return createTimedProcessingAdapter();
+			}
+			@Override
+			public Adapter caseGaScenario(GaScenario object) {
+				return createGaScenarioAdapter();
+			}
+			@Override
+			public Adapter caseGaStep(GaStep object) {
+				return createGaStepAdapter();
 			}
 			@Override
 			public Adapter caseResource(Resource object) {
@@ -143,32 +163,12 @@ public class StormAdapterFactory extends AdapterFactoryImpl {
 				return createCoreDAGSourceNodeAdapter();
 			}
 			@Override
-			public Adapter caseResourceUsage(ResourceUsage object) {
-				return createResourceUsageAdapter();
-			}
-			@Override
-			public Adapter caseTimedElement(TimedElement object) {
-				return createTimedElementAdapter();
-			}
-			@Override
-			public Adapter caseTimedProcessing(TimedProcessing object) {
-				return createTimedProcessingAdapter();
-			}
-			@Override
-			public Adapter caseGaScenario(GaScenario object) {
-				return createGaScenarioAdapter();
-			}
-			@Override
 			public Adapter caseCoreDirectAcyclicGraph(CoreDirectAcyclicGraph object) {
 				return createCoreDirectAcyclicGraphAdapter();
 			}
 			@Override
 			public Adapter caseCoreComputationNode(CoreComputationNode object) {
 				return createCoreComputationNodeAdapter();
-			}
-			@Override
-			public Adapter caseGaStep(GaStep object) {
-				return createGaStepAdapter();
 			}
 			@Override
 			public Adapter defaultCase(EObject object) {
@@ -247,44 +247,44 @@ public class StormAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link es.unizar.disco.dice.dtsm.Storm.Nimbus <em>Nimbus</em>}'.
+	 * Creates a new adapter for an object of class '{@link es.unizar.disco.dice.dtsm.Storm.StormNimbus <em>Nimbus</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see es.unizar.disco.dice.dtsm.Storm.Nimbus
+	 * @see es.unizar.disco.dice.dtsm.Storm.StormNimbus
 	 * @generated
 	 */
-	public Adapter createNimbusAdapter() {
+	public Adapter createStormNimbusAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link es.unizar.disco.dice.dtsm.Storm.Supervisor <em>Supervisor</em>}'.
+	 * Creates a new adapter for an object of class '{@link es.unizar.disco.dice.dtsm.Storm.StormSupervisor <em>Supervisor</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see es.unizar.disco.dice.dtsm.Storm.Supervisor
+	 * @see es.unizar.disco.dice.dtsm.Storm.StormSupervisor
 	 * @generated
 	 */
-	public Adapter createSupervisorAdapter() {
+	public Adapter createStormSupervisorAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link es.unizar.disco.dice.dtsm.Storm.Zookeeper <em>Zookeeper</em>}'.
+	 * Creates a new adapter for an object of class '{@link es.unizar.disco.dice.dtsm.Storm.StormZookeeper <em>Zookeeper</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see es.unizar.disco.dice.dtsm.Storm.Zookeeper
+	 * @see es.unizar.disco.dice.dtsm.Storm.StormZookeeper
 	 * @generated
 	 */
-	public Adapter createZookeeperAdapter() {
+	public Adapter createStormZookeeperAdapter() {
 		return null;
 	}
 
@@ -299,6 +299,76 @@ public class StormAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createStormStreamStepAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.eclipse.papyrus.MARTE.MARTE_Foundations.GRM.ResourceUsage <em>Resource Usage</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.eclipse.papyrus.MARTE.MARTE_Foundations.GRM.ResourceUsage
+	 * @generated
+	 */
+	public Adapter createResourceUsageAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.eclipse.papyrus.MARTE.MARTE_Foundations.Time.TimedElement <em>Timed Element</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.eclipse.papyrus.MARTE.MARTE_Foundations.Time.TimedElement
+	 * @generated
+	 */
+	public Adapter createTimedElementAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.eclipse.papyrus.MARTE.MARTE_Foundations.Time.TimedProcessing <em>Timed Processing</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.eclipse.papyrus.MARTE.MARTE_Foundations.Time.TimedProcessing
+	 * @generated
+	 */
+	public Adapter createTimedProcessingAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.eclipse.papyrus.MARTE.MARTE_AnalysisModel.GQAM.GaScenario <em>Ga Scenario</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.eclipse.papyrus.MARTE.MARTE_AnalysisModel.GQAM.GaScenario
+	 * @generated
+	 */
+	public Adapter createGaScenarioAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.eclipse.papyrus.MARTE.MARTE_AnalysisModel.GQAM.GaStep <em>Ga Step</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.eclipse.papyrus.MARTE.MARTE_AnalysisModel.GQAM.GaStep
+	 * @generated
+	 */
+	public Adapter createGaStepAdapter() {
 		return null;
 	}
 
@@ -387,62 +457,6 @@ public class StormAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.eclipse.papyrus.MARTE.MARTE_Foundations.GRM.ResourceUsage <em>Resource Usage</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.eclipse.papyrus.MARTE.MARTE_Foundations.GRM.ResourceUsage
-	 * @generated
-	 */
-	public Adapter createResourceUsageAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link org.eclipse.papyrus.MARTE.MARTE_Foundations.Time.TimedElement <em>Timed Element</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.eclipse.papyrus.MARTE.MARTE_Foundations.Time.TimedElement
-	 * @generated
-	 */
-	public Adapter createTimedElementAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link org.eclipse.papyrus.MARTE.MARTE_Foundations.Time.TimedProcessing <em>Timed Processing</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.eclipse.papyrus.MARTE.MARTE_Foundations.Time.TimedProcessing
-	 * @generated
-	 */
-	public Adapter createTimedProcessingAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link org.eclipse.papyrus.MARTE.MARTE_AnalysisModel.GQAM.GaScenario <em>Ga Scenario</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.eclipse.papyrus.MARTE.MARTE_AnalysisModel.GQAM.GaScenario
-	 * @generated
-	 */
-	public Adapter createGaScenarioAdapter() {
-		return null;
-	}
-
-	/**
 	 * Creates a new adapter for an object of class '{@link es.unizar.disco.dice.dtsm.Core.CoreDirectAcyclicGraph <em>Direct Acyclic Graph</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -467,20 +481,6 @@ public class StormAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createCoreComputationNodeAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link org.eclipse.papyrus.MARTE.MARTE_AnalysisModel.GQAM.GaStep <em>Ga Step</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.eclipse.papyrus.MARTE.MARTE_AnalysisModel.GQAM.GaStep
-	 * @generated
-	 */
-	public Adapter createGaStepAdapter() {
 		return null;
 	}
 

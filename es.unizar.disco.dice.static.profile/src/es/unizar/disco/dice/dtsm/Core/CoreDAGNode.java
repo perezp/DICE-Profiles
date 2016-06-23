@@ -8,6 +8,8 @@ import es.unizar.disco.dice.DPIM.DpimSourceNode;
 
 import org.eclipse.emf.common.util.EList;
 
+import org.eclipse.papyrus.MARTE.MARTE_AnalysisModel.GQAM.GaStep;
+
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>DAG Node</b></em>'.
@@ -26,7 +28,7 @@ import org.eclipse.emf.common.util.EList;
  * @model
  * @generated
  */
-public interface CoreDAGNode extends DpimSourceNode {
+public interface CoreDAGNode extends GaStep, DpimSourceNode {
 	/**
 	 * Returns the value of the '<em><b>Parallelism</b></em>' attribute.
 	 * <!-- begin-user-doc -->

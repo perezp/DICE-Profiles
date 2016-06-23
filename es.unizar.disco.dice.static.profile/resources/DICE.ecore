@@ -8,7 +8,7 @@
     <eSubpackages name="DPIM" nsURI="http://es.unizar.disco.dice/profiles/DPIM/1.0"
         nsPrefix="DPIM">
       <eClassifiers xsi:type="ecore:EClass" name="DpimComputationNode" eSuperTypes="../../com.masdes.dam.static.profile/resources/DAM.ecore#//DAM_UML_Extensions/System/Core/DaComponent">
-        <eStructuralFeatures xsi:type="ecore:EAttribute" name="throughput" ordered="false"
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="nodeThroughput" ordered="false"
             eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Frequency"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" ordered="false"
             eType="ecore:EEnum DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/ComputationType"/>
@@ -91,9 +91,9 @@
           <eStructuralFeatures xsi:type="ecore:EReference" name="readFrom" ordered="false"
               lowerBound="1" upperBound="-1" eType="#//DICE_UML_Extensions/DTSM/Core/CoreDataSource"/>
         </eClassifiers>
-        <eClassifiers xsi:type="ecore:EClass" name="CoreDAGNode" eSuperTypes="#//DICE_UML_Extensions/DPIM/DpimSourceNode">
+        <eClassifiers xsi:type="ecore:EClass" name="CoreDAGNode" eSuperTypes="../../org.eclipse.papyrus.marte.static.profile/resources/MARTE.ecore#//MARTE_AnalysisModel/GQAM/GaStep #//DICE_UML_Extensions/DPIM/DpimSourceNode">
           <eStructuralFeatures xsi:type="ecore:EAttribute" name="parallelism" ordered="false"
-              lowerBound="1" eType="ecore:EDataType ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Integer"/>
+              lowerBound="1" eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Integer"/>
           <eStructuralFeatures xsi:type="ecore:EAttribute" name="operation" ordered="false"
               lowerBound="1" eType="ecore:EEnum DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/WorkflowOperation"/>
           <eStructuralFeatures xsi:type="ecore:EReference" name="hasSuccessor" ordered="false"
@@ -111,6 +111,16 @@
       <eSubpackages name="Storm" nsURI="http://es.unizar.disco.dice/profiles/DTSM/Storm/1.0"
           nsPrefix="Storm">
         <eClassifiers xsi:type="ecore:EClass" name="StormBolt" eSuperTypes="#//DICE_UML_Extensions/DTSM/Core/CoreDAGNode">
+          <eAnnotations source="duplicates">
+            <eAnnotations source="failure">
+              <details key="upperBound" value="1"/>
+            </eAnnotations>
+            <contents xsi:type="ecore:EReference" name="failure" ordered="false" upperBound="-1"
+                eType="ecore:EClass ../../com.masdes.dam.static.profile/resources/DAM_Library.ecore#//Complex_DA_Types/Complex_Data_Types/DaFailure"
+                containment="true">
+              <eAnnotations source="redefines" references="../../com.masdes.dam.static.profile/resources/DAM.ecore#//DAM_UML_Extensions/System/Core/DaComponent/failure"/>
+            </contents>
+          </eAnnotations>
           <eStructuralFeatures xsi:type="ecore:EAttribute" name="d" ordered="false"
               eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Real"/>
           <eStructuralFeatures xsi:type="ecore:EAttribute" name="alpha" ordered="false"
@@ -138,13 +148,13 @@
         </eClassifiers>
         <eClassifiers xsi:type="ecore:EClass" name="StormApplication" eSuperTypes="#//DICE_UML_Extensions/DTSM/Core/CoreComputationNode">
           <eStructuralFeatures xsi:type="ecore:EReference" name="hasMasterNode" ordered="false"
-              eType="#//DICE_UML_Extensions/DTSM/Storm/Nimbus"/>
+              eType="#//DICE_UML_Extensions/DTSM/Storm/StormNimbus"/>
           <eStructuralFeatures xsi:type="ecore:EReference" name="hasSlaveNode" ordered="false"
-              eType="#//DICE_UML_Extensions/DTSM/Storm/Supervisor"/>
+              eType="#//DICE_UML_Extensions/DTSM/Storm/StormSupervisor"/>
           <eStructuralFeatures xsi:type="ecore:EReference" name="dependsOnZookeeper"
-              ordered="false" eType="#//DICE_UML_Extensions/DTSM/Storm/Zookeeper"/>
+              ordered="false" eType="#//DICE_UML_Extensions/DTSM/Storm/StormZookeeper"/>
         </eClassifiers>
-        <eClassifiers xsi:type="ecore:EClass" name="Nimbus">
+        <eClassifiers xsi:type="ecore:EClass" name="StormNimbus">
           <eStructuralFeatures xsi:type="ecore:EAttribute" name="taskTimeout" ordered="false"
               eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//Integer"/>
           <eStructuralFeatures xsi:type="ecore:EAttribute" name="supervisorTimeout"
@@ -154,7 +164,7 @@
           <eStructuralFeatures xsi:type="ecore:EReference" name="base_Classifier"
               ordered="false" lowerBound="1" eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//Classifier"/>
         </eClassifiers>
-        <eClassifiers xsi:type="ecore:EClass" name="Supervisor">
+        <eClassifiers xsi:type="ecore:EClass" name="StormSupervisor">
           <eStructuralFeatures xsi:type="ecore:EAttribute" name="monitroFrequency"
               ordered="false" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//Integer"/>
           <eStructuralFeatures xsi:type="ecore:EAttribute" name="workerSatrtTimeout"
@@ -170,7 +180,7 @@
           <eStructuralFeatures xsi:type="ecore:EReference" name="base_Classifier"
               ordered="false" lowerBound="1" eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//Classifier"/>
         </eClassifiers>
-        <eClassifiers xsi:type="ecore:EClass" name="Zookeeper">
+        <eClassifiers xsi:type="ecore:EClass" name="StormZookeeper">
           <eStructuralFeatures xsi:type="ecore:EAttribute" name="sessionTimeout" ordered="false"
               eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//Integer"/>
           <eStructuralFeatures xsi:type="ecore:EAttribute" name="connectionTimeout"

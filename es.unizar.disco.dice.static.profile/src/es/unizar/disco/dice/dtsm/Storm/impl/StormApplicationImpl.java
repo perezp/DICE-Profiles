@@ -4,11 +4,11 @@ package es.unizar.disco.dice.dtsm.Storm.impl;
 
 import es.unizar.disco.dice.dtsm.Core.impl.CoreComputationNodeImpl;
 
-import es.unizar.disco.dice.dtsm.Storm.Nimbus;
 import es.unizar.disco.dice.dtsm.Storm.StormApplication;
+import es.unizar.disco.dice.dtsm.Storm.StormNimbus;
 import es.unizar.disco.dice.dtsm.Storm.StormPackage;
-import es.unizar.disco.dice.dtsm.Storm.Supervisor;
-import es.unizar.disco.dice.dtsm.Storm.Zookeeper;
+import es.unizar.disco.dice.dtsm.Storm.StormSupervisor;
+import es.unizar.disco.dice.dtsm.Storm.StormZookeeper;
 
 import org.eclipse.emf.common.notify.Notification;
 
@@ -41,7 +41,7 @@ public class StormApplicationImpl extends CoreComputationNodeImpl implements Sto
 	 * @generated
 	 * @ordered
 	 */
-	protected Nimbus hasMasterNode;
+	protected StormNimbus hasMasterNode;
 
 	/**
 	 * The cached value of the '{@link #getHasSlaveNode() <em>Has Slave Node</em>}' reference.
@@ -51,7 +51,7 @@ public class StormApplicationImpl extends CoreComputationNodeImpl implements Sto
 	 * @generated
 	 * @ordered
 	 */
-	protected Supervisor hasSlaveNode;
+	protected StormSupervisor hasSlaveNode;
 
 	/**
 	 * The cached value of the '{@link #getDependsOnZookeeper() <em>Depends On Zookeeper</em>}' reference.
@@ -61,7 +61,7 @@ public class StormApplicationImpl extends CoreComputationNodeImpl implements Sto
 	 * @generated
 	 * @ordered
 	 */
-	protected Zookeeper dependsOnZookeeper;
+	protected StormZookeeper dependsOnZookeeper;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -87,10 +87,10 @@ public class StormApplicationImpl extends CoreComputationNodeImpl implements Sto
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Nimbus getHasMasterNode() {
+	public StormNimbus getHasMasterNode() {
 		if (hasMasterNode != null && hasMasterNode.eIsProxy()) {
 			InternalEObject oldHasMasterNode = (InternalEObject)hasMasterNode;
-			hasMasterNode = (Nimbus)eResolveProxy(oldHasMasterNode);
+			hasMasterNode = (StormNimbus)eResolveProxy(oldHasMasterNode);
 			if (hasMasterNode != oldHasMasterNode) {
 				if (eNotificationRequired())
 					eNotify(new ENotificationImpl(this, Notification.RESOLVE, StormPackage.STORM_APPLICATION__HAS_MASTER_NODE, oldHasMasterNode, hasMasterNode));
@@ -104,7 +104,7 @@ public class StormApplicationImpl extends CoreComputationNodeImpl implements Sto
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Nimbus basicGetHasMasterNode() {
+	public StormNimbus basicGetHasMasterNode() {
 		return hasMasterNode;
 	}
 
@@ -113,8 +113,8 @@ public class StormApplicationImpl extends CoreComputationNodeImpl implements Sto
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setHasMasterNode(Nimbus newHasMasterNode) {
-		Nimbus oldHasMasterNode = hasMasterNode;
+	public void setHasMasterNode(StormNimbus newHasMasterNode) {
+		StormNimbus oldHasMasterNode = hasMasterNode;
 		hasMasterNode = newHasMasterNode;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, StormPackage.STORM_APPLICATION__HAS_MASTER_NODE, oldHasMasterNode, hasMasterNode));
@@ -125,10 +125,10 @@ public class StormApplicationImpl extends CoreComputationNodeImpl implements Sto
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Supervisor getHasSlaveNode() {
+	public StormSupervisor getHasSlaveNode() {
 		if (hasSlaveNode != null && hasSlaveNode.eIsProxy()) {
 			InternalEObject oldHasSlaveNode = (InternalEObject)hasSlaveNode;
-			hasSlaveNode = (Supervisor)eResolveProxy(oldHasSlaveNode);
+			hasSlaveNode = (StormSupervisor)eResolveProxy(oldHasSlaveNode);
 			if (hasSlaveNode != oldHasSlaveNode) {
 				if (eNotificationRequired())
 					eNotify(new ENotificationImpl(this, Notification.RESOLVE, StormPackage.STORM_APPLICATION__HAS_SLAVE_NODE, oldHasSlaveNode, hasSlaveNode));
@@ -142,7 +142,7 @@ public class StormApplicationImpl extends CoreComputationNodeImpl implements Sto
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Supervisor basicGetHasSlaveNode() {
+	public StormSupervisor basicGetHasSlaveNode() {
 		return hasSlaveNode;
 	}
 
@@ -151,8 +151,8 @@ public class StormApplicationImpl extends CoreComputationNodeImpl implements Sto
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setHasSlaveNode(Supervisor newHasSlaveNode) {
-		Supervisor oldHasSlaveNode = hasSlaveNode;
+	public void setHasSlaveNode(StormSupervisor newHasSlaveNode) {
+		StormSupervisor oldHasSlaveNode = hasSlaveNode;
 		hasSlaveNode = newHasSlaveNode;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, StormPackage.STORM_APPLICATION__HAS_SLAVE_NODE, oldHasSlaveNode, hasSlaveNode));
@@ -163,10 +163,10 @@ public class StormApplicationImpl extends CoreComputationNodeImpl implements Sto
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Zookeeper getDependsOnZookeeper() {
+	public StormZookeeper getDependsOnZookeeper() {
 		if (dependsOnZookeeper != null && dependsOnZookeeper.eIsProxy()) {
 			InternalEObject oldDependsOnZookeeper = (InternalEObject)dependsOnZookeeper;
-			dependsOnZookeeper = (Zookeeper)eResolveProxy(oldDependsOnZookeeper);
+			dependsOnZookeeper = (StormZookeeper)eResolveProxy(oldDependsOnZookeeper);
 			if (dependsOnZookeeper != oldDependsOnZookeeper) {
 				if (eNotificationRequired())
 					eNotify(new ENotificationImpl(this, Notification.RESOLVE, StormPackage.STORM_APPLICATION__DEPENDS_ON_ZOOKEEPER, oldDependsOnZookeeper, dependsOnZookeeper));
@@ -180,7 +180,7 @@ public class StormApplicationImpl extends CoreComputationNodeImpl implements Sto
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Zookeeper basicGetDependsOnZookeeper() {
+	public StormZookeeper basicGetDependsOnZookeeper() {
 		return dependsOnZookeeper;
 	}
 
@@ -189,8 +189,8 @@ public class StormApplicationImpl extends CoreComputationNodeImpl implements Sto
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDependsOnZookeeper(Zookeeper newDependsOnZookeeper) {
-		Zookeeper oldDependsOnZookeeper = dependsOnZookeeper;
+	public void setDependsOnZookeeper(StormZookeeper newDependsOnZookeeper) {
+		StormZookeeper oldDependsOnZookeeper = dependsOnZookeeper;
 		dependsOnZookeeper = newDependsOnZookeeper;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, StormPackage.STORM_APPLICATION__DEPENDS_ON_ZOOKEEPER, oldDependsOnZookeeper, dependsOnZookeeper));
@@ -226,13 +226,13 @@ public class StormApplicationImpl extends CoreComputationNodeImpl implements Sto
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case StormPackage.STORM_APPLICATION__HAS_MASTER_NODE:
-				setHasMasterNode((Nimbus)newValue);
+				setHasMasterNode((StormNimbus)newValue);
 				return;
 			case StormPackage.STORM_APPLICATION__HAS_SLAVE_NODE:
-				setHasSlaveNode((Supervisor)newValue);
+				setHasSlaveNode((StormSupervisor)newValue);
 				return;
 			case StormPackage.STORM_APPLICATION__DEPENDS_ON_ZOOKEEPER:
-				setDependsOnZookeeper((Zookeeper)newValue);
+				setDependsOnZookeeper((StormZookeeper)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -247,13 +247,13 @@ public class StormApplicationImpl extends CoreComputationNodeImpl implements Sto
 	public void eUnset(int featureID) {
 		switch (featureID) {
 			case StormPackage.STORM_APPLICATION__HAS_MASTER_NODE:
-				setHasMasterNode((Nimbus)null);
+				setHasMasterNode((StormNimbus)null);
 				return;
 			case StormPackage.STORM_APPLICATION__HAS_SLAVE_NODE:
-				setHasSlaveNode((Supervisor)null);
+				setHasSlaveNode((StormSupervisor)null);
 				return;
 			case StormPackage.STORM_APPLICATION__DEPENDS_ON_ZOOKEEPER:
-				setDependsOnZookeeper((Zookeeper)null);
+				setDependsOnZookeeper((StormZookeeper)null);
 				return;
 		}
 		super.eUnset(featureID);

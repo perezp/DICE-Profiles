@@ -17,7 +17,9 @@ import es.unizar.disco.dice.Basic_Enumeration_Types.impl.Basic_Enumeration_Types
 import es.unizar.disco.dice.Complex_Data_Types.impl.Complex_Data_TypesPackageImpl;
 
 import es.unizar.disco.dice.DICE.DICEPackage;
+
 import es.unizar.disco.dice.DICE.impl.DICEPackageImpl;
+
 import es.unizar.disco.dice.DPIM.DPIMPackage;
 
 import es.unizar.disco.dice.DPIM.impl.DPIMPackageImpl;
@@ -518,6 +520,7 @@ public class CorePackageImpl extends EPackageImpl implements CorePackage {
 		coreDataSourceEClass.getESuperTypes().add(theDPIMPackage.getDpimStorageNode());
 		coreDirectAcyclicGraphEClass.getESuperTypes().add(theGQAMPackage.getGaScenario());
 		coreDAGSourceNodeEClass.getESuperTypes().add(this.getCoreDAGNode());
+		coreDAGNodeEClass.getESuperTypes().add(theGQAMPackage.getGaStep());
 		coreDAGNodeEClass.getESuperTypes().add(theDPIMPackage.getDpimSourceNode());
 		coreStorageNodeEClass.getESuperTypes().add(this.getCoreDataSource());
 

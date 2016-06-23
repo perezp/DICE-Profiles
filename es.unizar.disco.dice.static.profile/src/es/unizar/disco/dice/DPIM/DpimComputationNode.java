@@ -17,7 +17,7 @@ import es.unizar.disco.dice.Basic_Enumeration_Types.TechType;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link es.unizar.disco.dice.DPIM.DpimComputationNode#getThroughput <em>Throughput</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DPIM.DpimComputationNode#getNodeThroughput <em>Node Throughput</em>}</li>
  *   <li>{@link es.unizar.disco.dice.DPIM.DpimComputationNode#getType <em>Type</em>}</li>
  *   <li>{@link es.unizar.disco.dice.DPIM.DpimComputationNode#getTargetTech <em>Target Tech</em>}</li>
  *   <li>{@link es.unizar.disco.dice.DPIM.DpimComputationNode#getProcType <em>Proc Type</em>}</li>
@@ -29,30 +29,30 @@ import es.unizar.disco.dice.Basic_Enumeration_Types.TechType;
  */
 public interface DpimComputationNode extends DaComponent {
 	/**
-	 * Returns the value of the '<em><b>Throughput</b></em>' attribute.
+	 * Returns the value of the '<em><b>Node Throughput</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Throughput</em>' attribute isn't clear,
+	 * If the meaning of the '<em>Node Throughput</em>' attribute isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Throughput</em>' attribute.
-	 * @see #setThroughput(String)
-	 * @see es.unizar.disco.dice.DPIM.DPIMPackage#getDpimComputationNode_Throughput()
+	 * @return the value of the '<em>Node Throughput</em>' attribute.
+	 * @see #setNodeThroughput(String)
+	 * @see es.unizar.disco.dice.DPIM.DPIMPackage#getDpimComputationNode_NodeThroughput()
 	 * @model dataType="org.eclipse.papyrus.MARTE_Library.BasicNFP_Types.NFP_Frequency" ordered="false"
 	 * @generated
 	 */
-	String getThroughput();
+	String getNodeThroughput();
 
 	/**
-	 * Sets the value of the '{@link es.unizar.disco.dice.DPIM.DpimComputationNode#getThroughput <em>Throughput</em>}' attribute.
+	 * Sets the value of the '{@link es.unizar.disco.dice.DPIM.DpimComputationNode#getNodeThroughput <em>Node Throughput</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Throughput</em>' attribute.
-	 * @see #getThroughput()
+	 * @param value the new value of the '<em>Node Throughput</em>' attribute.
+	 * @see #getNodeThroughput()
 	 * @generated
 	 */
-	void setThroughput(String value);
+	void setNodeThroughput(String value);
 
 	/**
 	 * Returns the value of the '<em><b>Type</b></em>' attribute.

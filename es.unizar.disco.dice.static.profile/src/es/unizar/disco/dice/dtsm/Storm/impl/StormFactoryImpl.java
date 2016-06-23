@@ -60,9 +60,9 @@ public class StormFactoryImpl extends EFactoryImpl implements StormFactory {
 			case StormPackage.STORM_SPOUT: return createStormSpout();
 			case StormPackage.STORM_SCENARIO_TOPOLOGY: return createStormScenarioTopology();
 			case StormPackage.STORM_APPLICATION: return createStormApplication();
-			case StormPackage.NIMBUS: return createNimbus();
-			case StormPackage.SUPERVISOR: return createSupervisor();
-			case StormPackage.ZOOKEEPER: return createZookeeper();
+			case StormPackage.STORM_NIMBUS: return createStormNimbus();
+			case StormPackage.STORM_SUPERVISOR: return createStormSupervisor();
+			case StormPackage.STORM_ZOOKEEPER: return createStormZookeeper();
 			case StormPackage.STORM_STREAM_STEP: return createStormStreamStep();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
@@ -114,9 +114,9 @@ public class StormFactoryImpl extends EFactoryImpl implements StormFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Nimbus createNimbus() {
-		NimbusImpl nimbus = new NimbusImpl();
-		return nimbus;
+	public StormNimbus createStormNimbus() {
+		StormNimbusImpl stormNimbus = new StormNimbusImpl();
+		return stormNimbus;
 	}
 
 	/**
@@ -124,9 +124,9 @@ public class StormFactoryImpl extends EFactoryImpl implements StormFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Supervisor createSupervisor() {
-		SupervisorImpl supervisor = new SupervisorImpl();
-		return supervisor;
+	public StormSupervisor createStormSupervisor() {
+		StormSupervisorImpl stormSupervisor = new StormSupervisorImpl();
+		return stormSupervisor;
 	}
 
 	/**
@@ -134,9 +134,9 @@ public class StormFactoryImpl extends EFactoryImpl implements StormFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Zookeeper createZookeeper() {
-		ZookeeperImpl zookeeper = new ZookeeperImpl();
-		return zookeeper;
+	public StormZookeeper createStormZookeeper() {
+		StormZookeeperImpl stormZookeeper = new StormZookeeperImpl();
+		return stormZookeeper;
 	}
 
 	/**

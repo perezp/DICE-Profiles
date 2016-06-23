@@ -2,16 +2,25 @@
  */
 package es.unizar.disco.dice.dtsm.Storm.impl;
 
+import com.masdes.dam.Complex_Data_Types.DaFailure;
+
 import es.unizar.disco.dice.dtsm.Core.impl.CoreDAGNodeImpl;
 
 import es.unizar.disco.dice.dtsm.Storm.StormBolt;
 import es.unizar.disco.dice.dtsm.Storm.StormPackage;
 
 import org.eclipse.emf.common.notify.Notification;
+import org.eclipse.emf.common.notify.NotificationChain;
+
+import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
+
+import org.eclipse.emf.ecore.util.EObjectContainmentEList;
+import org.eclipse.emf.ecore.util.InternalEList;
 
 /**
  * <!-- begin-user-doc -->
@@ -26,6 +35,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *   <li>{@link es.unizar.disco.dice.dtsm.Storm.impl.StormBoltImpl#getSigma <em>Sigma</em>}</li>
  *   <li>{@link es.unizar.disco.dice.dtsm.Storm.impl.StormBoltImpl#getMinRebootTime <em>Min Reboot Time</em>}</li>
  *   <li>{@link es.unizar.disco.dice.dtsm.Storm.impl.StormBoltImpl#getMaxRebootTime <em>Max Reboot Time</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.dtsm.Storm.impl.StormBoltImpl#getFailure <em>Failure</em>}</li>
  * </ul>
  *
  * @generated
@@ -261,6 +271,42 @@ public class StormBoltImpl extends CoreDAGNodeImpl implements StormBolt {
 	 * @generated
 	 */
 	@Override
+	public EList<DaFailure> getFailure() {
+		if (failure == null) {
+			failure = new EObjectContainmentEList<DaFailure>(DaFailure.class, this, StormPackage.STORM_BOLT__FAILURE);
+		}
+		return failure;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean isSetFailure() {
+		return failure != null && !failure.isEmpty();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
+			case StormPackage.STORM_BOLT__FAILURE:
+				return ((InternalEList<?>)getFailure()).basicRemove(otherEnd, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case StormPackage.STORM_BOLT__D:
@@ -349,6 +395,8 @@ public class StormBoltImpl extends CoreDAGNodeImpl implements StormBolt {
 				return MIN_REBOOT_TIME_EDEFAULT == null ? minRebootTime != null : !MIN_REBOOT_TIME_EDEFAULT.equals(minRebootTime);
 			case StormPackage.STORM_BOLT__MAX_REBOOT_TIME:
 				return MAX_REBOOT_TIME_EDEFAULT == null ? maxRebootTime != null : !MAX_REBOOT_TIME_EDEFAULT.equals(maxRebootTime);
+			case StormPackage.STORM_BOLT__FAILURE:
+				return isSetFailure();
 		}
 		return super.eIsSet(featureID);
 	}

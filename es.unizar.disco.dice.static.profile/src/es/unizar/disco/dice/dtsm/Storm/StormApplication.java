@@ -32,12 +32,12 @@ public interface StormApplication extends CoreComputationNode {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Has Master Node</em>' reference.
-	 * @see #setHasMasterNode(Nimbus)
+	 * @see #setHasMasterNode(StormNimbus)
 	 * @see es.unizar.disco.dice.dtsm.Storm.StormPackage#getStormApplication_HasMasterNode()
 	 * @model ordered="false"
 	 * @generated
 	 */
-	Nimbus getHasMasterNode();
+	StormNimbus getHasMasterNode();
 
 	/**
 	 * Sets the value of the '{@link es.unizar.disco.dice.dtsm.Storm.StormApplication#getHasMasterNode <em>Has Master Node</em>}' reference.
@@ -47,7 +47,7 @@ public interface StormApplication extends CoreComputationNode {
 	 * @see #getHasMasterNode()
 	 * @generated
 	 */
-	void setHasMasterNode(Nimbus value);
+	void setHasMasterNode(StormNimbus value);
 
 	/**
 	 * Returns the value of the '<em><b>Has Slave Node</b></em>' reference.
@@ -58,12 +58,12 @@ public interface StormApplication extends CoreComputationNode {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Has Slave Node</em>' reference.
-	 * @see #setHasSlaveNode(Supervisor)
+	 * @see #setHasSlaveNode(StormSupervisor)
 	 * @see es.unizar.disco.dice.dtsm.Storm.StormPackage#getStormApplication_HasSlaveNode()
 	 * @model ordered="false"
 	 * @generated
 	 */
-	Supervisor getHasSlaveNode();
+	StormSupervisor getHasSlaveNode();
 
 	/**
 	 * Sets the value of the '{@link es.unizar.disco.dice.dtsm.Storm.StormApplication#getHasSlaveNode <em>Has Slave Node</em>}' reference.
@@ -73,7 +73,7 @@ public interface StormApplication extends CoreComputationNode {
 	 * @see #getHasSlaveNode()
 	 * @generated
 	 */
-	void setHasSlaveNode(Supervisor value);
+	void setHasSlaveNode(StormSupervisor value);
 
 	/**
 	 * Returns the value of the '<em><b>Depends On Zookeeper</b></em>' reference.
@@ -84,12 +84,12 @@ public interface StormApplication extends CoreComputationNode {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Depends On Zookeeper</em>' reference.
-	 * @see #setDependsOnZookeeper(Zookeeper)
+	 * @see #setDependsOnZookeeper(StormZookeeper)
 	 * @see es.unizar.disco.dice.dtsm.Storm.StormPackage#getStormApplication_DependsOnZookeeper()
 	 * @model ordered="false"
 	 * @generated
 	 */
-	Zookeeper getDependsOnZookeeper();
+	StormZookeeper getDependsOnZookeeper();
 
 	/**
 	 * Sets the value of the '{@link es.unizar.disco.dice.dtsm.Storm.StormApplication#getDependsOnZookeeper <em>Depends On Zookeeper</em>}' reference.
@@ -99,6 +99,6 @@ public interface StormApplication extends CoreComputationNode {
 	 * @see #getDependsOnZookeeper()
 	 * @generated
 	 */
-	void setDependsOnZookeeper(Zookeeper value);
+	void setDependsOnZookeeper(StormZookeeper value);
 
 } // StormApplication

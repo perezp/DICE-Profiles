@@ -2,7 +2,7 @@
  */
 package es.unizar.disco.dice.dtsm.Storm.impl;
 
-import es.unizar.disco.dice.dtsm.Storm.Nimbus;
+import es.unizar.disco.dice.dtsm.Storm.StormNimbus;
 import es.unizar.disco.dice.dtsm.Storm.StormPackage;
 
 import org.eclipse.emf.common.notify.Notification;
@@ -23,15 +23,15 @@ import org.eclipse.uml2.uml.Classifier;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link es.unizar.disco.dice.dtsm.Storm.impl.NimbusImpl#getTaskTimeout <em>Task Timeout</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Storm.impl.NimbusImpl#getSupervisorTimeout <em>Supervisor Timeout</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Storm.impl.NimbusImpl#getMonitorFrequency <em>Monitor Frequency</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Storm.impl.NimbusImpl#getBase_Classifier <em>Base Classifier</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.dtsm.Storm.impl.StormNimbusImpl#getTaskTimeout <em>Task Timeout</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.dtsm.Storm.impl.StormNimbusImpl#getSupervisorTimeout <em>Supervisor Timeout</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.dtsm.Storm.impl.StormNimbusImpl#getMonitorFrequency <em>Monitor Frequency</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.dtsm.Storm.impl.StormNimbusImpl#getBase_Classifier <em>Base Classifier</em>}</li>
  * </ul>
  *
  * @generated
  */
-public class NimbusImpl extends MinimalEObjectImpl.Container implements Nimbus {
+public class StormNimbusImpl extends MinimalEObjectImpl.Container implements StormNimbus {
 	/**
 	 * The default value of the '{@link #getTaskTimeout() <em>Task Timeout</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -107,7 +107,7 @@ public class NimbusImpl extends MinimalEObjectImpl.Container implements Nimbus {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected NimbusImpl() {
+	protected StormNimbusImpl() {
 		super();
 	}
 
@@ -118,7 +118,7 @@ public class NimbusImpl extends MinimalEObjectImpl.Container implements Nimbus {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return StormPackage.Literals.NIMBUS;
+		return StormPackage.Literals.STORM_NIMBUS;
 	}
 
 	/**
@@ -139,7 +139,7 @@ public class NimbusImpl extends MinimalEObjectImpl.Container implements Nimbus {
 		int oldTaskTimeout = taskTimeout;
 		taskTimeout = newTaskTimeout;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, StormPackage.NIMBUS__TASK_TIMEOUT, oldTaskTimeout, taskTimeout));
+			eNotify(new ENotificationImpl(this, Notification.SET, StormPackage.STORM_NIMBUS__TASK_TIMEOUT, oldTaskTimeout, taskTimeout));
 	}
 
 	/**
@@ -160,7 +160,7 @@ public class NimbusImpl extends MinimalEObjectImpl.Container implements Nimbus {
 		int oldSupervisorTimeout = supervisorTimeout;
 		supervisorTimeout = newSupervisorTimeout;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, StormPackage.NIMBUS__SUPERVISOR_TIMEOUT, oldSupervisorTimeout, supervisorTimeout));
+			eNotify(new ENotificationImpl(this, Notification.SET, StormPackage.STORM_NIMBUS__SUPERVISOR_TIMEOUT, oldSupervisorTimeout, supervisorTimeout));
 	}
 
 	/**
@@ -181,7 +181,7 @@ public class NimbusImpl extends MinimalEObjectImpl.Container implements Nimbus {
 		int oldMonitorFrequency = monitorFrequency;
 		monitorFrequency = newMonitorFrequency;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, StormPackage.NIMBUS__MONITOR_FREQUENCY, oldMonitorFrequency, monitorFrequency));
+			eNotify(new ENotificationImpl(this, Notification.SET, StormPackage.STORM_NIMBUS__MONITOR_FREQUENCY, oldMonitorFrequency, monitorFrequency));
 	}
 
 	/**
@@ -195,7 +195,7 @@ public class NimbusImpl extends MinimalEObjectImpl.Container implements Nimbus {
 			base_Classifier = (Classifier)eResolveProxy(oldBase_Classifier);
 			if (base_Classifier != oldBase_Classifier) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, StormPackage.NIMBUS__BASE_CLASSIFIER, oldBase_Classifier, base_Classifier));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, StormPackage.STORM_NIMBUS__BASE_CLASSIFIER, oldBase_Classifier, base_Classifier));
 			}
 		}
 		return base_Classifier;
@@ -219,7 +219,7 @@ public class NimbusImpl extends MinimalEObjectImpl.Container implements Nimbus {
 		Classifier oldBase_Classifier = base_Classifier;
 		base_Classifier = newBase_Classifier;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, StormPackage.NIMBUS__BASE_CLASSIFIER, oldBase_Classifier, base_Classifier));
+			eNotify(new ENotificationImpl(this, Notification.SET, StormPackage.STORM_NIMBUS__BASE_CLASSIFIER, oldBase_Classifier, base_Classifier));
 	}
 
 	/**
@@ -230,13 +230,13 @@ public class NimbusImpl extends MinimalEObjectImpl.Container implements Nimbus {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case StormPackage.NIMBUS__TASK_TIMEOUT:
+			case StormPackage.STORM_NIMBUS__TASK_TIMEOUT:
 				return getTaskTimeout();
-			case StormPackage.NIMBUS__SUPERVISOR_TIMEOUT:
+			case StormPackage.STORM_NIMBUS__SUPERVISOR_TIMEOUT:
 				return getSupervisorTimeout();
-			case StormPackage.NIMBUS__MONITOR_FREQUENCY:
+			case StormPackage.STORM_NIMBUS__MONITOR_FREQUENCY:
 				return getMonitorFrequency();
-			case StormPackage.NIMBUS__BASE_CLASSIFIER:
+			case StormPackage.STORM_NIMBUS__BASE_CLASSIFIER:
 				if (resolve) return getBase_Classifier();
 				return basicGetBase_Classifier();
 		}
@@ -251,16 +251,16 @@ public class NimbusImpl extends MinimalEObjectImpl.Container implements Nimbus {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case StormPackage.NIMBUS__TASK_TIMEOUT:
+			case StormPackage.STORM_NIMBUS__TASK_TIMEOUT:
 				setTaskTimeout((Integer)newValue);
 				return;
-			case StormPackage.NIMBUS__SUPERVISOR_TIMEOUT:
+			case StormPackage.STORM_NIMBUS__SUPERVISOR_TIMEOUT:
 				setSupervisorTimeout((Integer)newValue);
 				return;
-			case StormPackage.NIMBUS__MONITOR_FREQUENCY:
+			case StormPackage.STORM_NIMBUS__MONITOR_FREQUENCY:
 				setMonitorFrequency((Integer)newValue);
 				return;
-			case StormPackage.NIMBUS__BASE_CLASSIFIER:
+			case StormPackage.STORM_NIMBUS__BASE_CLASSIFIER:
 				setBase_Classifier((Classifier)newValue);
 				return;
 		}
@@ -275,16 +275,16 @@ public class NimbusImpl extends MinimalEObjectImpl.Container implements Nimbus {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case StormPackage.NIMBUS__TASK_TIMEOUT:
+			case StormPackage.STORM_NIMBUS__TASK_TIMEOUT:
 				setTaskTimeout(TASK_TIMEOUT_EDEFAULT);
 				return;
-			case StormPackage.NIMBUS__SUPERVISOR_TIMEOUT:
+			case StormPackage.STORM_NIMBUS__SUPERVISOR_TIMEOUT:
 				setSupervisorTimeout(SUPERVISOR_TIMEOUT_EDEFAULT);
 				return;
-			case StormPackage.NIMBUS__MONITOR_FREQUENCY:
+			case StormPackage.STORM_NIMBUS__MONITOR_FREQUENCY:
 				setMonitorFrequency(MONITOR_FREQUENCY_EDEFAULT);
 				return;
-			case StormPackage.NIMBUS__BASE_CLASSIFIER:
+			case StormPackage.STORM_NIMBUS__BASE_CLASSIFIER:
 				setBase_Classifier((Classifier)null);
 				return;
 		}
@@ -299,13 +299,13 @@ public class NimbusImpl extends MinimalEObjectImpl.Container implements Nimbus {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case StormPackage.NIMBUS__TASK_TIMEOUT:
+			case StormPackage.STORM_NIMBUS__TASK_TIMEOUT:
 				return taskTimeout != TASK_TIMEOUT_EDEFAULT;
-			case StormPackage.NIMBUS__SUPERVISOR_TIMEOUT:
+			case StormPackage.STORM_NIMBUS__SUPERVISOR_TIMEOUT:
 				return supervisorTimeout != SUPERVISOR_TIMEOUT_EDEFAULT;
-			case StormPackage.NIMBUS__MONITOR_FREQUENCY:
+			case StormPackage.STORM_NIMBUS__MONITOR_FREQUENCY:
 				return monitorFrequency != MONITOR_FREQUENCY_EDEFAULT;
-			case StormPackage.NIMBUS__BASE_CLASSIFIER:
+			case StormPackage.STORM_NIMBUS__BASE_CLASSIFIER:
 				return base_Classifier != null;
 		}
 		return super.eIsSet(featureID);
@@ -331,4 +331,4 @@ public class NimbusImpl extends MinimalEObjectImpl.Container implements Nimbus {
 		return result.toString();
 	}
 
-} //NimbusImpl
+} //StormNimbusImpl

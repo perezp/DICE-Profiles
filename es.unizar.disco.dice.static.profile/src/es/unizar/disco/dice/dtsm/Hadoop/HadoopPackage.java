@@ -1976,13 +1976,13 @@ public interface HadoopPackage extends EPackage {
 	int HADOOP_COMPUTATION_NODE__SUBSTITUTED_BY = CorePackage.CORE_COMPUTATION_NODE__SUBSTITUTED_BY;
 
 	/**
-	 * The feature id for the '<em><b>Throughput</b></em>' attribute.
+	 * The feature id for the '<em><b>Node Throughput</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int HADOOP_COMPUTATION_NODE__THROUGHPUT = CorePackage.CORE_COMPUTATION_NODE__THROUGHPUT;
+	int HADOOP_COMPUTATION_NODE__NODE_THROUGHPUT = CorePackage.CORE_COMPUTATION_NODE__NODE_THROUGHPUT;
 
 	/**
 	 * The feature id for the '<em><b>Type</b></em>' attribute.

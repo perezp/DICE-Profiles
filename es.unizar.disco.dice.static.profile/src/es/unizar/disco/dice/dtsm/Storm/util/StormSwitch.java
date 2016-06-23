@@ -89,9 +89,14 @@ public class StormSwitch<T> extends Switch<T> {
 				StormBolt stormBolt = (StormBolt)theEObject;
 				T result = caseStormBolt(stormBolt);
 				if (result == null) result = caseCoreDAGNode(stormBolt);
+				if (result == null) result = caseGaStep(stormBolt);
 				if (result == null) result = caseDpimSourceNode(stormBolt);
+				if (result == null) result = caseGaScenario(stormBolt);
 				if (result == null) result = caseDpimComputationNode(stormBolt);
+				if (result == null) result = caseResourceUsage(stormBolt);
+				if (result == null) result = caseTimedProcessing(stormBolt);
 				if (result == null) result = caseDaComponent(stormBolt);
+				if (result == null) result = caseTimedElement(stormBolt);
 				if (result == null) result = caseResource(stormBolt);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
@@ -101,9 +106,14 @@ public class StormSwitch<T> extends Switch<T> {
 				T result = caseStormSpout(stormSpout);
 				if (result == null) result = caseCoreDAGSourceNode(stormSpout);
 				if (result == null) result = caseCoreDAGNode(stormSpout);
+				if (result == null) result = caseGaStep(stormSpout);
 				if (result == null) result = caseDpimSourceNode(stormSpout);
+				if (result == null) result = caseGaScenario(stormSpout);
 				if (result == null) result = caseDpimComputationNode(stormSpout);
+				if (result == null) result = caseResourceUsage(stormSpout);
+				if (result == null) result = caseTimedProcessing(stormSpout);
 				if (result == null) result = caseDaComponent(stormSpout);
+				if (result == null) result = caseTimedElement(stormSpout);
 				if (result == null) result = caseResource(stormSpout);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
@@ -129,21 +139,21 @@ public class StormSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case StormPackage.NIMBUS: {
-				Nimbus nimbus = (Nimbus)theEObject;
-				T result = caseNimbus(nimbus);
+			case StormPackage.STORM_NIMBUS: {
+				StormNimbus stormNimbus = (StormNimbus)theEObject;
+				T result = caseStormNimbus(stormNimbus);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case StormPackage.SUPERVISOR: {
-				Supervisor supervisor = (Supervisor)theEObject;
-				T result = caseSupervisor(supervisor);
+			case StormPackage.STORM_SUPERVISOR: {
+				StormSupervisor stormSupervisor = (StormSupervisor)theEObject;
+				T result = caseStormSupervisor(stormSupervisor);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case StormPackage.ZOOKEEPER: {
-				Zookeeper zookeeper = (Zookeeper)theEObject;
-				T result = caseZookeeper(zookeeper);
+			case StormPackage.STORM_ZOOKEEPER: {
+				StormZookeeper stormZookeeper = (StormZookeeper)theEObject;
+				T result = caseStormZookeeper(stormZookeeper);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -233,7 +243,7 @@ public class StormSwitch<T> extends Switch<T> {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseNimbus(Nimbus object) {
+	public T caseStormNimbus(StormNimbus object) {
 		return null;
 	}
 
@@ -248,7 +258,7 @@ public class StormSwitch<T> extends Switch<T> {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseSupervisor(Supervisor object) {
+	public T caseStormSupervisor(StormSupervisor object) {
 		return null;
 	}
 
@@ -263,7 +273,7 @@ public class StormSwitch<T> extends Switch<T> {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseZookeeper(Zookeeper object) {
+	public T caseStormZookeeper(StormZookeeper object) {
 		return null;
 	}
 
@@ -279,6 +289,81 @@ public class StormSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseStormStreamStep(StormStreamStep object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Resource Usage</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Resource Usage</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseResourceUsage(ResourceUsage object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Timed Element</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Timed Element</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseTimedElement(TimedElement object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Timed Processing</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Timed Processing</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseTimedProcessing(TimedProcessing object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Ga Scenario</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Ga Scenario</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseGaScenario(GaScenario object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Ga Step</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Ga Step</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseGaStep(GaStep object) {
 		return null;
 	}
 
@@ -373,66 +458,6 @@ public class StormSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Resource Usage</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Resource Usage</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseResourceUsage(ResourceUsage object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Timed Element</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Timed Element</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseTimedElement(TimedElement object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Timed Processing</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Timed Processing</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseTimedProcessing(TimedProcessing object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Ga Scenario</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Ga Scenario</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseGaScenario(GaScenario object) {
-		return null;
-	}
-
-	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Direct Acyclic Graph</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -459,21 +484,6 @@ public class StormSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseCoreComputationNode(CoreComputationNode object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Ga Step</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Ga Step</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseGaStep(GaStep object) {
 		return null;
 	}
 

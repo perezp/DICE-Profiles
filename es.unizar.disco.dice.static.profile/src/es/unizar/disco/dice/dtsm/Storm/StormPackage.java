@@ -70,6 +70,366 @@ public interface StormPackage extends EPackage {
 	int STORM_BOLT = 0;
 
 	/**
+	 * The feature id for the '<em><b>Exec Time</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORM_BOLT__EXEC_TIME = CorePackage.CORE_DAG_NODE__EXEC_TIME;
+
+	/**
+	 * The feature id for the '<em><b>Allocated Memory</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORM_BOLT__ALLOCATED_MEMORY = CorePackage.CORE_DAG_NODE__ALLOCATED_MEMORY;
+
+	/**
+	 * The feature id for the '<em><b>Used Memory</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORM_BOLT__USED_MEMORY = CorePackage.CORE_DAG_NODE__USED_MEMORY;
+
+	/**
+	 * The feature id for the '<em><b>Power Peak</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORM_BOLT__POWER_PEAK = CorePackage.CORE_DAG_NODE__POWER_PEAK;
+
+	/**
+	 * The feature id for the '<em><b>Energy</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORM_BOLT__ENERGY = CorePackage.CORE_DAG_NODE__ENERGY;
+
+	/**
+	 * The feature id for the '<em><b>Base Named Element</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORM_BOLT__BASE_NAMED_ELEMENT = CorePackage.CORE_DAG_NODE__BASE_NAMED_ELEMENT;
+
+	/**
+	 * The feature id for the '<em><b>Sub Usage</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORM_BOLT__SUB_USAGE = CorePackage.CORE_DAG_NODE__SUB_USAGE;
+
+	/**
+	 * The feature id for the '<em><b>Used Resources</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORM_BOLT__USED_RESOURCES = CorePackage.CORE_DAG_NODE__USED_RESOURCES;
+
+	/**
+	 * The feature id for the '<em><b>Msg Size</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORM_BOLT__MSG_SIZE = CorePackage.CORE_DAG_NODE__MSG_SIZE;
+
+	/**
+	 * The feature id for the '<em><b>On</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORM_BOLT__ON = CorePackage.CORE_DAG_NODE__ON;
+
+	/**
+	 * The feature id for the '<em><b>Base Action</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORM_BOLT__BASE_ACTION = CorePackage.CORE_DAG_NODE__BASE_ACTION;
+
+	/**
+	 * The feature id for the '<em><b>Base Behavior</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORM_BOLT__BASE_BEHAVIOR = CorePackage.CORE_DAG_NODE__BASE_BEHAVIOR;
+
+	/**
+	 * The feature id for the '<em><b>Base Message</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORM_BOLT__BASE_MESSAGE = CorePackage.CORE_DAG_NODE__BASE_MESSAGE;
+
+	/**
+	 * The feature id for the '<em><b>Duration</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORM_BOLT__DURATION = CorePackage.CORE_DAG_NODE__DURATION;
+
+	/**
+	 * The feature id for the '<em><b>Start</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORM_BOLT__START = CorePackage.CORE_DAG_NODE__START;
+
+	/**
+	 * The feature id for the '<em><b>Finish</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORM_BOLT__FINISH = CorePackage.CORE_DAG_NODE__FINISH;
+
+	/**
+	 * The feature id for the '<em><b>Cause</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORM_BOLT__CAUSE = CorePackage.CORE_DAG_NODE__CAUSE;
+
+	/**
+	 * The feature id for the '<em><b>Host Demand</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORM_BOLT__HOST_DEMAND = CorePackage.CORE_DAG_NODE__HOST_DEMAND;
+
+	/**
+	 * The feature id for the '<em><b>Host Demand Ops</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORM_BOLT__HOST_DEMAND_OPS = CorePackage.CORE_DAG_NODE__HOST_DEMAND_OPS;
+
+	/**
+	 * The feature id for the '<em><b>Inter Occ T</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORM_BOLT__INTER_OCC_T = CorePackage.CORE_DAG_NODE__INTER_OCC_T;
+
+	/**
+	 * The feature id for the '<em><b>Throughput</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORM_BOLT__THROUGHPUT = CorePackage.CORE_DAG_NODE__THROUGHPUT;
+
+	/**
+	 * The feature id for the '<em><b>Resp T</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORM_BOLT__RESP_T = CorePackage.CORE_DAG_NODE__RESP_T;
+
+	/**
+	 * The feature id for the '<em><b>Utilization</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORM_BOLT__UTILIZATION = CorePackage.CORE_DAG_NODE__UTILIZATION;
+
+	/**
+	 * The feature id for the '<em><b>Utilization On Host</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORM_BOLT__UTILIZATION_ON_HOST = CorePackage.CORE_DAG_NODE__UTILIZATION_ON_HOST;
+
+	/**
+	 * The feature id for the '<em><b>Root</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORM_BOLT__ROOT = CorePackage.CORE_DAG_NODE__ROOT;
+
+	/**
+	 * The feature id for the '<em><b>Steps</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORM_BOLT__STEPS = CorePackage.CORE_DAG_NODE__STEPS;
+
+	/**
+	 * The feature id for the '<em><b>Parent Step</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORM_BOLT__PARENT_STEP = CorePackage.CORE_DAG_NODE__PARENT_STEP;
+
+	/**
+	 * The feature id for the '<em><b>Timing</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORM_BOLT__TIMING = CorePackage.CORE_DAG_NODE__TIMING;
+
+	/**
+	 * The feature id for the '<em><b>Is Atomic</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORM_BOLT__IS_ATOMIC = CorePackage.CORE_DAG_NODE__IS_ATOMIC;
+
+	/**
+	 * The feature id for the '<em><b>Block T</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORM_BOLT__BLOCK_T = CorePackage.CORE_DAG_NODE__BLOCK_T;
+
+	/**
+	 * The feature id for the '<em><b>Rep</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORM_BOLT__REP = CorePackage.CORE_DAG_NODE__REP;
+
+	/**
+	 * The feature id for the '<em><b>Prob</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORM_BOLT__PROB = CorePackage.CORE_DAG_NODE__PROB;
+
+	/**
+	 * The feature id for the '<em><b>Priority</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORM_BOLT__PRIORITY = CorePackage.CORE_DAG_NODE__PRIORITY;
+
+	/**
+	 * The feature id for the '<em><b>Concur Res</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORM_BOLT__CONCUR_RES = CorePackage.CORE_DAG_NODE__CONCUR_RES;
+
+	/**
+	 * The feature id for the '<em><b>Host</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORM_BOLT__HOST = CorePackage.CORE_DAG_NODE__HOST;
+
+	/**
+	 * The feature id for the '<em><b>Serv Demand</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORM_BOLT__SERV_DEMAND = CorePackage.CORE_DAG_NODE__SERV_DEMAND;
+
+	/**
+	 * The feature id for the '<em><b>Serv Count</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORM_BOLT__SERV_COUNT = CorePackage.CORE_DAG_NODE__SERV_COUNT;
+
+	/**
+	 * The feature id for the '<em><b>Self Delay</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORM_BOLT__SELF_DELAY = CorePackage.CORE_DAG_NODE__SELF_DELAY;
+
+	/**
+	 * The feature id for the '<em><b>Scenario</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORM_BOLT__SCENARIO = CorePackage.CORE_DAG_NODE__SCENARIO;
+
+	/**
+	 * The feature id for the '<em><b>Child Scenario</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORM_BOLT__CHILD_SCENARIO = CorePackage.CORE_DAG_NODE__CHILD_SCENARIO;
+
+	/**
 	 * The feature id for the '<em><b>Res Mult</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -304,13 +664,13 @@ public interface StormPackage extends EPackage {
 	int STORM_BOLT__SUBSTITUTED_BY = CorePackage.CORE_DAG_NODE__SUBSTITUTED_BY;
 
 	/**
-	 * The feature id for the '<em><b>Throughput</b></em>' attribute.
+	 * The feature id for the '<em><b>Node Throughput</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int STORM_BOLT__THROUGHPUT = CorePackage.CORE_DAG_NODE__THROUGHPUT;
+	int STORM_BOLT__NODE_THROUGHPUT = CorePackage.CORE_DAG_NODE__NODE_THROUGHPUT;
 
 	/**
 	 * The feature id for the '<em><b>Type</b></em>' attribute.
@@ -465,6 +825,366 @@ public interface StormPackage extends EPackage {
 	 * @generated
 	 */
 	int STORM_SPOUT = 1;
+
+	/**
+	 * The feature id for the '<em><b>Exec Time</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORM_SPOUT__EXEC_TIME = CorePackage.CORE_DAG_SOURCE_NODE__EXEC_TIME;
+
+	/**
+	 * The feature id for the '<em><b>Allocated Memory</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORM_SPOUT__ALLOCATED_MEMORY = CorePackage.CORE_DAG_SOURCE_NODE__ALLOCATED_MEMORY;
+
+	/**
+	 * The feature id for the '<em><b>Used Memory</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORM_SPOUT__USED_MEMORY = CorePackage.CORE_DAG_SOURCE_NODE__USED_MEMORY;
+
+	/**
+	 * The feature id for the '<em><b>Power Peak</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORM_SPOUT__POWER_PEAK = CorePackage.CORE_DAG_SOURCE_NODE__POWER_PEAK;
+
+	/**
+	 * The feature id for the '<em><b>Energy</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORM_SPOUT__ENERGY = CorePackage.CORE_DAG_SOURCE_NODE__ENERGY;
+
+	/**
+	 * The feature id for the '<em><b>Base Named Element</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORM_SPOUT__BASE_NAMED_ELEMENT = CorePackage.CORE_DAG_SOURCE_NODE__BASE_NAMED_ELEMENT;
+
+	/**
+	 * The feature id for the '<em><b>Sub Usage</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORM_SPOUT__SUB_USAGE = CorePackage.CORE_DAG_SOURCE_NODE__SUB_USAGE;
+
+	/**
+	 * The feature id for the '<em><b>Used Resources</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORM_SPOUT__USED_RESOURCES = CorePackage.CORE_DAG_SOURCE_NODE__USED_RESOURCES;
+
+	/**
+	 * The feature id for the '<em><b>Msg Size</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORM_SPOUT__MSG_SIZE = CorePackage.CORE_DAG_SOURCE_NODE__MSG_SIZE;
+
+	/**
+	 * The feature id for the '<em><b>On</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORM_SPOUT__ON = CorePackage.CORE_DAG_SOURCE_NODE__ON;
+
+	/**
+	 * The feature id for the '<em><b>Base Action</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORM_SPOUT__BASE_ACTION = CorePackage.CORE_DAG_SOURCE_NODE__BASE_ACTION;
+
+	/**
+	 * The feature id for the '<em><b>Base Behavior</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORM_SPOUT__BASE_BEHAVIOR = CorePackage.CORE_DAG_SOURCE_NODE__BASE_BEHAVIOR;
+
+	/**
+	 * The feature id for the '<em><b>Base Message</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORM_SPOUT__BASE_MESSAGE = CorePackage.CORE_DAG_SOURCE_NODE__BASE_MESSAGE;
+
+	/**
+	 * The feature id for the '<em><b>Duration</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORM_SPOUT__DURATION = CorePackage.CORE_DAG_SOURCE_NODE__DURATION;
+
+	/**
+	 * The feature id for the '<em><b>Start</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORM_SPOUT__START = CorePackage.CORE_DAG_SOURCE_NODE__START;
+
+	/**
+	 * The feature id for the '<em><b>Finish</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORM_SPOUT__FINISH = CorePackage.CORE_DAG_SOURCE_NODE__FINISH;
+
+	/**
+	 * The feature id for the '<em><b>Cause</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORM_SPOUT__CAUSE = CorePackage.CORE_DAG_SOURCE_NODE__CAUSE;
+
+	/**
+	 * The feature id for the '<em><b>Host Demand</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORM_SPOUT__HOST_DEMAND = CorePackage.CORE_DAG_SOURCE_NODE__HOST_DEMAND;
+
+	/**
+	 * The feature id for the '<em><b>Host Demand Ops</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORM_SPOUT__HOST_DEMAND_OPS = CorePackage.CORE_DAG_SOURCE_NODE__HOST_DEMAND_OPS;
+
+	/**
+	 * The feature id for the '<em><b>Inter Occ T</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORM_SPOUT__INTER_OCC_T = CorePackage.CORE_DAG_SOURCE_NODE__INTER_OCC_T;
+
+	/**
+	 * The feature id for the '<em><b>Throughput</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORM_SPOUT__THROUGHPUT = CorePackage.CORE_DAG_SOURCE_NODE__THROUGHPUT;
+
+	/**
+	 * The feature id for the '<em><b>Resp T</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORM_SPOUT__RESP_T = CorePackage.CORE_DAG_SOURCE_NODE__RESP_T;
+
+	/**
+	 * The feature id for the '<em><b>Utilization</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORM_SPOUT__UTILIZATION = CorePackage.CORE_DAG_SOURCE_NODE__UTILIZATION;
+
+	/**
+	 * The feature id for the '<em><b>Utilization On Host</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORM_SPOUT__UTILIZATION_ON_HOST = CorePackage.CORE_DAG_SOURCE_NODE__UTILIZATION_ON_HOST;
+
+	/**
+	 * The feature id for the '<em><b>Root</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORM_SPOUT__ROOT = CorePackage.CORE_DAG_SOURCE_NODE__ROOT;
+
+	/**
+	 * The feature id for the '<em><b>Steps</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORM_SPOUT__STEPS = CorePackage.CORE_DAG_SOURCE_NODE__STEPS;
+
+	/**
+	 * The feature id for the '<em><b>Parent Step</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORM_SPOUT__PARENT_STEP = CorePackage.CORE_DAG_SOURCE_NODE__PARENT_STEP;
+
+	/**
+	 * The feature id for the '<em><b>Timing</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORM_SPOUT__TIMING = CorePackage.CORE_DAG_SOURCE_NODE__TIMING;
+
+	/**
+	 * The feature id for the '<em><b>Is Atomic</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORM_SPOUT__IS_ATOMIC = CorePackage.CORE_DAG_SOURCE_NODE__IS_ATOMIC;
+
+	/**
+	 * The feature id for the '<em><b>Block T</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORM_SPOUT__BLOCK_T = CorePackage.CORE_DAG_SOURCE_NODE__BLOCK_T;
+
+	/**
+	 * The feature id for the '<em><b>Rep</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORM_SPOUT__REP = CorePackage.CORE_DAG_SOURCE_NODE__REP;
+
+	/**
+	 * The feature id for the '<em><b>Prob</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORM_SPOUT__PROB = CorePackage.CORE_DAG_SOURCE_NODE__PROB;
+
+	/**
+	 * The feature id for the '<em><b>Priority</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORM_SPOUT__PRIORITY = CorePackage.CORE_DAG_SOURCE_NODE__PRIORITY;
+
+	/**
+	 * The feature id for the '<em><b>Concur Res</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORM_SPOUT__CONCUR_RES = CorePackage.CORE_DAG_SOURCE_NODE__CONCUR_RES;
+
+	/**
+	 * The feature id for the '<em><b>Host</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORM_SPOUT__HOST = CorePackage.CORE_DAG_SOURCE_NODE__HOST;
+
+	/**
+	 * The feature id for the '<em><b>Serv Demand</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORM_SPOUT__SERV_DEMAND = CorePackage.CORE_DAG_SOURCE_NODE__SERV_DEMAND;
+
+	/**
+	 * The feature id for the '<em><b>Serv Count</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORM_SPOUT__SERV_COUNT = CorePackage.CORE_DAG_SOURCE_NODE__SERV_COUNT;
+
+	/**
+	 * The feature id for the '<em><b>Self Delay</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORM_SPOUT__SELF_DELAY = CorePackage.CORE_DAG_SOURCE_NODE__SELF_DELAY;
+
+	/**
+	 * The feature id for the '<em><b>Scenario</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORM_SPOUT__SCENARIO = CorePackage.CORE_DAG_SOURCE_NODE__SCENARIO;
+
+	/**
+	 * The feature id for the '<em><b>Child Scenario</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORM_SPOUT__CHILD_SCENARIO = CorePackage.CORE_DAG_SOURCE_NODE__CHILD_SCENARIO;
 
 	/**
 	 * The feature id for the '<em><b>Res Mult</b></em>' attribute.
@@ -701,13 +1421,13 @@ public interface StormPackage extends EPackage {
 	int STORM_SPOUT__SUBSTITUTED_BY = CorePackage.CORE_DAG_SOURCE_NODE__SUBSTITUTED_BY;
 
 	/**
-	 * The feature id for the '<em><b>Throughput</b></em>' attribute.
+	 * The feature id for the '<em><b>Node Throughput</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int STORM_SPOUT__THROUGHPUT = CorePackage.CORE_DAG_SOURCE_NODE__THROUGHPUT;
+	int STORM_SPOUT__NODE_THROUGHPUT = CorePackage.CORE_DAG_SOURCE_NODE__NODE_THROUGHPUT;
 
 	/**
 	 * The feature id for the '<em><b>Type</b></em>' attribute.
@@ -1396,13 +2116,13 @@ public interface StormPackage extends EPackage {
 	int STORM_APPLICATION__SUBSTITUTED_BY = CorePackage.CORE_COMPUTATION_NODE__SUBSTITUTED_BY;
 
 	/**
-	 * The feature id for the '<em><b>Throughput</b></em>' attribute.
+	 * The feature id for the '<em><b>Node Throughput</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int STORM_APPLICATION__THROUGHPUT = CorePackage.CORE_COMPUTATION_NODE__THROUGHPUT;
+	int STORM_APPLICATION__NODE_THROUGHPUT = CorePackage.CORE_COMPUTATION_NODE__NODE_THROUGHPUT;
 
 	/**
 	 * The feature id for the '<em><b>Type</b></em>' attribute.
@@ -1504,14 +2224,14 @@ public interface StormPackage extends EPackage {
 	int STORM_APPLICATION_FEATURE_COUNT = CorePackage.CORE_COMPUTATION_NODE_FEATURE_COUNT + 3;
 
 	/**
-	 * The meta object id for the '{@link es.unizar.disco.dice.dtsm.Storm.impl.NimbusImpl <em>Nimbus</em>}' class.
+	 * The meta object id for the '{@link es.unizar.disco.dice.dtsm.Storm.impl.StormNimbusImpl <em>Nimbus</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see es.unizar.disco.dice.dtsm.Storm.impl.NimbusImpl
-	 * @see es.unizar.disco.dice.dtsm.Storm.impl.StormPackageImpl#getNimbus()
+	 * @see es.unizar.disco.dice.dtsm.Storm.impl.StormNimbusImpl
+	 * @see es.unizar.disco.dice.dtsm.Storm.impl.StormPackageImpl#getStormNimbus()
 	 * @generated
 	 */
-	int NIMBUS = 4;
+	int STORM_NIMBUS = 4;
 
 	/**
 	 * The feature id for the '<em><b>Task Timeout</b></em>' attribute.
@@ -1520,7 +2240,7 @@ public interface StormPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NIMBUS__TASK_TIMEOUT = 0;
+	int STORM_NIMBUS__TASK_TIMEOUT = 0;
 
 	/**
 	 * The feature id for the '<em><b>Supervisor Timeout</b></em>' attribute.
@@ -1529,7 +2249,7 @@ public interface StormPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NIMBUS__SUPERVISOR_TIMEOUT = 1;
+	int STORM_NIMBUS__SUPERVISOR_TIMEOUT = 1;
 
 	/**
 	 * The feature id for the '<em><b>Monitor Frequency</b></em>' attribute.
@@ -1538,7 +2258,7 @@ public interface StormPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NIMBUS__MONITOR_FREQUENCY = 2;
+	int STORM_NIMBUS__MONITOR_FREQUENCY = 2;
 
 	/**
 	 * The feature id for the '<em><b>Base Classifier</b></em>' reference.
@@ -1547,7 +2267,7 @@ public interface StormPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NIMBUS__BASE_CLASSIFIER = 3;
+	int STORM_NIMBUS__BASE_CLASSIFIER = 3;
 
 	/**
 	 * The number of structural features of the '<em>Nimbus</em>' class.
@@ -1556,17 +2276,17 @@ public interface StormPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NIMBUS_FEATURE_COUNT = 4;
+	int STORM_NIMBUS_FEATURE_COUNT = 4;
 
 	/**
-	 * The meta object id for the '{@link es.unizar.disco.dice.dtsm.Storm.impl.SupervisorImpl <em>Supervisor</em>}' class.
+	 * The meta object id for the '{@link es.unizar.disco.dice.dtsm.Storm.impl.StormSupervisorImpl <em>Supervisor</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see es.unizar.disco.dice.dtsm.Storm.impl.SupervisorImpl
-	 * @see es.unizar.disco.dice.dtsm.Storm.impl.StormPackageImpl#getSupervisor()
+	 * @see es.unizar.disco.dice.dtsm.Storm.impl.StormSupervisorImpl
+	 * @see es.unizar.disco.dice.dtsm.Storm.impl.StormPackageImpl#getStormSupervisor()
 	 * @generated
 	 */
-	int SUPERVISOR = 5;
+	int STORM_SUPERVISOR = 5;
 
 	/**
 	 * The feature id for the '<em><b>Monitro Frequency</b></em>' attribute.
@@ -1575,7 +2295,7 @@ public interface StormPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUPERVISOR__MONITRO_FREQUENCY = 0;
+	int STORM_SUPERVISOR__MONITRO_FREQUENCY = 0;
 
 	/**
 	 * The feature id for the '<em><b>Worker Satrt Timeout</b></em>' attribute.
@@ -1584,7 +2304,7 @@ public interface StormPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUPERVISOR__WORKER_SATRT_TIMEOUT = 1;
+	int STORM_SUPERVISOR__WORKER_SATRT_TIMEOUT = 1;
 
 	/**
 	 * The feature id for the '<em><b>Worker Timeout</b></em>' attribute.
@@ -1593,7 +2313,7 @@ public interface StormPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUPERVISOR__WORKER_TIMEOUT = 2;
+	int STORM_SUPERVISOR__WORKER_TIMEOUT = 2;
 
 	/**
 	 * The feature id for the '<em><b>Heartbrack Frequency</b></em>' attribute.
@@ -1602,7 +2322,7 @@ public interface StormPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUPERVISOR__HEARTBRACK_FREQUENCY = 3;
+	int STORM_SUPERVISOR__HEARTBRACK_FREQUENCY = 3;
 
 	/**
 	 * The feature id for the '<em><b>Memory Capacity</b></em>' attribute.
@@ -1611,7 +2331,7 @@ public interface StormPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUPERVISOR__MEMORY_CAPACITY = 4;
+	int STORM_SUPERVISOR__MEMORY_CAPACITY = 4;
 
 	/**
 	 * The feature id for the '<em><b>Cpu Capacity</b></em>' attribute.
@@ -1620,7 +2340,7 @@ public interface StormPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUPERVISOR__CPU_CAPACITY = 5;
+	int STORM_SUPERVISOR__CPU_CAPACITY = 5;
 
 	/**
 	 * The feature id for the '<em><b>Base Classifier</b></em>' reference.
@@ -1629,7 +2349,7 @@ public interface StormPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUPERVISOR__BASE_CLASSIFIER = 6;
+	int STORM_SUPERVISOR__BASE_CLASSIFIER = 6;
 
 	/**
 	 * The number of structural features of the '<em>Supervisor</em>' class.
@@ -1638,17 +2358,17 @@ public interface StormPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUPERVISOR_FEATURE_COUNT = 7;
+	int STORM_SUPERVISOR_FEATURE_COUNT = 7;
 
 	/**
-	 * The meta object id for the '{@link es.unizar.disco.dice.dtsm.Storm.impl.ZookeeperImpl <em>Zookeeper</em>}' class.
+	 * The meta object id for the '{@link es.unizar.disco.dice.dtsm.Storm.impl.StormZookeeperImpl <em>Zookeeper</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see es.unizar.disco.dice.dtsm.Storm.impl.ZookeeperImpl
-	 * @see es.unizar.disco.dice.dtsm.Storm.impl.StormPackageImpl#getZookeeper()
+	 * @see es.unizar.disco.dice.dtsm.Storm.impl.StormZookeeperImpl
+	 * @see es.unizar.disco.dice.dtsm.Storm.impl.StormPackageImpl#getStormZookeeper()
 	 * @generated
 	 */
-	int ZOOKEEPER = 6;
+	int STORM_ZOOKEEPER = 6;
 
 	/**
 	 * The feature id for the '<em><b>Session Timeout</b></em>' attribute.
@@ -1657,7 +2377,7 @@ public interface StormPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ZOOKEEPER__SESSION_TIMEOUT = 0;
+	int STORM_ZOOKEEPER__SESSION_TIMEOUT = 0;
 
 	/**
 	 * The feature id for the '<em><b>Connection Timeout</b></em>' attribute.
@@ -1666,7 +2386,7 @@ public interface StormPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ZOOKEEPER__CONNECTION_TIMEOUT = 1;
+	int STORM_ZOOKEEPER__CONNECTION_TIMEOUT = 1;
 
 	/**
 	 * The feature id for the '<em><b>Retry Time</b></em>' attribute.
@@ -1675,7 +2395,7 @@ public interface StormPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ZOOKEEPER__RETRY_TIME = 2;
+	int STORM_ZOOKEEPER__RETRY_TIME = 2;
 
 	/**
 	 * The feature id for the '<em><b>Retry Interval</b></em>' attribute.
@@ -1684,7 +2404,7 @@ public interface StormPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ZOOKEEPER__RETRY_INTERVAL = 3;
+	int STORM_ZOOKEEPER__RETRY_INTERVAL = 3;
 
 	/**
 	 * The feature id for the '<em><b>User</b></em>' attribute.
@@ -1693,7 +2413,7 @@ public interface StormPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ZOOKEEPER__USER = 4;
+	int STORM_ZOOKEEPER__USER = 4;
 
 	/**
 	 * The feature id for the '<em><b>Password</b></em>' attribute.
@@ -1702,7 +2422,7 @@ public interface StormPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ZOOKEEPER__PASSWORD = 5;
+	int STORM_ZOOKEEPER__PASSWORD = 5;
 
 	/**
 	 * The feature id for the '<em><b>Base Classifier</b></em>' reference.
@@ -1711,7 +2431,7 @@ public interface StormPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ZOOKEEPER__BASE_CLASSIFIER = 6;
+	int STORM_ZOOKEEPER__BASE_CLASSIFIER = 6;
 
 	/**
 	 * The number of structural features of the '<em>Zookeeper</em>' class.
@@ -1720,7 +2440,7 @@ public interface StormPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ZOOKEEPER_FEATURE_COUNT = 7;
+	int STORM_ZOOKEEPER_FEATURE_COUNT = 7;
 
 	/**
 	 * The meta object id for the '{@link es.unizar.disco.dice.dtsm.Storm.impl.StormStreamStepImpl <em>Stream Step</em>}' class.
@@ -2304,232 +3024,232 @@ public interface StormPackage extends EPackage {
 	EReference getStormApplication_DependsOnZookeeper();
 
 	/**
-	 * Returns the meta object for class '{@link es.unizar.disco.dice.dtsm.Storm.Nimbus <em>Nimbus</em>}'.
+	 * Returns the meta object for class '{@link es.unizar.disco.dice.dtsm.Storm.StormNimbus <em>Nimbus</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>Nimbus</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Storm.Nimbus
+	 * @see es.unizar.disco.dice.dtsm.Storm.StormNimbus
 	 * @generated
 	 */
-	EClass getNimbus();
+	EClass getStormNimbus();
 
 	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.dtsm.Storm.Nimbus#getTaskTimeout <em>Task Timeout</em>}'.
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.dtsm.Storm.StormNimbus#getTaskTimeout <em>Task Timeout</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Task Timeout</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Storm.Nimbus#getTaskTimeout()
-	 * @see #getNimbus()
+	 * @see es.unizar.disco.dice.dtsm.Storm.StormNimbus#getTaskTimeout()
+	 * @see #getStormNimbus()
 	 * @generated
 	 */
-	EAttribute getNimbus_TaskTimeout();
+	EAttribute getStormNimbus_TaskTimeout();
 
 	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.dtsm.Storm.Nimbus#getSupervisorTimeout <em>Supervisor Timeout</em>}'.
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.dtsm.Storm.StormNimbus#getSupervisorTimeout <em>Supervisor Timeout</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Supervisor Timeout</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Storm.Nimbus#getSupervisorTimeout()
-	 * @see #getNimbus()
+	 * @see es.unizar.disco.dice.dtsm.Storm.StormNimbus#getSupervisorTimeout()
+	 * @see #getStormNimbus()
 	 * @generated
 	 */
-	EAttribute getNimbus_SupervisorTimeout();
+	EAttribute getStormNimbus_SupervisorTimeout();
 
 	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.dtsm.Storm.Nimbus#getMonitorFrequency <em>Monitor Frequency</em>}'.
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.dtsm.Storm.StormNimbus#getMonitorFrequency <em>Monitor Frequency</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Monitor Frequency</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Storm.Nimbus#getMonitorFrequency()
-	 * @see #getNimbus()
+	 * @see es.unizar.disco.dice.dtsm.Storm.StormNimbus#getMonitorFrequency()
+	 * @see #getStormNimbus()
 	 * @generated
 	 */
-	EAttribute getNimbus_MonitorFrequency();
+	EAttribute getStormNimbus_MonitorFrequency();
 
 	/**
-	 * Returns the meta object for the reference '{@link es.unizar.disco.dice.dtsm.Storm.Nimbus#getBase_Classifier <em>Base Classifier</em>}'.
+	 * Returns the meta object for the reference '{@link es.unizar.disco.dice.dtsm.Storm.StormNimbus#getBase_Classifier <em>Base Classifier</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the reference '<em>Base Classifier</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Storm.Nimbus#getBase_Classifier()
-	 * @see #getNimbus()
+	 * @see es.unizar.disco.dice.dtsm.Storm.StormNimbus#getBase_Classifier()
+	 * @see #getStormNimbus()
 	 * @generated
 	 */
-	EReference getNimbus_Base_Classifier();
+	EReference getStormNimbus_Base_Classifier();
 
 	/**
-	 * Returns the meta object for class '{@link es.unizar.disco.dice.dtsm.Storm.Supervisor <em>Supervisor</em>}'.
+	 * Returns the meta object for class '{@link es.unizar.disco.dice.dtsm.Storm.StormSupervisor <em>Supervisor</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>Supervisor</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Storm.Supervisor
+	 * @see es.unizar.disco.dice.dtsm.Storm.StormSupervisor
 	 * @generated
 	 */
-	EClass getSupervisor();
+	EClass getStormSupervisor();
 
 	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.dtsm.Storm.Supervisor#getMonitroFrequency <em>Monitro Frequency</em>}'.
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.dtsm.Storm.StormSupervisor#getMonitroFrequency <em>Monitro Frequency</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Monitro Frequency</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Storm.Supervisor#getMonitroFrequency()
-	 * @see #getSupervisor()
+	 * @see es.unizar.disco.dice.dtsm.Storm.StormSupervisor#getMonitroFrequency()
+	 * @see #getStormSupervisor()
 	 * @generated
 	 */
-	EAttribute getSupervisor_MonitroFrequency();
+	EAttribute getStormSupervisor_MonitroFrequency();
 
 	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.dtsm.Storm.Supervisor#getWorkerSatrtTimeout <em>Worker Satrt Timeout</em>}'.
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.dtsm.Storm.StormSupervisor#getWorkerSatrtTimeout <em>Worker Satrt Timeout</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Worker Satrt Timeout</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Storm.Supervisor#getWorkerSatrtTimeout()
-	 * @see #getSupervisor()
+	 * @see es.unizar.disco.dice.dtsm.Storm.StormSupervisor#getWorkerSatrtTimeout()
+	 * @see #getStormSupervisor()
 	 * @generated
 	 */
-	EAttribute getSupervisor_WorkerSatrtTimeout();
+	EAttribute getStormSupervisor_WorkerSatrtTimeout();
 
 	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.dtsm.Storm.Supervisor#getWorkerTimeout <em>Worker Timeout</em>}'.
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.dtsm.Storm.StormSupervisor#getWorkerTimeout <em>Worker Timeout</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Worker Timeout</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Storm.Supervisor#getWorkerTimeout()
-	 * @see #getSupervisor()
+	 * @see es.unizar.disco.dice.dtsm.Storm.StormSupervisor#getWorkerTimeout()
+	 * @see #getStormSupervisor()
 	 * @generated
 	 */
-	EAttribute getSupervisor_WorkerTimeout();
+	EAttribute getStormSupervisor_WorkerTimeout();
 
 	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.dtsm.Storm.Supervisor#getHeartbrackFrequency <em>Heartbrack Frequency</em>}'.
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.dtsm.Storm.StormSupervisor#getHeartbrackFrequency <em>Heartbrack Frequency</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Heartbrack Frequency</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Storm.Supervisor#getHeartbrackFrequency()
-	 * @see #getSupervisor()
+	 * @see es.unizar.disco.dice.dtsm.Storm.StormSupervisor#getHeartbrackFrequency()
+	 * @see #getStormSupervisor()
 	 * @generated
 	 */
-	EAttribute getSupervisor_HeartbrackFrequency();
+	EAttribute getStormSupervisor_HeartbrackFrequency();
 
 	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.dtsm.Storm.Supervisor#getMemoryCapacity <em>Memory Capacity</em>}'.
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.dtsm.Storm.StormSupervisor#getMemoryCapacity <em>Memory Capacity</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Memory Capacity</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Storm.Supervisor#getMemoryCapacity()
-	 * @see #getSupervisor()
+	 * @see es.unizar.disco.dice.dtsm.Storm.StormSupervisor#getMemoryCapacity()
+	 * @see #getStormSupervisor()
 	 * @generated
 	 */
-	EAttribute getSupervisor_MemoryCapacity();
+	EAttribute getStormSupervisor_MemoryCapacity();
 
 	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.dtsm.Storm.Supervisor#getCpuCapacity <em>Cpu Capacity</em>}'.
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.dtsm.Storm.StormSupervisor#getCpuCapacity <em>Cpu Capacity</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Cpu Capacity</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Storm.Supervisor#getCpuCapacity()
-	 * @see #getSupervisor()
+	 * @see es.unizar.disco.dice.dtsm.Storm.StormSupervisor#getCpuCapacity()
+	 * @see #getStormSupervisor()
 	 * @generated
 	 */
-	EAttribute getSupervisor_CpuCapacity();
+	EAttribute getStormSupervisor_CpuCapacity();
 
 	/**
-	 * Returns the meta object for the reference '{@link es.unizar.disco.dice.dtsm.Storm.Supervisor#getBase_Classifier <em>Base Classifier</em>}'.
+	 * Returns the meta object for the reference '{@link es.unizar.disco.dice.dtsm.Storm.StormSupervisor#getBase_Classifier <em>Base Classifier</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the reference '<em>Base Classifier</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Storm.Supervisor#getBase_Classifier()
-	 * @see #getSupervisor()
+	 * @see es.unizar.disco.dice.dtsm.Storm.StormSupervisor#getBase_Classifier()
+	 * @see #getStormSupervisor()
 	 * @generated
 	 */
-	EReference getSupervisor_Base_Classifier();
+	EReference getStormSupervisor_Base_Classifier();
 
 	/**
-	 * Returns the meta object for class '{@link es.unizar.disco.dice.dtsm.Storm.Zookeeper <em>Zookeeper</em>}'.
+	 * Returns the meta object for class '{@link es.unizar.disco.dice.dtsm.Storm.StormZookeeper <em>Zookeeper</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>Zookeeper</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Storm.Zookeeper
+	 * @see es.unizar.disco.dice.dtsm.Storm.StormZookeeper
 	 * @generated
 	 */
-	EClass getZookeeper();
+	EClass getStormZookeeper();
 
 	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.dtsm.Storm.Zookeeper#getSessionTimeout <em>Session Timeout</em>}'.
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.dtsm.Storm.StormZookeeper#getSessionTimeout <em>Session Timeout</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Session Timeout</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Storm.Zookeeper#getSessionTimeout()
-	 * @see #getZookeeper()
+	 * @see es.unizar.disco.dice.dtsm.Storm.StormZookeeper#getSessionTimeout()
+	 * @see #getStormZookeeper()
 	 * @generated
 	 */
-	EAttribute getZookeeper_SessionTimeout();
+	EAttribute getStormZookeeper_SessionTimeout();
 
 	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.dtsm.Storm.Zookeeper#getConnectionTimeout <em>Connection Timeout</em>}'.
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.dtsm.Storm.StormZookeeper#getConnectionTimeout <em>Connection Timeout</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Connection Timeout</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Storm.Zookeeper#getConnectionTimeout()
-	 * @see #getZookeeper()
+	 * @see es.unizar.disco.dice.dtsm.Storm.StormZookeeper#getConnectionTimeout()
+	 * @see #getStormZookeeper()
 	 * @generated
 	 */
-	EAttribute getZookeeper_ConnectionTimeout();
+	EAttribute getStormZookeeper_ConnectionTimeout();
 
 	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.dtsm.Storm.Zookeeper#getRetryTime <em>Retry Time</em>}'.
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.dtsm.Storm.StormZookeeper#getRetryTime <em>Retry Time</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Retry Time</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Storm.Zookeeper#getRetryTime()
-	 * @see #getZookeeper()
+	 * @see es.unizar.disco.dice.dtsm.Storm.StormZookeeper#getRetryTime()
+	 * @see #getStormZookeeper()
 	 * @generated
 	 */
-	EAttribute getZookeeper_RetryTime();
+	EAttribute getStormZookeeper_RetryTime();
 
 	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.dtsm.Storm.Zookeeper#getRetryInterval <em>Retry Interval</em>}'.
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.dtsm.Storm.StormZookeeper#getRetryInterval <em>Retry Interval</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Retry Interval</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Storm.Zookeeper#getRetryInterval()
-	 * @see #getZookeeper()
+	 * @see es.unizar.disco.dice.dtsm.Storm.StormZookeeper#getRetryInterval()
+	 * @see #getStormZookeeper()
 	 * @generated
 	 */
-	EAttribute getZookeeper_RetryInterval();
+	EAttribute getStormZookeeper_RetryInterval();
 
 	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.dtsm.Storm.Zookeeper#getUser <em>User</em>}'.
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.dtsm.Storm.StormZookeeper#getUser <em>User</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>User</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Storm.Zookeeper#getUser()
-	 * @see #getZookeeper()
+	 * @see es.unizar.disco.dice.dtsm.Storm.StormZookeeper#getUser()
+	 * @see #getStormZookeeper()
 	 * @generated
 	 */
-	EAttribute getZookeeper_User();
+	EAttribute getStormZookeeper_User();
 
 	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.dtsm.Storm.Zookeeper#getPassword <em>Password</em>}'.
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.dtsm.Storm.StormZookeeper#getPassword <em>Password</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Password</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Storm.Zookeeper#getPassword()
-	 * @see #getZookeeper()
+	 * @see es.unizar.disco.dice.dtsm.Storm.StormZookeeper#getPassword()
+	 * @see #getStormZookeeper()
 	 * @generated
 	 */
-	EAttribute getZookeeper_Password();
+	EAttribute getStormZookeeper_Password();
 
 	/**
-	 * Returns the meta object for the reference '{@link es.unizar.disco.dice.dtsm.Storm.Zookeeper#getBase_Classifier <em>Base Classifier</em>}'.
+	 * Returns the meta object for the reference '{@link es.unizar.disco.dice.dtsm.Storm.StormZookeeper#getBase_Classifier <em>Base Classifier</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the reference '<em>Base Classifier</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Storm.Zookeeper#getBase_Classifier()
-	 * @see #getZookeeper()
+	 * @see es.unizar.disco.dice.dtsm.Storm.StormZookeeper#getBase_Classifier()
+	 * @see #getStormZookeeper()
 	 * @generated
 	 */
-	EReference getZookeeper_Base_Classifier();
+	EReference getStormZookeeper_Base_Classifier();
 
 	/**
 	 * Returns the meta object for class '{@link es.unizar.disco.dice.dtsm.Storm.StormStreamStep <em>Stream Step</em>}'.
@@ -2730,14 +3450,14 @@ public interface StormPackage extends EPackage {
 		EReference STORM_APPLICATION__DEPENDS_ON_ZOOKEEPER = eINSTANCE.getStormApplication_DependsOnZookeeper();
 
 		/**
-		 * The meta object literal for the '{@link es.unizar.disco.dice.dtsm.Storm.impl.NimbusImpl <em>Nimbus</em>}' class.
+		 * The meta object literal for the '{@link es.unizar.disco.dice.dtsm.Storm.impl.StormNimbusImpl <em>Nimbus</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see es.unizar.disco.dice.dtsm.Storm.impl.NimbusImpl
-		 * @see es.unizar.disco.dice.dtsm.Storm.impl.StormPackageImpl#getNimbus()
+		 * @see es.unizar.disco.dice.dtsm.Storm.impl.StormNimbusImpl
+		 * @see es.unizar.disco.dice.dtsm.Storm.impl.StormPackageImpl#getStormNimbus()
 		 * @generated
 		 */
-		EClass NIMBUS = eINSTANCE.getNimbus();
+		EClass STORM_NIMBUS = eINSTANCE.getStormNimbus();
 
 		/**
 		 * The meta object literal for the '<em><b>Task Timeout</b></em>' attribute feature.
@@ -2745,7 +3465,7 @@ public interface StormPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute NIMBUS__TASK_TIMEOUT = eINSTANCE.getNimbus_TaskTimeout();
+		EAttribute STORM_NIMBUS__TASK_TIMEOUT = eINSTANCE.getStormNimbus_TaskTimeout();
 
 		/**
 		 * The meta object literal for the '<em><b>Supervisor Timeout</b></em>' attribute feature.
@@ -2753,7 +3473,7 @@ public interface StormPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute NIMBUS__SUPERVISOR_TIMEOUT = eINSTANCE.getNimbus_SupervisorTimeout();
+		EAttribute STORM_NIMBUS__SUPERVISOR_TIMEOUT = eINSTANCE.getStormNimbus_SupervisorTimeout();
 
 		/**
 		 * The meta object literal for the '<em><b>Monitor Frequency</b></em>' attribute feature.
@@ -2761,7 +3481,7 @@ public interface StormPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute NIMBUS__MONITOR_FREQUENCY = eINSTANCE.getNimbus_MonitorFrequency();
+		EAttribute STORM_NIMBUS__MONITOR_FREQUENCY = eINSTANCE.getStormNimbus_MonitorFrequency();
 
 		/**
 		 * The meta object literal for the '<em><b>Base Classifier</b></em>' reference feature.
@@ -2769,17 +3489,17 @@ public interface StormPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference NIMBUS__BASE_CLASSIFIER = eINSTANCE.getNimbus_Base_Classifier();
+		EReference STORM_NIMBUS__BASE_CLASSIFIER = eINSTANCE.getStormNimbus_Base_Classifier();
 
 		/**
-		 * The meta object literal for the '{@link es.unizar.disco.dice.dtsm.Storm.impl.SupervisorImpl <em>Supervisor</em>}' class.
+		 * The meta object literal for the '{@link es.unizar.disco.dice.dtsm.Storm.impl.StormSupervisorImpl <em>Supervisor</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see es.unizar.disco.dice.dtsm.Storm.impl.SupervisorImpl
-		 * @see es.unizar.disco.dice.dtsm.Storm.impl.StormPackageImpl#getSupervisor()
+		 * @see es.unizar.disco.dice.dtsm.Storm.impl.StormSupervisorImpl
+		 * @see es.unizar.disco.dice.dtsm.Storm.impl.StormPackageImpl#getStormSupervisor()
 		 * @generated
 		 */
-		EClass SUPERVISOR = eINSTANCE.getSupervisor();
+		EClass STORM_SUPERVISOR = eINSTANCE.getStormSupervisor();
 
 		/**
 		 * The meta object literal for the '<em><b>Monitro Frequency</b></em>' attribute feature.
@@ -2787,7 +3507,7 @@ public interface StormPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute SUPERVISOR__MONITRO_FREQUENCY = eINSTANCE.getSupervisor_MonitroFrequency();
+		EAttribute STORM_SUPERVISOR__MONITRO_FREQUENCY = eINSTANCE.getStormSupervisor_MonitroFrequency();
 
 		/**
 		 * The meta object literal for the '<em><b>Worker Satrt Timeout</b></em>' attribute feature.
@@ -2795,7 +3515,7 @@ public interface StormPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute SUPERVISOR__WORKER_SATRT_TIMEOUT = eINSTANCE.getSupervisor_WorkerSatrtTimeout();
+		EAttribute STORM_SUPERVISOR__WORKER_SATRT_TIMEOUT = eINSTANCE.getStormSupervisor_WorkerSatrtTimeout();
 
 		/**
 		 * The meta object literal for the '<em><b>Worker Timeout</b></em>' attribute feature.
@@ -2803,7 +3523,7 @@ public interface StormPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute SUPERVISOR__WORKER_TIMEOUT = eINSTANCE.getSupervisor_WorkerTimeout();
+		EAttribute STORM_SUPERVISOR__WORKER_TIMEOUT = eINSTANCE.getStormSupervisor_WorkerTimeout();
 
 		/**
 		 * The meta object literal for the '<em><b>Heartbrack Frequency</b></em>' attribute feature.
@@ -2811,7 +3531,7 @@ public interface StormPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute SUPERVISOR__HEARTBRACK_FREQUENCY = eINSTANCE.getSupervisor_HeartbrackFrequency();
+		EAttribute STORM_SUPERVISOR__HEARTBRACK_FREQUENCY = eINSTANCE.getStormSupervisor_HeartbrackFrequency();
 
 		/**
 		 * The meta object literal for the '<em><b>Memory Capacity</b></em>' attribute feature.
@@ -2819,7 +3539,7 @@ public interface StormPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute SUPERVISOR__MEMORY_CAPACITY = eINSTANCE.getSupervisor_MemoryCapacity();
+		EAttribute STORM_SUPERVISOR__MEMORY_CAPACITY = eINSTANCE.getStormSupervisor_MemoryCapacity();
 
 		/**
 		 * The meta object literal for the '<em><b>Cpu Capacity</b></em>' attribute feature.
@@ -2827,7 +3547,7 @@ public interface StormPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute SUPERVISOR__CPU_CAPACITY = eINSTANCE.getSupervisor_CpuCapacity();
+		EAttribute STORM_SUPERVISOR__CPU_CAPACITY = eINSTANCE.getStormSupervisor_CpuCapacity();
 
 		/**
 		 * The meta object literal for the '<em><b>Base Classifier</b></em>' reference feature.
@@ -2835,17 +3555,17 @@ public interface StormPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SUPERVISOR__BASE_CLASSIFIER = eINSTANCE.getSupervisor_Base_Classifier();
+		EReference STORM_SUPERVISOR__BASE_CLASSIFIER = eINSTANCE.getStormSupervisor_Base_Classifier();
 
 		/**
-		 * The meta object literal for the '{@link es.unizar.disco.dice.dtsm.Storm.impl.ZookeeperImpl <em>Zookeeper</em>}' class.
+		 * The meta object literal for the '{@link es.unizar.disco.dice.dtsm.Storm.impl.StormZookeeperImpl <em>Zookeeper</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see es.unizar.disco.dice.dtsm.Storm.impl.ZookeeperImpl
-		 * @see es.unizar.disco.dice.dtsm.Storm.impl.StormPackageImpl#getZookeeper()
+		 * @see es.unizar.disco.dice.dtsm.Storm.impl.StormZookeeperImpl
+		 * @see es.unizar.disco.dice.dtsm.Storm.impl.StormPackageImpl#getStormZookeeper()
 		 * @generated
 		 */
-		EClass ZOOKEEPER = eINSTANCE.getZookeeper();
+		EClass STORM_ZOOKEEPER = eINSTANCE.getStormZookeeper();
 
 		/**
 		 * The meta object literal for the '<em><b>Session Timeout</b></em>' attribute feature.
@@ -2853,7 +3573,7 @@ public interface StormPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute ZOOKEEPER__SESSION_TIMEOUT = eINSTANCE.getZookeeper_SessionTimeout();
+		EAttribute STORM_ZOOKEEPER__SESSION_TIMEOUT = eINSTANCE.getStormZookeeper_SessionTimeout();
 
 		/**
 		 * The meta object literal for the '<em><b>Connection Timeout</b></em>' attribute feature.
@@ -2861,7 +3581,7 @@ public interface StormPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute ZOOKEEPER__CONNECTION_TIMEOUT = eINSTANCE.getZookeeper_ConnectionTimeout();
+		EAttribute STORM_ZOOKEEPER__CONNECTION_TIMEOUT = eINSTANCE.getStormZookeeper_ConnectionTimeout();
 
 		/**
 		 * The meta object literal for the '<em><b>Retry Time</b></em>' attribute feature.
@@ -2869,7 +3589,7 @@ public interface StormPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute ZOOKEEPER__RETRY_TIME = eINSTANCE.getZookeeper_RetryTime();
+		EAttribute STORM_ZOOKEEPER__RETRY_TIME = eINSTANCE.getStormZookeeper_RetryTime();
 
 		/**
 		 * The meta object literal for the '<em><b>Retry Interval</b></em>' attribute feature.
@@ -2877,7 +3597,7 @@ public interface StormPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute ZOOKEEPER__RETRY_INTERVAL = eINSTANCE.getZookeeper_RetryInterval();
+		EAttribute STORM_ZOOKEEPER__RETRY_INTERVAL = eINSTANCE.getStormZookeeper_RetryInterval();
 
 		/**
 		 * The meta object literal for the '<em><b>User</b></em>' attribute feature.
@@ -2885,7 +3605,7 @@ public interface StormPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute ZOOKEEPER__USER = eINSTANCE.getZookeeper_User();
+		EAttribute STORM_ZOOKEEPER__USER = eINSTANCE.getStormZookeeper_User();
 
 		/**
 		 * The meta object literal for the '<em><b>Password</b></em>' attribute feature.
@@ -2893,7 +3613,7 @@ public interface StormPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute ZOOKEEPER__PASSWORD = eINSTANCE.getZookeeper_Password();
+		EAttribute STORM_ZOOKEEPER__PASSWORD = eINSTANCE.getStormZookeeper_Password();
 
 		/**
 		 * The meta object literal for the '<em><b>Base Classifier</b></em>' reference feature.
@@ -2901,7 +3621,7 @@ public interface StormPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ZOOKEEPER__BASE_CLASSIFIER = eINSTANCE.getZookeeper_Base_Classifier();
+		EReference STORM_ZOOKEEPER__BASE_CLASSIFIER = eINSTANCE.getStormZookeeper_Base_Classifier();
 
 		/**
 		 * The meta object literal for the '{@link es.unizar.disco.dice.dtsm.Storm.impl.StormStreamStepImpl <em>Stream Step</em>}' class.

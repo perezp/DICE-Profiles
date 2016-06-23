@@ -64,7 +64,7 @@ public interface StormFactory extends EFactory {
 	 * @return a new object of class '<em>Nimbus</em>'.
 	 * @generated
 	 */
-	Nimbus createNimbus();
+	StormNimbus createStormNimbus();
 
 	/**
 	 * Returns a new object of class '<em>Supervisor</em>'.
@@ -73,7 +73,7 @@ public interface StormFactory extends EFactory {
 	 * @return a new object of class '<em>Supervisor</em>'.
 	 * @generated
 	 */
-	Supervisor createSupervisor();
+	StormSupervisor createStormSupervisor();
 
 	/**
 	 * Returns a new object of class '<em>Zookeeper</em>'.
@@ -82,7 +82,7 @@ public interface StormFactory extends EFactory {
 	 * @return a new object of class '<em>Zookeeper</em>'.
 	 * @generated
 	 */
-	Zookeeper createZookeeper();
+	StormZookeeper createStormZookeeper();
 
 	/**
 	 * Returns a new object of class '<em>Stream Step</em>'.

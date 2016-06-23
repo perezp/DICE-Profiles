@@ -18,6 +18,7 @@ import org.eclipse.emf.common.notify.impl.AdapterFactoryImpl;
 import org.eclipse.emf.ecore.EObject;
 
 import org.eclipse.papyrus.MARTE.MARTE_AnalysisModel.GQAM.GaScenario;
+import org.eclipse.papyrus.MARTE.MARTE_AnalysisModel.GQAM.GaStep;
 
 import org.eclipse.papyrus.MARTE.MARTE_Foundations.GRM.Resource;
 import org.eclipse.papyrus.MARTE.MARTE_Foundations.GRM.ResourceUsage;
@@ -145,6 +146,10 @@ public class CoreAdapterFactory extends AdapterFactoryImpl {
 			@Override
 			public Adapter caseGaScenario(GaScenario object) {
 				return createGaScenarioAdapter();
+			}
+			@Override
+			public Adapter caseGaStep(GaStep object) {
+				return createGaStepAdapter();
 			}
 			@Override
 			public Adapter caseDpimSourceNode(DpimSourceNode object) {
@@ -391,6 +396,20 @@ public class CoreAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createGaScenarioAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.eclipse.papyrus.MARTE.MARTE_AnalysisModel.GQAM.GaStep <em>Ga Step</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.eclipse.papyrus.MARTE.MARTE_AnalysisModel.GQAM.GaStep
+	 * @generated
+	 */
+	public Adapter createGaStepAdapter() {
 		return null;
 	}
 

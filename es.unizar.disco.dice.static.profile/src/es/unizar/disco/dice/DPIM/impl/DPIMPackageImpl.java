@@ -17,7 +17,9 @@ import es.unizar.disco.dice.Basic_Enumeration_Types.impl.Basic_Enumeration_Types
 import es.unizar.disco.dice.Complex_Data_Types.impl.Complex_Data_TypesPackageImpl;
 
 import es.unizar.disco.dice.DICE.DICEPackage;
+
 import es.unizar.disco.dice.DICE.impl.DICEPackageImpl;
+
 import es.unizar.disco.dice.DPIM.DPIMFactory;
 import es.unizar.disco.dice.DPIM.DPIMPackage;
 import es.unizar.disco.dice.DPIM.DpimChannel;
@@ -215,7 +217,7 @@ public class DPIMPackageImpl extends EPackageImpl implements DPIMPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDpimComputationNode_Throughput() {
+	public EAttribute getDpimComputationNode_NodeThroughput() {
 		return (EAttribute)dpimComputationNodeEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -428,7 +430,7 @@ public class DPIMPackageImpl extends EPackageImpl implements DPIMPackage {
 
 		// Create classes and their features
 		dpimComputationNodeEClass = createEClass(DPIM_COMPUTATION_NODE);
-		createEAttribute(dpimComputationNodeEClass, DPIM_COMPUTATION_NODE__THROUGHPUT);
+		createEAttribute(dpimComputationNodeEClass, DPIM_COMPUTATION_NODE__NODE_THROUGHPUT);
 		createEAttribute(dpimComputationNodeEClass, DPIM_COMPUTATION_NODE__TYPE);
 		createEAttribute(dpimComputationNodeEClass, DPIM_COMPUTATION_NODE__TARGET_TECH);
 		createEAttribute(dpimComputationNodeEClass, DPIM_COMPUTATION_NODE__PROC_TYPE);
@@ -504,7 +506,7 @@ public class DPIMPackageImpl extends EPackageImpl implements DPIMPackage {
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(dpimComputationNodeEClass, DpimComputationNode.class, "DpimComputationNode", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getDpimComputationNode_Throughput(), theBasicNFP_TypesPackage.getNFP_Frequency(), "throughput", null, 0, 1, DpimComputationNode.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDpimComputationNode_NodeThroughput(), theBasicNFP_TypesPackage.getNFP_Frequency(), "nodeThroughput", null, 0, 1, DpimComputationNode.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getDpimComputationNode_Type(), theBasic_Enumeration_TypesPackage_1.getComputationType(), "type", null, 0, 1, DpimComputationNode.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getDpimComputationNode_TargetTech(), theBasic_Enumeration_TypesPackage_1.getTechType(), "targetTech", null, 0, 1, DpimComputationNode.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getDpimComputationNode_ProcType(), theBasic_Enumeration_TypesPackage_1.getProcessingType(), "procType", null, 0, 1, DpimComputationNode.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
