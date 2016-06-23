@@ -16,7 +16,7 @@
           <generalization xmi:type="uml:Generalization" xmi:id="_VmeK4OejEeWj7ZPL8JeBTQ">
             <general xmi:type="uml:Stereotype" href="pathmap://DAM_PROFILES/DAM.profile.uml#_2vT30OPWEeKfvsJiOXhpew"/>
           </generalization>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_-6MKwOejEeWj7ZPL8JeBTQ" name="throughput">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_-6MKwOejEeWj7ZPL8JeBTQ" name="nodeThroughput">
             <type xmi:type="uml:DataType" href="pathmap://Papyrus_LIBRARIES/MARTE_Library.library.uml#_UDZSQBFSEdyUJeMeN__D-A"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_J-JAYOekEeWj7ZPL8JeBTQ"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_J-MDsOekEeWj7ZPL8JeBTQ" value="1"/>
@@ -290,7 +290,7 @@
               <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__BzJ0DiQEeaFI4EbHcf0UA" value="1"/>
             </ownedAttribute>
           </packagedElement>
-          <packagedElement xmi:type="uml:Stereotype" xmi:id="_TIr-ICpwEeaibdPncpUwfA" name="Nimbus">
+          <packagedElement xmi:type="uml:Stereotype" xmi:id="_TIr-ICpwEeaibdPncpUwfA" name="StormNimbus">
             <ownedAttribute xmi:type="uml:Property" xmi:id="_b3k_kCveEeaY443vSxM6kg" name="taskTimeout">
               <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_C7rlcDiREeaFI4EbHcf0UA"/>
@@ -310,7 +310,7 @@
               <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Classifier"/>
             </ownedAttribute>
           </packagedElement>
-          <packagedElement xmi:type="uml:Stereotype" xmi:id="_TpGjkCpwEeaibdPncpUwfA" name="Supervisor">
+          <packagedElement xmi:type="uml:Stereotype" xmi:id="_TpGjkCpwEeaibdPncpUwfA" name="StormSupervisor">
             <ownedAttribute xmi:type="uml:Property" xmi:id="_DzKLACvjEeaY443vSxM6kg" name="monitroFrequency">
               <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ag92gDiREeaFI4EbHcf0UA"/>
@@ -345,7 +345,7 @@
               <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Classifier"/>
             </ownedAttribute>
           </packagedElement>
-          <packagedElement xmi:type="uml:Stereotype" xmi:id="_04nNgDQVEeaZAvb3skSphQ" name="Zookeeper">
+          <packagedElement xmi:type="uml:Stereotype" xmi:id="_04nNgDQVEeaZAvb3skSphQ" name="StormZookeeper">
             <ownedAttribute xmi:type="uml:Property" xmi:id="_-4Km4DQVEeaZAvb3skSphQ" name="sessionTimeout">
               <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Eozv0DQWEeaZAvb3skSphQ"/>
@@ -380,14 +380,14 @@
               <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Classifier"/>
             </ownedAttribute>
           </packagedElement>
-          <packagedElement xmi:type="uml:Extension" xmi:id="_MJ4MoDiMEeaFI4EbHcf0UA" name="E_Nimbus_Classifier1" memberEnd="_MJ6B0DiMEeaFI4EbHcf0UA _MJ6o4DiMEeaFI4EbHcf0UA">
-            <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_MJ6B0DiMEeaFI4EbHcf0UA" name="extension_Nimbus" type="_TIr-ICpwEeaibdPncpUwfA" aggregation="composite" association="_MJ4MoDiMEeaFI4EbHcf0UA"/>
+          <packagedElement xmi:type="uml:Extension" xmi:id="_MJ4MoDiMEeaFI4EbHcf0UA" name="E_StormNimbus_Classifier1" memberEnd="_MJ6B0DiMEeaFI4EbHcf0UA _MJ6o4DiMEeaFI4EbHcf0UA">
+            <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_MJ6B0DiMEeaFI4EbHcf0UA" name="extension_StormNimbus" type="_TIr-ICpwEeaibdPncpUwfA" aggregation="composite" association="_MJ4MoDiMEeaFI4EbHcf0UA"/>
           </packagedElement>
-          <packagedElement xmi:type="uml:Extension" xmi:id="_MqKPMDiMEeaFI4EbHcf0UA" name="E_Supervisor_Classifier1" memberEnd="_MqK2QDiMEeaFI4EbHcf0UA _MqK2QTiMEeaFI4EbHcf0UA">
-            <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_MqK2QDiMEeaFI4EbHcf0UA" name="extension_Supervisor" type="_TpGjkCpwEeaibdPncpUwfA" aggregation="composite" association="_MqKPMDiMEeaFI4EbHcf0UA"/>
+          <packagedElement xmi:type="uml:Extension" xmi:id="_MqKPMDiMEeaFI4EbHcf0UA" name="E_StormSupervisor_Classifier1" memberEnd="_MqK2QDiMEeaFI4EbHcf0UA _MqK2QTiMEeaFI4EbHcf0UA">
+            <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_MqK2QDiMEeaFI4EbHcf0UA" name="extension_StormSupervisor" type="_TpGjkCpwEeaibdPncpUwfA" aggregation="composite" association="_MqKPMDiMEeaFI4EbHcf0UA"/>
           </packagedElement>
-          <packagedElement xmi:type="uml:Extension" xmi:id="_NNWb0DiMEeaFI4EbHcf0UA" name="E_Zookeeper_Classifier1" memberEnd="_NNWb0TiMEeaFI4EbHcf0UA _NNXC4DiMEeaFI4EbHcf0UA">
-            <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_NNWb0TiMEeaFI4EbHcf0UA" name="extension_Zookeeper" type="_04nNgDQVEeaZAvb3skSphQ" aggregation="composite" association="_NNWb0DiMEeaFI4EbHcf0UA"/>
+          <packagedElement xmi:type="uml:Extension" xmi:id="_NNWb0DiMEeaFI4EbHcf0UA" name="E_StormZookeeper_Classifier1" memberEnd="_NNWb0TiMEeaFI4EbHcf0UA _NNXC4DiMEeaFI4EbHcf0UA">
+            <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_NNWb0TiMEeaFI4EbHcf0UA" name="extension_StormZookeeper" type="_04nNgDQVEeaZAvb3skSphQ" aggregation="composite" association="_NNWb0DiMEeaFI4EbHcf0UA"/>
           </packagedElement>
           <packagedElement xmi:type="uml:Stereotype" xmi:id="_OjgEgDiOEeaFI4EbHcf0UA" name="StormStreamStep">
             <generalization xmi:type="uml:Generalization" xmi:id="_1u-wEDiPEeaFI4EbHcf0UA">

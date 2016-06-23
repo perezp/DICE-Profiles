@@ -1614,7 +1614,7 @@
     </edges>
     <edges xmi:type="notation:Connector" xmi:id="_rrxKYDSMEeaS5Mns13NsQg" type="4002" source="_VxJGIDSMEeaS5Mns13NsQg" target="_VwxSsDSMEeaS5Mns13NsQg" routing="Rectilinear">
       <children xmi:type="notation:DecorationNode" xmi:id="_rrxKYzSMEeaS5Mns13NsQg" type="6007">
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_rrxKZDSMEeaS5Mns13NsQg" y="60"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_rrxKZDSMEeaS5Mns13NsQg" x="52" y="27"/>
       </children>
       <styles xmi:type="notation:FontStyle" xmi:id="_rrxKYTSMEeaS5Mns13NsQg"/>
       <element xmi:type="uml:Generalization" href="DICE.profile.uml#_V7slEClvEeaibdPncpUwfA"/>
