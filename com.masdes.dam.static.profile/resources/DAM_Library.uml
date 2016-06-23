@@ -3,7 +3,7 @@
   <uml:Package xmi:id="_dYZGQOI-EeKRk-i8_Z91aQ" name="DAM_Library">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_11GCMO1hEeK7tq1KLgdlqA" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
     <packagedElement xmi:type="uml:Package" xmi:id="_AA8ZMOJAEeKRk-i8_Z91aQ" name="Basic_DA_Types">
-      <packagedElement xmi:type="uml:Package" xmi:id="_u647gOMhEeKpXO-aU5uALA" name="Enumeration_Types">
+      <packagedElement xmi:type="uml:Profile" xmi:id="_u647gOMhEeKpXO-aU5uALA" name="Enumeration_Types">
         <packagedElement xmi:type="uml:Enumeration" xmi:id="_fDERwOMiEeKpXO-aU5uALA" name="DaFrequencyUnitKind">
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_kW6xAOMiEeKpXO-aU5uALA" name="ft_s"/>
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_aveqwOMkEeKpXO-aU5uALA" name="ft_ms"/>
@@ -141,7 +141,7 @@
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_4AS04Oo0EeKc9NXl55bCKA" name="incompetence"/>
         </packagedElement>
       </packagedElement>
-      <packagedElement xmi:type="uml:Package" xmi:id="_OOOL0OMzEeK2x-cjwHbYGg" name="Data_Types">
+      <packagedElement xmi:type="uml:Profile" xmi:id="_OOOL0OMzEeK2x-cjwHbYGg" name="Data_Types">
         <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_n06SIOMzEeK2x-cjwHbYGg" name="DaFrequency">
           <generalization xmi:type="uml:Generalization" xmi:id="_2DsXoGuCEeWuyN14ri69MA">
             <general xmi:type="uml:DataType" href="pathmap://Papyrus_LIBRARIES/MARTE_Library.library.uml#_Yq-MQBFQEdyUJeMeN__D-A"/>
@@ -213,7 +213,7 @@
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_ux5PAOMKEeKpXO-aU5uALA" name="Complex_DA_Types">
-      <packagedElement xmi:type="uml:Package" xmi:id="_-D83AOO-EeKfhZ42b6AKfg" name="Data_Types">
+      <packagedElement xmi:type="uml:Profile" xmi:id="_-D83AOO-EeKfhZ42b6AKfg" name="Data_Types">
         <packagedElement xmi:type="uml:DataType" xmi:id="_UQBQkOO_EeKfhZ42b6AKfg" name="DaError">
           <ownedAttribute xmi:type="uml:Property" xmi:id="_lRzWkOO_EeKfhZ42b6AKfg" name="latency" visibility="public">
             <type xmi:type="uml:DataType" href="pathmap://Papyrus_LIBRARIES/MARTE_Library.library.uml#_kMwX8BFREdyUJeMeN__D-A"/>

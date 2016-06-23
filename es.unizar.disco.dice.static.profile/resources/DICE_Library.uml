@@ -5,7 +5,7 @@
       <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
     </packageImport>
     <packagedElement xmi:type="uml:Package" xmi:id="_-1XS8OeUEeWj7ZPL8JeBTQ" name="Basic_DICE_Types">
-      <packagedElement xmi:type="uml:Package" xmi:id="_diCmMOeWEeWj7ZPL8JeBTQ" name="Enumeration_Types">
+      <packagedElement xmi:type="uml:Profile" xmi:id="_diCmMOeWEeWj7ZPL8JeBTQ" name="Enumeration_Types">
         <packagedElement xmi:type="uml:Enumeration" xmi:id="_zcttwOeWEeWj7ZPL8JeBTQ" name="ComputationType">
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_1lRVsOeWEeWj7ZPL8JeBTQ" name="distributed"/>
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_2PnTMOeWEeWj7ZPL8JeBTQ" name="parallel"/>
@@ -75,7 +75,7 @@
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_SaOdcDiZEeaFI4EbHcf0UA" name="fair"/>
         </packagedElement>
       </packagedElement>
-      <packagedElement xmi:type="uml:Package" xmi:id="_yQjxwOeYEeWj7ZPL8JeBTQ" name="Data_Types">
+      <packagedElement xmi:type="uml:Profile" xmi:id="_yQjxwOeYEeWj7ZPL8JeBTQ" name="Data_Types">
         <packagedElement xmi:type="uml:DataType" xmi:id="_KyBsgC5SEeaF_sH3mLTVKg" name="NFP_Privacy">
           <ownedAttribute xmi:type="uml:Property" xmi:id="_pbLAEC5SEeaF_sH3mLTVKg" name="expr">
             <type xmi:type="uml:PrimitiveType" href="pathmap://Papyrus_PROFILES/MARTE_Library.library.uml#_bManMBEBEdyx6M3BlUjlCQ"/>
@@ -87,7 +87,7 @@
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_8J84wOeYEeWj7ZPL8JeBTQ" name="Complex_DICE_Types">
-      <packagedElement xmi:type="uml:Package" xmi:id="_GunKUOeZEeWj7ZPL8JeBTQ" name="Data_Types">
+      <packagedElement xmi:type="uml:Profile" xmi:id="_GunKUOeZEeWj7ZPL8JeBTQ" name="Data_Types">
         <packagedElement xmi:type="uml:DataType" xmi:id="_avs9QOedEeWj7ZPL8JeBTQ" name="DiceDataVolume">
           <ownedAttribute xmi:type="uml:Property" xmi:id="_nA96kOedEeWj7ZPL8JeBTQ" name="volume">
             <type xmi:type="uml:DataType" href="pathmap://Papyrus_PROFILES/MARTE_Library.library.uml#_5LrMcBFSEdyUJeMeN__D-A"/>

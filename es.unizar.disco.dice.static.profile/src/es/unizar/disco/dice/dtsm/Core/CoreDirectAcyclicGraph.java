@@ -20,7 +20,7 @@ import org.eclipse.papyrus.MARTE.MARTE_AnalysisModel.GQAM.GaScenario;
  * </ul>
  *
  * @see es.unizar.disco.dice.dtsm.Core.CorePackage#getCoreDirectAcyclicGraph()
- * @model
+ * @model abstract="true"
  * @generated
  */
 public interface CoreDirectAcyclicGraph extends GaScenario {

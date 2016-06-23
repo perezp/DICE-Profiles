@@ -107,7 +107,7 @@ import org.eclipse.uml2.uml.Property;
  *
  * @generated
  */
-public class CoreDAGNodeImpl extends GaStepImpl implements CoreDAGNode {
+public abstract class CoreDAGNodeImpl extends GaStepImpl implements CoreDAGNode {
 	/**
 	 * The default value of the '{@link #getResMult() <em>Res Mult</em>}' attribute.
 	 * <!-- begin-user-doc -->

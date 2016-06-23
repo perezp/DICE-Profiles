@@ -35,7 +35,7 @@ import org.eclipse.papyrus.MARTE.MARTE_AnalysisModel.GQAM.impl.GaScenarioImpl;
  *
  * @generated
  */
-public class CoreDirectAcyclicGraphImpl extends GaScenarioImpl implements CoreDirectAcyclicGraph {
+public abstract class CoreDirectAcyclicGraphImpl extends GaScenarioImpl implements CoreDirectAcyclicGraph {
 	/**
 	 * The cached value of the '{@link #getHasSourceNode() <em>Has Source Node</em>}' reference list.
 	 * <!-- begin-user-doc -->

@@ -16,7 +16,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class CoreDataSourceImpl extends DpimStorageNodeImpl implements CoreDataSource {
+public abstract class CoreDataSourceImpl extends DpimStorageNodeImpl implements CoreDataSource {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

@@ -25,7 +25,7 @@ import org.eclipse.emf.ecore.EObject;
  * </ul>
  *
  * @see es.unizar.disco.dice.dtsm.Core.CorePackage#getCoreData()
- * @model
+ * @model abstract="true"
  * @generated
  */
 public interface CoreData extends EObject {

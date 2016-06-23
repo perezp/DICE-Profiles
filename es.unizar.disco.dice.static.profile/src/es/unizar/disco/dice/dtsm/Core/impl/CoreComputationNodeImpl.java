@@ -38,7 +38,7 @@ import org.eclipse.emf.ecore.util.EObjectResolvingEList;
  *
  * @generated
  */
-public class CoreComputationNodeImpl extends DpimComputationNodeImpl implements CoreComputationNode {
+public abstract class CoreComputationNodeImpl extends DpimComputationNodeImpl implements CoreComputationNode {
 	/**
 	 * The cached value of the '{@link #getHasSuccessor() <em>Has Successor</em>}' reference list.
 	 * <!-- begin-user-doc -->

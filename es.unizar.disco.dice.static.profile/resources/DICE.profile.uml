@@ -122,7 +122,7 @@
           <elementImport xmi:type="uml:ElementImport" xmi:id="_pnK3ACpoEeaibdPncpUwfA" alias="Class">
             <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Class"/>
           </elementImport>
-          <packagedElement xmi:type="uml:Stereotype" xmi:id="_lG6AcCluEeaibdPncpUwfA" name="CoreComputationNode">
+          <packagedElement xmi:type="uml:Stereotype" xmi:id="_lG6AcCluEeaibdPncpUwfA" name="CoreComputationNode" isAbstract="true">
             <generalization xmi:type="uml:Generalization" xmi:id="_hwLz4C5eEeaF_sH3mLTVKg" general="_C9h50OejEeWj7ZPL8JeBTQ"/>
             <ownedAttribute xmi:type="uml:Property" xmi:id="_oWUlECpmEeaibdPncpUwfA" name="hasSuccessor" type="_lG6AcCluEeaibdPncpUwfA">
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qSL00CpmEeaibdPncpUwfA"/>
@@ -138,10 +138,10 @@
               <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1wC34CppEeaibdPncpUwfA" value="*"/>
             </ownedAttribute>
           </packagedElement>
-          <packagedElement xmi:type="uml:Stereotype" xmi:id="_r1_uoCluEeaibdPncpUwfA" name="CoreDataSource">
+          <packagedElement xmi:type="uml:Stereotype" xmi:id="_r1_uoCluEeaibdPncpUwfA" name="CoreDataSource" isAbstract="true">
             <generalization xmi:type="uml:Generalization" xmi:id="_bSmP8C5fEeaF_sH3mLTVKg" general="_kiO_kOejEeWj7ZPL8JeBTQ"/>
           </packagedElement>
-          <packagedElement xmi:type="uml:Stereotype" xmi:id="_slNlECluEeaibdPncpUwfA" name="CoreStorageNode">
+          <packagedElement xmi:type="uml:Stereotype" xmi:id="_slNlECluEeaibdPncpUwfA" name="CoreStorageNode" isAbstract="true">
             <generalization xmi:type="uml:Generalization" xmi:id="_V7slEClvEeaibdPncpUwfA" general="_r1_uoCluEeaibdPncpUwfA"/>
             <ownedAttribute xmi:type="uml:Property" xmi:id="_Pn4j8Co7EeaibdPncpUwfA" name="database">
               <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
@@ -153,7 +153,7 @@
               <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
             </ownedAttribute>
           </packagedElement>
-          <packagedElement xmi:type="uml:Stereotype" xmi:id="_2HB5kCluEeaibdPncpUwfA" name="CoreDirectAcyclicGraph">
+          <packagedElement xmi:type="uml:Stereotype" xmi:id="_2HB5kCluEeaibdPncpUwfA" name="CoreDirectAcyclicGraph" isAbstract="true">
             <generalization xmi:type="uml:Generalization" xmi:id="_LnTawC5qEeaF_sH3mLTVKg">
               <general xmi:type="uml:Stereotype" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_XYaMIBKYEdyGYuetzx6T5A"/>
             </generalization>
@@ -165,7 +165,7 @@
               <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Class"/>
             </ownedAttribute>
           </packagedElement>
-          <packagedElement xmi:type="uml:Stereotype" xmi:id="_8x7EQCluEeaibdPncpUwfA" name="CoreDAGNode">
+          <packagedElement xmi:type="uml:Stereotype" xmi:id="_8x7EQCluEeaibdPncpUwfA" name="CoreDAGNode" isAbstract="true">
             <generalization xmi:type="uml:Generalization" xmi:id="_siEzsC5fEeaF_sH3mLTVKg" general="_iCtCEOejEeWj7ZPL8JeBTQ"/>
             <generalization xmi:type="uml:Generalization" xmi:id="_DlxcAC5kEeaF_sH3mLTVKg">
               <general xmi:type="uml:Stereotype" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_eXMtwBKZEdyGYuetzx6T5A"/>
@@ -181,14 +181,14 @@
               <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rTfLsCpkEeaibdPncpUwfA" value="*"/>
             </ownedAttribute>
           </packagedElement>
-          <packagedElement xmi:type="uml:Stereotype" xmi:id="_9mn3oCluEeaibdPncpUwfA" name="CoreDAGSourceNode">
+          <packagedElement xmi:type="uml:Stereotype" xmi:id="_9mn3oCluEeaibdPncpUwfA" name="CoreDAGSourceNode" isAbstract="true">
             <generalization xmi:type="uml:Generalization" xmi:id="_CjRW8CpjEeaibdPncpUwfA" general="_8x7EQCluEeaibdPncpUwfA"/>
             <ownedAttribute xmi:type="uml:Property" xmi:id="_IEueQCpsEeaibdPncpUwfA" name="readFrom" type="_r1_uoCluEeaibdPncpUwfA">
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QH5DcCpsEeaibdPncpUwfA" value="1"/>
               <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QH6RkCpsEeaibdPncpUwfA" value="*"/>
             </ownedAttribute>
           </packagedElement>
-          <packagedElement xmi:type="uml:Stereotype" xmi:id="_KUZx0ClvEeaibdPncpUwfA" name="CoreData">
+          <packagedElement xmi:type="uml:Stereotype" xmi:id="_KUZx0ClvEeaibdPncpUwfA" name="CoreData" isAbstract="true">
             <ownedAttribute xmi:type="uml:Property" xmi:id="_F2Tw0CpqEeaibdPncpUwfA" name="location" type="_r1_uoCluEeaibdPncpUwfA">
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Hb_VMCpqEeaibdPncpUwfA" value="1"/>
               <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Hb_8QCpqEeaibdPncpUwfA" value="*"/>

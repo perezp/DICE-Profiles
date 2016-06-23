@@ -27,7 +27,7 @@ import org.eclipse.emf.ecore.util.EObjectResolvingEList;
  *
  * @generated
  */
-public class CoreDAGSourceNodeImpl extends CoreDAGNodeImpl implements CoreDAGSourceNode {
+public abstract class CoreDAGSourceNodeImpl extends CoreDAGNodeImpl implements CoreDAGSourceNode {
 	/**
 	 * The cached value of the '{@link #getReadFrom() <em>Read From</em>}' reference list.
 	 * <!-- begin-user-doc -->

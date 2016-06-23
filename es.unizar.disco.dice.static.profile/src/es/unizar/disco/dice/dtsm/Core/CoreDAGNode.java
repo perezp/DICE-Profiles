@@ -25,7 +25,7 @@ import org.eclipse.papyrus.MARTE.MARTE_AnalysisModel.GQAM.GaStep;
  * </ul>
  *
  * @see es.unizar.disco.dice.dtsm.Core.CorePackage#getCoreDAGNode()
- * @model
+ * @model abstract="true"
  * @generated
  */
 public interface CoreDAGNode extends GaStep, DpimSourceNode {

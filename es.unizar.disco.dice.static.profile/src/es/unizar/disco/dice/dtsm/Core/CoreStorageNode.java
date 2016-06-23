@@ -18,7 +18,7 @@ package es.unizar.disco.dice.dtsm.Core;
  * </ul>
  *
  * @see es.unizar.disco.dice.dtsm.Core.CorePackage#getCoreStorageNode()
- * @model
+ * @model abstract="true"
  * @generated
  */
 public interface CoreStorageNode extends CoreDataSource {

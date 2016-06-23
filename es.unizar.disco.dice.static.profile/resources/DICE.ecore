@@ -58,7 +58,8 @@
         nsPrefix="DTSM">
       <eSubpackages name="Core" nsURI="http://es.unizar.disco.dice/profiles/DTSM/Core/1.0"
           nsPrefix="Core">
-        <eClassifiers xsi:type="ecore:EClass" name="CoreComputationNode" eSuperTypes="#//DICE_UML_Extensions/DPIM/DpimComputationNode">
+        <eClassifiers xsi:type="ecore:EClass" name="CoreComputationNode" abstract="true"
+            eSuperTypes="#//DICE_UML_Extensions/DPIM/DpimComputationNode">
           <eStructuralFeatures xsi:type="ecore:EReference" name="hasSuccessor" ordered="false"
               upperBound="-1" eType="#//DICE_UML_Extensions/DTSM/Core/CoreComputationNode"/>
           <eStructuralFeatures xsi:type="ecore:EReference" name="processInputData"
@@ -68,7 +69,7 @@
           <eStructuralFeatures xsi:type="ecore:EReference" name="produceOutputData"
               ordered="false" lowerBound="1" upperBound="-1" eType="#//DICE_UML_Extensions/DTSM/Core/CoreData"/>
         </eClassifiers>
-        <eClassifiers xsi:type="ecore:EClass" name="CoreData">
+        <eClassifiers xsi:type="ecore:EClass" name="CoreData" abstract="true">
           <eStructuralFeatures xsi:type="ecore:EReference" name="location" ordered="false"
               lowerBound="1" upperBound="-1" eType="#//DICE_UML_Extensions/DTSM/Core/CoreDataSource"/>
           <eStructuralFeatures xsi:type="ecore:EReference" name="hasSpecification"
@@ -80,18 +81,21 @@
           <eStructuralFeatures xsi:type="ecore:EReference" name="base_Class" ordered="false"
               lowerBound="1" eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//Class"/>
         </eClassifiers>
-        <eClassifiers xsi:type="ecore:EClass" name="CoreDataSource" eSuperTypes="#//DICE_UML_Extensions/DPIM/DpimStorageNode"/>
-        <eClassifiers xsi:type="ecore:EClass" name="CoreDirectAcyclicGraph" eSuperTypes="../../org.eclipse.papyrus.marte.static.profile/resources/MARTE.ecore#//MARTE_AnalysisModel/GQAM/GaScenario">
+        <eClassifiers xsi:type="ecore:EClass" name="CoreDataSource" abstract="true"
+            eSuperTypes="#//DICE_UML_Extensions/DPIM/DpimStorageNode"/>
+        <eClassifiers xsi:type="ecore:EClass" name="CoreDirectAcyclicGraph" abstract="true"
+            eSuperTypes="../../org.eclipse.papyrus.marte.static.profile/resources/MARTE.ecore#//MARTE_AnalysisModel/GQAM/GaScenario">
           <eStructuralFeatures xsi:type="ecore:EReference" name="hasSourceNode" ordered="false"
               lowerBound="1" upperBound="-1" eType="#//DICE_UML_Extensions/DTSM/Core/CoreDAGSourceNode"/>
           <eStructuralFeatures xsi:type="ecore:EReference" name="base_Class" ordered="false"
               lowerBound="1" eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//Class"/>
         </eClassifiers>
-        <eClassifiers xsi:type="ecore:EClass" name="CoreDAGSourceNode" eSuperTypes="#//DICE_UML_Extensions/DTSM/Core/CoreDAGNode">
+        <eClassifiers xsi:type="ecore:EClass" name="CoreDAGSourceNode" abstract="true"
+            eSuperTypes="#//DICE_UML_Extensions/DTSM/Core/CoreDAGNode">
           <eStructuralFeatures xsi:type="ecore:EReference" name="readFrom" ordered="false"
               lowerBound="1" upperBound="-1" eType="#//DICE_UML_Extensions/DTSM/Core/CoreDataSource"/>
         </eClassifiers>
-        <eClassifiers xsi:type="ecore:EClass" name="CoreDAGNode" eSuperTypes="../../org.eclipse.papyrus.marte.static.profile/resources/MARTE.ecore#//MARTE_AnalysisModel/GQAM/GaStep #//DICE_UML_Extensions/DPIM/DpimSourceNode">
+        <eClassifiers xsi:type="ecore:EClass" name="CoreDAGNode" abstract="true" eSuperTypes="../../org.eclipse.papyrus.marte.static.profile/resources/MARTE.ecore#//MARTE_AnalysisModel/GQAM/GaStep #//DICE_UML_Extensions/DPIM/DpimSourceNode">
           <eStructuralFeatures xsi:type="ecore:EAttribute" name="parallelism" ordered="false"
               lowerBound="1" eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Integer"/>
           <eStructuralFeatures xsi:type="ecore:EAttribute" name="operation" ordered="false"
@@ -99,7 +103,8 @@
           <eStructuralFeatures xsi:type="ecore:EReference" name="hasSuccessor" ordered="false"
               upperBound="-1" eType="#//DICE_UML_Extensions/DTSM/Core/CoreDAGNode"/>
         </eClassifiers>
-        <eClassifiers xsi:type="ecore:EClass" name="CoreStorageNode" eSuperTypes="#//DICE_UML_Extensions/DTSM/Core/CoreDataSource">
+        <eClassifiers xsi:type="ecore:EClass" name="CoreStorageNode" abstract="true"
+            eSuperTypes="#//DICE_UML_Extensions/DTSM/Core/CoreDataSource">
           <eStructuralFeatures xsi:type="ecore:EAttribute" name="database" ordered="false"
               lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
           <eStructuralFeatures xsi:type="ecore:EAttribute" name="user" ordered="false"

@@ -17,7 +17,7 @@ import org.eclipse.emf.common.util.EList;
  * </ul>
  *
  * @see es.unizar.disco.dice.dtsm.Core.CorePackage#getCoreDAGSourceNode()
- * @model
+ * @model abstract="true"
  * @generated
  */
 public interface CoreDAGSourceNode extends CoreDAGNode {

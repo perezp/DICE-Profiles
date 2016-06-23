@@ -26,7 +26,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *
  * @generated
  */
-public class CoreStorageNodeImpl extends CoreDataSourceImpl implements CoreStorageNode {
+public abstract class CoreStorageNodeImpl extends CoreDataSourceImpl implements CoreStorageNode {
 	/**
 	 * The default value of the '{@link #getDatabase() <em>Database</em>}' attribute.
 	 * <!-- begin-user-doc -->

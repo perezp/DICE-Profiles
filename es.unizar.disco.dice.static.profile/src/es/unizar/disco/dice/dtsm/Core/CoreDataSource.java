@@ -11,7 +11,7 @@ import es.unizar.disco.dice.DPIM.DpimStorageNode;
  *
  *
  * @see es.unizar.disco.dice.dtsm.Core.CorePackage#getCoreDataSource()
- * @model
+ * @model abstract="true"
  * @generated
  */
 public interface CoreDataSource extends DpimStorageNode {

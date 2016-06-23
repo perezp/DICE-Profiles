@@ -525,33 +525,33 @@ public class CorePackageImpl extends EPackageImpl implements CorePackage {
 		coreStorageNodeEClass.getESuperTypes().add(this.getCoreDataSource());
 
 		// Initialize classes and features; add operations and parameters
-		initEClass(coreComputationNodeEClass, CoreComputationNode.class, "CoreComputationNode", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(coreComputationNodeEClass, CoreComputationNode.class, "CoreComputationNode", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getCoreComputationNode_HasSuccessor(), this.getCoreComputationNode(), null, "hasSuccessor", null, 0, -1, CoreComputationNode.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getCoreComputationNode_ProcessInputData(), this.getCoreData(), null, "processInputData", null, 0, -1, CoreComputationNode.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getCoreComputationNode_Realise(), this.getCoreDirectAcyclicGraph(), null, "realise", null, 1, 1, CoreComputationNode.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getCoreComputationNode_ProduceOutputData(), this.getCoreData(), null, "produceOutputData", null, 1, -1, CoreComputationNode.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
-		initEClass(coreDataEClass, CoreData.class, "CoreData", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(coreDataEClass, CoreData.class, "CoreData", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getCoreData_Location(), this.getCoreDataSource(), null, "location", null, 1, -1, CoreData.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getCoreData_HasSpecification(), theComplex_Data_TypesPackage_1.getDiceDataSpecification(), null, "hasSpecification", null, 1, 1, CoreData.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getCoreData_HasVolume(), theComplex_Data_TypesPackage_1.getDiceDataVolume(), null, "hasVolume", null, 1, 1, CoreData.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getCoreData_Base_Class(), theUMLPackage.getClass_(), null, "base_Class", null, 1, 1, CoreData.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
-		initEClass(coreDataSourceEClass, CoreDataSource.class, "CoreDataSource", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(coreDataSourceEClass, CoreDataSource.class, "CoreDataSource", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-		initEClass(coreDirectAcyclicGraphEClass, CoreDirectAcyclicGraph.class, "CoreDirectAcyclicGraph", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(coreDirectAcyclicGraphEClass, CoreDirectAcyclicGraph.class, "CoreDirectAcyclicGraph", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getCoreDirectAcyclicGraph_HasSourceNode(), this.getCoreDAGSourceNode(), null, "hasSourceNode", null, 1, -1, CoreDirectAcyclicGraph.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getCoreDirectAcyclicGraph_Base_Class(), theUMLPackage.getClass_(), null, "base_Class", null, 1, 1, CoreDirectAcyclicGraph.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
-		initEClass(coreDAGSourceNodeEClass, CoreDAGSourceNode.class, "CoreDAGSourceNode", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(coreDAGSourceNodeEClass, CoreDAGSourceNode.class, "CoreDAGSourceNode", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getCoreDAGSourceNode_ReadFrom(), this.getCoreDataSource(), null, "readFrom", null, 1, -1, CoreDAGSourceNode.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
-		initEClass(coreDAGNodeEClass, CoreDAGNode.class, "CoreDAGNode", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(coreDAGNodeEClass, CoreDAGNode.class, "CoreDAGNode", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getCoreDAGNode_Parallelism(), theBasicNFP_TypesPackage.getNFP_Integer(), "parallelism", null, 1, 1, CoreDAGNode.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getCoreDAGNode_Operation(), theBasic_Enumeration_TypesPackage_1.getWorkflowOperation(), "operation", null, 1, 1, CoreDAGNode.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getCoreDAGNode_HasSuccessor(), this.getCoreDAGNode(), null, "hasSuccessor", null, 0, -1, CoreDAGNode.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
-		initEClass(coreStorageNodeEClass, CoreStorageNode.class, "CoreStorageNode", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(coreStorageNodeEClass, CoreStorageNode.class, "CoreStorageNode", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getCoreStorageNode_Database(), theTypesPackage.getString(), "database", null, 1, 1, CoreStorageNode.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getCoreStorageNode_User(), theTypesPackage.getString(), "user", null, 1, 1, CoreStorageNode.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getCoreStorageNode_Password(), theTypesPackage.getString(), "password", null, 1, 1, CoreStorageNode.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);

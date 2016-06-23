@@ -40,7 +40,7 @@ import org.eclipse.emf.ecore.util.EObjectResolvingEList;
  *
  * @generated
  */
-public class CoreDataImpl extends MinimalEObjectImpl.Container implements CoreData {
+public abstract class CoreDataImpl extends MinimalEObjectImpl.Container implements CoreData {
 	/**
 	 * The cached value of the '{@link #getLocation() <em>Location</em>}' reference list.
 	 * <!-- begin-user-doc -->
