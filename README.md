@@ -7,9 +7,18 @@ In Eclipse, go to `Help -> Install New Software...` and use http://dice-project.
 
 # Contents
 
+## es.unizar.disco.dice.static.profile
+
+This plugin implement the DICE profile using the same system as MARTE to define NFP datatypes. To generate the DICE.ecore model from the DICE.profile.uml the patched `org.eclipse.uml2.uml` plugin is needed.
+
+## es.unizar.disco.dice.feature
+
+Feature for the DICE Profile.
+
 ## com.masdes.dam.static.profile
 
 This plugin reimplements the DAM profile available at https://bitbucket.org/mberenguer/masdes-downloads/wiki/Home, and unifies the type system, solving problems with the redefinition of MARTE datatypes.
+To generate the DAM.ecore model from the DAM.profile.uml the patched `org.eclipse.uml2.uml` plugin is needed.
 
 ## com.masdes.dam.profile.feature
 
