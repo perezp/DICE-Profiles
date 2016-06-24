@@ -7,6 +7,10 @@ In Eclipse, go to `Help -> Install New Software...` and use http://dice-project.
 
 # Contents
 
+## Examples - org.dice.profiles.examples
+
+This project contains some Papyrus UML models demonstrating some DICE Profile annotations.
+
 ## es.unizar.disco.dice.static.profile
 
 This plugin implement the DICE profile using the same system as MARTE to define NFP datatypes. To generate the DICE.ecore model from the DICE.profile.uml the patched `org.eclipse.uml2.uml` plugin is needed.
