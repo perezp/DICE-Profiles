@@ -7,7 +7,7 @@ In Eclipse, go to `Help -> Install New Software...` and use http://dice-project.
 
 # Contents
 
-## Examples - org.dice.profiles.examples
+## Examples - [org.dice.profiles.examples](https://github.com/dice-project/DICE-Profiles/tree/master/org.dice.profiles.examples)
 
 This project contains some Papyrus UML models demonstrating some DICE Profile annotations.
 
