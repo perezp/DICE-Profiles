@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2005, 2015 IBM Corporation, CEA, and others.
+ * Copyright (c) 2005, 2016 IBM Corporation, CEA, and others.
  * All rights reserved.   This program and the accompanying materials
  * are made available under the terms of the Eclipse Public License v1.0
  * which accompanies this distribution, and is available at
@@ -8,11 +8,12 @@
  * Contributors:
  *   IBM - initial API and implementation
  *   Kenn Hussey - 323181
- *   Kenn Hussey (CEA) - 327039, 418466, 451350, 459651, 433768
+ *   Kenn Hussey (CEA) - 327039, 418466, 451350, 459651, 433768, 485756, 464427
  *
  */
 package org.eclipse.uml2.uml.internal.operations;
 
+import java.util.HashMap;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
@@ -21,7 +22,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.ECollections;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.common.util.UniqueEList;
-
+import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.uml2.common.util.UnionEObjectEList;
@@ -98,23 +99,19 @@ public class NamespaceOperations
 
 				for (NamedElement otherMember : namespaceMembers) {
 
-					if (member != otherMember
-						&& !member
-							.isDistinguishableFrom(otherMember, namespace)) {
+					if (member != otherMember && !member
+						.isDistinguishableFrom(otherMember, namespace)) {
 
 						result = false;
 
-						diagnostics
-							.add(new BasicDiagnostic(
-								Diagnostic.WARNING,
-								UMLValidator.DIAGNOSTIC_SOURCE,
-								UMLValidator.NAMESPACE__MEMBERS_DISTINGUISHABLE,
-								UMLPlugin.INSTANCE
-									.getString(
-										"_UI_Namespace_MemberDistinguishable_diagnostic", //$NON-NLS-1$
-										getMessageSubstitutions(context,
-											member, namespace)),
-								new Object[]{member}));
+						diagnostics.add(new BasicDiagnostic(Diagnostic.WARNING,
+							UMLValidator.DIAGNOSTIC_SOURCE,
+							UMLValidator.NAMESPACE__MEMBERS_DISTINGUISHABLE,
+							UMLPlugin.INSTANCE.getString(
+								"_UI_Namespace_MemberDistinguishable_diagnostic", //$NON-NLS-1$
+								getMessageSubstitutions(context, member,
+									namespace)),
+							new Object[]{member}));
 
 						break;
 					}
@@ -157,15 +154,15 @@ public class NamespaceOperations
 		// Ensure that you remove @generated or mark it @generated NOT
 		if (false) {
 			if (diagnostics != null) {
-				diagnostics
-					.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						UMLValidator.DIAGNOSTIC_SOURCE,
-						UMLValidator.NAMESPACE__CANNOT_IMPORT_SELF,
-						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE
-							.getString(
-								"_UI_GenericInvariant_diagnostic", new Object[]{"validateCannotImportSelf", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(namespace, context)}), //$NON-NLS-1$ //$NON-NLS-2$
-						new Object[]{namespace}));
+				diagnostics.add(new BasicDiagnostic(Diagnostic.ERROR,
+					UMLValidator.DIAGNOSTIC_SOURCE,
+					UMLValidator.NAMESPACE__CANNOT_IMPORT_SELF,
+					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+						"_UI_GenericInvariant_diagnostic", //$NON-NLS-1$
+						new Object[]{"validateCannotImportSelf", //$NON-NLS-1$
+							org.eclipse.emf.ecore.util.EObjectValidator
+								.getObjectLabel(namespace, context)}),
+					new Object[]{namespace}));
 			}
 			return false;
 		}
@@ -192,15 +189,15 @@ public class NamespaceOperations
 		// Ensure that you remove @generated or mark it @generated NOT
 		if (false) {
 			if (diagnostics != null) {
-				diagnostics
-					.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						UMLValidator.DIAGNOSTIC_SOURCE,
-						UMLValidator.NAMESPACE__CANNOT_IMPORT_OWNED_MEMBERS,
-						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE
-							.getString(
-								"_UI_GenericInvariant_diagnostic", new Object[]{"validateCannotImportOwnedMembers", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(namespace, context)}), //$NON-NLS-1$ //$NON-NLS-2$
-						new Object[]{namespace}));
+				diagnostics.add(new BasicDiagnostic(Diagnostic.ERROR,
+					UMLValidator.DIAGNOSTIC_SOURCE,
+					UMLValidator.NAMESPACE__CANNOT_IMPORT_OWNED_MEMBERS,
+					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+						"_UI_GenericInvariant_diagnostic", //$NON-NLS-1$
+						new Object[]{"validateCannotImportOwnedMembers", //$NON-NLS-1$
+							org.eclipse.emf.ecore.util.EObjectValidator
+								.getObjectLabel(namespace, context)}),
+					new Object[]{namespace}));
 			}
 			return false;
 		}
@@ -394,9 +391,8 @@ public class NamespaceOperations
 						org.eclipse.uml2.uml.Package importedPackage = packageImport
 							.getImportedPackage();
 
-						if (importedPackage != null
-							&& importedPackage.visibleMembers().contains(
-								element)) {
+						if (importedPackage != null && importedPackage
+							.visibleMembers().contains(element)) {
 
 							getNamesOfMember(importedPackage, element,
 								namespaces, namesOfMember);
@@ -494,19 +490,60 @@ public class NamespaceOperations
 		EList<PackageableElement> importMembers = new UniqueEList.FastCompare<PackageableElement>();
 		EList<NamedElement> ownedMembers = namespace.getOwnedMembers();
 
-		excludeCollisionsLoop : for (PackageableElement excludeCollision : namespace
-			.excludeCollisions(imps)) {
+		Map<String, EList<NamedElement>> memberNames = new HashMap<String, EList<NamedElement>>();
 
-			for (NamedElement ownedMember : ownedMembers) {
+		for (NamedElement ownedMember : ownedMembers) {
 
-				if (!excludeCollision.isDistinguishableFrom(ownedMember,
-					namespace)) {
+			for (String name : namespace.getNamesOfMember(ownedMember)) {
+				EList<NamedElement> members = memberNames.get(name);
 
-					continue excludeCollisionsLoop;
+				if (members == null) {
+					memberNames.put(name,
+						members = new UniqueEList.FastCompare<NamedElement>());
+				}
+
+				members.add(ownedMember);
+			}
+		}
+
+		for (PackageableElement imp : imps) {
+
+			for (String name : namespace.getNamesOfMember(imp)) {
+				EList<NamedElement> members = memberNames.get(name);
+
+				if (members == null) {
+					memberNames.put(name,
+						members = new UniqueEList.FastCompare<NamedElement>());
+				}
+
+				members.add(imp);
+			}
+		}
+
+		impsLoop : for (PackageableElement imp : imps) {
+			EClass impEClass = imp.eClass();
+
+			for (String name : namespace.getNamesOfMember(imp)) {
+				EList<NamedElement> members = memberNames.get(name);
+
+				if (members.size() > 1) {
+
+					for (NamedElement member : members) {
+
+						if (member != imp) {
+							EClass memberEClass = member.eClass();
+
+							if (memberEClass.isSuperTypeOf(impEClass)
+								|| impEClass.isSuperTypeOf(memberEClass)) {
+
+								continue impsLoop;
+							}
+						}
+					}
 				}
 			}
 
-			importMembers.add(excludeCollision);
+			importMembers.add(imp);
 		}
 
 		return ECollections.unmodifiableEList(importMembers);
@@ -527,18 +564,46 @@ public class NamespaceOperations
 			Namespace namespace, EList<PackageableElement> imps) {
 		EList<PackageableElement> excludeCollisions = new UniqueEList.FastCompare<PackageableElement>();
 
-		imps1Loop : for (PackageableElement imp1 : imps) {
+		Map<String, EList<NamedElement>> memberNames = new HashMap<String, EList<NamedElement>>();
 
-			for (PackageableElement imp2 : imps) {
+		for (PackageableElement imp : imps) {
 
-				if (imp1 != imp2
-					&& !imp1.isDistinguishableFrom(imp2, namespace)) {
+			for (String name : namespace.getNamesOfMember(imp)) {
+				EList<NamedElement> members = memberNames.get(name);
 
-					continue imps1Loop;
+				if (members == null) {
+					memberNames.put(name,
+						members = new UniqueEList.FastCompare<NamedElement>());
+				}
+
+				members.add(imp);
+			}
+		}
+
+		impsLoop : for (PackageableElement imp : imps) {
+			EClass impEClass = imp.eClass();
+
+			for (String name : namespace.getNamesOfMember(imp)) {
+				EList<NamedElement> members = memberNames.get(name);
+
+				if (members.size() > 1) {
+
+					for (NamedElement member : members) {
+
+						if (member != imp) {
+							EClass memberEClass = member.eClass();
+
+							if (memberEClass.isSuperTypeOf(impEClass)
+								|| impEClass.isSuperTypeOf(memberEClass)) {
+
+								continue impsLoop;
+							}
+						}
+					}
 				}
 			}
 
-			excludeCollisions.add(imp1);
+			excludeCollisions.add(imp);
 		}
 
 		return ECollections.unmodifiableEList(excludeCollisions);
