@@ -23,24 +23,33 @@
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_KGEgQOeXEeWj7ZPL8JeBTQ" name="relQuery"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Enumeration" xmi:id="_MVuOsOeXEeWj7ZPL8JeBTQ" name="TechType">
-          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_s99sMOeXEeWj7ZPL8JeBTQ" name="rdd"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_s99sMOeXEeWj7ZPL8JeBTQ" name="hadoop"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_MlS10DyIEeaGV9W0V46efQ" name="spark"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_N-IRADyIEeaGV9W0V46efQ" name="storm"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_P26XkDyIEeaGV9W0V46efQ" name="oryx2"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Enumeration" xmi:id="_udV0QOeXEeWj7ZPL8JeBTQ" name="ProcessingType">
-          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_wJX4QOeXEeWj7ZPL8JeBTQ" name="synch"/>
-          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_xiZgsOeXEeWj7ZPL8JeBTQ" name="asynch"/>
-          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_yFCTsOeXEeWj7ZPL8JeBTQ" name="policy"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_xiZgsOeXEeWj7ZPL8JeBTQ" name="stream"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_yFCTsOeXEeWj7ZPL8JeBTQ" name="batch"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Enumeration" xmi:id="_28Lo0OeXEeWj7ZPL8JeBTQ" name="SourceType">
-          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_N839QOeYEeWj7ZPL8JeBTQ" name="sharedStorage"/>
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_PpFAYOeYEeWj7ZPL8JeBTQ" name="dataStream"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_A9EZADyJEeaGV9W0V46efQ" name="webapi"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Enumeration" xmi:id="_0KMlMOeeEeWj7ZPL8JeBTQ" name="RefType">
-          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_3vOLIOeeEeWj7ZPL8JeBTQ" name="noSql"/>
-          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_5e6nIOeeEeWj7ZPL8JeBTQ" name="entityRelationship"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_9DKvQDyIEeaGV9W0V46efQ" name="cassandra"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_9DLWUDyIEeaGV9W0V46efQ" name="hdfs"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_9DL9YDyIEeaGV9W0V46efQ" name="mongodb"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_9DNLgDyIEeaGV9W0V46efQ" name="mysql"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Enumeration" xmi:id="_05JV4OeeEeWj7ZPL8JeBTQ" name="RefDataFormatType">
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_8W79IOeeEeWj7ZPL8JeBTQ" name="json"/>
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_7KkQoOeeEeWj7ZPL8JeBTQ" name="RDF"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_nwSAcDyIEeaGV9W0V46efQ" name="plain"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_pOpb4DyIEeaGV9W0V46efQ" name="xml"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_qiQY0DyIEeaGV9W0V46efQ" name="avro"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_uqOTwDyIEeaGV9W0V46efQ" name="parquet"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_wnClwDyIEeaGV9W0V46efQ" name="yaml"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Enumeration" xmi:id="_upZtkClyEeaibdPncpUwfA" name="ConstraintType">
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_2nOfwClyEeaibdPncpUwfA" name="less"/>
