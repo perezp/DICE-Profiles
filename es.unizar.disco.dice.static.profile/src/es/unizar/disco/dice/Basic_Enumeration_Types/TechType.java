@@ -19,29 +19,98 @@ import org.eclipse.emf.common.util.Enumerator;
  */
 public enum TechType implements Enumerator {
 	/**
-	 * The '<em><b>Rdd</b></em>' literal object.
+	 * The '<em><b>Hadoop</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #RDD_VALUE
+	 * @see #HADOOP_VALUE
 	 * @generated
 	 * @ordered
 	 */
-	RDD(0, "rdd", "rdd");
+	HADOOP(0, "hadoop", "hadoop"), /**
+	 * The '<em><b>Spark</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #SPARK_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	SPARK(1, "spark", "spark"), /**
+	 * The '<em><b>Storm</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #STORM_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	STORM(2, "storm", "storm"), /**
+	 * The '<em><b>Oryx2</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #ORYX2_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	ORYX2(3, "oryx2", "oryx2");
 
 	/**
-	 * The '<em><b>Rdd</b></em>' literal value.
+	 * The '<em><b>Hadoop</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of '<em><b>Rdd</b></em>' literal object isn't clear,
+	 * If the meaning of '<em><b>Hadoop</b></em>' literal object isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @see #RDD
-	 * @model name="rdd"
+	 * @see #HADOOP
+	 * @model name="hadoop"
 	 * @generated
 	 * @ordered
 	 */
-	public static final int RDD_VALUE = 0;
+	public static final int HADOOP_VALUE = 0;
+
+	/**
+	 * The '<em><b>Spark</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of '<em><b>Spark</b></em>' literal object isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @see #SPARK
+	 * @model name="spark"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int SPARK_VALUE = 1;
+
+	/**
+	 * The '<em><b>Storm</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of '<em><b>Storm</b></em>' literal object isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @see #STORM
+	 * @model name="storm"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int STORM_VALUE = 2;
+
+	/**
+	 * The '<em><b>Oryx2</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of '<em><b>Oryx2</b></em>' literal object isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @see #ORYX2
+	 * @model name="oryx2"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int ORYX2_VALUE = 3;
 
 	/**
 	 * An array of all the '<em><b>Tech Type</b></em>' enumerators.
@@ -51,7 +120,10 @@ public enum TechType implements Enumerator {
 	 */
 	private static final TechType[] VALUES_ARRAY =
 		new TechType[] {
-			RDD,
+			HADOOP,
+			SPARK,
+			STORM,
+			ORYX2,
 		};
 
 	/**
@@ -108,7 +180,10 @@ public enum TechType implements Enumerator {
 	 */
 	public static TechType get(int value) {
 		switch (value) {
-			case RDD_VALUE: return RDD;
+			case HADOOP_VALUE: return HADOOP;
+			case SPARK_VALUE: return SPARK;
+			case STORM_VALUE: return STORM;
+			case ORYX2_VALUE: return ORYX2;
 		}
 		return null;
 	}

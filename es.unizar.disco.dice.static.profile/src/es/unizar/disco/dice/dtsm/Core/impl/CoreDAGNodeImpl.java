@@ -466,7 +466,7 @@ public abstract class CoreDAGNodeImpl extends GaStepImpl implements CoreDAGNode 
 	 * @generated
 	 * @ordered
 	 */
-	protected static final TechType TARGET_TECH_EDEFAULT = TechType.RDD;
+	protected static final TechType TARGET_TECH_EDEFAULT = TechType.HADOOP;
 
 	/**
 	 * The cached value of the '{@link #getTargetTech() <em>Target Tech</em>}' attribute.
@@ -486,7 +486,7 @@ public abstract class CoreDAGNodeImpl extends GaStepImpl implements CoreDAGNode 
 	 * @generated
 	 * @ordered
 	 */
-	protected static final ProcessingType PROC_TYPE_EDEFAULT = ProcessingType.SYNCH;
+	protected static final ProcessingType PROC_TYPE_EDEFAULT = ProcessingType.STREAM;
 
 	/**
 	 * The cached value of the '{@link #getProcType() <em>Proc Type</em>}' attribute.
@@ -526,7 +526,7 @@ public abstract class CoreDAGNodeImpl extends GaStepImpl implements CoreDAGNode 
 	 * @generated
 	 * @ordered
 	 */
-	protected static final SourceType SOURCE_TYPE_EDEFAULT = SourceType.SHARED_STORAGE;
+	protected static final SourceType SOURCE_TYPE_EDEFAULT = SourceType.DATA_STREAM;
 
 	/**
 	 * The cached value of the '{@link #getSourceType() <em>Source Type</em>}' attribute.

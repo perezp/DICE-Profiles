@@ -44,7 +44,6 @@
         </packagedElement>
         <packagedElement xmi:type="uml:Enumeration" xmi:id="_05JV4OeeEeWj7ZPL8JeBTQ" name="RefDataFormatType">
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_8W79IOeeEeWj7ZPL8JeBTQ" name="json"/>
-          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_7KkQoOeeEeWj7ZPL8JeBTQ" name="RDF"/>
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_nwSAcDyIEeaGV9W0V46efQ" name="plain"/>
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_pOpb4DyIEeaGV9W0V46efQ" name="xml"/>
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_qiQY0DyIEeaGV9W0V46efQ" name="avro"/>

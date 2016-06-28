@@ -80,7 +80,7 @@ public class DiceDataSpecificationImpl extends MinimalEObjectImpl.Container impl
 	 * @generated
 	 * @ordered
 	 */
-	protected static final RefType REF_MODEL_EDEFAULT = RefType.NO_SQL;
+	protected static final RefType REF_MODEL_EDEFAULT = RefType.CASSANDRA;
 
 	/**
 	 * The cached value of the '{@link #getRefModel() <em>Ref Model</em>}' attribute.

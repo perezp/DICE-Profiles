@@ -408,24 +408,32 @@ public class Basic_Enumeration_TypesPackageImpl extends EPackageImpl implements 
 
 		// Initialize enums and add enum literals
 		initEEnum(refTypeEEnum, RefType.class, "RefType");
-		addEEnumLiteral(refTypeEEnum, RefType.NO_SQL);
-		addEEnumLiteral(refTypeEEnum, RefType.ENTITY_RELATIONSHIP);
+		addEEnumLiteral(refTypeEEnum, RefType.CASSANDRA);
+		addEEnumLiteral(refTypeEEnum, RefType.HDFS);
+		addEEnumLiteral(refTypeEEnum, RefType.MONGODB);
+		addEEnumLiteral(refTypeEEnum, RefType.MYSQL);
 
 		initEEnum(refDataFormatTypeEEnum, RefDataFormatType.class, "RefDataFormatType");
 		addEEnumLiteral(refDataFormatTypeEEnum, RefDataFormatType.JSON);
-		addEEnumLiteral(refDataFormatTypeEEnum, RefDataFormatType.RDF);
+		addEEnumLiteral(refDataFormatTypeEEnum, RefDataFormatType.PLAIN);
+		addEEnumLiteral(refDataFormatTypeEEnum, RefDataFormatType.XML);
+		addEEnumLiteral(refDataFormatTypeEEnum, RefDataFormatType.AVRO);
+		addEEnumLiteral(refDataFormatTypeEEnum, RefDataFormatType.PARQUET);
+		addEEnumLiteral(refDataFormatTypeEEnum, RefDataFormatType.YAML);
 
 		initEEnum(techTypeEEnum, TechType.class, "TechType");
-		addEEnumLiteral(techTypeEEnum, TechType.RDD);
+		addEEnumLiteral(techTypeEEnum, TechType.HADOOP);
+		addEEnumLiteral(techTypeEEnum, TechType.SPARK);
+		addEEnumLiteral(techTypeEEnum, TechType.STORM);
+		addEEnumLiteral(techTypeEEnum, TechType.ORYX2);
 
 		initEEnum(processingTypeEEnum, ProcessingType.class, "ProcessingType");
-		addEEnumLiteral(processingTypeEEnum, ProcessingType.SYNCH);
-		addEEnumLiteral(processingTypeEEnum, ProcessingType.ASYNCH);
-		addEEnumLiteral(processingTypeEEnum, ProcessingType.POLICY);
+		addEEnumLiteral(processingTypeEEnum, ProcessingType.STREAM);
+		addEEnumLiteral(processingTypeEEnum, ProcessingType.BATCH);
 
 		initEEnum(sourceTypeEEnum, SourceType.class, "SourceType");
-		addEEnumLiteral(sourceTypeEEnum, SourceType.SHARED_STORAGE);
 		addEEnumLiteral(sourceTypeEEnum, SourceType.DATA_STREAM);
+		addEEnumLiteral(sourceTypeEEnum, SourceType.WEBAPI);
 
 		initEEnum(constraintTypeEEnum, ConstraintType.class, "ConstraintType");
 		addEEnumLiteral(constraintTypeEEnum, ConstraintType.LESS);

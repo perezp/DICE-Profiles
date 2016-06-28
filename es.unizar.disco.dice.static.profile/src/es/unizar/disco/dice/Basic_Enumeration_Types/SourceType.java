@@ -19,16 +19,6 @@ import org.eclipse.emf.common.util.Enumerator;
  */
 public enum SourceType implements Enumerator {
 	/**
-	 * The '<em><b>Shared Storage</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #SHARED_STORAGE_VALUE
-	 * @generated
-	 * @ordered
-	 */
-	SHARED_STORAGE(0, "sharedStorage", "sharedStorage"),
-
-	/**
 	 * The '<em><b>Data Stream</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -36,22 +26,15 @@ public enum SourceType implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	DATA_STREAM(1, "dataStream", "dataStream");
-
-	/**
-	 * The '<em><b>Shared Storage</b></em>' literal value.
+	DATA_STREAM(0, "dataStream", "dataStream"), /**
+	 * The '<em><b>Webapi</b></em>' literal object.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Shared Storage</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @see #SHARED_STORAGE
-	 * @model name="sharedStorage"
+	 * @see #WEBAPI_VALUE
 	 * @generated
 	 * @ordered
 	 */
-	public static final int SHARED_STORAGE_VALUE = 0;
+	WEBAPI(1, "webapi", "webapi");
 
 	/**
 	 * The '<em><b>Data Stream</b></em>' literal value.
@@ -66,7 +49,22 @@ public enum SourceType implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int DATA_STREAM_VALUE = 1;
+	public static final int DATA_STREAM_VALUE = 0;
+
+	/**
+	 * The '<em><b>Webapi</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of '<em><b>Webapi</b></em>' literal object isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @see #WEBAPI
+	 * @model name="webapi"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int WEBAPI_VALUE = 1;
 
 	/**
 	 * An array of all the '<em><b>Source Type</b></em>' enumerators.
@@ -76,8 +74,8 @@ public enum SourceType implements Enumerator {
 	 */
 	private static final SourceType[] VALUES_ARRAY =
 		new SourceType[] {
-			SHARED_STORAGE,
 			DATA_STREAM,
+			WEBAPI,
 		};
 
 	/**
@@ -134,8 +132,8 @@ public enum SourceType implements Enumerator {
 	 */
 	public static SourceType get(int value) {
 		switch (value) {
-			case SHARED_STORAGE_VALUE: return SHARED_STORAGE;
 			case DATA_STREAM_VALUE: return DATA_STREAM;
+			case WEBAPI_VALUE: return WEBAPI;
 		}
 		return null;
 	}

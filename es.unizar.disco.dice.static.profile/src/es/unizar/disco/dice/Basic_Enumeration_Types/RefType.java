@@ -19,54 +19,98 @@ import org.eclipse.emf.common.util.Enumerator;
  */
 public enum RefType implements Enumerator {
 	/**
-	 * The '<em><b>No Sql</b></em>' literal object.
+	 * The '<em><b>Cassandra</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #NO_SQL_VALUE
+	 * @see #CASSANDRA_VALUE
 	 * @generated
 	 * @ordered
 	 */
-	NO_SQL(0, "noSql", "noSql"),
-
-	/**
-	 * The '<em><b>Entity Relationship</b></em>' literal object.
+	CASSANDRA(0, "cassandra", "cassandra"), /**
+	 * The '<em><b>Hdfs</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #ENTITY_RELATIONSHIP_VALUE
+	 * @see #HDFS_VALUE
 	 * @generated
 	 * @ordered
 	 */
-	ENTITY_RELATIONSHIP(1, "entityRelationship", "entityRelationship");
+	HDFS(1, "hdfs", "hdfs"), /**
+	 * The '<em><b>Mongodb</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #MONGODB_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	MONGODB(2, "mongodb", "mongodb"), /**
+	 * The '<em><b>Mysql</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #MYSQL_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	MYSQL(3, "mysql", "mysql");
 
 	/**
-	 * The '<em><b>No Sql</b></em>' literal value.
+	 * The '<em><b>Cassandra</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of '<em><b>No Sql</b></em>' literal object isn't clear,
+	 * If the meaning of '<em><b>Cassandra</b></em>' literal object isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @see #NO_SQL
-	 * @model name="noSql"
+	 * @see #CASSANDRA
+	 * @model name="cassandra"
 	 * @generated
 	 * @ordered
 	 */
-	public static final int NO_SQL_VALUE = 0;
+	public static final int CASSANDRA_VALUE = 0;
 
 	/**
-	 * The '<em><b>Entity Relationship</b></em>' literal value.
+	 * The '<em><b>Hdfs</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of '<em><b>Entity Relationship</b></em>' literal object isn't clear,
+	 * If the meaning of '<em><b>Hdfs</b></em>' literal object isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @see #ENTITY_RELATIONSHIP
-	 * @model name="entityRelationship"
+	 * @see #HDFS
+	 * @model name="hdfs"
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ENTITY_RELATIONSHIP_VALUE = 1;
+	public static final int HDFS_VALUE = 1;
+
+	/**
+	 * The '<em><b>Mongodb</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of '<em><b>Mongodb</b></em>' literal object isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @see #MONGODB
+	 * @model name="mongodb"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int MONGODB_VALUE = 2;
+
+	/**
+	 * The '<em><b>Mysql</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of '<em><b>Mysql</b></em>' literal object isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @see #MYSQL
+	 * @model name="mysql"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int MYSQL_VALUE = 3;
 
 	/**
 	 * An array of all the '<em><b>Ref Type</b></em>' enumerators.
@@ -76,8 +120,10 @@ public enum RefType implements Enumerator {
 	 */
 	private static final RefType[] VALUES_ARRAY =
 		new RefType[] {
-			NO_SQL,
-			ENTITY_RELATIONSHIP,
+			CASSANDRA,
+			HDFS,
+			MONGODB,
+			MYSQL,
 		};
 
 	/**
@@ -134,8 +180,10 @@ public enum RefType implements Enumerator {
 	 */
 	public static RefType get(int value) {
 		switch (value) {
-			case NO_SQL_VALUE: return NO_SQL;
-			case ENTITY_RELATIONSHIP_VALUE: return ENTITY_RELATIONSHIP;
+			case CASSANDRA_VALUE: return CASSANDRA;
+			case HDFS_VALUE: return HDFS;
+			case MONGODB_VALUE: return MONGODB;
+			case MYSQL_VALUE: return MYSQL;
 		}
 		return null;
 	}

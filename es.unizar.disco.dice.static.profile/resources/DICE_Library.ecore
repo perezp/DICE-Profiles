@@ -51,24 +51,32 @@
         <details key="originalName" value="Enumeration_Types"/>
       </eAnnotations>
       <eClassifiers xsi:type="ecore:EEnum" name="RefType">
-        <eLiterals name="noSql"/>
-        <eLiterals name="entityRelationship" value="1"/>
+        <eLiterals name="cassandra"/>
+        <eLiterals name="hdfs" value="1"/>
+        <eLiterals name="mongodb" value="2"/>
+        <eLiterals name="mysql" value="3"/>
       </eClassifiers>
       <eClassifiers xsi:type="ecore:EEnum" name="RefDataFormatType">
         <eLiterals name="json"/>
-        <eLiterals name="RDF" value="1"/>
+        <eLiterals name="plain" value="1"/>
+        <eLiterals name="xml" value="2"/>
+        <eLiterals name="avro" value="3"/>
+        <eLiterals name="parquet" value="4"/>
+        <eLiterals name="yaml" value="5"/>
       </eClassifiers>
       <eClassifiers xsi:type="ecore:EEnum" name="TechType">
-        <eLiterals name="rdd"/>
+        <eLiterals name="hadoop"/>
+        <eLiterals name="spark" value="1"/>
+        <eLiterals name="storm" value="2"/>
+        <eLiterals name="oryx2" value="3"/>
       </eClassifiers>
       <eClassifiers xsi:type="ecore:EEnum" name="ProcessingType">
-        <eLiterals name="synch"/>
-        <eLiterals name="asynch" value="1"/>
-        <eLiterals name="policy" value="2"/>
+        <eLiterals name="stream"/>
+        <eLiterals name="batch" value="1"/>
       </eClassifiers>
       <eClassifiers xsi:type="ecore:EEnum" name="SourceType">
-        <eLiterals name="sharedStorage"/>
-        <eLiterals name="dataStream" value="1"/>
+        <eLiterals name="dataStream"/>
+        <eLiterals name="webapi" value="1"/>
       </eClassifiers>
       <eClassifiers xsi:type="ecore:EEnum" name="ConstraintType">
         <eLiterals name="less"/>

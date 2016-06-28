@@ -29,14 +29,46 @@ public enum RefDataFormatType implements Enumerator {
 	JSON(0, "json", "json"),
 
 	/**
-	 * The '<em><b>RDF</b></em>' literal object.
+	 * The '<em><b>Plain</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #RDF_VALUE
+	 * @see #PLAIN_VALUE
 	 * @generated
 	 * @ordered
 	 */
-	RDF(1, "RDF", "RDF");
+	PLAIN(1, "plain", "plain"), /**
+	 * The '<em><b>Xml</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #XML_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	XML(2, "xml", "xml"), /**
+	 * The '<em><b>Avro</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #AVRO_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	AVRO(3, "avro", "avro"), /**
+	 * The '<em><b>Parquet</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #PARQUET_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	PARQUET(4, "parquet", "parquet"), /**
+	 * The '<em><b>Yaml</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #YAML_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	YAML(5, "yaml", "yaml");
 
 	/**
 	 * The '<em><b>Json</b></em>' literal value.
@@ -54,19 +86,79 @@ public enum RefDataFormatType implements Enumerator {
 	public static final int JSON_VALUE = 0;
 
 	/**
-	 * The '<em><b>RDF</b></em>' literal value.
+	 * The '<em><b>Plain</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of '<em><b>RDF</b></em>' literal object isn't clear,
+	 * If the meaning of '<em><b>Plain</b></em>' literal object isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @see #RDF
-	 * @model
+	 * @see #PLAIN
+	 * @model name="plain"
 	 * @generated
 	 * @ordered
 	 */
-	public static final int RDF_VALUE = 1;
+	public static final int PLAIN_VALUE = 1;
+
+	/**
+	 * The '<em><b>Xml</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of '<em><b>Xml</b></em>' literal object isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @see #XML
+	 * @model name="xml"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int XML_VALUE = 2;
+
+	/**
+	 * The '<em><b>Avro</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of '<em><b>Avro</b></em>' literal object isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @see #AVRO
+	 * @model name="avro"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int AVRO_VALUE = 3;
+
+	/**
+	 * The '<em><b>Parquet</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of '<em><b>Parquet</b></em>' literal object isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @see #PARQUET
+	 * @model name="parquet"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int PARQUET_VALUE = 4;
+
+	/**
+	 * The '<em><b>Yaml</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of '<em><b>Yaml</b></em>' literal object isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @see #YAML
+	 * @model name="yaml"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int YAML_VALUE = 5;
 
 	/**
 	 * An array of all the '<em><b>Ref Data Format Type</b></em>' enumerators.
@@ -77,7 +169,11 @@ public enum RefDataFormatType implements Enumerator {
 	private static final RefDataFormatType[] VALUES_ARRAY =
 		new RefDataFormatType[] {
 			JSON,
-			RDF,
+			PLAIN,
+			XML,
+			AVRO,
+			PARQUET,
+			YAML,
 		};
 
 	/**
@@ -135,7 +231,11 @@ public enum RefDataFormatType implements Enumerator {
 	public static RefDataFormatType get(int value) {
 		switch (value) {
 			case JSON_VALUE: return JSON;
-			case RDF_VALUE: return RDF;
+			case PLAIN_VALUE: return PLAIN;
+			case XML_VALUE: return XML;
+			case AVRO_VALUE: return AVRO;
+			case PARQUET_VALUE: return PARQUET;
+			case YAML_VALUE: return YAML;
 		}
 		return null;
 	}

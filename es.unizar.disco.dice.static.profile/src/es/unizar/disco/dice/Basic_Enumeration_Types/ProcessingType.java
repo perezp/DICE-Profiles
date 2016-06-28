@@ -19,79 +19,52 @@ import org.eclipse.emf.common.util.Enumerator;
  */
 public enum ProcessingType implements Enumerator {
 	/**
-	 * The '<em><b>Synch</b></em>' literal object.
+	 * The '<em><b>Stream</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #SYNCH_VALUE
+	 * @see #STREAM_VALUE
 	 * @generated
 	 * @ordered
 	 */
-	SYNCH(0, "synch", "synch"),
-
-	/**
-	 * The '<em><b>Asynch</b></em>' literal object.
+	STREAM(0, "stream", "stream"), /**
+	 * The '<em><b>Batch</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #ASYNCH_VALUE
+	 * @see #BATCH_VALUE
 	 * @generated
 	 * @ordered
 	 */
-	ASYNCH(1, "asynch", "asynch"),
+	BATCH(1, "batch", "batch");
 
 	/**
-	 * The '<em><b>Policy</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #POLICY_VALUE
-	 * @generated
-	 * @ordered
-	 */
-	POLICY(2, "policy", "policy");
-
-	/**
-	 * The '<em><b>Synch</b></em>' literal value.
+	 * The '<em><b>Stream</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of '<em><b>Synch</b></em>' literal object isn't clear,
+	 * If the meaning of '<em><b>Stream</b></em>' literal object isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @see #SYNCH
-	 * @model name="synch"
+	 * @see #STREAM
+	 * @model name="stream"
 	 * @generated
 	 * @ordered
 	 */
-	public static final int SYNCH_VALUE = 0;
+	public static final int STREAM_VALUE = 0;
 
 	/**
-	 * The '<em><b>Asynch</b></em>' literal value.
+	 * The '<em><b>Batch</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of '<em><b>Asynch</b></em>' literal object isn't clear,
+	 * If the meaning of '<em><b>Batch</b></em>' literal object isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @see #ASYNCH
-	 * @model name="asynch"
+	 * @see #BATCH
+	 * @model name="batch"
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ASYNCH_VALUE = 1;
-
-	/**
-	 * The '<em><b>Policy</b></em>' literal value.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Policy</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @see #POLICY
-	 * @model name="policy"
-	 * @generated
-	 * @ordered
-	 */
-	public static final int POLICY_VALUE = 2;
+	public static final int BATCH_VALUE = 1;
 
 	/**
 	 * An array of all the '<em><b>Processing Type</b></em>' enumerators.
@@ -101,9 +74,8 @@ public enum ProcessingType implements Enumerator {
 	 */
 	private static final ProcessingType[] VALUES_ARRAY =
 		new ProcessingType[] {
-			SYNCH,
-			ASYNCH,
-			POLICY,
+			STREAM,
+			BATCH,
 		};
 
 	/**
@@ -160,9 +132,8 @@ public enum ProcessingType implements Enumerator {
 	 */
 	public static ProcessingType get(int value) {
 		switch (value) {
-			case SYNCH_VALUE: return SYNCH;
-			case ASYNCH_VALUE: return ASYNCH;
-			case POLICY_VALUE: return POLICY;
+			case STREAM_VALUE: return STREAM;
+			case BATCH_VALUE: return BATCH;
 		}
 		return null;
 	}

@@ -63,7 +63,7 @@ public class DpimSourceNodeImpl extends DpimComputationNodeImpl implements DpimS
 	 * @generated
 	 * @ordered
 	 */
-	protected static final SourceType SOURCE_TYPE_EDEFAULT = SourceType.SHARED_STORAGE;
+	protected static final SourceType SOURCE_TYPE_EDEFAULT = SourceType.DATA_STREAM;
 
 	/**
 	 * The cached value of the '{@link #getSourceType() <em>Source Type</em>}' attribute.
