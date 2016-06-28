@@ -101,7 +101,7 @@ grouping=all}</body>
           <body>{numTuples=$nS1,
 grouping=all}</body>
         </ownedComment>
-        <ownedComment xmi:type="uml:Comment" xmi:id="_yOuPoD0UEea5BfFPxb1f8A">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_yOuPoD0UEea5BfFPxb1f8A" annotatedElement="_CRMkoBXMEeaO9pVQNhbfJw">
           <body>{parallelism=$n0,
 hostDemand=
 (expr=$sp_1,
