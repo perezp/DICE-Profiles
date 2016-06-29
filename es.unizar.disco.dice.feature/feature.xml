@@ -3,7 +3,7 @@
       id="es.unizar.disco.dice.profile.feature"
       label="DICE Profile"
       version="0.5.1.qualifier"
-      provider-name="Unizar - Disco">
+      provider-name="DisCo - Unizar">
 
    <description url="https://github.com/dice-project/DICE-Profiles">
       DICE Profile for the DICE Project
