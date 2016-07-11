@@ -57,6 +57,15 @@
    <feature url="features/es.unizar.disco.dice.profile.feature_0.5.2.201606301540.jar" id="es.unizar.disco.dice.profile.feature" version="0.5.2.201606301540">
       <category name="DICE Profiles"/>
    </feature>
+   <feature url="features/com.masdes.dam.profile.feature_0.6.0.201607111746.jar" id="com.masdes.dam.profile.feature" version="0.6.0.201607111746">
+      <category name="DICE Profiles"/>
+   </feature>
+   <feature url="features/com.masdes.dam.profile.ui.feature_0.6.0.201607111746.jar" id="com.masdes.dam.profile.ui.feature" version="0.6.0.201607111746">
+      <category name="DICE Profiles"/>
+   </feature>
+   <feature url="features/es.unizar.disco.dice.profile.feature_0.6.0.201607111746.jar" id="es.unizar.disco.dice.profile.feature" version="0.6.0.201607111746">
+      <category name="DICE Profiles"/>
+   </feature>
    <category-def name="DICE Profiles" label="DICE Profiles">
       <description>
          Profiles for the DICE Project
