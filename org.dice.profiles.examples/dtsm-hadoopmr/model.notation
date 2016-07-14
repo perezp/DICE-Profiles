@@ -27,7 +27,7 @@
             <layoutConstraint xmi:type="notation:Location" xmi:id="_p2MnUTlXEeaE4deiM0Jlvg" x="-25" y="-23"/>
           </children>
           <children xmi:type="notation:DecorationNode" xmi:id="_p2MnUjlXEeaE4deiM0Jlvg" type="InitialNode_StereotypeLabel">
-            <layoutConstraint xmi:type="notation:Location" xmi:id="_p2MnUzlXEeaE4deiM0Jlvg" x="-41" y="-14"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_p2MnUzlXEeaE4deiM0Jlvg" x="-50" y="-14"/>
           </children>
           <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_p2MAQTlXEeaE4deiM0Jlvg"/>
           <element xmi:type="uml:InitialNode" href="model.uml#_p15FUDlXEeaE4deiM0Jlvg"/>
@@ -42,7 +42,7 @@
           </children>
           <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_1vqvsTlXEeaE4deiM0Jlvg"/>
           <element xmi:type="uml:ActivityFinalNode" href="model.uml#_1va4EDlXEeaE4deiM0Jlvg"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_1vqvsjlXEeaE4deiM0Jlvg" x="975" y="179"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_1vqvsjlXEeaE4deiM0Jlvg" x="1002" y="179"/>
         </children>
         <children xmi:type="notation:Shape" xmi:id="_CeADgDlYEeaE4deiM0Jlvg" visible="false" type="StereotypeComment" fillColor="13420443">
           <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_KNaQIDlhEeaE4deiM0Jlvg" source="PapyrusCSSForceValue">
@@ -157,7 +157,7 @@
           </children>
           <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_VYvjUTllEeaE4deiM0Jlvg"/>
           <element xmi:type="uml:ActivityPartition" href="model.uml#_VYd2gDllEeaE4deiM0Jlvg"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_VYvjUjllEeaE4deiM0Jlvg" x="579" y="95" width="370" height="223"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_VYvjUjllEeaE4deiM0Jlvg" x="579" y="95" width="415" height="219"/>
         </children>
         <children xmi:type="notation:Shape" xmi:id="_qYkzQDllEeaE4deiM0Jlvg" type="ActivityPartition_Shape" gradient="16777215, -1, 0">
           <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_xdjR4DllEeaE4deiM0Jlvg" source="PapyrusCSSForceValue">
@@ -218,7 +218,7 @@
           </children>
           <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_qYkzQTllEeaE4deiM0Jlvg"/>
           <element xmi:type="uml:ActivityPartition" href="model.uml#_qYQqMDllEeaE4deiM0Jlvg"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qYkzQjllEeaE4deiM0Jlvg" x="165" y="97" width="405" height="219"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qYkzQjllEeaE4deiM0Jlvg" x="154" y="97" width="420" height="219"/>
         </children>
         <layoutConstraint xmi:type="notation:Bounds" xmi:id="_XJsE8TlXEeaE4deiM0Jlvg"/>
       </children>
