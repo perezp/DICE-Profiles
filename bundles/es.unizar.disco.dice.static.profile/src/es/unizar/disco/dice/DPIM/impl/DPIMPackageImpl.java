@@ -48,9 +48,6 @@ import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
 
 import org.eclipse.emf.ecore.impl.EPackageImpl;
-
-import org.eclipse.papyrus.MARTE.MARTE_AnalysisModel.GQAM.GQAMPackage;
-
 import org.eclipse.papyrus.MARTE.MARTE_Foundations.GRM.GRMPackage;
 
 import org.eclipse.papyrus.MARTE_Library.BasicNFP_Types.BasicNFP_TypesPackage;
@@ -489,7 +486,6 @@ public class DPIMPackageImpl extends EPackageImpl implements DPIMPackage {
 		es.unizar.disco.dice.Complex_Data_Types.Complex_Data_TypesPackage theComplex_Data_TypesPackage_1 = (es.unizar.disco.dice.Complex_Data_Types.Complex_Data_TypesPackage)EPackage.Registry.INSTANCE.getEPackage(es.unizar.disco.dice.Complex_Data_Types.Complex_Data_TypesPackage.eNS_URI);
 		GRMPackage theGRMPackage = (GRMPackage)EPackage.Registry.INSTANCE.getEPackage(GRMPackage.eNS_URI);
 		TypesPackage theTypesPackage = (TypesPackage)EPackage.Registry.INSTANCE.getEPackage(TypesPackage.eNS_URI);
-		GQAMPackage theGQAMPackage = (GQAMPackage)EPackage.Registry.INSTANCE.getEPackage(GQAMPackage.eNS_URI);
 
 		// Create type parameters
 
@@ -502,7 +498,7 @@ public class DPIMPackageImpl extends EPackageImpl implements DPIMPackage {
 		dpimSourceNodeEClass.getESuperTypes().add(this.getDpimComputationNode());
 		dpimStorageNodeEClass.getESuperTypes().add(theGRMPackage.getStorageResource());
 		dpimChannelEClass.getESuperTypes().add(theCorePackage_1.getDaConnector());
-		dpimScenarioEClass.getESuperTypes().add(theGQAMPackage.getGaScenario());
+		dpimScenarioEClass.getESuperTypes().add(theCorePackage_1.getDaService());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(dpimComputationNodeEClass, DpimComputationNode.class, "DpimComputationNode", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);

@@ -2,12 +2,11 @@
  */
 package es.unizar.disco.dice.DPIM.impl;
 
+import com.masdes.dam.Core.impl.DaServiceImpl;
 import es.unizar.disco.dice.DPIM.DPIMPackage;
 import es.unizar.disco.dice.DPIM.DpimScenario;
 
 import org.eclipse.emf.ecore.EClass;
-
-import org.eclipse.papyrus.MARTE.MARTE_AnalysisModel.GQAM.impl.GaScenarioImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -16,7 +15,7 @@ import org.eclipse.papyrus.MARTE.MARTE_AnalysisModel.GQAM.impl.GaScenarioImpl;
  *
  * @generated
  */
-public class DpimScenarioImpl extends GaScenarioImpl implements DpimScenario {
+public class DpimScenarioImpl extends DaServiceImpl implements DpimScenario {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
