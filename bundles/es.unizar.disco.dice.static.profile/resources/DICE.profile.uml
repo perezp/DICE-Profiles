@@ -11,7 +11,10 @@
       <importedPackage xmi:type="uml:Profile" href="pathmap://DAM_PROFILES/DAM.profile.uml#_DchGAOSiEeKuSu-I2xDxSA"/>
     </packageImport>
     <packagedElement xmi:type="uml:Package" xmi:id="_GCf1wOeaEeWj7ZPL8JeBTQ" name="DICE_UML_Extensions">
-      <packagedElement xmi:type="uml:Profile" xmi:id="_gFr1YOebEeWj7ZPL8JeBTQ" name="DPIM">
+      <packagedElement xmi:type="uml:Profile" xmi:id="_gFr1YOebEeWj7ZPL8JeBTQ" name="DPIM" metaclassReference="_EtaK0ICoEeadSIe892pcsQ">
+        <elementImport xmi:type="uml:ElementImport" xmi:id="_EtaK0ICoEeadSIe892pcsQ" alias="Stereotype">
+          <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Stereotype"/>
+        </elementImport>
         <packagedElement xmi:type="uml:Stereotype" xmi:id="_C9h50OejEeWj7ZPL8JeBTQ" name="DpimComputationNode">
           <generalization xmi:type="uml:Generalization" xmi:id="_VmeK4OejEeWj7ZPL8JeBTQ">
             <general xmi:type="uml:Stereotype" href="pathmap://DAM_PROFILES/DAM.profile.uml#_2vT30OPWEeKfvsJiOXhpew"/>
@@ -115,7 +118,21 @@
           <generalization xmi:type="uml:Generalization" xmi:id="_70CFYC5gEeaF_sH3mLTVKg">
             <general xmi:type="uml:Stereotype" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_XYaMIBKYEdyGYuetzx6T5A"/>
           </generalization>
+          <generalization xmi:type="uml:Generalization" xmi:id="_AW2nAIC4EeadSIe892pcsQ">
+            <general xmi:type="uml:Stereotype" href="../../com.masdes.dam.static.profile/resources/DAM.profile.uml#_UMuEIOPvEeKfvsJiOXhpew"/>
+          </generalization>
         </packagedElement>
+        <packagedElement xmi:type="uml:Stereotype" xmi:id="_44pt4ICoEeadSIe892pcsQ" name="DaService">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_wcQT4ICpEeadSIe892pcsQ">
+            <body>Namespace	&lt;&lt;EPackage>> &lt;Profile> Core</body>
+          </ownedComment>
+        </packagedElement>
+        <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_RHHdAICpEeadSIe892pcsQ">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_RHJSMICpEeadSIe892pcsQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <references xmi:type="ecore:EPackage" href="DAM.profile.uml#_RHFAwYCpEeadSIe892pcsQ"/>
+          </eAnnotations>
+          <appliedProfile xmi:type="uml:Profile" href="DAM.profile.uml#_RGoU0ICpEeadSIe892pcsQ"/>
+        </profileApplication>
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="__nIcICy2EeagadxR5JgrcA" name="DTSM">
         <packagedElement xmi:type="uml:Package" xmi:id="_Q9bJsCluEeaibdPncpUwfA" name="Core" metaclassReference="_pnK3ACpoEeaibdPncpUwfA">
