@@ -5,25 +5,12 @@
       <body>resMult=(expr=$c1)</body>
     </ownedComment>
     <ownedComment xmi:type="uml:Comment" xmi:id="_4W9h0DxnEea0n4gfxAdogA" annotatedElement="_4W9h0TxnEea0n4gfxAdogA">
-      <body>resMult=$c2</body>
+      <body>resMult=(expr=$c2)</body>
     </ownedComment>
     <packageImport xmi:type="uml:PackageImport" xmi:id="_fjtA8BXCEeaO9pVQNhbfJw">
       <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
     </packageImport>
-    <packagedElement xmi:type="uml:Activity" xmi:id="_fhMfgBXCEeaO9pVQNhbfJw" name="Topology" node="_Jw8CwBXDEeaO9pVQNhbfJw _CRMkoBXMEeaO9pVQNhbfJw _Ll1YwBXMEeaO9pVQNhbfJw _LNmCcBXNEeaO9pVQNhbfJw _M66f4BXNEeaO9pVQNhbfJw _lloGIBXNEeaO9pVQNhbfJw _INX9QBXOEeaO9pVQNhbfJw _TEcG0DOxEeax3OqdhCztQw _w_mtgDPGEeax3OqdhCztQw _VDniQDnxEeaBQNKHvmh8mQ _V4CBwDnxEeaBQNKHvmh8mQ _sFMngDnxEeaBQNKHvmh8mQ _svru8DnxEeaBQNKHvmh8mQ _RLSPoD0vEeadLIR15eC1oQ" group="_UD_Q0BXMEeaO9pVQNhbfJw">
-      <ownedComment xmi:type="uml:Comment" xmi:id="_Uag_kB3REeazlIZjpSDHBw" annotatedElement="_Jw8CwBXDEeaO9pVQNhbfJw">
-        <ownedComment xmi:type="uml:Comment" xmi:id="_dhJz8B3REeazlIZjpSDHBw" annotatedElement="_Uag_kB3REeazlIZjpSDHBw">
-          <body>(open=
-(arrivalProcess=$type;
-arrivalRate=$think))</body>
-        </ownedComment>
-        <body>(open=(arrivalProcess=$type2;
- arrivalRate=$think2))</body>
-      </ownedComment>
-      <ownedComment xmi:type="uml:Comment" xmi:id="_hJ3u4D0REea5BfFPxb1f8A" annotatedElement="_w_mtgDPGEeax3OqdhCztQw">
-        <body>(open=(arrivalProcess=$type1,
-arrivalRate=$think1))</body>
-      </ownedComment>
+    <packagedElement xmi:type="uml:Activity" xmi:id="_fhMfgBXCEeaO9pVQNhbfJw" name="Topology" node="_Jw8CwBXDEeaO9pVQNhbfJw _CRMkoBXMEeaO9pVQNhbfJw _Ll1YwBXMEeaO9pVQNhbfJw _LNmCcBXNEeaO9pVQNhbfJw _M66f4BXNEeaO9pVQNhbfJw _lloGIBXNEeaO9pVQNhbfJw _INX9QBXOEeaO9pVQNhbfJw _TEcG0DOxEeax3OqdhCztQw _VDniQDnxEeaBQNKHvmh8mQ _V4CBwDnxEeaBQNKHvmh8mQ _sFMngDnxEeaBQNKHvmh8mQ _svru8DnxEeaBQNKHvmh8mQ _RLSPoD0vEeadLIR15eC1oQ _w_mtgDPGEeax3OqdhCztQw" group="_UD_Q0BXMEeaO9pVQNhbfJw">
       <edge xmi:type="uml:ControlFlow" xmi:id="_BP6fEBXSEeaO9pVQNhbfJw" target="_INX9QBXOEeaO9pVQNhbfJw" source="_lloGIBXNEeaO9pVQNhbfJw"/>
       <edge xmi:type="uml:ControlFlow" xmi:id="_Mj_54DMHEea2HMc_AU99vQ" target="_TEcG0DOxEeax3OqdhCztQw" source="_Ll1YwBXMEeaO9pVQNhbfJw"/>
       <edge xmi:type="uml:ControlFlow" xmi:id="_eVT-IDOxEeax3OqdhCztQw" target="_TEcG0DOxEeax3OqdhCztQw" source="_CRMkoBXMEeaO9pVQNhbfJw">
@@ -32,7 +19,6 @@ arrivalRate=$think1))</body>
 grouping=shuffle}</body>
         </ownedComment>
       </edge>
-      <edge xmi:type="uml:ControlFlow" xmi:id="_fErlkDOxEeax3OqdhCztQw" target="_LNmCcBXNEeaO9pVQNhbfJw" source="_TEcG0DOxEeax3OqdhCztQw"/>
       <edge xmi:type="uml:ControlFlow" xmi:id="_sSKuADPGEeax3OqdhCztQw" target="_Ll1YwBXMEeaO9pVQNhbfJw" source="_Jw8CwBXDEeaO9pVQNhbfJw"/>
       <edge xmi:type="uml:ControlFlow" xmi:id="_9_cBADPGEeax3OqdhCztQw" target="_CRMkoBXMEeaO9pVQNhbfJw" source="_w_mtgDPGEeax3OqdhCztQw"/>
       <edge xmi:type="uml:ControlFlow" xmi:id="_gMBaEDnxEeaBQNKHvmh8mQ" target="_VDniQDnxEeaBQNKHvmh8mQ" source="_LNmCcBXNEeaO9pVQNhbfJw"/>
@@ -41,6 +27,7 @@ grouping=shuffle}</body>
       <edge xmi:type="uml:ControlFlow" xmi:id="_uM6h8DnxEeaBQNKHvmh8mQ" target="_svru8DnxEeaBQNKHvmh8mQ" source="_CRMkoBXMEeaO9pVQNhbfJw"/>
       <edge xmi:type="uml:ControlFlow" xmi:id="_utQ18DnxEeaBQNKHvmh8mQ" target="_svru8DnxEeaBQNKHvmh8mQ" source="_Ll1YwBXMEeaO9pVQNhbfJw"/>
       <edge xmi:type="uml:ControlFlow" xmi:id="_vrTLgDnxEeaBQNKHvmh8mQ" target="_M66f4BXNEeaO9pVQNhbfJw" source="_svru8DnxEeaBQNKHvmh8mQ"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_89cTIEmsEeaMP7A3SRCLqg" target="_LNmCcBXNEeaO9pVQNhbfJw" source="_TEcG0DOxEeax3OqdhCztQw"/>
       <group xmi:type="uml:ActivityPartition" xmi:id="_UD_Q0BXMEeaO9pVQNhbfJw" name="Topology1" node="_VDniQDnxEeaBQNKHvmh8mQ _V4CBwDnxEeaBQNKHvmh8mQ _sFMngDnxEeaBQNKHvmh8mQ _svru8DnxEeaBQNKHvmh8mQ _INX9QBXOEeaO9pVQNhbfJw _RLSPoD0vEeadLIR15eC1oQ">
         <ownedComment xmi:type="uml:Comment" xmi:id="_5leYgBa5EeamROHAZguY-Q" annotatedElement="_UD_Q0BXMEeaO9pVQNhbfJw">
           <body>&lt;&lt;Topology>></body>
@@ -126,7 +113,7 @@ statQ=mean,
 source=est)}</body>
         </ownedComment>
       </group>
-      <node xmi:type="uml:InitialNode" xmi:id="_Jw8CwBXDEeaO9pVQNhbfJw" name="spout2" outgoing="_sSKuADPGEeax3OqdhCztQw">
+      <node xmi:type="uml:InitialNode" xmi:id="_Jw8CwBXDEeaO9pVQNhbfJw" outgoing="_sSKuADPGEeax3OqdhCztQw">
         <ownedComment xmi:type="uml:Comment" xmi:id="_lqSk0BarEeamROHAZguY-Q" annotatedElement="_Jw8CwBXDEeaO9pVQNhbfJw">
           <body>workload</body>
         </ownedComment>
@@ -137,7 +124,7 @@ source=est)}</body>
       </node>
       <node xmi:type="uml:OpaqueAction" xmi:id="_CRMkoBXMEeaO9pVQNhbfJw" name="spout_1" incoming="_9_cBADPGEeax3OqdhCztQw" outgoing="_eVT-IDOxEeax3OqdhCztQw _uM6h8DnxEeaBQNKHvmh8mQ"/>
       <node xmi:type="uml:OpaqueAction" xmi:id="_Ll1YwBXMEeaO9pVQNhbfJw" name="spout_2" incoming="_sSKuADPGEeax3OqdhCztQw" outgoing="_Mj_54DMHEea2HMc_AU99vQ _utQ18DnxEeaBQNKHvmh8mQ"/>
-      <node xmi:type="uml:OpaqueAction" xmi:id="_LNmCcBXNEeaO9pVQNhbfJw" name="bolt1_1" incoming="_fErlkDOxEeax3OqdhCztQw" outgoing="_gMBaEDnxEeaBQNKHvmh8mQ">
+      <node xmi:type="uml:OpaqueAction" xmi:id="_LNmCcBXNEeaO9pVQNhbfJw" name="bolt1_1" incoming="_89cTIEmsEeaMP7A3SRCLqg" outgoing="_gMBaEDnxEeaBQNKHvmh8mQ">
         <ownedComment xmi:type="uml:Comment" xmi:id="_yBEPUD0uEeadLIR15eC1oQ" annotatedElement="_LNmCcBXNEeaO9pVQNhbfJw">
           <body></body>
         </ownedComment>
@@ -145,8 +132,8 @@ source=est)}</body>
       <node xmi:type="uml:OpaqueAction" xmi:id="_M66f4BXNEeaO9pVQNhbfJw" name="bolt1_2" incoming="_vrTLgDnxEeaBQNKHvmh8mQ" outgoing="_grhZgDnxEeaBQNKHvmh8mQ"/>
       <node xmi:type="uml:OpaqueAction" xmi:id="_lloGIBXNEeaO9pVQNhbfJw" name="bolt2_3" incoming="_hKzWgDnxEeaBQNKHvmh8mQ" outgoing="_BP6fEBXSEeaO9pVQNhbfJw"/>
       <node xmi:type="uml:ActivityFinalNode" xmi:id="_INX9QBXOEeaO9pVQNhbfJw" name="Final" incoming="_BP6fEBXSEeaO9pVQNhbfJw" inPartition="_UD_Q0BXMEeaO9pVQNhbfJw"/>
-      <node xmi:type="uml:JoinNode" xmi:id="_TEcG0DOxEeax3OqdhCztQw" name="BJ1" incoming="_Mj_54DMHEea2HMc_AU99vQ _eVT-IDOxEeax3OqdhCztQw" outgoing="_fErlkDOxEeax3OqdhCztQw"/>
-      <node xmi:type="uml:InitialNode" xmi:id="_w_mtgDPGEeax3OqdhCztQw" name="spout1" outgoing="_9_cBADPGEeax3OqdhCztQw">
+      <node xmi:type="uml:JoinNode" xmi:id="_TEcG0DOxEeax3OqdhCztQw" name="BJ1" incoming="_Mj_54DMHEea2HMc_AU99vQ _eVT-IDOxEeax3OqdhCztQw" outgoing="_89cTIEmsEeaMP7A3SRCLqg"/>
+      <node xmi:type="uml:InitialNode" xmi:id="_w_mtgDPGEeax3OqdhCztQw" outgoing="_9_cBADPGEeax3OqdhCztQw">
         <ownedComment xmi:type="uml:Comment" xmi:id="_1fUUUD0tEeadLIR15eC1oQ" annotatedElement="_w_mtgDPGEeax3OqdhCztQw">
           <ownedComment xmi:type="uml:Comment" xmi:id="_-qpbcD0tEeadLIR15eC1oQ" annotatedElement="_1fUUUD0tEeadLIR15eC1oQ">
             <ownedComment xmi:type="uml:Comment" xmi:id="_Alq9sD0uEeadLIR15eC1oQ" annotatedElement="_-qpbcD0tEeadLIR15eC1oQ">
@@ -215,7 +202,6 @@ source=est)}</body>
       <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Ecore.profile.uml#_0"/>
     </profileApplication>
   </uml:Model>
-  <GQAM:GaWorkloadEvent xmi:id="_oL0tcBarEeamROHAZguY-Q" pattern="(open=(arrivalProcess=$type2, arrivalRate=$think2))" base_NamedElement="_Jw8CwBXDEeaO9pVQNhbfJw"/>
   <Storm:StormBolt xmi:id="_kTu5wDlWEea0z7HcqJPIGQ" base_NamedElement="_lloGIBXNEeaO9pVQNhbfJw" base_Action="_lloGIBXNEeaO9pVQNhbfJw" parallelism="$n3" sigma="">
     <hostDemand>(expr=$b2_3, unit=ms, statQ=mean, source=est)</hostDemand>
   </Storm:StormBolt>
@@ -232,7 +218,6 @@ source=est)}</body>
   <Storm:StormSpout xmi:id="_cPorwDnrEeaBQNKHvmh8mQ" base_NamedElement="_Ll1YwBXMEeaO9pVQNhbfJw" base_Action="_Ll1YwBXMEeaO9pVQNhbfJw" parallelism="$n1">
     <hostDemand>(value=$sp_2,unit=ms,statQ=mean,source=est)</hostDemand>
   </Storm:StormSpout>
-  <GQAM:GaWorkloadEvent xmi:id="_g51fIDntEeaBQNKHvmh8mQ" pattern="(open=(arrivalProcess=$type1, arrivalRate=$think1))" base_NamedElement="_w_mtgDPGEeax3OqdhCztQw"/>
   <Storm:StormStreamStep xmi:id="_suQoEDnwEeaBQNKHvmh8mQ" base_NamedElement="_eVT-IDOxEeax3OqdhCztQw" numTuples="$nS6" grouping="shuffle"/>
   <Storm:StormStreamStep xmi:id="_xN8fcDnwEeaBQNKHvmh8mQ" base_NamedElement="_Mj_54DMHEea2HMc_AU99vQ" numTuples="nS5" grouping="shuffle"/>
   <Storm:StormStreamStep xmi:id="_yowbIDnxEeaBQNKHvmh8mQ" base_NamedElement="_uM6h8DnxEeaBQNKHvmh8mQ" numTuples="$nS1"/>
