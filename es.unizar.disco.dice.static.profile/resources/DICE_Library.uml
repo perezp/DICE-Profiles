@@ -82,6 +82,23 @@
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_RWUJYDiZEeaFI4EbHcf0UA" name="fifo"/>
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_SaOdcDiZEeaFI4EbHcf0UA" name="fair"/>
         </packagedElement>
+        <packagedElement xmi:type="uml:Enumeration" xmi:id="_HOIsID4CEeahGZm0A1o1gg" name="VMSize">
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_MfkJgD4CEeahGZm0A1o1gg" name="small"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_Q4qQsD4CEeahGZm0A1o1gg" name="medium"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_TM8ngD4CEeahGZm0A1o1gg" name="large"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Enumeration" xmi:id="_ToY-oD4IEeahGZm0A1o1gg" name="ProviderType">
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_VrthQD4IEeahGZm0A1o1gg" name="flexiant"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_Xqh-YD4IEeahGZm0A1o1gg" name="openstack"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Enumeration" xmi:id="_JBGoID4OEeahGZm0A1o1gg" name="LifeCycleElementType">
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_L6TC0D4OEeahGZm0A1o1gg" name="start"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_O_R2wD4OEeahGZm0A1o1gg" name="stop"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_P0fngD4OEeahGZm0A1o1gg" name="install"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_SyFaAD4OEeahGZm0A1o1gg" name="create"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_T45RED4OEeahGZm0A1o1gg" name="download"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_VXGUcD4OEeahGZm0A1o1gg" name="preconfigured"/>
+        </packagedElement>
       </packagedElement>
       <packagedElement xmi:type="uml:Profile" xmi:id="_yQjxwOeYEeWj7ZPL8JeBTQ" name="Data_Types">
         <packagedElement xmi:type="uml:DataType" xmi:id="_KyBsgC5SEeaF_sH3mLTVKg" name="NFP_Privacy">
@@ -91,6 +108,19 @@
           <ownedAttribute xmi:type="uml:Property" xmi:id="_25PuwC5SEeaF_sH3mLTVKg" name="source">
             <type xmi:type="uml:Enumeration" href="pathmap://Papyrus_PROFILES/MARTE_Library.library.uml#_oMZzEBD-EdyybZnLxHsjyA"/>
           </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_EgSOsD4WEeahGZm0A1o1gg" name="ScriptType">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_JQxiMD4WEeahGZm0A1o1gg" name="scriptId">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_aTHB0D4WEeahGZm0A1o1gg"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aTHo4D4WEeahGZm0A1o1gg" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_NDdwsD4WEeahGZm0A1o1gg" name="scriptUri">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bJnzED4WEeahGZm0A1o1gg"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bJnzET4WEeahGZm0A1o1gg" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_SF_PYD4WEeahGZm0A1o1gg" name="scriptKind" type="_JBGoID4OEeahGZm0A1o1gg"/>
         </packagedElement>
       </packagedElement>
     </packagedElement>
