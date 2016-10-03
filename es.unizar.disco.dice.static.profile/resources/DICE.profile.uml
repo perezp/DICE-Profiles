@@ -112,8 +112,8 @@
           </ownedAttribute>
         </packagedElement>
         <packagedElement xmi:type="uml:Stereotype" xmi:id="_xjoMkC5gEeaF_sH3mLTVKg" name="DpimScenario">
-          <generalization xmi:type="uml:Generalization" xmi:id="_70CFYC5gEeaF_sH3mLTVKg">
-            <general xmi:type="uml:Stereotype" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_XYaMIBKYEdyGYuetzx6T5A"/>
+          <generalization xmi:type="uml:Generalization" xmi:id="_hXwb0IluEeaFpJw9Inr05g">
+            <general xmi:type="uml:Stereotype" href="pathmap://DAM_PROFILES/DAM.profile.uml#_UMuEIOPvEeKfvsJiOXhpew"/>
           </generalization>
         </packagedElement>
       </packagedElement>
@@ -500,7 +500,22 @@
           <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Ecore.profile.uml#_0"/>
         </profileApplication>
       </packagedElement>
-      <packagedElement xmi:type="uml:Profile" xmi:id="_aYmS0Dx2EeaOH59TuV453g" name="DDSM">
+      <packagedElement xmi:type="uml:Profile" xmi:id="_aYmS0Dx2EeaOH59TuV453g" name="DDSM" metaclassReference="_QqQ44IlwEeaFpJw9Inr05g _Zg0C0IlwEeaFpJw9Inr05g _sxXbkIlyEeaFpJw9Inr05g _AtdWkIlzEeaFpJw9Inr05g _GmKjcImAEeaFpJw9Inr05g">
+        <elementImport xmi:type="uml:ElementImport" xmi:id="_QqQ44IlwEeaFpJw9Inr05g" alias="CommunicationPath">
+          <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#CommunicationPath"/>
+        </elementImport>
+        <elementImport xmi:type="uml:ElementImport" xmi:id="_Zg0C0IlwEeaFpJw9Inr05g" alias="Artifact">
+          <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Artifact"/>
+        </elementImport>
+        <elementImport xmi:type="uml:ElementImport" xmi:id="_sxXbkIlyEeaFpJw9Inr05g" alias="Device">
+          <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Device"/>
+        </elementImport>
+        <elementImport xmi:type="uml:ElementImport" xmi:id="_AtdWkIlzEeaFpJw9Inr05g" alias="Node">
+          <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Node"/>
+        </elementImport>
+        <elementImport xmi:type="uml:ElementImport" xmi:id="_GmKjcImAEeaFpJw9Inr05g" alias="Deployment">
+          <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Deployment"/>
+        </elementImport>
         <packagedElement xmi:type="uml:Stereotype" xmi:id="_Uz1NQDx3EeaOH59TuV453g" name="DdsmExternalComponent">
           <generalization xmi:type="uml:Generalization" xmi:id="_UwmxcD3oEeaPco63Cq703g" general="_Q0COMD3oEeaPco63Cq703g"/>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_sMQgYD3kEeaPco63Cq703g" name="location">
@@ -533,10 +548,13 @@
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iaX4ID37EeahGZm0A1o1gg"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iaYfMD37EeahGZm0A1o1gg" value="1"/>
           </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_9RLc8YlyEeaFpJw9Inr05g" name="base_Device" association="_9RK14IlyEeaFpJw9Inr05g">
+            <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Device"/>
+          </ownedAttribute>
         </packagedElement>
         <packagedElement xmi:type="uml:Stereotype" xmi:id="_VW6FIDx3EeaOH59TuV453g" name="DdsmInternalComponent">
           <generalization xmi:type="uml:Generalization" xmi:id="_UUD_YD3oEeaPco63Cq703g" general="_Q0COMD3oEeaPco63Cq703g"/>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_nMznAD3oEeaPco63Cq703g" name="requiredExecPlatform" type="_fTUs0D3pEeaPco63Cq703g">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_nMznAD3oEeaPco63Cq703g" name="requiredExecPlatform">
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qkSgMD3oEeaPco63Cq703g"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qkTHQD3oEeaPco63Cq703g" value="*"/>
           </ownedAttribute>
@@ -547,6 +565,12 @@
           <ownedAttribute xmi:type="uml:Property" xmi:id="_X3NekD3_EeahGZm0A1o1gg" name="isFrontEnd">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EBoolean"/>
             <defaultValue xmi:type="uml:LiteralBoolean" xmi:id="_eIkH4D3_EeahGZm0A1o1gg"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_eLU0sIlxEeaFpJw9Inr05g" name="componentType">
+            <type xmi:type="uml:Enumeration" href="DICE_Library.uml#_4Hn0EIlwEeaFpJw9Inr05g"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_GOWzUYlzEeaFpJw9Inr05g" name="base_Node" association="_GOWMQIlzEeaFpJw9Inr05g">
+            <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Node"/>
           </ownedAttribute>
         </packagedElement>
         <packagedElement xmi:type="uml:Stereotype" xmi:id="_2gRSsDx3EeaOH59TuV453g" name="DdsmCluster">
@@ -637,32 +661,75 @@
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pjfywD4CEeahGZm0A1o1gg" value="1"/>
           </ownedAttribute>
         </packagedElement>
-        <packagedElement xmi:type="uml:Stereotype" xmi:id="_0QnBED3TEeaPco63Cq703g" name="DdsmClientNode">
-          <generalization xmi:type="uml:Generalization" xmi:id="_tDGcED3UEeaPco63Cq703g" general="_VW6FIDx3EeaOH59TuV453g"/>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_4MMs4D3TEeaPco63Cq703g" name="url">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WQvekD3UEeaPco63Cq703g"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WQ4BcD3UEeaPco63Cq703g" value="1"/>
-          </ownedAttribute>
-        </packagedElement>
-        <packagedElement xmi:type="uml:Stereotype" xmi:id="_bTMEwD3UEeaPco63Cq703g" name="DdsmYarnRM">
+        <packagedElement xmi:type="uml:Stereotype" xmi:id="_bTMEwD3UEeaPco63Cq703g" name="DdsmYarnResourceManager">
+          <ownedRule xmi:type="uml:Constraint" xmi:id="_3jt38Il_EeaFpJw9Inr05g" name="YarnTypeMasterNode" constrainedElement="_eLU0sIlxEeaFpJw9Inr05g">
+            <specification xmi:type="uml:OpaqueExpression" xmi:id="_-pqm8Il_EeaFpJw9Inr05g" name="YarnIsMasterNode">
+              <language>OCL</language>
+              <body>self.componentType = DDSMcomponentType::MasterNode</body>
+            </specification>
+          </ownedRule>
           <generalization xmi:type="uml:Generalization" xmi:id="_v0wrYD3UEeaPco63Cq703g" general="_VW6FIDx3EeaOH59TuV453g"/>
         </packagedElement>
-        <packagedElement xmi:type="uml:Stereotype" xmi:id="_dhJKED3UEeaPco63Cq703g" name="DdsmZookeeper">
+        <packagedElement xmi:type="uml:Stereotype" xmi:id="_dhJKED3UEeaPco63Cq703g" name="DdsmZookeeperServer">
+          <ownedRule xmi:type="uml:Constraint" xmi:id="_DPOPEIl7EeaFpJw9Inr05g" name="ZookeeperServerTypePeefNode" constrainedElement="_eLU0sIlxEeaFpJw9Inr05g">
+            <specification xmi:type="uml:OpaqueExpression" xmi:id="_SD6ycIl7EeaFpJw9Inr05g" name="ZookeeperServerIsPeerNode">
+              <language>OCL</language>
+              <body>self.componentType=DDSMcomponentType::PeerNode</body>
+            </specification>
+          </ownedRule>
           <generalization xmi:type="uml:Generalization" xmi:id="_wRnmgD3UEeaPco63Cq703g" general="_VW6FIDx3EeaOH59TuV453g"/>
-        </packagedElement>
-        <packagedElement xmi:type="uml:Stereotype" xmi:id="_fp7bgD3UEeaPco63Cq703g" name="DdsmStormSupervisor">
-          <generalization xmi:type="uml:Generalization" xmi:id="_vHeuoD3UEeaPco63Cq703g" general="_VW6FIDx3EeaOH59TuV453g"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_1KNcMIl6EeaFpJw9Inr05g" name="tickTime">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt"/>
+            <defaultValue xmi:type="uml:LiteralInteger" xmi:id="__k-K4Il6EeaFpJw9Inr05g" value="1500"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_4-C6MIl6EeaFpJw9Inr05g" name="syncLimit">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt"/>
+            <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_AQEWUIl7EeaFpJw9Inr05g" value="10"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_8gbb0Il6EeaFpJw9Inr05g" name="initLimit">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt"/>
+            <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_BNfn4Il7EeaFpJw9Inr05g" value="5"/>
+          </ownedAttribute>
         </packagedElement>
         <packagedElement xmi:type="uml:Stereotype" xmi:id="_jIPVcD3UEeaPco63Cq703g" name="DdsmKafka">
           <generalization xmi:type="uml:Generalization" xmi:id="_wyqeED3UEeaPco63Cq703g" general="_VW6FIDx3EeaOH59TuV453g"/>
         </packagedElement>
-        <packagedElement xmi:type="uml:Stereotype" xmi:id="_mNAuAD3UEeaPco63Cq703g" name="DdsmStormNimbus">
+        <packagedElement xmi:type="uml:Stereotype" xmi:id="_mNAuAD3UEeaPco63Cq703g" name="DdsmNimbus">
+          <ownedRule xmi:type="uml:Constraint" xmi:id="_G2lCMIl5EeaFpJw9Inr05g" name="NimbusTypeMasterNode" constrainedElement="_eLU0sIlxEeaFpJw9Inr05g">
+            <specification xmi:type="uml:OpaqueExpression" xmi:id="_VlzPsIl5EeaFpJw9Inr05g" name="nimbusIsMaster">
+              <language>OCL</language>
+              <body>self.componentType = DDSMcomponentType::MasterNode</body>
+            </specification>
+          </ownedRule>
           <generalization xmi:type="uml:Generalization" xmi:id="_xZSZMD3UEeaPco63Cq703g" general="_VW6FIDx3EeaOH59TuV453g"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_HXxOQIl6EeaFpJw9Inr05g" name="taskTimeout">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_UBK-wIl6EeaFpJw9Inr05g" value="60"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_XIq7MIl6EeaFpJw9Inr05g" name="supervisorFrequency">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt"/>
+            <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_sKE4cIl6EeaFpJw9Inr05g" value="60"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_cQlQMIl6EeaFpJw9Inr05g" name="queueSize">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt"/>
+            <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_tgbAUIl6EeaFpJw9Inr05g" value="10000"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_fQ2jQIl6EeaFpJw9Inr05g" name="monitorFrequency">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt"/>
+            <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_uUjzAIl6EeaFpJw9Inr05g" value="40"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_itfpQIl6EeaFpJw9Inr05g" name="retryTimes">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt"/>
+            <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_u8XZ4Il6EeaFpJw9Inr05g" value="5"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_nhCQwIl6EeaFpJw9Inr05g" name="retryInterval">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt"/>
+            <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_vp6cYIl6EeaFpJw9Inr05g" value="2000"/>
+          </ownedAttribute>
         </packagedElement>
         <packagedElement xmi:type="uml:Stereotype" xmi:id="_Q0COMD3oEeaPco63Cq703g" name="DdsmComponent" isAbstract="true">
           <generalization xmi:type="uml:Generalization" xmi:id="_Avy9cD4HEeahGZm0A1o1gg" general="_CK01MD4AEeahGZm0A1o1gg"/>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_bsQU8D3oEeaPco63Cq703g" name="providedExecPlatformsList" type="_fTUs0D3pEeaPco63Cq703g">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_bsQU8D3oEeaPco63Cq703g" name="providedExecPlatformsList">
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ifx3MD3oEeaPco63Cq703g"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ifyeQD3oEeaPco63Cq703g" value="*"/>
           </ownedAttribute>
@@ -684,12 +751,9 @@
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MZ4KgD39EeahGZm0A1o1gg"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MZ4xkD39EeahGZm0A1o1gg" value="1"/>
           </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_nkcKcT4VEeahGZm0A1o1gg" name="base_Port" association="_nkbjYD4VEeahGZm0A1o1gg">
-            <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Port"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_XLo7MIlwEeaFpJw9Inr05g" name="base_CommunicationPath" association="_XLnGAIlwEeaFpJw9Inr05g">
+            <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#CommunicationPath"/>
           </ownedAttribute>
-        </packagedElement>
-        <packagedElement xmi:type="uml:Stereotype" xmi:id="_fTUs0D3pEeaPco63Cq703g" name="DdsmExecutionPlatform">
-          <generalization xmi:type="uml:Generalization" xmi:id="_AMYuYD4HEeahGZm0A1o1gg" general="_CK01MD4AEeahGZm0A1o1gg"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Stereotype" xmi:id="_CK01MD4AEeahGZm0A1o1gg" name="DdsmCloudElement" isAbstract="true">
           <ownedAttribute xmi:type="uml:Property" xmi:id="_Qih6kD4AEeahGZm0A1o1gg" name="description">
@@ -724,12 +788,78 @@
           <ownedAttribute xmi:type="uml:Property" xmi:id="_3lGFMD7GEeaP6dbGsA0KOA" name="id">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
           </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_cpAi0IlwEeaFpJw9Inr05g" name="base_Artifact" association="_co_UsIlwEeaFpJw9Inr05g">
+            <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Artifact"/>
+          </ownedAttribute>
         </packagedElement>
         <packagedElement xmi:type="uml:Extension" xmi:id="_LsLDED4VEeahGZm0A1o1gg" name="E_DdsmResource_Artifact1" memberEnd="_LsMRMD4VEeahGZm0A1o1gg _LsM4QD4VEeahGZm0A1o1gg">
           <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_LsMRMD4VEeahGZm0A1o1gg" name="extension_DdsmResource" type="_xlf5UD4NEeahGZm0A1o1gg" aggregation="composite" association="_LsLDED4VEeahGZm0A1o1gg"/>
         </packagedElement>
-        <packagedElement xmi:type="uml:Extension" xmi:id="_nkbjYD4VEeahGZm0A1o1gg" name="E_DdsmPort_Port1" memberEnd="_nkcKcD4VEeahGZm0A1o1gg _nkcKcT4VEeahGZm0A1o1gg">
-          <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_nkcKcD4VEeahGZm0A1o1gg" name="extension_DdsmPort" type="_cyK-sD3pEeaPco63Cq703g" aggregation="composite" association="_nkbjYD4VEeahGZm0A1o1gg"/>
+        <packagedElement xmi:type="uml:Extension" xmi:id="_XLnGAIlwEeaFpJw9Inr05g" name="E_DdsmPort_CommunicationPath1" memberEnd="_XLoUIIlwEeaFpJw9Inr05g _XLo7MIlwEeaFpJw9Inr05g">
+          <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_XLoUIIlwEeaFpJw9Inr05g" name="extension_DdsmPort" type="_cyK-sD3pEeaPco63Cq703g" aggregation="composite" association="_XLnGAIlwEeaFpJw9Inr05g"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Extension" xmi:id="_co_UsIlwEeaFpJw9Inr05g" name="E_DdsmResource_Artifact2" memberEnd="_co_7wIlwEeaFpJw9Inr05g _cpAi0IlwEeaFpJw9Inr05g">
+          <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_co_7wIlwEeaFpJw9Inr05g" name="extension_DdsmResource" type="_xlf5UD4NEeahGZm0A1o1gg" aggregation="composite" association="_co_UsIlwEeaFpJw9Inr05g"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Stereotype" xmi:id="_x5WpEIlyEeaFpJw9Inr05g" name="JobSubmission">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_zWDQkIlyEeaFpJw9Inr05g" name="artifactURL">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_4-PBEIlyEeaFpJw9Inr05g" name="mainClass">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_8rBb4IlyEeaFpJw9Inr05g" name="base_Artifact" association="_8rA00IlyEeaFpJw9Inr05g">
+            <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Artifact"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_KaeikYmAEeaFpJw9Inr05g" name="base_Deployment" association="_Kad7gImAEeaFpJw9Inr05g">
+            <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Deployment"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Extension" xmi:id="_8rA00IlyEeaFpJw9Inr05g" name="E_JobSubmission_Artifact1" memberEnd="_8rA00YlyEeaFpJw9Inr05g _8rBb4IlyEeaFpJw9Inr05g">
+          <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_8rA00YlyEeaFpJw9Inr05g" name="extension_JobSubmission" type="_x5WpEIlyEeaFpJw9Inr05g" aggregation="composite" association="_8rA00IlyEeaFpJw9Inr05g"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Extension" xmi:id="_9RK14IlyEeaFpJw9Inr05g" name="E_DdsmExternalComponent_Device1" memberEnd="_9RLc8IlyEeaFpJw9Inr05g _9RLc8YlyEeaFpJw9Inr05g">
+          <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_9RLc8IlyEeaFpJw9Inr05g" name="extension_DdsmExternalComponent" type="_Uz1NQDx3EeaOH59TuV453g" aggregation="composite" association="_9RK14IlyEeaFpJw9Inr05g"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Extension" xmi:id="_GOWMQIlzEeaFpJw9Inr05g" name="E_DdsmInternalComponent_Node1" memberEnd="_GOWzUIlzEeaFpJw9Inr05g _GOWzUYlzEeaFpJw9Inr05g">
+          <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_GOWzUIlzEeaFpJw9Inr05g" name="extension_DdsmInternalComponent" type="_VW6FIDx3EeaOH59TuV453g" aggregation="composite" association="_GOWMQIlzEeaFpJw9Inr05g"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Stereotype" xmi:id="_eWWHAIlzEeaFpJw9Inr05g" name="DdsmSupervisor">
+          <ownedRule xmi:type="uml:Constraint" xmi:id="_so4iEIl_EeaFpJw9Inr05g" name="SupervisorTypeSlaveNode" constrainedElement="_eLU0sIlxEeaFpJw9Inr05g">
+            <specification xmi:type="uml:OpaqueExpression" xmi:id="_0L5nkIl_EeaFpJw9Inr05g" name="supervisorIsSlaveNode">
+              <language>OCL</language>
+              <body>self.componentType = DDSMcomponentType::MasterSlavePlatform</body>
+            </specification>
+          </ownedRule>
+          <generalization xmi:type="uml:Generalization" xmi:id="_3O5U8IlzEeaFpJw9Inr05g" general="_VW6FIDx3EeaOH59TuV453g"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_f1MDkIlzEeaFpJw9Inr05g" name="workerStartTimeout">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt"/>
+            <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_oHEaMIlzEeaFpJw9Inr05g" value="120"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_mBAFkIlzEeaFpJw9Inr05g" name="cpuCapacity">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt"/>
+            <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_rotU8IlzEeaFpJw9Inr05g" value="400"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_sewMIIlzEeaFpJw9Inr05g" name="memoryCapacity">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt"/>
+            <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_v_GGYIlzEeaFpJw9Inr05g" value="4096"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_yKltkIlzEeaFpJw9Inr05g" name="heartbeatFrequency">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_0HhUUIlzEeaFpJw9Inr05g" value="5"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Stereotype" xmi:id="_Z75YIIl3EeaFpJw9Inr05g" name="DdsmStormCluster">
+          <ownedRule xmi:type="uml:Constraint" xmi:id="_egPtEIl3EeaFpJw9Inr05g" name="StormClusterTypeMasterSlavePlatform" constrainedElement="_eLU0sIlxEeaFpJw9Inr05g">
+            <specification xmi:type="uml:OpaqueExpression" xmi:id="_s2KNQIl4EeaFpJw9Inr05g" name="StormClusterIsMasterSlavePlatform">
+              <language>OCL</language>
+              <body>self.componentType = DDSMcomponentType::MasterSlavePlatform</body>
+            </specification>
+          </ownedRule>
+          <generalization xmi:type="uml:Generalization" xmi:id="_054MEIl4EeaFpJw9Inr05g" general="_VW6FIDx3EeaOH59TuV453g"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Extension" xmi:id="_Kad7gImAEeaFpJw9Inr05g" name="E_JobSubmission_Deployment1" memberEnd="_KaeikImAEeaFpJw9Inr05g _KaeikYmAEeaFpJw9Inr05g">
+          <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_KaeikImAEeaFpJw9Inr05g" name="extension_JobSubmission" type="_x5WpEIlyEeaFpJw9Inr05g" aggregation="composite" association="_Kad7gImAEeaFpJw9Inr05g"/>
         </packagedElement>
         <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_iGZsADx2EeaOH59TuV453g">
           <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_iG3mEDx2EeaOH59TuV453g" source="http://www.eclipse.org/uml2/2.0.0/UML">
