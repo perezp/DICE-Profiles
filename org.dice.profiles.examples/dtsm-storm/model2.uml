@@ -31,7 +31,7 @@ grouping=shuffle}</body>
       <edge xmi:type="uml:ControlFlow" xmi:id="_seThIG9REeaND6qpEoUfSQ" target="_lloGIBXNEeaO9pVQNhbfJw" source="_LNmCcBXNEeaO9pVQNhbfJw"/>
       <edge xmi:type="uml:ControlFlow" xmi:id="_7eQ5UG9REeaND6qpEoUfSQ" target="_2hHC0G9REeaND6qpEoUfSQ" source="_Iq8LcG9REeaND6qpEoUfSQ"/>
       <edge xmi:type="uml:ControlFlow" xmi:id="_78250G9REeaND6qpEoUfSQ" target="_2559UG9REeaND6qpEoUfSQ" source="_NAsDsG9REeaND6qpEoUfSQ"/>
-      <group xmi:type="uml:ActivityPartition" xmi:id="_UD_Q0BXMEeaO9pVQNhbfJw" name="Topology1" node="_LNmCcBXNEeaO9pVQNhbfJw _CRMkoBXMEeaO9pVQNhbfJw _Ll1YwBXMEeaO9pVQNhbfJw" represents="_vdKrYB3CEeaAOqN-CPM2wA">
+      <group xmi:type="uml:ActivityPartition" xmi:id="_UD_Q0BXMEeaO9pVQNhbfJw" name="Partition1" node="_LNmCcBXNEeaO9pVQNhbfJw _CRMkoBXMEeaO9pVQNhbfJw _Ll1YwBXMEeaO9pVQNhbfJw" represents="_vdKrYB3CEeaAOqN-CPM2wA">
         <ownedComment xmi:type="uml:Comment" xmi:id="_5leYgBa5EeamROHAZguY-Q" annotatedElement="_UD_Q0BXMEeaO9pVQNhbfJw">
           <body>&lt;&lt;Topology>></body>
         </ownedComment>
@@ -88,7 +88,7 @@ grouping=all}</body>
 grouping=all}</body>
         </ownedComment>
       </group>
-      <group xmi:type="uml:ActivityPartition" xmi:id="_jbq2oGqpEeadLpmgngveUw" name="Topology2" node="_M66f4BXNEeaO9pVQNhbfJw _lloGIBXNEeaO9pVQNhbfJw _Iq8LcG9REeaND6qpEoUfSQ _NAsDsG9REeaND6qpEoUfSQ _YP9_kG9REeaND6qpEoUfSQ _ZuRJkG9REeaND6qpEoUfSQ" represents="_4W9h0TxnEea0n4gfxAdogA">
+      <group xmi:type="uml:ActivityPartition" xmi:id="_jbq2oGqpEeadLpmgngveUw" name="Partition2" node="_M66f4BXNEeaO9pVQNhbfJw _lloGIBXNEeaO9pVQNhbfJw _Iq8LcG9REeaND6qpEoUfSQ _NAsDsG9REeaND6qpEoUfSQ _YP9_kG9REeaND6qpEoUfSQ _ZuRJkG9REeaND6qpEoUfSQ" represents="_4W9h0TxnEea0n4gfxAdogA">
         <ownedComment xmi:type="uml:Comment" xmi:id="_dm324B3QEeazlIZjpSDHBw" annotatedElement="_M66f4BXNEeaO9pVQNhbfJw">
           <body>{parallelism=$n3;
 hostDemand=
@@ -279,4 +279,30 @@ grouping=shuffle}</body>
   <Storm:StormBolt xmi:id="_s8qe0G9WEeaND6qpEoUfSQ" base_NamedElement="_KAkIUG9WEeaND6qpEoUfSQ" base_Classifier="_KAkIUG9WEeaND6qpEoUfSQ"/>
   <Storm:StormBolt xmi:id="_uZbXwG9WEeaND6qpEoUfSQ" base_NamedElement="_mImxEG9WEeaND6qpEoUfSQ" base_Classifier="_mImxEG9WEeaND6qpEoUfSQ"/>
   <Storm:StormBolt xmi:id="_4rmF8G9oEeaFFI2WZYPmAw" base_NamedElement="_6RPnwDxoEea0n4gfxAdogA" base_Classifier="_6RPnwDxoEea0n4gfxAdogA"/>
+  <GQAM:GaAnalysisContext xmi:id="_Vl6XEH_6EeaaHp6qiPrfLg" base_StructuredClassifier="_fhMfgBXCEeaO9pVQNhbfJw" base_NamedElement="_fhMfgBXCEeaO9pVQNhbfJw">
+    <context>in$n0</context>
+    <context>in$n1</context>
+    <context>in$n2</context>
+    <context>in$n3</context>
+    <context>in$n4</context>
+    <context>in$n5</context>
+    <context>in$n6</context>
+    <context>in$nS0</context>
+    <context>in$nS1</context>
+    <context>in$nS2</context>
+    <context>in$nS3</context>
+    <context>in$nS4</context>
+    <context>in$nS5</context>
+    <context>in$nS6</context>
+    <context>in$nS7</context>
+    <context>in$sp_1</context>
+    <context>in$sp_2</context>
+    <context>in$b1_1</context>
+    <context>in$b2_1</context>
+    <context>in$b2_2</context>
+    <context>in$b2_3</context>
+    <context>in$b2_4</context>
+    <context>in$c1</context>
+    <context>in$c2</context>
+  </GQAM:GaAnalysisContext>
 </xmi:XMI>
