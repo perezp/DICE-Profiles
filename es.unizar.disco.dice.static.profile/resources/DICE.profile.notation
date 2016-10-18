@@ -283,7 +283,7 @@
       </children>
       <styles xmi:type="notation:IntValueStyle" xmi:id="_YSC0gIluEeaFpJw9Inr05g" name="shapeDirection" intValue="4"/>
       <element xmi:type="uml:Stereotype" href="pathmap://DAM_PROFILES/DAM.profile.uml#_UMuEIOPvEeKfvsJiOXhpew"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Vp8J0YluEeaFpJw9Inr05g" x="58" y="192"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Vp8J0YluEeaFpJw9Inr05g" x="-14" y="207"/>
     </children>
     <styles xmi:type="notation:StringValueStyle" xmi:id="_MQbYoeePEeWj7ZPL8JeBTQ" name="diagram_compatibility_version" stringValue="1.2.0"/>
     <styles xmi:type="notation:DiagramStyle" xmi:id="_MQbYouePEeWj7ZPL8JeBTQ"/>
@@ -373,7 +373,8 @@
     </edges>
     <edges xmi:type="notation:Connector" xmi:id="_hYVqoIluEeaFpJw9Inr05g" type="Generalization_Edge" source="_xjozoC5gEeaF_sH3mLTVKg" target="_Vp8J0IluEeaFpJw9Inr05g">
       <children xmi:type="notation:DecorationNode" xmi:id="_hYWRsIluEeaFpJw9Inr05g" type="Generalization_StereotypeLabel">
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_hYWRsYluEeaFpJw9Inr05g" y="40"/>
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_VsAZQJVJEea3rf2NqSADGg" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_hYWRsYluEeaFpJw9Inr05g" y="39"/>
       </children>
       <styles xmi:type="notation:FontStyle" xmi:id="_hYVqoYluEeaFpJw9Inr05g"/>
       <element xmi:type="uml:Generalization" href="DICE.profile.uml#_hXwb0IluEeaFpJw9Inr05g"/>
@@ -1679,10 +1680,6 @@
     <children xmi:type="notation:Shape" xmi:id="_VW7TQDx3EeaOH59TuV453g" type="Stereotype_Shape">
       <children xmi:type="notation:DecorationNode" xmi:id="_VW7TQjx3EeaOH59TuV453g" type="Stereotype_NameLabel"/>
       <children xmi:type="notation:BasicCompartment" xmi:id="_VW7TQzx3EeaOH59TuV453g" type="Stereotype_AttributeCompartment">
-        <children xmi:type="notation:Shape" xmi:id="_nM5toD3oEeaPco63Cq703g" type="Property_ClassAttributeLabel">
-          <element xmi:type="uml:Property" href="DICE.profile.uml#_nMznAD3oEeaPco63Cq703g"/>
-          <layoutConstraint xmi:type="notation:Location" xmi:id="_nM5toT3oEeaPco63Cq703g"/>
-        </children>
         <children xmi:type="notation:Shape" xmi:id="_r2NbED3oEeaPco63Cq703g" type="Property_ClassAttributeLabel">
           <element xmi:type="uml:Property" href="DICE.profile.uml#_r2HUcD3oEeaPco63Cq703g"/>
           <layoutConstraint xmi:type="notation:Location" xmi:id="_r2NbET3oEeaPco63Cq703g"/>
@@ -1914,10 +1911,6 @@
     <children xmi:type="notation:Shape" xmi:id="_Q0C1QD3oEeaPco63Cq703g" type="Stereotype_Shape">
       <children xmi:type="notation:DecorationNode" xmi:id="_Q0DcUD3oEeaPco63Cq703g" type="Stereotype_NameLabel"/>
       <children xmi:type="notation:BasicCompartment" xmi:id="_Q0DcUT3oEeaPco63Cq703g" type="Stereotype_AttributeCompartment">
-        <children xmi:type="notation:Shape" xmi:id="_bsWbkD3oEeaPco63Cq703g" type="Property_ClassAttributeLabel">
-          <element xmi:type="uml:Property" href="DICE.profile.uml#_bsQU8D3oEeaPco63Cq703g"/>
-          <layoutConstraint xmi:type="notation:Location" xmi:id="_bsWbkT3oEeaPco63Cq703g"/>
-        </children>
         <children xmi:type="notation:Shape" xmi:id="_fRFtoD3oEeaPco63Cq703g" type="Property_ClassAttributeLabel">
           <element xmi:type="uml:Property" href="DICE.profile.uml#_fQ_nAD3oEeaPco63Cq703g"/>
           <layoutConstraint xmi:type="notation:Location" xmi:id="_fRFtoT3oEeaPco63Cq703g"/>

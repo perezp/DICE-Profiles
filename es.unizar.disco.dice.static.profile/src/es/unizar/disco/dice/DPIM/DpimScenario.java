@@ -2,7 +2,7 @@
  */
 package es.unizar.disco.dice.DPIM;
 
-import org.eclipse.papyrus.MARTE.MARTE_AnalysisModel.GQAM.GaScenario;
+import com.masdes.dam.Core.DaService;
 
 /**
  * <!-- begin-user-doc -->
@@ -14,5 +14,5 @@ import org.eclipse.papyrus.MARTE.MARTE_AnalysisModel.GQAM.GaScenario;
  * @model
  * @generated
  */
-public interface DpimScenario extends GaScenario {
+public interface DpimScenario extends DaService {
 } // DpimScenario

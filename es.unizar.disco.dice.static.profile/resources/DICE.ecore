@@ -2,7 +2,6 @@
 <ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="DICE" nsURI="http://es.unizar.disco.dice/profiles/DICE/1.0"
     nsPrefix="DICE">
-  <eClassifiers xsi:type="ecore:EEnum" name="Dummy"/>
   <eSubpackages name="DICE_UML_Extensions" nsURI="http://es.unizar.disco.dice/profiles/DICE_UML_Extensions/1.0"
       nsPrefix="DICE_UML_Extensions">
     <eSubpackages name="DPIM" nsURI="http://es.unizar.disco.dice/profiles/DPIM/1.0"
@@ -52,7 +51,7 @@
             ordered="false" eType="ecore:EClass DICE_Library.ecore#//Complex_DICE_Types/Complex_Data_Types/DiceChannelSpecification"
             containment="true"/>
       </eClassifiers>
-      <eClassifiers xsi:type="ecore:EClass" name="DpimScenario" eSuperTypes="../../org.eclipse.papyrus.marte.static.profile/resources/MARTE.ecore#//MARTE_AnalysisModel/GQAM/GaScenario"/>
+      <eClassifiers xsi:type="ecore:EClass" name="DpimScenario" eSuperTypes="../../com.masdes.dam.static.profile/resources/DAM.ecore#//DAM_UML_Extensions/System/Core/DaService"/>
     </eSubpackages>
     <eSubpackages name="DTSM" nsURI="http://es.unizar.disco.dice/profiles/DTSM/1.0"
         nsPrefix="DTSM">
@@ -255,6 +254,267 @@
               upperBound="-1" eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Integer"/>
         </eClassifiers>
       </eSubpackages>
+    </eSubpackages>
+    <eSubpackages name="DDSM" nsURI="http://es.unizar.disco.dice/profiles/DDSM/1.0"
+        nsPrefix="DDSM">
+      <eClassifiers xsi:type="ecore:EClass" name="DdsmExternalComponent" eSuperTypes="#//DICE_UML_Extensions/DDSM/DdsmComponent">
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="location" ordered="false"
+            eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="provider" ordered="false"
+            lowerBound="1" eType="ecore:EEnum DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/ProviderType"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="serviceType" ordered="false"
+            eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="region" ordered="false"
+            eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="login" ordered="false"
+            eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="password" ordered="false"
+            eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" name="base_Device" ordered="false"
+            lowerBound="1" eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//Device"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" name="DdsmComponent" abstract="true" eSuperTypes="#//DICE_UML_Extensions/DDSM/DdsmCloudElement">
+        <eStructuralFeatures xsi:type="ecore:EReference" name="providedPortsList"
+            ordered="false" upperBound="-1" eType="#//DICE_UML_Extensions/DDSM/DdsmPort"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" name="DdsmCloudElement" abstract="true">
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" ordered="false"
+            eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="propertiesList" ordered="false"
+            upperBound="-1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" name="resourcesList" ordered="false"
+            upperBound="-1" eType="#//DICE_UML_Extensions/DDSM/DdsmResource"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" ordered="false"
+            eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" name="DdsmResource">
+        <eAnnotations source="duplicates">
+          <contents xsi:type="ecore:EReference" name="base_Artifact" ordered="false"
+              lowerBound="1" eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//Artifact">
+            <eAnnotations source="redefines" references="#//DICE_UML_Extensions/DDSM/DdsmResource/base_Artifact"/>
+          </contents>
+        </eAnnotations>
+        <eStructuralFeatures xsi:type="ecore:EReference" name="commandsList" ordered="false"
+            upperBound="-1" eType="ecore:EClass DICE_Library.ecore#//Basic_DICE_Types/Basic_Data_Types/ScriptType"
+            containment="true"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" name="base_Artifact" ordered="false"
+            lowerBound="1" eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//Artifact"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" ordered="false"
+            lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" name="DdsmPort" eSuperTypes="#//DICE_UML_Extensions/DDSM/DdsmCloudElement">
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="isLocal" ordered="false"
+            eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"
+            defaultValueLiteral="false"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="portNumber" ordered="false"
+            eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" name="base_CommunicationPath"
+            ordered="false" lowerBound="1" eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//CommunicationPath"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" name="DdsmInternalComponent" eSuperTypes="#//DICE_UML_Extensions/DDSM/DdsmComponent">
+        <eStructuralFeatures xsi:type="ecore:EReference" name="requiredPort" ordered="false"
+            upperBound="-1" eType="#//DICE_UML_Extensions/DDSM/DdsmPort"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="isFrontEnd" ordered="false"
+            lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"
+            defaultValueLiteral="false"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="componentType" ordered="false"
+            lowerBound="1" eType="ecore:EEnum DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/DDSMcomponentType"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" name="base_Node" ordered="false"
+            lowerBound="1" eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//Node"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" name="DdsmCluster" eSuperTypes="#//DICE_UML_Extensions/DDSM/DdsmExternalComponent">
+        <eStructuralFeatures xsi:type="ecore:EReference" name="hasVM" ordered="false"
+            upperBound="-1" eType="#//DICE_UML_Extensions/DDSM/DdsmVm"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" name="DdsmVm" eSuperTypes="#//DICE_UML_Extensions/DDSM/DdsmExternalComponent">
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="is64os" ordered="false"
+            eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"
+            defaultValueLiteral="true"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="imageId" ordered="false"
+            eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="maxCores" ordered="false"
+            lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="maxRam" ordered="false"
+            eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="maxStorage" ordered="false"
+            eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt" defaultValueLiteral="0"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="minCores" ordered="false"
+            eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="minRam" ordered="false"
+            eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="minStorage" ordered="false"
+            eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt" defaultValueLiteral="0"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="os" ordered="false"
+            eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="securityGroup" ordered="false"
+            eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="privateKey" ordered="false"
+            eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="sshKey" ordered="false"
+            eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="publicAddress" ordered="false"
+            eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="instances" ordered="false"
+            lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"
+            defaultValueLiteral="0"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="genericSize" ordered="false"
+            eType="ecore:EEnum DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/VMSize"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" name="DdsmYarnResourceManager" eSuperTypes="#//DICE_UML_Extensions/DDSM/DdsmInternalComponent">
+        <eOperations name="YarnTypeMasterNode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+          <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+            <details key="documentation" value="self.componentType = DDSMcomponentType::MasterNode"/>
+          </eAnnotations>
+          <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
+            <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+              <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
+            </eAnnotations>
+          </eParameters>
+          <eParameters name="context">
+            <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+              <details key="documentation" value="The cache of context-specific information."/>
+            </eAnnotations>
+            <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+              <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+              <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+            </eGenericType>
+          </eParameters>
+        </eOperations>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" name="DdsmZookeeperServer" eSuperTypes="#//DICE_UML_Extensions/DDSM/DdsmInternalComponent">
+        <eOperations name="ZookeeperServerTypePeefNode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+          <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+            <details key="documentation" value="self.componentType=DDSMcomponentType::PeerNode"/>
+          </eAnnotations>
+          <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
+            <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+              <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
+            </eAnnotations>
+          </eParameters>
+          <eParameters name="context">
+            <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+              <details key="documentation" value="The cache of context-specific information."/>
+            </eAnnotations>
+            <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+              <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+              <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+            </eGenericType>
+          </eParameters>
+        </eOperations>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="tickTime" ordered="false"
+            lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"
+            defaultValueLiteral="1500"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="syncLimit" ordered="false"
+            lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"
+            defaultValueLiteral="10"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="initLimit" ordered="false"
+            lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"
+            defaultValueLiteral="5"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" name="DdsmKafka" eSuperTypes="#//DICE_UML_Extensions/DDSM/DdsmInternalComponent"/>
+      <eClassifiers xsi:type="ecore:EClass" name="DdsmNimbus" eSuperTypes="#//DICE_UML_Extensions/DDSM/DdsmInternalComponent">
+        <eOperations name="NimbusTypeMasterNode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+          <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+            <details key="documentation" value="self.componentType = DDSMcomponentType::MasterNode"/>
+          </eAnnotations>
+          <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
+            <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+              <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
+            </eAnnotations>
+          </eParameters>
+          <eParameters name="context">
+            <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+              <details key="documentation" value="The cache of context-specific information."/>
+            </eAnnotations>
+            <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+              <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+              <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+            </eGenericType>
+          </eParameters>
+        </eOperations>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="taskTimeout" ordered="false"
+            lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"
+            defaultValueLiteral="60"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="supervisorFrequency"
+            ordered="false" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"
+            defaultValueLiteral="60"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="queueSize" ordered="false"
+            lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"
+            defaultValueLiteral="10000"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="monitorFrequency" ordered="false"
+            lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"
+            defaultValueLiteral="40"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="retryTimes" ordered="false"
+            lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"
+            defaultValueLiteral="5"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="retryInterval" ordered="false"
+            lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"
+            defaultValueLiteral="2000"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" name="JobSubmission">
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="artifactURL" ordered="false"
+            lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="mainClass" ordered="false"
+            lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" name="base_Artifact" ordered="false"
+            lowerBound="1" eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//Artifact"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" name="base_Deployment" ordered="false"
+            lowerBound="1" eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//Deployment"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" name="DdsmSupervisor" eSuperTypes="#//DICE_UML_Extensions/DDSM/DdsmInternalComponent">
+        <eOperations name="SupervisorTypeSlaveNode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+          <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+            <details key="documentation" value="self.componentType = DDSMcomponentType::MasterSlavePlatform"/>
+          </eAnnotations>
+          <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
+            <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+              <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
+            </eAnnotations>
+          </eParameters>
+          <eParameters name="context">
+            <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+              <details key="documentation" value="The cache of context-specific information."/>
+            </eAnnotations>
+            <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+              <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+              <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+            </eGenericType>
+          </eParameters>
+        </eOperations>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="workerStartTimeout"
+            ordered="false" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"
+            defaultValueLiteral="120"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="cpuCapacity" ordered="false"
+            lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"
+            defaultValueLiteral="400"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="memoryCapacity" ordered="false"
+            lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"
+            defaultValueLiteral="4096"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="heartbeatFrequency"
+            ordered="false" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"
+            defaultValueLiteral="5"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" name="DdsmStormCluster" eSuperTypes="#//DICE_UML_Extensions/DDSM/DdsmInternalComponent">
+        <eOperations name="StormClusterTypeMasterSlavePlatform" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+          <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+            <details key="documentation" value="self.componentType = DDSMcomponentType::MasterSlavePlatform"/>
+          </eAnnotations>
+          <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
+            <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+              <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
+            </eAnnotations>
+          </eParameters>
+          <eParameters name="context">
+            <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+              <details key="documentation" value="The cache of context-specific information."/>
+            </eAnnotations>
+            <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+              <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+              <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+            </eGenericType>
+          </eParameters>
+        </eOperations>
+      </eClassifiers>
     </eSubpackages>
   </eSubpackages>
 </ecore:EPackage>

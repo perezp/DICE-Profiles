@@ -49,6 +49,14 @@
    <extension point="org.eclipse.emf.ecore.generated_package">
       <!-- @generated DICE -->
       <package
+            uri="http://es.unizar.disco.dice/profiles/DDSM/1.0"
+            class="es.unizar.disco.dice.DDSM.DDSMPackage"
+            genModel="resources/DICE.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated DICE -->
+      <package
             uri="http://es.unizar.disco.dice/libraries/Complex_Data_Types/1.0"
             class="es.unizar.disco.dice.Complex_Data_Types.Complex_Data_TypesPackage"
             genModel="resources/DICE.genmodel"/>
@@ -128,6 +136,11 @@
             location="pathmap://DICE_PROFILES/DICE.profile.uml#_lhjuYC5LEeaF_sH3mLTVKg"
             uri="http://es.unizar.disco.dice/profiles/DTSM/Hadoop/1.0">
       </profile>
+      <profile
+            location="pathmap://DICE_PROFILES/DICE.profile.uml#_aYmS0Dx2EeaOH59TuV453g"
+            uri="http://es.unizar.disco.dice/profiles/DDSM/1.0">
+      </profile>
    </extension>
+
 
 </plugin>
