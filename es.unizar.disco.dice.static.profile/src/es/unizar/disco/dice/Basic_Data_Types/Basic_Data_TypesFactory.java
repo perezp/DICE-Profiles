@@ -31,6 +31,15 @@ public interface Basic_Data_TypesFactory extends EFactory {
 	NFP_Privacy createNFP_Privacy();
 
 	/**
+	 * Returns a new object of class '<em>Script Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Script Type</em>'.
+	 * @generated
+	 */
+	ScriptType createScriptType();
+
+	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

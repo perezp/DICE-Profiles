@@ -44,6 +44,14 @@
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="source" ordered="false"
             lowerBound="1" eType="ecore:EEnum ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/SourceKind"/>
       </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" name="ScriptType">
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="scriptId" ordered="false"
+            eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="scriptUri" ordered="false"
+            eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="scriptKind" ordered="false"
+            lowerBound="1" eType="#//Basic_DICE_Types/Basic_Enumeration_Types/LifeCycleElementType"/>
+      </eClassifiers>
     </eSubpackages>
     <eSubpackages name="Basic_Enumeration_Types" nsURI="http://es.unizar.disco.dice/libraries/Basic_Enumeration_Types/1.0"
         nsPrefix="Basic_Enumeration_Types">
@@ -63,6 +71,14 @@
         <eLiterals name="avro" value="3"/>
         <eLiterals name="parquet" value="4"/>
         <eLiterals name="yaml" value="5"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EEnum" name="LifeCycleElementType">
+        <eLiterals name="start"/>
+        <eLiterals name="stop" value="1"/>
+        <eLiterals name="install" value="2"/>
+        <eLiterals name="create" value="3"/>
+        <eLiterals name="download" value="4"/>
+        <eLiterals name="preconfigured" value="5"/>
       </eClassifiers>
       <eClassifiers xsi:type="ecore:EEnum" name="TechType">
         <eLiterals name="hadoop"/>
@@ -109,6 +125,24 @@
         <eLiterals name="capacity"/>
         <eLiterals name="fifo" value="1"/>
         <eLiterals name="fair" value="2"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EEnum" name="VMSize">
+        <eLiterals name="small"/>
+        <eLiterals name="medium" value="1"/>
+        <eLiterals name="large" value="2"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EEnum" name="ProviderType">
+        <eLiterals name="flexiant"/>
+        <eLiterals name="openstack" value="1"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EEnum" name="DDSMcomponentType">
+        <eLiterals name="MasterSlavePlatform"/>
+        <eLiterals name="PeerToPeerPlatform" value="1"/>
+        <eLiterals name="PeerNode" value="2"/>
+        <eLiterals name="PeersQuorum" value="3"/>
+        <eLiterals name="CassandraSeed" value="4"/>
+        <eLiterals name="MasterNode" value="5"/>
+        <eLiterals name="SlaveNode" value="6"/>
       </eClassifiers>
       <eClassifiers xsi:type="ecore:EEnum" name="ComputationType">
         <eLiterals name="distributed"/>

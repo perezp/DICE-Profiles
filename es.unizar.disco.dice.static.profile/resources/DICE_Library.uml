@@ -99,14 +99,23 @@
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_T45RED4OEeahGZm0A1o1gg" name="download"/>
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_VXGUcD4OEeahGZm0A1o1gg" name="preconfigured"/>
         </packagedElement>
+        <packagedElement xmi:type="uml:Enumeration" xmi:id="_4Hn0EIlwEeaFpJw9Inr05g" name="DDSMcomponentType">
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_--oIIIlwEeaFpJw9Inr05g" name="MasterSlavePlatform"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_Oubo4IlxEeaFpJw9Inr05g" name="PeerToPeerPlatform"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_S2d1QIlxEeaFpJw9Inr05g" name="PeerNode"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_Uf9ioIlxEeaFpJw9Inr05g" name="PeersQuorum"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_WO-CIIlxEeaFpJw9Inr05g" name="CassandraSeed"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_XTA5EIlxEeaFpJw9Inr05g" name="MasterNode"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_anapEIlxEeaFpJw9Inr05g" name="SlaveNode"/>
+        </packagedElement>
       </packagedElement>
       <packagedElement xmi:type="uml:Profile" xmi:id="_yQjxwOeYEeWj7ZPL8JeBTQ" name="Data_Types">
         <packagedElement xmi:type="uml:DataType" xmi:id="_KyBsgC5SEeaF_sH3mLTVKg" name="NFP_Privacy">
           <ownedAttribute xmi:type="uml:Property" xmi:id="_pbLAEC5SEeaF_sH3mLTVKg" name="expr">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://Papyrus_PROFILES/MARTE_Library.library.uml#_bManMBEBEdyx6M3BlUjlCQ"/>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://Papyrus_LIBRARIES/MARTE_Library.library.uml#_bManMBEBEdyx6M3BlUjlCQ"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_25PuwC5SEeaF_sH3mLTVKg" name="source">
-            <type xmi:type="uml:Enumeration" href="pathmap://Papyrus_PROFILES/MARTE_Library.library.uml#_oMZzEBD-EdyybZnLxHsjyA"/>
+            <type xmi:type="uml:Enumeration" href="pathmap://Papyrus_LIBRARIES/MARTE_Library.library.uml#_oMZzEBD-EdyybZnLxHsjyA"/>
           </ownedAttribute>
         </packagedElement>
         <packagedElement xmi:type="uml:DataType" xmi:id="_EgSOsD4WEeahGZm0A1o1gg" name="ScriptType">
@@ -128,7 +137,7 @@
       <packagedElement xmi:type="uml:Profile" xmi:id="_GunKUOeZEeWj7ZPL8JeBTQ" name="Data_Types">
         <packagedElement xmi:type="uml:DataType" xmi:id="_avs9QOedEeWj7ZPL8JeBTQ" name="DiceDataVolume">
           <ownedAttribute xmi:type="uml:Property" xmi:id="_nA96kOedEeWj7ZPL8JeBTQ" name="volume">
-            <type xmi:type="uml:DataType" href="pathmap://Papyrus_PROFILES/MARTE_Library.library.uml#_5LrMcBFSEdyUJeMeN__D-A"/>
+            <type xmi:type="uml:DataType" href="pathmap://Papyrus_LIBRARIES/MARTE_Library.library.uml#_5LrMcBFSEdyUJeMeN__D-A"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3AkK0OedEeWj7ZPL8JeBTQ"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3An1MOedEeWj7ZPL8JeBTQ" value="1"/>
           </ownedAttribute>
@@ -140,7 +149,7 @@
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RW-ocOefEeWj7ZPL8JeBTQ" value="1"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_dsLqkOefEeWj7ZPL8JeBTQ" name="size" visibility="public">
-            <type xmi:type="uml:DataType" href="pathmap://Papyrus_PROFILES/MARTE_Library.library.uml#_5LrMcBFSEdyUJeMeN__D-A"/>
+            <type xmi:type="uml:DataType" href="pathmap://Papyrus_LIBRARIES/MARTE_Library.library.uml#_5LrMcBFSEdyUJeMeN__D-A"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_d5DB4OefEeWj7ZPL8JeBTQ"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_d5KWoOefEeWj7ZPL8JeBTQ" value="1"/>
           </ownedAttribute>
@@ -155,12 +164,12 @@
         </packagedElement>
         <packagedElement xmi:type="uml:DataType" xmi:id="_FX3yIOefEeWj7ZPL8JeBTQ" name="DiceChannelSpecification">
           <ownedAttribute xmi:type="uml:Property" xmi:id="_HmrzEOefEeWj7ZPL8JeBTQ" name="rate">
-            <type xmi:type="uml:DataType" href="pathmap://Papyrus_PROFILES/MARTE_Library.library.uml#_UDZSQBFSEdyUJeMeN__D-A"/>
+            <type xmi:type="uml:DataType" href="pathmap://Papyrus_LIBRARIES/MARTE_Library.library.uml#_UDZSQBFSEdyUJeMeN__D-A"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Lk6jMOefEeWj7ZPL8JeBTQ"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Lk8YYOefEeWj7ZPL8JeBTQ" value="1"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_NAODkOefEeWj7ZPL8JeBTQ" name="size">
-            <type xmi:type="uml:DataType" href="pathmap://Papyrus_PROFILES/MARTE_Library.library.uml#_5LrMcBFSEdyUJeMeN__D-A"/>
+            <type xmi:type="uml:DataType" href="pathmap://Papyrus_LIBRARIES/MARTE_Library.library.uml#_5LrMcBFSEdyUJeMeN__D-A"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_amrSMOefEeWj7ZPL8JeBTQ"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_amsgUOefEeWj7ZPL8JeBTQ" value="1"/>
           </ownedAttribute>

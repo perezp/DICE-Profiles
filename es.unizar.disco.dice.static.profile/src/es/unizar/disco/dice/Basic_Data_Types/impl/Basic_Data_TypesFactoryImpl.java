@@ -57,6 +57,7 @@ public class Basic_Data_TypesFactoryImpl extends EFactoryImpl implements Basic_D
 	public EObject create(EClass eClass) {
 		switch (eClass.getClassifierID()) {
 			case Basic_Data_TypesPackage.NFP_PRIVACY: return createNFP_Privacy();
+			case Basic_Data_TypesPackage.SCRIPT_TYPE: return createScriptType();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -70,6 +71,16 @@ public class Basic_Data_TypesFactoryImpl extends EFactoryImpl implements Basic_D
 	public NFP_Privacy createNFP_Privacy() {
 		NFP_PrivacyImpl nfP_Privacy = new NFP_PrivacyImpl();
 		return nfP_Privacy;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ScriptType createScriptType() {
+		ScriptTypeImpl scriptType = new ScriptTypeImpl();
+		return scriptType;
 	}
 
 	/**

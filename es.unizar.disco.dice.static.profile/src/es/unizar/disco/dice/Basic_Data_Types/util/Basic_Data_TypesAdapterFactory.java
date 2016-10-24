@@ -72,6 +72,10 @@ public class Basic_Data_TypesAdapterFactory extends AdapterFactoryImpl {
 				return createNFP_PrivacyAdapter();
 			}
 			@Override
+			public Adapter caseScriptType(ScriptType object) {
+				return createScriptTypeAdapter();
+			}
+			@Override
 			public Adapter defaultCase(EObject object) {
 				return createEObjectAdapter();
 			}
@@ -102,6 +106,20 @@ public class Basic_Data_TypesAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createNFP_PrivacyAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link es.unizar.disco.dice.Basic_Data_Types.ScriptType <em>Script Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see es.unizar.disco.dice.Basic_Data_Types.ScriptType
+	 * @generated
+	 */
+	public Adapter createScriptTypeAdapter() {
 		return null;
 	}
 

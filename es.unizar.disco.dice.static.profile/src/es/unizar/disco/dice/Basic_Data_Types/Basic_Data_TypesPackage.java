@@ -94,6 +94,53 @@ public interface Basic_Data_TypesPackage extends EPackage {
 
 
 	/**
+	 * The meta object id for the '{@link es.unizar.disco.dice.Basic_Data_Types.impl.ScriptTypeImpl <em>Script Type</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see es.unizar.disco.dice.Basic_Data_Types.impl.ScriptTypeImpl
+	 * @see es.unizar.disco.dice.Basic_Data_Types.impl.Basic_Data_TypesPackageImpl#getScriptType()
+	 * @generated
+	 */
+	int SCRIPT_TYPE = 1;
+
+	/**
+	 * The feature id for the '<em><b>Script Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SCRIPT_TYPE__SCRIPT_ID = 0;
+
+	/**
+	 * The feature id for the '<em><b>Script Uri</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SCRIPT_TYPE__SCRIPT_URI = 1;
+
+	/**
+	 * The feature id for the '<em><b>Script Kind</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SCRIPT_TYPE__SCRIPT_KIND = 2;
+
+	/**
+	 * The number of structural features of the '<em>Script Type</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SCRIPT_TYPE_FEATURE_COUNT = 3;
+
+
+	/**
 	 * Returns the meta object for class '{@link es.unizar.disco.dice.Basic_Data_Types.NFP_Privacy <em>NFP Privacy</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -124,6 +171,49 @@ public interface Basic_Data_TypesPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getNFP_Privacy_Source();
+
+	/**
+	 * Returns the meta object for class '{@link es.unizar.disco.dice.Basic_Data_Types.ScriptType <em>Script Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Script Type</em>'.
+	 * @see es.unizar.disco.dice.Basic_Data_Types.ScriptType
+	 * @generated
+	 */
+	EClass getScriptType();
+
+	/**
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.Basic_Data_Types.ScriptType#getScriptId <em>Script Id</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Script Id</em>'.
+	 * @see es.unizar.disco.dice.Basic_Data_Types.ScriptType#getScriptId()
+	 * @see #getScriptType()
+	 * @generated
+	 */
+	EAttribute getScriptType_ScriptId();
+
+	/**
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.Basic_Data_Types.ScriptType#getScriptUri <em>Script Uri</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Script Uri</em>'.
+	 * @see es.unizar.disco.dice.Basic_Data_Types.ScriptType#getScriptUri()
+	 * @see #getScriptType()
+	 * @generated
+	 */
+	EAttribute getScriptType_ScriptUri();
+
+	/**
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.Basic_Data_Types.ScriptType#getScriptKind <em>Script Kind</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Script Kind</em>'.
+	 * @see es.unizar.disco.dice.Basic_Data_Types.ScriptType#getScriptKind()
+	 * @see #getScriptType()
+	 * @generated
+	 */
+	EAttribute getScriptType_ScriptKind();
 
 	/**
 	 * Returns the factory that creates the instances of the model.
@@ -172,6 +262,40 @@ public interface Basic_Data_TypesPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute NFP_PRIVACY__SOURCE = eINSTANCE.getNFP_Privacy_Source();
+
+		/**
+		 * The meta object literal for the '{@link es.unizar.disco.dice.Basic_Data_Types.impl.ScriptTypeImpl <em>Script Type</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see es.unizar.disco.dice.Basic_Data_Types.impl.ScriptTypeImpl
+		 * @see es.unizar.disco.dice.Basic_Data_Types.impl.Basic_Data_TypesPackageImpl#getScriptType()
+		 * @generated
+		 */
+		EClass SCRIPT_TYPE = eINSTANCE.getScriptType();
+
+		/**
+		 * The meta object literal for the '<em><b>Script Id</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SCRIPT_TYPE__SCRIPT_ID = eINSTANCE.getScriptType_ScriptId();
+
+		/**
+		 * The meta object literal for the '<em><b>Script Uri</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SCRIPT_TYPE__SCRIPT_URI = eINSTANCE.getScriptType_ScriptUri();
+
+		/**
+		 * The meta object literal for the '<em><b>Script Kind</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SCRIPT_TYPE__SCRIPT_KIND = eINSTANCE.getScriptType_ScriptKind();
 
 	}
 
