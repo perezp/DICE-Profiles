@@ -19,6 +19,8 @@ import es.unizar.disco.dice.Complex_Data_Types.impl.Complex_Data_TypesPackageImp
 
 import es.unizar.disco.dice.DDSM.DDSMPackage;
 import es.unizar.disco.dice.DDSM.impl.DDSMPackageImpl;
+import es.unizar.disco.dice.DICE.DICEPackage;
+import es.unizar.disco.dice.DICE.impl.DICEPackageImpl;
 import es.unizar.disco.dice.DPIM.DPIMPackage;
 
 import es.unizar.disco.dice.DPIM.impl.DPIMPackageImpl;
@@ -119,6 +121,7 @@ public class Basic_Data_TypesPackageImpl extends EPackageImpl implements Basic_D
 		Basic_Enumeration_TypesPackage.eINSTANCE.eClass();
 
 		// Obtain or create and register interdependencies
+		DICEPackageImpl theDICEPackage = (DICEPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(DICEPackage.eNS_URI) instanceof DICEPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(DICEPackage.eNS_URI) : DICEPackage.eINSTANCE);
 		DPIMPackageImpl theDPIMPackage = (DPIMPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(DPIMPackage.eNS_URI) instanceof DPIMPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(DPIMPackage.eNS_URI) : DPIMPackage.eINSTANCE);
 		CorePackageImpl theCorePackage = (CorePackageImpl)(EPackage.Registry.INSTANCE.getEPackage(CorePackage.eNS_URI) instanceof CorePackageImpl ? EPackage.Registry.INSTANCE.getEPackage(CorePackage.eNS_URI) : CorePackage.eINSTANCE);
 		StormPackageImpl theStormPackage = (StormPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(StormPackage.eNS_URI) instanceof StormPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(StormPackage.eNS_URI) : StormPackage.eINSTANCE);
@@ -129,6 +132,7 @@ public class Basic_Data_TypesPackageImpl extends EPackageImpl implements Basic_D
 
 		// Create package meta-data objects
 		theBasic_Data_TypesPackage.createPackageContents();
+		theDICEPackage.createPackageContents();
 		theDPIMPackage.createPackageContents();
 		theCorePackage.createPackageContents();
 		theStormPackage.createPackageContents();
@@ -139,6 +143,7 @@ public class Basic_Data_TypesPackageImpl extends EPackageImpl implements Basic_D
 
 		// Initialize created meta-data
 		theBasic_Data_TypesPackage.initializePackageContents();
+		theDICEPackage.initializePackageContents();
 		theDPIMPackage.initializePackageContents();
 		theCorePackage.initializePackageContents();
 		theStormPackage.initializePackageContents();
