@@ -2,6 +2,7 @@
 <ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="DICE" nsURI="http://es.unizar.disco.dice/profiles/DICE/1.0"
     nsPrefix="DICE">
+  <eClassifiers xsi:type="ecore:EEnum" name="Dummy"/>
   <eSubpackages name="DICE_UML_Extensions" nsURI="http://es.unizar.disco.dice/profiles/DICE_UML_Extensions/1.0"
       nsPrefix="DICE_UML_Extensions">
     <eSubpackages name="DPIM" nsURI="http://es.unizar.disco.dice/profiles/DPIM/1.0"
@@ -451,13 +452,7 @@
             lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"
             defaultValueLiteral="2000"/>
       </eClassifiers>
-      <eClassifiers xsi:type="ecore:EClass" name="JobSubmission">
-        <eStructuralFeatures xsi:type="ecore:EAttribute" name="artifactURL" ordered="false"
-            lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-        <eStructuralFeatures xsi:type="ecore:EAttribute" name="mainClass" ordered="false"
-            lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-        <eStructuralFeatures xsi:type="ecore:EReference" name="base_Artifact" ordered="false"
-            lowerBound="1" eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//Artifact"/>
+      <eClassifiers xsi:type="ecore:EClass" name="DdsmJobSubmission">
         <eStructuralFeatures xsi:type="ecore:EReference" name="base_Deployment" ordered="false"
             lowerBound="1" eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//Deployment"/>
       </eClassifiers>
@@ -514,6 +509,18 @@
             </eGenericType>
           </eParameters>
         </eOperations>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" name="DdsmBigDataJob">
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="artifactURL" ordered="false"
+            lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="mainClass" ordered="false"
+            lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" name="base_Artifact" ordered="false"
+            lowerBound="1" eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//Artifact"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" name="DdsmJobDeployedFrom">
+        <eStructuralFeatures xsi:type="ecore:EReference" name="base_Dependency" ordered="false"
+            lowerBound="1" eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//Dependency"/>
       </eClassifiers>
     </eSubpackages>
   </eSubpackages>

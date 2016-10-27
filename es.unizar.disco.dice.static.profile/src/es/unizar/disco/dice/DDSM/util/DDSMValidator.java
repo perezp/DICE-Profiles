@@ -149,12 +149,16 @@ public class DDSMValidator extends EObjectValidator {
 				return validateDdsmKafka((DdsmKafka)value, diagnostics, context);
 			case DDSMPackage.DDSM_NIMBUS:
 				return validateDdsmNimbus((DdsmNimbus)value, diagnostics, context);
-			case DDSMPackage.JOB_SUBMISSION:
-				return validateJobSubmission((JobSubmission)value, diagnostics, context);
+			case DDSMPackage.DDSM_JOB_SUBMISSION:
+				return validateDdsmJobSubmission((DdsmJobSubmission)value, diagnostics, context);
 			case DDSMPackage.DDSM_SUPERVISOR:
 				return validateDdsmSupervisor((DdsmSupervisor)value, diagnostics, context);
 			case DDSMPackage.DDSM_STORM_CLUSTER:
 				return validateDdsmStormCluster((DdsmStormCluster)value, diagnostics, context);
+			case DDSMPackage.DDSM_BIG_DATA_JOB:
+				return validateDdsmBigDataJob((DdsmBigDataJob)value, diagnostics, context);
+			case DDSMPackage.DDSM_JOB_DEPLOYED_FROM:
+				return validateDdsmJobDeployedFrom((DdsmJobDeployedFrom)value, diagnostics, context);
 			default:
 				return true;
 		}
@@ -333,8 +337,8 @@ public class DDSMValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateJobSubmission(JobSubmission jobSubmission, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return validate_EveryDefaultConstraint(jobSubmission, diagnostics, context);
+	public boolean validateDdsmJobSubmission(DdsmJobSubmission ddsmJobSubmission, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return validate_EveryDefaultConstraint(ddsmJobSubmission, diagnostics, context);
 	}
 
 	/**
@@ -393,6 +397,24 @@ public class DDSMValidator extends EObjectValidator {
 	 */
 	public boolean validateDdsmStormCluster_StormClusterTypeMasterSlavePlatform(DdsmStormCluster ddsmStormCluster, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ddsmStormCluster.StormClusterTypeMasterSlavePlatform(diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateDdsmBigDataJob(DdsmBigDataJob ddsmBigDataJob, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return validate_EveryDefaultConstraint(ddsmBigDataJob, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateDdsmJobDeployedFrom(DdsmJobDeployedFrom ddsmJobDeployedFrom, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return validate_EveryDefaultConstraint(ddsmJobDeployedFrom, diagnostics, context);
 	}
 
 	/**

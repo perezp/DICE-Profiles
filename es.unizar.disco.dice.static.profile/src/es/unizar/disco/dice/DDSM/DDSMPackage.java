@@ -1409,41 +1409,14 @@ public interface DDSMPackage extends EPackage {
 	int DDSM_NIMBUS_FEATURE_COUNT = DDSM_INTERNAL_COMPONENT_FEATURE_COUNT + 6;
 
 	/**
-	 * The meta object id for the '{@link es.unizar.disco.dice.DDSM.impl.JobSubmissionImpl <em>Job Submission</em>}' class.
+	 * The meta object id for the '{@link es.unizar.disco.dice.DDSM.impl.DdsmJobSubmissionImpl <em>Ddsm Job Submission</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see es.unizar.disco.dice.DDSM.impl.JobSubmissionImpl
-	 * @see es.unizar.disco.dice.DDSM.impl.DDSMPackageImpl#getJobSubmission()
+	 * @see es.unizar.disco.dice.DDSM.impl.DdsmJobSubmissionImpl
+	 * @see es.unizar.disco.dice.DDSM.impl.DDSMPackageImpl#getDdsmJobSubmission()
 	 * @generated
 	 */
-	int JOB_SUBMISSION = 12;
-
-	/**
-	 * The feature id for the '<em><b>Artifact URL</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int JOB_SUBMISSION__ARTIFACT_URL = 0;
-
-	/**
-	 * The feature id for the '<em><b>Main Class</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int JOB_SUBMISSION__MAIN_CLASS = 1;
-
-	/**
-	 * The feature id for the '<em><b>Base Artifact</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int JOB_SUBMISSION__BASE_ARTIFACT = 2;
+	int DDSM_JOB_SUBMISSION = 12;
 
 	/**
 	 * The feature id for the '<em><b>Base Deployment</b></em>' reference.
@@ -1452,16 +1425,16 @@ public interface DDSMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int JOB_SUBMISSION__BASE_DEPLOYMENT = 3;
+	int DDSM_JOB_SUBMISSION__BASE_DEPLOYMENT = 0;
 
 	/**
-	 * The number of structural features of the '<em>Job Submission</em>' class.
+	 * The number of structural features of the '<em>Ddsm Job Submission</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int JOB_SUBMISSION_FEATURE_COUNT = 4;
+	int DDSM_JOB_SUBMISSION_FEATURE_COUNT = 1;
 
 	/**
 	 * The meta object id for the '{@link es.unizar.disco.dice.DDSM.impl.DdsmSupervisorImpl <em>Ddsm Supervisor</em>}' class.
@@ -1698,6 +1671,81 @@ public interface DDSMPackage extends EPackage {
 	 * @ordered
 	 */
 	int DDSM_STORM_CLUSTER_FEATURE_COUNT = DDSM_INTERNAL_COMPONENT_FEATURE_COUNT + 0;
+
+
+	/**
+	 * The meta object id for the '{@link es.unizar.disco.dice.DDSM.impl.DdsmBigDataJobImpl <em>Ddsm Big Data Job</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see es.unizar.disco.dice.DDSM.impl.DdsmBigDataJobImpl
+	 * @see es.unizar.disco.dice.DDSM.impl.DDSMPackageImpl#getDdsmBigDataJob()
+	 * @generated
+	 */
+	int DDSM_BIG_DATA_JOB = 15;
+
+	/**
+	 * The feature id for the '<em><b>Artifact URL</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_BIG_DATA_JOB__ARTIFACT_URL = 0;
+
+	/**
+	 * The feature id for the '<em><b>Main Class</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_BIG_DATA_JOB__MAIN_CLASS = 1;
+
+	/**
+	 * The feature id for the '<em><b>Base Artifact</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_BIG_DATA_JOB__BASE_ARTIFACT = 2;
+
+	/**
+	 * The number of structural features of the '<em>Ddsm Big Data Job</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_BIG_DATA_JOB_FEATURE_COUNT = 3;
+
+	/**
+	 * The meta object id for the '{@link es.unizar.disco.dice.DDSM.impl.DdsmJobDeployedFromImpl <em>Ddsm Job Deployed From</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see es.unizar.disco.dice.DDSM.impl.DdsmJobDeployedFromImpl
+	 * @see es.unizar.disco.dice.DDSM.impl.DDSMPackageImpl#getDdsmJobDeployedFrom()
+	 * @generated
+	 */
+	int DDSM_JOB_DEPLOYED_FROM = 16;
+
+	/**
+	 * The feature id for the '<em><b>Base Dependency</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_JOB_DEPLOYED_FROM__BASE_DEPENDENCY = 0;
+
+	/**
+	 * The number of structural features of the '<em>Ddsm Job Deployed From</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_JOB_DEPLOYED_FROM_FEATURE_COUNT = 1;
 
 
 	/**
@@ -2338,58 +2386,25 @@ public interface DDSMPackage extends EPackage {
 	EAttribute getDdsmNimbus_RetryInterval();
 
 	/**
-	 * Returns the meta object for class '{@link es.unizar.disco.dice.DDSM.JobSubmission <em>Job Submission</em>}'.
+	 * Returns the meta object for class '{@link es.unizar.disco.dice.DDSM.DdsmJobSubmission <em>Ddsm Job Submission</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Job Submission</em>'.
-	 * @see es.unizar.disco.dice.DDSM.JobSubmission
+	 * @return the meta object for class '<em>Ddsm Job Submission</em>'.
+	 * @see es.unizar.disco.dice.DDSM.DdsmJobSubmission
 	 * @generated
 	 */
-	EClass getJobSubmission();
+	EClass getDdsmJobSubmission();
 
 	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.JobSubmission#getArtifactURL <em>Artifact URL</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Artifact URL</em>'.
-	 * @see es.unizar.disco.dice.DDSM.JobSubmission#getArtifactURL()
-	 * @see #getJobSubmission()
-	 * @generated
-	 */
-	EAttribute getJobSubmission_ArtifactURL();
-
-	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.JobSubmission#getMainClass <em>Main Class</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Main Class</em>'.
-	 * @see es.unizar.disco.dice.DDSM.JobSubmission#getMainClass()
-	 * @see #getJobSubmission()
-	 * @generated
-	 */
-	EAttribute getJobSubmission_MainClass();
-
-	/**
-	 * Returns the meta object for the reference '{@link es.unizar.disco.dice.DDSM.JobSubmission#getBase_Artifact <em>Base Artifact</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Base Artifact</em>'.
-	 * @see es.unizar.disco.dice.DDSM.JobSubmission#getBase_Artifact()
-	 * @see #getJobSubmission()
-	 * @generated
-	 */
-	EReference getJobSubmission_Base_Artifact();
-
-	/**
-	 * Returns the meta object for the reference '{@link es.unizar.disco.dice.DDSM.JobSubmission#getBase_Deployment <em>Base Deployment</em>}'.
+	 * Returns the meta object for the reference '{@link es.unizar.disco.dice.DDSM.DdsmJobSubmission#getBase_Deployment <em>Base Deployment</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the reference '<em>Base Deployment</em>'.
-	 * @see es.unizar.disco.dice.DDSM.JobSubmission#getBase_Deployment()
-	 * @see #getJobSubmission()
+	 * @see es.unizar.disco.dice.DDSM.DdsmJobSubmission#getBase_Deployment()
+	 * @see #getDdsmJobSubmission()
 	 * @generated
 	 */
-	EReference getJobSubmission_Base_Deployment();
+	EReference getDdsmJobSubmission_Base_Deployment();
 
 	/**
 	 * Returns the meta object for class '{@link es.unizar.disco.dice.DDSM.DdsmSupervisor <em>Ddsm Supervisor</em>}'.
@@ -2454,6 +2469,70 @@ public interface DDSMPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getDdsmStormCluster();
+
+	/**
+	 * Returns the meta object for class '{@link es.unizar.disco.dice.DDSM.DdsmBigDataJob <em>Ddsm Big Data Job</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Ddsm Big Data Job</em>'.
+	 * @see es.unizar.disco.dice.DDSM.DdsmBigDataJob
+	 * @generated
+	 */
+	EClass getDdsmBigDataJob();
+
+	/**
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmBigDataJob#getArtifactURL <em>Artifact URL</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Artifact URL</em>'.
+	 * @see es.unizar.disco.dice.DDSM.DdsmBigDataJob#getArtifactURL()
+	 * @see #getDdsmBigDataJob()
+	 * @generated
+	 */
+	EAttribute getDdsmBigDataJob_ArtifactURL();
+
+	/**
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmBigDataJob#getMainClass <em>Main Class</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Main Class</em>'.
+	 * @see es.unizar.disco.dice.DDSM.DdsmBigDataJob#getMainClass()
+	 * @see #getDdsmBigDataJob()
+	 * @generated
+	 */
+	EAttribute getDdsmBigDataJob_MainClass();
+
+	/**
+	 * Returns the meta object for the reference '{@link es.unizar.disco.dice.DDSM.DdsmBigDataJob#getBase_Artifact <em>Base Artifact</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Base Artifact</em>'.
+	 * @see es.unizar.disco.dice.DDSM.DdsmBigDataJob#getBase_Artifact()
+	 * @see #getDdsmBigDataJob()
+	 * @generated
+	 */
+	EReference getDdsmBigDataJob_Base_Artifact();
+
+	/**
+	 * Returns the meta object for class '{@link es.unizar.disco.dice.DDSM.DdsmJobDeployedFrom <em>Ddsm Job Deployed From</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Ddsm Job Deployed From</em>'.
+	 * @see es.unizar.disco.dice.DDSM.DdsmJobDeployedFrom
+	 * @generated
+	 */
+	EClass getDdsmJobDeployedFrom();
+
+	/**
+	 * Returns the meta object for the reference '{@link es.unizar.disco.dice.DDSM.DdsmJobDeployedFrom#getBase_Dependency <em>Base Dependency</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Base Dependency</em>'.
+	 * @see es.unizar.disco.dice.DDSM.DdsmJobDeployedFrom#getBase_Dependency()
+	 * @see #getDdsmJobDeployedFrom()
+	 * @generated
+	 */
+	EReference getDdsmJobDeployedFrom_Base_Dependency();
 
 	/**
 	 * Returns the factory that creates the instances of the model.
@@ -2974,38 +3053,14 @@ public interface DDSMPackage extends EPackage {
 		EAttribute DDSM_NIMBUS__RETRY_INTERVAL = eINSTANCE.getDdsmNimbus_RetryInterval();
 
 		/**
-		 * The meta object literal for the '{@link es.unizar.disco.dice.DDSM.impl.JobSubmissionImpl <em>Job Submission</em>}' class.
+		 * The meta object literal for the '{@link es.unizar.disco.dice.DDSM.impl.DdsmJobSubmissionImpl <em>Ddsm Job Submission</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see es.unizar.disco.dice.DDSM.impl.JobSubmissionImpl
-		 * @see es.unizar.disco.dice.DDSM.impl.DDSMPackageImpl#getJobSubmission()
+		 * @see es.unizar.disco.dice.DDSM.impl.DdsmJobSubmissionImpl
+		 * @see es.unizar.disco.dice.DDSM.impl.DDSMPackageImpl#getDdsmJobSubmission()
 		 * @generated
 		 */
-		EClass JOB_SUBMISSION = eINSTANCE.getJobSubmission();
-
-		/**
-		 * The meta object literal for the '<em><b>Artifact URL</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute JOB_SUBMISSION__ARTIFACT_URL = eINSTANCE.getJobSubmission_ArtifactURL();
-
-		/**
-		 * The meta object literal for the '<em><b>Main Class</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute JOB_SUBMISSION__MAIN_CLASS = eINSTANCE.getJobSubmission_MainClass();
-
-		/**
-		 * The meta object literal for the '<em><b>Base Artifact</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference JOB_SUBMISSION__BASE_ARTIFACT = eINSTANCE.getJobSubmission_Base_Artifact();
+		EClass DDSM_JOB_SUBMISSION = eINSTANCE.getDdsmJobSubmission();
 
 		/**
 		 * The meta object literal for the '<em><b>Base Deployment</b></em>' reference feature.
@@ -3013,7 +3068,7 @@ public interface DDSMPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference JOB_SUBMISSION__BASE_DEPLOYMENT = eINSTANCE.getJobSubmission_Base_Deployment();
+		EReference DDSM_JOB_SUBMISSION__BASE_DEPLOYMENT = eINSTANCE.getDdsmJobSubmission_Base_Deployment();
 
 		/**
 		 * The meta object literal for the '{@link es.unizar.disco.dice.DDSM.impl.DdsmSupervisorImpl <em>Ddsm Supervisor</em>}' class.
@@ -3066,6 +3121,58 @@ public interface DDSMPackage extends EPackage {
 		 * @generated
 		 */
 		EClass DDSM_STORM_CLUSTER = eINSTANCE.getDdsmStormCluster();
+
+		/**
+		 * The meta object literal for the '{@link es.unizar.disco.dice.DDSM.impl.DdsmBigDataJobImpl <em>Ddsm Big Data Job</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see es.unizar.disco.dice.DDSM.impl.DdsmBigDataJobImpl
+		 * @see es.unizar.disco.dice.DDSM.impl.DDSMPackageImpl#getDdsmBigDataJob()
+		 * @generated
+		 */
+		EClass DDSM_BIG_DATA_JOB = eINSTANCE.getDdsmBigDataJob();
+
+		/**
+		 * The meta object literal for the '<em><b>Artifact URL</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DDSM_BIG_DATA_JOB__ARTIFACT_URL = eINSTANCE.getDdsmBigDataJob_ArtifactURL();
+
+		/**
+		 * The meta object literal for the '<em><b>Main Class</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DDSM_BIG_DATA_JOB__MAIN_CLASS = eINSTANCE.getDdsmBigDataJob_MainClass();
+
+		/**
+		 * The meta object literal for the '<em><b>Base Artifact</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DDSM_BIG_DATA_JOB__BASE_ARTIFACT = eINSTANCE.getDdsmBigDataJob_Base_Artifact();
+
+		/**
+		 * The meta object literal for the '{@link es.unizar.disco.dice.DDSM.impl.DdsmJobDeployedFromImpl <em>Ddsm Job Deployed From</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see es.unizar.disco.dice.DDSM.impl.DdsmJobDeployedFromImpl
+		 * @see es.unizar.disco.dice.DDSM.impl.DDSMPackageImpl#getDdsmJobDeployedFrom()
+		 * @generated
+		 */
+		EClass DDSM_JOB_DEPLOYED_FROM = eINSTANCE.getDdsmJobDeployedFrom();
+
+		/**
+		 * The meta object literal for the '<em><b>Base Dependency</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DDSM_JOB_DEPLOYED_FROM__BASE_DEPENDENCY = eINSTANCE.getDdsmJobDeployedFrom_Base_Dependency();
 
 	}
 

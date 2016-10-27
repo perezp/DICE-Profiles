@@ -162,9 +162,9 @@ public class DDSMSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case DDSMPackage.JOB_SUBMISSION: {
-				JobSubmission jobSubmission = (JobSubmission)theEObject;
-				T result = caseJobSubmission(jobSubmission);
+			case DDSMPackage.DDSM_JOB_SUBMISSION: {
+				DdsmJobSubmission ddsmJobSubmission = (DdsmJobSubmission)theEObject;
+				T result = caseDdsmJobSubmission(ddsmJobSubmission);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -183,6 +183,18 @@ public class DDSMSwitch<T> extends Switch<T> {
 				if (result == null) result = caseDdsmInternalComponent(ddsmStormCluster);
 				if (result == null) result = caseDdsmComponent(ddsmStormCluster);
 				if (result == null) result = caseDdsmCloudElement(ddsmStormCluster);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case DDSMPackage.DDSM_BIG_DATA_JOB: {
+				DdsmBigDataJob ddsmBigDataJob = (DdsmBigDataJob)theEObject;
+				T result = caseDdsmBigDataJob(ddsmBigDataJob);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case DDSMPackage.DDSM_JOB_DEPLOYED_FROM: {
+				DdsmJobDeployedFrom ddsmJobDeployedFrom = (DdsmJobDeployedFrom)theEObject;
+				T result = caseDdsmJobDeployedFrom(ddsmJobDeployedFrom);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -371,17 +383,17 @@ public class DDSMSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Job Submission</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Ddsm Job Submission</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Job Submission</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Ddsm Job Submission</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseJobSubmission(JobSubmission object) {
+	public T caseDdsmJobSubmission(DdsmJobSubmission object) {
 		return null;
 	}
 
@@ -412,6 +424,36 @@ public class DDSMSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseDdsmStormCluster(DdsmStormCluster object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Ddsm Big Data Job</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Ddsm Big Data Job</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseDdsmBigDataJob(DdsmBigDataJob object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Ddsm Job Deployed From</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Ddsm Job Deployed From</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseDdsmJobDeployedFrom(DdsmJobDeployedFrom object) {
 		return null;
 	}
 

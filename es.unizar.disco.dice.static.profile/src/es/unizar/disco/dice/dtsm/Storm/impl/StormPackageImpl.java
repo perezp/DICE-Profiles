@@ -18,6 +18,8 @@ import es.unizar.disco.dice.Complex_Data_Types.impl.Complex_Data_TypesPackageImp
 
 import es.unizar.disco.dice.DDSM.DDSMPackage;
 import es.unizar.disco.dice.DDSM.impl.DDSMPackageImpl;
+import es.unizar.disco.dice.DICE.DICEPackage;
+import es.unizar.disco.dice.DICE.impl.DICEPackageImpl;
 import es.unizar.disco.dice.DPIM.DPIMPackage;
 
 import es.unizar.disco.dice.DPIM.impl.DPIMPackageImpl;
@@ -175,6 +177,7 @@ public class StormPackageImpl extends EPackageImpl implements StormPackage {
 		Basic_Enumeration_TypesPackage.eINSTANCE.eClass();
 
 		// Obtain or create and register interdependencies
+		DICEPackageImpl theDICEPackage = (DICEPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(DICEPackage.eNS_URI) instanceof DICEPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(DICEPackage.eNS_URI) : DICEPackage.eINSTANCE);
 		DPIMPackageImpl theDPIMPackage = (DPIMPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(DPIMPackage.eNS_URI) instanceof DPIMPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(DPIMPackage.eNS_URI) : DPIMPackage.eINSTANCE);
 		CorePackageImpl theCorePackage = (CorePackageImpl)(EPackage.Registry.INSTANCE.getEPackage(CorePackage.eNS_URI) instanceof CorePackageImpl ? EPackage.Registry.INSTANCE.getEPackage(CorePackage.eNS_URI) : CorePackage.eINSTANCE);
 		HadoopPackageImpl theHadoopPackage = (HadoopPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(HadoopPackage.eNS_URI) instanceof HadoopPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(HadoopPackage.eNS_URI) : HadoopPackage.eINSTANCE);
@@ -185,6 +188,7 @@ public class StormPackageImpl extends EPackageImpl implements StormPackage {
 
 		// Create package meta-data objects
 		theStormPackage.createPackageContents();
+		theDICEPackage.createPackageContents();
 		theDPIMPackage.createPackageContents();
 		theCorePackage.createPackageContents();
 		theHadoopPackage.createPackageContents();
@@ -195,6 +199,7 @@ public class StormPackageImpl extends EPackageImpl implements StormPackage {
 
 		// Initialize created meta-data
 		theStormPackage.initializePackageContents();
+		theDICEPackage.initializePackageContents();
 		theDPIMPackage.initializePackageContents();
 		theCorePackage.initializePackageContents();
 		theHadoopPackage.initializePackageContents();
@@ -759,9 +764,6 @@ public class StormPackageImpl extends EPackageImpl implements StormPackage {
 		initEClass(stormStreamStepEClass, StormStreamStep.class, "StormStreamStep", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getStormStreamStep_NumTuples(), theBasicNFP_TypesPackage.getNFP_Integer(), "numTuples", null, 1, 1, StormStreamStep.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getStormStreamStep_Grouping(), theBasic_Enumeration_TypesPackage_1.getStreamPolicy(), "grouping", null, 1, 1, StormStreamStep.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-
-		// Create resource
-		createResource(eNS_URI);
 
 		// Create annotations
 		// duplicates
