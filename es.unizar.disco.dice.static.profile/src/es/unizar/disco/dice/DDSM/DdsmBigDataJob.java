@@ -5,28 +5,26 @@ package es.unizar.disco.dice.DDSM;
 import org.eclipse.emf.ecore.EObject;
 
 import org.eclipse.uml2.uml.Artifact;
-import org.eclipse.uml2.uml.Deployment;
 
 /**
  * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>Job Submission</b></em>'.
+ * A representation of the model object '<em><b>Ddsm Big Data Job</b></em>'.
  * <!-- end-user-doc -->
  *
  * <p>
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link es.unizar.disco.dice.DDSM.JobSubmission#getArtifactURL <em>Artifact URL</em>}</li>
- *   <li>{@link es.unizar.disco.dice.DDSM.JobSubmission#getMainClass <em>Main Class</em>}</li>
- *   <li>{@link es.unizar.disco.dice.DDSM.JobSubmission#getBase_Artifact <em>Base Artifact</em>}</li>
- *   <li>{@link es.unizar.disco.dice.DDSM.JobSubmission#getBase_Deployment <em>Base Deployment</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DDSM.DdsmBigDataJob#getArtifactURL <em>Artifact URL</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DDSM.DdsmBigDataJob#getMainClass <em>Main Class</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DDSM.DdsmBigDataJob#getBase_Artifact <em>Base Artifact</em>}</li>
  * </ul>
  *
- * @see es.unizar.disco.dice.DDSM.DDSMPackage#getJobSubmission()
+ * @see es.unizar.disco.dice.DDSM.DDSMPackage#getDdsmBigDataJob()
  * @model
  * @generated
  */
-public interface JobSubmission extends EObject {
+public interface DdsmBigDataJob extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Artifact URL</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -37,14 +35,14 @@ public interface JobSubmission extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Artifact URL</em>' attribute.
 	 * @see #setArtifactURL(String)
-	 * @see es.unizar.disco.dice.DDSM.DDSMPackage#getJobSubmission_ArtifactURL()
+	 * @see es.unizar.disco.dice.DDSM.DDSMPackage#getDdsmBigDataJob_ArtifactURL()
 	 * @model required="true" ordered="false"
 	 * @generated
 	 */
 	String getArtifactURL();
 
 	/**
-	 * Sets the value of the '{@link es.unizar.disco.dice.DDSM.JobSubmission#getArtifactURL <em>Artifact URL</em>}' attribute.
+	 * Sets the value of the '{@link es.unizar.disco.dice.DDSM.DdsmBigDataJob#getArtifactURL <em>Artifact URL</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Artifact URL</em>' attribute.
@@ -63,14 +61,14 @@ public interface JobSubmission extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Main Class</em>' attribute.
 	 * @see #setMainClass(String)
-	 * @see es.unizar.disco.dice.DDSM.DDSMPackage#getJobSubmission_MainClass()
+	 * @see es.unizar.disco.dice.DDSM.DDSMPackage#getDdsmBigDataJob_MainClass()
 	 * @model required="true" ordered="false"
 	 * @generated
 	 */
 	String getMainClass();
 
 	/**
-	 * Sets the value of the '{@link es.unizar.disco.dice.DDSM.JobSubmission#getMainClass <em>Main Class</em>}' attribute.
+	 * Sets the value of the '{@link es.unizar.disco.dice.DDSM.DdsmBigDataJob#getMainClass <em>Main Class</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Main Class</em>' attribute.
@@ -89,14 +87,14 @@ public interface JobSubmission extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Base Artifact</em>' reference.
 	 * @see #setBase_Artifact(Artifact)
-	 * @see es.unizar.disco.dice.DDSM.DDSMPackage#getJobSubmission_Base_Artifact()
+	 * @see es.unizar.disco.dice.DDSM.DDSMPackage#getDdsmBigDataJob_Base_Artifact()
 	 * @model required="true" ordered="false"
 	 * @generated
 	 */
 	Artifact getBase_Artifact();
 
 	/**
-	 * Sets the value of the '{@link es.unizar.disco.dice.DDSM.JobSubmission#getBase_Artifact <em>Base Artifact</em>}' reference.
+	 * Sets the value of the '{@link es.unizar.disco.dice.DDSM.DdsmBigDataJob#getBase_Artifact <em>Base Artifact</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Base Artifact</em>' reference.
@@ -105,30 +103,4 @@ public interface JobSubmission extends EObject {
 	 */
 	void setBase_Artifact(Artifact value);
 
-	/**
-	 * Returns the value of the '<em><b>Base Deployment</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Base Deployment</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Base Deployment</em>' reference.
-	 * @see #setBase_Deployment(Deployment)
-	 * @see es.unizar.disco.dice.DDSM.DDSMPackage#getJobSubmission_Base_Deployment()
-	 * @model required="true" ordered="false"
-	 * @generated
-	 */
-	Deployment getBase_Deployment();
-
-	/**
-	 * Sets the value of the '{@link es.unizar.disco.dice.DDSM.JobSubmission#getBase_Deployment <em>Base Deployment</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Base Deployment</em>' reference.
-	 * @see #getBase_Deployment()
-	 * @generated
-	 */
-	void setBase_Deployment(Deployment value);
-
-} // JobSubmission
+} // DdsmBigDataJob

@@ -116,8 +116,8 @@ public class DDSMAdapterFactory extends AdapterFactoryImpl {
 				return createDdsmNimbusAdapter();
 			}
 			@Override
-			public Adapter caseJobSubmission(JobSubmission object) {
-				return createJobSubmissionAdapter();
+			public Adapter caseDdsmJobSubmission(DdsmJobSubmission object) {
+				return createDdsmJobSubmissionAdapter();
 			}
 			@Override
 			public Adapter caseDdsmSupervisor(DdsmSupervisor object) {
@@ -126,6 +126,14 @@ public class DDSMAdapterFactory extends AdapterFactoryImpl {
 			@Override
 			public Adapter caseDdsmStormCluster(DdsmStormCluster object) {
 				return createDdsmStormClusterAdapter();
+			}
+			@Override
+			public Adapter caseDdsmBigDataJob(DdsmBigDataJob object) {
+				return createDdsmBigDataJobAdapter();
+			}
+			@Override
+			public Adapter caseDdsmJobDeployedFrom(DdsmJobDeployedFrom object) {
+				return createDdsmJobDeployedFromAdapter();
 			}
 			@Override
 			public Adapter defaultCase(EObject object) {
@@ -316,16 +324,16 @@ public class DDSMAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link es.unizar.disco.dice.DDSM.JobSubmission <em>Job Submission</em>}'.
+	 * Creates a new adapter for an object of class '{@link es.unizar.disco.dice.DDSM.DdsmJobSubmission <em>Ddsm Job Submission</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see es.unizar.disco.dice.DDSM.JobSubmission
+	 * @see es.unizar.disco.dice.DDSM.DdsmJobSubmission
 	 * @generated
 	 */
-	public Adapter createJobSubmissionAdapter() {
+	public Adapter createDdsmJobSubmissionAdapter() {
 		return null;
 	}
 
@@ -354,6 +362,34 @@ public class DDSMAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createDdsmStormClusterAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link es.unizar.disco.dice.DDSM.DdsmBigDataJob <em>Ddsm Big Data Job</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see es.unizar.disco.dice.DDSM.DdsmBigDataJob
+	 * @generated
+	 */
+	public Adapter createDdsmBigDataJobAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link es.unizar.disco.dice.DDSM.DdsmJobDeployedFrom <em>Ddsm Job Deployed From</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see es.unizar.disco.dice.DDSM.DdsmJobDeployedFrom
+	 * @generated
+	 */
+	public Adapter createDdsmJobDeployedFromAdapter() {
 		return null;
 	}
 
