@@ -5,13 +5,12 @@
 	<artifactId>es.unizar.disco.dice.static.profile.tests</artifactId>
 
 	<groupId>es.unizar.profiles</groupId>
-	<version>0.6.0-SNAPSHOT</version>
 	<packaging>eclipse-test-plugin</packaging>
 
 	<parent>
 		<groupId>es.unizar.profiles</groupId>
 		<artifactId>es.unizar.profiles.tests</artifactId>
-		<version>0.6.0-SNAPSHOT</version>
+		<version>0.7.0-SNAPSHOT</version>
 		<relativePath>../pom.xml</relativePath>
 	</parent>
 
