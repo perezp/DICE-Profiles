@@ -62,6 +62,9 @@ public class DdsmTest extends AbstractTest {
 				if(contains(((Node )e).getNestedNodes(),stereotypeName)){
 					return true;
 				}
+				if(contains(((Node )e).getDeployments(), stereotypeName)){
+					return true;
+				}
 
 				
 			}
