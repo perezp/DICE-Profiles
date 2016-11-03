@@ -3,7 +3,7 @@
 package es.unizar.disco.dice.DDSM.impl;
 
 import es.unizar.disco.dice.DDSM.DDSMPackage;
-import es.unizar.disco.dice.DDSM.JobSubmission;
+import es.unizar.disco.dice.DDSM.DdsmBigDataJob;
 
 import org.eclipse.emf.common.notify.Notification;
 
@@ -14,25 +14,23 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 import org.eclipse.uml2.uml.Artifact;
-import org.eclipse.uml2.uml.Deployment;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Job Submission</b></em>'.
+ * An implementation of the model object '<em><b>Ddsm Big Data Job</b></em>'.
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link es.unizar.disco.dice.DDSM.impl.JobSubmissionImpl#getArtifactURL <em>Artifact URL</em>}</li>
- *   <li>{@link es.unizar.disco.dice.DDSM.impl.JobSubmissionImpl#getMainClass <em>Main Class</em>}</li>
- *   <li>{@link es.unizar.disco.dice.DDSM.impl.JobSubmissionImpl#getBase_Artifact <em>Base Artifact</em>}</li>
- *   <li>{@link es.unizar.disco.dice.DDSM.impl.JobSubmissionImpl#getBase_Deployment <em>Base Deployment</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DDSM.impl.DdsmBigDataJobImpl#getArtifactURL <em>Artifact URL</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DDSM.impl.DdsmBigDataJobImpl#getMainClass <em>Main Class</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DDSM.impl.DdsmBigDataJobImpl#getBase_Artifact <em>Base Artifact</em>}</li>
  * </ul>
  *
  * @generated
  */
-public class JobSubmissionImpl extends MinimalEObjectImpl.Container implements JobSubmission {
+public class DdsmBigDataJobImpl extends MinimalEObjectImpl.Container implements DdsmBigDataJob {
 	/**
 	 * The default value of the '{@link #getArtifactURL() <em>Artifact URL</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -84,21 +82,11 @@ public class JobSubmissionImpl extends MinimalEObjectImpl.Container implements J
 	protected Artifact base_Artifact;
 
 	/**
-	 * The cached value of the '{@link #getBase_Deployment() <em>Base Deployment</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getBase_Deployment()
-	 * @generated
-	 * @ordered
-	 */
-	protected Deployment base_Deployment;
-
-	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected JobSubmissionImpl() {
+	protected DdsmBigDataJobImpl() {
 		super();
 	}
 
@@ -109,7 +97,7 @@ public class JobSubmissionImpl extends MinimalEObjectImpl.Container implements J
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return DDSMPackage.Literals.JOB_SUBMISSION;
+		return DDSMPackage.Literals.DDSM_BIG_DATA_JOB;
 	}
 
 	/**
@@ -130,7 +118,7 @@ public class JobSubmissionImpl extends MinimalEObjectImpl.Container implements J
 		String oldArtifactURL = artifactURL;
 		artifactURL = newArtifactURL;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, DDSMPackage.JOB_SUBMISSION__ARTIFACT_URL, oldArtifactURL, artifactURL));
+			eNotify(new ENotificationImpl(this, Notification.SET, DDSMPackage.DDSM_BIG_DATA_JOB__ARTIFACT_URL, oldArtifactURL, artifactURL));
 	}
 
 	/**
@@ -151,7 +139,7 @@ public class JobSubmissionImpl extends MinimalEObjectImpl.Container implements J
 		String oldMainClass = mainClass;
 		mainClass = newMainClass;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, DDSMPackage.JOB_SUBMISSION__MAIN_CLASS, oldMainClass, mainClass));
+			eNotify(new ENotificationImpl(this, Notification.SET, DDSMPackage.DDSM_BIG_DATA_JOB__MAIN_CLASS, oldMainClass, mainClass));
 	}
 
 	/**
@@ -165,7 +153,7 @@ public class JobSubmissionImpl extends MinimalEObjectImpl.Container implements J
 			base_Artifact = (Artifact)eResolveProxy(oldBase_Artifact);
 			if (base_Artifact != oldBase_Artifact) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, DDSMPackage.JOB_SUBMISSION__BASE_ARTIFACT, oldBase_Artifact, base_Artifact));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, DDSMPackage.DDSM_BIG_DATA_JOB__BASE_ARTIFACT, oldBase_Artifact, base_Artifact));
 			}
 		}
 		return base_Artifact;
@@ -189,45 +177,7 @@ public class JobSubmissionImpl extends MinimalEObjectImpl.Container implements J
 		Artifact oldBase_Artifact = base_Artifact;
 		base_Artifact = newBase_Artifact;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, DDSMPackage.JOB_SUBMISSION__BASE_ARTIFACT, oldBase_Artifact, base_Artifact));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Deployment getBase_Deployment() {
-		if (base_Deployment != null && base_Deployment.eIsProxy()) {
-			InternalEObject oldBase_Deployment = (InternalEObject)base_Deployment;
-			base_Deployment = (Deployment)eResolveProxy(oldBase_Deployment);
-			if (base_Deployment != oldBase_Deployment) {
-				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, DDSMPackage.JOB_SUBMISSION__BASE_DEPLOYMENT, oldBase_Deployment, base_Deployment));
-			}
-		}
-		return base_Deployment;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Deployment basicGetBase_Deployment() {
-		return base_Deployment;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setBase_Deployment(Deployment newBase_Deployment) {
-		Deployment oldBase_Deployment = base_Deployment;
-		base_Deployment = newBase_Deployment;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, DDSMPackage.JOB_SUBMISSION__BASE_DEPLOYMENT, oldBase_Deployment, base_Deployment));
+			eNotify(new ENotificationImpl(this, Notification.SET, DDSMPackage.DDSM_BIG_DATA_JOB__BASE_ARTIFACT, oldBase_Artifact, base_Artifact));
 	}
 
 	/**
@@ -238,16 +188,13 @@ public class JobSubmissionImpl extends MinimalEObjectImpl.Container implements J
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case DDSMPackage.JOB_SUBMISSION__ARTIFACT_URL:
+			case DDSMPackage.DDSM_BIG_DATA_JOB__ARTIFACT_URL:
 				return getArtifactURL();
-			case DDSMPackage.JOB_SUBMISSION__MAIN_CLASS:
+			case DDSMPackage.DDSM_BIG_DATA_JOB__MAIN_CLASS:
 				return getMainClass();
-			case DDSMPackage.JOB_SUBMISSION__BASE_ARTIFACT:
+			case DDSMPackage.DDSM_BIG_DATA_JOB__BASE_ARTIFACT:
 				if (resolve) return getBase_Artifact();
 				return basicGetBase_Artifact();
-			case DDSMPackage.JOB_SUBMISSION__BASE_DEPLOYMENT:
-				if (resolve) return getBase_Deployment();
-				return basicGetBase_Deployment();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -260,17 +207,14 @@ public class JobSubmissionImpl extends MinimalEObjectImpl.Container implements J
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case DDSMPackage.JOB_SUBMISSION__ARTIFACT_URL:
+			case DDSMPackage.DDSM_BIG_DATA_JOB__ARTIFACT_URL:
 				setArtifactURL((String)newValue);
 				return;
-			case DDSMPackage.JOB_SUBMISSION__MAIN_CLASS:
+			case DDSMPackage.DDSM_BIG_DATA_JOB__MAIN_CLASS:
 				setMainClass((String)newValue);
 				return;
-			case DDSMPackage.JOB_SUBMISSION__BASE_ARTIFACT:
+			case DDSMPackage.DDSM_BIG_DATA_JOB__BASE_ARTIFACT:
 				setBase_Artifact((Artifact)newValue);
-				return;
-			case DDSMPackage.JOB_SUBMISSION__BASE_DEPLOYMENT:
-				setBase_Deployment((Deployment)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -284,17 +228,14 @@ public class JobSubmissionImpl extends MinimalEObjectImpl.Container implements J
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case DDSMPackage.JOB_SUBMISSION__ARTIFACT_URL:
+			case DDSMPackage.DDSM_BIG_DATA_JOB__ARTIFACT_URL:
 				setArtifactURL(ARTIFACT_URL_EDEFAULT);
 				return;
-			case DDSMPackage.JOB_SUBMISSION__MAIN_CLASS:
+			case DDSMPackage.DDSM_BIG_DATA_JOB__MAIN_CLASS:
 				setMainClass(MAIN_CLASS_EDEFAULT);
 				return;
-			case DDSMPackage.JOB_SUBMISSION__BASE_ARTIFACT:
+			case DDSMPackage.DDSM_BIG_DATA_JOB__BASE_ARTIFACT:
 				setBase_Artifact((Artifact)null);
-				return;
-			case DDSMPackage.JOB_SUBMISSION__BASE_DEPLOYMENT:
-				setBase_Deployment((Deployment)null);
 				return;
 		}
 		super.eUnset(featureID);
@@ -308,14 +249,12 @@ public class JobSubmissionImpl extends MinimalEObjectImpl.Container implements J
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case DDSMPackage.JOB_SUBMISSION__ARTIFACT_URL:
+			case DDSMPackage.DDSM_BIG_DATA_JOB__ARTIFACT_URL:
 				return ARTIFACT_URL_EDEFAULT == null ? artifactURL != null : !ARTIFACT_URL_EDEFAULT.equals(artifactURL);
-			case DDSMPackage.JOB_SUBMISSION__MAIN_CLASS:
+			case DDSMPackage.DDSM_BIG_DATA_JOB__MAIN_CLASS:
 				return MAIN_CLASS_EDEFAULT == null ? mainClass != null : !MAIN_CLASS_EDEFAULT.equals(mainClass);
-			case DDSMPackage.JOB_SUBMISSION__BASE_ARTIFACT:
+			case DDSMPackage.DDSM_BIG_DATA_JOB__BASE_ARTIFACT:
 				return base_Artifact != null;
-			case DDSMPackage.JOB_SUBMISSION__BASE_DEPLOYMENT:
-				return base_Deployment != null;
 		}
 		return super.eIsSet(featureID);
 	}
@@ -338,4 +277,4 @@ public class JobSubmissionImpl extends MinimalEObjectImpl.Container implements J
 		return result.toString();
 	}
 
-} //JobSubmissionImpl
+} //DdsmBigDataJobImpl

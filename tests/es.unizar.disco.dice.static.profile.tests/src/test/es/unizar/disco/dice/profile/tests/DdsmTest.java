@@ -35,7 +35,7 @@ public class DdsmTest extends AbstractTest {
 		assertTrue("Cannot get element Node with stereotype DdsmVm", contains(depl.getPackagedElements(), "DdsmVm"));
 		assertTrue("Cannot get element Node with stereotype DdsmYarnResourceManager", contains(depl.getPackagedElements(), "DdsmYarnResourceManager"));
 		assertTrue("Cannot get element Node with stereotype DdsmZookeeperServer", contains(depl.getPackagedElements(), "DdsmZookeeperServer"));
-		assertTrue("Cannot get element Node with stereotype JobSubmission", contains(depl.getPackagedElements(), "JobSubmission"));
+		assertTrue("Cannot get element Node with stereotype DdsmJobSubmission", contains(depl.getPackagedElements(), "DdsmJobSubmission"));
 		
 	
 

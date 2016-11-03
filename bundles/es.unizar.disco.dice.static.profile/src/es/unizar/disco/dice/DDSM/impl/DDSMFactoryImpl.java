@@ -66,9 +66,11 @@ public class DDSMFactoryImpl extends EFactoryImpl implements DDSMFactory {
 			case DDSMPackage.DDSM_ZOOKEEPER_SERVER: return createDdsmZookeeperServer();
 			case DDSMPackage.DDSM_KAFKA: return createDdsmKafka();
 			case DDSMPackage.DDSM_NIMBUS: return createDdsmNimbus();
-			case DDSMPackage.JOB_SUBMISSION: return createJobSubmission();
+			case DDSMPackage.DDSM_JOB_SUBMISSION: return createDdsmJobSubmission();
 			case DDSMPackage.DDSM_SUPERVISOR: return createDdsmSupervisor();
 			case DDSMPackage.DDSM_STORM_CLUSTER: return createDdsmStormCluster();
+			case DDSMPackage.DDSM_BIG_DATA_JOB: return createDdsmBigDataJob();
+			case DDSMPackage.DDSM_JOB_DEPLOYED_FROM: return createDdsmJobDeployedFrom();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -179,9 +181,9 @@ public class DDSMFactoryImpl extends EFactoryImpl implements DDSMFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public JobSubmission createJobSubmission() {
-		JobSubmissionImpl jobSubmission = new JobSubmissionImpl();
-		return jobSubmission;
+	public DdsmJobSubmission createDdsmJobSubmission() {
+		DdsmJobSubmissionImpl ddsmJobSubmission = new DdsmJobSubmissionImpl();
+		return ddsmJobSubmission;
 	}
 
 	/**
@@ -202,6 +204,26 @@ public class DDSMFactoryImpl extends EFactoryImpl implements DDSMFactory {
 	public DdsmStormCluster createDdsmStormCluster() {
 		DdsmStormClusterImpl ddsmStormCluster = new DdsmStormClusterImpl();
 		return ddsmStormCluster;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public DdsmBigDataJob createDdsmBigDataJob() {
+		DdsmBigDataJobImpl ddsmBigDataJob = new DdsmBigDataJobImpl();
+		return ddsmBigDataJob;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public DdsmJobDeployedFrom createDdsmJobDeployedFrom() {
+		DdsmJobDeployedFromImpl ddsmJobDeployedFrom = new DdsmJobDeployedFromImpl();
+		return ddsmJobDeployedFrom;
 	}
 
 	/**

@@ -112,13 +112,13 @@ public interface DDSMFactory extends EFactory {
 	DdsmNimbus createDdsmNimbus();
 
 	/**
-	 * Returns a new object of class '<em>Job Submission</em>'.
+	 * Returns a new object of class '<em>Ddsm Job Submission</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Job Submission</em>'.
+	 * @return a new object of class '<em>Ddsm Job Submission</em>'.
 	 * @generated
 	 */
-	JobSubmission createJobSubmission();
+	DdsmJobSubmission createDdsmJobSubmission();
 
 	/**
 	 * Returns a new object of class '<em>Ddsm Supervisor</em>'.
@@ -137,6 +137,24 @@ public interface DDSMFactory extends EFactory {
 	 * @generated
 	 */
 	DdsmStormCluster createDdsmStormCluster();
+
+	/**
+	 * Returns a new object of class '<em>Ddsm Big Data Job</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Ddsm Big Data Job</em>'.
+	 * @generated
+	 */
+	DdsmBigDataJob createDdsmBigDataJob();
+
+	/**
+	 * Returns a new object of class '<em>Ddsm Job Deployed From</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Ddsm Job Deployed From</em>'.
+	 * @generated
+	 */
+	DdsmJobDeployedFrom createDdsmJobDeployedFrom();
 
 	/**
 	 * Returns the package supported by this factory.

@@ -18,11 +18,14 @@ import es.unizar.disco.dice.Complex_Data_Types.impl.Complex_Data_TypesPackageImp
 
 import es.unizar.disco.dice.DDSM.DDSMFactory;
 import es.unizar.disco.dice.DDSM.DDSMPackage;
+import es.unizar.disco.dice.DDSM.DdsmBigDataJob;
 import es.unizar.disco.dice.DDSM.DdsmCloudElement;
 import es.unizar.disco.dice.DDSM.DdsmCluster;
 import es.unizar.disco.dice.DDSM.DdsmComponent;
 import es.unizar.disco.dice.DDSM.DdsmExternalComponent;
 import es.unizar.disco.dice.DDSM.DdsmInternalComponent;
+import es.unizar.disco.dice.DDSM.DdsmJobDeployedFrom;
+import es.unizar.disco.dice.DDSM.DdsmJobSubmission;
 import es.unizar.disco.dice.DDSM.DdsmKafka;
 import es.unizar.disco.dice.DDSM.DdsmNimbus;
 import es.unizar.disco.dice.DDSM.DdsmPort;
@@ -32,8 +35,6 @@ import es.unizar.disco.dice.DDSM.DdsmSupervisor;
 import es.unizar.disco.dice.DDSM.DdsmVm;
 import es.unizar.disco.dice.DDSM.DdsmYarnResourceManager;
 import es.unizar.disco.dice.DDSM.DdsmZookeeperServer;
-import es.unizar.disco.dice.DDSM.JobSubmission;
-
 import es.unizar.disco.dice.DDSM.util.DDSMValidator;
 
 import es.unizar.disco.dice.DICE.DICEPackage;
@@ -162,7 +163,7 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass jobSubmissionEClass = null;
+	private EClass ddsmJobSubmissionEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -177,6 +178,20 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 	 * @generated
 	 */
 	private EClass ddsmStormClusterEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass ddsmBigDataJobEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass ddsmJobDeployedFromEClass = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -816,8 +831,8 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getJobSubmission() {
-		return jobSubmissionEClass;
+	public EClass getDdsmJobSubmission() {
+		return ddsmJobSubmissionEClass;
 	}
 
 	/**
@@ -825,35 +840,8 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getJobSubmission_ArtifactURL() {
-		return (EAttribute)jobSubmissionEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EAttribute getJobSubmission_MainClass() {
-		return (EAttribute)jobSubmissionEClass.getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getJobSubmission_Base_Artifact() {
-		return (EReference)jobSubmissionEClass.getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getJobSubmission_Base_Deployment() {
-		return (EReference)jobSubmissionEClass.getEStructuralFeatures().get(3);
+	public EReference getDdsmJobSubmission_Base_Deployment() {
+		return (EReference)ddsmJobSubmissionEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -908,6 +896,60 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 	 */
 	public EClass getDdsmStormCluster() {
 		return ddsmStormClusterEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getDdsmBigDataJob() {
+		return ddsmBigDataJobEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getDdsmBigDataJob_ArtifactURL() {
+		return (EAttribute)ddsmBigDataJobEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getDdsmBigDataJob_MainClass() {
+		return (EAttribute)ddsmBigDataJobEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getDdsmBigDataJob_Base_Artifact() {
+		return (EReference)ddsmBigDataJobEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getDdsmJobDeployedFrom() {
+		return ddsmJobDeployedFromEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getDdsmJobDeployedFrom_Base_Dependency() {
+		return (EReference)ddsmJobDeployedFromEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -1009,11 +1051,8 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 		createEAttribute(ddsmNimbusEClass, DDSM_NIMBUS__RETRY_TIMES);
 		createEAttribute(ddsmNimbusEClass, DDSM_NIMBUS__RETRY_INTERVAL);
 
-		jobSubmissionEClass = createEClass(JOB_SUBMISSION);
-		createEAttribute(jobSubmissionEClass, JOB_SUBMISSION__ARTIFACT_URL);
-		createEAttribute(jobSubmissionEClass, JOB_SUBMISSION__MAIN_CLASS);
-		createEReference(jobSubmissionEClass, JOB_SUBMISSION__BASE_ARTIFACT);
-		createEReference(jobSubmissionEClass, JOB_SUBMISSION__BASE_DEPLOYMENT);
+		ddsmJobSubmissionEClass = createEClass(DDSM_JOB_SUBMISSION);
+		createEReference(ddsmJobSubmissionEClass, DDSM_JOB_SUBMISSION__BASE_DEPLOYMENT);
 
 		ddsmSupervisorEClass = createEClass(DDSM_SUPERVISOR);
 		createEAttribute(ddsmSupervisorEClass, DDSM_SUPERVISOR__WORKER_START_TIMEOUT);
@@ -1022,6 +1061,14 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 		createEAttribute(ddsmSupervisorEClass, DDSM_SUPERVISOR__HEARTBEAT_FREQUENCY);
 
 		ddsmStormClusterEClass = createEClass(DDSM_STORM_CLUSTER);
+
+		ddsmBigDataJobEClass = createEClass(DDSM_BIG_DATA_JOB);
+		createEAttribute(ddsmBigDataJobEClass, DDSM_BIG_DATA_JOB__ARTIFACT_URL);
+		createEAttribute(ddsmBigDataJobEClass, DDSM_BIG_DATA_JOB__MAIN_CLASS);
+		createEReference(ddsmBigDataJobEClass, DDSM_BIG_DATA_JOB__BASE_ARTIFACT);
+
+		ddsmJobDeployedFromEClass = createEClass(DDSM_JOB_DEPLOYED_FROM);
+		createEReference(ddsmJobDeployedFromEClass, DDSM_JOB_DEPLOYED_FROM__BASE_DEPENDENCY);
 	}
 
 	/**
@@ -1169,11 +1216,8 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		initEClass(jobSubmissionEClass, JobSubmission.class, "JobSubmission", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getJobSubmission_ArtifactURL(), ecorePackage.getEString(), "artifactURL", null, 1, 1, JobSubmission.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getJobSubmission_MainClass(), ecorePackage.getEString(), "mainClass", null, 1, 1, JobSubmission.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getJobSubmission_Base_Artifact(), theUMLPackage.getArtifact(), null, "base_Artifact", null, 1, 1, JobSubmission.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getJobSubmission_Base_Deployment(), theUMLPackage.getDeployment(), null, "base_Deployment", null, 1, 1, JobSubmission.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEClass(ddsmJobSubmissionEClass, DdsmJobSubmission.class, "DdsmJobSubmission", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getDdsmJobSubmission_Base_Deployment(), theUMLPackage.getDeployment(), null, "base_Deployment", null, 1, 1, DdsmJobSubmission.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(ddsmSupervisorEClass, DdsmSupervisor.class, "DdsmSupervisor", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getDdsmSupervisor_WorkerStartTimeout(), ecorePackage.getEInt(), "workerStartTimeout", "120", 1, 1, DdsmSupervisor.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
@@ -1200,6 +1244,14 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		initEClass(ddsmBigDataJobEClass, DdsmBigDataJob.class, "DdsmBigDataJob", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getDdsmBigDataJob_ArtifactURL(), ecorePackage.getEString(), "artifactURL", null, 1, 1, DdsmBigDataJob.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDdsmBigDataJob_MainClass(), ecorePackage.getEString(), "mainClass", null, 1, 1, DdsmBigDataJob.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEReference(getDdsmBigDataJob_Base_Artifact(), theUMLPackage.getArtifact(), null, "base_Artifact", null, 1, 1, DdsmBigDataJob.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+
+		initEClass(ddsmJobDeployedFromEClass, DdsmJobDeployedFrom.class, "DdsmJobDeployedFrom", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getDdsmJobDeployedFrom_Base_Dependency(), theUMLPackage.getDependency(), null, "base_Dependency", null, 1, 1, DdsmJobDeployedFrom.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		// Create annotations
 		// duplicates
