@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
    <feature url="features/com.masdes.dam.profile.feature_0.8.0.qualifier.jar" id="com.masdes.dam.profile.feature" version="0.8.0.qualifier">
-      <category name="DICE Profiles"/>
+      <category name="Profiles"/>
    </feature>
    <feature url="features/com.masdes.dam.profile.ui.feature_0.8.0.qualifier.jar" id="com.masdes.dam.profile.ui.feature" version="0.8.0.qualifier">
-      <category name="DICE Profiles"/>
+      <category name="Profiles"/>
    </feature>
    <feature url="features/es.unizar.disco.dice.profile.feature_0.8.0.qualifier.jar" id="es.unizar.disco.dice.profile.feature" version="0.8.0.qualifier">
-      <category name="DICE Profiles"/>
+      <category name="Profiles"/>
    </feature>
-   <category-def name="DICE Profiles" label="DICE Profiles"/>
+   <category-def name="Profiles" label="Profiles"/>
 </site>
