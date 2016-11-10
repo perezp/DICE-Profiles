@@ -1119,9 +1119,9 @@
     <edges xmi:type="notation:Connector" xmi:id="_N1P5MD01EeadLIR15eC1oQ" type="Comment_AnnotatedElementEdge" source="_Ca4HoD01EeadLIR15eC1oQ" target="_eVkc0DOxEeax3OqdhCztQw">
       <styles xmi:type="notation:FontStyle" xmi:id="_N1P5MT01EeadLIR15eC1oQ"/>
       <element xsi:nil="true"/>
-      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_N1P5Mj01EeadLIR15eC1oQ" points="[319, 174, -643984, -643984]$[319, 215, -643984, -643984]$[326, 215, -643984, -643984]"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_N1P5Mj01EeadLIR15eC1oQ" points="[364, 174, -643984, -643984]$[364, 215, -643984, -643984]$[319, 215, -643984, -643984]$[269, 215, -643984, -643984]"/>
       <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_N171sD01EeadLIR15eC1oQ" id="(0.32857142857142857,1.0)"/>
-      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_N171sT01EeadLIR15eC1oQ" id="(0.5609756097560976,0.7515923566878981)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_N171sT01EeadLIR15eC1oQ" id="(0.07222222222222222,0.2857142857142857)"/>
     </edges>
     <edges xmi:type="notation:Connector" xmi:id="_W1X14D01EeadLIR15eC1oQ" type="Comment_AnnotatedElementEdge" source="_SsCB8D01EeadLIR15eC1oQ" target="_MkXtUDMHEea2HMc_AU99vQ">
       <styles xmi:type="notation:FontStyle" xmi:id="_W1X14T01EeadLIR15eC1oQ"/>
