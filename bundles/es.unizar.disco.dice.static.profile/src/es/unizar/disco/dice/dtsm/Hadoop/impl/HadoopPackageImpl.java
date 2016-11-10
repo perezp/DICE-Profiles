@@ -1,6 +1,6 @@
 /**
  */
-package es.unizar.disco.dice.dtsm.Hadoop.impl;
+package es.unizar.disco.dice.DTSM.Hadoop.impl;
 
 import com.masdes.dam.Basic_Data_Types.Basic_Data_TypesPackage;
 
@@ -17,31 +17,35 @@ import es.unizar.disco.dice.Basic_Enumeration_Types.impl.Basic_Enumeration_Types
 import es.unizar.disco.dice.Complex_Data_Types.impl.Complex_Data_TypesPackageImpl;
 
 import es.unizar.disco.dice.DDSM.DDSMPackage;
+
 import es.unizar.disco.dice.DDSM.impl.DDSMPackageImpl;
+
 import es.unizar.disco.dice.DICE.DICEPackage;
+
 import es.unizar.disco.dice.DICE.impl.DICEPackageImpl;
+
 import es.unizar.disco.dice.DPIM.DPIMPackage;
 
 import es.unizar.disco.dice.DPIM.impl.DPIMPackageImpl;
 
-import es.unizar.disco.dice.dtsm.Core.CorePackage;
+import es.unizar.disco.dice.DTSM.Core.CorePackage;
 
-import es.unizar.disco.dice.dtsm.Core.impl.CorePackageImpl;
+import es.unizar.disco.dice.DTSM.Core.impl.CorePackageImpl;
 
-import es.unizar.disco.dice.dtsm.Hadoop.HadoopComputationNode;
-import es.unizar.disco.dice.dtsm.Hadoop.HadoopFactory;
-import es.unizar.disco.dice.dtsm.Hadoop.HadoopMap;
-import es.unizar.disco.dice.dtsm.Hadoop.HadoopMapReduceJob;
-import es.unizar.disco.dice.dtsm.Hadoop.HadoopMapReducePhase;
-import es.unizar.disco.dice.dtsm.Hadoop.HadoopOperation;
-import es.unizar.disco.dice.dtsm.Hadoop.HadoopPackage;
-import es.unizar.disco.dice.dtsm.Hadoop.HadoopReduce;
-import es.unizar.disco.dice.dtsm.Hadoop.HadoopScenario;
-import es.unizar.disco.dice.dtsm.Hadoop.HadoopWorkloadEvent;
+import es.unizar.disco.dice.DTSM.Hadoop.HadoopComputationNode;
+import es.unizar.disco.dice.DTSM.Hadoop.HadoopFactory;
+import es.unizar.disco.dice.DTSM.Hadoop.HadoopMap;
+import es.unizar.disco.dice.DTSM.Hadoop.HadoopMapReduceJob;
+import es.unizar.disco.dice.DTSM.Hadoop.HadoopMapReducePhase;
+import es.unizar.disco.dice.DTSM.Hadoop.HadoopOperation;
+import es.unizar.disco.dice.DTSM.Hadoop.HadoopPackage;
+import es.unizar.disco.dice.DTSM.Hadoop.HadoopReduce;
+import es.unizar.disco.dice.DTSM.Hadoop.HadoopScenario;
+import es.unizar.disco.dice.DTSM.Hadoop.HadoopWorkloadEvent;
 
-import es.unizar.disco.dice.dtsm.Storm.StormPackage;
+import es.unizar.disco.dice.DTSM.Storm.StormPackage;
 
-import es.unizar.disco.dice.dtsm.Storm.impl.StormPackageImpl;
+import es.unizar.disco.dice.DTSM.Storm.impl.StormPackageImpl;
 
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
@@ -130,7 +134,7 @@ public class HadoopPackageImpl extends EPackageImpl implements HadoopPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see org.eclipse.emf.ecore.EPackage.Registry
-	 * @see es.unizar.disco.dice.dtsm.Hadoop.HadoopPackage#eNS_URI
+	 * @see es.unizar.disco.dice.DTSM.Hadoop.HadoopPackage#eNS_URI
 	 * @see #init()
 	 * @generated
 	 */

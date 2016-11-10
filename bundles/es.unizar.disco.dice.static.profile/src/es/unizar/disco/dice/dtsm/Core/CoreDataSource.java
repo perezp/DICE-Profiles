@@ -1,6 +1,6 @@
 /**
  */
-package es.unizar.disco.dice.dtsm.Core;
+package es.unizar.disco.dice.DTSM.Core;
 
 import es.unizar.disco.dice.DPIM.DpimStorageNode;
 
@@ -10,7 +10,7 @@ import es.unizar.disco.dice.DPIM.DpimStorageNode;
  * <!-- end-user-doc -->
  *
  *
- * @see es.unizar.disco.dice.dtsm.Core.CorePackage#getCoreDataSource()
+ * @see es.unizar.disco.dice.DTSM.Core.CorePackage#getCoreDataSource()
  * @model abstract="true"
  * @generated
  */

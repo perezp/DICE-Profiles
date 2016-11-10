@@ -1672,7 +1672,6 @@ public interface DDSMPackage extends EPackage {
 	 */
 	int DDSM_STORM_CLUSTER_FEATURE_COUNT = DDSM_INTERNAL_COMPONENT_FEATURE_COUNT + 0;
 
-
 	/**
 	 * The meta object id for the '{@link es.unizar.disco.dice.DDSM.impl.DdsmBigDataJobImpl <em>Ddsm Big Data Job</em>}' class.
 	 * <!-- begin-user-doc -->

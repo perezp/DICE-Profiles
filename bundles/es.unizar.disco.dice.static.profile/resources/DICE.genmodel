@@ -21,7 +21,7 @@
     <details key="INVARIANT_CONSTRAINTS" value="PROCESS"/>
     <details key="REDEFINING_PROPERTIES" value="REPORT"/>
     <details key="ANNOTATION_DETAILS" value="PROCESS"/>
-    <details key="NON_API_INVARIANTS" value="IGNORE"/>
+    <details key="NON_API_INVARIANTS" value="PROCESS"/>
     <details key="DUPLICATE_OPERATION_INHERITANCE" value="DISCARD"/>
     <details key="REDEFINING_OPERATIONS" value="REPORT"/>
     <details key="INVOCATION_DELEGATES" value="IGNORE"/>
@@ -71,7 +71,7 @@
       </nestedGenPackages>
       <nestedGenPackages xsi:type="genmodel:GenPackage" prefix="DTSM" basePackage="es.unizar.disco.dice"
           disposableProviderFactory="true" ecorePackage="DICE.ecore#//DICE_UML_Extensions/DTSM">
-        <nestedGenPackages xsi:type="genmodel:GenPackage" prefix="Core" basePackage="es.unizar.disco.dice.dtsm"
+        <nestedGenPackages xsi:type="genmodel:GenPackage" prefix="Core" basePackage="es.unizar.disco.dice.DTSM"
             disposableProviderFactory="true" ecorePackage="DICE.ecore#//DICE_UML_Extensions/DTSM/Core">
           <genClasses xsi:type="genmodel:GenClass" ecoreClass="DICE.ecore#//DICE_UML_Extensions/DTSM/Core/CoreComputationNode">
             <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
@@ -116,7 +116,7 @@
             <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DTSM/Core/CoreStorageNode/password"/>
           </genClasses>
         </nestedGenPackages>
-        <nestedGenPackages xsi:type="genmodel:GenPackage" prefix="Storm" basePackage="es.unizar.disco.dice.dtsm"
+        <nestedGenPackages xsi:type="genmodel:GenPackage" prefix="Storm" basePackage="es.unizar.disco.dice.DTSM"
             disposableProviderFactory="true" ecorePackage="DICE.ecore#//DICE_UML_Extensions/DTSM/Storm">
           <genClasses xsi:type="genmodel:GenClass" ecoreClass="DICE.ecore#//DICE_UML_Extensions/DTSM/Storm/StormBolt">
             <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DTSM/Storm/StormBolt/d"/>
@@ -174,7 +174,7 @@
             <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DTSM/Storm/StormStreamStep/grouping"/>
           </genClasses>
         </nestedGenPackages>
-        <nestedGenPackages xsi:type="genmodel:GenPackage" prefix="Hadoop" basePackage="es.unizar.disco.dice.dtsm"
+        <nestedGenPackages xsi:type="genmodel:GenPackage" prefix="Hadoop" basePackage="es.unizar.disco.dice.DTSM"
             disposableProviderFactory="true" ecorePackage="DICE.ecore#//DICE_UML_Extensions/DTSM/Hadoop">
           <genClasses xsi:type="genmodel:GenClass" ecoreClass="DICE.ecore#//DICE_UML_Extensions/DTSM/Hadoop/HadoopMapReduceJob">
             <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
@@ -279,20 +279,11 @@
           <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DDSM/DdsmVm/instances"/>
           <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DDSM/DdsmVm/genericSize"/>
         </genClasses>
-        <genClasses xsi:type="genmodel:GenClass" ecoreClass="DICE.ecore#//DICE_UML_Extensions/DDSM/DdsmYarnResourceManager">
-          <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="DICE.ecore#//DICE_UML_Extensions/DDSM/DdsmYarnResourceManager/YarnTypeMasterNode">
-            <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="DICE.ecore#//DICE_UML_Extensions/DDSM/DdsmYarnResourceManager/YarnTypeMasterNode/diagnostics"/>
-            <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="DICE.ecore#//DICE_UML_Extensions/DDSM/DdsmYarnResourceManager/YarnTypeMasterNode/context"/>
-          </genOperations>
-        </genClasses>
+        <genClasses xsi:type="genmodel:GenClass" ecoreClass="DICE.ecore#//DICE_UML_Extensions/DDSM/DdsmYarnResourceManager"/>
         <genClasses xsi:type="genmodel:GenClass" ecoreClass="DICE.ecore#//DICE_UML_Extensions/DDSM/DdsmZookeeperServer">
           <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DDSM/DdsmZookeeperServer/tickTime"/>
           <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DDSM/DdsmZookeeperServer/syncLimit"/>
           <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DDSM/DdsmZookeeperServer/initLimit"/>
-          <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="DICE.ecore#//DICE_UML_Extensions/DDSM/DdsmZookeeperServer/ZookeeperServerTypePeefNode">
-            <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="DICE.ecore#//DICE_UML_Extensions/DDSM/DdsmZookeeperServer/ZookeeperServerTypePeefNode/diagnostics"/>
-            <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="DICE.ecore#//DICE_UML_Extensions/DDSM/DdsmZookeeperServer/ZookeeperServerTypePeefNode/context"/>
-          </genOperations>
         </genClasses>
         <genClasses xsi:type="genmodel:GenClass" ecoreClass="DICE.ecore#//DICE_UML_Extensions/DDSM/DdsmKafka"/>
         <genClasses xsi:type="genmodel:GenClass" ecoreClass="DICE.ecore#//DICE_UML_Extensions/DDSM/DdsmNimbus">
@@ -302,10 +293,6 @@
           <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DDSM/DdsmNimbus/monitorFrequency"/>
           <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DDSM/DdsmNimbus/retryTimes"/>
           <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DDSM/DdsmNimbus/retryInterval"/>
-          <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="DICE.ecore#//DICE_UML_Extensions/DDSM/DdsmNimbus/NimbusTypeMasterNode">
-            <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="DICE.ecore#//DICE_UML_Extensions/DDSM/DdsmNimbus/NimbusTypeMasterNode/diagnostics"/>
-            <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="DICE.ecore#//DICE_UML_Extensions/DDSM/DdsmNimbus/NimbusTypeMasterNode/context"/>
-          </genOperations>
         </genClasses>
         <genClasses xsi:type="genmodel:GenClass" ecoreClass="DICE.ecore#//DICE_UML_Extensions/DDSM/DdsmJobSubmission">
           <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
@@ -316,17 +303,8 @@
           <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DDSM/DdsmSupervisor/cpuCapacity"/>
           <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DDSM/DdsmSupervisor/memoryCapacity"/>
           <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DDSM/DdsmSupervisor/heartbeatFrequency"/>
-          <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="DICE.ecore#//DICE_UML_Extensions/DDSM/DdsmSupervisor/SupervisorTypeSlaveNode">
-            <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="DICE.ecore#//DICE_UML_Extensions/DDSM/DdsmSupervisor/SupervisorTypeSlaveNode/diagnostics"/>
-            <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="DICE.ecore#//DICE_UML_Extensions/DDSM/DdsmSupervisor/SupervisorTypeSlaveNode/context"/>
-          </genOperations>
         </genClasses>
-        <genClasses xsi:type="genmodel:GenClass" ecoreClass="DICE.ecore#//DICE_UML_Extensions/DDSM/DdsmStormCluster">
-          <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="DICE.ecore#//DICE_UML_Extensions/DDSM/DdsmStormCluster/StormClusterTypeMasterSlavePlatform">
-            <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="DICE.ecore#//DICE_UML_Extensions/DDSM/DdsmStormCluster/StormClusterTypeMasterSlavePlatform/diagnostics"/>
-            <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="DICE.ecore#//DICE_UML_Extensions/DDSM/DdsmStormCluster/StormClusterTypeMasterSlavePlatform/context"/>
-          </genOperations>
-        </genClasses>
+        <genClasses xsi:type="genmodel:GenClass" ecoreClass="DICE.ecore#//DICE_UML_Extensions/DDSM/DdsmStormCluster"/>
         <genClasses xsi:type="genmodel:GenClass" ecoreClass="DICE.ecore#//DICE_UML_Extensions/DDSM/DdsmBigDataJob">
           <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DDSM/DdsmBigDataJob/artifactURL"/>
           <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DDSM/DdsmBigDataJob/mainClass"/>

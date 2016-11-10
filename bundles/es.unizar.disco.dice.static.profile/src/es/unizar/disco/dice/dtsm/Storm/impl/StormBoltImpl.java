@@ -1,13 +1,13 @@
 /**
  */
-package es.unizar.disco.dice.dtsm.Storm.impl;
+package es.unizar.disco.dice.DTSM.Storm.impl;
 
 import com.masdes.dam.Complex_Data_Types.DaFailure;
 
-import es.unizar.disco.dice.dtsm.Core.impl.CoreDAGNodeImpl;
+import es.unizar.disco.dice.DTSM.Core.impl.CoreDAGNodeImpl;
 
-import es.unizar.disco.dice.dtsm.Storm.StormBolt;
-import es.unizar.disco.dice.dtsm.Storm.StormPackage;
+import es.unizar.disco.dice.DTSM.Storm.StormBolt;
+import es.unizar.disco.dice.DTSM.Storm.StormPackage;
 
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -30,12 +30,12 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link es.unizar.disco.dice.dtsm.Storm.impl.StormBoltImpl#getD <em>D</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Storm.impl.StormBoltImpl#getAlpha <em>Alpha</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Storm.impl.StormBoltImpl#getSigma <em>Sigma</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Storm.impl.StormBoltImpl#getMinRebootTime <em>Min Reboot Time</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Storm.impl.StormBoltImpl#getMaxRebootTime <em>Max Reboot Time</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Storm.impl.StormBoltImpl#getFailure <em>Failure</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Storm.impl.StormBoltImpl#getD <em>D</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Storm.impl.StormBoltImpl#getAlpha <em>Alpha</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Storm.impl.StormBoltImpl#getSigma <em>Sigma</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Storm.impl.StormBoltImpl#getMinRebootTime <em>Min Reboot Time</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Storm.impl.StormBoltImpl#getMaxRebootTime <em>Max Reboot Time</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Storm.impl.StormBoltImpl#getFailure <em>Failure</em>}</li>
  * </ul>
  *
  * @generated

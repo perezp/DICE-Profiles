@@ -35,30 +35,31 @@ import es.unizar.disco.dice.DDSM.DdsmSupervisor;
 import es.unizar.disco.dice.DDSM.DdsmVm;
 import es.unizar.disco.dice.DDSM.DdsmYarnResourceManager;
 import es.unizar.disco.dice.DDSM.DdsmZookeeperServer;
+
 import es.unizar.disco.dice.DDSM.util.DDSMValidator;
 
 import es.unizar.disco.dice.DICE.DICEPackage;
+
 import es.unizar.disco.dice.DICE.impl.DICEPackageImpl;
+
 import es.unizar.disco.dice.DPIM.DPIMPackage;
 
 import es.unizar.disco.dice.DPIM.impl.DPIMPackageImpl;
 
-import es.unizar.disco.dice.dtsm.Core.CorePackage;
+import es.unizar.disco.dice.DTSM.Core.CorePackage;
 
-import es.unizar.disco.dice.dtsm.Core.impl.CorePackageImpl;
+import es.unizar.disco.dice.DTSM.Core.impl.CorePackageImpl;
 
-import es.unizar.disco.dice.dtsm.Hadoop.HadoopPackage;
+import es.unizar.disco.dice.DTSM.Hadoop.HadoopPackage;
 
-import es.unizar.disco.dice.dtsm.Hadoop.impl.HadoopPackageImpl;
+import es.unizar.disco.dice.DTSM.Hadoop.impl.HadoopPackageImpl;
 
-import es.unizar.disco.dice.dtsm.Storm.StormPackage;
+import es.unizar.disco.dice.DTSM.Storm.StormPackage;
 
-import es.unizar.disco.dice.dtsm.Storm.impl.StormPackageImpl;
+import es.unizar.disco.dice.DTSM.Storm.impl.StormPackageImpl;
 
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
-import org.eclipse.emf.ecore.EGenericType;
-import org.eclipse.emf.ecore.EOperation;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
 import org.eclipse.emf.ecore.EValidator;
@@ -1174,28 +1175,10 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 
 		initEClass(ddsmYarnResourceManagerEClass, DdsmYarnResourceManager.class, "DdsmYarnResourceManager", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-		EOperation op = addEOperation(ddsmYarnResourceManagerEClass, ecorePackage.getEBoolean(), "YarnTypeMasterNode", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		EGenericType g1 = createEGenericType(ecorePackage.getEMap());
-		EGenericType g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
 		initEClass(ddsmZookeeperServerEClass, DdsmZookeeperServer.class, "DdsmZookeeperServer", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getDdsmZookeeperServer_TickTime(), ecorePackage.getEInt(), "tickTime", "1500", 1, 1, DdsmZookeeperServer.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getDdsmZookeeperServer_SyncLimit(), ecorePackage.getEInt(), "syncLimit", "10", 1, 1, DdsmZookeeperServer.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getDdsmZookeeperServer_InitLimit(), ecorePackage.getEInt(), "initLimit", "5", 1, 1, DdsmZookeeperServer.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-
-		op = addEOperation(ddsmZookeeperServerEClass, ecorePackage.getEBoolean(), "ZookeeperServerTypePeefNode", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		initEClass(ddsmKafkaEClass, DdsmKafka.class, "DdsmKafka", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
@@ -1207,15 +1190,6 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 		initEAttribute(getDdsmNimbus_RetryTimes(), ecorePackage.getEInt(), "retryTimes", "5", 1, 1, DdsmNimbus.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getDdsmNimbus_RetryInterval(), ecorePackage.getEInt(), "retryInterval", "2000", 1, 1, DdsmNimbus.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
-		op = addEOperation(ddsmNimbusEClass, ecorePackage.getEBoolean(), "NimbusTypeMasterNode", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
 		initEClass(ddsmJobSubmissionEClass, DdsmJobSubmission.class, "DdsmJobSubmission", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getDdsmJobSubmission_Base_Deployment(), theUMLPackage.getDeployment(), null, "base_Deployment", null, 1, 1, DdsmJobSubmission.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
@@ -1225,25 +1199,7 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 		initEAttribute(getDdsmSupervisor_MemoryCapacity(), ecorePackage.getEInt(), "memoryCapacity", "4096", 1, 1, DdsmSupervisor.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getDdsmSupervisor_HeartbeatFrequency(), ecorePackage.getEInt(), "heartbeatFrequency", "5", 1, 1, DdsmSupervisor.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
-		op = addEOperation(ddsmSupervisorEClass, ecorePackage.getEBoolean(), "SupervisorTypeSlaveNode", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
 		initEClass(ddsmStormClusterEClass, DdsmStormCluster.class, "DdsmStormCluster", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-
-		op = addEOperation(ddsmStormClusterEClass, ecorePackage.getEBoolean(), "StormClusterTypeMasterSlavePlatform", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		initEClass(ddsmBigDataJobEClass, DdsmBigDataJob.class, "DdsmBigDataJob", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getDdsmBigDataJob_ArtifactURL(), ecorePackage.getEString(), "artifactURL", null, 1, 1, DdsmBigDataJob.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
@@ -1256,6 +1212,8 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 		// Create annotations
 		// duplicates
 		createDuplicatesAnnotations();
+		// http://www.eclipse.org/emf/2002/Ecore
+		createEcoreAnnotations();
 	}
 
 	/**
@@ -1270,6 +1228,46 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 		  (ddsmResourceEClass, 
 		   source, 
 		   new String[] {
+		   });
+	}
+
+	/**
+	 * Initializes the annotations for <b>http://www.eclipse.org/emf/2002/Ecore</b>.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void createEcoreAnnotations() {
+		String source = "http://www.eclipse.org/emf/2002/Ecore";	
+		addAnnotation
+		  (ddsmYarnResourceManagerEClass, 
+		   source, 
+		   new String[] {
+			 "constraints", "YarnTypeMasterNode"
+		   });	
+		addAnnotation
+		  (ddsmZookeeperServerEClass, 
+		   source, 
+		   new String[] {
+			 "constraints", "ZookeeperServerTypePeefNode"
+		   });	
+		addAnnotation
+		  (ddsmNimbusEClass, 
+		   source, 
+		   new String[] {
+			 "constraints", "NimbusTypeMasterNode"
+		   });	
+		addAnnotation
+		  (ddsmSupervisorEClass, 
+		   source, 
+		   new String[] {
+			 "constraints", "SupervisorTypeSlaveNode"
+		   });	
+		addAnnotation
+		  (ddsmStormClusterEClass, 
+		   source, 
+		   new String[] {
+			 "constraints", "StormClusterTypeMasterSlavePlatform"
 		   });
 	}
 

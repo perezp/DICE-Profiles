@@ -1,11 +1,11 @@
 /**
  */
-package es.unizar.disco.dice.dtsm.Hadoop.impl;
+package es.unizar.disco.dice.DTSM.Hadoop.impl;
 
-import es.unizar.disco.dice.dtsm.Core.impl.CoreComputationNodeImpl;
+import es.unizar.disco.dice.DTSM.Core.impl.CoreComputationNodeImpl;
 
-import es.unizar.disco.dice.dtsm.Hadoop.HadoopComputationNode;
-import es.unizar.disco.dice.dtsm.Hadoop.HadoopPackage;
+import es.unizar.disco.dice.DTSM.Hadoop.HadoopComputationNode;
+import es.unizar.disco.dice.DTSM.Hadoop.HadoopPackage;
 
 import java.util.Collection;
 
@@ -23,7 +23,7 @@ import org.eclipse.emf.ecore.util.EDataTypeUniqueEList;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link es.unizar.disco.dice.dtsm.Hadoop.impl.HadoopComputationNodeImpl#getNCores <em>NCores</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Hadoop.impl.HadoopComputationNodeImpl#getNCores <em>NCores</em>}</li>
  * </ul>
  *
  * @generated

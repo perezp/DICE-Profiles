@@ -1,6 +1,6 @@
 /**
  */
-package es.unizar.disco.dice.dtsm.Core;
+package es.unizar.disco.dice.DTSM.Core;
 
 import es.unizar.disco.dice.Complex_Data_Types.DiceDataSpecification;
 import es.unizar.disco.dice.Complex_Data_Types.DiceDataVolume;
@@ -18,20 +18,20 @@ import org.eclipse.emf.ecore.EObject;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link es.unizar.disco.dice.dtsm.Core.CoreData#getLocation <em>Location</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Core.CoreData#getHasSpecification <em>Has Specification</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Core.CoreData#getHasVolume <em>Has Volume</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Core.CoreData#getBase_Class <em>Base Class</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Core.CoreData#getLocation <em>Location</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Core.CoreData#getHasSpecification <em>Has Specification</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Core.CoreData#getHasVolume <em>Has Volume</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Core.CoreData#getBase_Class <em>Base Class</em>}</li>
  * </ul>
  *
- * @see es.unizar.disco.dice.dtsm.Core.CorePackage#getCoreData()
+ * @see es.unizar.disco.dice.DTSM.Core.CorePackage#getCoreData()
  * @model abstract="true"
  * @generated
  */
 public interface CoreData extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Location</b></em>' reference list.
-	 * The list contents are of type {@link es.unizar.disco.dice.dtsm.Core.CoreDataSource}.
+	 * The list contents are of type {@link es.unizar.disco.dice.DTSM.Core.CoreDataSource}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Location</em>' reference list isn't clear,
@@ -39,7 +39,7 @@ public interface CoreData extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Location</em>' reference list.
-	 * @see es.unizar.disco.dice.dtsm.Core.CorePackage#getCoreData_Location()
+	 * @see es.unizar.disco.dice.DTSM.Core.CorePackage#getCoreData_Location()
 	 * @model required="true" ordered="false"
 	 * @generated
 	 */
@@ -55,14 +55,14 @@ public interface CoreData extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Has Specification</em>' containment reference.
 	 * @see #setHasSpecification(DiceDataSpecification)
-	 * @see es.unizar.disco.dice.dtsm.Core.CorePackage#getCoreData_HasSpecification()
+	 * @see es.unizar.disco.dice.DTSM.Core.CorePackage#getCoreData_HasSpecification()
 	 * @model containment="true" required="true" ordered="false"
 	 * @generated
 	 */
 	DiceDataSpecification getHasSpecification();
 
 	/**
-	 * Sets the value of the '{@link es.unizar.disco.dice.dtsm.Core.CoreData#getHasSpecification <em>Has Specification</em>}' containment reference.
+	 * Sets the value of the '{@link es.unizar.disco.dice.DTSM.Core.CoreData#getHasSpecification <em>Has Specification</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Has Specification</em>' containment reference.
@@ -81,14 +81,14 @@ public interface CoreData extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Has Volume</em>' containment reference.
 	 * @see #setHasVolume(DiceDataVolume)
-	 * @see es.unizar.disco.dice.dtsm.Core.CorePackage#getCoreData_HasVolume()
+	 * @see es.unizar.disco.dice.DTSM.Core.CorePackage#getCoreData_HasVolume()
 	 * @model containment="true" required="true" ordered="false"
 	 * @generated
 	 */
 	DiceDataVolume getHasVolume();
 
 	/**
-	 * Sets the value of the '{@link es.unizar.disco.dice.dtsm.Core.CoreData#getHasVolume <em>Has Volume</em>}' containment reference.
+	 * Sets the value of the '{@link es.unizar.disco.dice.DTSM.Core.CoreData#getHasVolume <em>Has Volume</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Has Volume</em>' containment reference.
@@ -107,14 +107,14 @@ public interface CoreData extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Base Class</em>' reference.
 	 * @see #setBase_Class(org.eclipse.uml2.uml.Class)
-	 * @see es.unizar.disco.dice.dtsm.Core.CorePackage#getCoreData_Base_Class()
+	 * @see es.unizar.disco.dice.DTSM.Core.CorePackage#getCoreData_Base_Class()
 	 * @model required="true" ordered="false"
 	 * @generated
 	 */
 	org.eclipse.uml2.uml.Class getBase_Class();
 
 	/**
-	 * Sets the value of the '{@link es.unizar.disco.dice.dtsm.Core.CoreData#getBase_Class <em>Base Class</em>}' reference.
+	 * Sets the value of the '{@link es.unizar.disco.dice.DTSM.Core.CoreData#getBase_Class <em>Base Class</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Base Class</em>' reference.

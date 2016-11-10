@@ -1,6 +1,6 @@
 /**
  */
-package es.unizar.disco.dice.dtsm.Core;
+package es.unizar.disco.dice.DTSM.Core;
 
 import es.unizar.disco.dice.DPIM.DPIMPackage;
 
@@ -22,7 +22,7 @@ import org.eclipse.papyrus.MARTE.MARTE_AnalysisModel.GQAM.GQAMPackage;
  *   <li>and each data type</li>
  * </ul>
  * <!-- end-user-doc -->
- * @see es.unizar.disco.dice.dtsm.Core.CoreFactory
+ * @see es.unizar.disco.dice.DTSM.Core.CoreFactory
  * @model kind="package"
  * @generated
  */
@@ -57,14 +57,14 @@ public interface CorePackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	CorePackage eINSTANCE = es.unizar.disco.dice.dtsm.Core.impl.CorePackageImpl.init();
+	CorePackage eINSTANCE = es.unizar.disco.dice.DTSM.Core.impl.CorePackageImpl.init();
 
 	/**
-	 * The meta object id for the '{@link es.unizar.disco.dice.dtsm.Core.impl.CoreComputationNodeImpl <em>Computation Node</em>}' class.
+	 * The meta object id for the '{@link es.unizar.disco.dice.DTSM.Core.impl.CoreComputationNodeImpl <em>Computation Node</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see es.unizar.disco.dice.dtsm.Core.impl.CoreComputationNodeImpl
-	 * @see es.unizar.disco.dice.dtsm.Core.impl.CorePackageImpl#getCoreComputationNode()
+	 * @see es.unizar.disco.dice.DTSM.Core.impl.CoreComputationNodeImpl
+	 * @see es.unizar.disco.dice.DTSM.Core.impl.CorePackageImpl#getCoreComputationNode()
 	 * @generated
 	 */
 	int CORE_COMPUTATION_NODE = 0;
@@ -385,11 +385,11 @@ public interface CorePackage extends EPackage {
 	int CORE_COMPUTATION_NODE_FEATURE_COUNT = DPIMPackage.DPIM_COMPUTATION_NODE_FEATURE_COUNT + 4;
 
 	/**
-	 * The meta object id for the '{@link es.unizar.disco.dice.dtsm.Core.impl.CoreDataImpl <em>Data</em>}' class.
+	 * The meta object id for the '{@link es.unizar.disco.dice.DTSM.Core.impl.CoreDataImpl <em>Data</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see es.unizar.disco.dice.dtsm.Core.impl.CoreDataImpl
-	 * @see es.unizar.disco.dice.dtsm.Core.impl.CorePackageImpl#getCoreData()
+	 * @see es.unizar.disco.dice.DTSM.Core.impl.CoreDataImpl
+	 * @see es.unizar.disco.dice.DTSM.Core.impl.CorePackageImpl#getCoreData()
 	 * @generated
 	 */
 	int CORE_DATA = 1;
@@ -440,11 +440,11 @@ public interface CorePackage extends EPackage {
 	int CORE_DATA_FEATURE_COUNT = 4;
 
 	/**
-	 * The meta object id for the '{@link es.unizar.disco.dice.dtsm.Core.impl.CoreDataSourceImpl <em>Data Source</em>}' class.
+	 * The meta object id for the '{@link es.unizar.disco.dice.DTSM.Core.impl.CoreDataSourceImpl <em>Data Source</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see es.unizar.disco.dice.dtsm.Core.impl.CoreDataSourceImpl
-	 * @see es.unizar.disco.dice.dtsm.Core.impl.CorePackageImpl#getCoreDataSource()
+	 * @see es.unizar.disco.dice.DTSM.Core.impl.CoreDataSourceImpl
+	 * @see es.unizar.disco.dice.DTSM.Core.impl.CorePackageImpl#getCoreDataSource()
 	 * @generated
 	 */
 	int CORE_DATA_SOURCE = 2;
@@ -558,11 +558,11 @@ public interface CorePackage extends EPackage {
 	int CORE_DATA_SOURCE_FEATURE_COUNT = DPIMPackage.DPIM_STORAGE_NODE_FEATURE_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link es.unizar.disco.dice.dtsm.Core.impl.CoreDirectAcyclicGraphImpl <em>Direct Acyclic Graph</em>}' class.
+	 * The meta object id for the '{@link es.unizar.disco.dice.DTSM.Core.impl.CoreDirectAcyclicGraphImpl <em>Direct Acyclic Graph</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see es.unizar.disco.dice.dtsm.Core.impl.CoreDirectAcyclicGraphImpl
-	 * @see es.unizar.disco.dice.dtsm.Core.impl.CorePackageImpl#getCoreDirectAcyclicGraph()
+	 * @see es.unizar.disco.dice.DTSM.Core.impl.CoreDirectAcyclicGraphImpl
+	 * @see es.unizar.disco.dice.DTSM.Core.impl.CorePackageImpl#getCoreDirectAcyclicGraph()
 	 * @generated
 	 */
 	int CORE_DIRECT_ACYCLIC_GRAPH = 3;
@@ -847,11 +847,11 @@ public interface CorePackage extends EPackage {
 	int CORE_DIRECT_ACYCLIC_GRAPH_FEATURE_COUNT = GQAMPackage.GA_SCENARIO_FEATURE_COUNT + 2;
 
 	/**
-	 * The meta object id for the '{@link es.unizar.disco.dice.dtsm.Core.impl.CoreDAGNodeImpl <em>DAG Node</em>}' class.
+	 * The meta object id for the '{@link es.unizar.disco.dice.DTSM.Core.impl.CoreDAGNodeImpl <em>DAG Node</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see es.unizar.disco.dice.dtsm.Core.impl.CoreDAGNodeImpl
-	 * @see es.unizar.disco.dice.dtsm.Core.impl.CorePackageImpl#getCoreDAGNode()
+	 * @see es.unizar.disco.dice.DTSM.Core.impl.CoreDAGNodeImpl
+	 * @see es.unizar.disco.dice.DTSM.Core.impl.CorePackageImpl#getCoreDAGNode()
 	 * @generated
 	 */
 	int CORE_DAG_NODE = 5;
@@ -1559,11 +1559,11 @@ public interface CorePackage extends EPackage {
 	int CORE_DAG_NODE_FEATURE_COUNT = GQAMPackage.GA_STEP_FEATURE_COUNT + 37;
 
 	/**
-	 * The meta object id for the '{@link es.unizar.disco.dice.dtsm.Core.impl.CoreDAGSourceNodeImpl <em>DAG Source Node</em>}' class.
+	 * The meta object id for the '{@link es.unizar.disco.dice.DTSM.Core.impl.CoreDAGSourceNodeImpl <em>DAG Source Node</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see es.unizar.disco.dice.dtsm.Core.impl.CoreDAGSourceNodeImpl
-	 * @see es.unizar.disco.dice.dtsm.Core.impl.CorePackageImpl#getCoreDAGSourceNode()
+	 * @see es.unizar.disco.dice.DTSM.Core.impl.CoreDAGSourceNodeImpl
+	 * @see es.unizar.disco.dice.DTSM.Core.impl.CorePackageImpl#getCoreDAGSourceNode()
 	 * @generated
 	 */
 	int CORE_DAG_SOURCE_NODE = 4;
@@ -2280,11 +2280,11 @@ public interface CorePackage extends EPackage {
 	int CORE_DAG_SOURCE_NODE_FEATURE_COUNT = CORE_DAG_NODE_FEATURE_COUNT + 1;
 
 	/**
-	 * The meta object id for the '{@link es.unizar.disco.dice.dtsm.Core.impl.CoreStorageNodeImpl <em>Storage Node</em>}' class.
+	 * The meta object id for the '{@link es.unizar.disco.dice.DTSM.Core.impl.CoreStorageNodeImpl <em>Storage Node</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see es.unizar.disco.dice.dtsm.Core.impl.CoreStorageNodeImpl
-	 * @see es.unizar.disco.dice.dtsm.Core.impl.CorePackageImpl#getCoreStorageNode()
+	 * @see es.unizar.disco.dice.DTSM.Core.impl.CoreStorageNodeImpl
+	 * @see es.unizar.disco.dice.DTSM.Core.impl.CorePackageImpl#getCoreStorageNode()
 	 * @generated
 	 */
 	int CORE_STORAGE_NODE = 6;
@@ -2426,257 +2426,257 @@ public interface CorePackage extends EPackage {
 
 
 	/**
-	 * Returns the meta object for class '{@link es.unizar.disco.dice.dtsm.Core.CoreComputationNode <em>Computation Node</em>}'.
+	 * Returns the meta object for class '{@link es.unizar.disco.dice.DTSM.Core.CoreComputationNode <em>Computation Node</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>Computation Node</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Core.CoreComputationNode
+	 * @see es.unizar.disco.dice.DTSM.Core.CoreComputationNode
 	 * @generated
 	 */
 	EClass getCoreComputationNode();
 
 	/**
-	 * Returns the meta object for the reference list '{@link es.unizar.disco.dice.dtsm.Core.CoreComputationNode#getHasSuccessor <em>Has Successor</em>}'.
+	 * Returns the meta object for the reference list '{@link es.unizar.disco.dice.DTSM.Core.CoreComputationNode#getHasSuccessor <em>Has Successor</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the reference list '<em>Has Successor</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Core.CoreComputationNode#getHasSuccessor()
+	 * @see es.unizar.disco.dice.DTSM.Core.CoreComputationNode#getHasSuccessor()
 	 * @see #getCoreComputationNode()
 	 * @generated
 	 */
 	EReference getCoreComputationNode_HasSuccessor();
 
 	/**
-	 * Returns the meta object for the reference list '{@link es.unizar.disco.dice.dtsm.Core.CoreComputationNode#getProcessInputData <em>Process Input Data</em>}'.
+	 * Returns the meta object for the reference list '{@link es.unizar.disco.dice.DTSM.Core.CoreComputationNode#getProcessInputData <em>Process Input Data</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the reference list '<em>Process Input Data</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Core.CoreComputationNode#getProcessInputData()
+	 * @see es.unizar.disco.dice.DTSM.Core.CoreComputationNode#getProcessInputData()
 	 * @see #getCoreComputationNode()
 	 * @generated
 	 */
 	EReference getCoreComputationNode_ProcessInputData();
 
 	/**
-	 * Returns the meta object for the reference '{@link es.unizar.disco.dice.dtsm.Core.CoreComputationNode#getRealise <em>Realise</em>}'.
+	 * Returns the meta object for the reference '{@link es.unizar.disco.dice.DTSM.Core.CoreComputationNode#getRealise <em>Realise</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the reference '<em>Realise</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Core.CoreComputationNode#getRealise()
+	 * @see es.unizar.disco.dice.DTSM.Core.CoreComputationNode#getRealise()
 	 * @see #getCoreComputationNode()
 	 * @generated
 	 */
 	EReference getCoreComputationNode_Realise();
 
 	/**
-	 * Returns the meta object for the reference list '{@link es.unizar.disco.dice.dtsm.Core.CoreComputationNode#getProduceOutputData <em>Produce Output Data</em>}'.
+	 * Returns the meta object for the reference list '{@link es.unizar.disco.dice.DTSM.Core.CoreComputationNode#getProduceOutputData <em>Produce Output Data</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the reference list '<em>Produce Output Data</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Core.CoreComputationNode#getProduceOutputData()
+	 * @see es.unizar.disco.dice.DTSM.Core.CoreComputationNode#getProduceOutputData()
 	 * @see #getCoreComputationNode()
 	 * @generated
 	 */
 	EReference getCoreComputationNode_ProduceOutputData();
 
 	/**
-	 * Returns the meta object for class '{@link es.unizar.disco.dice.dtsm.Core.CoreData <em>Data</em>}'.
+	 * Returns the meta object for class '{@link es.unizar.disco.dice.DTSM.Core.CoreData <em>Data</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>Data</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Core.CoreData
+	 * @see es.unizar.disco.dice.DTSM.Core.CoreData
 	 * @generated
 	 */
 	EClass getCoreData();
 
 	/**
-	 * Returns the meta object for the reference list '{@link es.unizar.disco.dice.dtsm.Core.CoreData#getLocation <em>Location</em>}'.
+	 * Returns the meta object for the reference list '{@link es.unizar.disco.dice.DTSM.Core.CoreData#getLocation <em>Location</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the reference list '<em>Location</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Core.CoreData#getLocation()
+	 * @see es.unizar.disco.dice.DTSM.Core.CoreData#getLocation()
 	 * @see #getCoreData()
 	 * @generated
 	 */
 	EReference getCoreData_Location();
 
 	/**
-	 * Returns the meta object for the containment reference '{@link es.unizar.disco.dice.dtsm.Core.CoreData#getHasSpecification <em>Has Specification</em>}'.
+	 * Returns the meta object for the containment reference '{@link es.unizar.disco.dice.DTSM.Core.CoreData#getHasSpecification <em>Has Specification</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the containment reference '<em>Has Specification</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Core.CoreData#getHasSpecification()
+	 * @see es.unizar.disco.dice.DTSM.Core.CoreData#getHasSpecification()
 	 * @see #getCoreData()
 	 * @generated
 	 */
 	EReference getCoreData_HasSpecification();
 
 	/**
-	 * Returns the meta object for the containment reference '{@link es.unizar.disco.dice.dtsm.Core.CoreData#getHasVolume <em>Has Volume</em>}'.
+	 * Returns the meta object for the containment reference '{@link es.unizar.disco.dice.DTSM.Core.CoreData#getHasVolume <em>Has Volume</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the containment reference '<em>Has Volume</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Core.CoreData#getHasVolume()
+	 * @see es.unizar.disco.dice.DTSM.Core.CoreData#getHasVolume()
 	 * @see #getCoreData()
 	 * @generated
 	 */
 	EReference getCoreData_HasVolume();
 
 	/**
-	 * Returns the meta object for the reference '{@link es.unizar.disco.dice.dtsm.Core.CoreData#getBase_Class <em>Base Class</em>}'.
+	 * Returns the meta object for the reference '{@link es.unizar.disco.dice.DTSM.Core.CoreData#getBase_Class <em>Base Class</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the reference '<em>Base Class</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Core.CoreData#getBase_Class()
+	 * @see es.unizar.disco.dice.DTSM.Core.CoreData#getBase_Class()
 	 * @see #getCoreData()
 	 * @generated
 	 */
 	EReference getCoreData_Base_Class();
 
 	/**
-	 * Returns the meta object for class '{@link es.unizar.disco.dice.dtsm.Core.CoreDataSource <em>Data Source</em>}'.
+	 * Returns the meta object for class '{@link es.unizar.disco.dice.DTSM.Core.CoreDataSource <em>Data Source</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>Data Source</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Core.CoreDataSource
+	 * @see es.unizar.disco.dice.DTSM.Core.CoreDataSource
 	 * @generated
 	 */
 	EClass getCoreDataSource();
 
 	/**
-	 * Returns the meta object for class '{@link es.unizar.disco.dice.dtsm.Core.CoreDirectAcyclicGraph <em>Direct Acyclic Graph</em>}'.
+	 * Returns the meta object for class '{@link es.unizar.disco.dice.DTSM.Core.CoreDirectAcyclicGraph <em>Direct Acyclic Graph</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>Direct Acyclic Graph</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Core.CoreDirectAcyclicGraph
+	 * @see es.unizar.disco.dice.DTSM.Core.CoreDirectAcyclicGraph
 	 * @generated
 	 */
 	EClass getCoreDirectAcyclicGraph();
 
 	/**
-	 * Returns the meta object for the reference list '{@link es.unizar.disco.dice.dtsm.Core.CoreDirectAcyclicGraph#getHasSourceNode <em>Has Source Node</em>}'.
+	 * Returns the meta object for the reference list '{@link es.unizar.disco.dice.DTSM.Core.CoreDirectAcyclicGraph#getHasSourceNode <em>Has Source Node</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the reference list '<em>Has Source Node</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Core.CoreDirectAcyclicGraph#getHasSourceNode()
+	 * @see es.unizar.disco.dice.DTSM.Core.CoreDirectAcyclicGraph#getHasSourceNode()
 	 * @see #getCoreDirectAcyclicGraph()
 	 * @generated
 	 */
 	EReference getCoreDirectAcyclicGraph_HasSourceNode();
 
 	/**
-	 * Returns the meta object for the reference '{@link es.unizar.disco.dice.dtsm.Core.CoreDirectAcyclicGraph#getBase_Class <em>Base Class</em>}'.
+	 * Returns the meta object for the reference '{@link es.unizar.disco.dice.DTSM.Core.CoreDirectAcyclicGraph#getBase_Class <em>Base Class</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the reference '<em>Base Class</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Core.CoreDirectAcyclicGraph#getBase_Class()
+	 * @see es.unizar.disco.dice.DTSM.Core.CoreDirectAcyclicGraph#getBase_Class()
 	 * @see #getCoreDirectAcyclicGraph()
 	 * @generated
 	 */
 	EReference getCoreDirectAcyclicGraph_Base_Class();
 
 	/**
-	 * Returns the meta object for class '{@link es.unizar.disco.dice.dtsm.Core.CoreDAGSourceNode <em>DAG Source Node</em>}'.
+	 * Returns the meta object for class '{@link es.unizar.disco.dice.DTSM.Core.CoreDAGSourceNode <em>DAG Source Node</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>DAG Source Node</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Core.CoreDAGSourceNode
+	 * @see es.unizar.disco.dice.DTSM.Core.CoreDAGSourceNode
 	 * @generated
 	 */
 	EClass getCoreDAGSourceNode();
 
 	/**
-	 * Returns the meta object for the reference list '{@link es.unizar.disco.dice.dtsm.Core.CoreDAGSourceNode#getReadFrom <em>Read From</em>}'.
+	 * Returns the meta object for the reference list '{@link es.unizar.disco.dice.DTSM.Core.CoreDAGSourceNode#getReadFrom <em>Read From</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the reference list '<em>Read From</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Core.CoreDAGSourceNode#getReadFrom()
+	 * @see es.unizar.disco.dice.DTSM.Core.CoreDAGSourceNode#getReadFrom()
 	 * @see #getCoreDAGSourceNode()
 	 * @generated
 	 */
 	EReference getCoreDAGSourceNode_ReadFrom();
 
 	/**
-	 * Returns the meta object for class '{@link es.unizar.disco.dice.dtsm.Core.CoreDAGNode <em>DAG Node</em>}'.
+	 * Returns the meta object for class '{@link es.unizar.disco.dice.DTSM.Core.CoreDAGNode <em>DAG Node</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>DAG Node</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Core.CoreDAGNode
+	 * @see es.unizar.disco.dice.DTSM.Core.CoreDAGNode
 	 * @generated
 	 */
 	EClass getCoreDAGNode();
 
 	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.dtsm.Core.CoreDAGNode#getParallelism <em>Parallelism</em>}'.
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DTSM.Core.CoreDAGNode#getParallelism <em>Parallelism</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Parallelism</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Core.CoreDAGNode#getParallelism()
+	 * @see es.unizar.disco.dice.DTSM.Core.CoreDAGNode#getParallelism()
 	 * @see #getCoreDAGNode()
 	 * @generated
 	 */
 	EAttribute getCoreDAGNode_Parallelism();
 
 	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.dtsm.Core.CoreDAGNode#getOperation <em>Operation</em>}'.
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DTSM.Core.CoreDAGNode#getOperation <em>Operation</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Operation</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Core.CoreDAGNode#getOperation()
+	 * @see es.unizar.disco.dice.DTSM.Core.CoreDAGNode#getOperation()
 	 * @see #getCoreDAGNode()
 	 * @generated
 	 */
 	EAttribute getCoreDAGNode_Operation();
 
 	/**
-	 * Returns the meta object for the reference list '{@link es.unizar.disco.dice.dtsm.Core.CoreDAGNode#getHasSuccessor <em>Has Successor</em>}'.
+	 * Returns the meta object for the reference list '{@link es.unizar.disco.dice.DTSM.Core.CoreDAGNode#getHasSuccessor <em>Has Successor</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the reference list '<em>Has Successor</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Core.CoreDAGNode#getHasSuccessor()
+	 * @see es.unizar.disco.dice.DTSM.Core.CoreDAGNode#getHasSuccessor()
 	 * @see #getCoreDAGNode()
 	 * @generated
 	 */
 	EReference getCoreDAGNode_HasSuccessor();
 
 	/**
-	 * Returns the meta object for class '{@link es.unizar.disco.dice.dtsm.Core.CoreStorageNode <em>Storage Node</em>}'.
+	 * Returns the meta object for class '{@link es.unizar.disco.dice.DTSM.Core.CoreStorageNode <em>Storage Node</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>Storage Node</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Core.CoreStorageNode
+	 * @see es.unizar.disco.dice.DTSM.Core.CoreStorageNode
 	 * @generated
 	 */
 	EClass getCoreStorageNode();
 
 	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.dtsm.Core.CoreStorageNode#getDatabase <em>Database</em>}'.
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DTSM.Core.CoreStorageNode#getDatabase <em>Database</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Database</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Core.CoreStorageNode#getDatabase()
+	 * @see es.unizar.disco.dice.DTSM.Core.CoreStorageNode#getDatabase()
 	 * @see #getCoreStorageNode()
 	 * @generated
 	 */
 	EAttribute getCoreStorageNode_Database();
 
 	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.dtsm.Core.CoreStorageNode#getUser <em>User</em>}'.
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DTSM.Core.CoreStorageNode#getUser <em>User</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>User</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Core.CoreStorageNode#getUser()
+	 * @see es.unizar.disco.dice.DTSM.Core.CoreStorageNode#getUser()
 	 * @see #getCoreStorageNode()
 	 * @generated
 	 */
 	EAttribute getCoreStorageNode_User();
 
 	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.dtsm.Core.CoreStorageNode#getPassword <em>Password</em>}'.
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DTSM.Core.CoreStorageNode#getPassword <em>Password</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Password</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Core.CoreStorageNode#getPassword()
+	 * @see es.unizar.disco.dice.DTSM.Core.CoreStorageNode#getPassword()
 	 * @see #getCoreStorageNode()
 	 * @generated
 	 */
@@ -2705,11 +2705,11 @@ public interface CorePackage extends EPackage {
 	 */
 	interface Literals {
 		/**
-		 * The meta object literal for the '{@link es.unizar.disco.dice.dtsm.Core.impl.CoreComputationNodeImpl <em>Computation Node</em>}' class.
+		 * The meta object literal for the '{@link es.unizar.disco.dice.DTSM.Core.impl.CoreComputationNodeImpl <em>Computation Node</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see es.unizar.disco.dice.dtsm.Core.impl.CoreComputationNodeImpl
-		 * @see es.unizar.disco.dice.dtsm.Core.impl.CorePackageImpl#getCoreComputationNode()
+		 * @see es.unizar.disco.dice.DTSM.Core.impl.CoreComputationNodeImpl
+		 * @see es.unizar.disco.dice.DTSM.Core.impl.CorePackageImpl#getCoreComputationNode()
 		 * @generated
 		 */
 		EClass CORE_COMPUTATION_NODE = eINSTANCE.getCoreComputationNode();
@@ -2747,11 +2747,11 @@ public interface CorePackage extends EPackage {
 		EReference CORE_COMPUTATION_NODE__PRODUCE_OUTPUT_DATA = eINSTANCE.getCoreComputationNode_ProduceOutputData();
 
 		/**
-		 * The meta object literal for the '{@link es.unizar.disco.dice.dtsm.Core.impl.CoreDataImpl <em>Data</em>}' class.
+		 * The meta object literal for the '{@link es.unizar.disco.dice.DTSM.Core.impl.CoreDataImpl <em>Data</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see es.unizar.disco.dice.dtsm.Core.impl.CoreDataImpl
-		 * @see es.unizar.disco.dice.dtsm.Core.impl.CorePackageImpl#getCoreData()
+		 * @see es.unizar.disco.dice.DTSM.Core.impl.CoreDataImpl
+		 * @see es.unizar.disco.dice.DTSM.Core.impl.CorePackageImpl#getCoreData()
 		 * @generated
 		 */
 		EClass CORE_DATA = eINSTANCE.getCoreData();
@@ -2789,21 +2789,21 @@ public interface CorePackage extends EPackage {
 		EReference CORE_DATA__BASE_CLASS = eINSTANCE.getCoreData_Base_Class();
 
 		/**
-		 * The meta object literal for the '{@link es.unizar.disco.dice.dtsm.Core.impl.CoreDataSourceImpl <em>Data Source</em>}' class.
+		 * The meta object literal for the '{@link es.unizar.disco.dice.DTSM.Core.impl.CoreDataSourceImpl <em>Data Source</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see es.unizar.disco.dice.dtsm.Core.impl.CoreDataSourceImpl
-		 * @see es.unizar.disco.dice.dtsm.Core.impl.CorePackageImpl#getCoreDataSource()
+		 * @see es.unizar.disco.dice.DTSM.Core.impl.CoreDataSourceImpl
+		 * @see es.unizar.disco.dice.DTSM.Core.impl.CorePackageImpl#getCoreDataSource()
 		 * @generated
 		 */
 		EClass CORE_DATA_SOURCE = eINSTANCE.getCoreDataSource();
 
 		/**
-		 * The meta object literal for the '{@link es.unizar.disco.dice.dtsm.Core.impl.CoreDirectAcyclicGraphImpl <em>Direct Acyclic Graph</em>}' class.
+		 * The meta object literal for the '{@link es.unizar.disco.dice.DTSM.Core.impl.CoreDirectAcyclicGraphImpl <em>Direct Acyclic Graph</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see es.unizar.disco.dice.dtsm.Core.impl.CoreDirectAcyclicGraphImpl
-		 * @see es.unizar.disco.dice.dtsm.Core.impl.CorePackageImpl#getCoreDirectAcyclicGraph()
+		 * @see es.unizar.disco.dice.DTSM.Core.impl.CoreDirectAcyclicGraphImpl
+		 * @see es.unizar.disco.dice.DTSM.Core.impl.CorePackageImpl#getCoreDirectAcyclicGraph()
 		 * @generated
 		 */
 		EClass CORE_DIRECT_ACYCLIC_GRAPH = eINSTANCE.getCoreDirectAcyclicGraph();
@@ -2825,11 +2825,11 @@ public interface CorePackage extends EPackage {
 		EReference CORE_DIRECT_ACYCLIC_GRAPH__BASE_CLASS = eINSTANCE.getCoreDirectAcyclicGraph_Base_Class();
 
 		/**
-		 * The meta object literal for the '{@link es.unizar.disco.dice.dtsm.Core.impl.CoreDAGSourceNodeImpl <em>DAG Source Node</em>}' class.
+		 * The meta object literal for the '{@link es.unizar.disco.dice.DTSM.Core.impl.CoreDAGSourceNodeImpl <em>DAG Source Node</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see es.unizar.disco.dice.dtsm.Core.impl.CoreDAGSourceNodeImpl
-		 * @see es.unizar.disco.dice.dtsm.Core.impl.CorePackageImpl#getCoreDAGSourceNode()
+		 * @see es.unizar.disco.dice.DTSM.Core.impl.CoreDAGSourceNodeImpl
+		 * @see es.unizar.disco.dice.DTSM.Core.impl.CorePackageImpl#getCoreDAGSourceNode()
 		 * @generated
 		 */
 		EClass CORE_DAG_SOURCE_NODE = eINSTANCE.getCoreDAGSourceNode();
@@ -2843,11 +2843,11 @@ public interface CorePackage extends EPackage {
 		EReference CORE_DAG_SOURCE_NODE__READ_FROM = eINSTANCE.getCoreDAGSourceNode_ReadFrom();
 
 		/**
-		 * The meta object literal for the '{@link es.unizar.disco.dice.dtsm.Core.impl.CoreDAGNodeImpl <em>DAG Node</em>}' class.
+		 * The meta object literal for the '{@link es.unizar.disco.dice.DTSM.Core.impl.CoreDAGNodeImpl <em>DAG Node</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see es.unizar.disco.dice.dtsm.Core.impl.CoreDAGNodeImpl
-		 * @see es.unizar.disco.dice.dtsm.Core.impl.CorePackageImpl#getCoreDAGNode()
+		 * @see es.unizar.disco.dice.DTSM.Core.impl.CoreDAGNodeImpl
+		 * @see es.unizar.disco.dice.DTSM.Core.impl.CorePackageImpl#getCoreDAGNode()
 		 * @generated
 		 */
 		EClass CORE_DAG_NODE = eINSTANCE.getCoreDAGNode();
@@ -2877,11 +2877,11 @@ public interface CorePackage extends EPackage {
 		EReference CORE_DAG_NODE__HAS_SUCCESSOR = eINSTANCE.getCoreDAGNode_HasSuccessor();
 
 		/**
-		 * The meta object literal for the '{@link es.unizar.disco.dice.dtsm.Core.impl.CoreStorageNodeImpl <em>Storage Node</em>}' class.
+		 * The meta object literal for the '{@link es.unizar.disco.dice.DTSM.Core.impl.CoreStorageNodeImpl <em>Storage Node</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see es.unizar.disco.dice.dtsm.Core.impl.CoreStorageNodeImpl
-		 * @see es.unizar.disco.dice.dtsm.Core.impl.CorePackageImpl#getCoreStorageNode()
+		 * @see es.unizar.disco.dice.DTSM.Core.impl.CoreStorageNodeImpl
+		 * @see es.unizar.disco.dice.DTSM.Core.impl.CorePackageImpl#getCoreStorageNode()
 		 * @generated
 		 */
 		EClass CORE_STORAGE_NODE = eINSTANCE.getCoreStorageNode();

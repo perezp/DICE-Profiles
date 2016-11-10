@@ -26,7 +26,9 @@ public enum ProcessingType implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	STREAM(0, "stream", "stream"), /**
+	STREAM(0, "stream", "stream"),
+
+	/**
 	 * The '<em><b>Batch</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

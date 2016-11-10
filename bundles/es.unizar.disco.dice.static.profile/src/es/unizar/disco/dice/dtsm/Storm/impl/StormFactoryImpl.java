@@ -1,8 +1,8 @@
 /**
  */
-package es.unizar.disco.dice.dtsm.Storm.impl;
+package es.unizar.disco.dice.DTSM.Storm.impl;
 
-import es.unizar.disco.dice.dtsm.Storm.*;
+import es.unizar.disco.dice.DTSM.Storm.*;
 
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;

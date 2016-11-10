@@ -4,8 +4,8 @@ package es.unizar.disco.dice.DPIM.util;
 
 import com.masdes.dam.Core.DaComponent;
 import com.masdes.dam.Core.DaConnector;
-
 import com.masdes.dam.Core.DaService;
+
 import es.unizar.disco.dice.DPIM.*;
 
 import org.eclipse.emf.common.notify.Adapter;

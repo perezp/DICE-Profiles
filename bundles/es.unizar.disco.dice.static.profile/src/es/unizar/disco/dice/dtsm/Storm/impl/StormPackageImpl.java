@@ -1,6 +1,6 @@
 /**
  */
-package es.unizar.disco.dice.dtsm.Storm.impl;
+package es.unizar.disco.dice.DTSM.Storm.impl;
 
 import com.masdes.dam.Basic_Data_Types.Basic_Data_TypesPackage;
 
@@ -17,33 +17,37 @@ import es.unizar.disco.dice.Basic_Enumeration_Types.impl.Basic_Enumeration_Types
 import es.unizar.disco.dice.Complex_Data_Types.impl.Complex_Data_TypesPackageImpl;
 
 import es.unizar.disco.dice.DDSM.DDSMPackage;
+
 import es.unizar.disco.dice.DDSM.impl.DDSMPackageImpl;
+
 import es.unizar.disco.dice.DICE.DICEPackage;
+
 import es.unizar.disco.dice.DICE.impl.DICEPackageImpl;
+
 import es.unizar.disco.dice.DPIM.DPIMPackage;
 
 import es.unizar.disco.dice.DPIM.impl.DPIMPackageImpl;
 
-import es.unizar.disco.dice.dtsm.Core.CorePackage;
+import es.unizar.disco.dice.DTSM.Core.CorePackage;
 
-import es.unizar.disco.dice.dtsm.Core.impl.CorePackageImpl;
+import es.unizar.disco.dice.DTSM.Core.impl.CorePackageImpl;
 
-import es.unizar.disco.dice.dtsm.Hadoop.HadoopPackage;
+import es.unizar.disco.dice.DTSM.Hadoop.HadoopPackage;
 
-import es.unizar.disco.dice.dtsm.Hadoop.impl.HadoopPackageImpl;
+import es.unizar.disco.dice.DTSM.Hadoop.impl.HadoopPackageImpl;
 
-import es.unizar.disco.dice.dtsm.Storm.StormApplication;
-import es.unizar.disco.dice.dtsm.Storm.StormBolt;
-import es.unizar.disco.dice.dtsm.Storm.StormFactory;
-import es.unizar.disco.dice.dtsm.Storm.StormNimbus;
-import es.unizar.disco.dice.dtsm.Storm.StormPackage;
-import es.unizar.disco.dice.dtsm.Storm.StormScenarioTopology;
-import es.unizar.disco.dice.dtsm.Storm.StormSpout;
-import es.unizar.disco.dice.dtsm.Storm.StormStreamStep;
-import es.unizar.disco.dice.dtsm.Storm.StormSupervisor;
-import es.unizar.disco.dice.dtsm.Storm.StormZookeeper;
+import es.unizar.disco.dice.DTSM.Storm.StormApplication;
+import es.unizar.disco.dice.DTSM.Storm.StormBolt;
+import es.unizar.disco.dice.DTSM.Storm.StormFactory;
+import es.unizar.disco.dice.DTSM.Storm.StormNimbus;
+import es.unizar.disco.dice.DTSM.Storm.StormPackage;
+import es.unizar.disco.dice.DTSM.Storm.StormScenarioTopology;
+import es.unizar.disco.dice.DTSM.Storm.StormSpout;
+import es.unizar.disco.dice.DTSM.Storm.StormStreamStep;
+import es.unizar.disco.dice.DTSM.Storm.StormSupervisor;
+import es.unizar.disco.dice.DTSM.Storm.StormZookeeper;
 
-import es.unizar.disco.dice.dtsm.Storm.util.StormValidator;
+import es.unizar.disco.dice.DTSM.Storm.util.StormValidator;
 
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
@@ -135,7 +139,7 @@ public class StormPackageImpl extends EPackageImpl implements StormPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see org.eclipse.emf.ecore.EPackage.Registry
-	 * @see es.unizar.disco.dice.dtsm.Storm.StormPackage#eNS_URI
+	 * @see es.unizar.disco.dice.DTSM.Storm.StormPackage#eNS_URI
 	 * @see #init()
 	 * @generated
 	 */

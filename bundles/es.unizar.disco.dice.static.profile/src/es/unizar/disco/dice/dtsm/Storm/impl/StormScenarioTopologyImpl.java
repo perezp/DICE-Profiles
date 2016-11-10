@@ -1,11 +1,11 @@
 /**
  */
-package es.unizar.disco.dice.dtsm.Storm.impl;
+package es.unizar.disco.dice.DTSM.Storm.impl;
 
-import es.unizar.disco.dice.dtsm.Core.impl.CoreDirectAcyclicGraphImpl;
+import es.unizar.disco.dice.DTSM.Core.impl.CoreDirectAcyclicGraphImpl;
 
-import es.unizar.disco.dice.dtsm.Storm.StormPackage;
-import es.unizar.disco.dice.dtsm.Storm.StormScenarioTopology;
+import es.unizar.disco.dice.DTSM.Storm.StormPackage;
+import es.unizar.disco.dice.DTSM.Storm.StormScenarioTopology;
 
 import org.eclipse.emf.common.notify.Notification;
 
@@ -21,10 +21,10 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link es.unizar.disco.dice.dtsm.Storm.impl.StormScenarioTopologyImpl#getQueueThreshold <em>Queue Threshold</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Storm.impl.StormScenarioTopologyImpl#getMaxTaskParallelism <em>Max Task Parallelism</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Storm.impl.StormScenarioTopologyImpl#getMaxSpoutPending <em>Max Spout Pending</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Storm.impl.StormScenarioTopologyImpl#isReliable <em>Is Reliable</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Storm.impl.StormScenarioTopologyImpl#getQueueThreshold <em>Queue Threshold</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Storm.impl.StormScenarioTopologyImpl#getMaxTaskParallelism <em>Max Task Parallelism</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Storm.impl.StormScenarioTopologyImpl#getMaxSpoutPending <em>Max Spout Pending</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Storm.impl.StormScenarioTopologyImpl#isReliable <em>Is Reliable</em>}</li>
  * </ul>
  *
  * @generated

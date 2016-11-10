@@ -6,6 +6,7 @@ import es.unizar.disco.dice.DDSM.*;
 
 import java.util.Map;
 
+import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.ResourceLocator;
 
@@ -40,52 +41,12 @@ public class DDSMValidator extends EObjectValidator {
 	public static final String DIAGNOSTIC_SOURCE = "es.unizar.disco.dice.DDSM";
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Yarn Type Master Node' of 'Ddsm Yarn Resource Manager'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int DDSM_YARN_RESOURCE_MANAGER__YARN_TYPE_MASTER_NODE = 1;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Zookeeper Server Type Peef Node' of 'Ddsm Zookeeper Server'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int DDSM_ZOOKEEPER_SERVER__ZOOKEEPER_SERVER_TYPE_PEEF_NODE = 2;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Nimbus Type Master Node' of 'Ddsm Nimbus'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int DDSM_NIMBUS__NIMBUS_TYPE_MASTER_NODE = 3;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Supervisor Type Slave Node' of 'Ddsm Supervisor'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int DDSM_SUPERVISOR__SUPERVISOR_TYPE_SLAVE_NODE = 4;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Storm Cluster Type Master Slave Platform' of 'Ddsm Storm Cluster'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int DDSM_STORM_CLUSTER__STORM_CLUSTER_TYPE_MASTER_SLAVE_PLATFORM = 5;
-
-	/**
 	 * A constant with a fixed name that can be used as the base value for additional hand written constants.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private static final int GENERATED_DIAGNOSTIC_CODE_COUNT = 5;
+	private static final int GENERATED_DIAGNOSTIC_CODE_COUNT = 0;
 
 	/**
 	 * A constant with a fixed name that can be used as the base value for additional hand written constants in a derived class.
@@ -262,7 +223,25 @@ public class DDSMValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateDdsmYarnResourceManager_YarnTypeMasterNode(DdsmYarnResourceManager ddsmYarnResourceManager, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ddsmYarnResourceManager.YarnTypeMasterNode(diagnostics, context);
+		// TODO implement the constraint
+		// -> specify the condition that violates the constraint
+		// -> verify the diagnostic details, including severity, code, and message
+		// Ensure that you remove @generated or mark it @generated NOT
+		if (false) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(createDiagnostic
+						(Diagnostic.ERROR,
+						 DIAGNOSTIC_SOURCE,
+						 0,
+						 "_UI_GenericConstraint_diagnostic",
+						 new Object[] { "YarnTypeMasterNode", getObjectLabel(ddsmYarnResourceManager, context) },
+						 new Object[] { ddsmYarnResourceManager },
+						 context));
+			}
+			return false;
+		}
+		return true;
 	}
 
 	/**
@@ -291,7 +270,25 @@ public class DDSMValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateDdsmZookeeperServer_ZookeeperServerTypePeefNode(DdsmZookeeperServer ddsmZookeeperServer, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ddsmZookeeperServer.ZookeeperServerTypePeefNode(diagnostics, context);
+		// TODO implement the constraint
+		// -> specify the condition that violates the constraint
+		// -> verify the diagnostic details, including severity, code, and message
+		// Ensure that you remove @generated or mark it @generated NOT
+		if (false) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(createDiagnostic
+						(Diagnostic.ERROR,
+						 DIAGNOSTIC_SOURCE,
+						 0,
+						 "_UI_GenericConstraint_diagnostic",
+						 new Object[] { "ZookeeperServerTypePeefNode", getObjectLabel(ddsmZookeeperServer, context) },
+						 new Object[] { ddsmZookeeperServer },
+						 context));
+			}
+			return false;
+		}
+		return true;
 	}
 
 	/**
@@ -329,7 +326,25 @@ public class DDSMValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateDdsmNimbus_NimbusTypeMasterNode(DdsmNimbus ddsmNimbus, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ddsmNimbus.NimbusTypeMasterNode(diagnostics, context);
+		// TODO implement the constraint
+		// -> specify the condition that violates the constraint
+		// -> verify the diagnostic details, including severity, code, and message
+		// Ensure that you remove @generated or mark it @generated NOT
+		if (false) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(createDiagnostic
+						(Diagnostic.ERROR,
+						 DIAGNOSTIC_SOURCE,
+						 0,
+						 "_UI_GenericConstraint_diagnostic",
+						 new Object[] { "NimbusTypeMasterNode", getObjectLabel(ddsmNimbus, context) },
+						 new Object[] { ddsmNimbus },
+						 context));
+			}
+			return false;
+		}
+		return true;
 	}
 
 	/**
@@ -367,7 +382,25 @@ public class DDSMValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateDdsmSupervisor_SupervisorTypeSlaveNode(DdsmSupervisor ddsmSupervisor, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ddsmSupervisor.SupervisorTypeSlaveNode(diagnostics, context);
+		// TODO implement the constraint
+		// -> specify the condition that violates the constraint
+		// -> verify the diagnostic details, including severity, code, and message
+		// Ensure that you remove @generated or mark it @generated NOT
+		if (false) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(createDiagnostic
+						(Diagnostic.ERROR,
+						 DIAGNOSTIC_SOURCE,
+						 0,
+						 "_UI_GenericConstraint_diagnostic",
+						 new Object[] { "SupervisorTypeSlaveNode", getObjectLabel(ddsmSupervisor, context) },
+						 new Object[] { ddsmSupervisor },
+						 context));
+			}
+			return false;
+		}
+		return true;
 	}
 
 	/**
@@ -396,7 +429,25 @@ public class DDSMValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateDdsmStormCluster_StormClusterTypeMasterSlavePlatform(DdsmStormCluster ddsmStormCluster, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ddsmStormCluster.StormClusterTypeMasterSlavePlatform(diagnostics, context);
+		// TODO implement the constraint
+		// -> specify the condition that violates the constraint
+		// -> verify the diagnostic details, including severity, code, and message
+		// Ensure that you remove @generated or mark it @generated NOT
+		if (false) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(createDiagnostic
+						(Diagnostic.ERROR,
+						 DIAGNOSTIC_SOURCE,
+						 0,
+						 "_UI_GenericConstraint_diagnostic",
+						 new Object[] { "StormClusterTypeMasterSlavePlatform", getObjectLabel(ddsmStormCluster, context) },
+						 new Object[] { ddsmStormCluster },
+						 context));
+			}
+			return false;
+		}
+		return true;
 	}
 
 	/**

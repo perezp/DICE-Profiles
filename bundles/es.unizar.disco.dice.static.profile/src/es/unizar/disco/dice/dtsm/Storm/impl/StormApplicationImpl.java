@@ -1,14 +1,14 @@
 /**
  */
-package es.unizar.disco.dice.dtsm.Storm.impl;
+package es.unizar.disco.dice.DTSM.Storm.impl;
 
-import es.unizar.disco.dice.dtsm.Core.impl.CoreComputationNodeImpl;
+import es.unizar.disco.dice.DTSM.Core.impl.CoreComputationNodeImpl;
 
-import es.unizar.disco.dice.dtsm.Storm.StormApplication;
-import es.unizar.disco.dice.dtsm.Storm.StormNimbus;
-import es.unizar.disco.dice.dtsm.Storm.StormPackage;
-import es.unizar.disco.dice.dtsm.Storm.StormSupervisor;
-import es.unizar.disco.dice.dtsm.Storm.StormZookeeper;
+import es.unizar.disco.dice.DTSM.Storm.StormApplication;
+import es.unizar.disco.dice.DTSM.Storm.StormNimbus;
+import es.unizar.disco.dice.DTSM.Storm.StormPackage;
+import es.unizar.disco.dice.DTSM.Storm.StormSupervisor;
+import es.unizar.disco.dice.DTSM.Storm.StormZookeeper;
 
 import org.eclipse.emf.common.notify.Notification;
 
@@ -25,9 +25,9 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link es.unizar.disco.dice.dtsm.Storm.impl.StormApplicationImpl#getHasMasterNode <em>Has Master Node</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Storm.impl.StormApplicationImpl#getHasSlaveNode <em>Has Slave Node</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Storm.impl.StormApplicationImpl#getDependsOnZookeeper <em>Depends On Zookeeper</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Storm.impl.StormApplicationImpl#getHasMasterNode <em>Has Master Node</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Storm.impl.StormApplicationImpl#getHasSlaveNode <em>Has Slave Node</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Storm.impl.StormApplicationImpl#getDependsOnZookeeper <em>Depends On Zookeeper</em>}</li>
  * </ul>
  *
  * @generated

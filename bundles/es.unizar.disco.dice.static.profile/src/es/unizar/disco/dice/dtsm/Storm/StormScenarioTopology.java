@@ -1,8 +1,8 @@
 /**
  */
-package es.unizar.disco.dice.dtsm.Storm;
+package es.unizar.disco.dice.DTSM.Storm;
 
-import es.unizar.disco.dice.dtsm.Core.CoreDirectAcyclicGraph;
+import es.unizar.disco.dice.DTSM.Core.CoreDirectAcyclicGraph;
 
 /**
  * <!-- begin-user-doc -->
@@ -13,13 +13,13 @@ import es.unizar.disco.dice.dtsm.Core.CoreDirectAcyclicGraph;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link es.unizar.disco.dice.dtsm.Storm.StormScenarioTopology#getQueueThreshold <em>Queue Threshold</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Storm.StormScenarioTopology#getMaxTaskParallelism <em>Max Task Parallelism</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Storm.StormScenarioTopology#getMaxSpoutPending <em>Max Spout Pending</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Storm.StormScenarioTopology#isReliable <em>Is Reliable</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Storm.StormScenarioTopology#getQueueThreshold <em>Queue Threshold</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Storm.StormScenarioTopology#getMaxTaskParallelism <em>Max Task Parallelism</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Storm.StormScenarioTopology#getMaxSpoutPending <em>Max Spout Pending</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Storm.StormScenarioTopology#isReliable <em>Is Reliable</em>}</li>
  * </ul>
  *
- * @see es.unizar.disco.dice.dtsm.Storm.StormPackage#getStormScenarioTopology()
+ * @see es.unizar.disco.dice.DTSM.Storm.StormPackage#getStormScenarioTopology()
  * @model
  * @generated
  */
@@ -34,14 +34,14 @@ public interface StormScenarioTopology extends CoreDirectAcyclicGraph {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Queue Threshold</em>' attribute.
 	 * @see #setQueueThreshold(int)
-	 * @see es.unizar.disco.dice.dtsm.Storm.StormPackage#getStormScenarioTopology_QueueThreshold()
+	 * @see es.unizar.disco.dice.DTSM.Storm.StormPackage#getStormScenarioTopology_QueueThreshold()
 	 * @model dataType="org.eclipse.uml2.types.Integer" ordered="false"
 	 * @generated
 	 */
 	int getQueueThreshold();
 
 	/**
-	 * Sets the value of the '{@link es.unizar.disco.dice.dtsm.Storm.StormScenarioTopology#getQueueThreshold <em>Queue Threshold</em>}' attribute.
+	 * Sets the value of the '{@link es.unizar.disco.dice.DTSM.Storm.StormScenarioTopology#getQueueThreshold <em>Queue Threshold</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Queue Threshold</em>' attribute.
@@ -60,14 +60,14 @@ public interface StormScenarioTopology extends CoreDirectAcyclicGraph {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Max Task Parallelism</em>' attribute.
 	 * @see #setMaxTaskParallelism(int)
-	 * @see es.unizar.disco.dice.dtsm.Storm.StormPackage#getStormScenarioTopology_MaxTaskParallelism()
+	 * @see es.unizar.disco.dice.DTSM.Storm.StormPackage#getStormScenarioTopology_MaxTaskParallelism()
 	 * @model dataType="org.eclipse.uml2.types.Integer" ordered="false"
 	 * @generated
 	 */
 	int getMaxTaskParallelism();
 
 	/**
-	 * Sets the value of the '{@link es.unizar.disco.dice.dtsm.Storm.StormScenarioTopology#getMaxTaskParallelism <em>Max Task Parallelism</em>}' attribute.
+	 * Sets the value of the '{@link es.unizar.disco.dice.DTSM.Storm.StormScenarioTopology#getMaxTaskParallelism <em>Max Task Parallelism</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Max Task Parallelism</em>' attribute.
@@ -86,14 +86,14 @@ public interface StormScenarioTopology extends CoreDirectAcyclicGraph {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Max Spout Pending</em>' attribute.
 	 * @see #setMaxSpoutPending(int)
-	 * @see es.unizar.disco.dice.dtsm.Storm.StormPackage#getStormScenarioTopology_MaxSpoutPending()
+	 * @see es.unizar.disco.dice.DTSM.Storm.StormPackage#getStormScenarioTopology_MaxSpoutPending()
 	 * @model dataType="org.eclipse.uml2.types.Integer" ordered="false"
 	 * @generated
 	 */
 	int getMaxSpoutPending();
 
 	/**
-	 * Sets the value of the '{@link es.unizar.disco.dice.dtsm.Storm.StormScenarioTopology#getMaxSpoutPending <em>Max Spout Pending</em>}' attribute.
+	 * Sets the value of the '{@link es.unizar.disco.dice.DTSM.Storm.StormScenarioTopology#getMaxSpoutPending <em>Max Spout Pending</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Max Spout Pending</em>' attribute.
@@ -112,14 +112,14 @@ public interface StormScenarioTopology extends CoreDirectAcyclicGraph {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Is Reliable</em>' attribute.
 	 * @see #setIsReliable(boolean)
-	 * @see es.unizar.disco.dice.dtsm.Storm.StormPackage#getStormScenarioTopology_IsReliable()
+	 * @see es.unizar.disco.dice.DTSM.Storm.StormPackage#getStormScenarioTopology_IsReliable()
 	 * @model dataType="org.eclipse.uml2.types.Boolean" ordered="false"
 	 * @generated
 	 */
 	boolean isReliable();
 
 	/**
-	 * Sets the value of the '{@link es.unizar.disco.dice.dtsm.Storm.StormScenarioTopology#isReliable <em>Is Reliable</em>}' attribute.
+	 * Sets the value of the '{@link es.unizar.disco.dice.DTSM.Storm.StormScenarioTopology#isReliable <em>Is Reliable</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Is Reliable</em>' attribute.

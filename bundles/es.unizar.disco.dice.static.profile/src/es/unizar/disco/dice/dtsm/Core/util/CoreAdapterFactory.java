@@ -1,6 +1,6 @@
 /**
  */
-package es.unizar.disco.dice.dtsm.Core.util;
+package es.unizar.disco.dice.DTSM.Core.util;
 
 import com.masdes.dam.Core.DaComponent;
 
@@ -8,7 +8,7 @@ import es.unizar.disco.dice.DPIM.DpimComputationNode;
 import es.unizar.disco.dice.DPIM.DpimSourceNode;
 import es.unizar.disco.dice.DPIM.DpimStorageNode;
 
-import es.unizar.disco.dice.dtsm.Core.*;
+import es.unizar.disco.dice.DTSM.Core.*;
 
 import org.eclipse.emf.common.notify.Adapter;
 import org.eclipse.emf.common.notify.Notifier;
@@ -32,7 +32,7 @@ import org.eclipse.papyrus.MARTE.MARTE_Foundations.Time.TimedProcessing;
  * The <b>Adapter Factory</b> for the model.
  * It provides an adapter <code>createXXX</code> method for each class of the model.
  * <!-- end-user-doc -->
- * @see es.unizar.disco.dice.dtsm.Core.CorePackage
+ * @see es.unizar.disco.dice.DTSM.Core.CorePackage
  * @generated
  */
 public class CoreAdapterFactory extends AdapterFactoryImpl {
@@ -176,13 +176,13 @@ public class CoreAdapterFactory extends AdapterFactoryImpl {
 
 
 	/**
-	 * Creates a new adapter for an object of class '{@link es.unizar.disco.dice.dtsm.Core.CoreComputationNode <em>Computation Node</em>}'.
+	 * Creates a new adapter for an object of class '{@link es.unizar.disco.dice.DTSM.Core.CoreComputationNode <em>Computation Node</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see es.unizar.disco.dice.dtsm.Core.CoreComputationNode
+	 * @see es.unizar.disco.dice.DTSM.Core.CoreComputationNode
 	 * @generated
 	 */
 	public Adapter createCoreComputationNodeAdapter() {
@@ -190,13 +190,13 @@ public class CoreAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link es.unizar.disco.dice.dtsm.Core.CoreData <em>Data</em>}'.
+	 * Creates a new adapter for an object of class '{@link es.unizar.disco.dice.DTSM.Core.CoreData <em>Data</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see es.unizar.disco.dice.dtsm.Core.CoreData
+	 * @see es.unizar.disco.dice.DTSM.Core.CoreData
 	 * @generated
 	 */
 	public Adapter createCoreDataAdapter() {
@@ -204,13 +204,13 @@ public class CoreAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link es.unizar.disco.dice.dtsm.Core.CoreDataSource <em>Data Source</em>}'.
+	 * Creates a new adapter for an object of class '{@link es.unizar.disco.dice.DTSM.Core.CoreDataSource <em>Data Source</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see es.unizar.disco.dice.dtsm.Core.CoreDataSource
+	 * @see es.unizar.disco.dice.DTSM.Core.CoreDataSource
 	 * @generated
 	 */
 	public Adapter createCoreDataSourceAdapter() {
@@ -218,13 +218,13 @@ public class CoreAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link es.unizar.disco.dice.dtsm.Core.CoreDirectAcyclicGraph <em>Direct Acyclic Graph</em>}'.
+	 * Creates a new adapter for an object of class '{@link es.unizar.disco.dice.DTSM.Core.CoreDirectAcyclicGraph <em>Direct Acyclic Graph</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see es.unizar.disco.dice.dtsm.Core.CoreDirectAcyclicGraph
+	 * @see es.unizar.disco.dice.DTSM.Core.CoreDirectAcyclicGraph
 	 * @generated
 	 */
 	public Adapter createCoreDirectAcyclicGraphAdapter() {
@@ -232,13 +232,13 @@ public class CoreAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link es.unizar.disco.dice.dtsm.Core.CoreDAGSourceNode <em>DAG Source Node</em>}'.
+	 * Creates a new adapter for an object of class '{@link es.unizar.disco.dice.DTSM.Core.CoreDAGSourceNode <em>DAG Source Node</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see es.unizar.disco.dice.dtsm.Core.CoreDAGSourceNode
+	 * @see es.unizar.disco.dice.DTSM.Core.CoreDAGSourceNode
 	 * @generated
 	 */
 	public Adapter createCoreDAGSourceNodeAdapter() {
@@ -246,13 +246,13 @@ public class CoreAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link es.unizar.disco.dice.dtsm.Core.CoreDAGNode <em>DAG Node</em>}'.
+	 * Creates a new adapter for an object of class '{@link es.unizar.disco.dice.DTSM.Core.CoreDAGNode <em>DAG Node</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see es.unizar.disco.dice.dtsm.Core.CoreDAGNode
+	 * @see es.unizar.disco.dice.DTSM.Core.CoreDAGNode
 	 * @generated
 	 */
 	public Adapter createCoreDAGNodeAdapter() {
@@ -260,13 +260,13 @@ public class CoreAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link es.unizar.disco.dice.dtsm.Core.CoreStorageNode <em>Storage Node</em>}'.
+	 * Creates a new adapter for an object of class '{@link es.unizar.disco.dice.DTSM.Core.CoreStorageNode <em>Storage Node</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see es.unizar.disco.dice.dtsm.Core.CoreStorageNode
+	 * @see es.unizar.disco.dice.DTSM.Core.CoreStorageNode
 	 * @generated
 	 */
 	public Adapter createCoreStorageNodeAdapter() {

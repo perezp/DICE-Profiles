@@ -1,11 +1,11 @@
 /**
  */
-package es.unizar.disco.dice.dtsm.Storm.impl;
+package es.unizar.disco.dice.DTSM.Storm.impl;
 
-import es.unizar.disco.dice.dtsm.Core.impl.CoreDAGSourceNodeImpl;
+import es.unizar.disco.dice.DTSM.Core.impl.CoreDAGSourceNodeImpl;
 
-import es.unizar.disco.dice.dtsm.Storm.StormPackage;
-import es.unizar.disco.dice.dtsm.Storm.StormSpout;
+import es.unizar.disco.dice.DTSM.Storm.StormPackage;
+import es.unizar.disco.dice.DTSM.Storm.StormSpout;
 
 import org.eclipse.emf.common.notify.Notification;
 
@@ -21,7 +21,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link es.unizar.disco.dice.dtsm.Storm.impl.StormSpoutImpl#getAvgEmitRate <em>Avg Emit Rate</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Storm.impl.StormSpoutImpl#getAvgEmitRate <em>Avg Emit Rate</em>}</li>
  * </ul>
  *
  * @generated

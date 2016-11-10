@@ -1,6 +1,6 @@
 /**
  */
-package es.unizar.disco.dice.dtsm.Hadoop;
+package es.unizar.disco.dice.DTSM.Hadoop;
 
 import es.unizar.disco.dice.Basic_Enumeration_Types.ReduceType;
 
@@ -13,10 +13,10 @@ import es.unizar.disco.dice.Basic_Enumeration_Types.ReduceType;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link es.unizar.disco.dice.dtsm.Hadoop.HadoopReduce#getType <em>Type</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Hadoop.HadoopReduce#getType <em>Type</em>}</li>
  * </ul>
  *
- * @see es.unizar.disco.dice.dtsm.Hadoop.HadoopPackage#getHadoopReduce()
+ * @see es.unizar.disco.dice.DTSM.Hadoop.HadoopPackage#getHadoopReduce()
  * @model
  * @generated
  */
@@ -33,14 +33,14 @@ public interface HadoopReduce extends HadoopOperation {
 	 * @return the value of the '<em>Type</em>' attribute.
 	 * @see es.unizar.disco.dice.Basic_Enumeration_Types.ReduceType
 	 * @see #setType(ReduceType)
-	 * @see es.unizar.disco.dice.dtsm.Hadoop.HadoopPackage#getHadoopReduce_Type()
+	 * @see es.unizar.disco.dice.DTSM.Hadoop.HadoopPackage#getHadoopReduce_Type()
 	 * @model ordered="false"
 	 * @generated
 	 */
 	ReduceType getType();
 
 	/**
-	 * Sets the value of the '{@link es.unizar.disco.dice.dtsm.Hadoop.HadoopReduce#getType <em>Type</em>}' attribute.
+	 * Sets the value of the '{@link es.unizar.disco.dice.DTSM.Hadoop.HadoopReduce#getType <em>Type</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Type</em>' attribute.

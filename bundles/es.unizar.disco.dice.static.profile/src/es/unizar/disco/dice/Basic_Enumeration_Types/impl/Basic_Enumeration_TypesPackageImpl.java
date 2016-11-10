@@ -32,24 +32,28 @@ import es.unizar.disco.dice.Basic_Enumeration_Types.WorkflowOperation;
 import es.unizar.disco.dice.Complex_Data_Types.impl.Complex_Data_TypesPackageImpl;
 
 import es.unizar.disco.dice.DDSM.DDSMPackage;
+
 import es.unizar.disco.dice.DDSM.impl.DDSMPackageImpl;
+
 import es.unizar.disco.dice.DICE.DICEPackage;
+
 import es.unizar.disco.dice.DICE.impl.DICEPackageImpl;
+
 import es.unizar.disco.dice.DPIM.DPIMPackage;
 
 import es.unizar.disco.dice.DPIM.impl.DPIMPackageImpl;
 
-import es.unizar.disco.dice.dtsm.Core.CorePackage;
+import es.unizar.disco.dice.DTSM.Core.CorePackage;
 
-import es.unizar.disco.dice.dtsm.Core.impl.CorePackageImpl;
+import es.unizar.disco.dice.DTSM.Core.impl.CorePackageImpl;
 
-import es.unizar.disco.dice.dtsm.Hadoop.HadoopPackage;
+import es.unizar.disco.dice.DTSM.Hadoop.HadoopPackage;
 
-import es.unizar.disco.dice.dtsm.Hadoop.impl.HadoopPackageImpl;
+import es.unizar.disco.dice.DTSM.Hadoop.impl.HadoopPackageImpl;
 
-import es.unizar.disco.dice.dtsm.Storm.StormPackage;
+import es.unizar.disco.dice.DTSM.Storm.StormPackage;
 
-import es.unizar.disco.dice.dtsm.Storm.impl.StormPackageImpl;
+import es.unizar.disco.dice.DTSM.Storm.impl.StormPackageImpl;
 
 import org.eclipse.emf.ecore.EEnum;
 import org.eclipse.emf.ecore.EPackage;

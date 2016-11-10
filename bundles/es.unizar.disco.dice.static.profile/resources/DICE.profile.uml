@@ -884,9 +884,9 @@
   <Ecore:EPackage xmi:id="_m6y98OeZEeWj7ZPL8JeBTQ" base_Package="_MPXosOePEeWj7ZPL8JeBTQ" packageName="DICE" nsPrefix="DICE" nsURI="http://es.unizar.disco.dice/profiles/DICE/1.0" basePackage="es.unizar.disco.dice"/>
   <Ecore:EPackage xmi:id="_NZRPAOeaEeWj7ZPL8JeBTQ" base_Package="_GCf1wOeaEeWj7ZPL8JeBTQ" packageName="DICE_UML_Extensions" nsPrefix="DICE_UML_Extensions" nsURI="http://es.unizar.disco.dice/profiles/DICE_UML_Extensions/1.0" basePackage="es.unizar.disco.dice"/>
   <Ecore:EPackage xmi:id="_ijGTAOebEeWj7ZPL8JeBTQ" base_Package="_gFr1YOebEeWj7ZPL8JeBTQ" packageName="DPIM" nsPrefix="DPIM" nsURI="http://es.unizar.disco.dice/profiles/DPIM/1.0" basePackage="es.unizar.disco.dice"/>
-  <Ecore:EPackage xmi:id="_Q9gCMCluEeaibdPncpUwfA" base_Package="_Q9bJsCluEeaibdPncpUwfA" packageName="Core" nsPrefix="Core" nsURI="http://es.unizar.disco.dice/profiles/DTSM/Core/1.0" basePackage="es.unizar.disco.dice.dtsm"/>
-  <Ecore:EPackage xmi:id="_E-izoCpwEeaibdPncpUwfA" base_Package="_E-ctACpwEeaibdPncpUwfA" packageName="Storm" nsPrefix="Storm" nsURI="http://es.unizar.disco.dice/profiles/DTSM/Storm/1.0" basePackage="es.unizar.disco.dice.dtsm"/>
+  <Ecore:EPackage xmi:id="_Q9gCMCluEeaibdPncpUwfA" base_Package="_Q9bJsCluEeaibdPncpUwfA" packageName="Core" nsPrefix="Core" nsURI="http://es.unizar.disco.dice/profiles/DTSM/Core/1.0" basePackage="es.unizar.disco.dice.DTSM"/>
+  <Ecore:EPackage xmi:id="_E-izoCpwEeaibdPncpUwfA" base_Package="_E-ctACpwEeaibdPncpUwfA" packageName="Storm" nsPrefix="Storm" nsURI="http://es.unizar.disco.dice/profiles/DTSM/Storm/1.0" basePackage="es.unizar.disco.dice.DTSM"/>
   <Ecore:EPackage xmi:id="_CfCn8Cy4EeagadxR5JgrcA" base_Package="__nIcICy2EeagadxR5JgrcA" packageName="DTSM" nsPrefix="DTSM" nsURI="http://es.unizar.disco.dice/profiles/DTSM/1.0" basePackage="es.unizar.disco.dice"/>
-  <Ecore:EPackage xmi:id="_0yQ4UC5LEeaF_sH3mLTVKg" base_Package="_lhjuYC5LEeaF_sH3mLTVKg" packageName="Hadoop" nsPrefix="Hadoop" nsURI="http://es.unizar.disco.dice/profiles/DTSM/Hadoop/1.0" basePackage="es.unizar.disco.dice.dtsm"/>
+  <Ecore:EPackage xmi:id="_0yQ4UC5LEeaF_sH3mLTVKg" base_Package="_lhjuYC5LEeaF_sH3mLTVKg" packageName="Hadoop" nsPrefix="Hadoop" nsURI="http://es.unizar.disco.dice/profiles/DTSM/Hadoop/1.0" basePackage="es.unizar.disco.dice.DTSM"/>
   <Ecore:EPackage xmi:id="_jBv58Dx2EeaOH59TuV453g" base_Package="_aYmS0Dx2EeaOH59TuV453g" packageName="DDSM" nsPrefix="DDSM" nsURI="http://es.unizar.disco.dice/profiles/DDSM/1.0" basePackage="es.unizar.disco.dice"/>
 </xmi:XMI>

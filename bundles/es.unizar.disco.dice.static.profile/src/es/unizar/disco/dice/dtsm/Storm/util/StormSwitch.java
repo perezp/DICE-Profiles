@@ -1,18 +1,18 @@
 /**
  */
-package es.unizar.disco.dice.dtsm.Storm.util;
+package es.unizar.disco.dice.DTSM.Storm.util;
 
 import com.masdes.dam.Core.DaComponent;
 
 import es.unizar.disco.dice.DPIM.DpimComputationNode;
 import es.unizar.disco.dice.DPIM.DpimSourceNode;
 
-import es.unizar.disco.dice.dtsm.Core.CoreComputationNode;
-import es.unizar.disco.dice.dtsm.Core.CoreDAGNode;
-import es.unizar.disco.dice.dtsm.Core.CoreDAGSourceNode;
-import es.unizar.disco.dice.dtsm.Core.CoreDirectAcyclicGraph;
+import es.unizar.disco.dice.DTSM.Core.CoreComputationNode;
+import es.unizar.disco.dice.DTSM.Core.CoreDAGNode;
+import es.unizar.disco.dice.DTSM.Core.CoreDAGSourceNode;
+import es.unizar.disco.dice.DTSM.Core.CoreDirectAcyclicGraph;
 
-import es.unizar.disco.dice.dtsm.Storm.*;
+import es.unizar.disco.dice.DTSM.Storm.*;
 
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
@@ -38,7 +38,7 @@ import org.eclipse.papyrus.MARTE.MARTE_Foundations.Time.TimedProcessing;
  * until a non-null result is returned,
  * which is the result of the switch.
  * <!-- end-user-doc -->
- * @see es.unizar.disco.dice.dtsm.Storm.StormPackage
+ * @see es.unizar.disco.dice.DTSM.Storm.StormPackage
  * @generated
  */
 public class StormSwitch<T> extends Switch<T> {

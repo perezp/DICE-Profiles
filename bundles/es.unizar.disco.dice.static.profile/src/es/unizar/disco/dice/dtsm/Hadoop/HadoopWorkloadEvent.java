@@ -1,6 +1,6 @@
 /**
  */
-package es.unizar.disco.dice.dtsm.Hadoop;
+package es.unizar.disco.dice.DTSM.Hadoop;
 
 import org.eclipse.emf.common.util.EList;
 
@@ -15,11 +15,11 @@ import org.eclipse.papyrus.MARTE.MARTE_AnalysisModel.GQAM.GaWorkloadEvent;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link es.unizar.disco.dice.dtsm.Hadoop.HadoopWorkloadEvent#getHadoopPopulation <em>Hadoop Population</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Hadoop.HadoopWorkloadEvent#getHadoopExtDelay <em>Hadoop Ext Delay</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Hadoop.HadoopWorkloadEvent#getHadoopPopulation <em>Hadoop Population</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Hadoop.HadoopWorkloadEvent#getHadoopExtDelay <em>Hadoop Ext Delay</em>}</li>
  * </ul>
  *
- * @see es.unizar.disco.dice.dtsm.Hadoop.HadoopPackage#getHadoopWorkloadEvent()
+ * @see es.unizar.disco.dice.DTSM.Hadoop.HadoopPackage#getHadoopWorkloadEvent()
  * @model
  * @generated
  */
@@ -34,7 +34,7 @@ public interface HadoopWorkloadEvent extends GaWorkloadEvent {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Hadoop Population</em>' attribute list.
-	 * @see es.unizar.disco.dice.dtsm.Hadoop.HadoopPackage#getHadoopWorkloadEvent_HadoopPopulation()
+	 * @see es.unizar.disco.dice.DTSM.Hadoop.HadoopPackage#getHadoopWorkloadEvent_HadoopPopulation()
 	 * @model dataType="org.eclipse.papyrus.MARTE_Library.BasicNFP_Types.NFP_Integer" ordered="false"
 	 * @generated
 	 */
@@ -50,7 +50,7 @@ public interface HadoopWorkloadEvent extends GaWorkloadEvent {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Hadoop Ext Delay</em>' attribute list.
-	 * @see es.unizar.disco.dice.dtsm.Hadoop.HadoopPackage#getHadoopWorkloadEvent_HadoopExtDelay()
+	 * @see es.unizar.disco.dice.DTSM.Hadoop.HadoopPackage#getHadoopWorkloadEvent_HadoopExtDelay()
 	 * @model dataType="org.eclipse.papyrus.MARTE_Library.BasicNFP_Types.NFP_Duration" ordered="false"
 	 * @generated
 	 */

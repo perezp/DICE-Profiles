@@ -1,11 +1,11 @@
 /**
  */
-package es.unizar.disco.dice.dtsm.Hadoop.impl;
+package es.unizar.disco.dice.DTSM.Hadoop.impl;
 
 import es.unizar.disco.dice.Basic_Enumeration_Types.ReduceType;
 
-import es.unizar.disco.dice.dtsm.Hadoop.HadoopPackage;
-import es.unizar.disco.dice.dtsm.Hadoop.HadoopReduce;
+import es.unizar.disco.dice.DTSM.Hadoop.HadoopPackage;
+import es.unizar.disco.dice.DTSM.Hadoop.HadoopReduce;
 
 import org.eclipse.emf.common.notify.Notification;
 
@@ -21,7 +21,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link es.unizar.disco.dice.dtsm.Hadoop.impl.HadoopReduceImpl#getType <em>Type</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Hadoop.impl.HadoopReduceImpl#getType <em>Type</em>}</li>
  * </ul>
  *
  * @generated

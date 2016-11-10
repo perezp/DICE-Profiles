@@ -1,10 +1,10 @@
 /**
  */
-package es.unizar.disco.dice.dtsm.Hadoop.impl;
+package es.unizar.disco.dice.DTSM.Hadoop.impl;
 
-import es.unizar.disco.dice.dtsm.Hadoop.HadoopMapReduceJob;
-import es.unizar.disco.dice.dtsm.Hadoop.HadoopMapReducePhase;
-import es.unizar.disco.dice.dtsm.Hadoop.HadoopPackage;
+import es.unizar.disco.dice.DTSM.Hadoop.HadoopMapReduceJob;
+import es.unizar.disco.dice.DTSM.Hadoop.HadoopMapReducePhase;
+import es.unizar.disco.dice.DTSM.Hadoop.HadoopPackage;
 
 import java.util.Collection;
 
@@ -30,8 +30,8 @@ import org.eclipse.uml2.uml.Classifier;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link es.unizar.disco.dice.dtsm.Hadoop.impl.HadoopMapReduceJobImpl#getMapResucePhases <em>Map Resuce Phases</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Hadoop.impl.HadoopMapReduceJobImpl#getBase_Classifier <em>Base Classifier</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Hadoop.impl.HadoopMapReduceJobImpl#getMapResucePhases <em>Map Resuce Phases</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Hadoop.impl.HadoopMapReduceJobImpl#getBase_Classifier <em>Base Classifier</em>}</li>
  * </ul>
  *
  * @generated

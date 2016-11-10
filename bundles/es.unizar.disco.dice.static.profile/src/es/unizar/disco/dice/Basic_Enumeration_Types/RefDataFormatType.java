@@ -36,7 +36,9 @@ public enum RefDataFormatType implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	PLAIN(1, "plain", "plain"), /**
+	PLAIN(1, "plain", "plain"),
+
+	/**
 	 * The '<em><b>Xml</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -44,7 +46,9 @@ public enum RefDataFormatType implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	XML(2, "xml", "xml"), /**
+	XML(2, "xml", "xml"),
+
+	/**
 	 * The '<em><b>Avro</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -52,7 +56,9 @@ public enum RefDataFormatType implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	AVRO(3, "avro", "avro"), /**
+	AVRO(3, "avro", "avro"),
+
+	/**
 	 * The '<em><b>Parquet</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -60,7 +66,9 @@ public enum RefDataFormatType implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	PARQUET(4, "parquet", "parquet"), /**
+	PARQUET(4, "parquet", "parquet"),
+
+	/**
 	 * The '<em><b>Yaml</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

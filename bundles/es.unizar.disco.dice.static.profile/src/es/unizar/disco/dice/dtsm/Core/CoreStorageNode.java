@@ -1,6 +1,6 @@
 /**
  */
-package es.unizar.disco.dice.dtsm.Core;
+package es.unizar.disco.dice.DTSM.Core;
 
 
 /**
@@ -12,12 +12,12 @@ package es.unizar.disco.dice.dtsm.Core;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link es.unizar.disco.dice.dtsm.Core.CoreStorageNode#getDatabase <em>Database</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Core.CoreStorageNode#getUser <em>User</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Core.CoreStorageNode#getPassword <em>Password</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Core.CoreStorageNode#getDatabase <em>Database</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Core.CoreStorageNode#getUser <em>User</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Core.CoreStorageNode#getPassword <em>Password</em>}</li>
  * </ul>
  *
- * @see es.unizar.disco.dice.dtsm.Core.CorePackage#getCoreStorageNode()
+ * @see es.unizar.disco.dice.DTSM.Core.CorePackage#getCoreStorageNode()
  * @model abstract="true"
  * @generated
  */
@@ -32,14 +32,14 @@ public interface CoreStorageNode extends CoreDataSource {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Database</em>' attribute.
 	 * @see #setDatabase(String)
-	 * @see es.unizar.disco.dice.dtsm.Core.CorePackage#getCoreStorageNode_Database()
+	 * @see es.unizar.disco.dice.DTSM.Core.CorePackage#getCoreStorageNode_Database()
 	 * @model dataType="org.eclipse.uml2.types.String" required="true" ordered="false"
 	 * @generated
 	 */
 	String getDatabase();
 
 	/**
-	 * Sets the value of the '{@link es.unizar.disco.dice.dtsm.Core.CoreStorageNode#getDatabase <em>Database</em>}' attribute.
+	 * Sets the value of the '{@link es.unizar.disco.dice.DTSM.Core.CoreStorageNode#getDatabase <em>Database</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Database</em>' attribute.
@@ -58,14 +58,14 @@ public interface CoreStorageNode extends CoreDataSource {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>User</em>' attribute.
 	 * @see #setUser(String)
-	 * @see es.unizar.disco.dice.dtsm.Core.CorePackage#getCoreStorageNode_User()
+	 * @see es.unizar.disco.dice.DTSM.Core.CorePackage#getCoreStorageNode_User()
 	 * @model dataType="org.eclipse.uml2.types.String" required="true" ordered="false"
 	 * @generated
 	 */
 	String getUser();
 
 	/**
-	 * Sets the value of the '{@link es.unizar.disco.dice.dtsm.Core.CoreStorageNode#getUser <em>User</em>}' attribute.
+	 * Sets the value of the '{@link es.unizar.disco.dice.DTSM.Core.CoreStorageNode#getUser <em>User</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>User</em>' attribute.
@@ -84,14 +84,14 @@ public interface CoreStorageNode extends CoreDataSource {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Password</em>' attribute.
 	 * @see #setPassword(String)
-	 * @see es.unizar.disco.dice.dtsm.Core.CorePackage#getCoreStorageNode_Password()
+	 * @see es.unizar.disco.dice.DTSM.Core.CorePackage#getCoreStorageNode_Password()
 	 * @model dataType="org.eclipse.uml2.types.String" required="true" ordered="false"
 	 * @generated
 	 */
 	String getPassword();
 
 	/**
-	 * Sets the value of the '{@link es.unizar.disco.dice.dtsm.Core.CoreStorageNode#getPassword <em>Password</em>}' attribute.
+	 * Sets the value of the '{@link es.unizar.disco.dice.DTSM.Core.CoreStorageNode#getPassword <em>Password</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Password</em>' attribute.

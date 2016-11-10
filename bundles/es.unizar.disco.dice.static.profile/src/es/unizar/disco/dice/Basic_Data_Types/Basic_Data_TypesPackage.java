@@ -92,7 +92,6 @@ public interface Basic_Data_TypesPackage extends EPackage {
 	 */
 	int NFP_PRIVACY_FEATURE_COUNT = 2;
 
-
 	/**
 	 * The meta object id for the '{@link es.unizar.disco.dice.Basic_Data_Types.impl.ScriptTypeImpl <em>Script Type</em>}' class.
 	 * <!-- begin-user-doc -->

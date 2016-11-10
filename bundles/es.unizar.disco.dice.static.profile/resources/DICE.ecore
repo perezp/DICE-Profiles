@@ -362,46 +362,20 @@
             eType="ecore:EEnum DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/VMSize"/>
       </eClassifiers>
       <eClassifiers xsi:type="ecore:EClass" name="DdsmYarnResourceManager" eSuperTypes="#//DICE_UML_Extensions/DDSM/DdsmInternalComponent">
-        <eOperations name="YarnTypeMasterNode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-          <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-            <details key="documentation" value="self.componentType = DDSMcomponentType::MasterNode"/>
-          </eAnnotations>
-          <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
-            <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-              <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
-            </eAnnotations>
-          </eParameters>
-          <eParameters name="context">
-            <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-              <details key="documentation" value="The cache of context-specific information."/>
-            </eAnnotations>
-            <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-              <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-              <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-            </eGenericType>
-          </eParameters>
-        </eOperations>
+        <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+          <details key="constraints" value="YarnTypeMasterNode"/>
+        </eAnnotations>
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="self.componentType = DDSMcomponentType::MasterNode"/>
+        </eAnnotations>
       </eClassifiers>
       <eClassifiers xsi:type="ecore:EClass" name="DdsmZookeeperServer" eSuperTypes="#//DICE_UML_Extensions/DDSM/DdsmInternalComponent">
-        <eOperations name="ZookeeperServerTypePeefNode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-          <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-            <details key="documentation" value="self.componentType=DDSMcomponentType::PeerNode"/>
-          </eAnnotations>
-          <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
-            <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-              <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
-            </eAnnotations>
-          </eParameters>
-          <eParameters name="context">
-            <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-              <details key="documentation" value="The cache of context-specific information."/>
-            </eAnnotations>
-            <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-              <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-              <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-            </eGenericType>
-          </eParameters>
-        </eOperations>
+        <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+          <details key="constraints" value="ZookeeperServerTypePeefNode"/>
+        </eAnnotations>
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="self.componentType=DDSMcomponentType::PeerNode"/>
+        </eAnnotations>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="tickTime" ordered="false"
             lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"
             defaultValueLiteral="1500"/>
@@ -414,25 +388,12 @@
       </eClassifiers>
       <eClassifiers xsi:type="ecore:EClass" name="DdsmKafka" eSuperTypes="#//DICE_UML_Extensions/DDSM/DdsmInternalComponent"/>
       <eClassifiers xsi:type="ecore:EClass" name="DdsmNimbus" eSuperTypes="#//DICE_UML_Extensions/DDSM/DdsmInternalComponent">
-        <eOperations name="NimbusTypeMasterNode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-          <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-            <details key="documentation" value="self.componentType = DDSMcomponentType::MasterNode"/>
-          </eAnnotations>
-          <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
-            <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-              <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
-            </eAnnotations>
-          </eParameters>
-          <eParameters name="context">
-            <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-              <details key="documentation" value="The cache of context-specific information."/>
-            </eAnnotations>
-            <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-              <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-              <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-            </eGenericType>
-          </eParameters>
-        </eOperations>
+        <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+          <details key="constraints" value="NimbusTypeMasterNode"/>
+        </eAnnotations>
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="self.componentType = DDSMcomponentType::MasterNode"/>
+        </eAnnotations>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="taskTimeout" ordered="false"
             lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"
             defaultValueLiteral="60"/>
@@ -457,25 +418,12 @@
             lowerBound="1" eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//Deployment"/>
       </eClassifiers>
       <eClassifiers xsi:type="ecore:EClass" name="DdsmSupervisor" eSuperTypes="#//DICE_UML_Extensions/DDSM/DdsmInternalComponent">
-        <eOperations name="SupervisorTypeSlaveNode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-          <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-            <details key="documentation" value="self.componentType = DDSMcomponentType::MasterSlavePlatform"/>
-          </eAnnotations>
-          <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
-            <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-              <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
-            </eAnnotations>
-          </eParameters>
-          <eParameters name="context">
-            <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-              <details key="documentation" value="The cache of context-specific information."/>
-            </eAnnotations>
-            <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-              <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-              <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-            </eGenericType>
-          </eParameters>
-        </eOperations>
+        <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+          <details key="constraints" value="SupervisorTypeSlaveNode"/>
+        </eAnnotations>
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="self.componentType = DDSMcomponentType::MasterSlavePlatform"/>
+        </eAnnotations>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="workerStartTimeout"
             ordered="false" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"
             defaultValueLiteral="120"/>
@@ -490,25 +438,12 @@
             defaultValueLiteral="5"/>
       </eClassifiers>
       <eClassifiers xsi:type="ecore:EClass" name="DdsmStormCluster" eSuperTypes="#//DICE_UML_Extensions/DDSM/DdsmInternalComponent">
-        <eOperations name="StormClusterTypeMasterSlavePlatform" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-          <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-            <details key="documentation" value="self.componentType = DDSMcomponentType::MasterSlavePlatform"/>
-          </eAnnotations>
-          <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
-            <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-              <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
-            </eAnnotations>
-          </eParameters>
-          <eParameters name="context">
-            <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-              <details key="documentation" value="The cache of context-specific information."/>
-            </eAnnotations>
-            <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-              <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-              <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-            </eGenericType>
-          </eParameters>
-        </eOperations>
+        <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+          <details key="constraints" value="StormClusterTypeMasterSlavePlatform"/>
+        </eAnnotations>
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="self.componentType = DDSMcomponentType::MasterSlavePlatform"/>
+        </eAnnotations>
       </eClassifiers>
       <eClassifiers xsi:type="ecore:EClass" name="DdsmBigDataJob">
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="artifactURL" ordered="false"

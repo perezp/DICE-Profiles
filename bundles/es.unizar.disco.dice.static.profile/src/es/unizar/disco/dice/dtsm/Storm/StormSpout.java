@@ -1,8 +1,8 @@
 /**
  */
-package es.unizar.disco.dice.dtsm.Storm;
+package es.unizar.disco.dice.DTSM.Storm;
 
-import es.unizar.disco.dice.dtsm.Core.CoreDAGSourceNode;
+import es.unizar.disco.dice.DTSM.Core.CoreDAGSourceNode;
 
 /**
  * <!-- begin-user-doc -->
@@ -13,10 +13,10 @@ import es.unizar.disco.dice.dtsm.Core.CoreDAGSourceNode;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link es.unizar.disco.dice.dtsm.Storm.StormSpout#getAvgEmitRate <em>Avg Emit Rate</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Storm.StormSpout#getAvgEmitRate <em>Avg Emit Rate</em>}</li>
  * </ul>
  *
- * @see es.unizar.disco.dice.dtsm.Storm.StormPackage#getStormSpout()
+ * @see es.unizar.disco.dice.DTSM.Storm.StormPackage#getStormSpout()
  * @model
  * @generated
  */
@@ -31,14 +31,14 @@ public interface StormSpout extends CoreDAGSourceNode {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Avg Emit Rate</em>' attribute.
 	 * @see #setAvgEmitRate(String)
-	 * @see es.unizar.disco.dice.dtsm.Storm.StormPackage#getStormSpout_AvgEmitRate()
+	 * @see es.unizar.disco.dice.DTSM.Storm.StormPackage#getStormSpout_AvgEmitRate()
 	 * @model dataType="org.eclipse.papyrus.MARTE_Library.BasicNFP_Types.NFP_Real" ordered="false"
 	 * @generated
 	 */
 	String getAvgEmitRate();
 
 	/**
-	 * Sets the value of the '{@link es.unizar.disco.dice.dtsm.Storm.StormSpout#getAvgEmitRate <em>Avg Emit Rate</em>}' attribute.
+	 * Sets the value of the '{@link es.unizar.disco.dice.DTSM.Storm.StormSpout#getAvgEmitRate <em>Avg Emit Rate</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Avg Emit Rate</em>' attribute.

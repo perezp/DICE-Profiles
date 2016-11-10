@@ -2,32 +2,20 @@
  */
 package es.unizar.disco.dice.DDSM;
 
-import java.util.Map;
-
-import org.eclipse.emf.common.util.DiagnosticChain;
 
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Ddsm Storm Cluster</b></em>'.
  * <!-- end-user-doc -->
  *
+ * <!-- begin-model-doc -->
+ * self.componentType = DDSMcomponentType::MasterSlavePlatform
+ * <!-- end-model-doc -->
+ *
  *
  * @see es.unizar.disco.dice.DDSM.DDSMPackage#getDdsmStormCluster()
- * @model
+ * @model annotation="http://www.eclipse.org/emf/2002/Ecore constraints='StormClusterTypeMasterSlavePlatform'"
  * @generated
  */
 public interface DdsmStormCluster extends DdsmInternalComponent {
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.componentType = DDSMcomponentType::MasterSlavePlatform
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model
-	 * @generated
-	 */
-	boolean StormClusterTypeMasterSlavePlatform(DiagnosticChain diagnostics, Map<Object, Object> context);
-
 } // DdsmStormCluster

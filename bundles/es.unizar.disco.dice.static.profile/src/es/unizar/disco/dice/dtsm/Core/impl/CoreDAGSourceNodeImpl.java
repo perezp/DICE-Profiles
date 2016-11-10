@@ -1,10 +1,10 @@
 /**
  */
-package es.unizar.disco.dice.dtsm.Core.impl;
+package es.unizar.disco.dice.DTSM.Core.impl;
 
-import es.unizar.disco.dice.dtsm.Core.CoreDAGSourceNode;
-import es.unizar.disco.dice.dtsm.Core.CoreDataSource;
-import es.unizar.disco.dice.dtsm.Core.CorePackage;
+import es.unizar.disco.dice.DTSM.Core.CoreDAGSourceNode;
+import es.unizar.disco.dice.DTSM.Core.CoreDataSource;
+import es.unizar.disco.dice.DTSM.Core.CorePackage;
 
 import java.util.Collection;
 
@@ -22,7 +22,7 @@ import org.eclipse.emf.ecore.util.EObjectResolvingEList;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link es.unizar.disco.dice.dtsm.Core.impl.CoreDAGSourceNodeImpl#getReadFrom <em>Read From</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Core.impl.CoreDAGSourceNodeImpl#getReadFrom <em>Read From</em>}</li>
  * </ul>
  *
  * @generated

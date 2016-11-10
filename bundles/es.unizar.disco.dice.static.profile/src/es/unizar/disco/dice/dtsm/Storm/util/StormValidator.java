@@ -1,8 +1,8 @@
 /**
  */
-package es.unizar.disco.dice.dtsm.Storm.util;
+package es.unizar.disco.dice.DTSM.Storm.util;
 
-import es.unizar.disco.dice.dtsm.Storm.*;
+import es.unizar.disco.dice.DTSM.Storm.*;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -27,7 +27,7 @@ import org.eclipse.emf.ecore.util.FeatureMapUtil;
  * <!-- begin-user-doc -->
  * The <b>Validator</b> for the model.
  * <!-- end-user-doc -->
- * @see es.unizar.disco.dice.dtsm.Storm.StormPackage
+ * @see es.unizar.disco.dice.DTSM.Storm.StormPackage
  * @generated
  */
 public class StormValidator extends EObjectValidator {
@@ -47,7 +47,7 @@ public class StormValidator extends EObjectValidator {
 	 * @see org.eclipse.emf.common.util.Diagnostic#getCode()
 	 * @generated
 	 */
-	public static final String DIAGNOSTIC_SOURCE = "es.unizar.disco.dice.dtsm.Storm";
+	public static final String DIAGNOSTIC_SOURCE = "es.unizar.disco.dice.DTSM.Storm";
 
 	/**
 	 * A constant with a fixed name that can be used as the base value for additional hand written constants.

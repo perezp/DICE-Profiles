@@ -1,6 +1,6 @@
 /**
  */
-package es.unizar.disco.dice.dtsm.Core.impl;
+package es.unizar.disco.dice.DTSM.Core.impl;
 
 import com.masdes.dam.Basic_Enumeration_Types.Origin;
 
@@ -27,8 +27,8 @@ import es.unizar.disco.dice.DPIM.DPIMPackage;
 import es.unizar.disco.dice.DPIM.DpimComputationNode;
 import es.unizar.disco.dice.DPIM.DpimSourceNode;
 
-import es.unizar.disco.dice.dtsm.Core.CoreDAGNode;
-import es.unizar.disco.dice.dtsm.Core.CorePackage;
+import es.unizar.disco.dice.DTSM.Core.CoreDAGNode;
+import es.unizar.disco.dice.DTSM.Core.CorePackage;
 
 import java.util.Collection;
 
@@ -66,43 +66,43 @@ import org.eclipse.uml2.uml.Property;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link es.unizar.disco.dice.dtsm.Core.impl.CoreDAGNodeImpl#getResMult <em>Res Mult</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Core.impl.CoreDAGNodeImpl#isIsProtected <em>Is Protected</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Core.impl.CoreDAGNodeImpl#isIsActive <em>Is Active</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Core.impl.CoreDAGNodeImpl#getBase_Property <em>Base Property</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Core.impl.CoreDAGNodeImpl#getBase_InstanceSpecification <em>Base Instance Specification</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Core.impl.CoreDAGNodeImpl#getBase_Classifier <em>Base Classifier</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Core.impl.CoreDAGNodeImpl#getBase_Lifeline <em>Base Lifeline</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Core.impl.CoreDAGNodeImpl#getBase_ConnectableElement <em>Base Connectable Element</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Core.impl.CoreDAGNodeImpl#isStateful <em>Stateful</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Core.impl.CoreDAGNodeImpl#getOrigin <em>Origin</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Core.impl.CoreDAGNodeImpl#getFailureCoverage <em>Failure Coverage</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Core.impl.CoreDAGNodeImpl#getPercPermFault <em>Perc Perm Fault</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Core.impl.CoreDAGNodeImpl#getSsAvail <em>Ss Avail</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Core.impl.CoreDAGNodeImpl#getUnreliability <em>Unreliability</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Core.impl.CoreDAGNodeImpl#getReliability <em>Reliability</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Core.impl.CoreDAGNodeImpl#getMissionTime <em>Mission Time</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Core.impl.CoreDAGNodeImpl#getAvailLevel <em>Avail Level</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Core.impl.CoreDAGNodeImpl#getReliabilityLevel <em>Reliability Level</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Core.impl.CoreDAGNodeImpl#getSafetyLevel <em>Safety Level</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Core.impl.CoreDAGNodeImpl#getComplexity <em>Complexity</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Core.impl.CoreDAGNodeImpl#getFault <em>Fault</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Core.impl.CoreDAGNodeImpl#getError <em>Error</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Core.impl.CoreDAGNodeImpl#getFailure <em>Failure</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Core.impl.CoreDAGNodeImpl#getHazard <em>Hazard</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Core.impl.CoreDAGNodeImpl#getRepair <em>Repair</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Core.impl.CoreDAGNodeImpl#getSubstitutedBy <em>Substituted By</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Core.impl.CoreDAGNodeImpl#getNodeThroughput <em>Node Throughput</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Core.impl.CoreDAGNodeImpl#getType <em>Type</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Core.impl.CoreDAGNodeImpl#getTargetTech <em>Target Tech</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Core.impl.CoreDAGNodeImpl#getProcType <em>Proc Type</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Core.impl.CoreDAGNodeImpl#getStore <em>Store</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Core.impl.CoreDAGNodeImpl#getProvides <em>Provides</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Core.impl.CoreDAGNodeImpl#getSourceType <em>Source Type</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Core.impl.CoreDAGNodeImpl#getRate <em>Rate</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Core.impl.CoreDAGNodeImpl#getParallelism <em>Parallelism</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Core.impl.CoreDAGNodeImpl#getOperation <em>Operation</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Core.impl.CoreDAGNodeImpl#getHasSuccessor <em>Has Successor</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Core.impl.CoreDAGNodeImpl#getResMult <em>Res Mult</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Core.impl.CoreDAGNodeImpl#isIsProtected <em>Is Protected</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Core.impl.CoreDAGNodeImpl#isIsActive <em>Is Active</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Core.impl.CoreDAGNodeImpl#getBase_Property <em>Base Property</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Core.impl.CoreDAGNodeImpl#getBase_InstanceSpecification <em>Base Instance Specification</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Core.impl.CoreDAGNodeImpl#getBase_Classifier <em>Base Classifier</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Core.impl.CoreDAGNodeImpl#getBase_Lifeline <em>Base Lifeline</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Core.impl.CoreDAGNodeImpl#getBase_ConnectableElement <em>Base Connectable Element</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Core.impl.CoreDAGNodeImpl#isStateful <em>Stateful</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Core.impl.CoreDAGNodeImpl#getOrigin <em>Origin</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Core.impl.CoreDAGNodeImpl#getFailureCoverage <em>Failure Coverage</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Core.impl.CoreDAGNodeImpl#getPercPermFault <em>Perc Perm Fault</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Core.impl.CoreDAGNodeImpl#getSsAvail <em>Ss Avail</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Core.impl.CoreDAGNodeImpl#getUnreliability <em>Unreliability</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Core.impl.CoreDAGNodeImpl#getReliability <em>Reliability</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Core.impl.CoreDAGNodeImpl#getMissionTime <em>Mission Time</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Core.impl.CoreDAGNodeImpl#getAvailLevel <em>Avail Level</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Core.impl.CoreDAGNodeImpl#getReliabilityLevel <em>Reliability Level</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Core.impl.CoreDAGNodeImpl#getSafetyLevel <em>Safety Level</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Core.impl.CoreDAGNodeImpl#getComplexity <em>Complexity</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Core.impl.CoreDAGNodeImpl#getFault <em>Fault</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Core.impl.CoreDAGNodeImpl#getError <em>Error</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Core.impl.CoreDAGNodeImpl#getFailure <em>Failure</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Core.impl.CoreDAGNodeImpl#getHazard <em>Hazard</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Core.impl.CoreDAGNodeImpl#getRepair <em>Repair</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Core.impl.CoreDAGNodeImpl#getSubstitutedBy <em>Substituted By</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Core.impl.CoreDAGNodeImpl#getNodeThroughput <em>Node Throughput</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Core.impl.CoreDAGNodeImpl#getType <em>Type</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Core.impl.CoreDAGNodeImpl#getTargetTech <em>Target Tech</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Core.impl.CoreDAGNodeImpl#getProcType <em>Proc Type</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Core.impl.CoreDAGNodeImpl#getStore <em>Store</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Core.impl.CoreDAGNodeImpl#getProvides <em>Provides</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Core.impl.CoreDAGNodeImpl#getSourceType <em>Source Type</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Core.impl.CoreDAGNodeImpl#getRate <em>Rate</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Core.impl.CoreDAGNodeImpl#getParallelism <em>Parallelism</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Core.impl.CoreDAGNodeImpl#getOperation <em>Operation</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Core.impl.CoreDAGNodeImpl#getHasSuccessor <em>Has Successor</em>}</li>
  * </ul>
  *
  * @generated

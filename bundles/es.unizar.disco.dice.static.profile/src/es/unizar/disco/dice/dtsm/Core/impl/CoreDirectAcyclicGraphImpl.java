@@ -1,10 +1,10 @@
 /**
  */
-package es.unizar.disco.dice.dtsm.Core.impl;
+package es.unizar.disco.dice.DTSM.Core.impl;
 
-import es.unizar.disco.dice.dtsm.Core.CoreDAGSourceNode;
-import es.unizar.disco.dice.dtsm.Core.CoreDirectAcyclicGraph;
-import es.unizar.disco.dice.dtsm.Core.CorePackage;
+import es.unizar.disco.dice.DTSM.Core.CoreDAGSourceNode;
+import es.unizar.disco.dice.DTSM.Core.CoreDirectAcyclicGraph;
+import es.unizar.disco.dice.DTSM.Core.CorePackage;
 
 import java.util.Collection;
 
@@ -29,8 +29,8 @@ import org.eclipse.papyrus.MARTE.MARTE_AnalysisModel.GQAM.impl.GaScenarioImpl;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link es.unizar.disco.dice.dtsm.Core.impl.CoreDirectAcyclicGraphImpl#getHasSourceNode <em>Has Source Node</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Core.impl.CoreDirectAcyclicGraphImpl#getBase_Class <em>Base Class</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Core.impl.CoreDirectAcyclicGraphImpl#getHasSourceNode <em>Has Source Node</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Core.impl.CoreDirectAcyclicGraphImpl#getBase_Class <em>Base Class</em>}</li>
  * </ul>
  *
  * @generated

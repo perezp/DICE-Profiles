@@ -26,7 +26,9 @@ public enum SourceType implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	DATA_STREAM(0, "dataStream", "dataStream"), /**
+	DATA_STREAM(0, "dataStream", "dataStream"),
+
+	/**
 	 * The '<em><b>Webapi</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

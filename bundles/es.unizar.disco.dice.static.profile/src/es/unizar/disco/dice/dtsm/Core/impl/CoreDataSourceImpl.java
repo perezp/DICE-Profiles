@@ -1,11 +1,11 @@
 /**
  */
-package es.unizar.disco.dice.dtsm.Core.impl;
+package es.unizar.disco.dice.DTSM.Core.impl;
 
 import es.unizar.disco.dice.DPIM.impl.DpimStorageNodeImpl;
 
-import es.unizar.disco.dice.dtsm.Core.CoreDataSource;
-import es.unizar.disco.dice.dtsm.Core.CorePackage;
+import es.unizar.disco.dice.DTSM.Core.CoreDataSource;
+import es.unizar.disco.dice.DTSM.Core.CorePackage;
 
 import org.eclipse.emf.ecore.EClass;
 

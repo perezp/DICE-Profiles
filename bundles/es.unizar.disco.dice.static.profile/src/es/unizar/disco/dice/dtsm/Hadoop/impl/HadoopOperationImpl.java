@@ -1,9 +1,9 @@
 /**
  */
-package es.unizar.disco.dice.dtsm.Hadoop.impl;
+package es.unizar.disco.dice.DTSM.Hadoop.impl;
 
-import es.unizar.disco.dice.dtsm.Hadoop.HadoopOperation;
-import es.unizar.disco.dice.dtsm.Hadoop.HadoopPackage;
+import es.unizar.disco.dice.DTSM.Hadoop.HadoopOperation;
+import es.unizar.disco.dice.DTSM.Hadoop.HadoopPackage;
 
 import java.util.Collection;
 
@@ -27,8 +27,8 @@ import org.eclipse.papyrus.MARTE.MARTE_AnalysisModel.GQAM.impl.GaStepImpl;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link es.unizar.disco.dice.dtsm.Hadoop.impl.HadoopOperationImpl#getParallelism <em>Parallelism</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Hadoop.impl.HadoopOperationImpl#getNTasks <em>NTasks</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Hadoop.impl.HadoopOperationImpl#getParallelism <em>Parallelism</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Hadoop.impl.HadoopOperationImpl#getNTasks <em>NTasks</em>}</li>
  * </ul>
  *
  * @generated

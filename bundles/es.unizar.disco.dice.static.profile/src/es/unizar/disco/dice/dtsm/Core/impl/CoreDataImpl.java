@@ -1,13 +1,13 @@
 /**
  */
-package es.unizar.disco.dice.dtsm.Core.impl;
+package es.unizar.disco.dice.DTSM.Core.impl;
 
 import es.unizar.disco.dice.Complex_Data_Types.DiceDataSpecification;
 import es.unizar.disco.dice.Complex_Data_Types.DiceDataVolume;
 
-import es.unizar.disco.dice.dtsm.Core.CoreData;
-import es.unizar.disco.dice.dtsm.Core.CoreDataSource;
-import es.unizar.disco.dice.dtsm.Core.CorePackage;
+import es.unizar.disco.dice.DTSM.Core.CoreData;
+import es.unizar.disco.dice.DTSM.Core.CoreDataSource;
+import es.unizar.disco.dice.DTSM.Core.CorePackage;
 
 import java.util.Collection;
 
@@ -32,10 +32,10 @@ import org.eclipse.emf.ecore.util.EObjectResolvingEList;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link es.unizar.disco.dice.dtsm.Core.impl.CoreDataImpl#getLocation <em>Location</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Core.impl.CoreDataImpl#getHasSpecification <em>Has Specification</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Core.impl.CoreDataImpl#getHasVolume <em>Has Volume</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Core.impl.CoreDataImpl#getBase_Class <em>Base Class</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Core.impl.CoreDataImpl#getLocation <em>Location</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Core.impl.CoreDataImpl#getHasSpecification <em>Has Specification</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Core.impl.CoreDataImpl#getHasVolume <em>Has Volume</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Core.impl.CoreDataImpl#getBase_Class <em>Base Class</em>}</li>
  * </ul>
  *
  * @generated

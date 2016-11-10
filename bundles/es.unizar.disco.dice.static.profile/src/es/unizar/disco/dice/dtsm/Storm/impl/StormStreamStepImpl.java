@@ -1,11 +1,11 @@
 /**
  */
-package es.unizar.disco.dice.dtsm.Storm.impl;
+package es.unizar.disco.dice.DTSM.Storm.impl;
 
 import es.unizar.disco.dice.Basic_Enumeration_Types.StreamPolicy;
 
-import es.unizar.disco.dice.dtsm.Storm.StormPackage;
-import es.unizar.disco.dice.dtsm.Storm.StormStreamStep;
+import es.unizar.disco.dice.DTSM.Storm.StormPackage;
+import es.unizar.disco.dice.DTSM.Storm.StormStreamStep;
 
 import org.eclipse.emf.common.notify.Notification;
 
@@ -23,8 +23,8 @@ import org.eclipse.papyrus.MARTE.MARTE_AnalysisModel.GQAM.impl.GaStepImpl;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link es.unizar.disco.dice.dtsm.Storm.impl.StormStreamStepImpl#getNumTuples <em>Num Tuples</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Storm.impl.StormStreamStepImpl#getGrouping <em>Grouping</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Storm.impl.StormStreamStepImpl#getNumTuples <em>Num Tuples</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Storm.impl.StormStreamStepImpl#getGrouping <em>Grouping</em>}</li>
  * </ul>
  *
  * @generated

@@ -1,14 +1,14 @@
 /**
  */
-package es.unizar.disco.dice.dtsm.Hadoop.util;
+package es.unizar.disco.dice.DTSM.Hadoop.util;
 
 import com.masdes.dam.Core.DaComponent;
 
 import es.unizar.disco.dice.DPIM.DpimComputationNode;
 
-import es.unizar.disco.dice.dtsm.Core.CoreComputationNode;
+import es.unizar.disco.dice.DTSM.Core.CoreComputationNode;
 
-import es.unizar.disco.dice.dtsm.Hadoop.*;
+import es.unizar.disco.dice.DTSM.Hadoop.*;
 
 import org.eclipse.emf.common.notify.Adapter;
 import org.eclipse.emf.common.notify.Notifier;
@@ -32,7 +32,7 @@ import org.eclipse.papyrus.MARTE.MARTE_Foundations.Time.TimedProcessing;
  * The <b>Adapter Factory</b> for the model.
  * It provides an adapter <code>createXXX</code> method for each class of the model.
  * <!-- end-user-doc -->
- * @see es.unizar.disco.dice.dtsm.Hadoop.HadoopPackage
+ * @see es.unizar.disco.dice.DTSM.Hadoop.HadoopPackage
  * @generated
  */
 public class HadoopAdapterFactory extends AdapterFactoryImpl {
@@ -176,13 +176,13 @@ public class HadoopAdapterFactory extends AdapterFactoryImpl {
 
 
 	/**
-	 * Creates a new adapter for an object of class '{@link es.unizar.disco.dice.dtsm.Hadoop.HadoopMapReduceJob <em>Map Reduce Job</em>}'.
+	 * Creates a new adapter for an object of class '{@link es.unizar.disco.dice.DTSM.Hadoop.HadoopMapReduceJob <em>Map Reduce Job</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see es.unizar.disco.dice.dtsm.Hadoop.HadoopMapReduceJob
+	 * @see es.unizar.disco.dice.DTSM.Hadoop.HadoopMapReduceJob
 	 * @generated
 	 */
 	public Adapter createHadoopMapReduceJobAdapter() {
@@ -190,13 +190,13 @@ public class HadoopAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link es.unizar.disco.dice.dtsm.Hadoop.HadoopMapReducePhase <em>Map Reduce Phase</em>}'.
+	 * Creates a new adapter for an object of class '{@link es.unizar.disco.dice.DTSM.Hadoop.HadoopMapReducePhase <em>Map Reduce Phase</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see es.unizar.disco.dice.dtsm.Hadoop.HadoopMapReducePhase
+	 * @see es.unizar.disco.dice.DTSM.Hadoop.HadoopMapReducePhase
 	 * @generated
 	 */
 	public Adapter createHadoopMapReducePhaseAdapter() {
@@ -204,13 +204,13 @@ public class HadoopAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link es.unizar.disco.dice.dtsm.Hadoop.HadoopMap <em>Map</em>}'.
+	 * Creates a new adapter for an object of class '{@link es.unizar.disco.dice.DTSM.Hadoop.HadoopMap <em>Map</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see es.unizar.disco.dice.dtsm.Hadoop.HadoopMap
+	 * @see es.unizar.disco.dice.DTSM.Hadoop.HadoopMap
 	 * @generated
 	 */
 	public Adapter createHadoopMapAdapter() {
@@ -218,13 +218,13 @@ public class HadoopAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link es.unizar.disco.dice.dtsm.Hadoop.HadoopOperation <em>Operation</em>}'.
+	 * Creates a new adapter for an object of class '{@link es.unizar.disco.dice.DTSM.Hadoop.HadoopOperation <em>Operation</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see es.unizar.disco.dice.dtsm.Hadoop.HadoopOperation
+	 * @see es.unizar.disco.dice.DTSM.Hadoop.HadoopOperation
 	 * @generated
 	 */
 	public Adapter createHadoopOperationAdapter() {
@@ -232,13 +232,13 @@ public class HadoopAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link es.unizar.disco.dice.dtsm.Hadoop.HadoopReduce <em>Reduce</em>}'.
+	 * Creates a new adapter for an object of class '{@link es.unizar.disco.dice.DTSM.Hadoop.HadoopReduce <em>Reduce</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see es.unizar.disco.dice.dtsm.Hadoop.HadoopReduce
+	 * @see es.unizar.disco.dice.DTSM.Hadoop.HadoopReduce
 	 * @generated
 	 */
 	public Adapter createHadoopReduceAdapter() {
@@ -246,13 +246,13 @@ public class HadoopAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link es.unizar.disco.dice.dtsm.Hadoop.HadoopScenario <em>Scenario</em>}'.
+	 * Creates a new adapter for an object of class '{@link es.unizar.disco.dice.DTSM.Hadoop.HadoopScenario <em>Scenario</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see es.unizar.disco.dice.dtsm.Hadoop.HadoopScenario
+	 * @see es.unizar.disco.dice.DTSM.Hadoop.HadoopScenario
 	 * @generated
 	 */
 	public Adapter createHadoopScenarioAdapter() {
@@ -260,13 +260,13 @@ public class HadoopAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link es.unizar.disco.dice.dtsm.Hadoop.HadoopWorkloadEvent <em>Workload Event</em>}'.
+	 * Creates a new adapter for an object of class '{@link es.unizar.disco.dice.DTSM.Hadoop.HadoopWorkloadEvent <em>Workload Event</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see es.unizar.disco.dice.dtsm.Hadoop.HadoopWorkloadEvent
+	 * @see es.unizar.disco.dice.DTSM.Hadoop.HadoopWorkloadEvent
 	 * @generated
 	 */
 	public Adapter createHadoopWorkloadEventAdapter() {
@@ -274,13 +274,13 @@ public class HadoopAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link es.unizar.disco.dice.dtsm.Hadoop.HadoopComputationNode <em>Computation Node</em>}'.
+	 * Creates a new adapter for an object of class '{@link es.unizar.disco.dice.DTSM.Hadoop.HadoopComputationNode <em>Computation Node</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see es.unizar.disco.dice.dtsm.Hadoop.HadoopComputationNode
+	 * @see es.unizar.disco.dice.DTSM.Hadoop.HadoopComputationNode
 	 * @generated
 	 */
 	public Adapter createHadoopComputationNodeAdapter() {
@@ -414,13 +414,13 @@ public class HadoopAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link es.unizar.disco.dice.dtsm.Core.CoreComputationNode <em>Computation Node</em>}'.
+	 * Creates a new adapter for an object of class '{@link es.unizar.disco.dice.DTSM.Core.CoreComputationNode <em>Computation Node</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see es.unizar.disco.dice.dtsm.Core.CoreComputationNode
+	 * @see es.unizar.disco.dice.DTSM.Core.CoreComputationNode
 	 * @generated
 	 */
 	public Adapter createCoreComputationNodeAdapter() {

@@ -1,9 +1,9 @@
 /**
  */
-package es.unizar.disco.dice.dtsm.Storm.impl;
+package es.unizar.disco.dice.DTSM.Storm.impl;
 
-import es.unizar.disco.dice.dtsm.Storm.StormPackage;
-import es.unizar.disco.dice.dtsm.Storm.StormZookeeper;
+import es.unizar.disco.dice.DTSM.Storm.StormPackage;
+import es.unizar.disco.dice.DTSM.Storm.StormZookeeper;
 
 import org.eclipse.emf.common.notify.Notification;
 
@@ -23,13 +23,13 @@ import org.eclipse.uml2.uml.Classifier;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link es.unizar.disco.dice.dtsm.Storm.impl.StormZookeeperImpl#getSessionTimeout <em>Session Timeout</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Storm.impl.StormZookeeperImpl#getConnectionTimeout <em>Connection Timeout</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Storm.impl.StormZookeeperImpl#getRetryTime <em>Retry Time</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Storm.impl.StormZookeeperImpl#getRetryInterval <em>Retry Interval</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Storm.impl.StormZookeeperImpl#getUser <em>User</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Storm.impl.StormZookeeperImpl#getPassword <em>Password</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Storm.impl.StormZookeeperImpl#getBase_Classifier <em>Base Classifier</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Storm.impl.StormZookeeperImpl#getSessionTimeout <em>Session Timeout</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Storm.impl.StormZookeeperImpl#getConnectionTimeout <em>Connection Timeout</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Storm.impl.StormZookeeperImpl#getRetryTime <em>Retry Time</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Storm.impl.StormZookeeperImpl#getRetryInterval <em>Retry Interval</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Storm.impl.StormZookeeperImpl#getUser <em>User</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Storm.impl.StormZookeeperImpl#getPassword <em>Password</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Storm.impl.StormZookeeperImpl#getBase_Classifier <em>Base Classifier</em>}</li>
  * </ul>
  *
  * @generated

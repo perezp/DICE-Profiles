@@ -1,18 +1,18 @@
 /**
  */
-package es.unizar.disco.dice.dtsm.Storm.util;
+package es.unizar.disco.dice.DTSM.Storm.util;
 
 import com.masdes.dam.Core.DaComponent;
 
 import es.unizar.disco.dice.DPIM.DpimComputationNode;
 import es.unizar.disco.dice.DPIM.DpimSourceNode;
 
-import es.unizar.disco.dice.dtsm.Core.CoreComputationNode;
-import es.unizar.disco.dice.dtsm.Core.CoreDAGNode;
-import es.unizar.disco.dice.dtsm.Core.CoreDAGSourceNode;
-import es.unizar.disco.dice.dtsm.Core.CoreDirectAcyclicGraph;
+import es.unizar.disco.dice.DTSM.Core.CoreComputationNode;
+import es.unizar.disco.dice.DTSM.Core.CoreDAGNode;
+import es.unizar.disco.dice.DTSM.Core.CoreDAGSourceNode;
+import es.unizar.disco.dice.DTSM.Core.CoreDirectAcyclicGraph;
 
-import es.unizar.disco.dice.dtsm.Storm.*;
+import es.unizar.disco.dice.DTSM.Storm.*;
 
 import org.eclipse.emf.common.notify.Adapter;
 import org.eclipse.emf.common.notify.Notifier;
@@ -35,7 +35,7 @@ import org.eclipse.papyrus.MARTE.MARTE_Foundations.Time.TimedProcessing;
  * The <b>Adapter Factory</b> for the model.
  * It provides an adapter <code>createXXX</code> method for each class of the model.
  * <!-- end-user-doc -->
- * @see es.unizar.disco.dice.dtsm.Storm.StormPackage
+ * @see es.unizar.disco.dice.DTSM.Storm.StormPackage
  * @generated
  */
 public class StormAdapterFactory extends AdapterFactoryImpl {
@@ -191,13 +191,13 @@ public class StormAdapterFactory extends AdapterFactoryImpl {
 
 
 	/**
-	 * Creates a new adapter for an object of class '{@link es.unizar.disco.dice.dtsm.Storm.StormBolt <em>Bolt</em>}'.
+	 * Creates a new adapter for an object of class '{@link es.unizar.disco.dice.DTSM.Storm.StormBolt <em>Bolt</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see es.unizar.disco.dice.dtsm.Storm.StormBolt
+	 * @see es.unizar.disco.dice.DTSM.Storm.StormBolt
 	 * @generated
 	 */
 	public Adapter createStormBoltAdapter() {
@@ -205,13 +205,13 @@ public class StormAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link es.unizar.disco.dice.dtsm.Storm.StormSpout <em>Spout</em>}'.
+	 * Creates a new adapter for an object of class '{@link es.unizar.disco.dice.DTSM.Storm.StormSpout <em>Spout</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see es.unizar.disco.dice.dtsm.Storm.StormSpout
+	 * @see es.unizar.disco.dice.DTSM.Storm.StormSpout
 	 * @generated
 	 */
 	public Adapter createStormSpoutAdapter() {
@@ -219,13 +219,13 @@ public class StormAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link es.unizar.disco.dice.dtsm.Storm.StormScenarioTopology <em>Scenario Topology</em>}'.
+	 * Creates a new adapter for an object of class '{@link es.unizar.disco.dice.DTSM.Storm.StormScenarioTopology <em>Scenario Topology</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see es.unizar.disco.dice.dtsm.Storm.StormScenarioTopology
+	 * @see es.unizar.disco.dice.DTSM.Storm.StormScenarioTopology
 	 * @generated
 	 */
 	public Adapter createStormScenarioTopologyAdapter() {
@@ -233,13 +233,13 @@ public class StormAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link es.unizar.disco.dice.dtsm.Storm.StormApplication <em>Application</em>}'.
+	 * Creates a new adapter for an object of class '{@link es.unizar.disco.dice.DTSM.Storm.StormApplication <em>Application</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see es.unizar.disco.dice.dtsm.Storm.StormApplication
+	 * @see es.unizar.disco.dice.DTSM.Storm.StormApplication
 	 * @generated
 	 */
 	public Adapter createStormApplicationAdapter() {
@@ -247,13 +247,13 @@ public class StormAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link es.unizar.disco.dice.dtsm.Storm.StormNimbus <em>Nimbus</em>}'.
+	 * Creates a new adapter for an object of class '{@link es.unizar.disco.dice.DTSM.Storm.StormNimbus <em>Nimbus</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see es.unizar.disco.dice.dtsm.Storm.StormNimbus
+	 * @see es.unizar.disco.dice.DTSM.Storm.StormNimbus
 	 * @generated
 	 */
 	public Adapter createStormNimbusAdapter() {
@@ -261,13 +261,13 @@ public class StormAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link es.unizar.disco.dice.dtsm.Storm.StormSupervisor <em>Supervisor</em>}'.
+	 * Creates a new adapter for an object of class '{@link es.unizar.disco.dice.DTSM.Storm.StormSupervisor <em>Supervisor</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see es.unizar.disco.dice.dtsm.Storm.StormSupervisor
+	 * @see es.unizar.disco.dice.DTSM.Storm.StormSupervisor
 	 * @generated
 	 */
 	public Adapter createStormSupervisorAdapter() {
@@ -275,13 +275,13 @@ public class StormAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link es.unizar.disco.dice.dtsm.Storm.StormZookeeper <em>Zookeeper</em>}'.
+	 * Creates a new adapter for an object of class '{@link es.unizar.disco.dice.DTSM.Storm.StormZookeeper <em>Zookeeper</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see es.unizar.disco.dice.dtsm.Storm.StormZookeeper
+	 * @see es.unizar.disco.dice.DTSM.Storm.StormZookeeper
 	 * @generated
 	 */
 	public Adapter createStormZookeeperAdapter() {
@@ -289,13 +289,13 @@ public class StormAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link es.unizar.disco.dice.dtsm.Storm.StormStreamStep <em>Stream Step</em>}'.
+	 * Creates a new adapter for an object of class '{@link es.unizar.disco.dice.DTSM.Storm.StormStreamStep <em>Stream Step</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see es.unizar.disco.dice.dtsm.Storm.StormStreamStep
+	 * @see es.unizar.disco.dice.DTSM.Storm.StormStreamStep
 	 * @generated
 	 */
 	public Adapter createStormStreamStepAdapter() {
@@ -429,13 +429,13 @@ public class StormAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link es.unizar.disco.dice.dtsm.Core.CoreDAGNode <em>DAG Node</em>}'.
+	 * Creates a new adapter for an object of class '{@link es.unizar.disco.dice.DTSM.Core.CoreDAGNode <em>DAG Node</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see es.unizar.disco.dice.dtsm.Core.CoreDAGNode
+	 * @see es.unizar.disco.dice.DTSM.Core.CoreDAGNode
 	 * @generated
 	 */
 	public Adapter createCoreDAGNodeAdapter() {
@@ -443,13 +443,13 @@ public class StormAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link es.unizar.disco.dice.dtsm.Core.CoreDAGSourceNode <em>DAG Source Node</em>}'.
+	 * Creates a new adapter for an object of class '{@link es.unizar.disco.dice.DTSM.Core.CoreDAGSourceNode <em>DAG Source Node</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see es.unizar.disco.dice.dtsm.Core.CoreDAGSourceNode
+	 * @see es.unizar.disco.dice.DTSM.Core.CoreDAGSourceNode
 	 * @generated
 	 */
 	public Adapter createCoreDAGSourceNodeAdapter() {
@@ -457,13 +457,13 @@ public class StormAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link es.unizar.disco.dice.dtsm.Core.CoreDirectAcyclicGraph <em>Direct Acyclic Graph</em>}'.
+	 * Creates a new adapter for an object of class '{@link es.unizar.disco.dice.DTSM.Core.CoreDirectAcyclicGraph <em>Direct Acyclic Graph</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see es.unizar.disco.dice.dtsm.Core.CoreDirectAcyclicGraph
+	 * @see es.unizar.disco.dice.DTSM.Core.CoreDirectAcyclicGraph
 	 * @generated
 	 */
 	public Adapter createCoreDirectAcyclicGraphAdapter() {
@@ -471,13 +471,13 @@ public class StormAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link es.unizar.disco.dice.dtsm.Core.CoreComputationNode <em>Computation Node</em>}'.
+	 * Creates a new adapter for an object of class '{@link es.unizar.disco.dice.DTSM.Core.CoreComputationNode <em>Computation Node</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see es.unizar.disco.dice.dtsm.Core.CoreComputationNode
+	 * @see es.unizar.disco.dice.DTSM.Core.CoreComputationNode
 	 * @generated
 	 */
 	public Adapter createCoreComputationNodeAdapter() {

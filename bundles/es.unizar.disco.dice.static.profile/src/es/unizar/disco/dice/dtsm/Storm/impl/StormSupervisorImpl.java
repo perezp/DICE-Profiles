@@ -1,9 +1,9 @@
 /**
  */
-package es.unizar.disco.dice.dtsm.Storm.impl;
+package es.unizar.disco.dice.DTSM.Storm.impl;
 
-import es.unizar.disco.dice.dtsm.Storm.StormPackage;
-import es.unizar.disco.dice.dtsm.Storm.StormSupervisor;
+import es.unizar.disco.dice.DTSM.Storm.StormPackage;
+import es.unizar.disco.dice.DTSM.Storm.StormSupervisor;
 
 import org.eclipse.emf.common.notify.Notification;
 
@@ -23,13 +23,13 @@ import org.eclipse.uml2.uml.Classifier;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link es.unizar.disco.dice.dtsm.Storm.impl.StormSupervisorImpl#getMonitroFrequency <em>Monitro Frequency</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Storm.impl.StormSupervisorImpl#getWorkerSatrtTimeout <em>Worker Satrt Timeout</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Storm.impl.StormSupervisorImpl#getWorkerTimeout <em>Worker Timeout</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Storm.impl.StormSupervisorImpl#getHeartbrackFrequency <em>Heartbrack Frequency</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Storm.impl.StormSupervisorImpl#getMemoryCapacity <em>Memory Capacity</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Storm.impl.StormSupervisorImpl#getCpuCapacity <em>Cpu Capacity</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Storm.impl.StormSupervisorImpl#getBase_Classifier <em>Base Classifier</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Storm.impl.StormSupervisorImpl#getMonitroFrequency <em>Monitro Frequency</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Storm.impl.StormSupervisorImpl#getWorkerSatrtTimeout <em>Worker Satrt Timeout</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Storm.impl.StormSupervisorImpl#getWorkerTimeout <em>Worker Timeout</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Storm.impl.StormSupervisorImpl#getHeartbrackFrequency <em>Heartbrack Frequency</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Storm.impl.StormSupervisorImpl#getMemoryCapacity <em>Memory Capacity</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Storm.impl.StormSupervisorImpl#getCpuCapacity <em>Cpu Capacity</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Storm.impl.StormSupervisorImpl#getBase_Classifier <em>Base Classifier</em>}</li>
  * </ul>
  *
  * @generated

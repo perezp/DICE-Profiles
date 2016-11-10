@@ -1,6 +1,6 @@
 /**
  */
-package es.unizar.disco.dice.dtsm.Core.impl;
+package es.unizar.disco.dice.DTSM.Core.impl;
 
 import com.masdes.dam.Basic_Data_Types.Basic_Data_TypesPackage;
 
@@ -17,30 +17,34 @@ import es.unizar.disco.dice.Basic_Enumeration_Types.impl.Basic_Enumeration_Types
 import es.unizar.disco.dice.Complex_Data_Types.impl.Complex_Data_TypesPackageImpl;
 
 import es.unizar.disco.dice.DDSM.DDSMPackage;
+
 import es.unizar.disco.dice.DDSM.impl.DDSMPackageImpl;
+
 import es.unizar.disco.dice.DICE.DICEPackage;
+
 import es.unizar.disco.dice.DICE.impl.DICEPackageImpl;
+
 import es.unizar.disco.dice.DPIM.DPIMPackage;
 
 import es.unizar.disco.dice.DPIM.impl.DPIMPackageImpl;
 
-import es.unizar.disco.dice.dtsm.Core.CoreComputationNode;
-import es.unizar.disco.dice.dtsm.Core.CoreDAGNode;
-import es.unizar.disco.dice.dtsm.Core.CoreDAGSourceNode;
-import es.unizar.disco.dice.dtsm.Core.CoreData;
-import es.unizar.disco.dice.dtsm.Core.CoreDataSource;
-import es.unizar.disco.dice.dtsm.Core.CoreDirectAcyclicGraph;
-import es.unizar.disco.dice.dtsm.Core.CoreFactory;
-import es.unizar.disco.dice.dtsm.Core.CorePackage;
-import es.unizar.disco.dice.dtsm.Core.CoreStorageNode;
+import es.unizar.disco.dice.DTSM.Core.CoreComputationNode;
+import es.unizar.disco.dice.DTSM.Core.CoreDAGNode;
+import es.unizar.disco.dice.DTSM.Core.CoreDAGSourceNode;
+import es.unizar.disco.dice.DTSM.Core.CoreData;
+import es.unizar.disco.dice.DTSM.Core.CoreDataSource;
+import es.unizar.disco.dice.DTSM.Core.CoreDirectAcyclicGraph;
+import es.unizar.disco.dice.DTSM.Core.CoreFactory;
+import es.unizar.disco.dice.DTSM.Core.CorePackage;
+import es.unizar.disco.dice.DTSM.Core.CoreStorageNode;
 
-import es.unizar.disco.dice.dtsm.Hadoop.HadoopPackage;
+import es.unizar.disco.dice.DTSM.Hadoop.HadoopPackage;
 
-import es.unizar.disco.dice.dtsm.Hadoop.impl.HadoopPackageImpl;
+import es.unizar.disco.dice.DTSM.Hadoop.impl.HadoopPackageImpl;
 
-import es.unizar.disco.dice.dtsm.Storm.StormPackage;
+import es.unizar.disco.dice.DTSM.Storm.StormPackage;
 
-import es.unizar.disco.dice.dtsm.Storm.impl.StormPackageImpl;
+import es.unizar.disco.dice.DTSM.Storm.impl.StormPackageImpl;
 
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
@@ -124,7 +128,7 @@ public class CorePackageImpl extends EPackageImpl implements CorePackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see org.eclipse.emf.ecore.EPackage.Registry
-	 * @see es.unizar.disco.dice.dtsm.Core.CorePackage#eNS_URI
+	 * @see es.unizar.disco.dice.DTSM.Core.CorePackage#eNS_URI
 	 * @see #init()
 	 * @generated
 	 */

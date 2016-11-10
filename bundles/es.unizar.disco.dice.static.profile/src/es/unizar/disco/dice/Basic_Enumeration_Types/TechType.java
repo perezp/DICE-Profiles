@@ -26,7 +26,9 @@ public enum TechType implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	HADOOP(0, "hadoop", "hadoop"), /**
+	HADOOP(0, "hadoop", "hadoop"),
+
+	/**
 	 * The '<em><b>Spark</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -34,7 +36,9 @@ public enum TechType implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	SPARK(1, "spark", "spark"), /**
+	SPARK(1, "spark", "spark"),
+
+	/**
 	 * The '<em><b>Storm</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -42,7 +46,9 @@ public enum TechType implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	STORM(2, "storm", "storm"), /**
+	STORM(2, "storm", "storm"),
+
+	/**
 	 * The '<em><b>Oryx2</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

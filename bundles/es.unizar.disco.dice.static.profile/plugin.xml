@@ -26,7 +26,7 @@
       <!-- @generated DICE -->
       <package
             uri="http://es.unizar.disco.dice/profiles/DTSM/Core/1.0"
-            class="es.unizar.disco.dice.dtsm.Core.CorePackage"
+            class="es.unizar.disco.dice.DTSM.Core.CorePackage"
             genModel="resources/DICE.genmodel"/>
    </extension>
 
@@ -34,7 +34,7 @@
       <!-- @generated DICE -->
       <package
             uri="http://es.unizar.disco.dice/profiles/DTSM/Storm/1.0"
-            class="es.unizar.disco.dice.dtsm.Storm.StormPackage"
+            class="es.unizar.disco.dice.DTSM.Storm.StormPackage"
             genModel="resources/DICE.genmodel"/>
    </extension>
 
@@ -42,7 +42,7 @@
       <!-- @generated DICE -->
       <package
             uri="http://es.unizar.disco.dice/profiles/DTSM/Hadoop/1.0"
-            class="es.unizar.disco.dice.dtsm.Hadoop.HadoopPackage"
+            class="es.unizar.disco.dice.DTSM.Hadoop.HadoopPackage"
             genModel="resources/DICE.genmodel"/>
    </extension>
 

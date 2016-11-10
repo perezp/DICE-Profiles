@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: %pluginName
 Bundle-SymbolicName: es.unizar.disco.dice.static.profile;singleton:=true
-Bundle-Version: 0.7.0.qualifier
+Bundle-Version: 0.8.0.qualifier
 Bundle-ClassPath: .
 Bundle-Vendor: %providerName
 Bundle-Localization: plugin
@@ -23,15 +23,15 @@ Export-Package: es.unizar.disco.dice.Basic_Data_Types,
  es.unizar.disco.dice.DPIM,
  es.unizar.disco.dice.DPIM.impl,
  es.unizar.disco.dice.DPIM.util,
- es.unizar.disco.dice.dtsm.Core,
- es.unizar.disco.dice.dtsm.Core.impl,
- es.unizar.disco.dice.dtsm.Core.util,
- es.unizar.disco.dice.dtsm.Hadoop,
- es.unizar.disco.dice.dtsm.Hadoop.impl,
- es.unizar.disco.dice.dtsm.Hadoop.util,
- es.unizar.disco.dice.dtsm.Storm,
- es.unizar.disco.dice.dtsm.Storm.impl,
- es.unizar.disco.dice.dtsm.Storm.util,
+ es.unizar.disco.dice.DTSM.Core,
+ es.unizar.disco.dice.DTSM.Core.impl,
+ es.unizar.disco.dice.DTSM.Core.util,
+ es.unizar.disco.dice.DTSM.Hadoop,
+ es.unizar.disco.dice.DTSM.Hadoop.impl,
+ es.unizar.disco.dice.DTSM.Hadoop.util,
+ es.unizar.disco.dice.DTSM.Storm,
+ es.unizar.disco.dice.DTSM.Storm.impl,
+ es.unizar.disco.dice.DTSM.Storm.util,
  es.unizar.disco.dice.DDSM,
  es.unizar.disco.dice.DDSM.impl,
  es.unizar.disco.dice.DDSM.util

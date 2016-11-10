@@ -2,14 +2,15 @@
  */
 package es.unizar.disco.dice.DDSM;
 
-import java.util.Map;
-
-import org.eclipse.emf.common.util.DiagnosticChain;
 
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Ddsm Nimbus</b></em>'.
  * <!-- end-user-doc -->
+ *
+ * <!-- begin-model-doc -->
+ * self.componentType = DDSMcomponentType::MasterNode
+ * <!-- end-model-doc -->
  *
  * <p>
  * The following features are supported:
@@ -24,7 +25,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
  * </ul>
  *
  * @see es.unizar.disco.dice.DDSM.DDSMPackage#getDdsmNimbus()
- * @model
+ * @model annotation="http://www.eclipse.org/emf/2002/Ecore constraints='NimbusTypeMasterNode'"
  * @generated
  */
 public interface DdsmNimbus extends DdsmInternalComponent {
@@ -189,18 +190,5 @@ public interface DdsmNimbus extends DdsmInternalComponent {
 	 * @generated
 	 */
 	void setRetryInterval(int value);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.componentType = DDSMcomponentType::MasterNode
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model
-	 * @generated
-	 */
-	boolean NimbusTypeMasterNode(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 } // DdsmNimbus

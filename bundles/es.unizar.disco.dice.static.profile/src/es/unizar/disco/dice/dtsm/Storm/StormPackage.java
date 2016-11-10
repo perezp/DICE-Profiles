@@ -1,8 +1,8 @@
 /**
  */
-package es.unizar.disco.dice.dtsm.Storm;
+package es.unizar.disco.dice.DTSM.Storm;
 
-import es.unizar.disco.dice.dtsm.Core.CorePackage;
+import es.unizar.disco.dice.DTSM.Core.CorePackage;
 
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
@@ -22,7 +22,7 @@ import org.eclipse.papyrus.MARTE.MARTE_AnalysisModel.GQAM.GQAMPackage;
  *   <li>and each data type</li>
  * </ul>
  * <!-- end-user-doc -->
- * @see es.unizar.disco.dice.dtsm.Storm.StormFactory
+ * @see es.unizar.disco.dice.DTSM.Storm.StormFactory
  * @model kind="package"
  * @generated
  */
@@ -57,14 +57,14 @@ public interface StormPackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	StormPackage eINSTANCE = es.unizar.disco.dice.dtsm.Storm.impl.StormPackageImpl.init();
+	StormPackage eINSTANCE = es.unizar.disco.dice.DTSM.Storm.impl.StormPackageImpl.init();
 
 	/**
-	 * The meta object id for the '{@link es.unizar.disco.dice.dtsm.Storm.impl.StormBoltImpl <em>Bolt</em>}' class.
+	 * The meta object id for the '{@link es.unizar.disco.dice.DTSM.Storm.impl.StormBoltImpl <em>Bolt</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see es.unizar.disco.dice.dtsm.Storm.impl.StormBoltImpl
-	 * @see es.unizar.disco.dice.dtsm.Storm.impl.StormPackageImpl#getStormBolt()
+	 * @see es.unizar.disco.dice.DTSM.Storm.impl.StormBoltImpl
+	 * @see es.unizar.disco.dice.DTSM.Storm.impl.StormPackageImpl#getStormBolt()
 	 * @generated
 	 */
 	int STORM_BOLT = 0;
@@ -817,11 +817,11 @@ public interface StormPackage extends EPackage {
 	int STORM_BOLT_FEATURE_COUNT = CorePackage.CORE_DAG_NODE_FEATURE_COUNT + 5;
 
 	/**
-	 * The meta object id for the '{@link es.unizar.disco.dice.dtsm.Storm.impl.StormSpoutImpl <em>Spout</em>}' class.
+	 * The meta object id for the '{@link es.unizar.disco.dice.DTSM.Storm.impl.StormSpoutImpl <em>Spout</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see es.unizar.disco.dice.dtsm.Storm.impl.StormSpoutImpl
-	 * @see es.unizar.disco.dice.dtsm.Storm.impl.StormPackageImpl#getStormSpout()
+	 * @see es.unizar.disco.dice.DTSM.Storm.impl.StormSpoutImpl
+	 * @see es.unizar.disco.dice.DTSM.Storm.impl.StormPackageImpl#getStormSpout()
 	 * @generated
 	 */
 	int STORM_SPOUT = 1;
@@ -1547,11 +1547,11 @@ public interface StormPackage extends EPackage {
 	int STORM_SPOUT_FEATURE_COUNT = CorePackage.CORE_DAG_SOURCE_NODE_FEATURE_COUNT + 1;
 
 	/**
-	 * The meta object id for the '{@link es.unizar.disco.dice.dtsm.Storm.impl.StormScenarioTopologyImpl <em>Scenario Topology</em>}' class.
+	 * The meta object id for the '{@link es.unizar.disco.dice.DTSM.Storm.impl.StormScenarioTopologyImpl <em>Scenario Topology</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see es.unizar.disco.dice.dtsm.Storm.impl.StormScenarioTopologyImpl
-	 * @see es.unizar.disco.dice.dtsm.Storm.impl.StormPackageImpl#getStormScenarioTopology()
+	 * @see es.unizar.disco.dice.DTSM.Storm.impl.StormScenarioTopologyImpl
+	 * @see es.unizar.disco.dice.DTSM.Storm.impl.StormPackageImpl#getStormScenarioTopology()
 	 * @generated
 	 */
 	int STORM_SCENARIO_TOPOLOGY = 2;
@@ -1872,11 +1872,11 @@ public interface StormPackage extends EPackage {
 	int STORM_SCENARIO_TOPOLOGY_FEATURE_COUNT = CorePackage.CORE_DIRECT_ACYCLIC_GRAPH_FEATURE_COUNT + 4;
 
 	/**
-	 * The meta object id for the '{@link es.unizar.disco.dice.dtsm.Storm.impl.StormApplicationImpl <em>Application</em>}' class.
+	 * The meta object id for the '{@link es.unizar.disco.dice.DTSM.Storm.impl.StormApplicationImpl <em>Application</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see es.unizar.disco.dice.dtsm.Storm.impl.StormApplicationImpl
-	 * @see es.unizar.disco.dice.dtsm.Storm.impl.StormPackageImpl#getStormApplication()
+	 * @see es.unizar.disco.dice.DTSM.Storm.impl.StormApplicationImpl
+	 * @see es.unizar.disco.dice.DTSM.Storm.impl.StormPackageImpl#getStormApplication()
 	 * @generated
 	 */
 	int STORM_APPLICATION = 3;
@@ -2224,11 +2224,11 @@ public interface StormPackage extends EPackage {
 	int STORM_APPLICATION_FEATURE_COUNT = CorePackage.CORE_COMPUTATION_NODE_FEATURE_COUNT + 3;
 
 	/**
-	 * The meta object id for the '{@link es.unizar.disco.dice.dtsm.Storm.impl.StormNimbusImpl <em>Nimbus</em>}' class.
+	 * The meta object id for the '{@link es.unizar.disco.dice.DTSM.Storm.impl.StormNimbusImpl <em>Nimbus</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see es.unizar.disco.dice.dtsm.Storm.impl.StormNimbusImpl
-	 * @see es.unizar.disco.dice.dtsm.Storm.impl.StormPackageImpl#getStormNimbus()
+	 * @see es.unizar.disco.dice.DTSM.Storm.impl.StormNimbusImpl
+	 * @see es.unizar.disco.dice.DTSM.Storm.impl.StormPackageImpl#getStormNimbus()
 	 * @generated
 	 */
 	int STORM_NIMBUS = 4;
@@ -2279,11 +2279,11 @@ public interface StormPackage extends EPackage {
 	int STORM_NIMBUS_FEATURE_COUNT = 4;
 
 	/**
-	 * The meta object id for the '{@link es.unizar.disco.dice.dtsm.Storm.impl.StormSupervisorImpl <em>Supervisor</em>}' class.
+	 * The meta object id for the '{@link es.unizar.disco.dice.DTSM.Storm.impl.StormSupervisorImpl <em>Supervisor</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see es.unizar.disco.dice.dtsm.Storm.impl.StormSupervisorImpl
-	 * @see es.unizar.disco.dice.dtsm.Storm.impl.StormPackageImpl#getStormSupervisor()
+	 * @see es.unizar.disco.dice.DTSM.Storm.impl.StormSupervisorImpl
+	 * @see es.unizar.disco.dice.DTSM.Storm.impl.StormPackageImpl#getStormSupervisor()
 	 * @generated
 	 */
 	int STORM_SUPERVISOR = 5;
@@ -2361,11 +2361,11 @@ public interface StormPackage extends EPackage {
 	int STORM_SUPERVISOR_FEATURE_COUNT = 7;
 
 	/**
-	 * The meta object id for the '{@link es.unizar.disco.dice.dtsm.Storm.impl.StormZookeeperImpl <em>Zookeeper</em>}' class.
+	 * The meta object id for the '{@link es.unizar.disco.dice.DTSM.Storm.impl.StormZookeeperImpl <em>Zookeeper</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see es.unizar.disco.dice.dtsm.Storm.impl.StormZookeeperImpl
-	 * @see es.unizar.disco.dice.dtsm.Storm.impl.StormPackageImpl#getStormZookeeper()
+	 * @see es.unizar.disco.dice.DTSM.Storm.impl.StormZookeeperImpl
+	 * @see es.unizar.disco.dice.DTSM.Storm.impl.StormPackageImpl#getStormZookeeper()
 	 * @generated
 	 */
 	int STORM_ZOOKEEPER = 6;
@@ -2443,11 +2443,11 @@ public interface StormPackage extends EPackage {
 	int STORM_ZOOKEEPER_FEATURE_COUNT = 7;
 
 	/**
-	 * The meta object id for the '{@link es.unizar.disco.dice.dtsm.Storm.impl.StormStreamStepImpl <em>Stream Step</em>}' class.
+	 * The meta object id for the '{@link es.unizar.disco.dice.DTSM.Storm.impl.StormStreamStepImpl <em>Stream Step</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see es.unizar.disco.dice.dtsm.Storm.impl.StormStreamStepImpl
-	 * @see es.unizar.disco.dice.dtsm.Storm.impl.StormPackageImpl#getStormStreamStep()
+	 * @see es.unizar.disco.dice.DTSM.Storm.impl.StormStreamStepImpl
+	 * @see es.unizar.disco.dice.DTSM.Storm.impl.StormPackageImpl#getStormStreamStep()
 	 * @generated
 	 */
 	int STORM_STREAM_STEP = 7;
@@ -2841,443 +2841,443 @@ public interface StormPackage extends EPackage {
 
 
 	/**
-	 * Returns the meta object for class '{@link es.unizar.disco.dice.dtsm.Storm.StormBolt <em>Bolt</em>}'.
+	 * Returns the meta object for class '{@link es.unizar.disco.dice.DTSM.Storm.StormBolt <em>Bolt</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>Bolt</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Storm.StormBolt
+	 * @see es.unizar.disco.dice.DTSM.Storm.StormBolt
 	 * @generated
 	 */
 	EClass getStormBolt();
 
 	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.dtsm.Storm.StormBolt#getD <em>D</em>}'.
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DTSM.Storm.StormBolt#getD <em>D</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>D</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Storm.StormBolt#getD()
+	 * @see es.unizar.disco.dice.DTSM.Storm.StormBolt#getD()
 	 * @see #getStormBolt()
 	 * @generated
 	 */
 	EAttribute getStormBolt_D();
 
 	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.dtsm.Storm.StormBolt#getAlpha <em>Alpha</em>}'.
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DTSM.Storm.StormBolt#getAlpha <em>Alpha</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Alpha</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Storm.StormBolt#getAlpha()
+	 * @see es.unizar.disco.dice.DTSM.Storm.StormBolt#getAlpha()
 	 * @see #getStormBolt()
 	 * @generated
 	 */
 	EAttribute getStormBolt_Alpha();
 
 	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.dtsm.Storm.StormBolt#getSigma <em>Sigma</em>}'.
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DTSM.Storm.StormBolt#getSigma <em>Sigma</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Sigma</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Storm.StormBolt#getSigma()
+	 * @see es.unizar.disco.dice.DTSM.Storm.StormBolt#getSigma()
 	 * @see #getStormBolt()
 	 * @generated
 	 */
 	EAttribute getStormBolt_Sigma();
 
 	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.dtsm.Storm.StormBolt#getMinRebootTime <em>Min Reboot Time</em>}'.
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DTSM.Storm.StormBolt#getMinRebootTime <em>Min Reboot Time</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Min Reboot Time</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Storm.StormBolt#getMinRebootTime()
+	 * @see es.unizar.disco.dice.DTSM.Storm.StormBolt#getMinRebootTime()
 	 * @see #getStormBolt()
 	 * @generated
 	 */
 	EAttribute getStormBolt_MinRebootTime();
 
 	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.dtsm.Storm.StormBolt#getMaxRebootTime <em>Max Reboot Time</em>}'.
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DTSM.Storm.StormBolt#getMaxRebootTime <em>Max Reboot Time</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Max Reboot Time</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Storm.StormBolt#getMaxRebootTime()
+	 * @see es.unizar.disco.dice.DTSM.Storm.StormBolt#getMaxRebootTime()
 	 * @see #getStormBolt()
 	 * @generated
 	 */
 	EAttribute getStormBolt_MaxRebootTime();
 
 	/**
-	 * Returns the meta object for class '{@link es.unizar.disco.dice.dtsm.Storm.StormSpout <em>Spout</em>}'.
+	 * Returns the meta object for class '{@link es.unizar.disco.dice.DTSM.Storm.StormSpout <em>Spout</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>Spout</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Storm.StormSpout
+	 * @see es.unizar.disco.dice.DTSM.Storm.StormSpout
 	 * @generated
 	 */
 	EClass getStormSpout();
 
 	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.dtsm.Storm.StormSpout#getAvgEmitRate <em>Avg Emit Rate</em>}'.
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DTSM.Storm.StormSpout#getAvgEmitRate <em>Avg Emit Rate</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Avg Emit Rate</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Storm.StormSpout#getAvgEmitRate()
+	 * @see es.unizar.disco.dice.DTSM.Storm.StormSpout#getAvgEmitRate()
 	 * @see #getStormSpout()
 	 * @generated
 	 */
 	EAttribute getStormSpout_AvgEmitRate();
 
 	/**
-	 * Returns the meta object for class '{@link es.unizar.disco.dice.dtsm.Storm.StormScenarioTopology <em>Scenario Topology</em>}'.
+	 * Returns the meta object for class '{@link es.unizar.disco.dice.DTSM.Storm.StormScenarioTopology <em>Scenario Topology</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>Scenario Topology</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Storm.StormScenarioTopology
+	 * @see es.unizar.disco.dice.DTSM.Storm.StormScenarioTopology
 	 * @generated
 	 */
 	EClass getStormScenarioTopology();
 
 	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.dtsm.Storm.StormScenarioTopology#getQueueThreshold <em>Queue Threshold</em>}'.
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DTSM.Storm.StormScenarioTopology#getQueueThreshold <em>Queue Threshold</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Queue Threshold</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Storm.StormScenarioTopology#getQueueThreshold()
+	 * @see es.unizar.disco.dice.DTSM.Storm.StormScenarioTopology#getQueueThreshold()
 	 * @see #getStormScenarioTopology()
 	 * @generated
 	 */
 	EAttribute getStormScenarioTopology_QueueThreshold();
 
 	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.dtsm.Storm.StormScenarioTopology#getMaxTaskParallelism <em>Max Task Parallelism</em>}'.
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DTSM.Storm.StormScenarioTopology#getMaxTaskParallelism <em>Max Task Parallelism</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Max Task Parallelism</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Storm.StormScenarioTopology#getMaxTaskParallelism()
+	 * @see es.unizar.disco.dice.DTSM.Storm.StormScenarioTopology#getMaxTaskParallelism()
 	 * @see #getStormScenarioTopology()
 	 * @generated
 	 */
 	EAttribute getStormScenarioTopology_MaxTaskParallelism();
 
 	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.dtsm.Storm.StormScenarioTopology#getMaxSpoutPending <em>Max Spout Pending</em>}'.
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DTSM.Storm.StormScenarioTopology#getMaxSpoutPending <em>Max Spout Pending</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Max Spout Pending</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Storm.StormScenarioTopology#getMaxSpoutPending()
+	 * @see es.unizar.disco.dice.DTSM.Storm.StormScenarioTopology#getMaxSpoutPending()
 	 * @see #getStormScenarioTopology()
 	 * @generated
 	 */
 	EAttribute getStormScenarioTopology_MaxSpoutPending();
 
 	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.dtsm.Storm.StormScenarioTopology#isReliable <em>Is Reliable</em>}'.
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DTSM.Storm.StormScenarioTopology#isReliable <em>Is Reliable</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Is Reliable</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Storm.StormScenarioTopology#isReliable()
+	 * @see es.unizar.disco.dice.DTSM.Storm.StormScenarioTopology#isReliable()
 	 * @see #getStormScenarioTopology()
 	 * @generated
 	 */
 	EAttribute getStormScenarioTopology_IsReliable();
 
 	/**
-	 * Returns the meta object for class '{@link es.unizar.disco.dice.dtsm.Storm.StormApplication <em>Application</em>}'.
+	 * Returns the meta object for class '{@link es.unizar.disco.dice.DTSM.Storm.StormApplication <em>Application</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>Application</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Storm.StormApplication
+	 * @see es.unizar.disco.dice.DTSM.Storm.StormApplication
 	 * @generated
 	 */
 	EClass getStormApplication();
 
 	/**
-	 * Returns the meta object for the reference '{@link es.unizar.disco.dice.dtsm.Storm.StormApplication#getHasMasterNode <em>Has Master Node</em>}'.
+	 * Returns the meta object for the reference '{@link es.unizar.disco.dice.DTSM.Storm.StormApplication#getHasMasterNode <em>Has Master Node</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the reference '<em>Has Master Node</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Storm.StormApplication#getHasMasterNode()
+	 * @see es.unizar.disco.dice.DTSM.Storm.StormApplication#getHasMasterNode()
 	 * @see #getStormApplication()
 	 * @generated
 	 */
 	EReference getStormApplication_HasMasterNode();
 
 	/**
-	 * Returns the meta object for the reference '{@link es.unizar.disco.dice.dtsm.Storm.StormApplication#getHasSlaveNode <em>Has Slave Node</em>}'.
+	 * Returns the meta object for the reference '{@link es.unizar.disco.dice.DTSM.Storm.StormApplication#getHasSlaveNode <em>Has Slave Node</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the reference '<em>Has Slave Node</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Storm.StormApplication#getHasSlaveNode()
+	 * @see es.unizar.disco.dice.DTSM.Storm.StormApplication#getHasSlaveNode()
 	 * @see #getStormApplication()
 	 * @generated
 	 */
 	EReference getStormApplication_HasSlaveNode();
 
 	/**
-	 * Returns the meta object for the reference '{@link es.unizar.disco.dice.dtsm.Storm.StormApplication#getDependsOnZookeeper <em>Depends On Zookeeper</em>}'.
+	 * Returns the meta object for the reference '{@link es.unizar.disco.dice.DTSM.Storm.StormApplication#getDependsOnZookeeper <em>Depends On Zookeeper</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the reference '<em>Depends On Zookeeper</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Storm.StormApplication#getDependsOnZookeeper()
+	 * @see es.unizar.disco.dice.DTSM.Storm.StormApplication#getDependsOnZookeeper()
 	 * @see #getStormApplication()
 	 * @generated
 	 */
 	EReference getStormApplication_DependsOnZookeeper();
 
 	/**
-	 * Returns the meta object for class '{@link es.unizar.disco.dice.dtsm.Storm.StormNimbus <em>Nimbus</em>}'.
+	 * Returns the meta object for class '{@link es.unizar.disco.dice.DTSM.Storm.StormNimbus <em>Nimbus</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>Nimbus</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Storm.StormNimbus
+	 * @see es.unizar.disco.dice.DTSM.Storm.StormNimbus
 	 * @generated
 	 */
 	EClass getStormNimbus();
 
 	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.dtsm.Storm.StormNimbus#getTaskTimeout <em>Task Timeout</em>}'.
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DTSM.Storm.StormNimbus#getTaskTimeout <em>Task Timeout</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Task Timeout</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Storm.StormNimbus#getTaskTimeout()
+	 * @see es.unizar.disco.dice.DTSM.Storm.StormNimbus#getTaskTimeout()
 	 * @see #getStormNimbus()
 	 * @generated
 	 */
 	EAttribute getStormNimbus_TaskTimeout();
 
 	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.dtsm.Storm.StormNimbus#getSupervisorTimeout <em>Supervisor Timeout</em>}'.
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DTSM.Storm.StormNimbus#getSupervisorTimeout <em>Supervisor Timeout</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Supervisor Timeout</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Storm.StormNimbus#getSupervisorTimeout()
+	 * @see es.unizar.disco.dice.DTSM.Storm.StormNimbus#getSupervisorTimeout()
 	 * @see #getStormNimbus()
 	 * @generated
 	 */
 	EAttribute getStormNimbus_SupervisorTimeout();
 
 	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.dtsm.Storm.StormNimbus#getMonitorFrequency <em>Monitor Frequency</em>}'.
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DTSM.Storm.StormNimbus#getMonitorFrequency <em>Monitor Frequency</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Monitor Frequency</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Storm.StormNimbus#getMonitorFrequency()
+	 * @see es.unizar.disco.dice.DTSM.Storm.StormNimbus#getMonitorFrequency()
 	 * @see #getStormNimbus()
 	 * @generated
 	 */
 	EAttribute getStormNimbus_MonitorFrequency();
 
 	/**
-	 * Returns the meta object for the reference '{@link es.unizar.disco.dice.dtsm.Storm.StormNimbus#getBase_Classifier <em>Base Classifier</em>}'.
+	 * Returns the meta object for the reference '{@link es.unizar.disco.dice.DTSM.Storm.StormNimbus#getBase_Classifier <em>Base Classifier</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the reference '<em>Base Classifier</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Storm.StormNimbus#getBase_Classifier()
+	 * @see es.unizar.disco.dice.DTSM.Storm.StormNimbus#getBase_Classifier()
 	 * @see #getStormNimbus()
 	 * @generated
 	 */
 	EReference getStormNimbus_Base_Classifier();
 
 	/**
-	 * Returns the meta object for class '{@link es.unizar.disco.dice.dtsm.Storm.StormSupervisor <em>Supervisor</em>}'.
+	 * Returns the meta object for class '{@link es.unizar.disco.dice.DTSM.Storm.StormSupervisor <em>Supervisor</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>Supervisor</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Storm.StormSupervisor
+	 * @see es.unizar.disco.dice.DTSM.Storm.StormSupervisor
 	 * @generated
 	 */
 	EClass getStormSupervisor();
 
 	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.dtsm.Storm.StormSupervisor#getMonitroFrequency <em>Monitro Frequency</em>}'.
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DTSM.Storm.StormSupervisor#getMonitroFrequency <em>Monitro Frequency</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Monitro Frequency</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Storm.StormSupervisor#getMonitroFrequency()
+	 * @see es.unizar.disco.dice.DTSM.Storm.StormSupervisor#getMonitroFrequency()
 	 * @see #getStormSupervisor()
 	 * @generated
 	 */
 	EAttribute getStormSupervisor_MonitroFrequency();
 
 	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.dtsm.Storm.StormSupervisor#getWorkerSatrtTimeout <em>Worker Satrt Timeout</em>}'.
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DTSM.Storm.StormSupervisor#getWorkerSatrtTimeout <em>Worker Satrt Timeout</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Worker Satrt Timeout</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Storm.StormSupervisor#getWorkerSatrtTimeout()
+	 * @see es.unizar.disco.dice.DTSM.Storm.StormSupervisor#getWorkerSatrtTimeout()
 	 * @see #getStormSupervisor()
 	 * @generated
 	 */
 	EAttribute getStormSupervisor_WorkerSatrtTimeout();
 
 	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.dtsm.Storm.StormSupervisor#getWorkerTimeout <em>Worker Timeout</em>}'.
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DTSM.Storm.StormSupervisor#getWorkerTimeout <em>Worker Timeout</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Worker Timeout</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Storm.StormSupervisor#getWorkerTimeout()
+	 * @see es.unizar.disco.dice.DTSM.Storm.StormSupervisor#getWorkerTimeout()
 	 * @see #getStormSupervisor()
 	 * @generated
 	 */
 	EAttribute getStormSupervisor_WorkerTimeout();
 
 	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.dtsm.Storm.StormSupervisor#getHeartbrackFrequency <em>Heartbrack Frequency</em>}'.
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DTSM.Storm.StormSupervisor#getHeartbrackFrequency <em>Heartbrack Frequency</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Heartbrack Frequency</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Storm.StormSupervisor#getHeartbrackFrequency()
+	 * @see es.unizar.disco.dice.DTSM.Storm.StormSupervisor#getHeartbrackFrequency()
 	 * @see #getStormSupervisor()
 	 * @generated
 	 */
 	EAttribute getStormSupervisor_HeartbrackFrequency();
 
 	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.dtsm.Storm.StormSupervisor#getMemoryCapacity <em>Memory Capacity</em>}'.
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DTSM.Storm.StormSupervisor#getMemoryCapacity <em>Memory Capacity</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Memory Capacity</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Storm.StormSupervisor#getMemoryCapacity()
+	 * @see es.unizar.disco.dice.DTSM.Storm.StormSupervisor#getMemoryCapacity()
 	 * @see #getStormSupervisor()
 	 * @generated
 	 */
 	EAttribute getStormSupervisor_MemoryCapacity();
 
 	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.dtsm.Storm.StormSupervisor#getCpuCapacity <em>Cpu Capacity</em>}'.
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DTSM.Storm.StormSupervisor#getCpuCapacity <em>Cpu Capacity</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Cpu Capacity</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Storm.StormSupervisor#getCpuCapacity()
+	 * @see es.unizar.disco.dice.DTSM.Storm.StormSupervisor#getCpuCapacity()
 	 * @see #getStormSupervisor()
 	 * @generated
 	 */
 	EAttribute getStormSupervisor_CpuCapacity();
 
 	/**
-	 * Returns the meta object for the reference '{@link es.unizar.disco.dice.dtsm.Storm.StormSupervisor#getBase_Classifier <em>Base Classifier</em>}'.
+	 * Returns the meta object for the reference '{@link es.unizar.disco.dice.DTSM.Storm.StormSupervisor#getBase_Classifier <em>Base Classifier</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the reference '<em>Base Classifier</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Storm.StormSupervisor#getBase_Classifier()
+	 * @see es.unizar.disco.dice.DTSM.Storm.StormSupervisor#getBase_Classifier()
 	 * @see #getStormSupervisor()
 	 * @generated
 	 */
 	EReference getStormSupervisor_Base_Classifier();
 
 	/**
-	 * Returns the meta object for class '{@link es.unizar.disco.dice.dtsm.Storm.StormZookeeper <em>Zookeeper</em>}'.
+	 * Returns the meta object for class '{@link es.unizar.disco.dice.DTSM.Storm.StormZookeeper <em>Zookeeper</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>Zookeeper</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Storm.StormZookeeper
+	 * @see es.unizar.disco.dice.DTSM.Storm.StormZookeeper
 	 * @generated
 	 */
 	EClass getStormZookeeper();
 
 	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.dtsm.Storm.StormZookeeper#getSessionTimeout <em>Session Timeout</em>}'.
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DTSM.Storm.StormZookeeper#getSessionTimeout <em>Session Timeout</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Session Timeout</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Storm.StormZookeeper#getSessionTimeout()
+	 * @see es.unizar.disco.dice.DTSM.Storm.StormZookeeper#getSessionTimeout()
 	 * @see #getStormZookeeper()
 	 * @generated
 	 */
 	EAttribute getStormZookeeper_SessionTimeout();
 
 	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.dtsm.Storm.StormZookeeper#getConnectionTimeout <em>Connection Timeout</em>}'.
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DTSM.Storm.StormZookeeper#getConnectionTimeout <em>Connection Timeout</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Connection Timeout</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Storm.StormZookeeper#getConnectionTimeout()
+	 * @see es.unizar.disco.dice.DTSM.Storm.StormZookeeper#getConnectionTimeout()
 	 * @see #getStormZookeeper()
 	 * @generated
 	 */
 	EAttribute getStormZookeeper_ConnectionTimeout();
 
 	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.dtsm.Storm.StormZookeeper#getRetryTime <em>Retry Time</em>}'.
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DTSM.Storm.StormZookeeper#getRetryTime <em>Retry Time</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Retry Time</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Storm.StormZookeeper#getRetryTime()
+	 * @see es.unizar.disco.dice.DTSM.Storm.StormZookeeper#getRetryTime()
 	 * @see #getStormZookeeper()
 	 * @generated
 	 */
 	EAttribute getStormZookeeper_RetryTime();
 
 	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.dtsm.Storm.StormZookeeper#getRetryInterval <em>Retry Interval</em>}'.
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DTSM.Storm.StormZookeeper#getRetryInterval <em>Retry Interval</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Retry Interval</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Storm.StormZookeeper#getRetryInterval()
+	 * @see es.unizar.disco.dice.DTSM.Storm.StormZookeeper#getRetryInterval()
 	 * @see #getStormZookeeper()
 	 * @generated
 	 */
 	EAttribute getStormZookeeper_RetryInterval();
 
 	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.dtsm.Storm.StormZookeeper#getUser <em>User</em>}'.
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DTSM.Storm.StormZookeeper#getUser <em>User</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>User</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Storm.StormZookeeper#getUser()
+	 * @see es.unizar.disco.dice.DTSM.Storm.StormZookeeper#getUser()
 	 * @see #getStormZookeeper()
 	 * @generated
 	 */
 	EAttribute getStormZookeeper_User();
 
 	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.dtsm.Storm.StormZookeeper#getPassword <em>Password</em>}'.
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DTSM.Storm.StormZookeeper#getPassword <em>Password</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Password</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Storm.StormZookeeper#getPassword()
+	 * @see es.unizar.disco.dice.DTSM.Storm.StormZookeeper#getPassword()
 	 * @see #getStormZookeeper()
 	 * @generated
 	 */
 	EAttribute getStormZookeeper_Password();
 
 	/**
-	 * Returns the meta object for the reference '{@link es.unizar.disco.dice.dtsm.Storm.StormZookeeper#getBase_Classifier <em>Base Classifier</em>}'.
+	 * Returns the meta object for the reference '{@link es.unizar.disco.dice.DTSM.Storm.StormZookeeper#getBase_Classifier <em>Base Classifier</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the reference '<em>Base Classifier</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Storm.StormZookeeper#getBase_Classifier()
+	 * @see es.unizar.disco.dice.DTSM.Storm.StormZookeeper#getBase_Classifier()
 	 * @see #getStormZookeeper()
 	 * @generated
 	 */
 	EReference getStormZookeeper_Base_Classifier();
 
 	/**
-	 * Returns the meta object for class '{@link es.unizar.disco.dice.dtsm.Storm.StormStreamStep <em>Stream Step</em>}'.
+	 * Returns the meta object for class '{@link es.unizar.disco.dice.DTSM.Storm.StormStreamStep <em>Stream Step</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>Stream Step</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Storm.StormStreamStep
+	 * @see es.unizar.disco.dice.DTSM.Storm.StormStreamStep
 	 * @generated
 	 */
 	EClass getStormStreamStep();
 
 	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.dtsm.Storm.StormStreamStep#getNumTuples <em>Num Tuples</em>}'.
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DTSM.Storm.StormStreamStep#getNumTuples <em>Num Tuples</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Num Tuples</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Storm.StormStreamStep#getNumTuples()
+	 * @see es.unizar.disco.dice.DTSM.Storm.StormStreamStep#getNumTuples()
 	 * @see #getStormStreamStep()
 	 * @generated
 	 */
 	EAttribute getStormStreamStep_NumTuples();
 
 	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.dtsm.Storm.StormStreamStep#getGrouping <em>Grouping</em>}'.
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DTSM.Storm.StormStreamStep#getGrouping <em>Grouping</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Grouping</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Storm.StormStreamStep#getGrouping()
+	 * @see es.unizar.disco.dice.DTSM.Storm.StormStreamStep#getGrouping()
 	 * @see #getStormStreamStep()
 	 * @generated
 	 */
@@ -3306,11 +3306,11 @@ public interface StormPackage extends EPackage {
 	 */
 	interface Literals {
 		/**
-		 * The meta object literal for the '{@link es.unizar.disco.dice.dtsm.Storm.impl.StormBoltImpl <em>Bolt</em>}' class.
+		 * The meta object literal for the '{@link es.unizar.disco.dice.DTSM.Storm.impl.StormBoltImpl <em>Bolt</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see es.unizar.disco.dice.dtsm.Storm.impl.StormBoltImpl
-		 * @see es.unizar.disco.dice.dtsm.Storm.impl.StormPackageImpl#getStormBolt()
+		 * @see es.unizar.disco.dice.DTSM.Storm.impl.StormBoltImpl
+		 * @see es.unizar.disco.dice.DTSM.Storm.impl.StormPackageImpl#getStormBolt()
 		 * @generated
 		 */
 		EClass STORM_BOLT = eINSTANCE.getStormBolt();
@@ -3356,11 +3356,11 @@ public interface StormPackage extends EPackage {
 		EAttribute STORM_BOLT__MAX_REBOOT_TIME = eINSTANCE.getStormBolt_MaxRebootTime();
 
 		/**
-		 * The meta object literal for the '{@link es.unizar.disco.dice.dtsm.Storm.impl.StormSpoutImpl <em>Spout</em>}' class.
+		 * The meta object literal for the '{@link es.unizar.disco.dice.DTSM.Storm.impl.StormSpoutImpl <em>Spout</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see es.unizar.disco.dice.dtsm.Storm.impl.StormSpoutImpl
-		 * @see es.unizar.disco.dice.dtsm.Storm.impl.StormPackageImpl#getStormSpout()
+		 * @see es.unizar.disco.dice.DTSM.Storm.impl.StormSpoutImpl
+		 * @see es.unizar.disco.dice.DTSM.Storm.impl.StormPackageImpl#getStormSpout()
 		 * @generated
 		 */
 		EClass STORM_SPOUT = eINSTANCE.getStormSpout();
@@ -3374,11 +3374,11 @@ public interface StormPackage extends EPackage {
 		EAttribute STORM_SPOUT__AVG_EMIT_RATE = eINSTANCE.getStormSpout_AvgEmitRate();
 
 		/**
-		 * The meta object literal for the '{@link es.unizar.disco.dice.dtsm.Storm.impl.StormScenarioTopologyImpl <em>Scenario Topology</em>}' class.
+		 * The meta object literal for the '{@link es.unizar.disco.dice.DTSM.Storm.impl.StormScenarioTopologyImpl <em>Scenario Topology</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see es.unizar.disco.dice.dtsm.Storm.impl.StormScenarioTopologyImpl
-		 * @see es.unizar.disco.dice.dtsm.Storm.impl.StormPackageImpl#getStormScenarioTopology()
+		 * @see es.unizar.disco.dice.DTSM.Storm.impl.StormScenarioTopologyImpl
+		 * @see es.unizar.disco.dice.DTSM.Storm.impl.StormPackageImpl#getStormScenarioTopology()
 		 * @generated
 		 */
 		EClass STORM_SCENARIO_TOPOLOGY = eINSTANCE.getStormScenarioTopology();
@@ -3416,11 +3416,11 @@ public interface StormPackage extends EPackage {
 		EAttribute STORM_SCENARIO_TOPOLOGY__IS_RELIABLE = eINSTANCE.getStormScenarioTopology_IsReliable();
 
 		/**
-		 * The meta object literal for the '{@link es.unizar.disco.dice.dtsm.Storm.impl.StormApplicationImpl <em>Application</em>}' class.
+		 * The meta object literal for the '{@link es.unizar.disco.dice.DTSM.Storm.impl.StormApplicationImpl <em>Application</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see es.unizar.disco.dice.dtsm.Storm.impl.StormApplicationImpl
-		 * @see es.unizar.disco.dice.dtsm.Storm.impl.StormPackageImpl#getStormApplication()
+		 * @see es.unizar.disco.dice.DTSM.Storm.impl.StormApplicationImpl
+		 * @see es.unizar.disco.dice.DTSM.Storm.impl.StormPackageImpl#getStormApplication()
 		 * @generated
 		 */
 		EClass STORM_APPLICATION = eINSTANCE.getStormApplication();
@@ -3450,11 +3450,11 @@ public interface StormPackage extends EPackage {
 		EReference STORM_APPLICATION__DEPENDS_ON_ZOOKEEPER = eINSTANCE.getStormApplication_DependsOnZookeeper();
 
 		/**
-		 * The meta object literal for the '{@link es.unizar.disco.dice.dtsm.Storm.impl.StormNimbusImpl <em>Nimbus</em>}' class.
+		 * The meta object literal for the '{@link es.unizar.disco.dice.DTSM.Storm.impl.StormNimbusImpl <em>Nimbus</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see es.unizar.disco.dice.dtsm.Storm.impl.StormNimbusImpl
-		 * @see es.unizar.disco.dice.dtsm.Storm.impl.StormPackageImpl#getStormNimbus()
+		 * @see es.unizar.disco.dice.DTSM.Storm.impl.StormNimbusImpl
+		 * @see es.unizar.disco.dice.DTSM.Storm.impl.StormPackageImpl#getStormNimbus()
 		 * @generated
 		 */
 		EClass STORM_NIMBUS = eINSTANCE.getStormNimbus();
@@ -3492,11 +3492,11 @@ public interface StormPackage extends EPackage {
 		EReference STORM_NIMBUS__BASE_CLASSIFIER = eINSTANCE.getStormNimbus_Base_Classifier();
 
 		/**
-		 * The meta object literal for the '{@link es.unizar.disco.dice.dtsm.Storm.impl.StormSupervisorImpl <em>Supervisor</em>}' class.
+		 * The meta object literal for the '{@link es.unizar.disco.dice.DTSM.Storm.impl.StormSupervisorImpl <em>Supervisor</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see es.unizar.disco.dice.dtsm.Storm.impl.StormSupervisorImpl
-		 * @see es.unizar.disco.dice.dtsm.Storm.impl.StormPackageImpl#getStormSupervisor()
+		 * @see es.unizar.disco.dice.DTSM.Storm.impl.StormSupervisorImpl
+		 * @see es.unizar.disco.dice.DTSM.Storm.impl.StormPackageImpl#getStormSupervisor()
 		 * @generated
 		 */
 		EClass STORM_SUPERVISOR = eINSTANCE.getStormSupervisor();
@@ -3558,11 +3558,11 @@ public interface StormPackage extends EPackage {
 		EReference STORM_SUPERVISOR__BASE_CLASSIFIER = eINSTANCE.getStormSupervisor_Base_Classifier();
 
 		/**
-		 * The meta object literal for the '{@link es.unizar.disco.dice.dtsm.Storm.impl.StormZookeeperImpl <em>Zookeeper</em>}' class.
+		 * The meta object literal for the '{@link es.unizar.disco.dice.DTSM.Storm.impl.StormZookeeperImpl <em>Zookeeper</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see es.unizar.disco.dice.dtsm.Storm.impl.StormZookeeperImpl
-		 * @see es.unizar.disco.dice.dtsm.Storm.impl.StormPackageImpl#getStormZookeeper()
+		 * @see es.unizar.disco.dice.DTSM.Storm.impl.StormZookeeperImpl
+		 * @see es.unizar.disco.dice.DTSM.Storm.impl.StormPackageImpl#getStormZookeeper()
 		 * @generated
 		 */
 		EClass STORM_ZOOKEEPER = eINSTANCE.getStormZookeeper();
@@ -3624,11 +3624,11 @@ public interface StormPackage extends EPackage {
 		EReference STORM_ZOOKEEPER__BASE_CLASSIFIER = eINSTANCE.getStormZookeeper_Base_Classifier();
 
 		/**
-		 * The meta object literal for the '{@link es.unizar.disco.dice.dtsm.Storm.impl.StormStreamStepImpl <em>Stream Step</em>}' class.
+		 * The meta object literal for the '{@link es.unizar.disco.dice.DTSM.Storm.impl.StormStreamStepImpl <em>Stream Step</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see es.unizar.disco.dice.dtsm.Storm.impl.StormStreamStepImpl
-		 * @see es.unizar.disco.dice.dtsm.Storm.impl.StormPackageImpl#getStormStreamStep()
+		 * @see es.unizar.disco.dice.DTSM.Storm.impl.StormStreamStepImpl
+		 * @see es.unizar.disco.dice.DTSM.Storm.impl.StormPackageImpl#getStormStreamStep()
 		 * @generated
 		 */
 		EClass STORM_STREAM_STEP = eINSTANCE.getStormStreamStep();

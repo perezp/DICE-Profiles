@@ -1,6 +1,6 @@
 /**
  */
-package es.unizar.disco.dice.dtsm.Core;
+package es.unizar.disco.dice.DTSM.Core;
 
 import es.unizar.disco.dice.DPIM.DpimComputationNode;
 
@@ -15,20 +15,20 @@ import org.eclipse.emf.common.util.EList;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link es.unizar.disco.dice.dtsm.Core.CoreComputationNode#getHasSuccessor <em>Has Successor</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Core.CoreComputationNode#getProcessInputData <em>Process Input Data</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Core.CoreComputationNode#getRealise <em>Realise</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Core.CoreComputationNode#getProduceOutputData <em>Produce Output Data</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Core.CoreComputationNode#getHasSuccessor <em>Has Successor</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Core.CoreComputationNode#getProcessInputData <em>Process Input Data</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Core.CoreComputationNode#getRealise <em>Realise</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Core.CoreComputationNode#getProduceOutputData <em>Produce Output Data</em>}</li>
  * </ul>
  *
- * @see es.unizar.disco.dice.dtsm.Core.CorePackage#getCoreComputationNode()
+ * @see es.unizar.disco.dice.DTSM.Core.CorePackage#getCoreComputationNode()
  * @model abstract="true"
  * @generated
  */
 public interface CoreComputationNode extends DpimComputationNode {
 	/**
 	 * Returns the value of the '<em><b>Has Successor</b></em>' reference list.
-	 * The list contents are of type {@link es.unizar.disco.dice.dtsm.Core.CoreComputationNode}.
+	 * The list contents are of type {@link es.unizar.disco.dice.DTSM.Core.CoreComputationNode}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Has Successor</em>' reference list isn't clear,
@@ -36,7 +36,7 @@ public interface CoreComputationNode extends DpimComputationNode {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Has Successor</em>' reference list.
-	 * @see es.unizar.disco.dice.dtsm.Core.CorePackage#getCoreComputationNode_HasSuccessor()
+	 * @see es.unizar.disco.dice.DTSM.Core.CorePackage#getCoreComputationNode_HasSuccessor()
 	 * @model ordered="false"
 	 * @generated
 	 */
@@ -44,7 +44,7 @@ public interface CoreComputationNode extends DpimComputationNode {
 
 	/**
 	 * Returns the value of the '<em><b>Process Input Data</b></em>' reference list.
-	 * The list contents are of type {@link es.unizar.disco.dice.dtsm.Core.CoreData}.
+	 * The list contents are of type {@link es.unizar.disco.dice.DTSM.Core.CoreData}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Process Input Data</em>' reference list isn't clear,
@@ -52,7 +52,7 @@ public interface CoreComputationNode extends DpimComputationNode {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Process Input Data</em>' reference list.
-	 * @see es.unizar.disco.dice.dtsm.Core.CorePackage#getCoreComputationNode_ProcessInputData()
+	 * @see es.unizar.disco.dice.DTSM.Core.CorePackage#getCoreComputationNode_ProcessInputData()
 	 * @model ordered="false"
 	 * @generated
 	 */
@@ -68,14 +68,14 @@ public interface CoreComputationNode extends DpimComputationNode {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Realise</em>' reference.
 	 * @see #setRealise(CoreDirectAcyclicGraph)
-	 * @see es.unizar.disco.dice.dtsm.Core.CorePackage#getCoreComputationNode_Realise()
+	 * @see es.unizar.disco.dice.DTSM.Core.CorePackage#getCoreComputationNode_Realise()
 	 * @model required="true" ordered="false"
 	 * @generated
 	 */
 	CoreDirectAcyclicGraph getRealise();
 
 	/**
-	 * Sets the value of the '{@link es.unizar.disco.dice.dtsm.Core.CoreComputationNode#getRealise <em>Realise</em>}' reference.
+	 * Sets the value of the '{@link es.unizar.disco.dice.DTSM.Core.CoreComputationNode#getRealise <em>Realise</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Realise</em>' reference.
@@ -86,7 +86,7 @@ public interface CoreComputationNode extends DpimComputationNode {
 
 	/**
 	 * Returns the value of the '<em><b>Produce Output Data</b></em>' reference list.
-	 * The list contents are of type {@link es.unizar.disco.dice.dtsm.Core.CoreData}.
+	 * The list contents are of type {@link es.unizar.disco.dice.DTSM.Core.CoreData}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Produce Output Data</em>' reference list isn't clear,
@@ -94,7 +94,7 @@ public interface CoreComputationNode extends DpimComputationNode {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Produce Output Data</em>' reference list.
-	 * @see es.unizar.disco.dice.dtsm.Core.CorePackage#getCoreComputationNode_ProduceOutputData()
+	 * @see es.unizar.disco.dice.DTSM.Core.CorePackage#getCoreComputationNode_ProduceOutputData()
 	 * @model required="true" ordered="false"
 	 * @generated
 	 */

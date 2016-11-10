@@ -1,9 +1,9 @@
 /**
  */
-package es.unizar.disco.dice.dtsm.Storm.impl;
+package es.unizar.disco.dice.DTSM.Storm.impl;
 
-import es.unizar.disco.dice.dtsm.Storm.StormNimbus;
-import es.unizar.disco.dice.dtsm.Storm.StormPackage;
+import es.unizar.disco.dice.DTSM.Storm.StormNimbus;
+import es.unizar.disco.dice.DTSM.Storm.StormPackage;
 
 import org.eclipse.emf.common.notify.Notification;
 
@@ -23,10 +23,10 @@ import org.eclipse.uml2.uml.Classifier;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link es.unizar.disco.dice.dtsm.Storm.impl.StormNimbusImpl#getTaskTimeout <em>Task Timeout</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Storm.impl.StormNimbusImpl#getSupervisorTimeout <em>Supervisor Timeout</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Storm.impl.StormNimbusImpl#getMonitorFrequency <em>Monitor Frequency</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Storm.impl.StormNimbusImpl#getBase_Classifier <em>Base Classifier</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Storm.impl.StormNimbusImpl#getTaskTimeout <em>Task Timeout</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Storm.impl.StormNimbusImpl#getSupervisorTimeout <em>Supervisor Timeout</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Storm.impl.StormNimbusImpl#getMonitorFrequency <em>Monitor Frequency</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Storm.impl.StormNimbusImpl#getBase_Classifier <em>Base Classifier</em>}</li>
  * </ul>
  *
  * @generated

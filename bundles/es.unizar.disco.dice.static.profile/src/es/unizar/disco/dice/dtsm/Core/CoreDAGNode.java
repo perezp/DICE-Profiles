@@ -1,6 +1,6 @@
 /**
  */
-package es.unizar.disco.dice.dtsm.Core;
+package es.unizar.disco.dice.DTSM.Core;
 
 import es.unizar.disco.dice.Basic_Enumeration_Types.WorkflowOperation;
 
@@ -19,12 +19,12 @@ import org.eclipse.papyrus.MARTE.MARTE_AnalysisModel.GQAM.GaStep;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link es.unizar.disco.dice.dtsm.Core.CoreDAGNode#getParallelism <em>Parallelism</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Core.CoreDAGNode#getOperation <em>Operation</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Core.CoreDAGNode#getHasSuccessor <em>Has Successor</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Core.CoreDAGNode#getParallelism <em>Parallelism</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Core.CoreDAGNode#getOperation <em>Operation</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Core.CoreDAGNode#getHasSuccessor <em>Has Successor</em>}</li>
  * </ul>
  *
- * @see es.unizar.disco.dice.dtsm.Core.CorePackage#getCoreDAGNode()
+ * @see es.unizar.disco.dice.DTSM.Core.CorePackage#getCoreDAGNode()
  * @model abstract="true"
  * @generated
  */
@@ -39,14 +39,14 @@ public interface CoreDAGNode extends GaStep, DpimSourceNode {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Parallelism</em>' attribute.
 	 * @see #setParallelism(String)
-	 * @see es.unizar.disco.dice.dtsm.Core.CorePackage#getCoreDAGNode_Parallelism()
+	 * @see es.unizar.disco.dice.DTSM.Core.CorePackage#getCoreDAGNode_Parallelism()
 	 * @model dataType="org.eclipse.papyrus.MARTE_Library.BasicNFP_Types.NFP_Integer" required="true" ordered="false"
 	 * @generated
 	 */
 	String getParallelism();
 
 	/**
-	 * Sets the value of the '{@link es.unizar.disco.dice.dtsm.Core.CoreDAGNode#getParallelism <em>Parallelism</em>}' attribute.
+	 * Sets the value of the '{@link es.unizar.disco.dice.DTSM.Core.CoreDAGNode#getParallelism <em>Parallelism</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Parallelism</em>' attribute.
@@ -67,14 +67,14 @@ public interface CoreDAGNode extends GaStep, DpimSourceNode {
 	 * @return the value of the '<em>Operation</em>' attribute.
 	 * @see es.unizar.disco.dice.Basic_Enumeration_Types.WorkflowOperation
 	 * @see #setOperation(WorkflowOperation)
-	 * @see es.unizar.disco.dice.dtsm.Core.CorePackage#getCoreDAGNode_Operation()
+	 * @see es.unizar.disco.dice.DTSM.Core.CorePackage#getCoreDAGNode_Operation()
 	 * @model required="true" ordered="false"
 	 * @generated
 	 */
 	WorkflowOperation getOperation();
 
 	/**
-	 * Sets the value of the '{@link es.unizar.disco.dice.dtsm.Core.CoreDAGNode#getOperation <em>Operation</em>}' attribute.
+	 * Sets the value of the '{@link es.unizar.disco.dice.DTSM.Core.CoreDAGNode#getOperation <em>Operation</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Operation</em>' attribute.
@@ -86,7 +86,7 @@ public interface CoreDAGNode extends GaStep, DpimSourceNode {
 
 	/**
 	 * Returns the value of the '<em><b>Has Successor</b></em>' reference list.
-	 * The list contents are of type {@link es.unizar.disco.dice.dtsm.Core.CoreDAGNode}.
+	 * The list contents are of type {@link es.unizar.disco.dice.DTSM.Core.CoreDAGNode}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Has Successor</em>' reference list isn't clear,
@@ -94,7 +94,7 @@ public interface CoreDAGNode extends GaStep, DpimSourceNode {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Has Successor</em>' reference list.
-	 * @see es.unizar.disco.dice.dtsm.Core.CorePackage#getCoreDAGNode_HasSuccessor()
+	 * @see es.unizar.disco.dice.DTSM.Core.CorePackage#getCoreDAGNode_HasSuccessor()
 	 * @model ordered="false"
 	 * @generated
 	 */

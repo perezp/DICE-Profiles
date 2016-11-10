@@ -26,7 +26,9 @@ public enum RefType implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	CASSANDRA(0, "cassandra", "cassandra"), /**
+	CASSANDRA(0, "cassandra", "cassandra"),
+
+	/**
 	 * The '<em><b>Hdfs</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -34,7 +36,9 @@ public enum RefType implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	HDFS(1, "hdfs", "hdfs"), /**
+	HDFS(1, "hdfs", "hdfs"),
+
+	/**
 	 * The '<em><b>Mongodb</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -42,7 +46,9 @@ public enum RefType implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	MONGODB(2, "mongodb", "mongodb"), /**
+	MONGODB(2, "mongodb", "mongodb"),
+
+	/**
 	 * The '<em><b>Mysql</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

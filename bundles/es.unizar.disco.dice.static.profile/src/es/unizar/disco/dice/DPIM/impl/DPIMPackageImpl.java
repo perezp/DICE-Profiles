@@ -17,9 +17,13 @@ import es.unizar.disco.dice.Basic_Enumeration_Types.impl.Basic_Enumeration_Types
 import es.unizar.disco.dice.Complex_Data_Types.impl.Complex_Data_TypesPackageImpl;
 
 import es.unizar.disco.dice.DDSM.DDSMPackage;
+
 import es.unizar.disco.dice.DDSM.impl.DDSMPackageImpl;
+
 import es.unizar.disco.dice.DICE.DICEPackage;
+
 import es.unizar.disco.dice.DICE.impl.DICEPackageImpl;
+
 import es.unizar.disco.dice.DPIM.DPIMFactory;
 import es.unizar.disco.dice.DPIM.DPIMPackage;
 import es.unizar.disco.dice.DPIM.DpimChannel;
@@ -30,17 +34,17 @@ import es.unizar.disco.dice.DPIM.DpimSourceNode;
 import es.unizar.disco.dice.DPIM.DpimStorageNode;
 import es.unizar.disco.dice.DPIM.DpimVisualizationNode;
 
-import es.unizar.disco.dice.dtsm.Core.CorePackage;
+import es.unizar.disco.dice.DTSM.Core.CorePackage;
 
-import es.unizar.disco.dice.dtsm.Core.impl.CorePackageImpl;
+import es.unizar.disco.dice.DTSM.Core.impl.CorePackageImpl;
 
-import es.unizar.disco.dice.dtsm.Hadoop.HadoopPackage;
+import es.unizar.disco.dice.DTSM.Hadoop.HadoopPackage;
 
-import es.unizar.disco.dice.dtsm.Hadoop.impl.HadoopPackageImpl;
+import es.unizar.disco.dice.DTSM.Hadoop.impl.HadoopPackageImpl;
 
-import es.unizar.disco.dice.dtsm.Storm.StormPackage;
+import es.unizar.disco.dice.DTSM.Storm.StormPackage;
 
-import es.unizar.disco.dice.dtsm.Storm.impl.StormPackageImpl;
+import es.unizar.disco.dice.DTSM.Storm.impl.StormPackageImpl;
 
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
@@ -48,6 +52,7 @@ import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
 
 import org.eclipse.emf.ecore.impl.EPackageImpl;
+
 import org.eclipse.papyrus.MARTE.MARTE_Foundations.GRM.GRMPackage;
 
 import org.eclipse.papyrus.MARTE_Library.BasicNFP_Types.BasicNFP_TypesPackage;

@@ -1,6 +1,6 @@
 /**
  */
-package es.unizar.disco.dice.dtsm.Core;
+package es.unizar.disco.dice.DTSM.Core;
 
 import org.eclipse.emf.ecore.EFactory;
 
@@ -9,7 +9,7 @@ import org.eclipse.emf.ecore.EFactory;
  * The <b>Factory</b> for the model.
  * It provides a create method for each non-abstract class of the model.
  * <!-- end-user-doc -->
- * @see es.unizar.disco.dice.dtsm.Core.CorePackage
+ * @see es.unizar.disco.dice.DTSM.Core.CorePackage
  * @generated
  */
 public interface CoreFactory extends EFactory {
@@ -19,7 +19,7 @@ public interface CoreFactory extends EFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	CoreFactory eINSTANCE = es.unizar.disco.dice.dtsm.Core.impl.CoreFactoryImpl.init();
+	CoreFactory eINSTANCE = es.unizar.disco.dice.DTSM.Core.impl.CoreFactoryImpl.init();
 
 	/**
 	 * Returns the package supported by this factory.

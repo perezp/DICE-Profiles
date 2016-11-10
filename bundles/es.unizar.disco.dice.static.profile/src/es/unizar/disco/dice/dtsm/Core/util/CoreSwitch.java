@@ -1,6 +1,6 @@
 /**
  */
-package es.unizar.disco.dice.dtsm.Core.util;
+package es.unizar.disco.dice.DTSM.Core.util;
 
 import com.masdes.dam.Core.DaComponent;
 
@@ -8,7 +8,7 @@ import es.unizar.disco.dice.DPIM.DpimComputationNode;
 import es.unizar.disco.dice.DPIM.DpimSourceNode;
 import es.unizar.disco.dice.DPIM.DpimStorageNode;
 
-import es.unizar.disco.dice.dtsm.Core.*;
+import es.unizar.disco.dice.DTSM.Core.*;
 
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
@@ -35,7 +35,7 @@ import org.eclipse.papyrus.MARTE.MARTE_Foundations.Time.TimedProcessing;
  * until a non-null result is returned,
  * which is the result of the switch.
  * <!-- end-user-doc -->
- * @see es.unizar.disco.dice.dtsm.Core.CorePackage
+ * @see es.unizar.disco.dice.DTSM.Core.CorePackage
  * @generated
  */
 public class CoreSwitch<T> extends Switch<T> {

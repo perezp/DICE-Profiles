@@ -1,14 +1,14 @@
 /**
  */
-package es.unizar.disco.dice.dtsm.Hadoop.util;
+package es.unizar.disco.dice.DTSM.Hadoop.util;
 
 import com.masdes.dam.Core.DaComponent;
 
 import es.unizar.disco.dice.DPIM.DpimComputationNode;
 
-import es.unizar.disco.dice.dtsm.Core.CoreComputationNode;
+import es.unizar.disco.dice.DTSM.Core.CoreComputationNode;
 
-import es.unizar.disco.dice.dtsm.Hadoop.*;
+import es.unizar.disco.dice.DTSM.Hadoop.*;
 
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
@@ -35,7 +35,7 @@ import org.eclipse.papyrus.MARTE.MARTE_Foundations.Time.TimedProcessing;
  * until a non-null result is returned,
  * which is the result of the switch.
  * <!-- end-user-doc -->
- * @see es.unizar.disco.dice.dtsm.Hadoop.HadoopPackage
+ * @see es.unizar.disco.dice.DTSM.Hadoop.HadoopPackage
  * @generated
  */
 public class HadoopSwitch<T> extends Switch<T> {

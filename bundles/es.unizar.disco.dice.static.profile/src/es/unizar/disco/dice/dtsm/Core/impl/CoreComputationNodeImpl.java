@@ -1,13 +1,13 @@
 /**
  */
-package es.unizar.disco.dice.dtsm.Core.impl;
+package es.unizar.disco.dice.DTSM.Core.impl;
 
 import es.unizar.disco.dice.DPIM.impl.DpimComputationNodeImpl;
 
-import es.unizar.disco.dice.dtsm.Core.CoreComputationNode;
-import es.unizar.disco.dice.dtsm.Core.CoreData;
-import es.unizar.disco.dice.dtsm.Core.CoreDirectAcyclicGraph;
-import es.unizar.disco.dice.dtsm.Core.CorePackage;
+import es.unizar.disco.dice.DTSM.Core.CoreComputationNode;
+import es.unizar.disco.dice.DTSM.Core.CoreData;
+import es.unizar.disco.dice.DTSM.Core.CoreDirectAcyclicGraph;
+import es.unizar.disco.dice.DTSM.Core.CorePackage;
 
 import java.util.Collection;
 
@@ -30,10 +30,10 @@ import org.eclipse.emf.ecore.util.EObjectResolvingEList;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link es.unizar.disco.dice.dtsm.Core.impl.CoreComputationNodeImpl#getHasSuccessor <em>Has Successor</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Core.impl.CoreComputationNodeImpl#getProcessInputData <em>Process Input Data</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Core.impl.CoreComputationNodeImpl#getRealise <em>Realise</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Core.impl.CoreComputationNodeImpl#getProduceOutputData <em>Produce Output Data</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Core.impl.CoreComputationNodeImpl#getHasSuccessor <em>Has Successor</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Core.impl.CoreComputationNodeImpl#getProcessInputData <em>Process Input Data</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Core.impl.CoreComputationNodeImpl#getRealise <em>Realise</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Core.impl.CoreComputationNodeImpl#getProduceOutputData <em>Produce Output Data</em>}</li>
  * </ul>
  *
  * @generated

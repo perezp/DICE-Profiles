@@ -1,11 +1,11 @@
 /**
  */
-package es.unizar.disco.dice.dtsm.Hadoop.impl;
+package es.unizar.disco.dice.DTSM.Hadoop.impl;
 
 import es.unizar.disco.dice.Basic_Enumeration_Types.Scheduling;
 
-import es.unizar.disco.dice.dtsm.Hadoop.HadoopPackage;
-import es.unizar.disco.dice.dtsm.Hadoop.HadoopScenario;
+import es.unizar.disco.dice.DTSM.Hadoop.HadoopPackage;
+import es.unizar.disco.dice.DTSM.Hadoop.HadoopScenario;
 
 import org.eclipse.emf.common.notify.Notification;
 
@@ -23,7 +23,7 @@ import org.eclipse.papyrus.MARTE.MARTE_AnalysisModel.GQAM.impl.GaScenarioImpl;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link es.unizar.disco.dice.dtsm.Hadoop.impl.HadoopScenarioImpl#getJobSchedule <em>Job Schedule</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Hadoop.impl.HadoopScenarioImpl#getJobSchedule <em>Job Schedule</em>}</li>
  * </ul>
  *
  * @generated

@@ -1,13 +1,13 @@
 /**
  */
-package es.unizar.disco.dice.dtsm.Hadoop.impl;
+package es.unizar.disco.dice.DTSM.Hadoop.impl;
 
-import es.unizar.disco.dice.dtsm.Core.CoreData;
+import es.unizar.disco.dice.DTSM.Core.CoreData;
 
-import es.unizar.disco.dice.dtsm.Hadoop.HadoopMap;
-import es.unizar.disco.dice.dtsm.Hadoop.HadoopMapReducePhase;
-import es.unizar.disco.dice.dtsm.Hadoop.HadoopPackage;
-import es.unizar.disco.dice.dtsm.Hadoop.HadoopReduce;
+import es.unizar.disco.dice.DTSM.Hadoop.HadoopMap;
+import es.unizar.disco.dice.DTSM.Hadoop.HadoopMapReducePhase;
+import es.unizar.disco.dice.DTSM.Hadoop.HadoopPackage;
+import es.unizar.disco.dice.DTSM.Hadoop.HadoopReduce;
 
 import org.eclipse.emf.common.notify.Notification;
 
@@ -27,10 +27,10 @@ import org.eclipse.uml2.uml.Classifier;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link es.unizar.disco.dice.dtsm.Hadoop.impl.HadoopMapReducePhaseImpl#getHasMap <em>Has Map</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Hadoop.impl.HadoopMapReducePhaseImpl#getHasReduce <em>Has Reduce</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Hadoop.impl.HadoopMapReducePhaseImpl#getOutput <em>Output</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Hadoop.impl.HadoopMapReducePhaseImpl#getBase_Classifier <em>Base Classifier</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Hadoop.impl.HadoopMapReducePhaseImpl#getHasMap <em>Has Map</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Hadoop.impl.HadoopMapReducePhaseImpl#getHasReduce <em>Has Reduce</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Hadoop.impl.HadoopMapReducePhaseImpl#getOutput <em>Output</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Hadoop.impl.HadoopMapReducePhaseImpl#getBase_Classifier <em>Base Classifier</em>}</li>
  * </ul>
  *
  * @generated

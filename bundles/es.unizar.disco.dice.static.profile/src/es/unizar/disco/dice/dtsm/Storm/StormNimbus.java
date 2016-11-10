@@ -1,6 +1,6 @@
 /**
  */
-package es.unizar.disco.dice.dtsm.Storm;
+package es.unizar.disco.dice.DTSM.Storm;
 
 import org.eclipse.emf.ecore.EObject;
 
@@ -15,13 +15,13 @@ import org.eclipse.uml2.uml.Classifier;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link es.unizar.disco.dice.dtsm.Storm.StormNimbus#getTaskTimeout <em>Task Timeout</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Storm.StormNimbus#getSupervisorTimeout <em>Supervisor Timeout</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Storm.StormNimbus#getMonitorFrequency <em>Monitor Frequency</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Storm.StormNimbus#getBase_Classifier <em>Base Classifier</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Storm.StormNimbus#getTaskTimeout <em>Task Timeout</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Storm.StormNimbus#getSupervisorTimeout <em>Supervisor Timeout</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Storm.StormNimbus#getMonitorFrequency <em>Monitor Frequency</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Storm.StormNimbus#getBase_Classifier <em>Base Classifier</em>}</li>
  * </ul>
  *
- * @see es.unizar.disco.dice.dtsm.Storm.StormPackage#getStormNimbus()
+ * @see es.unizar.disco.dice.DTSM.Storm.StormPackage#getStormNimbus()
  * @model
  * @generated
  */
@@ -36,14 +36,14 @@ public interface StormNimbus extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Task Timeout</em>' attribute.
 	 * @see #setTaskTimeout(int)
-	 * @see es.unizar.disco.dice.dtsm.Storm.StormPackage#getStormNimbus_TaskTimeout()
+	 * @see es.unizar.disco.dice.DTSM.Storm.StormPackage#getStormNimbus_TaskTimeout()
 	 * @model dataType="org.eclipse.uml2.types.Integer" ordered="false"
 	 * @generated
 	 */
 	int getTaskTimeout();
 
 	/**
-	 * Sets the value of the '{@link es.unizar.disco.dice.dtsm.Storm.StormNimbus#getTaskTimeout <em>Task Timeout</em>}' attribute.
+	 * Sets the value of the '{@link es.unizar.disco.dice.DTSM.Storm.StormNimbus#getTaskTimeout <em>Task Timeout</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Task Timeout</em>' attribute.
@@ -62,14 +62,14 @@ public interface StormNimbus extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Supervisor Timeout</em>' attribute.
 	 * @see #setSupervisorTimeout(int)
-	 * @see es.unizar.disco.dice.dtsm.Storm.StormPackage#getStormNimbus_SupervisorTimeout()
+	 * @see es.unizar.disco.dice.DTSM.Storm.StormPackage#getStormNimbus_SupervisorTimeout()
 	 * @model dataType="org.eclipse.uml2.types.Integer" ordered="false"
 	 * @generated
 	 */
 	int getSupervisorTimeout();
 
 	/**
-	 * Sets the value of the '{@link es.unizar.disco.dice.dtsm.Storm.StormNimbus#getSupervisorTimeout <em>Supervisor Timeout</em>}' attribute.
+	 * Sets the value of the '{@link es.unizar.disco.dice.DTSM.Storm.StormNimbus#getSupervisorTimeout <em>Supervisor Timeout</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Supervisor Timeout</em>' attribute.
@@ -88,14 +88,14 @@ public interface StormNimbus extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Monitor Frequency</em>' attribute.
 	 * @see #setMonitorFrequency(int)
-	 * @see es.unizar.disco.dice.dtsm.Storm.StormPackage#getStormNimbus_MonitorFrequency()
+	 * @see es.unizar.disco.dice.DTSM.Storm.StormPackage#getStormNimbus_MonitorFrequency()
 	 * @model dataType="org.eclipse.uml2.types.Integer" ordered="false"
 	 * @generated
 	 */
 	int getMonitorFrequency();
 
 	/**
-	 * Sets the value of the '{@link es.unizar.disco.dice.dtsm.Storm.StormNimbus#getMonitorFrequency <em>Monitor Frequency</em>}' attribute.
+	 * Sets the value of the '{@link es.unizar.disco.dice.DTSM.Storm.StormNimbus#getMonitorFrequency <em>Monitor Frequency</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Monitor Frequency</em>' attribute.
@@ -114,14 +114,14 @@ public interface StormNimbus extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Base Classifier</em>' reference.
 	 * @see #setBase_Classifier(Classifier)
-	 * @see es.unizar.disco.dice.dtsm.Storm.StormPackage#getStormNimbus_Base_Classifier()
+	 * @see es.unizar.disco.dice.DTSM.Storm.StormPackage#getStormNimbus_Base_Classifier()
 	 * @model required="true" ordered="false"
 	 * @generated
 	 */
 	Classifier getBase_Classifier();
 
 	/**
-	 * Sets the value of the '{@link es.unizar.disco.dice.dtsm.Storm.StormNimbus#getBase_Classifier <em>Base Classifier</em>}' reference.
+	 * Sets the value of the '{@link es.unizar.disco.dice.DTSM.Storm.StormNimbus#getBase_Classifier <em>Base Classifier</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Base Classifier</em>' reference.

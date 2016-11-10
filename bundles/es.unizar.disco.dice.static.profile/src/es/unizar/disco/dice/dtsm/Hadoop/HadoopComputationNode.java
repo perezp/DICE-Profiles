@@ -1,8 +1,8 @@
 /**
  */
-package es.unizar.disco.dice.dtsm.Hadoop;
+package es.unizar.disco.dice.DTSM.Hadoop;
 
-import es.unizar.disco.dice.dtsm.Core.CoreComputationNode;
+import es.unizar.disco.dice.DTSM.Core.CoreComputationNode;
 
 import org.eclipse.emf.common.util.EList;
 
@@ -15,10 +15,10 @@ import org.eclipse.emf.common.util.EList;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link es.unizar.disco.dice.dtsm.Hadoop.HadoopComputationNode#getNCores <em>NCores</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Hadoop.HadoopComputationNode#getNCores <em>NCores</em>}</li>
  * </ul>
  *
- * @see es.unizar.disco.dice.dtsm.Hadoop.HadoopPackage#getHadoopComputationNode()
+ * @see es.unizar.disco.dice.DTSM.Hadoop.HadoopPackage#getHadoopComputationNode()
  * @model
  * @generated
  */
@@ -33,7 +33,7 @@ public interface HadoopComputationNode extends CoreComputationNode {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>NCores</em>' attribute list.
-	 * @see es.unizar.disco.dice.dtsm.Hadoop.HadoopPackage#getHadoopComputationNode_NCores()
+	 * @see es.unizar.disco.dice.DTSM.Hadoop.HadoopPackage#getHadoopComputationNode_NCores()
 	 * @model dataType="org.eclipse.papyrus.MARTE_Library.BasicNFP_Types.NFP_Integer" ordered="false"
 	 * @generated
 	 */

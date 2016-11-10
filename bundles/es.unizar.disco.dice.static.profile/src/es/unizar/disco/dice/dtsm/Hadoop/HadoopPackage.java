@@ -1,8 +1,8 @@
 /**
  */
-package es.unizar.disco.dice.dtsm.Hadoop;
+package es.unizar.disco.dice.DTSM.Hadoop;
 
-import es.unizar.disco.dice.dtsm.Core.CorePackage;
+import es.unizar.disco.dice.DTSM.Core.CorePackage;
 
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
@@ -22,7 +22,7 @@ import org.eclipse.papyrus.MARTE.MARTE_AnalysisModel.GQAM.GQAMPackage;
  *   <li>and each data type</li>
  * </ul>
  * <!-- end-user-doc -->
- * @see es.unizar.disco.dice.dtsm.Hadoop.HadoopFactory
+ * @see es.unizar.disco.dice.DTSM.Hadoop.HadoopFactory
  * @model kind="package"
  * @generated
  */
@@ -57,14 +57,14 @@ public interface HadoopPackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	HadoopPackage eINSTANCE = es.unizar.disco.dice.dtsm.Hadoop.impl.HadoopPackageImpl.init();
+	HadoopPackage eINSTANCE = es.unizar.disco.dice.DTSM.Hadoop.impl.HadoopPackageImpl.init();
 
 	/**
-	 * The meta object id for the '{@link es.unizar.disco.dice.dtsm.Hadoop.impl.HadoopMapReduceJobImpl <em>Map Reduce Job</em>}' class.
+	 * The meta object id for the '{@link es.unizar.disco.dice.DTSM.Hadoop.impl.HadoopMapReduceJobImpl <em>Map Reduce Job</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see es.unizar.disco.dice.dtsm.Hadoop.impl.HadoopMapReduceJobImpl
-	 * @see es.unizar.disco.dice.dtsm.Hadoop.impl.HadoopPackageImpl#getHadoopMapReduceJob()
+	 * @see es.unizar.disco.dice.DTSM.Hadoop.impl.HadoopMapReduceJobImpl
+	 * @see es.unizar.disco.dice.DTSM.Hadoop.impl.HadoopPackageImpl#getHadoopMapReduceJob()
 	 * @generated
 	 */
 	int HADOOP_MAP_REDUCE_JOB = 0;
@@ -97,11 +97,11 @@ public interface HadoopPackage extends EPackage {
 	int HADOOP_MAP_REDUCE_JOB_FEATURE_COUNT = 2;
 
 	/**
-	 * The meta object id for the '{@link es.unizar.disco.dice.dtsm.Hadoop.impl.HadoopMapReducePhaseImpl <em>Map Reduce Phase</em>}' class.
+	 * The meta object id for the '{@link es.unizar.disco.dice.DTSM.Hadoop.impl.HadoopMapReducePhaseImpl <em>Map Reduce Phase</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see es.unizar.disco.dice.dtsm.Hadoop.impl.HadoopMapReducePhaseImpl
-	 * @see es.unizar.disco.dice.dtsm.Hadoop.impl.HadoopPackageImpl#getHadoopMapReducePhase()
+	 * @see es.unizar.disco.dice.DTSM.Hadoop.impl.HadoopMapReducePhaseImpl
+	 * @see es.unizar.disco.dice.DTSM.Hadoop.impl.HadoopPackageImpl#getHadoopMapReducePhase()
 	 * @generated
 	 */
 	int HADOOP_MAP_REDUCE_PHASE = 1;
@@ -152,11 +152,11 @@ public interface HadoopPackage extends EPackage {
 	int HADOOP_MAP_REDUCE_PHASE_FEATURE_COUNT = 4;
 
 	/**
-	 * The meta object id for the '{@link es.unizar.disco.dice.dtsm.Hadoop.impl.HadoopOperationImpl <em>Operation</em>}' class.
+	 * The meta object id for the '{@link es.unizar.disco.dice.DTSM.Hadoop.impl.HadoopOperationImpl <em>Operation</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see es.unizar.disco.dice.dtsm.Hadoop.impl.HadoopOperationImpl
-	 * @see es.unizar.disco.dice.dtsm.Hadoop.impl.HadoopPackageImpl#getHadoopOperation()
+	 * @see es.unizar.disco.dice.DTSM.Hadoop.impl.HadoopOperationImpl
+	 * @see es.unizar.disco.dice.DTSM.Hadoop.impl.HadoopPackageImpl#getHadoopOperation()
 	 * @generated
 	 */
 	int HADOOP_OPERATION = 3;
@@ -549,11 +549,11 @@ public interface HadoopPackage extends EPackage {
 	int HADOOP_OPERATION_FEATURE_COUNT = GQAMPackage.GA_STEP_FEATURE_COUNT + 2;
 
 	/**
-	 * The meta object id for the '{@link es.unizar.disco.dice.dtsm.Hadoop.impl.HadoopMapImpl <em>Map</em>}' class.
+	 * The meta object id for the '{@link es.unizar.disco.dice.DTSM.Hadoop.impl.HadoopMapImpl <em>Map</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see es.unizar.disco.dice.dtsm.Hadoop.impl.HadoopMapImpl
-	 * @see es.unizar.disco.dice.dtsm.Hadoop.impl.HadoopPackageImpl#getHadoopMap()
+	 * @see es.unizar.disco.dice.DTSM.Hadoop.impl.HadoopMapImpl
+	 * @see es.unizar.disco.dice.DTSM.Hadoop.impl.HadoopPackageImpl#getHadoopMap()
 	 * @generated
 	 */
 	int HADOOP_MAP = 2;
@@ -955,11 +955,11 @@ public interface HadoopPackage extends EPackage {
 	int HADOOP_MAP_FEATURE_COUNT = HADOOP_OPERATION_FEATURE_COUNT + 1;
 
 	/**
-	 * The meta object id for the '{@link es.unizar.disco.dice.dtsm.Hadoop.impl.HadoopReduceImpl <em>Reduce</em>}' class.
+	 * The meta object id for the '{@link es.unizar.disco.dice.DTSM.Hadoop.impl.HadoopReduceImpl <em>Reduce</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see es.unizar.disco.dice.dtsm.Hadoop.impl.HadoopReduceImpl
-	 * @see es.unizar.disco.dice.dtsm.Hadoop.impl.HadoopPackageImpl#getHadoopReduce()
+	 * @see es.unizar.disco.dice.DTSM.Hadoop.impl.HadoopReduceImpl
+	 * @see es.unizar.disco.dice.DTSM.Hadoop.impl.HadoopPackageImpl#getHadoopReduce()
 	 * @generated
 	 */
 	int HADOOP_REDUCE = 4;
@@ -1361,11 +1361,11 @@ public interface HadoopPackage extends EPackage {
 	int HADOOP_REDUCE_FEATURE_COUNT = HADOOP_OPERATION_FEATURE_COUNT + 1;
 
 	/**
-	 * The meta object id for the '{@link es.unizar.disco.dice.dtsm.Hadoop.impl.HadoopScenarioImpl <em>Scenario</em>}' class.
+	 * The meta object id for the '{@link es.unizar.disco.dice.DTSM.Hadoop.impl.HadoopScenarioImpl <em>Scenario</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see es.unizar.disco.dice.dtsm.Hadoop.impl.HadoopScenarioImpl
-	 * @see es.unizar.disco.dice.dtsm.Hadoop.impl.HadoopPackageImpl#getHadoopScenario()
+	 * @see es.unizar.disco.dice.DTSM.Hadoop.impl.HadoopScenarioImpl
+	 * @see es.unizar.disco.dice.DTSM.Hadoop.impl.HadoopPackageImpl#getHadoopScenario()
 	 * @generated
 	 */
 	int HADOOP_SCENARIO = 5;
@@ -1641,11 +1641,11 @@ public interface HadoopPackage extends EPackage {
 	int HADOOP_SCENARIO_FEATURE_COUNT = GQAMPackage.GA_SCENARIO_FEATURE_COUNT + 1;
 
 	/**
-	 * The meta object id for the '{@link es.unizar.disco.dice.dtsm.Hadoop.impl.HadoopWorkloadEventImpl <em>Workload Event</em>}' class.
+	 * The meta object id for the '{@link es.unizar.disco.dice.DTSM.Hadoop.impl.HadoopWorkloadEventImpl <em>Workload Event</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see es.unizar.disco.dice.dtsm.Hadoop.impl.HadoopWorkloadEventImpl
-	 * @see es.unizar.disco.dice.dtsm.Hadoop.impl.HadoopPackageImpl#getHadoopWorkloadEvent()
+	 * @see es.unizar.disco.dice.DTSM.Hadoop.impl.HadoopWorkloadEventImpl
+	 * @see es.unizar.disco.dice.DTSM.Hadoop.impl.HadoopPackageImpl#getHadoopWorkloadEvent()
 	 * @generated
 	 */
 	int HADOOP_WORKLOAD_EVENT = 6;
@@ -1732,11 +1732,11 @@ public interface HadoopPackage extends EPackage {
 	int HADOOP_WORKLOAD_EVENT_FEATURE_COUNT = GQAMPackage.GA_WORKLOAD_EVENT_FEATURE_COUNT + 2;
 
 	/**
-	 * The meta object id for the '{@link es.unizar.disco.dice.dtsm.Hadoop.impl.HadoopComputationNodeImpl <em>Computation Node</em>}' class.
+	 * The meta object id for the '{@link es.unizar.disco.dice.DTSM.Hadoop.impl.HadoopComputationNodeImpl <em>Computation Node</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see es.unizar.disco.dice.dtsm.Hadoop.impl.HadoopComputationNodeImpl
-	 * @see es.unizar.disco.dice.dtsm.Hadoop.impl.HadoopPackageImpl#getHadoopComputationNode()
+	 * @see es.unizar.disco.dice.DTSM.Hadoop.impl.HadoopComputationNodeImpl
+	 * @see es.unizar.disco.dice.DTSM.Hadoop.impl.HadoopPackageImpl#getHadoopComputationNode()
 	 * @generated
 	 */
 	int HADOOP_COMPUTATION_NODE = 7;
@@ -2067,234 +2067,234 @@ public interface HadoopPackage extends EPackage {
 
 
 	/**
-	 * Returns the meta object for class '{@link es.unizar.disco.dice.dtsm.Hadoop.HadoopMapReduceJob <em>Map Reduce Job</em>}'.
+	 * Returns the meta object for class '{@link es.unizar.disco.dice.DTSM.Hadoop.HadoopMapReduceJob <em>Map Reduce Job</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>Map Reduce Job</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Hadoop.HadoopMapReduceJob
+	 * @see es.unizar.disco.dice.DTSM.Hadoop.HadoopMapReduceJob
 	 * @generated
 	 */
 	EClass getHadoopMapReduceJob();
 
 	/**
-	 * Returns the meta object for the reference list '{@link es.unizar.disco.dice.dtsm.Hadoop.HadoopMapReduceJob#getMapResucePhases <em>Map Resuce Phases</em>}'.
+	 * Returns the meta object for the reference list '{@link es.unizar.disco.dice.DTSM.Hadoop.HadoopMapReduceJob#getMapResucePhases <em>Map Resuce Phases</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the reference list '<em>Map Resuce Phases</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Hadoop.HadoopMapReduceJob#getMapResucePhases()
+	 * @see es.unizar.disco.dice.DTSM.Hadoop.HadoopMapReduceJob#getMapResucePhases()
 	 * @see #getHadoopMapReduceJob()
 	 * @generated
 	 */
 	EReference getHadoopMapReduceJob_MapResucePhases();
 
 	/**
-	 * Returns the meta object for the reference '{@link es.unizar.disco.dice.dtsm.Hadoop.HadoopMapReduceJob#getBase_Classifier <em>Base Classifier</em>}'.
+	 * Returns the meta object for the reference '{@link es.unizar.disco.dice.DTSM.Hadoop.HadoopMapReduceJob#getBase_Classifier <em>Base Classifier</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the reference '<em>Base Classifier</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Hadoop.HadoopMapReduceJob#getBase_Classifier()
+	 * @see es.unizar.disco.dice.DTSM.Hadoop.HadoopMapReduceJob#getBase_Classifier()
 	 * @see #getHadoopMapReduceJob()
 	 * @generated
 	 */
 	EReference getHadoopMapReduceJob_Base_Classifier();
 
 	/**
-	 * Returns the meta object for class '{@link es.unizar.disco.dice.dtsm.Hadoop.HadoopMapReducePhase <em>Map Reduce Phase</em>}'.
+	 * Returns the meta object for class '{@link es.unizar.disco.dice.DTSM.Hadoop.HadoopMapReducePhase <em>Map Reduce Phase</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>Map Reduce Phase</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Hadoop.HadoopMapReducePhase
+	 * @see es.unizar.disco.dice.DTSM.Hadoop.HadoopMapReducePhase
 	 * @generated
 	 */
 	EClass getHadoopMapReducePhase();
 
 	/**
-	 * Returns the meta object for the reference '{@link es.unizar.disco.dice.dtsm.Hadoop.HadoopMapReducePhase#getHasMap <em>Has Map</em>}'.
+	 * Returns the meta object for the reference '{@link es.unizar.disco.dice.DTSM.Hadoop.HadoopMapReducePhase#getHasMap <em>Has Map</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the reference '<em>Has Map</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Hadoop.HadoopMapReducePhase#getHasMap()
+	 * @see es.unizar.disco.dice.DTSM.Hadoop.HadoopMapReducePhase#getHasMap()
 	 * @see #getHadoopMapReducePhase()
 	 * @generated
 	 */
 	EReference getHadoopMapReducePhase_HasMap();
 
 	/**
-	 * Returns the meta object for the reference '{@link es.unizar.disco.dice.dtsm.Hadoop.HadoopMapReducePhase#getHasReduce <em>Has Reduce</em>}'.
+	 * Returns the meta object for the reference '{@link es.unizar.disco.dice.DTSM.Hadoop.HadoopMapReducePhase#getHasReduce <em>Has Reduce</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the reference '<em>Has Reduce</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Hadoop.HadoopMapReducePhase#getHasReduce()
+	 * @see es.unizar.disco.dice.DTSM.Hadoop.HadoopMapReducePhase#getHasReduce()
 	 * @see #getHadoopMapReducePhase()
 	 * @generated
 	 */
 	EReference getHadoopMapReducePhase_HasReduce();
 
 	/**
-	 * Returns the meta object for the reference '{@link es.unizar.disco.dice.dtsm.Hadoop.HadoopMapReducePhase#getOutput <em>Output</em>}'.
+	 * Returns the meta object for the reference '{@link es.unizar.disco.dice.DTSM.Hadoop.HadoopMapReducePhase#getOutput <em>Output</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the reference '<em>Output</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Hadoop.HadoopMapReducePhase#getOutput()
+	 * @see es.unizar.disco.dice.DTSM.Hadoop.HadoopMapReducePhase#getOutput()
 	 * @see #getHadoopMapReducePhase()
 	 * @generated
 	 */
 	EReference getHadoopMapReducePhase_Output();
 
 	/**
-	 * Returns the meta object for the reference '{@link es.unizar.disco.dice.dtsm.Hadoop.HadoopMapReducePhase#getBase_Classifier <em>Base Classifier</em>}'.
+	 * Returns the meta object for the reference '{@link es.unizar.disco.dice.DTSM.Hadoop.HadoopMapReducePhase#getBase_Classifier <em>Base Classifier</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the reference '<em>Base Classifier</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Hadoop.HadoopMapReducePhase#getBase_Classifier()
+	 * @see es.unizar.disco.dice.DTSM.Hadoop.HadoopMapReducePhase#getBase_Classifier()
 	 * @see #getHadoopMapReducePhase()
 	 * @generated
 	 */
 	EReference getHadoopMapReducePhase_Base_Classifier();
 
 	/**
-	 * Returns the meta object for class '{@link es.unizar.disco.dice.dtsm.Hadoop.HadoopMap <em>Map</em>}'.
+	 * Returns the meta object for class '{@link es.unizar.disco.dice.DTSM.Hadoop.HadoopMap <em>Map</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>Map</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Hadoop.HadoopMap
+	 * @see es.unizar.disco.dice.DTSM.Hadoop.HadoopMap
 	 * @generated
 	 */
 	EClass getHadoopMap();
 
 	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.dtsm.Hadoop.HadoopMap#getType <em>Type</em>}'.
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DTSM.Hadoop.HadoopMap#getType <em>Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Type</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Hadoop.HadoopMap#getType()
+	 * @see es.unizar.disco.dice.DTSM.Hadoop.HadoopMap#getType()
 	 * @see #getHadoopMap()
 	 * @generated
 	 */
 	EAttribute getHadoopMap_Type();
 
 	/**
-	 * Returns the meta object for class '{@link es.unizar.disco.dice.dtsm.Hadoop.HadoopOperation <em>Operation</em>}'.
+	 * Returns the meta object for class '{@link es.unizar.disco.dice.DTSM.Hadoop.HadoopOperation <em>Operation</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>Operation</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Hadoop.HadoopOperation
+	 * @see es.unizar.disco.dice.DTSM.Hadoop.HadoopOperation
 	 * @generated
 	 */
 	EClass getHadoopOperation();
 
 	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.dtsm.Hadoop.HadoopOperation#getParallelism <em>Parallelism</em>}'.
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DTSM.Hadoop.HadoopOperation#getParallelism <em>Parallelism</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Parallelism</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Hadoop.HadoopOperation#getParallelism()
+	 * @see es.unizar.disco.dice.DTSM.Hadoop.HadoopOperation#getParallelism()
 	 * @see #getHadoopOperation()
 	 * @generated
 	 */
 	EAttribute getHadoopOperation_Parallelism();
 
 	/**
-	 * Returns the meta object for the attribute list '{@link es.unizar.disco.dice.dtsm.Hadoop.HadoopOperation#getNTasks <em>NTasks</em>}'.
+	 * Returns the meta object for the attribute list '{@link es.unizar.disco.dice.DTSM.Hadoop.HadoopOperation#getNTasks <em>NTasks</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute list '<em>NTasks</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Hadoop.HadoopOperation#getNTasks()
+	 * @see es.unizar.disco.dice.DTSM.Hadoop.HadoopOperation#getNTasks()
 	 * @see #getHadoopOperation()
 	 * @generated
 	 */
 	EAttribute getHadoopOperation_NTasks();
 
 	/**
-	 * Returns the meta object for class '{@link es.unizar.disco.dice.dtsm.Hadoop.HadoopReduce <em>Reduce</em>}'.
+	 * Returns the meta object for class '{@link es.unizar.disco.dice.DTSM.Hadoop.HadoopReduce <em>Reduce</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>Reduce</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Hadoop.HadoopReduce
+	 * @see es.unizar.disco.dice.DTSM.Hadoop.HadoopReduce
 	 * @generated
 	 */
 	EClass getHadoopReduce();
 
 	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.dtsm.Hadoop.HadoopReduce#getType <em>Type</em>}'.
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DTSM.Hadoop.HadoopReduce#getType <em>Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Type</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Hadoop.HadoopReduce#getType()
+	 * @see es.unizar.disco.dice.DTSM.Hadoop.HadoopReduce#getType()
 	 * @see #getHadoopReduce()
 	 * @generated
 	 */
 	EAttribute getHadoopReduce_Type();
 
 	/**
-	 * Returns the meta object for class '{@link es.unizar.disco.dice.dtsm.Hadoop.HadoopScenario <em>Scenario</em>}'.
+	 * Returns the meta object for class '{@link es.unizar.disco.dice.DTSM.Hadoop.HadoopScenario <em>Scenario</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>Scenario</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Hadoop.HadoopScenario
+	 * @see es.unizar.disco.dice.DTSM.Hadoop.HadoopScenario
 	 * @generated
 	 */
 	EClass getHadoopScenario();
 
 	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.dtsm.Hadoop.HadoopScenario#getJobSchedule <em>Job Schedule</em>}'.
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DTSM.Hadoop.HadoopScenario#getJobSchedule <em>Job Schedule</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Job Schedule</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Hadoop.HadoopScenario#getJobSchedule()
+	 * @see es.unizar.disco.dice.DTSM.Hadoop.HadoopScenario#getJobSchedule()
 	 * @see #getHadoopScenario()
 	 * @generated
 	 */
 	EAttribute getHadoopScenario_JobSchedule();
 
 	/**
-	 * Returns the meta object for class '{@link es.unizar.disco.dice.dtsm.Hadoop.HadoopWorkloadEvent <em>Workload Event</em>}'.
+	 * Returns the meta object for class '{@link es.unizar.disco.dice.DTSM.Hadoop.HadoopWorkloadEvent <em>Workload Event</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>Workload Event</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Hadoop.HadoopWorkloadEvent
+	 * @see es.unizar.disco.dice.DTSM.Hadoop.HadoopWorkloadEvent
 	 * @generated
 	 */
 	EClass getHadoopWorkloadEvent();
 
 	/**
-	 * Returns the meta object for the attribute list '{@link es.unizar.disco.dice.dtsm.Hadoop.HadoopWorkloadEvent#getHadoopPopulation <em>Hadoop Population</em>}'.
+	 * Returns the meta object for the attribute list '{@link es.unizar.disco.dice.DTSM.Hadoop.HadoopWorkloadEvent#getHadoopPopulation <em>Hadoop Population</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute list '<em>Hadoop Population</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Hadoop.HadoopWorkloadEvent#getHadoopPopulation()
+	 * @see es.unizar.disco.dice.DTSM.Hadoop.HadoopWorkloadEvent#getHadoopPopulation()
 	 * @see #getHadoopWorkloadEvent()
 	 * @generated
 	 */
 	EAttribute getHadoopWorkloadEvent_HadoopPopulation();
 
 	/**
-	 * Returns the meta object for the attribute list '{@link es.unizar.disco.dice.dtsm.Hadoop.HadoopWorkloadEvent#getHadoopExtDelay <em>Hadoop Ext Delay</em>}'.
+	 * Returns the meta object for the attribute list '{@link es.unizar.disco.dice.DTSM.Hadoop.HadoopWorkloadEvent#getHadoopExtDelay <em>Hadoop Ext Delay</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute list '<em>Hadoop Ext Delay</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Hadoop.HadoopWorkloadEvent#getHadoopExtDelay()
+	 * @see es.unizar.disco.dice.DTSM.Hadoop.HadoopWorkloadEvent#getHadoopExtDelay()
 	 * @see #getHadoopWorkloadEvent()
 	 * @generated
 	 */
 	EAttribute getHadoopWorkloadEvent_HadoopExtDelay();
 
 	/**
-	 * Returns the meta object for class '{@link es.unizar.disco.dice.dtsm.Hadoop.HadoopComputationNode <em>Computation Node</em>}'.
+	 * Returns the meta object for class '{@link es.unizar.disco.dice.DTSM.Hadoop.HadoopComputationNode <em>Computation Node</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>Computation Node</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Hadoop.HadoopComputationNode
+	 * @see es.unizar.disco.dice.DTSM.Hadoop.HadoopComputationNode
 	 * @generated
 	 */
 	EClass getHadoopComputationNode();
 
 	/**
-	 * Returns the meta object for the attribute list '{@link es.unizar.disco.dice.dtsm.Hadoop.HadoopComputationNode#getNCores <em>NCores</em>}'.
+	 * Returns the meta object for the attribute list '{@link es.unizar.disco.dice.DTSM.Hadoop.HadoopComputationNode#getNCores <em>NCores</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute list '<em>NCores</em>'.
-	 * @see es.unizar.disco.dice.dtsm.Hadoop.HadoopComputationNode#getNCores()
+	 * @see es.unizar.disco.dice.DTSM.Hadoop.HadoopComputationNode#getNCores()
 	 * @see #getHadoopComputationNode()
 	 * @generated
 	 */
@@ -2323,11 +2323,11 @@ public interface HadoopPackage extends EPackage {
 	 */
 	interface Literals {
 		/**
-		 * The meta object literal for the '{@link es.unizar.disco.dice.dtsm.Hadoop.impl.HadoopMapReduceJobImpl <em>Map Reduce Job</em>}' class.
+		 * The meta object literal for the '{@link es.unizar.disco.dice.DTSM.Hadoop.impl.HadoopMapReduceJobImpl <em>Map Reduce Job</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see es.unizar.disco.dice.dtsm.Hadoop.impl.HadoopMapReduceJobImpl
-		 * @see es.unizar.disco.dice.dtsm.Hadoop.impl.HadoopPackageImpl#getHadoopMapReduceJob()
+		 * @see es.unizar.disco.dice.DTSM.Hadoop.impl.HadoopMapReduceJobImpl
+		 * @see es.unizar.disco.dice.DTSM.Hadoop.impl.HadoopPackageImpl#getHadoopMapReduceJob()
 		 * @generated
 		 */
 		EClass HADOOP_MAP_REDUCE_JOB = eINSTANCE.getHadoopMapReduceJob();
@@ -2349,11 +2349,11 @@ public interface HadoopPackage extends EPackage {
 		EReference HADOOP_MAP_REDUCE_JOB__BASE_CLASSIFIER = eINSTANCE.getHadoopMapReduceJob_Base_Classifier();
 
 		/**
-		 * The meta object literal for the '{@link es.unizar.disco.dice.dtsm.Hadoop.impl.HadoopMapReducePhaseImpl <em>Map Reduce Phase</em>}' class.
+		 * The meta object literal for the '{@link es.unizar.disco.dice.DTSM.Hadoop.impl.HadoopMapReducePhaseImpl <em>Map Reduce Phase</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see es.unizar.disco.dice.dtsm.Hadoop.impl.HadoopMapReducePhaseImpl
-		 * @see es.unizar.disco.dice.dtsm.Hadoop.impl.HadoopPackageImpl#getHadoopMapReducePhase()
+		 * @see es.unizar.disco.dice.DTSM.Hadoop.impl.HadoopMapReducePhaseImpl
+		 * @see es.unizar.disco.dice.DTSM.Hadoop.impl.HadoopPackageImpl#getHadoopMapReducePhase()
 		 * @generated
 		 */
 		EClass HADOOP_MAP_REDUCE_PHASE = eINSTANCE.getHadoopMapReducePhase();
@@ -2391,11 +2391,11 @@ public interface HadoopPackage extends EPackage {
 		EReference HADOOP_MAP_REDUCE_PHASE__BASE_CLASSIFIER = eINSTANCE.getHadoopMapReducePhase_Base_Classifier();
 
 		/**
-		 * The meta object literal for the '{@link es.unizar.disco.dice.dtsm.Hadoop.impl.HadoopMapImpl <em>Map</em>}' class.
+		 * The meta object literal for the '{@link es.unizar.disco.dice.DTSM.Hadoop.impl.HadoopMapImpl <em>Map</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see es.unizar.disco.dice.dtsm.Hadoop.impl.HadoopMapImpl
-		 * @see es.unizar.disco.dice.dtsm.Hadoop.impl.HadoopPackageImpl#getHadoopMap()
+		 * @see es.unizar.disco.dice.DTSM.Hadoop.impl.HadoopMapImpl
+		 * @see es.unizar.disco.dice.DTSM.Hadoop.impl.HadoopPackageImpl#getHadoopMap()
 		 * @generated
 		 */
 		EClass HADOOP_MAP = eINSTANCE.getHadoopMap();
@@ -2409,11 +2409,11 @@ public interface HadoopPackage extends EPackage {
 		EAttribute HADOOP_MAP__TYPE = eINSTANCE.getHadoopMap_Type();
 
 		/**
-		 * The meta object literal for the '{@link es.unizar.disco.dice.dtsm.Hadoop.impl.HadoopOperationImpl <em>Operation</em>}' class.
+		 * The meta object literal for the '{@link es.unizar.disco.dice.DTSM.Hadoop.impl.HadoopOperationImpl <em>Operation</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see es.unizar.disco.dice.dtsm.Hadoop.impl.HadoopOperationImpl
-		 * @see es.unizar.disco.dice.dtsm.Hadoop.impl.HadoopPackageImpl#getHadoopOperation()
+		 * @see es.unizar.disco.dice.DTSM.Hadoop.impl.HadoopOperationImpl
+		 * @see es.unizar.disco.dice.DTSM.Hadoop.impl.HadoopPackageImpl#getHadoopOperation()
 		 * @generated
 		 */
 		EClass HADOOP_OPERATION = eINSTANCE.getHadoopOperation();
@@ -2435,11 +2435,11 @@ public interface HadoopPackage extends EPackage {
 		EAttribute HADOOP_OPERATION__NTASKS = eINSTANCE.getHadoopOperation_NTasks();
 
 		/**
-		 * The meta object literal for the '{@link es.unizar.disco.dice.dtsm.Hadoop.impl.HadoopReduceImpl <em>Reduce</em>}' class.
+		 * The meta object literal for the '{@link es.unizar.disco.dice.DTSM.Hadoop.impl.HadoopReduceImpl <em>Reduce</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see es.unizar.disco.dice.dtsm.Hadoop.impl.HadoopReduceImpl
-		 * @see es.unizar.disco.dice.dtsm.Hadoop.impl.HadoopPackageImpl#getHadoopReduce()
+		 * @see es.unizar.disco.dice.DTSM.Hadoop.impl.HadoopReduceImpl
+		 * @see es.unizar.disco.dice.DTSM.Hadoop.impl.HadoopPackageImpl#getHadoopReduce()
 		 * @generated
 		 */
 		EClass HADOOP_REDUCE = eINSTANCE.getHadoopReduce();
@@ -2453,11 +2453,11 @@ public interface HadoopPackage extends EPackage {
 		EAttribute HADOOP_REDUCE__TYPE = eINSTANCE.getHadoopReduce_Type();
 
 		/**
-		 * The meta object literal for the '{@link es.unizar.disco.dice.dtsm.Hadoop.impl.HadoopScenarioImpl <em>Scenario</em>}' class.
+		 * The meta object literal for the '{@link es.unizar.disco.dice.DTSM.Hadoop.impl.HadoopScenarioImpl <em>Scenario</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see es.unizar.disco.dice.dtsm.Hadoop.impl.HadoopScenarioImpl
-		 * @see es.unizar.disco.dice.dtsm.Hadoop.impl.HadoopPackageImpl#getHadoopScenario()
+		 * @see es.unizar.disco.dice.DTSM.Hadoop.impl.HadoopScenarioImpl
+		 * @see es.unizar.disco.dice.DTSM.Hadoop.impl.HadoopPackageImpl#getHadoopScenario()
 		 * @generated
 		 */
 		EClass HADOOP_SCENARIO = eINSTANCE.getHadoopScenario();
@@ -2471,11 +2471,11 @@ public interface HadoopPackage extends EPackage {
 		EAttribute HADOOP_SCENARIO__JOB_SCHEDULE = eINSTANCE.getHadoopScenario_JobSchedule();
 
 		/**
-		 * The meta object literal for the '{@link es.unizar.disco.dice.dtsm.Hadoop.impl.HadoopWorkloadEventImpl <em>Workload Event</em>}' class.
+		 * The meta object literal for the '{@link es.unizar.disco.dice.DTSM.Hadoop.impl.HadoopWorkloadEventImpl <em>Workload Event</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see es.unizar.disco.dice.dtsm.Hadoop.impl.HadoopWorkloadEventImpl
-		 * @see es.unizar.disco.dice.dtsm.Hadoop.impl.HadoopPackageImpl#getHadoopWorkloadEvent()
+		 * @see es.unizar.disco.dice.DTSM.Hadoop.impl.HadoopWorkloadEventImpl
+		 * @see es.unizar.disco.dice.DTSM.Hadoop.impl.HadoopPackageImpl#getHadoopWorkloadEvent()
 		 * @generated
 		 */
 		EClass HADOOP_WORKLOAD_EVENT = eINSTANCE.getHadoopWorkloadEvent();
@@ -2497,11 +2497,11 @@ public interface HadoopPackage extends EPackage {
 		EAttribute HADOOP_WORKLOAD_EVENT__HADOOP_EXT_DELAY = eINSTANCE.getHadoopWorkloadEvent_HadoopExtDelay();
 
 		/**
-		 * The meta object literal for the '{@link es.unizar.disco.dice.dtsm.Hadoop.impl.HadoopComputationNodeImpl <em>Computation Node</em>}' class.
+		 * The meta object literal for the '{@link es.unizar.disco.dice.DTSM.Hadoop.impl.HadoopComputationNodeImpl <em>Computation Node</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see es.unizar.disco.dice.dtsm.Hadoop.impl.HadoopComputationNodeImpl
-		 * @see es.unizar.disco.dice.dtsm.Hadoop.impl.HadoopPackageImpl#getHadoopComputationNode()
+		 * @see es.unizar.disco.dice.DTSM.Hadoop.impl.HadoopComputationNodeImpl
+		 * @see es.unizar.disco.dice.DTSM.Hadoop.impl.HadoopPackageImpl#getHadoopComputationNode()
 		 * @generated
 		 */
 		EClass HADOOP_COMPUTATION_NODE = eINSTANCE.getHadoopComputationNode();

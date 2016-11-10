@@ -1,8 +1,8 @@
 /**
  */
-package es.unizar.disco.dice.dtsm.Hadoop.impl;
+package es.unizar.disco.dice.DTSM.Hadoop.impl;
 
-import es.unizar.disco.dice.dtsm.Hadoop.*;
+import es.unizar.disco.dice.DTSM.Hadoop.*;
 
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;

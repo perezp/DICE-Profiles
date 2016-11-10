@@ -1,9 +1,9 @@
 /**
  */
-package es.unizar.disco.dice.dtsm.Core.impl;
+package es.unizar.disco.dice.DTSM.Core.impl;
 
-import es.unizar.disco.dice.dtsm.Core.CorePackage;
-import es.unizar.disco.dice.dtsm.Core.CoreStorageNode;
+import es.unizar.disco.dice.DTSM.Core.CorePackage;
+import es.unizar.disco.dice.DTSM.Core.CoreStorageNode;
 
 import org.eclipse.emf.common.notify.Notification;
 
@@ -19,9 +19,9 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link es.unizar.disco.dice.dtsm.Core.impl.CoreStorageNodeImpl#getDatabase <em>Database</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Core.impl.CoreStorageNodeImpl#getUser <em>User</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Core.impl.CoreStorageNodeImpl#getPassword <em>Password</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Core.impl.CoreStorageNodeImpl#getDatabase <em>Database</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Core.impl.CoreStorageNodeImpl#getUser <em>User</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Core.impl.CoreStorageNodeImpl#getPassword <em>Password</em>}</li>
  * </ul>
  *
  * @generated

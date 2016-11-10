@@ -1,9 +1,9 @@
 /**
  */
-package es.unizar.disco.dice.dtsm.Hadoop.impl;
+package es.unizar.disco.dice.DTSM.Hadoop.impl;
 
-import es.unizar.disco.dice.dtsm.Hadoop.HadoopPackage;
-import es.unizar.disco.dice.dtsm.Hadoop.HadoopWorkloadEvent;
+import es.unizar.disco.dice.DTSM.Hadoop.HadoopPackage;
+import es.unizar.disco.dice.DTSM.Hadoop.HadoopWorkloadEvent;
 
 import java.util.Collection;
 
@@ -23,8 +23,8 @@ import org.eclipse.papyrus.MARTE.MARTE_AnalysisModel.GQAM.impl.GaWorkloadEventIm
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link es.unizar.disco.dice.dtsm.Hadoop.impl.HadoopWorkloadEventImpl#getHadoopPopulation <em>Hadoop Population</em>}</li>
- *   <li>{@link es.unizar.disco.dice.dtsm.Hadoop.impl.HadoopWorkloadEventImpl#getHadoopExtDelay <em>Hadoop Ext Delay</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Hadoop.impl.HadoopWorkloadEventImpl#getHadoopPopulation <em>Hadoop Population</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Hadoop.impl.HadoopWorkloadEventImpl#getHadoopExtDelay <em>Hadoop Ext Delay</em>}</li>
  * </ul>
  *
  * @generated
