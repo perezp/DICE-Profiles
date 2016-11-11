@@ -30,6 +30,9 @@
 			</snapshots>
 		</repository>
 
+		
+
+
 		<repository>
 			<id>pnml</id>
 			<url>http://pnml.lip6.fr/pnmlframework/updatesite/</url>
@@ -49,6 +52,21 @@
 		
 		
 	</repositories>
+
+	<pluginRepositories>
+		<pluginRepository>
+			<id>jboss</id>
+			<url>https://repository.jboss.org/nexus/content/repositories/releases</url>
+			<layout>default</layout>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+			<releases>
+				<updatePolicy>daily</updatePolicy>
+			</releases>
+		</pluginRepository>
+	</pluginRepositories>
+
 
 	<build>
 		<plugins>
