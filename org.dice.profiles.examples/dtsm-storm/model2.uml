@@ -304,5 +304,6 @@ grouping=shuffle}</body>
     <context>in$b2_4</context>
     <context>in$c1</context>
     <context>in$c2</context>
+    <context>out$throughput</context>
   </GQAM:GaAnalysisContext>
 </xmi:XMI>

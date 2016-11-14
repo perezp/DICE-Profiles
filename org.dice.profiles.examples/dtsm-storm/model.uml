@@ -224,6 +224,7 @@ source=est)}</body>
     <context>in$b_3</context>
     <context>in$c1</context>
     <context>in$c2</context>
+    <context>out$throughput</context>
   </GQAM:GaAnalysisContext>
   <Storm:StormScenarioTopology xmi:id="_CuA7YGquEeaht-ghhLWJ8w" base_NamedElement="_fhMfgBXCEeaO9pVQNhbfJw" base_Behavior="_fhMfgBXCEeaO9pVQNhbfJw" base_Class="_fhMfgBXCEeaO9pVQNhbfJw"/>
 </xmi:XMI>
