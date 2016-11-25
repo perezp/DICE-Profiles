@@ -532,7 +532,7 @@
               <children xmi:type="notation:DecorationNode" xmi:id="_llxQFBXNEeaO9pVQNhbfJw" type="OpaqueAction_FloatingNameLabel">
                 <layoutConstraint xmi:type="notation:Location" xmi:id="_llxQFRXNEeaO9pVQNhbfJw" y="5"/>
               </children>
-              <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_llxQERXNEeaO9pVQNhbfJw"/>
+              <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_llxQERXNEeaO9pVQNhbfJw" diagramLink="_xXJREKvmEeaQ89E5RJevLA"/>
               <element xmi:type="uml:OpaqueAction" href="model.uml#_lloGIBXNEeaO9pVQNhbfJw"/>
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_llxQEhXNEeaO9pVQNhbfJw" x="725" y="15" width="91"/>
             </children>
@@ -1150,5 +1150,10 @@
     <styles xmi:type="notation:StringValueStyle" xmi:id="_Nay5EWqsEeaht-ghhLWJ8w" name="diagram_compatibility_version" stringValue="1.2.0"/>
     <styles xmi:type="notation:DiagramStyle" xmi:id="_Nay5EmqsEeaht-ghhLWJ8w"/>
     <element xmi:type="uml:ActivityPartition" href="model.uml#_UD_Q0BXMEeaO9pVQNhbfJw"/>
+  </notation:Diagram>
+  <notation:Diagram xmi:id="_xXJREKvmEeaQ89E5RJevLA" type="PapyrusUMLActivityDiagram" measurementUnit="Pixel">
+    <styles xmi:type="notation:StringValueStyle" xmi:id="_xXJREavmEeaQ89E5RJevLA" name="diagram_compatibility_version" stringValue="1.2.0"/>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_xXJREqvmEeaQ89E5RJevLA"/>
+    <element xmi:type="uml:OpaqueAction" href="model.uml#_lloGIBXNEeaO9pVQNhbfJw"/>
   </notation:Diagram>
 </xmi:XMI>
