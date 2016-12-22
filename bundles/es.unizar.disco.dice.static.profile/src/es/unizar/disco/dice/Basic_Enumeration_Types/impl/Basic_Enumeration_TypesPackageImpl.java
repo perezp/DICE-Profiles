@@ -548,6 +548,8 @@ public class Basic_Enumeration_TypesPackageImpl extends EPackageImpl implements 
 		initEEnum(streamPolicyEEnum, StreamPolicy.class, "StreamPolicy");
 		addEEnumLiteral(streamPolicyEEnum, StreamPolicy.ALL);
 		addEEnumLiteral(streamPolicyEEnum, StreamPolicy.SHUFFLE);
+		addEEnumLiteral(streamPolicyEEnum, StreamPolicy.FIELD);
+		addEEnumLiteral(streamPolicyEEnum, StreamPolicy.GLOBAL);
 
 		initEEnum(schedulingEEnum, Scheduling.class, "Scheduling");
 		addEEnumLiteral(schedulingEEnum, Scheduling.CAPACITY);

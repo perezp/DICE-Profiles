@@ -76,6 +76,8 @@
         <packagedElement xmi:type="uml:Enumeration" xmi:id="_v1__8DiOEeaFI4EbHcf0UA" name="StreamPolicy">
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_zBvjMDiOEeaFI4EbHcf0UA" name="all"/>
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_0dJxQDiOEeaFI4EbHcf0UA" name="shuffle"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_q4TlYMHfEeaTBOuP7oCUGA" name="field"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_sPD88MHfEeaTBOuP7oCUGA" name="global"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Enumeration" xmi:id="_AOBLsDiZEeaFI4EbHcf0UA" name="Scheduling">
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_P-A5sDiZEeaFI4EbHcf0UA" name="capacity"/>

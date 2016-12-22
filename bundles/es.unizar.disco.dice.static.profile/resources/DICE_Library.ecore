@@ -120,6 +120,8 @@
       <eClassifiers xsi:type="ecore:EEnum" name="StreamPolicy">
         <eLiterals name="all"/>
         <eLiterals name="shuffle" value="1"/>
+        <eLiterals name="field" value="2"/>
+        <eLiterals name="global" value="3"/>
       </eClassifiers>
       <eClassifiers xsi:type="ecore:EEnum" name="Scheduling">
         <eLiterals name="capacity"/>

@@ -352,6 +352,14 @@
                   <element xmi:type="uml:EnumerationLiteral" href="DICE_Library.uml#_0dJxQDiOEeaFI4EbHcf0UA"/>
                   <layoutConstraint xmi:type="notation:Location" xmi:id="_0dTiQTiOEeaFI4EbHcf0UA"/>
                 </children>
+                <children xmi:type="notation:Shape" xmi:id="_q4qxwMHfEeaTBOuP7oCUGA" type="EnumerationLiteral_LiteralLabel">
+                  <element xmi:type="uml:EnumerationLiteral" href="DICE_Library.uml#_q4TlYMHfEeaTBOuP7oCUGA"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_q4qxwcHfEeaTBOuP7oCUGA"/>
+                </children>
+                <children xmi:type="notation:Shape" xmi:id="_sPZUIMHfEeaTBOuP7oCUGA" type="EnumerationLiteral_LiteralLabel">
+                  <element xmi:type="uml:EnumerationLiteral" href="DICE_Library.uml#_sPD88MHfEeaTBOuP7oCUGA"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_sPZUIcHfEeaTBOuP7oCUGA"/>
+                </children>
                 <styles xmi:type="notation:TitleStyle" xmi:id="_v2MNNDiOEeaFI4EbHcf0UA"/>
                 <styles xmi:type="notation:SortingStyle" xmi:id="_v2MNNTiOEeaFI4EbHcf0UA"/>
                 <styles xmi:type="notation:FilteringStyle" xmi:id="_v2MNNjiOEeaFI4EbHcf0UA"/>

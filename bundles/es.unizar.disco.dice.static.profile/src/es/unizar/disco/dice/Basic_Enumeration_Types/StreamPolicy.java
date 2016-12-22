@@ -36,8 +36,28 @@ public enum StreamPolicy implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	SHUFFLE(1, "shuffle", "shuffle");
+	SHUFFLE(1, "shuffle", "shuffle"),
+	
+	/**
+	 * The '<em><b>Field</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #FIELD_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	FIELD(2, "field", "field"),
 
+	/**
+	 * The '<em><b>Global</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #GLOBAL_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	GLOBAL(3, "global", "global");
+	
 	/**
 	 * The '<em><b>All</b></em>' literal value.
 	 * <!-- begin-user-doc -->
@@ -67,6 +87,36 @@ public enum StreamPolicy implements Enumerator {
 	 * @ordered
 	 */
 	public static final int SHUFFLE_VALUE = 1;
+	
+	/**
+	 * The '<em><b>Field</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of '<em><b>Field</b></em>' literal object isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @see #FIELD
+	 * @model name="field"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int FIELD_VALUE = 2;
+	
+		/**
+	 * The '<em><b>Global</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of '<em><b>Global</b></em>' literal object isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @see #GLOBAL
+	 * @model name="global"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int GLOBAL_VALUE = 3;
 
 	/**
 	 * An array of all the '<em><b>Stream Policy</b></em>' enumerators.
@@ -78,6 +128,8 @@ public enum StreamPolicy implements Enumerator {
 		new StreamPolicy[] {
 			ALL,
 			SHUFFLE,
+			FIELD,
+			GLOBAL,
 		};
 
 	/**
@@ -136,6 +188,8 @@ public enum StreamPolicy implements Enumerator {
 		switch (value) {
 			case ALL_VALUE: return ALL;
 			case SHUFFLE_VALUE: return SHUFFLE;
+			case FIELD_VALUE: return FIELD;
+			case GLOBAL_VALUE: return GLOBAL;
 		}
 		return null;
 	}
