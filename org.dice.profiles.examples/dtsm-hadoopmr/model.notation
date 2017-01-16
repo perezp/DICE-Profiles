@@ -345,39 +345,39 @@
     </edges>
   </notation:Diagram>
   <notation:Diagram xmi:id="_KNlH4DlkEeaE4deiM0Jlvg" type="PapyrusUMLDeploymentDiagram" name="Deployment" measurementUnit="Pixel">
-    <children xmi:type="notation:Shape" xmi:id="_LG4ucDlkEeaE4deiM0Jlvg" type="2008" gradient="16777215, -1, 0">
+    <children xmi:type="notation:Shape" xmi:id="_LG4ucDlkEeaE4deiM0Jlvg" type="Node_Shape" gradient="16777215, -1, 0">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_kJX7gDlkEeaE4deiM0Jlvg" source="PapyrusCSSForceValue">
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_kJYikDlkEeaE4deiM0Jlvg" key="fillColor" value="true"/>
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_khW9sDlkEeaE4deiM0Jlvg" key="gradient" value="true"/>
       </eAnnotations>
-      <children xmi:type="notation:DecorationNode" xmi:id="_LG58kDlkEeaE4deiM0Jlvg" type="9"/>
-      <children xmi:type="notation:DecorationNode" xmi:id="_LG58kTlkEeaE4deiM0Jlvg" type="19">
-        <children xmi:type="notation:Shape" xmi:id="_DT5oYDlmEeaE4deiM0Jlvg" type="25" gradient="16777215, -1, 0">
+      <children xmi:type="notation:DecorationNode" xmi:id="_LG58kDlkEeaE4deiM0Jlvg" type="Node_NameLabel"/>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_dEqvINjEEea9bYtXwjRGhg" type="Node_NestedNodeCompartment">
+        <children xmi:type="notation:Shape" xmi:id="_DT5oYDlmEeaE4deiM0Jlvg" type="Artifact_Shape_CCN" gradient="16777215, -1, 0">
           <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_gVjZsDlmEeaE4deiM0Jlvg" source="PapyrusCSSForceValue">
             <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_gVkAwDlmEeaE4deiM0Jlvg" key="fillColor" value="true"/>
             <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_gfIMcDlmEeaE4deiM0Jlvg" key="gradient" value="true"/>
           </eAnnotations>
-          <children xmi:type="notation:DecorationNode" xmi:id="_DT5oYjlmEeaE4deiM0Jlvg" type="27"/>
-          <children xmi:type="notation:DecorationNode" xmi:id="_DT5oYzlmEeaE4deiM0Jlvg" type="59">
+          <children xmi:type="notation:DecorationNode" xmi:id="_DT5oYjlmEeaE4deiM0Jlvg" type="Artifact_NameLabel_CCN"/>
+          <children xmi:type="notation:DecorationNode" xmi:id="_DT5oYzlmEeaE4deiM0Jlvg" type="Artifact_FloatingNameLabel_CCN">
             <layoutConstraint xmi:type="notation:Location" xmi:id="_DT5oZDlmEeaE4deiM0Jlvg" x="25"/>
           </children>
-          <children xmi:type="notation:BasicCompartment" xmi:id="_DT5oZTlmEeaE4deiM0Jlvg" type="33">
+          <children xmi:type="notation:BasicCompartment" xmi:id="_DT5oZTlmEeaE4deiM0Jlvg" type="Artifact_NestedArtifactCompartment_CCN">
             <styles xmi:type="notation:TitleStyle" xmi:id="_DT5oZjlmEeaE4deiM0Jlvg"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_DT5oZzlmEeaE4deiM0Jlvg"/>
           </children>
           <element xmi:type="uml:Artifact" href="model.uml#_DTxskDlmEeaE4deiM0Jlvg"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_DT5oYTlmEeaE4deiM0Jlvg" x="24" y="47"/>
         </children>
-        <children xmi:type="notation:Shape" xmi:id="_EPXLEDlmEeaE4deiM0Jlvg" type="25" gradient="16777215, -1, 0">
+        <children xmi:type="notation:Shape" xmi:id="_EPXLEDlmEeaE4deiM0Jlvg" type="Artifact_Shape_CCN" gradient="16777215, -1, 0">
           <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_gVkAwTlmEeaE4deiM0Jlvg" source="PapyrusCSSForceValue">
             <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_gVkAwjlmEeaE4deiM0Jlvg" key="fillColor" value="true"/>
             <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_gfL20DlmEeaE4deiM0Jlvg" key="gradient" value="true"/>
           </eAnnotations>
-          <children xmi:type="notation:DecorationNode" xmi:id="_EPXyIDlmEeaE4deiM0Jlvg" type="27"/>
-          <children xmi:type="notation:DecorationNode" xmi:id="_EPXyITlmEeaE4deiM0Jlvg" type="59">
+          <children xmi:type="notation:DecorationNode" xmi:id="_EPXyIDlmEeaE4deiM0Jlvg" type="Artifact_NameLabel_CCN"/>
+          <children xmi:type="notation:DecorationNode" xmi:id="_EPXyITlmEeaE4deiM0Jlvg" type="Artifact_FloatingNameLabel_CCN">
             <layoutConstraint xmi:type="notation:Location" xmi:id="_EPXyIjlmEeaE4deiM0Jlvg" x="25"/>
           </children>
-          <children xmi:type="notation:BasicCompartment" xmi:id="_EPXyIzlmEeaE4deiM0Jlvg" type="33">
+          <children xmi:type="notation:BasicCompartment" xmi:id="_EPXyIzlmEeaE4deiM0Jlvg" type="Artifact_NestedArtifactCompartment_CCN">
             <styles xmi:type="notation:TitleStyle" xmi:id="_EPXyJDlmEeaE4deiM0Jlvg"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_EPXyJTlmEeaE4deiM0Jlvg"/>
           </children>
@@ -398,12 +398,12 @@
       <element xsi:nil="true"/>
       <layoutConstraint xmi:type="notation:Bounds" xmi:id="_S0esQjlkEeaE4deiM0Jlvg" x="444" y="109"/>
     </children>
-    <children xmi:type="notation:Shape" xmi:id="_ep6pMDlkEeaE4deiM0Jlvg" type="2001" fillColor="13420443">
-      <children xmi:type="notation:DecorationNode" xmi:id="_ep7QQDlkEeaE4deiM0Jlvg" type="1"/>
+    <children xmi:type="notation:Shape" xmi:id="_ep6pMDlkEeaE4deiM0Jlvg" type="Comment_Shape" fillColor="13420443">
+      <children xmi:type="notation:DecorationNode" xmi:id="_ep7QQDlkEeaE4deiM0Jlvg" type="Comment_BodyLabel"/>
       <element xmi:type="uml:Comment" href="model.uml#_ep4M8DlkEeaE4deiM0Jlvg"/>
       <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ep6pMTlkEeaE4deiM0Jlvg" x="274" y="19"/>
     </children>
-    <styles xmi:type="notation:StringValueStyle" xmi:id="_KNlH4TlkEeaE4deiM0Jlvg" name="diagram_compatibility_version" stringValue="1.1.0"/>
+    <styles xmi:type="notation:StringValueStyle" xmi:id="_KNlH4TlkEeaE4deiM0Jlvg" name="diagram_compatibility_version" stringValue="1.2.0"/>
     <styles xmi:type="notation:DiagramStyle" xmi:id="_KNlH4jlkEeaE4deiM0Jlvg"/>
     <styles xmi:type="style:PapyrusViewStyle" xmi:id="_KNlH4zlkEeaE4deiM0Jlvg">
       <owner xmi:type="uml:Model" href="model.uml#_RSOiQDlXEeaE4deiM0Jlvg"/>
@@ -419,7 +419,7 @@
       <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_S0esRzlkEeaE4deiM0Jlvg"/>
       <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_S0fTUDlkEeaE4deiM0Jlvg"/>
     </edges>
-    <edges xmi:type="notation:Connector" xmi:id="_jQjdIDlkEeaE4deiM0Jlvg" type="4008" source="_ep6pMDlkEeaE4deiM0Jlvg" target="_LG4ucDlkEeaE4deiM0Jlvg">
+    <edges xmi:type="notation:Connector" xmi:id="_jQjdIDlkEeaE4deiM0Jlvg" type="Comment_AnnotatedElementEdge" source="_ep6pMDlkEeaE4deiM0Jlvg" target="_LG4ucDlkEeaE4deiM0Jlvg">
       <styles xmi:type="notation:FontStyle" xmi:id="_jQjdITlkEeaE4deiM0Jlvg"/>
       <element xsi:nil="true"/>
       <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_jQjdIjlkEeaE4deiM0Jlvg" points="[-35, 17, 77, -40]$[-88, 47, 24, -10]"/>
