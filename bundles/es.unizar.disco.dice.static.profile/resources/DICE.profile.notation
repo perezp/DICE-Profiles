@@ -726,6 +726,10 @@
           <element xmi:type="uml:Property" href="DICE.profile.uml#_h2054DiPEeaFI4EbHcf0UA"/>
           <layoutConstraint xmi:type="notation:Location" xmi:id="_h281sTiPEeaFI4EbHcf0UA"/>
         </children>
+        <children xmi:type="notation:Shape" xmi:id="_Ab4l4OSuEeaonvWkU8nEhA" type="Property_ClassAttributeLabel">
+          <element xmi:type="uml:Property" href="DICE.profile.uml#_AXi4cOSuEeaonvWkU8nEhA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_Ab4l4eSuEeaonvWkU8nEhA"/>
+        </children>
         <styles xmi:type="notation:TitleStyle" xmi:id="_Ojh5tDiOEeaFI4EbHcf0UA"/>
         <styles xmi:type="notation:SortingStyle" xmi:id="_Ojh5tTiOEeaFI4EbHcf0UA"/>
         <styles xmi:type="notation:FilteringStyle" xmi:id="_Ojh5tjiOEeaFI4EbHcf0UA"/>

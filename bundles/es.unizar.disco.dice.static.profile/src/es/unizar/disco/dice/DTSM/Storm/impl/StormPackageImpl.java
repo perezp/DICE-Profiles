@@ -604,6 +604,15 @@ public class StormPackageImpl extends EPackageImpl implements StormPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EAttribute getStormStreamStep_ProbFields() {
+		return (EAttribute)stormStreamStepEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public StormFactory getStormFactory() {
 		return (StormFactory)getEFactoryInstance();
 	}
@@ -675,6 +684,7 @@ public class StormPackageImpl extends EPackageImpl implements StormPackage {
 		stormStreamStepEClass = createEClass(STORM_STREAM_STEP);
 		createEAttribute(stormStreamStepEClass, STORM_STREAM_STEP__NUM_TUPLES);
 		createEAttribute(stormStreamStepEClass, STORM_STREAM_STEP__GROUPING);
+		createEAttribute(stormStreamStepEClass, STORM_STREAM_STEP__PROB_FIELDS);
 	}
 
 	/**
@@ -768,6 +778,7 @@ public class StormPackageImpl extends EPackageImpl implements StormPackage {
 		initEClass(stormStreamStepEClass, StormStreamStep.class, "StormStreamStep", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getStormStreamStep_NumTuples(), theBasicNFP_TypesPackage.getNFP_Integer(), "numTuples", null, 1, 1, StormStreamStep.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getStormStreamStep_Grouping(), theBasic_Enumeration_TypesPackage_1.getStreamPolicy(), "grouping", null, 1, 1, StormStreamStep.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getStormStreamStep_ProbFields(), theBasicNFP_TypesPackage.getNFP_Real(), "probFields", null, 0, -1, StormStreamStep.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		// Create annotations
 		// duplicates

@@ -4,6 +4,7 @@ package es.unizar.disco.dice.DTSM.Storm;
 
 import es.unizar.disco.dice.Basic_Enumeration_Types.StreamPolicy;
 
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.papyrus.MARTE.MARTE_AnalysisModel.GQAM.GaStep;
 
 /**
@@ -17,6 +18,7 @@ import org.eclipse.papyrus.MARTE.MARTE_AnalysisModel.GQAM.GaStep;
  * <ul>
  *   <li>{@link es.unizar.disco.dice.DTSM.Storm.StormStreamStep#getNumTuples <em>Num Tuples</em>}</li>
  *   <li>{@link es.unizar.disco.dice.DTSM.Storm.StormStreamStep#getGrouping <em>Grouping</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Storm.StormStreamStep#getProbFields <em>Prob Fields</em>}</li>
  * </ul>
  *
  * @see es.unizar.disco.dice.DTSM.Storm.StormPackage#getStormStreamStep()
@@ -78,5 +80,21 @@ public interface StormStreamStep extends GaStep {
 	 * @generated
 	 */
 	void setGrouping(StreamPolicy value);
+
+	/**
+	 * Returns the value of the '<em><b>Prob Fields</b></em>' attribute list.
+	 * The list contents are of type {@link java.lang.String}.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Prob Fields</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Prob Fields</em>' attribute list.
+	 * @see es.unizar.disco.dice.DTSM.Storm.StormPackage#getStormStreamStep_ProbFields()
+	 * @model dataType="org.eclipse.papyrus.MARTE_Library.BasicNFP_Types.NFP_Real" ordered="false"
+	 * @generated
+	 */
+	EList<String> getProbFields();
 
 } // StormStreamStep

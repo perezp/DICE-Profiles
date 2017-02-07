@@ -2831,13 +2831,22 @@ public interface StormPackage extends EPackage {
 	int STORM_STREAM_STEP__GROUPING = GQAMPackage.GA_STEP_FEATURE_COUNT + 1;
 
 	/**
+	 * The feature id for the '<em><b>Prob Fields</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORM_STREAM_STEP__PROB_FIELDS = GQAMPackage.GA_STEP_FEATURE_COUNT + 2;
+
+	/**
 	 * The number of structural features of the '<em>Stream Step</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int STORM_STREAM_STEP_FEATURE_COUNT = GQAMPackage.GA_STEP_FEATURE_COUNT + 2;
+	int STORM_STREAM_STEP_FEATURE_COUNT = GQAMPackage.GA_STEP_FEATURE_COUNT + 3;
 
 
 	/**
@@ -3284,6 +3293,17 @@ public interface StormPackage extends EPackage {
 	EAttribute getStormStreamStep_Grouping();
 
 	/**
+	 * Returns the meta object for the attribute list '{@link es.unizar.disco.dice.DTSM.Storm.StormStreamStep#getProbFields <em>Prob Fields</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute list '<em>Prob Fields</em>'.
+	 * @see es.unizar.disco.dice.DTSM.Storm.StormStreamStep#getProbFields()
+	 * @see #getStormStreamStep()
+	 * @generated
+	 */
+	EAttribute getStormStreamStep_ProbFields();
+
+	/**
 	 * Returns the factory that creates the instances of the model.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3648,6 +3668,14 @@ public interface StormPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute STORM_STREAM_STEP__GROUPING = eINSTANCE.getStormStreamStep_Grouping();
+
+		/**
+		 * The meta object literal for the '<em><b>Prob Fields</b></em>' attribute list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute STORM_STREAM_STEP__PROB_FIELDS = eINSTANCE.getStormStreamStep_ProbFields();
 
 	}
 

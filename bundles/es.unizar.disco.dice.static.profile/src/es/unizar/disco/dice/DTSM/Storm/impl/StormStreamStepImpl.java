@@ -7,12 +7,14 @@ import es.unizar.disco.dice.Basic_Enumeration_Types.StreamPolicy;
 import es.unizar.disco.dice.DTSM.Storm.StormPackage;
 import es.unizar.disco.dice.DTSM.Storm.StormStreamStep;
 
+import java.util.Collection;
 import org.eclipse.emf.common.notify.Notification;
-
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 
+import org.eclipse.emf.ecore.util.EDataTypeUniqueEList;
 import org.eclipse.papyrus.MARTE.MARTE_AnalysisModel.GQAM.impl.GaStepImpl;
 
 /**
@@ -25,6 +27,7 @@ import org.eclipse.papyrus.MARTE.MARTE_AnalysisModel.GQAM.impl.GaStepImpl;
  * <ul>
  *   <li>{@link es.unizar.disco.dice.DTSM.Storm.impl.StormStreamStepImpl#getNumTuples <em>Num Tuples</em>}</li>
  *   <li>{@link es.unizar.disco.dice.DTSM.Storm.impl.StormStreamStepImpl#getGrouping <em>Grouping</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Storm.impl.StormStreamStepImpl#getProbFields <em>Prob Fields</em>}</li>
  * </ul>
  *
  * @generated
@@ -70,6 +73,16 @@ public class StormStreamStepImpl extends GaStepImpl implements StormStreamStep {
 	 */
 	protected StreamPolicy grouping = GROUPING_EDEFAULT;
 
+	/**
+	 * The cached value of the '{@link #getProbFields() <em>Prob Fields</em>}' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getProbFields()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<String> probFields;
+	
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -136,6 +149,18 @@ public class StormStreamStepImpl extends GaStepImpl implements StormStreamStep {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EList<String> getProbFields() {
+		if (probFields == null) {
+			probFields = new EDataTypeUniqueEList<String>(String.class, this, StormPackage.STORM_STREAM_STEP__PROB_FIELDS);
+		}
+		return probFields;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
@@ -143,6 +168,8 @@ public class StormStreamStepImpl extends GaStepImpl implements StormStreamStep {
 				return getNumTuples();
 			case StormPackage.STORM_STREAM_STEP__GROUPING:
 				return getGrouping();
+			case StormPackage.STORM_STREAM_STEP__PROB_FIELDS:
+				return getProbFields();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -152,6 +179,7 @@ public class StormStreamStepImpl extends GaStepImpl implements StormStreamStep {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@SuppressWarnings("unchecked")
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
@@ -160,6 +188,10 @@ public class StormStreamStepImpl extends GaStepImpl implements StormStreamStep {
 				return;
 			case StormPackage.STORM_STREAM_STEP__GROUPING:
 				setGrouping((StreamPolicy)newValue);
+				return;
+			case StormPackage.STORM_STREAM_STEP__PROB_FIELDS:
+				getProbFields().clear();
+				getProbFields().addAll((Collection<? extends String>)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -179,6 +211,9 @@ public class StormStreamStepImpl extends GaStepImpl implements StormStreamStep {
 			case StormPackage.STORM_STREAM_STEP__GROUPING:
 				setGrouping(GROUPING_EDEFAULT);
 				return;
+			case StormPackage.STORM_STREAM_STEP__PROB_FIELDS:
+				getProbFields().clear();
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -195,6 +230,8 @@ public class StormStreamStepImpl extends GaStepImpl implements StormStreamStep {
 				return NUM_TUPLES_EDEFAULT == null ? numTuples != null : !NUM_TUPLES_EDEFAULT.equals(numTuples);
 			case StormPackage.STORM_STREAM_STEP__GROUPING:
 				return grouping != GROUPING_EDEFAULT;
+			case StormPackage.STORM_STREAM_STEP__PROB_FIELDS:
+				return probFields != null && !probFields.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}
@@ -213,6 +250,8 @@ public class StormStreamStepImpl extends GaStepImpl implements StormStreamStep {
 		result.append(numTuples);
 		result.append(", grouping: ");
 		result.append(grouping);
+		result.append(", probFields: ");
+		result.append(probFields);
 		result.append(')');
 		return result.toString();
 	}
