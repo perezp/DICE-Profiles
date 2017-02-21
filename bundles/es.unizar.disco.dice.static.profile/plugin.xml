@@ -49,6 +49,14 @@
    <extension point="org.eclipse.emf.ecore.generated_package">
       <!-- @generated DICE -->
       <package
+            uri="http://es.unizar.disco.dice/profiles/DTSM/Spark/1.0"
+            class="es.unizar.disco.dice.DTSM.Spark.SparkPackage"
+            genModel="resources/DICE.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated DICE -->
+      <package
             uri="http://es.unizar.disco.dice/profiles/DDSM/1.0"
             class="es.unizar.disco.dice.DDSM.DDSMPackage"
             genModel="resources/DICE.genmodel"/>

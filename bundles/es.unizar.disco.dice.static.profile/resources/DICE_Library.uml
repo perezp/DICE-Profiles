@@ -110,6 +110,18 @@
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_XTA5EIlxEeaFpJw9Inr05g" name="MasterNode"/>
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_anapEIlxEeaFpJw9Inr05g" name="SlaveNode"/>
         </packagedElement>
+        <packagedElement xmi:type="uml:Enumeration" xmi:id="_zfUr4PdQEeauAqwbCM80KA" name="SparkReduce">
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_zfUr4fdQEeauAqwbCM80KA" name="Reduce"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_zfUr4vdQEeauAqwbCM80KA" name="Sample"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_zfUr4_dQEeauAqwbCM80KA" name="Order"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Enumeration" xmi:id="_zfVS8PdQEeauAqwbCM80KA" name="SparkMap">
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_zfVS8fdQEeauAqwbCM80KA" name="Map"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_zfVS8vdQEeauAqwbCM80KA" name="Filter"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_zfVS8_dQEeauAqwbCM80KA" name="Sample"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_zfVS9PdQEeauAqwbCM80KA" name="ByKey"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_zfVS9fdQEeauAqwbCM80KA" name="BetweenRDD"/>
+        </packagedElement>
       </packagedElement>
       <packagedElement xmi:type="uml:Profile" xmi:id="_yQjxwOeYEeWj7ZPL8JeBTQ" name="Data_Types">
         <packagedElement xmi:type="uml:DataType" xmi:id="_KyBsgC5SEeaF_sH3mLTVKg" name="NFP_Privacy">
