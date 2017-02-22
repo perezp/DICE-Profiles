@@ -447,13 +447,22 @@ public interface SparkPackage extends EPackage {
 	int SPARK_OPERATION__RDD = GQAMPackage.GA_STEP_FEATURE_COUNT + 1;
 
 	/**
+	 * The feature id for the '<em><b>Function</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SPARK_OPERATION__FUNCTION = GQAMPackage.GA_STEP_FEATURE_COUNT + 2;
+
+	/**
 	 * The number of structural features of the '<em>Operation</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SPARK_OPERATION_FEATURE_COUNT = GQAMPackage.GA_STEP_FEATURE_COUNT + 2;
+	int SPARK_OPERATION_FEATURE_COUNT = GQAMPackage.GA_STEP_FEATURE_COUNT + 3;
 
 	/**
 	 * The meta object id for the '{@link es.unizar.disco.dice.DTSM.Spark.impl.SparkActionImpl <em>Action</em>}' class.
@@ -844,13 +853,13 @@ public interface SparkPackage extends EPackage {
 	int SPARK_ACTION__RDD = SPARK_OPERATION__RDD;
 
 	/**
-	 * The feature id for the '<em><b>Function</b></em>' attribute.
+	 * The feature id for the '<em><b>Function</b></em>' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SPARK_ACTION__FUNCTION = SPARK_OPERATION_FEATURE_COUNT + 0;
+	int SPARK_ACTION__FUNCTION = SPARK_OPERATION__FUNCTION;
 
 	/**
 	 * The number of structural features of the '<em>Action</em>' class.
@@ -859,7 +868,7 @@ public interface SparkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SPARK_ACTION_FEATURE_COUNT = SPARK_OPERATION_FEATURE_COUNT + 1;
+	int SPARK_ACTION_FEATURE_COUNT = SPARK_OPERATION_FEATURE_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link es.unizar.disco.dice.DTSM.Spark.impl.SparkTransformationImpl <em>Transformation</em>}' class.
@@ -1248,6 +1257,15 @@ public interface SparkPackage extends EPackage {
 	 * @ordered
 	 */
 	int SPARK_TRANSFORMATION__RDD = SPARK_OPERATION__RDD;
+
+	/**
+	 * The feature id for the '<em><b>Function</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SPARK_TRANSFORMATION__FUNCTION = SPARK_OPERATION__FUNCTION;
 
 	/**
 	 * The number of structural features of the '<em>Transformation</em>' class.
@@ -1645,6 +1663,15 @@ public interface SparkPackage extends EPackage {
 	 * @ordered
 	 */
 	int SPARK_MAP__RDD = SPARK_TRANSFORMATION__RDD;
+
+	/**
+	 * The feature id for the '<em><b>Function</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SPARK_MAP__FUNCTION = SPARK_TRANSFORMATION__FUNCTION;
 
 	/**
 	 * The feature id for the '<em><b>Op Type</b></em>' attribute.
@@ -2051,6 +2078,15 @@ public interface SparkPackage extends EPackage {
 	 * @ordered
 	 */
 	int SPARK_REDUCE__RDD = SPARK_TRANSFORMATION__RDD;
+
+	/**
+	 * The feature id for the '<em><b>Function</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SPARK_REDUCE__FUNCTION = SPARK_TRANSFORMATION__FUNCTION;
 
 	/**
 	 * The feature id for the '<em><b>Op Type</b></em>' attribute.
@@ -2740,13 +2776,31 @@ public interface SparkPackage extends EPackage {
 	int SPARK_NODE__PRODUCE_OUTPUT_DATA = CorePackage.CORE_COMPUTATION_NODE__PRODUCE_OUTPUT_DATA;
 
 	/**
+	 * The feature id for the '<em><b>Parallelize</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SPARK_NODE__PARALLELIZE = CorePackage.CORE_COMPUTATION_NODE_FEATURE_COUNT + 0;
+
+	/**
 	 * The feature id for the '<em><b>NCores</b></em>' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SPARK_NODE__NCORES = CorePackage.CORE_COMPUTATION_NODE_FEATURE_COUNT + 0;
+	int SPARK_NODE__NCORES = CorePackage.CORE_COMPUTATION_NODE_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Memory</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SPARK_NODE__MEMORY = CorePackage.CORE_COMPUTATION_NODE_FEATURE_COUNT + 2;
 
 	/**
 	 * The number of structural features of the '<em>Node</em>' class.
@@ -2755,7 +2809,7 @@ public interface SparkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SPARK_NODE_FEATURE_COUNT = CorePackage.CORE_COMPUTATION_NODE_FEATURE_COUNT + 1;
+	int SPARK_NODE_FEATURE_COUNT = CorePackage.CORE_COMPUTATION_NODE_FEATURE_COUNT + 3;
 
 
 	/**
@@ -2791,6 +2845,17 @@ public interface SparkPackage extends EPackage {
 	EAttribute getSparkOperation_RDD();
 
 	/**
+	 * Returns the meta object for the attribute list '{@link es.unizar.disco.dice.DTSM.Spark.SparkOperation#getFunction <em>Function</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute list '<em>Function</em>'.
+	 * @see es.unizar.disco.dice.DTSM.Spark.SparkOperation#getFunction()
+	 * @see #getSparkOperation()
+	 * @generated
+	 */
+	EAttribute getSparkOperation_Function();
+
+	/**
 	 * Returns the meta object for class '{@link es.unizar.disco.dice.DTSM.Spark.SparkAction <em>Action</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2799,17 +2864,6 @@ public interface SparkPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getSparkAction();
-
-	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DTSM.Spark.SparkAction#getFunction <em>Function</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Function</em>'.
-	 * @see es.unizar.disco.dice.DTSM.Spark.SparkAction#getFunction()
-	 * @see #getSparkAction()
-	 * @generated
-	 */
-	EAttribute getSparkAction_Function();
 
 	/**
 	 * Returns the meta object for class '{@link es.unizar.disco.dice.DTSM.Spark.SparkTransformation <em>Transformation</em>}'.
@@ -2905,6 +2959,17 @@ public interface SparkPackage extends EPackage {
 	EClass getSparkNode();
 
 	/**
+	 * Returns the meta object for the attribute list '{@link es.unizar.disco.dice.DTSM.Spark.SparkNode#getParallelize <em>Parallelize</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute list '<em>Parallelize</em>'.
+	 * @see es.unizar.disco.dice.DTSM.Spark.SparkNode#getParallelize()
+	 * @see #getSparkNode()
+	 * @generated
+	 */
+	EAttribute getSparkNode_Parallelize();
+
+	/**
 	 * Returns the meta object for the attribute list '{@link es.unizar.disco.dice.DTSM.Spark.SparkNode#getNCores <em>NCores</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2914,6 +2979,17 @@ public interface SparkPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getSparkNode_NCores();
+
+	/**
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DTSM.Spark.SparkNode#getMemory <em>Memory</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Memory</em>'.
+	 * @see es.unizar.disco.dice.DTSM.Spark.SparkNode#getMemory()
+	 * @see #getSparkNode()
+	 * @generated
+	 */
+	EAttribute getSparkNode_Memory();
 
 	/**
 	 * Returns the factory that creates the instances of the model.
@@ -2964,6 +3040,14 @@ public interface SparkPackage extends EPackage {
 		EAttribute SPARK_OPERATION__RDD = eINSTANCE.getSparkOperation_RDD();
 
 		/**
+		 * The meta object literal for the '<em><b>Function</b></em>' attribute list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SPARK_OPERATION__FUNCTION = eINSTANCE.getSparkOperation_Function();
+
+		/**
 		 * The meta object literal for the '{@link es.unizar.disco.dice.DTSM.Spark.impl.SparkActionImpl <em>Action</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -2972,14 +3056,6 @@ public interface SparkPackage extends EPackage {
 		 * @generated
 		 */
 		EClass SPARK_ACTION = eINSTANCE.getSparkAction();
-
-		/**
-		 * The meta object literal for the '<em><b>Function</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute SPARK_ACTION__FUNCTION = eINSTANCE.getSparkAction_Function();
 
 		/**
 		 * The meta object literal for the '{@link es.unizar.disco.dice.DTSM.Spark.impl.SparkTransformationImpl <em>Transformation</em>}' class.
@@ -3066,12 +3142,28 @@ public interface SparkPackage extends EPackage {
 		EClass SPARK_NODE = eINSTANCE.getSparkNode();
 
 		/**
+		 * The meta object literal for the '<em><b>Parallelize</b></em>' attribute list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SPARK_NODE__PARALLELIZE = eINSTANCE.getSparkNode_Parallelize();
+
+		/**
 		 * The meta object literal for the '<em><b>NCores</b></em>' attribute list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
 		EAttribute SPARK_NODE__NCORES = eINSTANCE.getSparkNode_NCores();
+
+		/**
+		 * The meta object literal for the '<em><b>Memory</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SPARK_NODE__MEMORY = eINSTANCE.getSparkNode_Memory();
 
 	}
 

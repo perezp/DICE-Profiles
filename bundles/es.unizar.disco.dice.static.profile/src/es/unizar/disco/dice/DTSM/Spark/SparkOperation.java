@@ -17,6 +17,7 @@ import org.eclipse.papyrus.MARTE.MARTE_AnalysisModel.GQAM.GaStep;
  * <ul>
  *   <li>{@link es.unizar.disco.dice.DTSM.Spark.SparkOperation#getRDDAvailable <em>RDD Available</em>}</li>
  *   <li>{@link es.unizar.disco.dice.DTSM.Spark.SparkOperation#getRDD <em>RDD</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Spark.SparkOperation#getFunction <em>Function</em>}</li>
  * </ul>
  *
  * @see es.unizar.disco.dice.DTSM.Spark.SparkPackage#getSparkOperation()
@@ -65,5 +66,21 @@ public interface SparkOperation extends GaStep {
 	 * @generated
 	 */
 	EList<String> getRDD();
+
+	/**
+	 * Returns the value of the '<em><b>Function</b></em>' attribute list.
+	 * The list contents are of type {@link java.lang.String}.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Function</em>' attribute list isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Function</em>' attribute list.
+	 * @see es.unizar.disco.dice.DTSM.Spark.SparkPackage#getSparkOperation_Function()
+	 * @model dataType="org.eclipse.papyrus.MARTE_Library.BasicNFP_Types.NFP_Duration" ordered="false"
+	 * @generated
+	 */
+	EList<String> getFunction();
 
 } // SparkOperation

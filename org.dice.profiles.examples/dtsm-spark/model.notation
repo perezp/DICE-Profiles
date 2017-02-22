@@ -64,14 +64,6 @@
           <element xsi:nil="true"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_CeADgjlYEeaE4deiM0Jlvg" x="19" y="156"/>
         </children>
-        <children xmi:type="notation:Shape" xmi:id="_-5lvUDlcEeaE4deiM0Jlvg" type="StereotypeComment">
-          <styles xmi:type="notation:TitleStyle" xmi:id="_-5lvUTlcEeaE4deiM0Jlvg" showTitle="true"/>
-          <styles xmi:type="notation:EObjectValueStyle" xmi:id="_-5lvUzlcEeaE4deiM0Jlvg" name="BASE_ELEMENT">
-            <eObjectValue xmi:type="uml:OpaqueAction" href="model.uml#_vVW-sDlXEeaE4deiM0Jlvg"/>
-          </styles>
-          <element xsi:nil="true"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-5lvUjlcEeaE4deiM0Jlvg" x="530" y="79"/>
-        </children>
         <children xmi:type="notation:Shape" xmi:id="_g7bEsDlXEeaE4deiM0Jlvg" visible="false" type="StereotypeComment" fillColor="13420443" gradient="16777215, -1, 0">
           <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_s3RZYDlcEeaE4deiM0Jlvg" source="PapyrusCSSForceValue">
             <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_s3RZYTlcEeaE4deiM0Jlvg" key="visible" value="true"/>
@@ -205,34 +197,6 @@
                 <element xmi:type="uml:OpaqueAction" href="model.uml#_uZmhEDlXEeaE4deiM0Jlvg"/>
                 <layoutConstraint xmi:type="notation:Location" xmi:id="_uZ2_wTlXEeaE4deiM0Jlvg" y="5"/>
               </children>
-              <children xmi:type="notation:BasicCompartment" xmi:id="_2VMFUDlcEeaE4deiM0Jlvg" type="StereotypeBrace">
-                <children xmi:type="notation:DecorationNode" xmi:id="_2VN6gDlcEeaE4deiM0Jlvg" visible="false" type="StereotypePropertyBrace">
-                  <element xmi:type="uml:Property" href="pathmap://DICE_PROFILES/DICE.profile.uml#_1jo3kCo9EeaibdPncpUwfA"/>
-                  <layoutConstraint xmi:type="notation:Location" xmi:id="_2VN6gTlcEeaE4deiM0Jlvg"/>
-                </children>
-                <children xmi:type="notation:DecorationNode" xmi:id="_2VN6hDlcEeaE4deiM0Jlvg" visible="false" type="StereotypePropertyBrace">
-                  <element xmi:type="uml:Property" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_5pjrsBKZEdyGYuetzx6T5A"/>
-                  <layoutConstraint xmi:type="notation:Location" xmi:id="_2VN6hTlcEeaE4deiM0Jlvg"/>
-                </children>
-                <styles xmi:type="notation:TitleStyle" xmi:id="_2VMFUTlcEeaE4deiM0Jlvg" showTitle="true"/>
-                <styles xmi:type="notation:StringValueStyle" xmi:id="_2VMFUjlcEeaE4deiM0Jlvg" name="stereotype" stringValue="DICE::DICE_UML_Extensions::DTSM::Hadoop::HadoopOperation"/>
-                <element xmi:type="uml:Stereotype" href="pathmap://DICE_PROFILES/DICE.profile.uml#_5Y2gIDiXEeaFI4EbHcf0UA"/>
-                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2VMFUzlcEeaE4deiM0Jlvg"/>
-              </children>
-              <children xmi:type="notation:BasicCompartment" xmi:id="_2VdLEDlcEeaE4deiM0Jlvg" type="StereotypeCompartment">
-                <children xmi:type="notation:DecorationNode" xmi:id="_2VfAQDlcEeaE4deiM0Jlvg" visible="false" type="StereotypeProperty">
-                  <element xmi:type="uml:Property" href="pathmap://DICE_PROFILES/DICE.profile.uml#_1jo3kCo9EeaibdPncpUwfA"/>
-                  <layoutConstraint xmi:type="notation:Location" xmi:id="_2VfAQTlcEeaE4deiM0Jlvg"/>
-                </children>
-                <children xmi:type="notation:DecorationNode" xmi:id="_2VfnUDlcEeaE4deiM0Jlvg" visible="false" type="StereotypeProperty">
-                  <element xmi:type="uml:Property" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_5pjrsBKZEdyGYuetzx6T5A"/>
-                  <layoutConstraint xmi:type="notation:Location" xmi:id="_2VfnUTlcEeaE4deiM0Jlvg"/>
-                </children>
-                <styles xmi:type="notation:TitleStyle" xmi:id="_2VdLETlcEeaE4deiM0Jlvg" showTitle="true"/>
-                <styles xmi:type="notation:StringValueStyle" xmi:id="_2VdLEjlcEeaE4deiM0Jlvg" name="stereotype" stringValue="DICE::DICE_UML_Extensions::DTSM::Hadoop::HadoopOperation"/>
-                <element xmi:type="uml:Stereotype" href="pathmap://DICE_PROFILES/DICE.profile.uml#_5Y2gIDiXEeaFI4EbHcf0UA"/>
-                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2VdLEzlcEeaE4deiM0Jlvg"/>
-              </children>
               <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_uZ2YsTlXEeaE4deiM0Jlvg"/>
               <element xmi:type="uml:OpaqueAction" href="model.uml#_uZmhEDlXEeaE4deiM0Jlvg"/>
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_uZ2YsjlXEeaE4deiM0Jlvg" x="45" y="56" width="129" height="48"/>
@@ -355,16 +319,6 @@
       <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_CeAqkzlYEeaE4deiM0Jlvg" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
       <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_CeAqlDlYEeaE4deiM0Jlvg"/>
       <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_CeAqlTlYEeaE4deiM0Jlvg"/>
-    </edges>
-    <edges xmi:type="notation:Connector" xmi:id="_-5lvVDlcEeaE4deiM0Jlvg" type="StereotypeCommentLink" source="_vVjL8DlXEeaE4deiM0Jlvg" target="_-5lvUDlcEeaE4deiM0Jlvg">
-      <styles xmi:type="notation:FontStyle" xmi:id="_-5lvVTlcEeaE4deiM0Jlvg"/>
-      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_-5lvWTlcEeaE4deiM0Jlvg" name="BASE_ELEMENT">
-        <eObjectValue xmi:type="uml:OpaqueAction" href="model.uml#_vVW-sDlXEeaE4deiM0Jlvg"/>
-      </styles>
-      <element xsi:nil="true"/>
-      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_-5lvVjlcEeaE4deiM0Jlvg" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
-      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_-5lvVzlcEeaE4deiM0Jlvg"/>
-      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_-5lvWDlcEeaE4deiM0Jlvg"/>
     </edges>
     <edges xmi:type="notation:Connector" xmi:id="_QAP8ADliEeaE4deiM0Jlvg" type="Comment_AnnotatedElementEdge" source="_EWg4wDliEeaE4deiM0Jlvg" target="_uZ2YsDlXEeaE4deiM0Jlvg">
       <styles xmi:type="notation:FontStyle" xmi:id="_QAP8ATliEeaE4deiM0Jlvg"/>

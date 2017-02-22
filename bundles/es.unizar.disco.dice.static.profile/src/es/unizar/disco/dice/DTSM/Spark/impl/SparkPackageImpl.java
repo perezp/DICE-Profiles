@@ -252,8 +252,8 @@ public class SparkPackageImpl extends EPackageImpl implements SparkPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getSparkAction() {
-		return sparkActionEClass;
+	public EAttribute getSparkOperation_Function() {
+		return (EAttribute)sparkOperationEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -261,8 +261,8 @@ public class SparkPackageImpl extends EPackageImpl implements SparkPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSparkAction_Function() {
-		return (EAttribute)sparkActionEClass.getEStructuralFeatures().get(0);
+	public EClass getSparkAction() {
+		return sparkActionEClass;
 	}
 
 	/**
@@ -351,8 +351,26 @@ public class SparkPackageImpl extends EPackageImpl implements SparkPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSparkNode_NCores() {
+	public EAttribute getSparkNode_Parallelize() {
 		return (EAttribute)sparkNodeEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getSparkNode_NCores() {
+		return (EAttribute)sparkNodeEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getSparkNode_Memory() {
+		return (EAttribute)sparkNodeEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -386,9 +404,9 @@ public class SparkPackageImpl extends EPackageImpl implements SparkPackage {
 		sparkOperationEClass = createEClass(SPARK_OPERATION);
 		createEAttribute(sparkOperationEClass, SPARK_OPERATION__RDD_AVAILABLE);
 		createEAttribute(sparkOperationEClass, SPARK_OPERATION__RDD);
+		createEAttribute(sparkOperationEClass, SPARK_OPERATION__FUNCTION);
 
 		sparkActionEClass = createEClass(SPARK_ACTION);
-		createEAttribute(sparkActionEClass, SPARK_ACTION__FUNCTION);
 
 		sparkTransformationEClass = createEClass(SPARK_TRANSFORMATION);
 
@@ -404,7 +422,9 @@ public class SparkPackageImpl extends EPackageImpl implements SparkPackage {
 		sparkWorkloadEventEClass = createEClass(SPARK_WORKLOAD_EVENT);
 
 		sparkNodeEClass = createEClass(SPARK_NODE);
+		createEAttribute(sparkNodeEClass, SPARK_NODE__PARALLELIZE);
 		createEAttribute(sparkNodeEClass, SPARK_NODE__NCORES);
+		createEAttribute(sparkNodeEClass, SPARK_NODE__MEMORY);
 	}
 
 	/**
@@ -454,9 +474,9 @@ public class SparkPackageImpl extends EPackageImpl implements SparkPackage {
 		initEClass(sparkOperationEClass, SparkOperation.class, "SparkOperation", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getSparkOperation_RDDAvailable(), theBasicNFP_TypesPackage.getNFP_Integer(), "RDDAvailable", null, 0, 1, SparkOperation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getSparkOperation_RDD(), theBasicNFP_TypesPackage.getNFP_Integer(), "RDD", null, 0, -1, SparkOperation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getSparkOperation_Function(), theBasicNFP_TypesPackage.getNFP_Duration(), "Function", null, 0, -1, SparkOperation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(sparkActionEClass, SparkAction.class, "SparkAction", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getSparkAction_Function(), theBasicNFP_TypesPackage.getNFP_Duration(), "Function", null, 0, 1, SparkAction.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(sparkTransformationEClass, SparkTransformation.class, "SparkTransformation", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
@@ -472,7 +492,9 @@ public class SparkPackageImpl extends EPackageImpl implements SparkPackage {
 		initEClass(sparkWorkloadEventEClass, SparkWorkloadEvent.class, "SparkWorkloadEvent", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(sparkNodeEClass, SparkNode.class, "SparkNode", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getSparkNode_Parallelize(), theBasicNFP_TypesPackage.getNFP_Integer(), "Parallelize", null, 0, -1, SparkNode.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getSparkNode_NCores(), theBasicNFP_TypesPackage.getNFP_Integer(), "nCores", null, 0, -1, SparkNode.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getSparkNode_Memory(), theBasicNFP_TypesPackage.getNFP_Boolean(), "Memory", null, 1, 1, SparkNode.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 	}
 
 } //SparkPackageImpl

@@ -29,6 +29,7 @@ import org.eclipse.papyrus.MARTE.MARTE_AnalysisModel.GQAM.impl.GaStepImpl;
  * <ul>
  *   <li>{@link es.unizar.disco.dice.DTSM.Spark.impl.SparkOperationImpl#getRDDAvailable <em>RDD Available</em>}</li>
  *   <li>{@link es.unizar.disco.dice.DTSM.Spark.impl.SparkOperationImpl#getRDD <em>RDD</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Spark.impl.SparkOperationImpl#getFunction <em>Function</em>}</li>
  * </ul>
  *
  * @generated
@@ -63,6 +64,16 @@ public class SparkOperationImpl extends GaStepImpl implements SparkOperation {
 	 * @ordered
 	 */
 	protected EList<String> rdd;
+
+	/**
+	 * The cached value of the '{@link #getFunction() <em>Function</em>}' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getFunction()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<String> function;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -121,6 +132,18 @@ public class SparkOperationImpl extends GaStepImpl implements SparkOperation {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EList<String> getFunction() {
+		if (function == null) {
+			function = new EDataTypeUniqueEList<String>(String.class, this, SparkPackage.SPARK_OPERATION__FUNCTION);
+		}
+		return function;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
@@ -128,6 +151,8 @@ public class SparkOperationImpl extends GaStepImpl implements SparkOperation {
 				return getRDDAvailable();
 			case SparkPackage.SPARK_OPERATION__RDD:
 				return getRDD();
+			case SparkPackage.SPARK_OPERATION__FUNCTION:
+				return getFunction();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -148,6 +173,10 @@ public class SparkOperationImpl extends GaStepImpl implements SparkOperation {
 				getRDD().clear();
 				getRDD().addAll((Collection<? extends String>)newValue);
 				return;
+			case SparkPackage.SPARK_OPERATION__FUNCTION:
+				getFunction().clear();
+				getFunction().addAll((Collection<? extends String>)newValue);
+				return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -166,6 +195,9 @@ public class SparkOperationImpl extends GaStepImpl implements SparkOperation {
 			case SparkPackage.SPARK_OPERATION__RDD:
 				getRDD().clear();
 				return;
+			case SparkPackage.SPARK_OPERATION__FUNCTION:
+				getFunction().clear();
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -182,6 +214,8 @@ public class SparkOperationImpl extends GaStepImpl implements SparkOperation {
 				return RDD_AVAILABLE_EDEFAULT == null ? rddAvailable != null : !RDD_AVAILABLE_EDEFAULT.equals(rddAvailable);
 			case SparkPackage.SPARK_OPERATION__RDD:
 				return rdd != null && !rdd.isEmpty();
+			case SparkPackage.SPARK_OPERATION__FUNCTION:
+				return function != null && !function.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}
@@ -200,6 +234,8 @@ public class SparkOperationImpl extends GaStepImpl implements SparkOperation {
 		result.append(rddAvailable);
 		result.append(", RDD: ");
 		result.append(rdd);
+		result.append(", Function: ");
+		result.append(function);
 		result.append(')');
 		return result.toString();
 	}

@@ -1,38 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:GQAM="http://www.eclipse.org/papyrus/GQAM/1" xmlns:Hadoop="http://es.unizar.disco.dice/profiles/DTSM/Hadoop/1.0" xmlns:PAM="http://www.eclipse.org/papyrus/PAM/1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/GQAM/1 http://www.eclipse.org/papyrus/MARTE/1#//GQAM http://es.unizar.disco.dice/profiles/DTSM/Hadoop/1.0 http://es.unizar.disco.dice/profiles/DICE/1.0#//Hadoop http://www.eclipse.org/papyrus/PAM/1 http://www.eclipse.org/papyrus/MARTE/1#//PAM">
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:GQAM="http://www.eclipse.org/papyrus/GQAM/1" xmlns:Hadoop="http://es.unizar.disco.dice/profiles/DTSM/Hadoop/1.0" xmlns:PAM="http://www.eclipse.org/papyrus/PAM/1" xmlns:Spark="http://es.unizar.disco.dice/profiles/DTSM/Spark/1.0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/GQAM/1 http://www.eclipse.org/papyrus/MARTE/1#//GQAM http://es.unizar.disco.dice/profiles/DTSM/Hadoop/1.0 http://es.unizar.disco.dice/profiles/DICE/1.0#//Hadoop http://www.eclipse.org/papyrus/PAM/1 http://www.eclipse.org/papyrus/MARTE/1#//PAM http://es.unizar.disco.dice/profiles/DTSM/Spark/1.0 http://es.unizar.disco.dice/profiles/DICE/1.0#//Spark">
   <uml:Model xmi:id="_RSOiQDlXEeaE4deiM0Jlvg" name="RootElement">
     <ownedComment xmi:type="uml:Comment" xmi:id="_ep4M8DlkEeaE4deiM0Jlvg" annotatedElement="_LGzO4DlkEeaE4deiM0Jlvg">
-      <body>{nCores=[$nP1,$nP2,$nP3]}</body>
+      <body>{nCores=[$nP1]}</body>
     </ownedComment>
     <packagedElement xmi:type="uml:Activity" xmi:id="_WuYo8DlXEeaE4deiM0Jlvg" name="MRprocess" node="_p15FUDlXEeaE4deiM0Jlvg _uZmhEDlXEeaE4deiM0Jlvg _vVW-sDlXEeaE4deiM0Jlvg _1va4EDlXEeaE4deiM0Jlvg" group="_VYd2gDllEeaE4deiM0Jlvg _qYQqMDllEeaE4deiM0Jlvg">
       <ownedComment xmi:type="uml:Comment" xmi:id="_3y5HgDleEeaE4deiM0Jlvg">
         <body>&lt;&lt;GaAnalysisContext>>
 {contextParams=[$nC1,$nC2,$nC3,$th1,$th2,$th3,$nM1,$nM2,$nM3,$nR1,$nR2,$nR3,$mapT1,$mapT2,$mapT3,$redT1,$redT2,$redT3,$nP1,$nP2,$nP3,out$RT1,out$RT2,out$RT3,out$T1,out$T2,out$T3,out$U1,out$U2,out$U3,out$U]}
-&lt;&lt;HadoopScenario>>
+&lt;&lt;SparkScenario>>
 {jobSchedule=capacity;
 respT=(expr=$RT,statQ=mean,source=calc)}</body>
       </ownedComment>
       <ownedComment xmi:type="uml:Comment" xmi:id="_ol2_0DliEeaE4deiM0Jlvg" annotatedElement="_p15FUDlXEeaE4deiM0Jlvg">
-        <body>{hadoopPopulation=[$nC1,$nC2,$nC3];
- hadoopExtDelay=[$th1,$th2,$th3]}</body>
+        <body>{sparkPopulation=[$nC1];
+sparkExtDelay=[$th1]}</body>
       </ownedComment>
       <edge xmi:type="uml:ControlFlow" xmi:id="_zfomwDlXEeaE4deiM0Jlvg" target="_uZmhEDlXEeaE4deiM0Jlvg" source="_p15FUDlXEeaE4deiM0Jlvg"/>
       <edge xmi:type="uml:ControlFlow" xmi:id="_0K38IDlXEeaE4deiM0Jlvg" target="_vVW-sDlXEeaE4deiM0Jlvg" source="_uZmhEDlXEeaE4deiM0Jlvg"/>
       <edge xmi:type="uml:ControlFlow" xmi:id="_23ONoDlXEeaE4deiM0Jlvg" target="_1va4EDlXEeaE4deiM0Jlvg" source="_vVW-sDlXEeaE4deiM0Jlvg"/>
-      <group xmi:type="uml:ActivityPartition" xmi:id="_VYd2gDllEeaE4deiM0Jlvg" name="Reducer" node="_vVW-sDlXEeaE4deiM0Jlvg" represents="_EPQdYDlmEeaE4deiM0Jlvg">
+      <group xmi:type="uml:ActivityPartition" xmi:id="_VYd2gDllEeaE4deiM0Jlvg" name="Action" node="_vVW-sDlXEeaE4deiM0Jlvg" represents="_EPQdYDlmEeaE4deiM0Jlvg">
         <ownedComment xmi:type="uml:Comment" xmi:id="_XVttsDliEeaE4deiM0Jlvg" annotatedElement="_vVW-sDlXEeaE4deiM0Jlvg">
-          <body>{nTasks=[$nR1,$nR2,$nR3];
- hostDemand=[(expr=$redT1,unit=ms,statQ=mean,source=est)];
- hostDemand=[(expr=$redT2,unit=ms,statQ=mean,source=est)];
- hostDemand=[(expr=$redT3,unit=ms,statQ=mean,source=est)]}</body>
+          <body>{nTasks=[$nR1];
+ hostDemand=[(expr=$redT1,unit=ms,statQ=mean,source=est)] }</body>
         </ownedComment>
       </group>
-      <group xmi:type="uml:ActivityPartition" xmi:id="_qYQqMDllEeaE4deiM0Jlvg" name="Mapper" node="_uZmhEDlXEeaE4deiM0Jlvg" represents="_DTxskDlmEeaE4deiM0Jlvg">
+      <group xmi:type="uml:ActivityPartition" xmi:id="_qYQqMDllEeaE4deiM0Jlvg" name="Transformation" node="_uZmhEDlXEeaE4deiM0Jlvg" represents="_DTxskDlmEeaE4deiM0Jlvg">
         <ownedComment xmi:type="uml:Comment" xmi:id="_EWHQIDliEeaE4deiM0Jlvg" annotatedElement="_uZmhEDlXEeaE4deiM0Jlvg">
-          <body>{nTasks=[$nM1,$nM2,$nM3};
- hostDemand=[(expr=$mapT1,unit=ms,statQ=mean,source=est)];
- hostDemand=[(expr=$mapT2,unit=ms,statQ=mean,source=est)];
- hostDemand=[(expr=$mapT3,unit=ms,statQ=mean,source=est)]}</body>
+          <body>{nTasks=[$nM1};
+ hostDemand=[(expr=$mapT1,unit=ms,statQ=mean,source=est)]}</body>
         </ownedComment>
       </group>
       <node xmi:type="uml:InitialNode" xmi:id="_p15FUDlXEeaE4deiM0Jlvg" name="start" outgoing="_zfomwDlXEeaE4deiM0Jlvg"/>
@@ -41,8 +37,8 @@ respT=(expr=$RT,statQ=mean,source=calc)}</body>
       <node xmi:type="uml:ActivityFinalNode" xmi:id="_1va4EDlXEeaE4deiM0Jlvg" name="end" incoming="_23ONoDlXEeaE4deiM0Jlvg"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Node" xmi:id="_LGzO4DlkEeaE4deiM0Jlvg" name="Core">
-      <nestedClassifier xmi:type="uml:Artifact" xmi:id="_DTxskDlmEeaE4deiM0Jlvg" name="Mapper"/>
-      <nestedClassifier xmi:type="uml:Artifact" xmi:id="_EPQdYDlmEeaE4deiM0Jlvg" name="Reducer"/>
+      <nestedClassifier xmi:type="uml:Artifact" xmi:id="_DTxskDlmEeaE4deiM0Jlvg" name="Transformation" fileName=""/>
+      <nestedClassifier xmi:type="uml:Artifact" xmi:id="_EPQdYDlmEeaE4deiM0Jlvg" name="Action" fileName=""/>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_csWcMDlXEeaE4deiM0Jlvg">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_csY4cDlXEeaE4deiM0Jlvg" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -152,8 +148,14 @@ respT=(expr=$RT,statQ=mean,source=calc)}</body>
       </eAnnotations>
       <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_jg_Z8PfhEd-f4r3MXmUB9g"/>
     </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_0fIzEPkREeaYg_L_82vDKg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_0fKBMPkREeaYg_L_82vDKg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://es.unizar.disco.dice/profiles/DICE/1.0#//Spark"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://DICE_PROFILES/DICE.profile.uml#_uVw8sPjzEeaT8NXWw3z-XA"/>
+    </profileApplication>
   </uml:Model>
-  <Hadoop:HadoopScenario xmi:id="_gsi7MDlXEeaE4deiM0Jlvg" base_NamedElement="_WuYo8DlXEeaE4deiM0Jlvg" usedResources="_S0M_cDlkEeaE4deiM0Jlvg" base_Behavior="_WuYo8DlXEeaE4deiM0Jlvg">
+  <Hadoop:HadoopScenario xmi:id="_gsi7MDlXEeaE4deiM0Jlvg" base_NamedElement="_WuYo8DlXEeaE4deiM0Jlvg" base_Behavior="_WuYo8DlXEeaE4deiM0Jlvg">
     <throughput>(expr=$T1,statQ=mean,source=calc)</throughput>
     <throughput>(expr=$T2,statQ=mean,source=calc)</throughput>
     <throughput>(expr=$T3,statQ=mean,source=calc)</throughput>
@@ -164,14 +166,6 @@ respT=(expr=$RT,statQ=mean,source=calc)}</body>
     <utilization>(expr=$U2,statQ=mean,source=calc)</utilization>
     <utilization>(expr=$U3,statQ=mean,source=calc)</utilization>
   </Hadoop:HadoopScenario>
-  <Hadoop:HadoopOperation xmi:id="_-VVlADlXEeaE4deiM0Jlvg" base_NamedElement="_uZmhEDlXEeaE4deiM0Jlvg" base_Action="_uZmhEDlXEeaE4deiM0Jlvg" blockT="">
-    <hostDemand>(expr=$mapT1,unit=ms,statQ=mean,source=est)</hostDemand>
-    <hostDemand>(expr=$mapT2,unit=ms,statQ=mean,source=est)</hostDemand>
-    <hostDemand>(expr=$mapT3,unit=ms,statQ=mean,source=est)</hostDemand>
-    <nTasks>$nM1</nTasks>
-    <nTasks>$nM2</nTasks>
-    <nTasks>$nM3</nTasks>
-  </Hadoop:HadoopOperation>
   <Hadoop:HadoopWorkloadEvent xmi:id="_CdyoIDlYEeaE4deiM0Jlvg" base_NamedElement="_p15FUDlXEeaE4deiM0Jlvg">
     <hadoopPopulation>$nC1</hadoopPopulation>
     <hadoopPopulation>$nC2</hadoopPopulation>
@@ -180,14 +174,6 @@ respT=(expr=$RT,statQ=mean,source=calc)}</body>
     <hadoopExtDelay>$th2</hadoopExtDelay>
     <hadoopExtDelay>$th3</hadoopExtDelay>
   </Hadoop:HadoopWorkloadEvent>
-  <Hadoop:HadoopOperation xmi:id="_-5CVsDlcEeaE4deiM0Jlvg" base_NamedElement="_vVW-sDlXEeaE4deiM0Jlvg" base_Action="_vVW-sDlXEeaE4deiM0Jlvg">
-    <hostDemand>(expr=$redT1,unit=ms,statQ=mean,source=est)</hostDemand>
-    <hostDemand>(expr=$redT2,unit=ms,statQ=mean,source=est)</hostDemand>
-    <hostDemand>(expr=$redT3,unit=ms,statQ=mean,source=est)</hostDemand>
-    <nTasks>$nR1</nTasks>
-    <nTasks>$nR2</nTasks>
-    <nTasks>$nR3</nTasks>
-  </Hadoop:HadoopOperation>
   <GQAM:GaAnalysisContext xmi:id="_5a5ckDldEeaE4deiM0Jlvg" base_StructuredClassifier="_WuYo8DlXEeaE4deiM0Jlvg" base_NamedElement="_WuYo8DlXEeaE4deiM0Jlvg">
     <context>$nC1</context>
     <context>$nC2</context>
@@ -221,10 +207,9 @@ respT=(expr=$RT,statQ=mean,source=calc)}</body>
     <context>$redT3</context>
     <context>out$U</context>
   </GQAM:GaAnalysisContext>
-  <Hadoop:HadoopComputationNode xmi:id="_S0M_cDlkEeaE4deiM0Jlvg" base_Classifier="_LGzO4DlkEeaE4deiM0Jlvg">
-    <nCores>$nP1</nCores>
-    <nCores>$nP2</nCores>
-    <nCores>$nP3</nCores>
-  </Hadoop:HadoopComputationNode>
   <PAM:PaLogicalResource xmi:id="_S3ht0OMZEeagj4FP_p2cGg" base_Classifier="_LGzO4DlkEeaE4deiM0Jlvg" utilization="(expr=$U,statQ=mean,source=calc)"/>
+  <Spark:SparkMap xmi:id="__BTxUPkREeaYg_L_82vDKg"/>
+  <Spark:SparkMap xmi:id="_Ang6IPkSEeaYg_L_82vDKg"/>
+  <Spark:SparkReduce xmi:id="_C2mA0PkSEeaYg_L_82vDKg"/>
+  <Spark:SparkWorkloadEvent xmi:id="_HTuTcPkSEeaYg_L_82vDKg"/>
 </xmi:XMI>
