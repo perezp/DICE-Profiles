@@ -110,6 +110,13 @@
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_XTA5EIlxEeaFpJw9Inr05g" name="MasterNode"/>
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_anapEIlxEeaFpJw9Inr05g" name="SlaveNode"/>
         </packagedElement>
+        <packagedElement xmi:type="uml:Enumeration" xmi:id="_VcueAAAvEee5FrQsk8AM1w" name="LanguageType">
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_WrORcAAvEee5FrQsk8AM1w" name="bash"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_XP6S4AAvEee5FrQsk8AM1w" name="python"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_X7V1gAAvEee5FrQsk8AM1w" name="java"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_afJ2EAAvEee5FrQsk8AM1w" name="scala"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_cm_FQAAvEee5FrQsk8AM1w" name="R"/>
+        </packagedElement>
       </packagedElement>
       <packagedElement xmi:type="uml:Profile" xmi:id="_yQjxwOeYEeWj7ZPL8JeBTQ" name="Data_Types">
         <packagedElement xmi:type="uml:DataType" xmi:id="_KyBsgC5SEeaF_sH3mLTVKg" name="NFP_Privacy">

@@ -599,9 +599,13 @@
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ymS3IP5sEeastMYiWd95zQ" value="1"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_n26yEP5mEeastMYiWd95zQ" name="language">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <type xmi:type="uml:Enumeration" href="DICE_Library.uml#_VcueAAAvEee5FrQsk8AM1w"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0bPmkP5sEeastMYiWd95zQ"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0bRbwP5sEeastMYiWd95zQ" value="1"/>
+            <defaultValue xmi:type="uml:InstanceValue" xmi:id="_oWQIwAAvEee5FrQsk8AM1w">
+              <type xmi:type="uml:Enumeration" href="DICE_Library.uml#_VcueAAAvEee5FrQsk8AM1w"/>
+              <instance xmi:type="uml:EnumerationLiteral" href="DICE_Library.uml#_WrORcAAvEee5FrQsk8AM1w"/>
+            </defaultValue>
           </ownedAttribute>
         </packagedElement>
         <packagedElement xmi:type="uml:Stereotype" xmi:id="_2gRSsDx3EeaOH59TuV453g" name="DdsmHeterogeneousCluster">
