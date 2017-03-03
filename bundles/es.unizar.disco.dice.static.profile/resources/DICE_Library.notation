@@ -681,6 +681,34 @@
               <element xmi:type="uml:DataType" href="DICE_Library.uml#_EgSOsD4WEeahGZm0A1o1gg"/>
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_EgcmwT4WEeahGZm0A1o1gg" x="274" y="21"/>
             </children>
+            <children xmi:type="notation:Shape" xmi:id="_YLF20AAxEee5FrQsk8AM1w" type="DataType_Shape_CN">
+              <children xmi:type="notation:DecorationNode" xmi:id="_YLGd4AAxEee5FrQsk8AM1w" type="DataType_NameLabel_CN"/>
+              <children xmi:type="notation:DecorationNode" xmi:id="_YLGd4QAxEee5FrQsk8AM1w" type="DataType_FloatingNameLabel_CN">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_YLGd4gAxEee5FrQsk8AM1w" y="5"/>
+              </children>
+              <children xmi:type="notation:BasicCompartment" xmi:id="_YLGd4wAxEee5FrQsk8AM1w" type="DataType_AttributeCompartment_CN">
+                <children xmi:type="notation:Shape" xmi:id="_hiMJEAAxEee5FrQsk8AM1w" type="Property_DataTypeAttributeLabel">
+                  <element xmi:type="uml:Property" href="DICE_Library.uml#_hgHsgAAxEee5FrQsk8AM1w"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_hiMJEQAxEee5FrQsk8AM1w"/>
+                </children>
+                <children xmi:type="notation:Shape" xmi:id="_yKCsIAAxEee5FrQsk8AM1w" type="Property_DataTypeAttributeLabel">
+                  <element xmi:type="uml:Property" href="DICE_Library.uml#_yJi84AAxEee5FrQsk8AM1w"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_yKCsIQAxEee5FrQsk8AM1w"/>
+                </children>
+                <styles xmi:type="notation:TitleStyle" xmi:id="_YLGd5AAxEee5FrQsk8AM1w"/>
+                <styles xmi:type="notation:SortingStyle" xmi:id="_YLGd5QAxEee5FrQsk8AM1w"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_YLGd5gAxEee5FrQsk8AM1w"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_YLGd5wAxEee5FrQsk8AM1w"/>
+              </children>
+              <children xmi:type="notation:BasicCompartment" xmi:id="_YLGd6AAxEee5FrQsk8AM1w" type="DataType_OperationCompartment_CN">
+                <styles xmi:type="notation:TitleStyle" xmi:id="_YLGd6QAxEee5FrQsk8AM1w"/>
+                <styles xmi:type="notation:SortingStyle" xmi:id="_YLGd6gAxEee5FrQsk8AM1w"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_YLGd6wAxEee5FrQsk8AM1w"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_YLGd7AAxEee5FrQsk8AM1w"/>
+              </children>
+              <element xmi:type="uml:DataType" href="DICE_Library.uml#_YKdksAAxEee5FrQsk8AM1w"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_YLF20QAxEee5FrQsk8AM1w" x="587" y="32"/>
+            </children>
             <styles xmi:type="notation:TitleStyle" xmi:id="_yQqfc-eYEeWj7ZPL8JeBTQ"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_yQqfdOeYEeWj7ZPL8JeBTQ"/>
           </children>

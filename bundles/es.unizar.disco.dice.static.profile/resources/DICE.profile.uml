@@ -668,10 +668,9 @@
             <defaultValue xmi:type="uml:LiteralString" xmi:id="_bgIAoD3sEeaPco63Cq703g"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_JgRTYD3tEeaPco63Cq703g" name="securityGroup">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <type xmi:type="uml:DataType" href="DICE_Library.uml#_YKdksAAxEee5FrQsk8AM1w"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_P_9ToD3tEeaPco63Cq703g"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_P_96sD3tEeaPco63Cq703g" value="1"/>
-            <defaultValue xmi:type="uml:LiteralString" xmi:id="_OTHXUD3tEeaPco63Cq703g"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_P_96sD3tEeaPco63Cq703g" value="*"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_yLvfID37EeahGZm0A1o1gg" name="privateKey">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>

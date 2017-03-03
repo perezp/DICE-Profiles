@@ -140,6 +140,17 @@
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_SF_PYD4WEeahGZm0A1o1gg" name="scriptKind" type="_JBGoID4OEeahGZm0A1o1gg"/>
         </packagedElement>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_YKdksAAxEee5FrQsk8AM1w" name="FirewallRule">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_hgHsgAAxEee5FrQsk8AM1w" name="allowedIpPrefix">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qzJXEAAxEee5FrQsk8AM1w"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qzPdsAAxEee5FrQsk8AM1w" value="1"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_w8IukAAxEee5FrQsk8AM1w" value="0.0.0.0/0"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_yJi84AAxEee5FrQsk8AM1w" name="port">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedAttribute>
+        </packagedElement>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_8J84wOeYEeWj7ZPL8JeBTQ" name="Complex_DICE_Types">
