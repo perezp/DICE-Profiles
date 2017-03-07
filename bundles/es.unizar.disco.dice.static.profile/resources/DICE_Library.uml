@@ -145,10 +145,12 @@
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qzJXEAAxEee5FrQsk8AM1w"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qzPdsAAxEee5FrQsk8AM1w" value="1"/>
-            <defaultValue xmi:type="uml:LiteralString" xmi:id="_w8IukAAxEee5FrQsk8AM1w" value="0.0.0.0/0"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_NuYgsAP9EeeNS8hZS_VTiQ" value="0.0.0.0/0"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_yJi84AAxEee5FrQsk8AM1w" name="port">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4EWgoANhEeeNS8hZS_VTiQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4EZj8ANhEeeNS8hZS_VTiQ" value="1"/>
           </ownedAttribute>
         </packagedElement>
       </packagedElement>
