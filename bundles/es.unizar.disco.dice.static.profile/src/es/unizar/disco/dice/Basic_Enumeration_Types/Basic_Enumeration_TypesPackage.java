@@ -237,6 +237,17 @@ public interface Basic_Enumeration_TypesPackage extends EPackage {
 
 
 	/**
+	 * The meta object id for the '{@link es.unizar.disco.dice.Basic_Enumeration_Types.SparkOperation <em>Spark Operation</em>}' enum.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see es.unizar.disco.dice.Basic_Enumeration_Types.SparkOperation
+	 * @see es.unizar.disco.dice.Basic_Enumeration_Types.impl.Basic_Enumeration_TypesPackageImpl#getSparkOperation()
+	 * @generated
+	 */
+	int SPARK_OPERATION = 18;
+
+
+	/**
 	 * Returns the meta object for enum '{@link es.unizar.disco.dice.Basic_Enumeration_Types.RefType <em>Ref Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -415,6 +426,16 @@ public interface Basic_Enumeration_TypesPackage extends EPackage {
 	 * @generated
 	 */
 	EEnum getSparkMap();
+
+	/**
+	 * Returns the meta object for enum '{@link es.unizar.disco.dice.Basic_Enumeration_Types.SparkOperation <em>Spark Operation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for enum '<em>Spark Operation</em>'.
+	 * @see es.unizar.disco.dice.Basic_Enumeration_Types.SparkOperation
+	 * @generated
+	 */
+	EEnum getSparkOperation();
 
 	/**
 	 * Returns the factory that creates the instances of the model.
@@ -617,6 +638,16 @@ public interface Basic_Enumeration_TypesPackage extends EPackage {
 		 * @generated
 		 */
 		EEnum SPARK_MAP = eINSTANCE.getSparkMap();
+
+		/**
+		 * The meta object literal for the '{@link es.unizar.disco.dice.Basic_Enumeration_Types.SparkOperation <em>Spark Operation</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see es.unizar.disco.dice.Basic_Enumeration_Types.SparkOperation
+		 * @see es.unizar.disco.dice.Basic_Enumeration_Types.impl.Basic_Enumeration_TypesPackageImpl#getSparkOperation()
+		 * @generated
+		 */
+		EEnum SPARK_OPERATION = eINSTANCE.getSparkOperation();
 
 	}
 

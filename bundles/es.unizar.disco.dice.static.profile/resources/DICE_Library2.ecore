@@ -174,10 +174,6 @@
         <eLiterals name="ByKey" value="3"/>
         <eLiterals name="RDDSetOperation" value="4"/>
       </eClassifiers>
-      <eClassifiers xsi:type="ecore:EEnum" name="SparkOperation">
-        <eLiterals name="Transformation" literal="Transformation"/>
-        <eLiterals name="Action" value="1"/>
-      </eClassifiers>
     </eSubpackages>
   </eSubpackages>
 </ecore:EPackage>

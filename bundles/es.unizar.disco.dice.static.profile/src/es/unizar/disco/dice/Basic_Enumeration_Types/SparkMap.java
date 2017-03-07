@@ -59,14 +59,14 @@ public enum SparkMap implements Enumerator {
 	BY_KEY(3, "ByKey", "ByKey"),
 
 	/**
-	 * The '<em><b>Between RDD</b></em>' literal object.
+	 * The '<em><b>RDD Set Operation</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #BETWEEN_RDD_VALUE
+	 * @see #RDD_SET_OPERATION_VALUE
 	 * @generated
 	 * @ordered
 	 */
-	BETWEEN_RDD(4, "BetweenRDD", "BetweenRDD");
+	RDD_SET_OPERATION(4, "RDDSetOperation", "RDDSetOperation");
 
 	/**
 	 * The '<em><b>Map</b></em>' literal value.
@@ -129,19 +129,19 @@ public enum SparkMap implements Enumerator {
 	public static final int BY_KEY_VALUE = 3;
 
 	/**
-	 * The '<em><b>Between RDD</b></em>' literal value.
+	 * The '<em><b>RDD Set Operation</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of '<em><b>Between RDD</b></em>' literal object isn't clear,
+	 * If the meaning of '<em><b>RDD Set Operation</b></em>' literal object isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @see #BETWEEN_RDD
-	 * @model name="BetweenRDD"
+	 * @see #RDD_SET_OPERATION
+	 * @model name="RDDSetOperation"
 	 * @generated
 	 * @ordered
 	 */
-	public static final int BETWEEN_RDD_VALUE = 4;
+	public static final int RDD_SET_OPERATION_VALUE = 4;
 
 	/**
 	 * An array of all the '<em><b>Spark Map</b></em>' enumerators.
@@ -155,7 +155,7 @@ public enum SparkMap implements Enumerator {
 			FILTER,
 			SAMPLE,
 			BY_KEY,
-			BETWEEN_RDD,
+			RDD_SET_OPERATION,
 		};
 
 	/**
@@ -216,7 +216,7 @@ public enum SparkMap implements Enumerator {
 			case FILTER_VALUE: return FILTER;
 			case SAMPLE_VALUE: return SAMPLE;
 			case BY_KEY_VALUE: return BY_KEY;
-			case BETWEEN_RDD_VALUE: return BETWEEN_RDD;
+			case RDD_SET_OPERATION_VALUE: return RDD_SET_OPERATION;
 		}
 		return null;
 	}

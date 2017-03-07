@@ -2,8 +2,6 @@
  */
 package es.unizar.disco.dice.DTSM.Spark;
 
-import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.papyrus.MARTE.MARTE_AnalysisModel.GQAM.GaStep;
 
 /**
@@ -17,7 +15,7 @@ import org.eclipse.papyrus.MARTE.MARTE_AnalysisModel.GQAM.GaStep;
  * <ul>
  *   <li>{@link es.unizar.disco.dice.DTSM.Spark.SparkOperation#getRDDAvailable <em>RDD Available</em>}</li>
  *   <li>{@link es.unizar.disco.dice.DTSM.Spark.SparkOperation#getRDD <em>RDD</em>}</li>
- *   <li>{@link es.unizar.disco.dice.DTSM.Spark.SparkOperation#getFunction <em>Function</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Spark.SparkOperation#getOpType <em>Op Type</em>}</li>
  * </ul>
  *
  * @see es.unizar.disco.dice.DTSM.Spark.SparkPackage#getSparkOperation()
@@ -36,7 +34,7 @@ public interface SparkOperation extends GaStep {
 	 * @return the value of the '<em>RDD Available</em>' attribute.
 	 * @see #setRDDAvailable(String)
 	 * @see es.unizar.disco.dice.DTSM.Spark.SparkPackage#getSparkOperation_RDDAvailable()
-	 * @model dataType="org.eclipse.papyrus.MARTE_Library.BasicNFP_Types.NFP_Integer" ordered="false"
+	 * @model dataType="org.eclipse.papyrus.MARTE_Library.BasicNFP_Types.NFP_Integer" required="true" ordered="false"
 	 * @generated
 	 */
 	String getRDDAvailable();
@@ -52,35 +50,58 @@ public interface SparkOperation extends GaStep {
 	void setRDDAvailable(String value);
 
 	/**
-	 * Returns the value of the '<em><b>RDD</b></em>' attribute list.
-	 * The list contents are of type {@link java.lang.String}.
+	 * Returns the value of the '<em><b>RDD</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>RDD</em>' attribute list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>RDD</em>' attribute list.
+	 * @return the value of the '<em>RDD</em>' attribute.
+	 * @see #setRDD(String)
 	 * @see es.unizar.disco.dice.DTSM.Spark.SparkPackage#getSparkOperation_RDD()
-	 * @model dataType="org.eclipse.papyrus.MARTE_Library.BasicNFP_Types.NFP_Integer" ordered="false"
+	 * @model dataType="org.eclipse.papyrus.MARTE_Library.BasicNFP_Types.NFP_Integer" required="true" ordered="false"
 	 * @generated
 	 */
-	EList<String> getRDD();
+	String getRDD();
 
 	/**
-	 * Returns the value of the '<em><b>Function</b></em>' attribute list.
-	 * The list contents are of type {@link java.lang.String}.
+	 * Sets the value of the '{@link es.unizar.disco.dice.DTSM.Spark.SparkOperation#getRDD <em>RDD</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>RDD</em>' attribute.
+	 * @see #getRDD()
+	 * @generated
+	 */
+	void setRDD(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Op Type</b></em>' attribute.
+	 * The literals are from the enumeration {@link es.unizar.disco.dice.Basic_Enumeration_Types.SparkOperation}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Function</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Op Type</em>' attribute list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Function</em>' attribute list.
-	 * @see es.unizar.disco.dice.DTSM.Spark.SparkPackage#getSparkOperation_Function()
-	 * @model dataType="org.eclipse.papyrus.MARTE_Library.BasicNFP_Types.NFP_Duration" ordered="false"
+	 * @return the value of the '<em>Op Type</em>' attribute.
+	 * @see es.unizar.disco.dice.Basic_Enumeration_Types.SparkOperation
+	 * @see #setOpType(es.unizar.disco.dice.Basic_Enumeration_Types.SparkOperation)
+	 * @see es.unizar.disco.dice.DTSM.Spark.SparkPackage#getSparkOperation_OpType()
+	 * @model required="true" ordered="false"
 	 * @generated
 	 */
-	EList<String> getFunction();
+	es.unizar.disco.dice.Basic_Enumeration_Types.SparkOperation getOpType();
+
+	/**
+	 * Sets the value of the '{@link es.unizar.disco.dice.DTSM.Spark.SparkOperation#getOpType <em>Op Type</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Op Type</em>' attribute.
+	 * @see es.unizar.disco.dice.Basic_Enumeration_Types.SparkOperation
+	 * @see #getOpType()
+	 * @generated
+	 */
+	void setOpType(es.unizar.disco.dice.Basic_Enumeration_Types.SparkOperation value);
 
 } // SparkOperation

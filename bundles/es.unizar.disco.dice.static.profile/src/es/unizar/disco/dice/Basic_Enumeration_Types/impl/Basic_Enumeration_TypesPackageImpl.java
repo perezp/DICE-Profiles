@@ -25,6 +25,7 @@ import es.unizar.disco.dice.Basic_Enumeration_Types.RefType;
 import es.unizar.disco.dice.Basic_Enumeration_Types.Scheduling;
 import es.unizar.disco.dice.Basic_Enumeration_Types.SourceType;
 import es.unizar.disco.dice.Basic_Enumeration_Types.SparkMap;
+import es.unizar.disco.dice.Basic_Enumeration_Types.SparkOperation;
 import es.unizar.disco.dice.Basic_Enumeration_Types.SparkReduce;
 import es.unizar.disco.dice.Basic_Enumeration_Types.StreamPolicy;
 import es.unizar.disco.dice.Basic_Enumeration_Types.TechType;
@@ -196,6 +197,13 @@ public class Basic_Enumeration_TypesPackageImpl extends EPackageImpl implements 
 	 * @generated
 	 */
 	private EEnum sparkMapEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum sparkOperationEEnum = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -460,6 +468,15 @@ public class Basic_Enumeration_TypesPackageImpl extends EPackageImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EEnum getSparkOperation() {
+		return sparkOperationEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public Basic_Enumeration_TypesFactory getBasic_Enumeration_TypesFactory() {
 		return (Basic_Enumeration_TypesFactory)getEFactoryInstance();
 	}
@@ -501,6 +518,7 @@ public class Basic_Enumeration_TypesPackageImpl extends EPackageImpl implements 
 		computationTypeEEnum = createEEnum(COMPUTATION_TYPE);
 		sparkReduceEEnum = createEEnum(SPARK_REDUCE);
 		sparkMapEEnum = createEEnum(SPARK_MAP);
+		sparkOperationEEnum = createEEnum(SPARK_OPERATION);
 	}
 
 	/**
@@ -641,7 +659,11 @@ public class Basic_Enumeration_TypesPackageImpl extends EPackageImpl implements 
 		addEEnumLiteral(sparkMapEEnum, SparkMap.FILTER);
 		addEEnumLiteral(sparkMapEEnum, SparkMap.SAMPLE);
 		addEEnumLiteral(sparkMapEEnum, SparkMap.BY_KEY);
-		addEEnumLiteral(sparkMapEEnum, SparkMap.BETWEEN_RDD);
+		addEEnumLiteral(sparkMapEEnum, SparkMap.RDD_SET_OPERATION);
+
+		initEEnum(sparkOperationEEnum, SparkOperation.class, "SparkOperation");
+		addEEnumLiteral(sparkOperationEEnum, SparkOperation.TRANSFORMATION);
+		addEEnumLiteral(sparkOperationEEnum, SparkOperation.ACTION);
 
 		// Create resource
 		createResource(eNS_URI);

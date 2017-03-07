@@ -57,8 +57,6 @@ public class SparkFactoryImpl extends EFactoryImpl implements SparkFactory {
 	public EObject create(EClass eClass) {
 		switch (eClass.getClassifierID()) {
 			case SparkPackage.SPARK_OPERATION: return createSparkOperation();
-			case SparkPackage.SPARK_ACTION: return createSparkAction();
-			case SparkPackage.SPARK_TRANSFORMATION: return createSparkTransformation();
 			case SparkPackage.SPARK_MAP: return createSparkMap();
 			case SparkPackage.SPARK_REDUCE: return createSparkReduce();
 			case SparkPackage.SPARK_SCENARIO: return createSparkScenario();
@@ -77,26 +75,6 @@ public class SparkFactoryImpl extends EFactoryImpl implements SparkFactory {
 	public SparkOperation createSparkOperation() {
 		SparkOperationImpl sparkOperation = new SparkOperationImpl();
 		return sparkOperation;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public SparkAction createSparkAction() {
-		SparkActionImpl sparkAction = new SparkActionImpl();
-		return sparkAction;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public SparkTransformation createSparkTransformation() {
-		SparkTransformationImpl sparkTransformation = new SparkTransformationImpl();
-		return sparkTransformation;
 	}
 
 	/**

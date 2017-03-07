@@ -2,8 +2,6 @@
  */
 package es.unizar.disco.dice.DTSM.Spark.impl;
 
-import es.unizar.disco.dice.Basic_Enumeration_Types.ReduceType;
-
 import es.unizar.disco.dice.DTSM.Spark.SparkPackage;
 import es.unizar.disco.dice.DTSM.Spark.SparkReduce;
 
@@ -21,31 +19,31 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link es.unizar.disco.dice.DTSM.Spark.impl.SparkReduceImpl#getOpType <em>Op Type</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Spark.impl.SparkReduceImpl#getReduceType <em>Reduce Type</em>}</li>
  * </ul>
  *
  * @generated
  */
-public class SparkReduceImpl extends SparkTransformationImpl implements SparkReduce {
+public class SparkReduceImpl extends SparkOperationImpl implements SparkReduce {
 	/**
-	 * The default value of the '{@link #getOpType() <em>Op Type</em>}' attribute.
+	 * The default value of the '{@link #getReduceType() <em>Reduce Type</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getOpType()
+	 * @see #getReduceType()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final ReduceType OP_TYPE_EDEFAULT = ReduceType.FIELD_SELECTION_REDUCER;
+	protected static final es.unizar.disco.dice.Basic_Enumeration_Types.SparkReduce REDUCE_TYPE_EDEFAULT = es.unizar.disco.dice.Basic_Enumeration_Types.SparkReduce.REDUCE;
 
 	/**
-	 * The cached value of the '{@link #getOpType() <em>Op Type</em>}' attribute.
+	 * The cached value of the '{@link #getReduceType() <em>Reduce Type</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getOpType()
+	 * @see #getReduceType()
 	 * @generated
 	 * @ordered
 	 */
-	protected ReduceType opType = OP_TYPE_EDEFAULT;
+	protected es.unizar.disco.dice.Basic_Enumeration_Types.SparkReduce reduceType = REDUCE_TYPE_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -71,8 +69,8 @@ public class SparkReduceImpl extends SparkTransformationImpl implements SparkRed
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ReduceType getOpType() {
-		return opType;
+	public es.unizar.disco.dice.Basic_Enumeration_Types.SparkReduce getReduceType() {
+		return reduceType;
 	}
 
 	/**
@@ -80,11 +78,11 @@ public class SparkReduceImpl extends SparkTransformationImpl implements SparkRed
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setOpType(ReduceType newOpType) {
-		ReduceType oldOpType = opType;
-		opType = newOpType == null ? OP_TYPE_EDEFAULT : newOpType;
+	public void setReduceType(es.unizar.disco.dice.Basic_Enumeration_Types.SparkReduce newReduceType) {
+		es.unizar.disco.dice.Basic_Enumeration_Types.SparkReduce oldReduceType = reduceType;
+		reduceType = newReduceType == null ? REDUCE_TYPE_EDEFAULT : newReduceType;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, SparkPackage.SPARK_REDUCE__OP_TYPE, oldOpType, opType));
+			eNotify(new ENotificationImpl(this, Notification.SET, SparkPackage.SPARK_REDUCE__REDUCE_TYPE, oldReduceType, reduceType));
 	}
 
 	/**
@@ -95,8 +93,8 @@ public class SparkReduceImpl extends SparkTransformationImpl implements SparkRed
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case SparkPackage.SPARK_REDUCE__OP_TYPE:
-				return getOpType();
+			case SparkPackage.SPARK_REDUCE__REDUCE_TYPE:
+				return getReduceType();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -109,8 +107,8 @@ public class SparkReduceImpl extends SparkTransformationImpl implements SparkRed
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case SparkPackage.SPARK_REDUCE__OP_TYPE:
-				setOpType((ReduceType)newValue);
+			case SparkPackage.SPARK_REDUCE__REDUCE_TYPE:
+				setReduceType((es.unizar.disco.dice.Basic_Enumeration_Types.SparkReduce)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -124,8 +122,8 @@ public class SparkReduceImpl extends SparkTransformationImpl implements SparkRed
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case SparkPackage.SPARK_REDUCE__OP_TYPE:
-				setOpType(OP_TYPE_EDEFAULT);
+			case SparkPackage.SPARK_REDUCE__REDUCE_TYPE:
+				setReduceType(REDUCE_TYPE_EDEFAULT);
 				return;
 		}
 		super.eUnset(featureID);
@@ -139,8 +137,8 @@ public class SparkReduceImpl extends SparkTransformationImpl implements SparkRed
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case SparkPackage.SPARK_REDUCE__OP_TYPE:
-				return opType != OP_TYPE_EDEFAULT;
+			case SparkPackage.SPARK_REDUCE__REDUCE_TYPE:
+				return reduceType != REDUCE_TYPE_EDEFAULT;
 		}
 		return super.eIsSet(featureID);
 	}
@@ -155,8 +153,8 @@ public class SparkReduceImpl extends SparkTransformationImpl implements SparkRed
 		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (OpType: ");
-		result.append(opType);
+		result.append(" (ReduceType: ");
+		result.append(reduceType);
 		result.append(')');
 		return result.toString();
 	}

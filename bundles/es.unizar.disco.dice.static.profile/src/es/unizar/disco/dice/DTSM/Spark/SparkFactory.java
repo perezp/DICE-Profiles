@@ -31,24 +31,6 @@ public interface SparkFactory extends EFactory {
 	SparkOperation createSparkOperation();
 
 	/**
-	 * Returns a new object of class '<em>Action</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Action</em>'.
-	 * @generated
-	 */
-	SparkAction createSparkAction();
-
-	/**
-	 * Returns a new object of class '<em>Transformation</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Transformation</em>'.
-	 * @generated
-	 */
-	SparkTransformation createSparkTransformation();
-
-	/**
 	 * Returns a new object of class '<em>Map</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

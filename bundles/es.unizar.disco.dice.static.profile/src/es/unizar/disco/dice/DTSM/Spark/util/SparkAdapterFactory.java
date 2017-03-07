@@ -88,14 +88,6 @@ public class SparkAdapterFactory extends AdapterFactoryImpl {
 				return createSparkOperationAdapter();
 			}
 			@Override
-			public Adapter caseSparkAction(SparkAction object) {
-				return createSparkActionAdapter();
-			}
-			@Override
-			public Adapter caseSparkTransformation(SparkTransformation object) {
-				return createSparkTransformationAdapter();
-			}
-			@Override
 			public Adapter caseSparkMap(SparkMap object) {
 				return createSparkMapAdapter();
 			}
@@ -186,34 +178,6 @@ public class SparkAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createSparkOperationAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link es.unizar.disco.dice.DTSM.Spark.SparkAction <em>Action</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see es.unizar.disco.dice.DTSM.Spark.SparkAction
-	 * @generated
-	 */
-	public Adapter createSparkActionAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link es.unizar.disco.dice.DTSM.Spark.SparkTransformation <em>Transformation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see es.unizar.disco.dice.DTSM.Spark.SparkTransformation
-	 * @generated
-	 */
-	public Adapter createSparkTransformationAdapter() {
 		return null;
 	}
 

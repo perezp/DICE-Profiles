@@ -2,8 +2,6 @@
  */
 package es.unizar.disco.dice.DTSM.Spark.impl;
 
-import es.unizar.disco.dice.Basic_Enumeration_Types.ReduceType;
-
 import es.unizar.disco.dice.DTSM.Spark.SparkMap;
 import es.unizar.disco.dice.DTSM.Spark.SparkPackage;
 
@@ -21,31 +19,31 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link es.unizar.disco.dice.DTSM.Spark.impl.SparkMapImpl#getOpType <em>Op Type</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Spark.impl.SparkMapImpl#getMapType <em>Map Type</em>}</li>
  * </ul>
  *
  * @generated
  */
-public class SparkMapImpl extends SparkTransformationImpl implements SparkMap {
+public class SparkMapImpl extends SparkOperationImpl implements SparkMap {
 	/**
-	 * The default value of the '{@link #getOpType() <em>Op Type</em>}' attribute.
+	 * The default value of the '{@link #getMapType() <em>Map Type</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getOpType()
+	 * @see #getMapType()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final ReduceType OP_TYPE_EDEFAULT = ReduceType.FIELD_SELECTION_REDUCER;
+	protected static final es.unizar.disco.dice.Basic_Enumeration_Types.SparkMap MAP_TYPE_EDEFAULT = es.unizar.disco.dice.Basic_Enumeration_Types.SparkMap.MAP;
 
 	/**
-	 * The cached value of the '{@link #getOpType() <em>Op Type</em>}' attribute.
+	 * The cached value of the '{@link #getMapType() <em>Map Type</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getOpType()
+	 * @see #getMapType()
 	 * @generated
 	 * @ordered
 	 */
-	protected ReduceType opType = OP_TYPE_EDEFAULT;
+	protected es.unizar.disco.dice.Basic_Enumeration_Types.SparkMap mapType = MAP_TYPE_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -71,8 +69,8 @@ public class SparkMapImpl extends SparkTransformationImpl implements SparkMap {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ReduceType getOpType() {
-		return opType;
+	public es.unizar.disco.dice.Basic_Enumeration_Types.SparkMap getMapType() {
+		return mapType;
 	}
 
 	/**
@@ -80,11 +78,11 @@ public class SparkMapImpl extends SparkTransformationImpl implements SparkMap {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setOpType(ReduceType newOpType) {
-		ReduceType oldOpType = opType;
-		opType = newOpType == null ? OP_TYPE_EDEFAULT : newOpType;
+	public void setMapType(es.unizar.disco.dice.Basic_Enumeration_Types.SparkMap newMapType) {
+		es.unizar.disco.dice.Basic_Enumeration_Types.SparkMap oldMapType = mapType;
+		mapType = newMapType == null ? MAP_TYPE_EDEFAULT : newMapType;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, SparkPackage.SPARK_MAP__OP_TYPE, oldOpType, opType));
+			eNotify(new ENotificationImpl(this, Notification.SET, SparkPackage.SPARK_MAP__MAP_TYPE, oldMapType, mapType));
 	}
 
 	/**
@@ -95,8 +93,8 @@ public class SparkMapImpl extends SparkTransformationImpl implements SparkMap {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case SparkPackage.SPARK_MAP__OP_TYPE:
-				return getOpType();
+			case SparkPackage.SPARK_MAP__MAP_TYPE:
+				return getMapType();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -109,8 +107,8 @@ public class SparkMapImpl extends SparkTransformationImpl implements SparkMap {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case SparkPackage.SPARK_MAP__OP_TYPE:
-				setOpType((ReduceType)newValue);
+			case SparkPackage.SPARK_MAP__MAP_TYPE:
+				setMapType((es.unizar.disco.dice.Basic_Enumeration_Types.SparkMap)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -124,8 +122,8 @@ public class SparkMapImpl extends SparkTransformationImpl implements SparkMap {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case SparkPackage.SPARK_MAP__OP_TYPE:
-				setOpType(OP_TYPE_EDEFAULT);
+			case SparkPackage.SPARK_MAP__MAP_TYPE:
+				setMapType(MAP_TYPE_EDEFAULT);
 				return;
 		}
 		super.eUnset(featureID);
@@ -139,8 +137,8 @@ public class SparkMapImpl extends SparkTransformationImpl implements SparkMap {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case SparkPackage.SPARK_MAP__OP_TYPE:
-				return opType != OP_TYPE_EDEFAULT;
+			case SparkPackage.SPARK_MAP__MAP_TYPE:
+				return mapType != MAP_TYPE_EDEFAULT;
 		}
 		return super.eIsSet(featureID);
 	}
@@ -155,8 +153,8 @@ public class SparkMapImpl extends SparkTransformationImpl implements SparkMap {
 		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (OpType: ");
-		result.append(opType);
+		result.append(" (MapType: ");
+		result.append(mapType);
 		result.append(')');
 		return result.toString();
 	}

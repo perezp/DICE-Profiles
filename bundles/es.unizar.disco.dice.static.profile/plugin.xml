@@ -145,6 +145,10 @@
             uri="http://es.unizar.disco.dice/profiles/DTSM/Hadoop/1.0">
       </profile>
       <profile
+            location="pathmap://DICE_PROFILES/DICE.profile.uml#_uVw8sPjzEeaT8NXWw3z-XA"
+            uri="http://es.unizar.disco.dice/profiles/DTSM/Spark/1.0">
+      </profile>
+      <profile
             location="pathmap://DICE_PROFILES/DICE.profile.uml#_aYmS0Dx2EeaOH59TuV453g"
             uri="http://es.unizar.disco.dice/profiles/DDSM/1.0">
       </profile>

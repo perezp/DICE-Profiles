@@ -6,16 +6,10 @@ import es.unizar.disco.dice.DTSM.Core.impl.CoreComputationNodeImpl;
 
 import es.unizar.disco.dice.DTSM.Spark.SparkNode;
 import es.unizar.disco.dice.DTSM.Spark.SparkPackage;
-
-import java.util.Collection;
-
 import org.eclipse.emf.common.notify.Notification;
-import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.util.EDataTypeUniqueEList;
 
 /**
  * <!-- begin-user-doc -->
@@ -25,7 +19,6 @@ import org.eclipse.emf.ecore.util.EDataTypeUniqueEList;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link es.unizar.disco.dice.DTSM.Spark.impl.SparkNodeImpl#getParallelize <em>Parallelize</em>}</li>
  *   <li>{@link es.unizar.disco.dice.DTSM.Spark.impl.SparkNodeImpl#getNCores <em>NCores</em>}</li>
  *   <li>{@link es.unizar.disco.dice.DTSM.Spark.impl.SparkNodeImpl#getMemory <em>Memory</em>}</li>
  * </ul>
@@ -34,23 +27,23 @@ import org.eclipse.emf.ecore.util.EDataTypeUniqueEList;
  */
 public class SparkNodeImpl extends CoreComputationNodeImpl implements SparkNode {
 	/**
-	 * The cached value of the '{@link #getParallelize() <em>Parallelize</em>}' attribute list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getParallelize()
-	 * @generated
-	 * @ordered
-	 */
-	protected EList<String> parallelize;
-	/**
-	 * The cached value of the '{@link #getNCores() <em>NCores</em>}' attribute list.
+	 * The default value of the '{@link #getNCores() <em>NCores</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getNCores()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<String> nCores;
+	protected static final String NCORES_EDEFAULT = null;
+	/**
+	 * The cached value of the '{@link #getNCores() <em>NCores</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getNCores()
+	 * @generated
+	 * @ordered
+	 */
+	protected String nCores = NCORES_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getMemory() <em>Memory</em>}' attribute.
@@ -95,11 +88,8 @@ public class SparkNodeImpl extends CoreComputationNodeImpl implements SparkNode 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<String> getParallelize() {
-		if (parallelize == null) {
-			parallelize = new EDataTypeUniqueEList<String>(String.class, this, SparkPackage.SPARK_NODE__PARALLELIZE);
-		}
-		return parallelize;
+	public String getNCores() {
+		return nCores;
 	}
 
 	/**
@@ -107,11 +97,11 @@ public class SparkNodeImpl extends CoreComputationNodeImpl implements SparkNode 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<String> getNCores() {
-		if (nCores == null) {
-			nCores = new EDataTypeUniqueEList<String>(String.class, this, SparkPackage.SPARK_NODE__NCORES);
-		}
-		return nCores;
+	public void setNCores(String newNCores) {
+		String oldNCores = nCores;
+		nCores = newNCores;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, SparkPackage.SPARK_NODE__NCORES, oldNCores, nCores));
 	}
 
 	/**
@@ -143,8 +133,6 @@ public class SparkNodeImpl extends CoreComputationNodeImpl implements SparkNode 
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case SparkPackage.SPARK_NODE__PARALLELIZE:
-				return getParallelize();
 			case SparkPackage.SPARK_NODE__NCORES:
 				return getNCores();
 			case SparkPackage.SPARK_NODE__MEMORY:
@@ -162,13 +150,8 @@ public class SparkNodeImpl extends CoreComputationNodeImpl implements SparkNode 
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case SparkPackage.SPARK_NODE__PARALLELIZE:
-				getParallelize().clear();
-				getParallelize().addAll((Collection<? extends String>)newValue);
-				return;
 			case SparkPackage.SPARK_NODE__NCORES:
-				getNCores().clear();
-				getNCores().addAll((Collection<? extends String>)newValue);
+				setNCores((String)newValue);
 				return;
 			case SparkPackage.SPARK_NODE__MEMORY:
 				setMemory((String)newValue);
@@ -185,11 +168,8 @@ public class SparkNodeImpl extends CoreComputationNodeImpl implements SparkNode 
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case SparkPackage.SPARK_NODE__PARALLELIZE:
-				getParallelize().clear();
-				return;
 			case SparkPackage.SPARK_NODE__NCORES:
-				getNCores().clear();
+				setNCores(NCORES_EDEFAULT);
 				return;
 			case SparkPackage.SPARK_NODE__MEMORY:
 				setMemory(MEMORY_EDEFAULT);
@@ -206,10 +186,8 @@ public class SparkNodeImpl extends CoreComputationNodeImpl implements SparkNode 
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case SparkPackage.SPARK_NODE__PARALLELIZE:
-				return parallelize != null && !parallelize.isEmpty();
 			case SparkPackage.SPARK_NODE__NCORES:
-				return nCores != null && !nCores.isEmpty();
+				return NCORES_EDEFAULT == null ? nCores != null : !NCORES_EDEFAULT.equals(nCores);
 			case SparkPackage.SPARK_NODE__MEMORY:
 				return MEMORY_EDEFAULT == null ? memory != null : !MEMORY_EDEFAULT.equals(memory);
 		}
@@ -226,9 +204,7 @@ public class SparkNodeImpl extends CoreComputationNodeImpl implements SparkNode 
 		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (Parallelize: ");
-		result.append(parallelize);
-		result.append(", nCores: ");
+		result.append(" (nCores: ");
 		result.append(nCores);
 		result.append(", Memory: ");
 		result.append(memory);

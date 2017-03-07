@@ -4,19 +4,10 @@ package es.unizar.disco.dice.DTSM.Spark.impl;
 
 import es.unizar.disco.dice.DTSM.Spark.SparkOperation;
 import es.unizar.disco.dice.DTSM.Spark.SparkPackage;
-
-import java.util.Collection;
-
 import org.eclipse.emf.common.notify.Notification;
-
-import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-
-import org.eclipse.emf.ecore.util.EDataTypeUniqueEList;
-
 import org.eclipse.papyrus.MARTE.MARTE_AnalysisModel.GQAM.impl.GaStepImpl;
 
 /**
@@ -29,7 +20,7 @@ import org.eclipse.papyrus.MARTE.MARTE_AnalysisModel.GQAM.impl.GaStepImpl;
  * <ul>
  *   <li>{@link es.unizar.disco.dice.DTSM.Spark.impl.SparkOperationImpl#getRDDAvailable <em>RDD Available</em>}</li>
  *   <li>{@link es.unizar.disco.dice.DTSM.Spark.impl.SparkOperationImpl#getRDD <em>RDD</em>}</li>
- *   <li>{@link es.unizar.disco.dice.DTSM.Spark.impl.SparkOperationImpl#getFunction <em>Function</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Spark.impl.SparkOperationImpl#getOpType <em>Op Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -56,24 +47,44 @@ public class SparkOperationImpl extends GaStepImpl implements SparkOperation {
 	protected String rddAvailable = RDD_AVAILABLE_EDEFAULT;
 
 	/**
-	 * The cached value of the '{@link #getRDD() <em>RDD</em>}' attribute list.
+	 * The default value of the '{@link #getRDD() <em>RDD</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getRDD()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<String> rdd;
+	protected static final String RDD_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getFunction() <em>Function</em>}' attribute list.
+	 * The cached value of the '{@link #getRDD() <em>RDD</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getFunction()
+	 * @see #getRDD()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<String> function;
+	protected String rdd = RDD_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getOpType() <em>Op Type</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getOpType()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final es.unizar.disco.dice.Basic_Enumeration_Types.SparkOperation OP_TYPE_EDEFAULT = es.unizar.disco.dice.Basic_Enumeration_Types.SparkOperation.TRANSFORMATION;
+
+	/**
+	 * The cached value of the '{@link #getOpType() <em>Op Type</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getOpType()
+	 * @generated
+	 * @ordered
+	 */
+	protected es.unizar.disco.dice.Basic_Enumeration_Types.SparkOperation opType = OP_TYPE_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -120,10 +131,7 @@ public class SparkOperationImpl extends GaStepImpl implements SparkOperation {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<String> getRDD() {
-		if (rdd == null) {
-			rdd = new EDataTypeUniqueEList<String>(String.class, this, SparkPackage.SPARK_OPERATION__RDD);
-		}
+	public String getRDD() {
 		return rdd;
 	}
 
@@ -132,11 +140,32 @@ public class SparkOperationImpl extends GaStepImpl implements SparkOperation {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<String> getFunction() {
-		if (function == null) {
-			function = new EDataTypeUniqueEList<String>(String.class, this, SparkPackage.SPARK_OPERATION__FUNCTION);
-		}
-		return function;
+	public void setRDD(String newRDD) {
+		String oldRDD = rdd;
+		rdd = newRDD;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, SparkPackage.SPARK_OPERATION__RDD, oldRDD, rdd));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public es.unizar.disco.dice.Basic_Enumeration_Types.SparkOperation getOpType() {
+		return opType;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setOpType(es.unizar.disco.dice.Basic_Enumeration_Types.SparkOperation newOpType) {
+		es.unizar.disco.dice.Basic_Enumeration_Types.SparkOperation oldOpType = opType;
+		opType = newOpType == null ? OP_TYPE_EDEFAULT : newOpType;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, SparkPackage.SPARK_OPERATION__OP_TYPE, oldOpType, opType));
 	}
 
 	/**
@@ -151,8 +180,8 @@ public class SparkOperationImpl extends GaStepImpl implements SparkOperation {
 				return getRDDAvailable();
 			case SparkPackage.SPARK_OPERATION__RDD:
 				return getRDD();
-			case SparkPackage.SPARK_OPERATION__FUNCTION:
-				return getFunction();
+			case SparkPackage.SPARK_OPERATION__OP_TYPE:
+				return getOpType();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -170,12 +199,10 @@ public class SparkOperationImpl extends GaStepImpl implements SparkOperation {
 				setRDDAvailable((String)newValue);
 				return;
 			case SparkPackage.SPARK_OPERATION__RDD:
-				getRDD().clear();
-				getRDD().addAll((Collection<? extends String>)newValue);
+				setRDD((String)newValue);
 				return;
-			case SparkPackage.SPARK_OPERATION__FUNCTION:
-				getFunction().clear();
-				getFunction().addAll((Collection<? extends String>)newValue);
+			case SparkPackage.SPARK_OPERATION__OP_TYPE:
+				setOpType((es.unizar.disco.dice.Basic_Enumeration_Types.SparkOperation)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -193,10 +220,10 @@ public class SparkOperationImpl extends GaStepImpl implements SparkOperation {
 				setRDDAvailable(RDD_AVAILABLE_EDEFAULT);
 				return;
 			case SparkPackage.SPARK_OPERATION__RDD:
-				getRDD().clear();
+				setRDD(RDD_EDEFAULT);
 				return;
-			case SparkPackage.SPARK_OPERATION__FUNCTION:
-				getFunction().clear();
+			case SparkPackage.SPARK_OPERATION__OP_TYPE:
+				setOpType(OP_TYPE_EDEFAULT);
 				return;
 		}
 		super.eUnset(featureID);
@@ -213,9 +240,9 @@ public class SparkOperationImpl extends GaStepImpl implements SparkOperation {
 			case SparkPackage.SPARK_OPERATION__RDD_AVAILABLE:
 				return RDD_AVAILABLE_EDEFAULT == null ? rddAvailable != null : !RDD_AVAILABLE_EDEFAULT.equals(rddAvailable);
 			case SparkPackage.SPARK_OPERATION__RDD:
-				return rdd != null && !rdd.isEmpty();
-			case SparkPackage.SPARK_OPERATION__FUNCTION:
-				return function != null && !function.isEmpty();
+				return RDD_EDEFAULT == null ? rdd != null : !RDD_EDEFAULT.equals(rdd);
+			case SparkPackage.SPARK_OPERATION__OP_TYPE:
+				return opType != OP_TYPE_EDEFAULT;
 		}
 		return super.eIsSet(featureID);
 	}
@@ -234,8 +261,8 @@ public class SparkOperationImpl extends GaStepImpl implements SparkOperation {
 		result.append(rddAvailable);
 		result.append(", RDD: ");
 		result.append(rdd);
-		result.append(", Function: ");
-		result.append(function);
+		result.append(", OpType: ");
+		result.append(opType);
 		result.append(')');
 		return result.toString();
 	}
