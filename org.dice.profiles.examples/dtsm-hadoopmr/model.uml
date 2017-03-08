@@ -2,7 +2,7 @@
 <xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:GQAM="http://www.eclipse.org/papyrus/GQAM/1" xmlns:Hadoop="http://es.unizar.disco.dice/profiles/DTSM/Hadoop/1.0" xmlns:PAM="http://www.eclipse.org/papyrus/PAM/1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/GQAM/1 http://www.eclipse.org/papyrus/MARTE/1#//GQAM http://es.unizar.disco.dice/profiles/DTSM/Hadoop/1.0 http://es.unizar.disco.dice/profiles/DICE/1.0#//Hadoop http://www.eclipse.org/papyrus/PAM/1 http://www.eclipse.org/papyrus/MARTE/1#//PAM">
   <uml:Model xmi:id="_RSOiQDlXEeaE4deiM0Jlvg" name="RootElement">
     <ownedComment xmi:type="uml:Comment" xmi:id="_ep4M8DlkEeaE4deiM0Jlvg" annotatedElement="_LGzO4DlkEeaE4deiM0Jlvg">
-      <body>{nCores=[$nP1,$nP2,$nP3}</body>
+      <body>{nCores=[$nP1,$nP2,$nP3]}</body>
     </ownedComment>
     <packagedElement xmi:type="uml:Activity" xmi:id="_WuYo8DlXEeaE4deiM0Jlvg" name="MRprocess" node="_p15FUDlXEeaE4deiM0Jlvg _uZmhEDlXEeaE4deiM0Jlvg _vVW-sDlXEeaE4deiM0Jlvg _1va4EDlXEeaE4deiM0Jlvg" group="_VYd2gDllEeaE4deiM0Jlvg _qYQqMDllEeaE4deiM0Jlvg">
       <ownedComment xmi:type="uml:Comment" xmi:id="_3y5HgDleEeaE4deiM0Jlvg">
