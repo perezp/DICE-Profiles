@@ -2,14 +2,13 @@
 <ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="DICE" nsURI="http://es.unizar.disco.dice/profiles/DICE/1.0"
     nsPrefix="DICE">
-  <eClassifiers xsi:type="ecore:EEnum" name="Dummy"/>
   <eSubpackages name="DICE_UML_Extensions" nsURI="http://es.unizar.disco.dice/profiles/DICE_UML_Extensions/1.0"
       nsPrefix="DICE_UML_Extensions">
     <eSubpackages name="DPIM" nsURI="http://es.unizar.disco.dice/profiles/DPIM/1.0"
         nsPrefix="DPIM">
       <eClassifiers xsi:type="ecore:EClass" name="DpimComputationNode" eSuperTypes="../../com.masdes.dam.static.profile/resources/DAM.ecore#//DAM_UML_Extensions/System/Core/DaComponent">
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="nodeThroughput" ordered="false"
-            eType="ecore:EDataType ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Frequency"/>
+            eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Frequency"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" ordered="false"
             eType="ecore:EEnum DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/ComputationType"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="targetTech" ordered="false"
@@ -19,9 +18,9 @@
       </eClassifiers>
       <eClassifiers xsi:type="ecore:EClass" name="DpimFilterNode" eSuperTypes="#//DICE_UML_Extensions/DPIM/DpimComputationNode">
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="inputRatio" ordered="false"
-            eType="ecore:EDataType ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Frequency"/>
+            eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Frequency"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="outputRation" ordered="false"
-            eType="ecore:EDataType ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Frequency"/>
+            eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Frequency"/>
       </eClassifiers>
       <eClassifiers xsi:type="ecore:EClass" name="DpimVisualizationNode" eSuperTypes="#//DICE_UML_Extensions/DPIM/DpimComputationNode"/>
       <eClassifiers xsi:type="ecore:EClass" name="DpimSourceNode" eSuperTypes="#//DICE_UML_Extensions/DPIM/DpimComputationNode">
@@ -34,18 +33,18 @@
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="sourceType" ordered="false"
             eType="ecore:EEnum DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/SourceType"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="rate" ordered="false"
-            eType="ecore:EDataType ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Frequency"/>
+            eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Frequency"/>
       </eClassifiers>
       <eClassifiers xsi:type="ecore:EClass" name="DpimStorageNode" eSuperTypes="../../org.eclipse.papyrus.marte.static.profile/resources/MARTE.ecore#//MARTE_Foundations/GRM/StorageResource">
         <eStructuralFeatures xsi:type="ecore:EReference" name="respondsTo" ordered="false"
             eType="ecore:EClass DICE_Library.ecore#//Complex_DICE_Types/Complex_Data_Types/DiceDataSpecification"
             containment="true"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="crudRate" ordered="false"
-            eType="ecore:EDataType ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Frequency"/>
+            eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Frequency"/>
       </eClassifiers>
       <eClassifiers xsi:type="ecore:EClass" name="DpimChannel" eSuperTypes="../../com.masdes.dam.static.profile/resources/DAM.ecore#//DAM_UML_Extensions/System/Core/DaConnector">
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="rate" ordered="false"
-            eType="ecore:EDataType ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Frequency"/>
+            eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Frequency"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="messageBroker" ordered="false"
             eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="channelDescription"
@@ -97,7 +96,7 @@
         </eClassifiers>
         <eClassifiers xsi:type="ecore:EClass" name="CoreDAGNode" abstract="true" eSuperTypes="../../org.eclipse.papyrus.marte.static.profile/resources/MARTE.ecore#//MARTE_AnalysisModel/GQAM/GaStep #//DICE_UML_Extensions/DPIM/DpimSourceNode">
           <eStructuralFeatures xsi:type="ecore:EAttribute" name="parallelism" ordered="false"
-              lowerBound="1" eType="ecore:EDataType ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Integer"/>
+              lowerBound="1" eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Integer"/>
           <eStructuralFeatures xsi:type="ecore:EAttribute" name="operation" ordered="false"
               lowerBound="1" eType="ecore:EEnum DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/WorkflowOperation"/>
           <eStructuralFeatures xsi:type="ecore:EReference" name="hasSuccessor" ordered="false"
@@ -127,19 +126,19 @@
             </contents>
           </eAnnotations>
           <eStructuralFeatures xsi:type="ecore:EAttribute" name="d" ordered="false"
-              eType="ecore:EDataType ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Real"/>
+              eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Real"/>
           <eStructuralFeatures xsi:type="ecore:EAttribute" name="alpha" ordered="false"
-              eType="ecore:EDataType ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Real"/>
+              eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Real"/>
           <eStructuralFeatures xsi:type="ecore:EAttribute" name="sigma" ordered="false"
-              eType="ecore:EDataType ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Real"/>
+              eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Real"/>
           <eStructuralFeatures xsi:type="ecore:EAttribute" name="minRebootTime" ordered="false"
-              eType="ecore:EDataType ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Real"/>
+              eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Real"/>
           <eStructuralFeatures xsi:type="ecore:EAttribute" name="maxRebootTime" ordered="false"
-              eType="ecore:EDataType ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Real"/>
+              eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Real"/>
         </eClassifiers>
         <eClassifiers xsi:type="ecore:EClass" name="StormSpout" eSuperTypes="#//DICE_UML_Extensions/DTSM/Core/CoreDAGSourceNode">
           <eStructuralFeatures xsi:type="ecore:EAttribute" name="avgEmitRate" ordered="false"
-              eType="ecore:EDataType ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Real"/>
+              eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Real"/>
         </eClassifiers>
         <eClassifiers xsi:type="ecore:EClass" name="StormScenarioTopology" eSuperTypes="#//DICE_UML_Extensions/DTSM/Core/CoreDirectAcyclicGraph">
           <eStructuralFeatures xsi:type="ecore:EAttribute" name="queueThreshold" ordered="false"
@@ -203,11 +202,11 @@
         </eClassifiers>
         <eClassifiers xsi:type="ecore:EClass" name="StormStreamStep" eSuperTypes="../../org.eclipse.papyrus.marte.static.profile/resources/MARTE.ecore#//MARTE_AnalysisModel/GQAM/GaStep">
           <eStructuralFeatures xsi:type="ecore:EAttribute" name="numTuples" ordered="false"
-              lowerBound="1" eType="ecore:EDataType ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Integer"/>
+              lowerBound="1" eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Integer"/>
           <eStructuralFeatures xsi:type="ecore:EAttribute" name="grouping" ordered="false"
               lowerBound="1" eType="ecore:EEnum DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/StreamPolicy"/>
           <eStructuralFeatures xsi:type="ecore:EAttribute" name="probFields" ordered="false"
-              upperBound="-1" eType="ecore:EDataType ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Real"/>
+              upperBound="-1" eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Real"/>
         </eClassifiers>
       </eSubpackages>
       <eSubpackages name="Hadoop" nsURI="http://es.unizar.disco.dice/profiles/DTSM/Hadoop/1.0"
@@ -234,9 +233,9 @@
         </eClassifiers>
         <eClassifiers xsi:type="ecore:EClass" name="HadoopOperation" eSuperTypes="../../org.eclipse.papyrus.marte.static.profile/resources/MARTE.ecore#//MARTE_AnalysisModel/GQAM/GaStep">
           <eStructuralFeatures xsi:type="ecore:EAttribute" name="parallelism" ordered="false"
-              eType="ecore:EDataType ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Integer"/>
+              eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Integer"/>
           <eStructuralFeatures xsi:type="ecore:EAttribute" name="nTasks" ordered="false"
-              upperBound="-1" eType="ecore:EDataType ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Integer"/>
+              upperBound="-1" eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Integer"/>
         </eClassifiers>
         <eClassifiers xsi:type="ecore:EClass" name="HadoopReduce" eSuperTypes="#//DICE_UML_Extensions/DTSM/Hadoop/HadoopOperation">
           <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" ordered="false"
@@ -248,52 +247,53 @@
         </eClassifiers>
         <eClassifiers xsi:type="ecore:EClass" name="HadoopWorkloadEvent" eSuperTypes="../../org.eclipse.papyrus.marte.static.profile/resources/MARTE.ecore#//MARTE_AnalysisModel/GQAM/GaWorkloadEvent">
           <eStructuralFeatures xsi:type="ecore:EAttribute" name="hadoopPopulation"
-              ordered="false" upperBound="-1" eType="ecore:EDataType ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Integer"/>
+              ordered="false" upperBound="-1" eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Integer"/>
           <eStructuralFeatures xsi:type="ecore:EAttribute" name="hadoopExtDelay" ordered="false"
-              upperBound="-1" eType="ecore:EDataType ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Duration"/>
+              upperBound="-1" eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Duration"/>
         </eClassifiers>
         <eClassifiers xsi:type="ecore:EClass" name="HadoopComputationNode" eSuperTypes="#//DICE_UML_Extensions/DTSM/Core/CoreComputationNode">
           <eStructuralFeatures xsi:type="ecore:EAttribute" name="nCores" ordered="false"
-              upperBound="-1" eType="ecore:EDataType ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Integer"/>
+              upperBound="-1" eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Integer"/>
         </eClassifiers>
       </eSubpackages>
       <eSubpackages name="Spark" nsURI="http://es.unizar.disco.dice/profiles/DTSM/Spark/1.0"
           nsPrefix="Spark">
+        <eClassifiers xsi:type="ecore:EClass" name="SparkScenario" eSuperTypes="../../org.eclipse.papyrus.marte.static.profile/resources/MARTE.ecore#//MARTE_AnalysisModel/GQAM/GaScenario">
+          <eStructuralFeatures xsi:type="ecore:EAttribute" name="nAssignedCores" ordered="false"
+              lowerBound="1" eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Integer"/>
+          <eStructuralFeatures xsi:type="ecore:EAttribute" name="nAssignedMemory"
+              ordered="false" lowerBound="1" eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Integer"/>
+          <eStructuralFeatures xsi:type="ecore:EAttribute" name="jobSchedule" ordered="false"
+              lowerBound="1" eType="ecore:EEnum DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/Scheduling"/>
+        </eClassifiers>
         <eClassifiers xsi:type="ecore:EClass" name="SparkOperation" eSuperTypes="../../org.eclipse.papyrus.marte.static.profile/resources/MARTE.ecore#//MARTE_AnalysisModel/GQAM/GaStep">
           <eStructuralFeatures xsi:type="ecore:EAttribute" name="RDDAvailable" ordered="false"
-              lowerBound="1" eType="ecore:EDataType ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Integer"/>
+              lowerBound="1" eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Integer"/>
           <eStructuralFeatures xsi:type="ecore:EAttribute" name="RDD" ordered="false"
-              lowerBound="1" eType="ecore:EDataType ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Integer"/>
+              lowerBound="1" eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Integer"/>
           <eStructuralFeatures xsi:type="ecore:EAttribute" name="OpType" ordered="false"
               lowerBound="1" eType="ecore:EEnum DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/SparkOperation"/>
-        </eClassifiers>
-        <eClassifiers xsi:type="ecore:EClass" name="SparkMap" eSuperTypes="#//DICE_UML_Extensions/DTSM/Spark/SparkOperation">
-          <eStructuralFeatures xsi:type="ecore:EAttribute" name="MapType" ordered="false"
-              lowerBound="1" eType="ecore:EEnum DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/SparkMap"/>
         </eClassifiers>
         <eClassifiers xsi:type="ecore:EClass" name="SparkReduce" eSuperTypes="#//DICE_UML_Extensions/DTSM/Spark/SparkOperation">
           <eStructuralFeatures xsi:type="ecore:EAttribute" name="ReduceType" ordered="false"
               lowerBound="1" eType="ecore:EEnum DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/SparkReduce"/>
         </eClassifiers>
-        <eClassifiers xsi:type="ecore:EClass" name="SparkScenario" eSuperTypes="../../org.eclipse.papyrus.marte.static.profile/resources/MARTE.ecore#//MARTE_AnalysisModel/GQAM/GaScenario">
-          <eStructuralFeatures xsi:type="ecore:EAttribute" name="nAssignedCores" ordered="false"
-              lowerBound="1" eType="ecore:EDataType ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Integer"/>
-          <eStructuralFeatures xsi:type="ecore:EAttribute" name="nAssignedMemory"
-              ordered="false" lowerBound="1" eType="ecore:EDataType ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Integer"/>
-          <eStructuralFeatures xsi:type="ecore:EAttribute" name="jobSchedule" ordered="false"
-              lowerBound="1" eType="ecore:EEnum DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/Scheduling"/>
+        <eClassifiers xsi:type="ecore:EClass" name="SparkForEach" eSuperTypes="#//DICE_UML_Extensions/DTSM/Spark/SparkOperation"/>
+        <eClassifiers xsi:type="ecore:EClass" name="SparkMap" eSuperTypes="#//DICE_UML_Extensions/DTSM/Spark/SparkOperation">
+          <eStructuralFeatures xsi:type="ecore:EAttribute" name="MapType" ordered="false"
+              lowerBound="1" eType="ecore:EEnum DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/SparkMap"/>
+        </eClassifiers>
+        <eClassifiers xsi:type="ecore:EClass" name="SparkNode" eSuperTypes="#//DICE_UML_Extensions/DTSM/Core/CoreComputationNode ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE.ecore#//MARTE_AnalysisModel/GQAM/GaScenario">
+          <eStructuralFeatures xsi:type="ecore:EAttribute" name="nCores" ordered="false"
+              lowerBound="1" eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Integer"/>
+          <eStructuralFeatures xsi:type="ecore:EAttribute" name="Memory" ordered="false"
+              lowerBound="1" eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Boolean"/>
         </eClassifiers>
         <eClassifiers xsi:type="ecore:EClass" name="SparkWorkloadEvent" eSuperTypes="../../org.eclipse.papyrus.marte.static.profile/resources/MARTE.ecore#//MARTE_AnalysisModel/GQAM/GaWorkloadEvent">
           <eStructuralFeatures xsi:type="ecore:EAttribute" name="sparkPopulation"
-              ordered="false" lowerBound="1" eType="ecore:EDataType ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Integer"/>
+              ordered="false" lowerBound="1" eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Integer"/>
           <eStructuralFeatures xsi:type="ecore:EAttribute" name="sparkExtDelay" ordered="false"
-              lowerBound="1" eType="ecore:EDataType ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Duration"/>
-        </eClassifiers>
-        <eClassifiers xsi:type="ecore:EClass" name="SparkNode" eSuperTypes="#//DICE_UML_Extensions/DTSM/Core/CoreComputationNode">
-          <eStructuralFeatures xsi:type="ecore:EAttribute" name="nCores" ordered="false"
-              lowerBound="1" eType="ecore:EDataType ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Integer"/>
-          <eStructuralFeatures xsi:type="ecore:EAttribute" name="Memory" ordered="false"
-              lowerBound="1" eType="ecore:EDataType ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Boolean"/>
+              lowerBound="1" eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Duration"/>
         </eClassifiers>
       </eSubpackages>
     </eSubpackages>
