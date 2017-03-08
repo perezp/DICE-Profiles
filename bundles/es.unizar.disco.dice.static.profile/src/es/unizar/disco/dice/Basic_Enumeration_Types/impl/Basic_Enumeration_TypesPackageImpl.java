@@ -55,7 +55,9 @@ import es.unizar.disco.dice.DTSM.Hadoop.HadoopPackage;
 import es.unizar.disco.dice.DTSM.Hadoop.impl.HadoopPackageImpl;
 
 import es.unizar.disco.dice.DTSM.Spark.SparkPackage;
+
 import es.unizar.disco.dice.DTSM.Spark.impl.SparkPackageImpl;
+
 import es.unizar.disco.dice.DTSM.Storm.StormPackage;
 
 import es.unizar.disco.dice.DTSM.Storm.impl.StormPackageImpl;
@@ -182,13 +184,6 @@ public class Basic_Enumeration_TypesPackageImpl extends EPackageImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EEnum computationTypeEEnum = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	private EEnum sparkReduceEEnum = null;
 
 	/**
@@ -204,6 +199,13 @@ public class Basic_Enumeration_TypesPackageImpl extends EPackageImpl implements 
 	 * @generated
 	 */
 	private EEnum sparkOperationEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum computationTypeEEnum = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -441,15 +443,6 @@ public class Basic_Enumeration_TypesPackageImpl extends EPackageImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EEnum getComputationType() {
-		return computationTypeEEnum;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EEnum getSparkReduce() {
 		return sparkReduceEEnum;
 	}
@@ -470,6 +463,15 @@ public class Basic_Enumeration_TypesPackageImpl extends EPackageImpl implements 
 	 */
 	public EEnum getSparkOperation() {
 		return sparkOperationEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EEnum getComputationType() {
+		return computationTypeEEnum;
 	}
 
 	/**
@@ -515,10 +517,10 @@ public class Basic_Enumeration_TypesPackageImpl extends EPackageImpl implements 
 		vmSizeEEnum = createEEnum(VM_SIZE);
 		providerTypeEEnum = createEEnum(PROVIDER_TYPE);
 		ddsMcomponentTypeEEnum = createEEnum(DDS_MCOMPONENT_TYPE);
-		computationTypeEEnum = createEEnum(COMPUTATION_TYPE);
 		sparkReduceEEnum = createEEnum(SPARK_REDUCE);
 		sparkMapEEnum = createEEnum(SPARK_MAP);
 		sparkOperationEEnum = createEEnum(SPARK_OPERATION);
+		computationTypeEEnum = createEEnum(COMPUTATION_TYPE);
 	}
 
 	/**
@@ -633,22 +635,6 @@ public class Basic_Enumeration_TypesPackageImpl extends EPackageImpl implements 
 		addEEnumLiteral(ddsMcomponentTypeEEnum, DDSMcomponentType.MASTER_NODE);
 		addEEnumLiteral(ddsMcomponentTypeEEnum, DDSMcomponentType.SLAVE_NODE);
 
-		initEEnum(computationTypeEEnum, ComputationType.class, "ComputationType");
-		addEEnumLiteral(computationTypeEEnum, ComputationType.DISTRIBUTED);
-		addEEnumLiteral(computationTypeEEnum, ComputationType.PARALLEL);
-		addEEnumLiteral(computationTypeEEnum, ComputationType.DISTRIBUTED_PARALLEL);
-		addEEnumLiteral(computationTypeEEnum, ComputationType.MICRO_BENCH);
-		addEEnumLiteral(computationTypeEEnum, ComputationType.SORTING);
-		addEEnumLiteral(computationTypeEEnum, ComputationType.GREP);
-		addEEnumLiteral(computationTypeEEnum, ComputationType.WORD_COUNT);
-		addEEnumLiteral(computationTypeEEnum, ComputationType.COLLAB_FILTERING);
-		addEEnumLiteral(computationTypeEEnum, ComputationType.NAIVE_BAYES);
-		addEEnumLiteral(computationTypeEEnum, ComputationType.BFS);
-		addEEnumLiteral(computationTypeEEnum, ComputationType.PAGE_RANK);
-		addEEnumLiteral(computationTypeEEnum, ComputationType.KMEANS);
-		addEEnumLiteral(computationTypeEEnum, ComputationType.CONNECTED_COMPONENTS);
-		addEEnumLiteral(computationTypeEEnum, ComputationType.REL_QUERY);
-
 		initEEnum(sparkReduceEEnum, SparkReduce.class, "SparkReduce");
 		addEEnumLiteral(sparkReduceEEnum, SparkReduce.REDUCE);
 		addEEnumLiteral(sparkReduceEEnum, SparkReduce.SAMPLE);
@@ -664,6 +650,22 @@ public class Basic_Enumeration_TypesPackageImpl extends EPackageImpl implements 
 		initEEnum(sparkOperationEEnum, SparkOperation.class, "SparkOperation");
 		addEEnumLiteral(sparkOperationEEnum, SparkOperation.TRANSFORMATION);
 		addEEnumLiteral(sparkOperationEEnum, SparkOperation.ACTION);
+
+		initEEnum(computationTypeEEnum, ComputationType.class, "ComputationType");
+		addEEnumLiteral(computationTypeEEnum, ComputationType.DISTRIBUTED);
+		addEEnumLiteral(computationTypeEEnum, ComputationType.PARALLEL);
+		addEEnumLiteral(computationTypeEEnum, ComputationType.DISTRIBUTED_PARALLEL);
+		addEEnumLiteral(computationTypeEEnum, ComputationType.MICRO_BENCH);
+		addEEnumLiteral(computationTypeEEnum, ComputationType.SORTING);
+		addEEnumLiteral(computationTypeEEnum, ComputationType.GREP);
+		addEEnumLiteral(computationTypeEEnum, ComputationType.WORD_COUNT);
+		addEEnumLiteral(computationTypeEEnum, ComputationType.COLLAB_FILTERING);
+		addEEnumLiteral(computationTypeEEnum, ComputationType.NAIVE_BAYES);
+		addEEnumLiteral(computationTypeEEnum, ComputationType.BFS);
+		addEEnumLiteral(computationTypeEEnum, ComputationType.PAGE_RANK);
+		addEEnumLiteral(computationTypeEEnum, ComputationType.KMEANS);
+		addEEnumLiteral(computationTypeEEnum, ComputationType.CONNECTED_COMPONENTS);
+		addEEnumLiteral(computationTypeEEnum, ComputationType.REL_QUERY);
 
 		// Create resource
 		createResource(eNS_URI);

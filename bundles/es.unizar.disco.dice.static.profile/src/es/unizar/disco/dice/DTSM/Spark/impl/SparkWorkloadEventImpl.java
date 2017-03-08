@@ -4,10 +4,13 @@ package es.unizar.disco.dice.DTSM.Spark.impl;
 
 import es.unizar.disco.dice.DTSM.Spark.SparkPackage;
 import es.unizar.disco.dice.DTSM.Spark.SparkWorkloadEvent;
+
 import org.eclipse.emf.common.notify.Notification;
+
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
+
 import org.eclipse.papyrus.MARTE.MARTE_AnalysisModel.GQAM.impl.GaWorkloadEventImpl;
 
 /**
@@ -34,6 +37,7 @@ public class SparkWorkloadEventImpl extends GaWorkloadEventImpl implements Spark
 	 * @ordered
 	 */
 	protected static final String SPARK_POPULATION_EDEFAULT = null;
+
 	/**
 	 * The cached value of the '{@link #getSparkPopulation() <em>Spark Population</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -43,6 +47,7 @@ public class SparkWorkloadEventImpl extends GaWorkloadEventImpl implements Spark
 	 * @ordered
 	 */
 	protected String sparkPopulation = SPARK_POPULATION_EDEFAULT;
+
 	/**
 	 * The default value of the '{@link #getSparkExtDelay() <em>Spark Ext Delay</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -52,6 +57,7 @@ public class SparkWorkloadEventImpl extends GaWorkloadEventImpl implements Spark
 	 * @ordered
 	 */
 	protected static final String SPARK_EXT_DELAY_EDEFAULT = null;
+
 	/**
 	 * The cached value of the '{@link #getSparkExtDelay() <em>Spark Ext Delay</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -61,6 +67,7 @@ public class SparkWorkloadEventImpl extends GaWorkloadEventImpl implements Spark
 	 * @ordered
 	 */
 	protected String sparkExtDelay = SPARK_EXT_DELAY_EDEFAULT;
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -143,7 +150,6 @@ public class SparkWorkloadEventImpl extends GaWorkloadEventImpl implements Spark
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@SuppressWarnings("unchecked")
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {

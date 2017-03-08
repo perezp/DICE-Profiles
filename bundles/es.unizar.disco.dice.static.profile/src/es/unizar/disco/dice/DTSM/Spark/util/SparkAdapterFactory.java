@@ -84,28 +84,32 @@ public class SparkAdapterFactory extends AdapterFactoryImpl {
 	protected SparkSwitch<Adapter> modelSwitch =
 		new SparkSwitch<Adapter>() {
 			@Override
-			public Adapter caseSparkOperation(SparkOperation object) {
-				return createSparkOperationAdapter();
+			public Adapter caseSparkScenario(SparkScenario object) {
+				return createSparkScenarioAdapter();
 			}
 			@Override
-			public Adapter caseSparkMap(SparkMap object) {
-				return createSparkMapAdapter();
+			public Adapter caseSparkOperation(SparkOperation object) {
+				return createSparkOperationAdapter();
 			}
 			@Override
 			public Adapter caseSparkReduce(SparkReduce object) {
 				return createSparkReduceAdapter();
 			}
 			@Override
-			public Adapter caseSparkScenario(SparkScenario object) {
-				return createSparkScenarioAdapter();
+			public Adapter caseSparkForEach(SparkForEach object) {
+				return createSparkForEachAdapter();
 			}
 			@Override
-			public Adapter caseSparkWorkloadEvent(SparkWorkloadEvent object) {
-				return createSparkWorkloadEventAdapter();
+			public Adapter caseSparkMap(SparkMap object) {
+				return createSparkMapAdapter();
 			}
 			@Override
 			public Adapter caseSparkNode(SparkNode object) {
 				return createSparkNodeAdapter();
+			}
+			@Override
+			public Adapter caseSparkWorkloadEvent(SparkWorkloadEvent object) {
+				return createSparkWorkloadEventAdapter();
 			}
 			@Override
 			public Adapter caseResourceUsage(ResourceUsage object) {
@@ -128,10 +132,6 @@ public class SparkAdapterFactory extends AdapterFactoryImpl {
 				return createGaStepAdapter();
 			}
 			@Override
-			public Adapter caseGaWorkloadEvent(GaWorkloadEvent object) {
-				return createGaWorkloadEventAdapter();
-			}
-			@Override
 			public Adapter caseResource(Resource object) {
 				return createResourceAdapter();
 			}
@@ -146,6 +146,10 @@ public class SparkAdapterFactory extends AdapterFactoryImpl {
 			@Override
 			public Adapter caseCoreComputationNode(CoreComputationNode object) {
 				return createCoreComputationNodeAdapter();
+			}
+			@Override
+			public Adapter caseGaWorkloadEvent(GaWorkloadEvent object) {
+				return createGaWorkloadEventAdapter();
 			}
 			@Override
 			public Adapter defaultCase(EObject object) {
@@ -168,6 +172,20 @@ public class SparkAdapterFactory extends AdapterFactoryImpl {
 
 
 	/**
+	 * Creates a new adapter for an object of class '{@link es.unizar.disco.dice.DTSM.Spark.SparkScenario <em>Scenario</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see es.unizar.disco.dice.DTSM.Spark.SparkScenario
+	 * @generated
+	 */
+	public Adapter createSparkScenarioAdapter() {
+		return null;
+	}
+
+	/**
 	 * Creates a new adapter for an object of class '{@link es.unizar.disco.dice.DTSM.Spark.SparkOperation <em>Operation</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -178,20 +196,6 @@ public class SparkAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createSparkOperationAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link es.unizar.disco.dice.DTSM.Spark.SparkMap <em>Map</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see es.unizar.disco.dice.DTSM.Spark.SparkMap
-	 * @generated
-	 */
-	public Adapter createSparkMapAdapter() {
 		return null;
 	}
 
@@ -210,30 +214,30 @@ public class SparkAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link es.unizar.disco.dice.DTSM.Spark.SparkScenario <em>Scenario</em>}'.
+	 * Creates a new adapter for an object of class '{@link es.unizar.disco.dice.DTSM.Spark.SparkForEach <em>For Each</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see es.unizar.disco.dice.DTSM.Spark.SparkScenario
+	 * @see es.unizar.disco.dice.DTSM.Spark.SparkForEach
 	 * @generated
 	 */
-	public Adapter createSparkScenarioAdapter() {
+	public Adapter createSparkForEachAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link es.unizar.disco.dice.DTSM.Spark.SparkWorkloadEvent <em>Workload Event</em>}'.
+	 * Creates a new adapter for an object of class '{@link es.unizar.disco.dice.DTSM.Spark.SparkMap <em>Map</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see es.unizar.disco.dice.DTSM.Spark.SparkWorkloadEvent
+	 * @see es.unizar.disco.dice.DTSM.Spark.SparkMap
 	 * @generated
 	 */
-	public Adapter createSparkWorkloadEventAdapter() {
+	public Adapter createSparkMapAdapter() {
 		return null;
 	}
 
@@ -248,6 +252,20 @@ public class SparkAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createSparkNodeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link es.unizar.disco.dice.DTSM.Spark.SparkWorkloadEvent <em>Workload Event</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see es.unizar.disco.dice.DTSM.Spark.SparkWorkloadEvent
+	 * @generated
+	 */
+	public Adapter createSparkWorkloadEventAdapter() {
 		return null;
 	}
 
@@ -322,20 +340,6 @@ public class SparkAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.eclipse.papyrus.MARTE.MARTE_AnalysisModel.GQAM.GaWorkloadEvent <em>Ga Workload Event</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.eclipse.papyrus.MARTE.MARTE_AnalysisModel.GQAM.GaWorkloadEvent
-	 * @generated
-	 */
-	public Adapter createGaWorkloadEventAdapter() {
-		return null;
-	}
-
-	/**
 	 * Creates a new adapter for an object of class '{@link org.eclipse.papyrus.MARTE.MARTE_Foundations.GRM.Resource <em>Resource</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -388,6 +392,20 @@ public class SparkAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createCoreComputationNodeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.eclipse.papyrus.MARTE.MARTE_AnalysisModel.GQAM.GaWorkloadEvent <em>Ga Workload Event</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.eclipse.papyrus.MARTE.MARTE_AnalysisModel.GQAM.GaWorkloadEvent
+	 * @generated
+	 */
+	public Adapter createGaWorkloadEventAdapter() {
 		return null;
 	}
 

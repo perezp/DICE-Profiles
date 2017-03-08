@@ -56,45 +56,16 @@ public class SparkFactoryImpl extends EFactoryImpl implements SparkFactory {
 	@Override
 	public EObject create(EClass eClass) {
 		switch (eClass.getClassifierID()) {
-			case SparkPackage.SPARK_OPERATION: return createSparkOperation();
-			case SparkPackage.SPARK_MAP: return createSparkMap();
-			case SparkPackage.SPARK_REDUCE: return createSparkReduce();
 			case SparkPackage.SPARK_SCENARIO: return createSparkScenario();
-			case SparkPackage.SPARK_WORKLOAD_EVENT: return createSparkWorkloadEvent();
+			case SparkPackage.SPARK_OPERATION: return createSparkOperation();
+			case SparkPackage.SPARK_REDUCE: return createSparkReduce();
+			case SparkPackage.SPARK_FOR_EACH: return createSparkForEach();
+			case SparkPackage.SPARK_MAP: return createSparkMap();
 			case SparkPackage.SPARK_NODE: return createSparkNode();
+			case SparkPackage.SPARK_WORKLOAD_EVENT: return createSparkWorkloadEvent();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public SparkOperation createSparkOperation() {
-		SparkOperationImpl sparkOperation = new SparkOperationImpl();
-		return sparkOperation;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public SparkMap createSparkMap() {
-		SparkMapImpl sparkMap = new SparkMapImpl();
-		return sparkMap;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public SparkReduce createSparkReduce() {
-		SparkReduceImpl sparkReduce = new SparkReduceImpl();
-		return sparkReduce;
 	}
 
 	/**
@@ -112,9 +83,39 @@ public class SparkFactoryImpl extends EFactoryImpl implements SparkFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SparkWorkloadEvent createSparkWorkloadEvent() {
-		SparkWorkloadEventImpl sparkWorkloadEvent = new SparkWorkloadEventImpl();
-		return sparkWorkloadEvent;
+	public SparkOperation createSparkOperation() {
+		SparkOperationImpl sparkOperation = new SparkOperationImpl();
+		return sparkOperation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public SparkReduce createSparkReduce() {
+		SparkReduceImpl sparkReduce = new SparkReduceImpl();
+		return sparkReduce;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public SparkForEach createSparkForEach() {
+		SparkForEachImpl sparkForEach = new SparkForEachImpl();
+		return sparkForEach;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public SparkMap createSparkMap() {
+		SparkMapImpl sparkMap = new SparkMapImpl();
+		return sparkMap;
 	}
 
 	/**
@@ -125,6 +126,16 @@ public class SparkFactoryImpl extends EFactoryImpl implements SparkFactory {
 	public SparkNode createSparkNode() {
 		SparkNodeImpl sparkNode = new SparkNodeImpl();
 		return sparkNode;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public SparkWorkloadEvent createSparkWorkloadEvent() {
+		SparkWorkloadEventImpl sparkWorkloadEvent = new SparkWorkloadEventImpl();
+		return sparkWorkloadEvent;
 	}
 
 	/**

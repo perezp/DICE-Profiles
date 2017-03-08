@@ -4,6 +4,8 @@ package es.unizar.disco.dice.DTSM.Spark;
 
 import es.unizar.disco.dice.DTSM.Core.CoreComputationNode;
 
+import org.eclipse.papyrus.MARTE.MARTE_AnalysisModel.GQAM.GaScenario;
+
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Node</b></em>'.
@@ -21,12 +23,12 @@ import es.unizar.disco.dice.DTSM.Core.CoreComputationNode;
  * @model
  * @generated
  */
-public interface SparkNode extends CoreComputationNode {
+public interface SparkNode extends CoreComputationNode, GaScenario {
 	/**
 	 * Returns the value of the '<em><b>NCores</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>NCores</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>NCores</em>' attribute isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->

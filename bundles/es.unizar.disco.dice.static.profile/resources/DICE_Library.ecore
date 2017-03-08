@@ -146,6 +146,22 @@
         <eLiterals name="MasterNode" value="5"/>
         <eLiterals name="SlaveNode" value="6"/>
       </eClassifiers>
+      <eClassifiers xsi:type="ecore:EEnum" name="SparkReduce">
+        <eLiterals name="Reduce"/>
+        <eLiterals name="Sample" value="1"/>
+        <eLiterals name="Order" value="2"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EEnum" name="SparkMap">
+        <eLiterals name="Map"/>
+        <eLiterals name="Filter" value="1"/>
+        <eLiterals name="Sample" value="2"/>
+        <eLiterals name="ByKey" value="3"/>
+        <eLiterals name="RDDSetOperation" value="4"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EEnum" name="SparkOperation">
+        <eLiterals name="Transformation"/>
+        <eLiterals name="Action" value="1"/>
+      </eClassifiers>
       <eClassifiers xsi:type="ecore:EEnum" name="ComputationType">
         <eLiterals name="distributed"/>
         <eLiterals name="parallel" value="1"/>
@@ -161,22 +177,6 @@
         <eLiterals name="kMeans" value="11"/>
         <eLiterals name="connectedComponents" value="12"/>
         <eLiterals name="relQuery" value="13"/>
-      </eClassifiers>
-      <eClassifiers xsi:type="ecore:EEnum" name="SparkReduce">
-        <eLiterals name="Reduce"/>
-        <eLiterals name="Sample" value="1"/>
-        <eLiterals name="Order" value="2"/>
-      </eClassifiers>
-      <eClassifiers xsi:type="ecore:EEnum" name="SparkMap">
-        <eLiterals name="Map"/>
-        <eLiterals name="Filter" value="1"/>
-        <eLiterals name="Sample" value="2"/>
-        <eLiterals name="ByKey" value="3"/>
-        <eLiterals name="RDDSetOperation" value="4"/>
-      </eClassifiers>
-      <eClassifiers xsi:type="ecore:EEnum" name="SparkOperation">
-        <eLiterals name="Transformation" literal="Transformation"/>
-        <eLiterals name="Action" value="1"/>
       </eClassifiers>
     </eSubpackages>
   </eSubpackages>

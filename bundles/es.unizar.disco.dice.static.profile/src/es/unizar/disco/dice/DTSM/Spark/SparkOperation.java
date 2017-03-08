@@ -53,7 +53,7 @@ public interface SparkOperation extends GaStep {
 	 * Returns the value of the '<em><b>RDD</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>RDD</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>RDD</em>' attribute isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -80,7 +80,7 @@ public interface SparkOperation extends GaStep {
 	 * The literals are from the enumeration {@link es.unizar.disco.dice.Basic_Enumeration_Types.SparkOperation}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Op Type</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Op Type</em>' attribute isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->

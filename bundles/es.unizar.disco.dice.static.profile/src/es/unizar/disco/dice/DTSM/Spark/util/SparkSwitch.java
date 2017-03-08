@@ -82,6 +82,16 @@ public class SparkSwitch<T> extends Switch<T> {
 	@Override
 	protected T doSwitch(int classifierID, EObject theEObject) {
 		switch (classifierID) {
+			case SparkPackage.SPARK_SCENARIO: {
+				SparkScenario sparkScenario = (SparkScenario)theEObject;
+				T result = caseSparkScenario(sparkScenario);
+				if (result == null) result = caseGaScenario(sparkScenario);
+				if (result == null) result = caseResourceUsage(sparkScenario);
+				if (result == null) result = caseTimedProcessing(sparkScenario);
+				if (result == null) result = caseTimedElement(sparkScenario);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
 			case SparkPackage.SPARK_OPERATION: {
 				SparkOperation sparkOperation = (SparkOperation)theEObject;
 				T result = caseSparkOperation(sparkOperation);
@@ -90,18 +100,6 @@ public class SparkSwitch<T> extends Switch<T> {
 				if (result == null) result = caseResourceUsage(sparkOperation);
 				if (result == null) result = caseTimedProcessing(sparkOperation);
 				if (result == null) result = caseTimedElement(sparkOperation);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case SparkPackage.SPARK_MAP: {
-				SparkMap sparkMap = (SparkMap)theEObject;
-				T result = caseSparkMap(sparkMap);
-				if (result == null) result = caseSparkOperation(sparkMap);
-				if (result == null) result = caseGaStep(sparkMap);
-				if (result == null) result = caseGaScenario(sparkMap);
-				if (result == null) result = caseResourceUsage(sparkMap);
-				if (result == null) result = caseTimedProcessing(sparkMap);
-				if (result == null) result = caseTimedElement(sparkMap);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -117,13 +115,41 @@ public class SparkSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case SparkPackage.SPARK_SCENARIO: {
-				SparkScenario sparkScenario = (SparkScenario)theEObject;
-				T result = caseSparkScenario(sparkScenario);
-				if (result == null) result = caseGaScenario(sparkScenario);
-				if (result == null) result = caseResourceUsage(sparkScenario);
-				if (result == null) result = caseTimedProcessing(sparkScenario);
-				if (result == null) result = caseTimedElement(sparkScenario);
+			case SparkPackage.SPARK_FOR_EACH: {
+				SparkForEach sparkForEach = (SparkForEach)theEObject;
+				T result = caseSparkForEach(sparkForEach);
+				if (result == null) result = caseSparkOperation(sparkForEach);
+				if (result == null) result = caseGaStep(sparkForEach);
+				if (result == null) result = caseGaScenario(sparkForEach);
+				if (result == null) result = caseResourceUsage(sparkForEach);
+				if (result == null) result = caseTimedProcessing(sparkForEach);
+				if (result == null) result = caseTimedElement(sparkForEach);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case SparkPackage.SPARK_MAP: {
+				SparkMap sparkMap = (SparkMap)theEObject;
+				T result = caseSparkMap(sparkMap);
+				if (result == null) result = caseSparkOperation(sparkMap);
+				if (result == null) result = caseGaStep(sparkMap);
+				if (result == null) result = caseGaScenario(sparkMap);
+				if (result == null) result = caseResourceUsage(sparkMap);
+				if (result == null) result = caseTimedProcessing(sparkMap);
+				if (result == null) result = caseTimedElement(sparkMap);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case SparkPackage.SPARK_NODE: {
+				SparkNode sparkNode = (SparkNode)theEObject;
+				T result = caseSparkNode(sparkNode);
+				if (result == null) result = caseCoreComputationNode(sparkNode);
+				if (result == null) result = caseGaScenario(sparkNode);
+				if (result == null) result = caseDpimComputationNode(sparkNode);
+				if (result == null) result = caseResourceUsage(sparkNode);
+				if (result == null) result = caseTimedProcessing(sparkNode);
+				if (result == null) result = caseDaComponent(sparkNode);
+				if (result == null) result = caseTimedElement(sparkNode);
+				if (result == null) result = caseResource(sparkNode);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -134,18 +160,23 @@ public class SparkSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case SparkPackage.SPARK_NODE: {
-				SparkNode sparkNode = (SparkNode)theEObject;
-				T result = caseSparkNode(sparkNode);
-				if (result == null) result = caseCoreComputationNode(sparkNode);
-				if (result == null) result = caseDpimComputationNode(sparkNode);
-				if (result == null) result = caseDaComponent(sparkNode);
-				if (result == null) result = caseResource(sparkNode);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
 			default: return defaultCase(theEObject);
 		}
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Scenario</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Scenario</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseSparkScenario(SparkScenario object) {
+		return null;
 	}
 
 	/**
@@ -160,21 +191,6 @@ public class SparkSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseSparkOperation(SparkOperation object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Map</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Map</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseSparkMap(SparkMap object) {
 		return null;
 	}
 
@@ -194,32 +210,32 @@ public class SparkSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Scenario</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>For Each</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Scenario</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>For Each</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseSparkScenario(SparkScenario object) {
+	public T caseSparkForEach(SparkForEach object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Workload Event</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Map</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Workload Event</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Map</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseSparkWorkloadEvent(SparkWorkloadEvent object) {
+	public T caseSparkMap(SparkMap object) {
 		return null;
 	}
 
@@ -235,6 +251,21 @@ public class SparkSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseSparkNode(SparkNode object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Workload Event</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Workload Event</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseSparkWorkloadEvent(SparkWorkloadEvent object) {
 		return null;
 	}
 
@@ -314,21 +345,6 @@ public class SparkSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Ga Workload Event</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Ga Workload Event</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseGaWorkloadEvent(GaWorkloadEvent object) {
-		return null;
-	}
-
-	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Resource</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -385,6 +401,21 @@ public class SparkSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseCoreComputationNode(CoreComputationNode object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Ga Workload Event</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Ga Workload Event</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseGaWorkloadEvent(GaWorkloadEvent object) {
 		return null;
 	}
 
