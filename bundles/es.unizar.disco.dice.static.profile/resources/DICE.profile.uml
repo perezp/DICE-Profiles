@@ -501,7 +501,7 @@
         <packagedElement xmi:type="uml:Profile" xmi:id="_uVw8sPjzEeaT8NXWw3z-XA" name="Spark" URI="">
           <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_uVw8sfjzEeaT8NXWw3z-XA" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
           <packagedElement xmi:type="uml:Stereotype" xmi:id="_uVw9d_jzEeaT8NXWw3z-XA" name="SparkScenario">
-            <generalization xmi:type="uml:Generalization" xmi:id="_uVw9ePjzEeaT8NXWw3z-XA">
+            <generalization xmi:type="uml:Generalization" xmi:id="_N6YWUAPyEee8MoBjXIybTQ">
               <general xmi:type="uml:Stereotype" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_XYaMIBKYEdyGYuetzx6T5A"/>
             </generalization>
             <ownedAttribute xmi:type="uml:Property" xmi:id="_uVw9efjzEeaT8NXWw3z-XA" name="nAssignedCores" visibility="private">
@@ -537,36 +537,18 @@
             </ownedAttribute>
           </packagedElement>
           <packagedElement xmi:type="uml:Stereotype" xmi:id="_uVw9i_jzEeaT8NXWw3z-XA" name="SparkReduce">
-            <generalization xmi:type="uml:Generalization" xmi:id="_uVw9jPjzEeaT8NXWw3z-XA">
-              <general xmi:type="uml:Stereotype" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_eXMtwBKZEdyGYuetzx6T5A"/>
-            </generalization>
-            <generalization xmi:type="uml:Generalization" xmi:id="_uVw9jfjzEeaT8NXWw3z-XA" general="_uVw9fPjzEeaT8NXWw3z-XA"/>
-            <generalization xmi:type="uml:Generalization" xmi:id="_uVw9jvjzEeaT8NXWw3z-XA" general="_uVw9fPjzEeaT8NXWw3z-XA"/>
+            <generalization xmi:type="uml:Generalization" xmi:id="_DZ1IsAPyEee8MoBjXIybTQ" general="_uVw9fPjzEeaT8NXWw3z-XA"/>
             <ownedAttribute xmi:type="uml:Property" xmi:id="_uVw9j_jzEeaT8NXWw3z-XA" name="ReduceType">
               <type xmi:type="uml:Enumeration" href="DICE_Library.uml#_zfUr4PdQEeauAqwbCM80KA"/>
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uVw9kPjzEeaT8NXWw3z-XA" value="1"/>
               <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uVw9kfjzEeaT8NXWw3z-XA" value="1"/>
             </ownedAttribute>
-            <nestedClassifier xmi:type="uml:Stereotype" xmi:id="_uVw9kvjzEeaT8NXWw3z-XA" name="SparkReduce">
-              <generalization xmi:type="uml:Generalization" xmi:id="_uVw9k_jzEeaT8NXWw3z-XA">
-                <general xmi:type="uml:Stereotype" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_eXMtwBKZEdyGYuetzx6T5A"/>
-              </generalization>
-              <generalization xmi:type="uml:Generalization" xmi:id="_uVw9lPjzEeaT8NXWw3z-XA" general="_uVw9fPjzEeaT8NXWw3z-XA"/>
-            </nestedClassifier>
           </packagedElement>
           <packagedElement xmi:type="uml:Stereotype" xmi:id="_uVw9lfjzEeaT8NXWw3z-XA" name="SparkForEach">
-            <generalization xmi:type="uml:Generalization" xmi:id="_uVw9lvjzEeaT8NXWw3z-XA">
-              <general xmi:type="uml:Stereotype" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_eXMtwBKZEdyGYuetzx6T5A"/>
-            </generalization>
-            <generalization xmi:type="uml:Generalization" xmi:id="_uVw9l_jzEeaT8NXWw3z-XA" general="_uVw9fPjzEeaT8NXWw3z-XA"/>
-            <generalization xmi:type="uml:Generalization" xmi:id="_uVw9mPjzEeaT8NXWw3z-XA" general="_uVw9fPjzEeaT8NXWw3z-XA"/>
+            <generalization xmi:type="uml:Generalization" xmi:id="_FPxWoAPyEee8MoBjXIybTQ" general="_uVw9fPjzEeaT8NXWw3z-XA"/>
           </packagedElement>
           <packagedElement xmi:type="uml:Stereotype" xmi:id="_uVw9mfjzEeaT8NXWw3z-XA" name="SparkMap">
-            <generalization xmi:type="uml:Generalization" xmi:id="_uVw9mvjzEeaT8NXWw3z-XA">
-              <general xmi:type="uml:Stereotype" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_eXMtwBKZEdyGYuetzx6T5A"/>
-            </generalization>
-            <generalization xmi:type="uml:Generalization" xmi:id="_uVw9m_jzEeaT8NXWw3z-XA" general="_uVw9fPjzEeaT8NXWw3z-XA"/>
-            <generalization xmi:type="uml:Generalization" xmi:id="_uVw9nPjzEeaT8NXWw3z-XA" general="_uVw9fPjzEeaT8NXWw3z-XA"/>
+            <generalization xmi:type="uml:Generalization" xmi:id="_CwJSgAPyEee8MoBjXIybTQ" general="_uVw9fPjzEeaT8NXWw3z-XA"/>
             <ownedAttribute xmi:type="uml:Property" xmi:id="_uVw9nvjzEeaT8NXWw3z-XA" name="MapType">
               <type xmi:type="uml:Enumeration" href="DICE_Library.uml#_zfVS8PdQEeauAqwbCM80KA"/>
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uVw9n_jzEeaT8NXWw3z-XA" value="1"/>
@@ -577,7 +559,7 @@
             <generalization xmi:type="uml:Generalization" xmi:id="_-78kcfj2EeacttGOxem79w">
               <general xmi:type="uml:Stereotype" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_XYaMIBKYEdyGYuetzx6T5A"/>
             </generalization>
-            <generalization xmi:type="uml:Generalization" xmi:id="_-78kcvj2EeacttGOxem79w" general="_lG6AcCluEeaibdPncpUwfA"/>
+            <generalization xmi:type="uml:Generalization" xmi:id="_QPNfsAPyEee8MoBjXIybTQ" general="_lG6AcCluEeaibdPncpUwfA"/>
             <ownedAttribute xmi:type="uml:Property" xmi:id="_-78kdvj2EeacttGOxem79w" name="nCores">
               <type xmi:type="uml:DataType" href="pathmap://Papyrus_PROFILES/MARTE_Library.library.uml#_0KWSgBFQEdyUJeMeN__D-A"/>
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-78kd_j2EeacttGOxem79w" value="1"/>
@@ -588,11 +570,7 @@
             </ownedAttribute>
           </packagedElement>
           <packagedElement xmi:type="uml:Stereotype" xmi:id="_QiYn8Pj9Eea1v7Z9o7wp1g" name="SparkWorkloadEvent">
-            <generalization xmi:type="uml:Generalization" xmi:id="_QiYn8fj9Eea1v7Z9o7wp1g">
-              <general xmi:type="uml:Stereotype" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_eXMtwBKZEdyGYuetzx6T5A"/>
-            </generalization>
-            <generalization xmi:type="uml:Generalization" xmi:id="_QiYn8vj9Eea1v7Z9o7wp1g" general="_uVw9fPjzEeaT8NXWw3z-XA"/>
-            <generalization xmi:type="uml:Generalization" xmi:id="_UiwGEPj9Eea1v7Z9o7wp1g">
+            <generalization xmi:type="uml:Generalization" xmi:id="_Lr00EAPyEee8MoBjXIybTQ">
               <general xmi:type="uml:Stereotype" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_CGyBkBKYEdyGYuetzx6T5A"/>
             </generalization>
             <ownedAttribute xmi:type="uml:Property" xmi:id="_-78kc_j2EeacttGOxem79w" name="sparkPopulation">
