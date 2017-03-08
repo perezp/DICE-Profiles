@@ -102,6 +102,12 @@ public class Basic_Enumeration_TypesFactoryImpl extends EFactoryImpl implements 
 				return createDDSMcomponentTypeFromString(eDataType, initialValue);
 			case Basic_Enumeration_TypesPackage.COMPUTATION_TYPE:
 				return createComputationTypeFromString(eDataType, initialValue);
+			case Basic_Enumeration_TypesPackage.SPARK_REDUCE:
+				return createSparkReduceFromString(eDataType, initialValue);
+			case Basic_Enumeration_TypesPackage.SPARK_MAP:
+				return createSparkMapFromString(eDataType, initialValue);
+			case Basic_Enumeration_TypesPackage.SPARK_OPERATION:
+				return createSparkOperationFromString(eDataType, initialValue);
 			default:
 				throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
 		}
@@ -147,6 +153,12 @@ public class Basic_Enumeration_TypesFactoryImpl extends EFactoryImpl implements 
 				return convertDDSMcomponentTypeToString(eDataType, instanceValue);
 			case Basic_Enumeration_TypesPackage.COMPUTATION_TYPE:
 				return convertComputationTypeToString(eDataType, instanceValue);
+			case Basic_Enumeration_TypesPackage.SPARK_REDUCE:
+				return convertSparkReduceToString(eDataType, instanceValue);
+			case Basic_Enumeration_TypesPackage.SPARK_MAP:
+				return convertSparkMapToString(eDataType, instanceValue);
+			case Basic_Enumeration_TypesPackage.SPARK_OPERATION:
+				return convertSparkOperationToString(eDataType, instanceValue);
 			default:
 				throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
 		}
@@ -469,6 +481,66 @@ public class Basic_Enumeration_TypesFactoryImpl extends EFactoryImpl implements 
 	 * @generated
 	 */
 	public String convertComputationTypeToString(EDataType eDataType, Object instanceValue) {
+		return instanceValue == null ? null : instanceValue.toString();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public SparkReduce createSparkReduceFromString(EDataType eDataType, String initialValue) {
+		SparkReduce result = SparkReduce.get(initialValue);
+		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+		return result;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String convertSparkReduceToString(EDataType eDataType, Object instanceValue) {
+		return instanceValue == null ? null : instanceValue.toString();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public SparkMap createSparkMapFromString(EDataType eDataType, String initialValue) {
+		SparkMap result = SparkMap.get(initialValue);
+		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+		return result;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String convertSparkMapToString(EDataType eDataType, Object instanceValue) {
+		return instanceValue == null ? null : instanceValue.toString();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public SparkOperation createSparkOperationFromString(EDataType eDataType, String initialValue) {
+		SparkOperation result = SparkOperation.get(initialValue);
+		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+		return result;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String convertSparkOperationToString(EDataType eDataType, Object instanceValue) {
 		return instanceValue == null ? null : instanceValue.toString();
 	}
 

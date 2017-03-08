@@ -85,12 +85,12 @@
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_SaOdcDiZEeaFI4EbHcf0UA" name="fair"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Enumeration" xmi:id="_HOIsID4CEeahGZm0A1o1gg" name="VMSize">
-          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_MfkJgD4CEeahGZm0A1o1gg" name="Small"/>
-          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_Q4qQsD4CEeahGZm0A1o1gg" name="Medium"/>
-          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_TM8ngD4CEeahGZm0A1o1gg" name="Large"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_MfkJgD4CEeahGZm0A1o1gg" name="small"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_Q4qQsD4CEeahGZm0A1o1gg" name="medium"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_TM8ngD4CEeahGZm0A1o1gg" name="large"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Enumeration" xmi:id="_ToY-oD4IEeahGZm0A1o1gg" name="ProviderType">
-          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_VrthQD4IEeahGZm0A1o1gg" name="fco"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_VrthQD4IEeahGZm0A1o1gg" name="flexiant"/>
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_Xqh-YD4IEeahGZm0A1o1gg" name="openstack"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Enumeration" xmi:id="_JBGoID4OEeahGZm0A1o1gg" name="LifeCycleElementType">
@@ -121,10 +121,6 @@
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_zfVS8_dQEeauAqwbCM80KA" name="Sample"/>
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_zfVS9PdQEeauAqwbCM80KA" name="ByKey"/>
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_zfVS9fdQEeauAqwbCM80KA" name="RDDSetOperation"/>
-        </packagedElement>
-        <packagedElement xmi:type="uml:Enumeration" xmi:id="_CC_MYP8iEeae0ceaALtJ7Q" name="SparkOperation">
-          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_CC_MYf8iEeae0ceaALtJ7Q" name="Transformation"/>
-          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_CC_MYv8iEeae0ceaALtJ7Q" name="Action"/>
         </packagedElement>
       </packagedElement>
       <packagedElement xmi:type="uml:Profile" xmi:id="_yQjxwOeYEeWj7ZPL8JeBTQ" name="Data_Types">
