@@ -24,6 +24,9 @@ import es.unizar.disco.dice.Basic_Enumeration_Types.RefDataFormatType;
 import es.unizar.disco.dice.Basic_Enumeration_Types.RefType;
 import es.unizar.disco.dice.Basic_Enumeration_Types.Scheduling;
 import es.unizar.disco.dice.Basic_Enumeration_Types.SourceType;
+import es.unizar.disco.dice.Basic_Enumeration_Types.SparkMap;
+import es.unizar.disco.dice.Basic_Enumeration_Types.SparkOperation;
+import es.unizar.disco.dice.Basic_Enumeration_Types.SparkReduce;
 import es.unizar.disco.dice.Basic_Enumeration_Types.StreamPolicy;
 import es.unizar.disco.dice.Basic_Enumeration_Types.TechType;
 import es.unizar.disco.dice.Basic_Enumeration_Types.VMSize;
@@ -50,6 +53,10 @@ import es.unizar.disco.dice.DTSM.Core.impl.CorePackageImpl;
 import es.unizar.disco.dice.DTSM.Hadoop.HadoopPackage;
 
 import es.unizar.disco.dice.DTSM.Hadoop.impl.HadoopPackageImpl;
+
+import es.unizar.disco.dice.DTSM.Spark.SparkPackage;
+
+import es.unizar.disco.dice.DTSM.Spark.impl.SparkPackageImpl;
 
 import es.unizar.disco.dice.DTSM.Storm.StormPackage;
 
@@ -177,6 +184,27 @@ public class Basic_Enumeration_TypesPackageImpl extends EPackageImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EEnum sparkReduceEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum sparkMapEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum sparkOperationEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EEnum computationTypeEEnum = null;
 
 	/**
@@ -237,6 +265,7 @@ public class Basic_Enumeration_TypesPackageImpl extends EPackageImpl implements 
 		CorePackageImpl theCorePackage = (CorePackageImpl)(EPackage.Registry.INSTANCE.getEPackage(CorePackage.eNS_URI) instanceof CorePackageImpl ? EPackage.Registry.INSTANCE.getEPackage(CorePackage.eNS_URI) : CorePackage.eINSTANCE);
 		StormPackageImpl theStormPackage = (StormPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(StormPackage.eNS_URI) instanceof StormPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(StormPackage.eNS_URI) : StormPackage.eINSTANCE);
 		HadoopPackageImpl theHadoopPackage = (HadoopPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(HadoopPackage.eNS_URI) instanceof HadoopPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(HadoopPackage.eNS_URI) : HadoopPackage.eINSTANCE);
+		SparkPackageImpl theSparkPackage = (SparkPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(SparkPackage.eNS_URI) instanceof SparkPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(SparkPackage.eNS_URI) : SparkPackage.eINSTANCE);
 		DDSMPackageImpl theDDSMPackage = (DDSMPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(DDSMPackage.eNS_URI) instanceof DDSMPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(DDSMPackage.eNS_URI) : DDSMPackage.eINSTANCE);
 		Complex_Data_TypesPackageImpl theComplex_Data_TypesPackage_1 = (Complex_Data_TypesPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(es.unizar.disco.dice.Complex_Data_Types.Complex_Data_TypesPackage.eNS_URI) instanceof Complex_Data_TypesPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(es.unizar.disco.dice.Complex_Data_Types.Complex_Data_TypesPackage.eNS_URI) : es.unizar.disco.dice.Complex_Data_Types.Complex_Data_TypesPackage.eINSTANCE);
 		Basic_Data_TypesPackageImpl theBasic_Data_TypesPackage_1 = (Basic_Data_TypesPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(es.unizar.disco.dice.Basic_Data_Types.Basic_Data_TypesPackage.eNS_URI) instanceof Basic_Data_TypesPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(es.unizar.disco.dice.Basic_Data_Types.Basic_Data_TypesPackage.eNS_URI) : es.unizar.disco.dice.Basic_Data_Types.Basic_Data_TypesPackage.eINSTANCE);
@@ -248,6 +277,7 @@ public class Basic_Enumeration_TypesPackageImpl extends EPackageImpl implements 
 		theCorePackage.createPackageContents();
 		theStormPackage.createPackageContents();
 		theHadoopPackage.createPackageContents();
+		theSparkPackage.createPackageContents();
 		theDDSMPackage.createPackageContents();
 		theComplex_Data_TypesPackage_1.createPackageContents();
 		theBasic_Data_TypesPackage_1.createPackageContents();
@@ -259,6 +289,7 @@ public class Basic_Enumeration_TypesPackageImpl extends EPackageImpl implements 
 		theCorePackage.initializePackageContents();
 		theStormPackage.initializePackageContents();
 		theHadoopPackage.initializePackageContents();
+		theSparkPackage.initializePackageContents();
 		theDDSMPackage.initializePackageContents();
 		theComplex_Data_TypesPackage_1.initializePackageContents();
 		theBasic_Data_TypesPackage_1.initializePackageContents();
@@ -412,6 +443,33 @@ public class Basic_Enumeration_TypesPackageImpl extends EPackageImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EEnum getSparkReduce() {
+		return sparkReduceEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EEnum getSparkMap() {
+		return sparkMapEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EEnum getSparkOperation() {
+		return sparkOperationEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EEnum getComputationType() {
 		return computationTypeEEnum;
 	}
@@ -459,6 +517,9 @@ public class Basic_Enumeration_TypesPackageImpl extends EPackageImpl implements 
 		vmSizeEEnum = createEEnum(VM_SIZE);
 		providerTypeEEnum = createEEnum(PROVIDER_TYPE);
 		ddsMcomponentTypeEEnum = createEEnum(DDS_MCOMPONENT_TYPE);
+		sparkReduceEEnum = createEEnum(SPARK_REDUCE);
+		sparkMapEEnum = createEEnum(SPARK_MAP);
+		sparkOperationEEnum = createEEnum(SPARK_OPERATION);
 		computationTypeEEnum = createEEnum(COMPUTATION_TYPE);
 	}
 
@@ -573,6 +634,22 @@ public class Basic_Enumeration_TypesPackageImpl extends EPackageImpl implements 
 		addEEnumLiteral(ddsMcomponentTypeEEnum, DDSMcomponentType.CASSANDRA_SEED);
 		addEEnumLiteral(ddsMcomponentTypeEEnum, DDSMcomponentType.MASTER_NODE);
 		addEEnumLiteral(ddsMcomponentTypeEEnum, DDSMcomponentType.SLAVE_NODE);
+
+		initEEnum(sparkReduceEEnum, SparkReduce.class, "SparkReduce");
+		addEEnumLiteral(sparkReduceEEnum, SparkReduce.REDUCE);
+		addEEnumLiteral(sparkReduceEEnum, SparkReduce.SAMPLE);
+		addEEnumLiteral(sparkReduceEEnum, SparkReduce.ORDER);
+
+		initEEnum(sparkMapEEnum, SparkMap.class, "SparkMap");
+		addEEnumLiteral(sparkMapEEnum, SparkMap.MAP);
+		addEEnumLiteral(sparkMapEEnum, SparkMap.FILTER);
+		addEEnumLiteral(sparkMapEEnum, SparkMap.SAMPLE);
+		addEEnumLiteral(sparkMapEEnum, SparkMap.BY_KEY);
+		addEEnumLiteral(sparkMapEEnum, SparkMap.RDD_SET_OPERATION);
+
+		initEEnum(sparkOperationEEnum, SparkOperation.class, "SparkOperation");
+		addEEnumLiteral(sparkOperationEEnum, SparkOperation.TRANSFORMATION);
+		addEEnumLiteral(sparkOperationEEnum, SparkOperation.ACTION);
 
 		initEEnum(computationTypeEEnum, ComputationType.class, "ComputationType");
 		addEEnumLiteral(computationTypeEEnum, ComputationType.DISTRIBUTED);
