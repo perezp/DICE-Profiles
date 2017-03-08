@@ -22,6 +22,15 @@ public interface SparkFactory extends EFactory {
 	SparkFactory eINSTANCE = es.unizar.disco.dice.DTSM.Spark.impl.SparkFactoryImpl.init();
 
 	/**
+	 * Returns a new object of class '<em>Scenario</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Scenario</em>'.
+	 * @generated
+	 */
+	SparkScenario createSparkScenario();
+
+	/**
 	 * Returns a new object of class '<em>Operation</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -29,15 +38,6 @@ public interface SparkFactory extends EFactory {
 	 * @generated
 	 */
 	SparkOperation createSparkOperation();
-
-	/**
-	 * Returns a new object of class '<em>Map</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Map</em>'.
-	 * @generated
-	 */
-	SparkMap createSparkMap();
 
 	/**
 	 * Returns a new object of class '<em>Reduce</em>'.
@@ -49,22 +49,22 @@ public interface SparkFactory extends EFactory {
 	SparkReduce createSparkReduce();
 
 	/**
-	 * Returns a new object of class '<em>Scenario</em>'.
+	 * Returns a new object of class '<em>For Each</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Scenario</em>'.
+	 * @return a new object of class '<em>For Each</em>'.
 	 * @generated
 	 */
-	SparkScenario createSparkScenario();
+	SparkForEach createSparkForEach();
 
 	/**
-	 * Returns a new object of class '<em>Workload Event</em>'.
+	 * Returns a new object of class '<em>Map</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Workload Event</em>'.
+	 * @return a new object of class '<em>Map</em>'.
 	 * @generated
 	 */
-	SparkWorkloadEvent createSparkWorkloadEvent();
+	SparkMap createSparkMap();
 
 	/**
 	 * Returns a new object of class '<em>Node</em>'.
@@ -74,6 +74,15 @@ public interface SparkFactory extends EFactory {
 	 * @generated
 	 */
 	SparkNode createSparkNode();
+
+	/**
+	 * Returns a new object of class '<em>Workload Event</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Workload Event</em>'.
+	 * @generated
+	 */
+	SparkWorkloadEvent createSparkWorkloadEvent();
 
 	/**
 	 * Returns the package supported by this factory.

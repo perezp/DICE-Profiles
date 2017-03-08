@@ -3,12 +3,16 @@
 package es.unizar.disco.dice.DTSM.Spark.impl;
 
 import es.unizar.disco.dice.Basic_Enumeration_Types.Scheduling;
+
 import es.unizar.disco.dice.DTSM.Spark.SparkPackage;
 import es.unizar.disco.dice.DTSM.Spark.SparkScenario;
+
 import org.eclipse.emf.common.notify.Notification;
+
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
+
 import org.eclipse.papyrus.MARTE.MARTE_AnalysisModel.GQAM.impl.GaScenarioImpl;
 
 /**
@@ -36,6 +40,7 @@ public class SparkScenarioImpl extends GaScenarioImpl implements SparkScenario {
 	 * @ordered
 	 */
 	protected static final String NASSIGNED_CORES_EDEFAULT = null;
+
 	/**
 	 * The cached value of the '{@link #getNAssignedCores() <em>NAssigned Cores</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -45,6 +50,7 @@ public class SparkScenarioImpl extends GaScenarioImpl implements SparkScenario {
 	 * @ordered
 	 */
 	protected String nAssignedCores = NASSIGNED_CORES_EDEFAULT;
+
 	/**
 	 * The default value of the '{@link #getNAssignedMemory() <em>NAssigned Memory</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -54,6 +60,7 @@ public class SparkScenarioImpl extends GaScenarioImpl implements SparkScenario {
 	 * @ordered
 	 */
 	protected static final String NASSIGNED_MEMORY_EDEFAULT = null;
+
 	/**
 	 * The cached value of the '{@link #getNAssignedMemory() <em>NAssigned Memory</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -63,6 +70,7 @@ public class SparkScenarioImpl extends GaScenarioImpl implements SparkScenario {
 	 * @ordered
 	 */
 	protected String nAssignedMemory = NASSIGNED_MEMORY_EDEFAULT;
+
 	/**
 	 * The default value of the '{@link #getJobSchedule() <em>Job Schedule</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -72,6 +80,7 @@ public class SparkScenarioImpl extends GaScenarioImpl implements SparkScenario {
 	 * @ordered
 	 */
 	protected static final Scheduling JOB_SCHEDULE_EDEFAULT = Scheduling.CAPACITY;
+
 	/**
 	 * The cached value of the '{@link #getJobSchedule() <em>Job Schedule</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -81,6 +90,7 @@ public class SparkScenarioImpl extends GaScenarioImpl implements SparkScenario {
 	 * @ordered
 	 */
 	protected Scheduling jobSchedule = JOB_SCHEDULE_EDEFAULT;
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -186,7 +196,6 @@ public class SparkScenarioImpl extends GaScenarioImpl implements SparkScenario {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@SuppressWarnings("unchecked")
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {

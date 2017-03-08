@@ -22,7 +22,6 @@ import org.eclipse.papyrus.MARTE.MARTE_AnalysisModel.GQAM.GaWorkloadEvent;
  * @generated
  */
 public interface SparkWorkloadEvent extends GaWorkloadEvent {
-
 	/**
 	 * Returns the value of the '<em><b>Spark Population</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -53,7 +52,7 @@ public interface SparkWorkloadEvent extends GaWorkloadEvent {
 	 * Returns the value of the '<em><b>Spark Ext Delay</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Spark Ext Delay</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Spark Ext Delay</em>' attribute isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -74,4 +73,5 @@ public interface SparkWorkloadEvent extends GaWorkloadEvent {
 	 * @generated
 	 */
 	void setSparkExtDelay(String value);
+
 } // SparkWorkloadEvent

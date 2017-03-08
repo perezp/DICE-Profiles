@@ -85,12 +85,12 @@
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_SaOdcDiZEeaFI4EbHcf0UA" name="fair"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Enumeration" xmi:id="_HOIsID4CEeahGZm0A1o1gg" name="VMSize">
-          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_MfkJgD4CEeahGZm0A1o1gg" name="small"/>
-          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_Q4qQsD4CEeahGZm0A1o1gg" name="medium"/>
-          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_TM8ngD4CEeahGZm0A1o1gg" name="large"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_MfkJgD4CEeahGZm0A1o1gg" name="Small"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_Q4qQsD4CEeahGZm0A1o1gg" name="Medium"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_TM8ngD4CEeahGZm0A1o1gg" name="Large"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Enumeration" xmi:id="_ToY-oD4IEeahGZm0A1o1gg" name="ProviderType">
-          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_VrthQD4IEeahGZm0A1o1gg" name="flexiant"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_VrthQD4IEeahGZm0A1o1gg" name="fco"/>
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_Xqh-YD4IEeahGZm0A1o1gg" name="openstack"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Enumeration" xmi:id="_JBGoID4OEeahGZm0A1o1gg" name="LifeCycleElementType">

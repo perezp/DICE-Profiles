@@ -205,17 +205,6 @@ public interface Basic_Enumeration_TypesPackage extends EPackage {
 	int DDS_MCOMPONENT_TYPE = 14;
 
 	/**
-	 * The meta object id for the '{@link es.unizar.disco.dice.Basic_Enumeration_Types.ComputationType <em>Computation Type</em>}' enum.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see es.unizar.disco.dice.Basic_Enumeration_Types.ComputationType
-	 * @see es.unizar.disco.dice.Basic_Enumeration_Types.impl.Basic_Enumeration_TypesPackageImpl#getComputationType()
-	 * @generated
-	 */
-	int COMPUTATION_TYPE = 15;
-
-
-	/**
 	 * The meta object id for the '{@link es.unizar.disco.dice.Basic_Enumeration_Types.SparkReduce <em>Spark Reduce</em>}' enum.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -223,7 +212,7 @@ public interface Basic_Enumeration_TypesPackage extends EPackage {
 	 * @see es.unizar.disco.dice.Basic_Enumeration_Types.impl.Basic_Enumeration_TypesPackageImpl#getSparkReduce()
 	 * @generated
 	 */
-	int SPARK_REDUCE = 16;
+	int SPARK_REDUCE = 15;
 
 	/**
 	 * The meta object id for the '{@link es.unizar.disco.dice.Basic_Enumeration_Types.SparkMap <em>Spark Map</em>}' enum.
@@ -233,8 +222,7 @@ public interface Basic_Enumeration_TypesPackage extends EPackage {
 	 * @see es.unizar.disco.dice.Basic_Enumeration_Types.impl.Basic_Enumeration_TypesPackageImpl#getSparkMap()
 	 * @generated
 	 */
-	int SPARK_MAP = 17;
-
+	int SPARK_MAP = 16;
 
 	/**
 	 * The meta object id for the '{@link es.unizar.disco.dice.Basic_Enumeration_Types.SparkOperation <em>Spark Operation</em>}' enum.
@@ -244,7 +232,17 @@ public interface Basic_Enumeration_TypesPackage extends EPackage {
 	 * @see es.unizar.disco.dice.Basic_Enumeration_Types.impl.Basic_Enumeration_TypesPackageImpl#getSparkOperation()
 	 * @generated
 	 */
-	int SPARK_OPERATION = 18;
+	int SPARK_OPERATION = 17;
+
+	/**
+	 * The meta object id for the '{@link es.unizar.disco.dice.Basic_Enumeration_Types.ComputationType <em>Computation Type</em>}' enum.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see es.unizar.disco.dice.Basic_Enumeration_Types.ComputationType
+	 * @see es.unizar.disco.dice.Basic_Enumeration_Types.impl.Basic_Enumeration_TypesPackageImpl#getComputationType()
+	 * @generated
+	 */
+	int COMPUTATION_TYPE = 18;
 
 
 	/**
@@ -398,16 +396,6 @@ public interface Basic_Enumeration_TypesPackage extends EPackage {
 	EEnum getDDSMcomponentType();
 
 	/**
-	 * Returns the meta object for enum '{@link es.unizar.disco.dice.Basic_Enumeration_Types.ComputationType <em>Computation Type</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for enum '<em>Computation Type</em>'.
-	 * @see es.unizar.disco.dice.Basic_Enumeration_Types.ComputationType
-	 * @generated
-	 */
-	EEnum getComputationType();
-
-	/**
 	 * Returns the meta object for enum '{@link es.unizar.disco.dice.Basic_Enumeration_Types.SparkReduce <em>Spark Reduce</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -436,6 +424,16 @@ public interface Basic_Enumeration_TypesPackage extends EPackage {
 	 * @generated
 	 */
 	EEnum getSparkOperation();
+
+	/**
+	 * Returns the meta object for enum '{@link es.unizar.disco.dice.Basic_Enumeration_Types.ComputationType <em>Computation Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for enum '<em>Computation Type</em>'.
+	 * @see es.unizar.disco.dice.Basic_Enumeration_Types.ComputationType
+	 * @generated
+	 */
+	EEnum getComputationType();
 
 	/**
 	 * Returns the factory that creates the instances of the model.
@@ -610,16 +608,6 @@ public interface Basic_Enumeration_TypesPackage extends EPackage {
 		EEnum DDS_MCOMPONENT_TYPE = eINSTANCE.getDDSMcomponentType();
 
 		/**
-		 * The meta object literal for the '{@link es.unizar.disco.dice.Basic_Enumeration_Types.ComputationType <em>Computation Type</em>}' enum.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see es.unizar.disco.dice.Basic_Enumeration_Types.ComputationType
-		 * @see es.unizar.disco.dice.Basic_Enumeration_Types.impl.Basic_Enumeration_TypesPackageImpl#getComputationType()
-		 * @generated
-		 */
-		EEnum COMPUTATION_TYPE = eINSTANCE.getComputationType();
-
-		/**
 		 * The meta object literal for the '{@link es.unizar.disco.dice.Basic_Enumeration_Types.SparkReduce <em>Spark Reduce</em>}' enum.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -648,6 +636,16 @@ public interface Basic_Enumeration_TypesPackage extends EPackage {
 		 * @generated
 		 */
 		EEnum SPARK_OPERATION = eINSTANCE.getSparkOperation();
+
+		/**
+		 * The meta object literal for the '{@link es.unizar.disco.dice.Basic_Enumeration_Types.ComputationType <em>Computation Type</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see es.unizar.disco.dice.Basic_Enumeration_Types.ComputationType
+		 * @see es.unizar.disco.dice.Basic_Enumeration_Types.impl.Basic_Enumeration_TypesPackageImpl#getComputationType()
+		 * @generated
+		 */
+		EEnum COMPUTATION_TYPE = eINSTANCE.getComputationType();
 
 	}
 

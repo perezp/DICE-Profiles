@@ -2,24 +2,25 @@
  */
 package es.unizar.disco.dice.DTSM.Spark.impl;
 
-import es.unizar.disco.dice.DTSM.Spark.SparkAction;
+import es.unizar.disco.dice.DTSM.Spark.SparkForEach;
 import es.unizar.disco.dice.DTSM.Spark.SparkPackage;
+
 import org.eclipse.emf.ecore.EClass;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Action</b></em>'.
+ * An implementation of the model object '<em><b>For Each</b></em>'.
  * <!-- end-user-doc -->
  *
  * @generated
  */
-public class SparkActionImpl extends SparkOperationImpl implements SparkAction {
+public class SparkForEachImpl extends SparkOperationImpl implements SparkForEach {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected SparkActionImpl() {
+	protected SparkForEachImpl() {
 		super();
 	}
 
@@ -30,7 +31,7 @@ public class SparkActionImpl extends SparkOperationImpl implements SparkAction {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return SparkPackage.Literals.SPARK_ACTION;
+		return SparkPackage.Literals.SPARK_FOR_EACH;
 	}
 
-} //SparkActionImpl
+} //SparkForEachImpl

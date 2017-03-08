@@ -2,6 +2,7 @@
  */
 package es.unizar.disco.dice.DTSM.Spark;
 
+
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Reduce</b></em>'.
