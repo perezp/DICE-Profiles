@@ -166,6 +166,15 @@ public interface DDSMFactory extends EFactory {
 	DdsmCassandraCluster createDdsmCassandraCluster();
 
 	/**
+	 * Returns a new object of class '<em>Ddsm Spark Cluster</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Ddsm Spark Cluster</em>'.
+	 * @generated
+	 */
+	DdsmSparkCluster createDdsmSparkCluster();
+
+	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

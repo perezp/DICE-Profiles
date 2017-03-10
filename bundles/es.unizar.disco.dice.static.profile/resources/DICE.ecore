@@ -354,7 +354,14 @@
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="launch_script" ordered="false"
             eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="language" ordered="false"
-            eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+            eType="ecore:EEnum DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/LanguageType"
+            defaultValueLiteral="bash"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="enable_monitoring"
+            ordered="false" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//Boolean"
+            defaultValueLiteral="false"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" name="firewallRules" ordered="false"
+            upperBound="-1" eType="ecore:EClass DICE_Library.ecore#//Basic_DICE_Types/Basic_Data_Types/FirewallRule"
+            containment="true"/>
       </eClassifiers>
       <eClassifiers xsi:type="ecore:EClass" name="DdsmHeterogeneousCluster" eSuperTypes="#//DICE_UML_Extensions/DDSM/DdsmExternalComponent">
         <eStructuralFeatures xsi:type="ecore:EReference" name="hasVM" ordered="false"
@@ -382,8 +389,6 @@
             defaultValueLiteral="0"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="os" ordered="false"
             eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
-        <eStructuralFeatures xsi:type="ecore:EAttribute" name="securityGroup" ordered="false"
-            eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="privateKey" ordered="false"
             eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="sshKey" ordered="false"
@@ -400,6 +405,27 @@
       <eClassifiers xsi:type="ecore:EClass" name="DdsmYarnCluster" eSuperTypes="#//DICE_UML_Extensions/DDSM/DdsmMasterSlavePlatform">
         <eStructuralFeatures xsi:type="ecore:EReference" name="base_ExecutionEnvironment"
             ordered="false" lowerBound="1" eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//ExecutionEnvironment"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="enable_acl" ordered="false"
+            eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//Boolean"
+            defaultValueLiteral="false"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="scheduler_type" ordered="false"
+            eType="ecore:EEnum DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/Scheduling"
+            defaultValueLiteral="capacity"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="scheduler_min_container_mem_mb"
+            ordered="false" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//Integer"
+            defaultValueLiteral="0"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="scheduler_max_container_mem_mb"
+            ordered="false" lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//Integer"
+            defaultValueLiteral="0"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="scheduler_min_container_core_num"
+            ordered="false" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//Integer"
+            defaultValueLiteral="0"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="scheduler_max_container_core_num"
+            ordered="false" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//Integer"
+            defaultValueLiteral="0"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="nodemanager_available_mem"
+            ordered="false" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//Integer"
+            defaultValueLiteral="0"/>
       </eClassifiers>
       <eClassifiers xsi:type="ecore:EClass" name="DdsmMasterSlavePlatform" eSuperTypes="#//DICE_UML_Extensions/DDSM/DdsmInternalComponent">
         <eStructuralFeatures xsi:type="ecore:EReference" name="masterHost" ordered="false"
@@ -420,6 +446,39 @@
       <eClassifiers xsi:type="ecore:EClass" name="DdsmKafkaCluster" eSuperTypes="#//DICE_UML_Extensions/DDSM/DdsmPeerToPeerPlatform">
         <eStructuralFeatures xsi:type="ecore:EReference" name="base_ExecutionEnvironment"
             ordered="false" lowerBound="1" eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//ExecutionEnvironment"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="enable_topic_deletion"
+            ordered="false" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//Boolean"
+            defaultValueLiteral="false"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="num_network_threads"
+            ordered="false" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//Integer"
+            defaultValueLiteral="0"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="num_io_threads" ordered="false"
+            eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//Integer"
+            defaultValueLiteral="0"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="num_log_partition_per_topic"
+            ordered="false" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//Integer"
+            defaultValueLiteral="0"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="num_recovery_threads_per_data_dir"
+            ordered="false" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//Integer"
+            defaultValueLiteral="0"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="num_messages_for_flush_to_disk"
+            ordered="false" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//Integer"
+            defaultValueLiteral="0"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="max_message_sit_time_before_flush_ms"
+            ordered="false" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//Integer"
+            defaultValueLiteral="0"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="enable_topic_auto_creation"
+            ordered="false" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//Boolean"
+            defaultValueLiteral="true"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="enable_leader_rebalancing"
+            ordered="false" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//Boolean"
+            defaultValueLiteral="true"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="log_retention_hours"
+            ordered="false" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//Integer"
+            defaultValueLiteral="0"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="queued_max_requests"
+            ordered="false" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//Integer"
+            defaultValueLiteral="0"/>
       </eClassifiers>
       <eClassifiers xsi:type="ecore:EClass" name="DdsmStormCluster" eSuperTypes="#//DICE_UML_Extensions/DDSM/DdsmMasterSlavePlatform">
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="taskTimeout" ordered="false"
@@ -469,13 +528,41 @@
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="application_name" ordered="false"
             lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="arguments" ordered="false"
-            lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+            upperBound="-1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
       </eClassifiers>
       <eClassifiers xsi:type="ecore:EClass" name="DdsmJobDeployedFrom">
         <eStructuralFeatures xsi:type="ecore:EReference" name="base_Dependency" ordered="false"
             lowerBound="1" eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//Dependency"/>
       </eClassifiers>
-      <eClassifiers xsi:type="ecore:EClass" name="DdsmHdfsCluster" eSuperTypes="#//DICE_UML_Extensions/DDSM/DdsmMasterSlavePlatform"/>
+      <eClassifiers xsi:type="ecore:EClass" name="DdsmHdfsCluster" eSuperTypes="#//DICE_UML_Extensions/DDSM/DdsmMasterSlavePlatform">
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="dfs_blocksize" ordered="false"
+            eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//Integer"
+            defaultValueLiteral="134217728"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="namenode_handler_count"
+            ordered="false" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//Integer"
+            defaultValueLiteral="0"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="datanode_handler_count"
+            ordered="false" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//Integer"
+            defaultValueLiteral="0"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="namenode_heartbeat_recheck_interval_ms"
+            ordered="false" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//Integer"
+            defaultValueLiteral="0"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="permission_enabled"
+            ordered="false" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//Boolean"
+            defaultValueLiteral="false"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="block_replication"
+            ordered="false" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//Integer"
+            defaultValueLiteral="0"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="blocksize_bytes" ordered="false"
+            eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//Integer"
+            defaultValueLiteral="0"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="block_write_retries"
+            ordered="false" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//Integer"
+            defaultValueLiteral="0"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="resource_manager_recovery_enabled"
+            ordered="false" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//Boolean"
+            defaultValueLiteral="false"/>
+      </eClassifiers>
       <eClassifiers xsi:type="ecore:EClass" name="DdsmCassandraCluster" eSuperTypes="#//DICE_UML_Extensions/DDSM/DdsmPeerToPeerPlatform">
         <eStructuralFeatures xsi:type="ecore:EReference" name="seedHost" ordered="false"
             eType="#//DICE_UML_Extensions/DDSM/DdsmVMsCluster"/>
@@ -494,6 +581,7 @@
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="permission_validity_in_ms"
             ordered="false" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//Integer"/>
       </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" name="DdsmSparkCluster" eSuperTypes="#//DICE_UML_Extensions/DDSM/DdsmMasterSlavePlatform"/>
     </eSubpackages>
   </eSubpackages>
 </ecore:EPackage>
