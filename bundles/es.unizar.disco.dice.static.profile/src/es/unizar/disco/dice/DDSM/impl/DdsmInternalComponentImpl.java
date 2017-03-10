@@ -2,8 +2,10 @@
  */
 package es.unizar.disco.dice.DDSM.impl;
 
+import es.unizar.disco.dice.Basic_Data_Types.FirewallRule;
 import es.unizar.disco.dice.Basic_Enumeration_Types.DDSMcomponentType;
 
+import es.unizar.disco.dice.Basic_Enumeration_Types.LanguageType;
 import es.unizar.disco.dice.DDSM.DDSMPackage;
 import es.unizar.disco.dice.DDSM.DdsmInternalComponent;
 import es.unizar.disco.dice.DDSM.DdsmPort;
@@ -12,6 +14,7 @@ import java.util.Collection;
 
 import org.eclipse.emf.common.notify.Notification;
 
+import org.eclipse.emf.common.notify.NotificationChain;
 import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
@@ -19,8 +22,10 @@ import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 
+import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.EObjectResolvingEList;
 
+import org.eclipse.emf.ecore.util.InternalEList;
 import org.eclipse.uml2.uml.Node;
 
 /**
@@ -38,6 +43,8 @@ import org.eclipse.uml2.uml.Node;
  *   <li>{@link es.unizar.disco.dice.DDSM.impl.DdsmInternalComponentImpl#isProtected <em>Protected</em>}</li>
  *   <li>{@link es.unizar.disco.dice.DDSM.impl.DdsmInternalComponentImpl#getLaunch_script <em>Launch script</em>}</li>
  *   <li>{@link es.unizar.disco.dice.DDSM.impl.DdsmInternalComponentImpl#getLanguage <em>Language</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DDSM.impl.DdsmInternalComponentImpl#isEnable_monitoring <em>Enable monitoring</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DDSM.impl.DdsmInternalComponentImpl#getFirewallRules <em>Firewall Rules</em>}</li>
  * </ul>
  *
  * @generated
@@ -151,7 +158,7 @@ public class DdsmInternalComponentImpl extends DdsmComponentImpl implements Ddsm
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String LANGUAGE_EDEFAULT = null;
+	protected static final LanguageType LANGUAGE_EDEFAULT = LanguageType.BASH;
 
 	/**
 	 * The cached value of the '{@link #getLanguage() <em>Language</em>}' attribute.
@@ -161,7 +168,37 @@ public class DdsmInternalComponentImpl extends DdsmComponentImpl implements Ddsm
 	 * @generated
 	 * @ordered
 	 */
-	protected String language = LANGUAGE_EDEFAULT;
+	protected LanguageType language = LANGUAGE_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #isEnable_monitoring() <em>Enable monitoring</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #isEnable_monitoring()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final boolean ENABLE_MONITORING_EDEFAULT = false;
+
+	/**
+	 * The cached value of the '{@link #isEnable_monitoring() <em>Enable monitoring</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #isEnable_monitoring()
+	 * @generated
+	 * @ordered
+	 */
+	protected boolean enable_monitoring = ENABLE_MONITORING_EDEFAULT;
+
+	/**
+	 * The cached value of the '{@link #getFirewallRules() <em>Firewall Rules</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getFirewallRules()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<FirewallRule> firewallRules;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -321,7 +358,7 @@ public class DdsmInternalComponentImpl extends DdsmComponentImpl implements Ddsm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getLanguage() {
+	public LanguageType getLanguage() {
 		return language;
 	}
 
@@ -330,11 +367,58 @@ public class DdsmInternalComponentImpl extends DdsmComponentImpl implements Ddsm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setLanguage(String newLanguage) {
-		String oldLanguage = language;
-		language = newLanguage;
+	public void setLanguage(LanguageType newLanguage) {
+		LanguageType oldLanguage = language;
+		language = newLanguage == null ? LANGUAGE_EDEFAULT : newLanguage;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, DDSMPackage.DDSM_INTERNAL_COMPONENT__LANGUAGE, oldLanguage, language));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean isEnable_monitoring() {
+		return enable_monitoring;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setEnable_monitoring(boolean newEnable_monitoring) {
+		boolean oldEnable_monitoring = enable_monitoring;
+		enable_monitoring = newEnable_monitoring;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, DDSMPackage.DDSM_INTERNAL_COMPONENT__ENABLE_MONITORING, oldEnable_monitoring, enable_monitoring));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<FirewallRule> getFirewallRules() {
+		if (firewallRules == null) {
+			firewallRules = new EObjectContainmentEList<FirewallRule>(FirewallRule.class, this, DDSMPackage.DDSM_INTERNAL_COMPONENT__FIREWALL_RULES);
+		}
+		return firewallRules;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
+			case DDSMPackage.DDSM_INTERNAL_COMPONENT__FIREWALL_RULES:
+				return ((InternalEList<?>)getFirewallRules()).basicRemove(otherEnd, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -360,6 +444,10 @@ public class DdsmInternalComponentImpl extends DdsmComponentImpl implements Ddsm
 				return getLaunch_script();
 			case DDSMPackage.DDSM_INTERNAL_COMPONENT__LANGUAGE:
 				return getLanguage();
+			case DDSMPackage.DDSM_INTERNAL_COMPONENT__ENABLE_MONITORING:
+				return isEnable_monitoring();
+			case DDSMPackage.DDSM_INTERNAL_COMPONENT__FIREWALL_RULES:
+				return getFirewallRules();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -393,7 +481,14 @@ public class DdsmInternalComponentImpl extends DdsmComponentImpl implements Ddsm
 				setLaunch_script((String)newValue);
 				return;
 			case DDSMPackage.DDSM_INTERNAL_COMPONENT__LANGUAGE:
-				setLanguage((String)newValue);
+				setLanguage((LanguageType)newValue);
+				return;
+			case DDSMPackage.DDSM_INTERNAL_COMPONENT__ENABLE_MONITORING:
+				setEnable_monitoring((Boolean)newValue);
+				return;
+			case DDSMPackage.DDSM_INTERNAL_COMPONENT__FIREWALL_RULES:
+				getFirewallRules().clear();
+				getFirewallRules().addAll((Collection<? extends FirewallRule>)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -428,6 +523,12 @@ public class DdsmInternalComponentImpl extends DdsmComponentImpl implements Ddsm
 			case DDSMPackage.DDSM_INTERNAL_COMPONENT__LANGUAGE:
 				setLanguage(LANGUAGE_EDEFAULT);
 				return;
+			case DDSMPackage.DDSM_INTERNAL_COMPONENT__ENABLE_MONITORING:
+				setEnable_monitoring(ENABLE_MONITORING_EDEFAULT);
+				return;
+			case DDSMPackage.DDSM_INTERNAL_COMPONENT__FIREWALL_RULES:
+				getFirewallRules().clear();
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -453,7 +554,11 @@ public class DdsmInternalComponentImpl extends DdsmComponentImpl implements Ddsm
 			case DDSMPackage.DDSM_INTERNAL_COMPONENT__LAUNCH_SCRIPT:
 				return LAUNCH_SCRIPT_EDEFAULT == null ? launch_script != null : !LAUNCH_SCRIPT_EDEFAULT.equals(launch_script);
 			case DDSMPackage.DDSM_INTERNAL_COMPONENT__LANGUAGE:
-				return LANGUAGE_EDEFAULT == null ? language != null : !LANGUAGE_EDEFAULT.equals(language);
+				return language != LANGUAGE_EDEFAULT;
+			case DDSMPackage.DDSM_INTERNAL_COMPONENT__ENABLE_MONITORING:
+				return enable_monitoring != ENABLE_MONITORING_EDEFAULT;
+			case DDSMPackage.DDSM_INTERNAL_COMPONENT__FIREWALL_RULES:
+				return firewallRules != null && !firewallRules.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}
@@ -478,6 +583,8 @@ public class DdsmInternalComponentImpl extends DdsmComponentImpl implements Ddsm
 		result.append(launch_script);
 		result.append(", language: ");
 		result.append(language);
+		result.append(", enable_monitoring: ");
+		result.append(enable_monitoring);
 		result.append(')');
 		return result.toString();
 	}

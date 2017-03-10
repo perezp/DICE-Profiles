@@ -52,6 +52,13 @@
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="scriptKind" ordered="false"
             lowerBound="1" eType="#//Basic_DICE_Types/Basic_Enumeration_Types/LifeCycleElementType"/>
       </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" name="FirewallRule">
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="allowedIpPrefix" ordered="false"
+            eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"
+            defaultValueLiteral="0.0.0.0/0"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="port" ordered="false"
+            eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//Integer"/>
+      </eClassifiers>
     </eSubpackages>
     <eSubpackages name="Basic_Enumeration_Types" nsURI="http://es.unizar.disco.dice/libraries/Basic_Enumeration_Types/1.0"
         nsPrefix="Basic_Enumeration_Types">
@@ -161,6 +168,13 @@
       <eClassifiers xsi:type="ecore:EEnum" name="SparkOperation">
         <eLiterals name="Transformation"/>
         <eLiterals name="Action" value="1"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EEnum" name="LanguageType">
+        <eLiterals name="bash"/>
+        <eLiterals name="python" value="1"/>
+        <eLiterals name="java" value="2"/>
+        <eLiterals name="scala" value="3"/>
+        <eLiterals name="R" value="4"/>
       </eClassifiers>
       <eClassifiers xsi:type="ecore:EEnum" name="ComputationType">
         <eLiterals name="distributed"/>

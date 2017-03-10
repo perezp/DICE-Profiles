@@ -72,6 +72,7 @@ public class DDSMFactoryImpl extends EFactoryImpl implements DDSMFactory {
 			case DDSMPackage.DDSM_JOB_DEPLOYED_FROM: return createDdsmJobDeployedFrom();
 			case DDSMPackage.DDSM_HDFS_CLUSTER: return createDdsmHdfsCluster();
 			case DDSMPackage.DDSM_CASSANDRA_CLUSTER: return createDdsmCassandraCluster();
+			case DDSMPackage.DDSM_SPARK_CLUSTER: return createDdsmSparkCluster();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -235,6 +236,16 @@ public class DDSMFactoryImpl extends EFactoryImpl implements DDSMFactory {
 	public DdsmCassandraCluster createDdsmCassandraCluster() {
 		DdsmCassandraClusterImpl ddsmCassandraCluster = new DdsmCassandraClusterImpl();
 		return ddsmCassandraCluster;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public DdsmSparkCluster createDdsmSparkCluster() {
+		DdsmSparkClusterImpl ddsmSparkCluster = new DdsmSparkClusterImpl();
+		return ddsmSparkCluster;
 	}
 
 	/**

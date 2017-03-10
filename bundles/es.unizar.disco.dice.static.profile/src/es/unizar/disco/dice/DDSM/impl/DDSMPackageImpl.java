@@ -32,6 +32,7 @@ import es.unizar.disco.dice.DDSM.DdsmKafkaCluster;
 import es.unizar.disco.dice.DDSM.DdsmMasterSlavePlatform;
 import es.unizar.disco.dice.DDSM.DdsmPeerToPeerPlatform;
 import es.unizar.disco.dice.DDSM.DdsmPort;
+import es.unizar.disco.dice.DDSM.DdsmSparkCluster;
 import es.unizar.disco.dice.DDSM.DdsmStormCluster;
 import es.unizar.disco.dice.DDSM.DdsmVMsCluster;
 import es.unizar.disco.dice.DDSM.DdsmYarnCluster;
@@ -204,6 +205,13 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 	 * @generated
 	 */
 	private EClass ddsmCassandraClusterEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass ddsmSparkClusterEClass = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -540,6 +548,24 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EAttribute getDdsmInternalComponent_Enable_monitoring() {
+		return (EAttribute)ddsmInternalComponentEClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getDdsmInternalComponent_FirewallRules() {
+		return (EReference)ddsmInternalComponentEClass.getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getDdsmHeterogeneousCluster() {
 		return ddsmHeterogeneousClusterEClass;
 	}
@@ -648,7 +674,7 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDdsmVMsCluster_SecurityGroup() {
+	public EAttribute getDdsmVMsCluster_PrivateKey() {
 		return (EAttribute)ddsmVMsClusterEClass.getEStructuralFeatures().get(9);
 	}
 
@@ -657,7 +683,7 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDdsmVMsCluster_PrivateKey() {
+	public EAttribute getDdsmVMsCluster_SshKey() {
 		return (EAttribute)ddsmVMsClusterEClass.getEStructuralFeatures().get(10);
 	}
 
@@ -666,7 +692,7 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDdsmVMsCluster_SshKey() {
+	public EAttribute getDdsmVMsCluster_PublicAddress() {
 		return (EAttribute)ddsmVMsClusterEClass.getEStructuralFeatures().get(11);
 	}
 
@@ -675,7 +701,7 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDdsmVMsCluster_PublicAddress() {
+	public EAttribute getDdsmVMsCluster_Instances() {
 		return (EAttribute)ddsmVMsClusterEClass.getEStructuralFeatures().get(12);
 	}
 
@@ -684,17 +710,8 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDdsmVMsCluster_Instances() {
-		return (EAttribute)ddsmVMsClusterEClass.getEStructuralFeatures().get(13);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EAttribute getDdsmVMsCluster_GenericSize() {
-		return (EAttribute)ddsmVMsClusterEClass.getEStructuralFeatures().get(14);
+		return (EAttribute)ddsmVMsClusterEClass.getEStructuralFeatures().get(13);
 	}
 
 	/**
@@ -713,6 +730,69 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 	 */
 	public EReference getDdsmYarnCluster_Base_ExecutionEnvironment() {
 		return (EReference)ddsmYarnClusterEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getDdsmYarnCluster_Enable_acl() {
+		return (EAttribute)ddsmYarnClusterEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getDdsmYarnCluster_Scheduler_type() {
+		return (EAttribute)ddsmYarnClusterEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getDdsmYarnCluster_Scheduler_min_container_mem_mb() {
+		return (EAttribute)ddsmYarnClusterEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getDdsmYarnCluster_Scheduler_max_container_mem_mb() {
+		return (EAttribute)ddsmYarnClusterEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getDdsmYarnCluster_Scheduler_min_container_core_num() {
+		return (EAttribute)ddsmYarnClusterEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getDdsmYarnCluster_Scheduler_max_container_core_num() {
+		return (EAttribute)ddsmYarnClusterEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getDdsmYarnCluster_Nodemanager_available_mem() {
+		return (EAttribute)ddsmYarnClusterEClass.getEStructuralFeatures().get(7);
 	}
 
 	/**
@@ -794,6 +874,105 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 	 */
 	public EReference getDdsmKafkaCluster_Base_ExecutionEnvironment() {
 		return (EReference)ddsmKafkaClusterEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getDdsmKafkaCluster_Enable_topic_deletion() {
+		return (EAttribute)ddsmKafkaClusterEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getDdsmKafkaCluster_Num_network_threads() {
+		return (EAttribute)ddsmKafkaClusterEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getDdsmKafkaCluster_Num_io_threads() {
+		return (EAttribute)ddsmKafkaClusterEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getDdsmKafkaCluster_Num_log_partition_per_topic() {
+		return (EAttribute)ddsmKafkaClusterEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getDdsmKafkaCluster_Num_recovery_threads_per_data_dir() {
+		return (EAttribute)ddsmKafkaClusterEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getDdsmKafkaCluster_Num_messages_for_flush_to_dick() {
+		return (EAttribute)ddsmKafkaClusterEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getDdsmKafkaCluster_Max_message_sit_time_before_flush_ms() {
+		return (EAttribute)ddsmKafkaClusterEClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getDdsmKafkaCluster_Enable_topic_auto_creation() {
+		return (EAttribute)ddsmKafkaClusterEClass.getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getDdsmKafkaCluster_Enable_leader_rebalancing() {
+		return (EAttribute)ddsmKafkaClusterEClass.getEStructuralFeatures().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getDdsmKafkaCluster_Log_retention_hours() {
+		return (EAttribute)ddsmKafkaClusterEClass.getEStructuralFeatures().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getDdsmKafkaCluster_Queued_max_requests() {
+		return (EAttribute)ddsmKafkaClusterEClass.getEStructuralFeatures().get(11);
 	}
 
 	/**
@@ -1026,6 +1205,87 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EAttribute getDdsmHdfsCluster_Dfs_blocksize() {
+		return (EAttribute)ddsmHdfsClusterEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getDdsmHdfsCluster_Namenode_handler_count() {
+		return (EAttribute)ddsmHdfsClusterEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getDdsmHdfsCluster_Datanode_handler_count() {
+		return (EAttribute)ddsmHdfsClusterEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getDdsmHdfsCluster_Namenode_heartbeat_recheck_interval_ms() {
+		return (EAttribute)ddsmHdfsClusterEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getDdsmHdfsCluster_Permission_enabled() {
+		return (EAttribute)ddsmHdfsClusterEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getDdsmHdfsCluster_Block_replication() {
+		return (EAttribute)ddsmHdfsClusterEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getDdsmHdfsCluster_Blocksize_bytes() {
+		return (EAttribute)ddsmHdfsClusterEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getDdsmHdfsCluster_Block_write_retries() {
+		return (EAttribute)ddsmHdfsClusterEClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getDdsmHdfsCluster_Resource_manager_recovery_enabled() {
+		return (EAttribute)ddsmHdfsClusterEClass.getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getDdsmCassandraCluster() {
 		return ddsmCassandraClusterEClass;
 	}
@@ -1107,6 +1367,15 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EClass getDdsmSparkCluster() {
+		return ddsmSparkClusterEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public DDSMFactory getDDSMFactory() {
 		return (DDSMFactory)getEFactoryInstance();
 	}
@@ -1160,6 +1429,8 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 		createEAttribute(ddsmInternalComponentEClass, DDSM_INTERNAL_COMPONENT__PROTECTED);
 		createEAttribute(ddsmInternalComponentEClass, DDSM_INTERNAL_COMPONENT__LAUNCH_SCRIPT);
 		createEAttribute(ddsmInternalComponentEClass, DDSM_INTERNAL_COMPONENT__LANGUAGE);
+		createEAttribute(ddsmInternalComponentEClass, DDSM_INTERNAL_COMPONENT__ENABLE_MONITORING);
+		createEReference(ddsmInternalComponentEClass, DDSM_INTERNAL_COMPONENT__FIREWALL_RULES);
 
 		ddsmHeterogeneousClusterEClass = createEClass(DDSM_HETEROGENEOUS_CLUSTER);
 		createEReference(ddsmHeterogeneousClusterEClass, DDSM_HETEROGENEOUS_CLUSTER__HAS_VM);
@@ -1174,7 +1445,6 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 		createEAttribute(ddsmVMsClusterEClass, DDSM_VMS_CLUSTER__MIN_RAM);
 		createEAttribute(ddsmVMsClusterEClass, DDSM_VMS_CLUSTER__MIN_STORAGE);
 		createEAttribute(ddsmVMsClusterEClass, DDSM_VMS_CLUSTER__OS);
-		createEAttribute(ddsmVMsClusterEClass, DDSM_VMS_CLUSTER__SECURITY_GROUP);
 		createEAttribute(ddsmVMsClusterEClass, DDSM_VMS_CLUSTER__PRIVATE_KEY);
 		createEAttribute(ddsmVMsClusterEClass, DDSM_VMS_CLUSTER__SSH_KEY);
 		createEAttribute(ddsmVMsClusterEClass, DDSM_VMS_CLUSTER__PUBLIC_ADDRESS);
@@ -1183,6 +1453,13 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 
 		ddsmYarnClusterEClass = createEClass(DDSM_YARN_CLUSTER);
 		createEReference(ddsmYarnClusterEClass, DDSM_YARN_CLUSTER__BASE_EXECUTION_ENVIRONMENT);
+		createEAttribute(ddsmYarnClusterEClass, DDSM_YARN_CLUSTER__ENABLE_ACL);
+		createEAttribute(ddsmYarnClusterEClass, DDSM_YARN_CLUSTER__SCHEDULER_TYPE);
+		createEAttribute(ddsmYarnClusterEClass, DDSM_YARN_CLUSTER__SCHEDULER_MIN_CONTAINER_MEM_MB);
+		createEAttribute(ddsmYarnClusterEClass, DDSM_YARN_CLUSTER__SCHEDULER_MAX_CONTAINER_MEM_MB);
+		createEAttribute(ddsmYarnClusterEClass, DDSM_YARN_CLUSTER__SCHEDULER_MIN_CONTAINER_CORE_NUM);
+		createEAttribute(ddsmYarnClusterEClass, DDSM_YARN_CLUSTER__SCHEDULER_MAX_CONTAINER_CORE_NUM);
+		createEAttribute(ddsmYarnClusterEClass, DDSM_YARN_CLUSTER__NODEMANAGER_AVAILABLE_MEM);
 
 		ddsmMasterSlavePlatformEClass = createEClass(DDSM_MASTER_SLAVE_PLATFORM);
 		createEReference(ddsmMasterSlavePlatformEClass, DDSM_MASTER_SLAVE_PLATFORM__MASTER_HOST);
@@ -1196,6 +1473,17 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 
 		ddsmKafkaClusterEClass = createEClass(DDSM_KAFKA_CLUSTER);
 		createEReference(ddsmKafkaClusterEClass, DDSM_KAFKA_CLUSTER__BASE_EXECUTION_ENVIRONMENT);
+		createEAttribute(ddsmKafkaClusterEClass, DDSM_KAFKA_CLUSTER__ENABLE_TOPIC_DELETION);
+		createEAttribute(ddsmKafkaClusterEClass, DDSM_KAFKA_CLUSTER__NUM_NETWORK_THREADS);
+		createEAttribute(ddsmKafkaClusterEClass, DDSM_KAFKA_CLUSTER__NUM_IO_THREADS);
+		createEAttribute(ddsmKafkaClusterEClass, DDSM_KAFKA_CLUSTER__NUM_LOG_PARTITION_PER_TOPIC);
+		createEAttribute(ddsmKafkaClusterEClass, DDSM_KAFKA_CLUSTER__NUM_RECOVERY_THREADS_PER_DATA_DIR);
+		createEAttribute(ddsmKafkaClusterEClass, DDSM_KAFKA_CLUSTER__NUM_MESSAGES_FOR_FLUSH_TO_DICK);
+		createEAttribute(ddsmKafkaClusterEClass, DDSM_KAFKA_CLUSTER__MAX_MESSAGE_SIT_TIME_BEFORE_FLUSH_MS);
+		createEAttribute(ddsmKafkaClusterEClass, DDSM_KAFKA_CLUSTER__ENABLE_TOPIC_AUTO_CREATION);
+		createEAttribute(ddsmKafkaClusterEClass, DDSM_KAFKA_CLUSTER__ENABLE_LEADER_REBALANCING);
+		createEAttribute(ddsmKafkaClusterEClass, DDSM_KAFKA_CLUSTER__LOG_RETENTION_HOURS);
+		createEAttribute(ddsmKafkaClusterEClass, DDSM_KAFKA_CLUSTER__QUEUED_MAX_REQUESTS);
 
 		ddsmStormClusterEClass = createEClass(DDSM_STORM_CLUSTER);
 		createEAttribute(ddsmStormClusterEClass, DDSM_STORM_CLUSTER__TASK_TIMEOUT);
@@ -1226,6 +1514,15 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 		createEReference(ddsmJobDeployedFromEClass, DDSM_JOB_DEPLOYED_FROM__BASE_DEPENDENCY);
 
 		ddsmHdfsClusterEClass = createEClass(DDSM_HDFS_CLUSTER);
+		createEAttribute(ddsmHdfsClusterEClass, DDSM_HDFS_CLUSTER__DFS_BLOCKSIZE);
+		createEAttribute(ddsmHdfsClusterEClass, DDSM_HDFS_CLUSTER__NAMENODE_HANDLER_COUNT);
+		createEAttribute(ddsmHdfsClusterEClass, DDSM_HDFS_CLUSTER__DATANODE_HANDLER_COUNT);
+		createEAttribute(ddsmHdfsClusterEClass, DDSM_HDFS_CLUSTER__NAMENODE_HEARTBEAT_RECHECK_INTERVAL_MS);
+		createEAttribute(ddsmHdfsClusterEClass, DDSM_HDFS_CLUSTER__PERMISSION_ENABLED);
+		createEAttribute(ddsmHdfsClusterEClass, DDSM_HDFS_CLUSTER__BLOCK_REPLICATION);
+		createEAttribute(ddsmHdfsClusterEClass, DDSM_HDFS_CLUSTER__BLOCKSIZE_BYTES);
+		createEAttribute(ddsmHdfsClusterEClass, DDSM_HDFS_CLUSTER__BLOCK_WRITE_RETRIES);
+		createEAttribute(ddsmHdfsClusterEClass, DDSM_HDFS_CLUSTER__RESOURCE_MANAGER_RECOVERY_ENABLED);
 
 		ddsmCassandraClusterEClass = createEClass(DDSM_CASSANDRA_CLUSTER);
 		createEReference(ddsmCassandraClusterEClass, DDSM_CASSANDRA_CLUSTER__SEED_HOST);
@@ -1236,6 +1533,8 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 		createEAttribute(ddsmCassandraClusterEClass, DDSM_CASSANDRA_CLUSTER__AUTHENTICATOR_ENABLED);
 		createEAttribute(ddsmCassandraClusterEClass, DDSM_CASSANDRA_CLUSTER__AUTHORIZER_ENABLED);
 		createEAttribute(ddsmCassandraClusterEClass, DDSM_CASSANDRA_CLUSTER__PERMISSION_VALIDITY_IN_MS);
+
+		ddsmSparkClusterEClass = createEClass(DDSM_SPARK_CLUSTER);
 	}
 
 	/**
@@ -1265,6 +1564,7 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 		TypesPackage theTypesPackage = (TypesPackage)EPackage.Registry.INSTANCE.getEPackage(TypesPackage.eNS_URI);
 		es.unizar.disco.dice.Basic_Enumeration_Types.Basic_Enumeration_TypesPackage theBasic_Enumeration_TypesPackage_1 = (es.unizar.disco.dice.Basic_Enumeration_Types.Basic_Enumeration_TypesPackage)EPackage.Registry.INSTANCE.getEPackage(es.unizar.disco.dice.Basic_Enumeration_Types.Basic_Enumeration_TypesPackage.eNS_URI);
 		UMLPackage theUMLPackage = (UMLPackage)EPackage.Registry.INSTANCE.getEPackage(UMLPackage.eNS_URI);
+		es.unizar.disco.dice.Basic_Data_Types.Basic_Data_TypesPackage theBasic_Data_TypesPackage_1 = (es.unizar.disco.dice.Basic_Data_Types.Basic_Data_TypesPackage)EPackage.Registry.INSTANCE.getEPackage(es.unizar.disco.dice.Basic_Data_Types.Basic_Data_TypesPackage.eNS_URI);
 
 		// Create type parameters
 
@@ -1285,6 +1585,7 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 		ddsmStormClusterEClass.getESuperTypes().add(this.getDdsmMasterSlavePlatform());
 		ddsmHdfsClusterEClass.getESuperTypes().add(this.getDdsmMasterSlavePlatform());
 		ddsmCassandraClusterEClass.getESuperTypes().add(this.getDdsmPeerToPeerPlatform());
+		ddsmSparkClusterEClass.getESuperTypes().add(this.getDdsmMasterSlavePlatform());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(ddsmExternalComponentEClass, DdsmExternalComponent.class, "DdsmExternalComponent", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -1316,7 +1617,9 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 		initEReference(getDdsmInternalComponent_Base_Node(), theUMLPackage.getNode(), null, "base_Node", null, 1, 1, DdsmInternalComponent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getDdsmInternalComponent_Protected(), theTypesPackage.getBoolean(), "protected", "false", 0, 1, DdsmInternalComponent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getDdsmInternalComponent_Launch_script(), theTypesPackage.getString(), "launch_script", null, 0, 1, DdsmInternalComponent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getDdsmInternalComponent_Language(), theTypesPackage.getString(), "language", null, 0, 1, DdsmInternalComponent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDdsmInternalComponent_Language(), theBasic_Enumeration_TypesPackage_1.getLanguageType(), "language", "bash", 0, 1, DdsmInternalComponent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDdsmInternalComponent_Enable_monitoring(), theTypesPackage.getBoolean(), "enable_monitoring", "false", 0, 1, DdsmInternalComponent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEReference(getDdsmInternalComponent_FirewallRules(), theBasic_Data_TypesPackage_1.getFirewallRule(), null, "firewallRules", null, 0, -1, DdsmInternalComponent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(ddsmHeterogeneousClusterEClass, DdsmHeterogeneousCluster.class, "DdsmHeterogeneousCluster", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getDdsmHeterogeneousCluster_HasVM(), this.getDdsmVMsCluster(), null, "hasVM", null, 0, -1, DdsmHeterogeneousCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
@@ -1331,7 +1634,6 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 		initEAttribute(getDdsmVMsCluster_MinRam(), theTypesPackage.getInteger(), "minRam", null, 0, 1, DdsmVMsCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getDdsmVMsCluster_MinStorage(), theTypesPackage.getInteger(), "minStorage", "0", 0, 1, DdsmVMsCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getDdsmVMsCluster_Os(), theTypesPackage.getString(), "os", null, 0, 1, DdsmVMsCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getDdsmVMsCluster_SecurityGroup(), theTypesPackage.getString(), "securityGroup", null, 0, 1, DdsmVMsCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getDdsmVMsCluster_PrivateKey(), theTypesPackage.getString(), "privateKey", null, 0, 1, DdsmVMsCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getDdsmVMsCluster_SshKey(), theTypesPackage.getString(), "sshKey", null, 0, 1, DdsmVMsCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getDdsmVMsCluster_PublicAddress(), theTypesPackage.getString(), "publicAddress", null, 0, 1, DdsmVMsCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
@@ -1340,6 +1642,13 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 
 		initEClass(ddsmYarnClusterEClass, DdsmYarnCluster.class, "DdsmYarnCluster", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getDdsmYarnCluster_Base_ExecutionEnvironment(), theUMLPackage.getExecutionEnvironment(), null, "base_ExecutionEnvironment", null, 1, 1, DdsmYarnCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDdsmYarnCluster_Enable_acl(), theTypesPackage.getBoolean(), "enable_acl", "false", 0, 1, DdsmYarnCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDdsmYarnCluster_Scheduler_type(), theBasic_Enumeration_TypesPackage_1.getScheduling(), "scheduler_type", "capacity", 0, 1, DdsmYarnCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDdsmYarnCluster_Scheduler_min_container_mem_mb(), theTypesPackage.getInteger(), "scheduler_min_container_mem_mb", "0", 0, 1, DdsmYarnCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDdsmYarnCluster_Scheduler_max_container_mem_mb(), theTypesPackage.getInteger(), "scheduler_max_container_mem_mb", "0", 1, 1, DdsmYarnCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDdsmYarnCluster_Scheduler_min_container_core_num(), theTypesPackage.getInteger(), "scheduler_min_container_core_num", "0", 0, 1, DdsmYarnCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDdsmYarnCluster_Scheduler_max_container_core_num(), theTypesPackage.getInteger(), "scheduler_max_container_core_num", "0", 0, 1, DdsmYarnCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDdsmYarnCluster_Nodemanager_available_mem(), theTypesPackage.getInteger(), "nodemanager_available_mem", "0", 0, 1, DdsmYarnCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(ddsmMasterSlavePlatformEClass, DdsmMasterSlavePlatform.class, "DdsmMasterSlavePlatform", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getDdsmMasterSlavePlatform_MasterHost(), this.getDdsmVMsCluster(), null, "masterHost", null, 0, 1, DdsmMasterSlavePlatform.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
@@ -1353,6 +1662,17 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 
 		initEClass(ddsmKafkaClusterEClass, DdsmKafkaCluster.class, "DdsmKafkaCluster", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getDdsmKafkaCluster_Base_ExecutionEnvironment(), theUMLPackage.getExecutionEnvironment(), null, "base_ExecutionEnvironment", null, 1, 1, DdsmKafkaCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDdsmKafkaCluster_Enable_topic_deletion(), theTypesPackage.getBoolean(), "enable_topic_deletion", "false", 0, 1, DdsmKafkaCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDdsmKafkaCluster_Num_network_threads(), theTypesPackage.getInteger(), "num_network_threads", "0", 0, 1, DdsmKafkaCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDdsmKafkaCluster_Num_io_threads(), theTypesPackage.getInteger(), "num_io_threads", "0", 0, 1, DdsmKafkaCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDdsmKafkaCluster_Num_log_partition_per_topic(), theTypesPackage.getInteger(), "num_log_partition_per_topic", "0", 0, 1, DdsmKafkaCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDdsmKafkaCluster_Num_recovery_threads_per_data_dir(), theTypesPackage.getInteger(), "num_recovery_threads_per_data_dir", "0", 0, 1, DdsmKafkaCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDdsmKafkaCluster_Num_messages_for_flush_to_dick(), theTypesPackage.getInteger(), "num_messages_for_flush_to_dick", "0", 0, 1, DdsmKafkaCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDdsmKafkaCluster_Max_message_sit_time_before_flush_ms(), theTypesPackage.getInteger(), "max_message_sit_time_before_flush_ms", "0", 0, 1, DdsmKafkaCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDdsmKafkaCluster_Enable_topic_auto_creation(), theTypesPackage.getBoolean(), "enable_topic_auto_creation", "true", 0, 1, DdsmKafkaCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDdsmKafkaCluster_Enable_leader_rebalancing(), theTypesPackage.getBoolean(), "enable_leader_rebalancing", "true", 0, 1, DdsmKafkaCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDdsmKafkaCluster_Log_retention_hours(), theTypesPackage.getInteger(), "log_retention_hours", "0", 0, 1, DdsmKafkaCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDdsmKafkaCluster_Queued_max_requests(), theTypesPackage.getInteger(), "queued_max_requests", "0", 0, 1, DdsmKafkaCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(ddsmStormClusterEClass, DdsmStormCluster.class, "DdsmStormCluster", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getDdsmStormCluster_TaskTimeout(), theTypesPackage.getInteger(), "taskTimeout", "60", 0, 1, DdsmStormCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
@@ -1377,12 +1697,21 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 		initEAttribute(getDdsmBigDataJob_Application_class(), theTypesPackage.getString(), "application_class", null, 1, 1, DdsmBigDataJob.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getDdsmBigDataJob_Base_Artifact(), theUMLPackage.getArtifact(), null, "base_Artifact", null, 1, 1, DdsmBigDataJob.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getDdsmBigDataJob_Application_name(), theTypesPackage.getString(), "application_name", null, 1, 1, DdsmBigDataJob.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getDdsmBigDataJob_Arguments(), theTypesPackage.getString(), "arguments", null, 1, 1, DdsmBigDataJob.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDdsmBigDataJob_Arguments(), theTypesPackage.getString(), "arguments", null, 0, -1, DdsmBigDataJob.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(ddsmJobDeployedFromEClass, DdsmJobDeployedFrom.class, "DdsmJobDeployedFrom", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getDdsmJobDeployedFrom_Base_Dependency(), theUMLPackage.getDependency(), null, "base_Dependency", null, 1, 1, DdsmJobDeployedFrom.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(ddsmHdfsClusterEClass, DdsmHdfsCluster.class, "DdsmHdfsCluster", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getDdsmHdfsCluster_Dfs_blocksize(), theTypesPackage.getInteger(), "dfs_blocksize", "134217728", 0, 1, DdsmHdfsCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDdsmHdfsCluster_Namenode_handler_count(), theTypesPackage.getInteger(), "namenode_handler_count", "0", 0, 1, DdsmHdfsCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDdsmHdfsCluster_Datanode_handler_count(), theTypesPackage.getInteger(), "datanode_handler_count", "0", 0, 1, DdsmHdfsCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDdsmHdfsCluster_Namenode_heartbeat_recheck_interval_ms(), theTypesPackage.getInteger(), "namenode_heartbeat_recheck_interval_ms", "0", 0, 1, DdsmHdfsCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDdsmHdfsCluster_Permission_enabled(), theTypesPackage.getBoolean(), "permission_enabled", "false", 0, 1, DdsmHdfsCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDdsmHdfsCluster_Block_replication(), theTypesPackage.getInteger(), "block_replication", "0", 0, 1, DdsmHdfsCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDdsmHdfsCluster_Blocksize_bytes(), theTypesPackage.getInteger(), "blocksize_bytes", "0", 0, 1, DdsmHdfsCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDdsmHdfsCluster_Block_write_retries(), theTypesPackage.getInteger(), "block_write_retries", "0", 0, 1, DdsmHdfsCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDdsmHdfsCluster_Resource_manager_recovery_enabled(), theTypesPackage.getBoolean(), "resource_manager_recovery_enabled", "false", 0, 1, DdsmHdfsCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(ddsmCassandraClusterEClass, DdsmCassandraCluster.class, "DdsmCassandraCluster", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getDdsmCassandraCluster_SeedHost(), this.getDdsmVMsCluster(), null, "seedHost", null, 0, 1, DdsmCassandraCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
@@ -1393,6 +1722,8 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 		initEAttribute(getDdsmCassandraCluster_Authenticator_enabled(), theTypesPackage.getBoolean(), "authenticator_enabled", null, 0, 1, DdsmCassandraCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getDdsmCassandraCluster_Authorizer_enabled(), theTypesPackage.getBoolean(), "authorizer_enabled", null, 0, 1, DdsmCassandraCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getDdsmCassandraCluster_Permission_validity_in_ms(), theTypesPackage.getInteger(), "permission_validity_in_ms", null, 0, 1, DdsmCassandraCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+
+		initEClass(ddsmSparkClusterEClass, DdsmSparkCluster.class, "DdsmSparkCluster", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 	}
 
 } //DDSMPackageImpl
