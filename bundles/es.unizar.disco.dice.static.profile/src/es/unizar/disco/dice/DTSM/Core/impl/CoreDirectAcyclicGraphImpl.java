@@ -2,6 +2,8 @@
  */
 package es.unizar.disco.dice.DTSM.Core.impl;
 
+import com.masdes.dam.Core.impl.DaServiceImpl;
+
 import es.unizar.disco.dice.DTSM.Core.CoreDAGSourceNode;
 import es.unizar.disco.dice.DTSM.Core.CoreDirectAcyclicGraph;
 import es.unizar.disco.dice.DTSM.Core.CorePackage;
@@ -19,8 +21,6 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
 
 import org.eclipse.emf.ecore.util.EObjectResolvingEList;
 
-import org.eclipse.papyrus.MARTE.MARTE_AnalysisModel.GQAM.impl.GaScenarioImpl;
-
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Direct Acyclic Graph</b></em>'.
@@ -35,7 +35,7 @@ import org.eclipse.papyrus.MARTE.MARTE_AnalysisModel.GQAM.impl.GaScenarioImpl;
  *
  * @generated
  */
-public abstract class CoreDirectAcyclicGraphImpl extends GaScenarioImpl implements CoreDirectAcyclicGraph {
+public abstract class CoreDirectAcyclicGraphImpl extends DaServiceImpl implements CoreDirectAcyclicGraph {
 	/**
 	 * The cached value of the '{@link #getHasSourceNode() <em>Has Source Node</em>}' reference list.
 	 * <!-- begin-user-doc -->

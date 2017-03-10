@@ -520,6 +520,7 @@ public class CorePackageImpl extends EPackageImpl implements CorePackage {
 		DPIMPackage theDPIMPackage = (DPIMPackage)EPackage.Registry.INSTANCE.getEPackage(DPIMPackage.eNS_URI);
 		es.unizar.disco.dice.Complex_Data_Types.Complex_Data_TypesPackage theComplex_Data_TypesPackage_1 = (es.unizar.disco.dice.Complex_Data_Types.Complex_Data_TypesPackage)EPackage.Registry.INSTANCE.getEPackage(es.unizar.disco.dice.Complex_Data_Types.Complex_Data_TypesPackage.eNS_URI);
 		UMLPackage theUMLPackage = (UMLPackage)EPackage.Registry.INSTANCE.getEPackage(UMLPackage.eNS_URI);
+		com.masdes.dam.Core.CorePackage theCorePackage_1 = (com.masdes.dam.Core.CorePackage)EPackage.Registry.INSTANCE.getEPackage(com.masdes.dam.Core.CorePackage.eNS_URI);
 		GQAMPackage theGQAMPackage = (GQAMPackage)EPackage.Registry.INSTANCE.getEPackage(GQAMPackage.eNS_URI);
 		BasicNFP_TypesPackage theBasicNFP_TypesPackage = (BasicNFP_TypesPackage)EPackage.Registry.INSTANCE.getEPackage(BasicNFP_TypesPackage.eNS_URI);
 		es.unizar.disco.dice.Basic_Enumeration_Types.Basic_Enumeration_TypesPackage theBasic_Enumeration_TypesPackage_1 = (es.unizar.disco.dice.Basic_Enumeration_Types.Basic_Enumeration_TypesPackage)EPackage.Registry.INSTANCE.getEPackage(es.unizar.disco.dice.Basic_Enumeration_Types.Basic_Enumeration_TypesPackage.eNS_URI);
@@ -532,7 +533,7 @@ public class CorePackageImpl extends EPackageImpl implements CorePackage {
 		// Add supertypes to classes
 		coreComputationNodeEClass.getESuperTypes().add(theDPIMPackage.getDpimComputationNode());
 		coreDataSourceEClass.getESuperTypes().add(theDPIMPackage.getDpimStorageNode());
-		coreDirectAcyclicGraphEClass.getESuperTypes().add(theGQAMPackage.getGaScenario());
+		coreDirectAcyclicGraphEClass.getESuperTypes().add(theCorePackage_1.getDaService());
 		coreDAGSourceNodeEClass.getESuperTypes().add(this.getCoreDAGNode());
 		coreDAGNodeEClass.getESuperTypes().add(theGQAMPackage.getGaStep());
 		coreDAGNodeEClass.getESuperTypes().add(theDPIMPackage.getDpimSourceNode());
