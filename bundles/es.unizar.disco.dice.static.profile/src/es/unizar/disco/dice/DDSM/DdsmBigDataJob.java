@@ -3,6 +3,7 @@
 package es.unizar.disco.dice.DDSM;
 
 import org.eclipse.emf.common.util.EList;
+
 import org.eclipse.emf.ecore.EObject;
 
 import org.eclipse.uml2.uml.Artifact;
@@ -137,7 +138,7 @@ public interface DdsmBigDataJob extends EObject {
 	 * The list contents are of type {@link java.lang.String}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Arguments</em>' attribute isn't clear,
+	 * If the meaning of the '<em>Arguments</em>' attribute list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->

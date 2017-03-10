@@ -19,7 +19,7 @@ import org.eclipse.uml2.uml.ExecutionEnvironment;
  *   <li>{@link es.unizar.disco.dice.DDSM.DdsmKafkaCluster#getNum_io_threads <em>Num io threads</em>}</li>
  *   <li>{@link es.unizar.disco.dice.DDSM.DdsmKafkaCluster#getNum_log_partition_per_topic <em>Num log partition per topic</em>}</li>
  *   <li>{@link es.unizar.disco.dice.DDSM.DdsmKafkaCluster#getNum_recovery_threads_per_data_dir <em>Num recovery threads per data dir</em>}</li>
- *   <li>{@link es.unizar.disco.dice.DDSM.DdsmKafkaCluster#getNum_messages_for_flush_to_dick <em>Num messages for flush to dick</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DDSM.DdsmKafkaCluster#getNum_messages_for_flush_to_disk <em>Num messages for flush to disk</em>}</li>
  *   <li>{@link es.unizar.disco.dice.DDSM.DdsmKafkaCluster#getMax_message_sit_time_before_flush_ms <em>Max message sit time before flush ms</em>}</li>
  *   <li>{@link es.unizar.disco.dice.DDSM.DdsmKafkaCluster#isEnable_topic_auto_creation <em>Enable topic auto creation</em>}</li>
  *   <li>{@link es.unizar.disco.dice.DDSM.DdsmKafkaCluster#isEnable_leader_rebalancing <em>Enable leader rebalancing</em>}</li>
@@ -194,31 +194,31 @@ public interface DdsmKafkaCluster extends DdsmPeerToPeerPlatform {
 	void setNum_recovery_threads_per_data_dir(int value);
 
 	/**
-	 * Returns the value of the '<em><b>Num messages for flush to dick</b></em>' attribute.
+	 * Returns the value of the '<em><b>Num messages for flush to disk</b></em>' attribute.
 	 * The default value is <code>"0"</code>.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Num messages for flush to dick</em>' attribute isn't clear,
+	 * If the meaning of the '<em>Num messages for flush to disk</em>' attribute isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Num messages for flush to dick</em>' attribute.
-	 * @see #setNum_messages_for_flush_to_dick(int)
-	 * @see es.unizar.disco.dice.DDSM.DDSMPackage#getDdsmKafkaCluster_Num_messages_for_flush_to_dick()
+	 * @return the value of the '<em>Num messages for flush to disk</em>' attribute.
+	 * @see #setNum_messages_for_flush_to_disk(int)
+	 * @see es.unizar.disco.dice.DDSM.DDSMPackage#getDdsmKafkaCluster_Num_messages_for_flush_to_disk()
 	 * @model default="0" dataType="org.eclipse.uml2.types.Integer" ordered="false"
 	 * @generated
 	 */
-	int getNum_messages_for_flush_to_dick();
+	int getNum_messages_for_flush_to_disk();
 
 	/**
-	 * Sets the value of the '{@link es.unizar.disco.dice.DDSM.DdsmKafkaCluster#getNum_messages_for_flush_to_dick <em>Num messages for flush to dick</em>}' attribute.
+	 * Sets the value of the '{@link es.unizar.disco.dice.DDSM.DdsmKafkaCluster#getNum_messages_for_flush_to_disk <em>Num messages for flush to disk</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Num messages for flush to dick</em>' attribute.
-	 * @see #getNum_messages_for_flush_to_dick()
+	 * @param value the new value of the '<em>Num messages for flush to disk</em>' attribute.
+	 * @see #getNum_messages_for_flush_to_disk()
 	 * @generated
 	 */
-	void setNum_messages_for_flush_to_dick(int value);
+	void setNum_messages_for_flush_to_disk(int value);
 
 	/**
 	 * Returns the value of the '<em><b>Max message sit time before flush ms</b></em>' attribute.

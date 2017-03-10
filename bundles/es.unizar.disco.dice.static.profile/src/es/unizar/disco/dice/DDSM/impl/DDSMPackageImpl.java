@@ -926,7 +926,7 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDdsmKafkaCluster_Num_messages_for_flush_to_dick() {
+	public EAttribute getDdsmKafkaCluster_Num_messages_for_flush_to_disk() {
 		return (EAttribute)ddsmKafkaClusterEClass.getEStructuralFeatures().get(6);
 	}
 
@@ -1478,7 +1478,7 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 		createEAttribute(ddsmKafkaClusterEClass, DDSM_KAFKA_CLUSTER__NUM_IO_THREADS);
 		createEAttribute(ddsmKafkaClusterEClass, DDSM_KAFKA_CLUSTER__NUM_LOG_PARTITION_PER_TOPIC);
 		createEAttribute(ddsmKafkaClusterEClass, DDSM_KAFKA_CLUSTER__NUM_RECOVERY_THREADS_PER_DATA_DIR);
-		createEAttribute(ddsmKafkaClusterEClass, DDSM_KAFKA_CLUSTER__NUM_MESSAGES_FOR_FLUSH_TO_DICK);
+		createEAttribute(ddsmKafkaClusterEClass, DDSM_KAFKA_CLUSTER__NUM_MESSAGES_FOR_FLUSH_TO_DISK);
 		createEAttribute(ddsmKafkaClusterEClass, DDSM_KAFKA_CLUSTER__MAX_MESSAGE_SIT_TIME_BEFORE_FLUSH_MS);
 		createEAttribute(ddsmKafkaClusterEClass, DDSM_KAFKA_CLUSTER__ENABLE_TOPIC_AUTO_CREATION);
 		createEAttribute(ddsmKafkaClusterEClass, DDSM_KAFKA_CLUSTER__ENABLE_LEADER_REBALANCING);
@@ -1667,7 +1667,7 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 		initEAttribute(getDdsmKafkaCluster_Num_io_threads(), theTypesPackage.getInteger(), "num_io_threads", "0", 0, 1, DdsmKafkaCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getDdsmKafkaCluster_Num_log_partition_per_topic(), theTypesPackage.getInteger(), "num_log_partition_per_topic", "0", 0, 1, DdsmKafkaCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getDdsmKafkaCluster_Num_recovery_threads_per_data_dir(), theTypesPackage.getInteger(), "num_recovery_threads_per_data_dir", "0", 0, 1, DdsmKafkaCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getDdsmKafkaCluster_Num_messages_for_flush_to_dick(), theTypesPackage.getInteger(), "num_messages_for_flush_to_dick", "0", 0, 1, DdsmKafkaCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDdsmKafkaCluster_Num_messages_for_flush_to_disk(), theTypesPackage.getInteger(), "num_messages_for_flush_to_disk", "0", 0, 1, DdsmKafkaCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getDdsmKafkaCluster_Max_message_sit_time_before_flush_ms(), theTypesPackage.getInteger(), "max_message_sit_time_before_flush_ms", "0", 0, 1, DdsmKafkaCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getDdsmKafkaCluster_Enable_topic_auto_creation(), theTypesPackage.getBoolean(), "enable_topic_auto_creation", "true", 0, 1, DdsmKafkaCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getDdsmKafkaCluster_Enable_leader_rebalancing(), theTypesPackage.getBoolean(), "enable_leader_rebalancing", "true", 0, 1, DdsmKafkaCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);

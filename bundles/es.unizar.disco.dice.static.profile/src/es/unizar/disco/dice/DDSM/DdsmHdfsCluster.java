@@ -28,7 +28,6 @@ package es.unizar.disco.dice.DDSM;
  * @generated
  */
 public interface DdsmHdfsCluster extends DdsmMasterSlavePlatform {
-
 	/**
 	 * Returns the value of the '<em><b>Dfs blocksize</b></em>' attribute.
 	 * The default value is <code>"134217728"</code>.
@@ -271,4 +270,5 @@ public interface DdsmHdfsCluster extends DdsmMasterSlavePlatform {
 	 * @generated
 	 */
 	void setResource_manager_recovery_enabled(boolean value);
+
 } // DdsmHdfsCluster

@@ -6,7 +6,9 @@ import es.unizar.disco.dice.DDSM.DDSMPackage;
 import es.unizar.disco.dice.DDSM.DdsmHdfsCluster;
 
 import org.eclipse.emf.common.notify.Notification;
+
 import org.eclipse.emf.ecore.EClass;
+
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 
 /**
@@ -40,6 +42,7 @@ public class DdsmHdfsClusterImpl extends DdsmMasterSlavePlatformImpl implements 
 	 * @ordered
 	 */
 	protected static final int DFS_BLOCKSIZE_EDEFAULT = 134217728;
+
 	/**
 	 * The cached value of the '{@link #getDfs_blocksize() <em>Dfs blocksize</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -49,6 +52,7 @@ public class DdsmHdfsClusterImpl extends DdsmMasterSlavePlatformImpl implements 
 	 * @ordered
 	 */
 	protected int dfs_blocksize = DFS_BLOCKSIZE_EDEFAULT;
+
 	/**
 	 * The default value of the '{@link #getNamenode_handler_count() <em>Namenode handler count</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -58,6 +62,7 @@ public class DdsmHdfsClusterImpl extends DdsmMasterSlavePlatformImpl implements 
 	 * @ordered
 	 */
 	protected static final int NAMENODE_HANDLER_COUNT_EDEFAULT = 0;
+
 	/**
 	 * The cached value of the '{@link #getNamenode_handler_count() <em>Namenode handler count</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -67,6 +72,7 @@ public class DdsmHdfsClusterImpl extends DdsmMasterSlavePlatformImpl implements 
 	 * @ordered
 	 */
 	protected int namenode_handler_count = NAMENODE_HANDLER_COUNT_EDEFAULT;
+
 	/**
 	 * The default value of the '{@link #getDatanode_handler_count() <em>Datanode handler count</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -76,6 +82,7 @@ public class DdsmHdfsClusterImpl extends DdsmMasterSlavePlatformImpl implements 
 	 * @ordered
 	 */
 	protected static final int DATANODE_HANDLER_COUNT_EDEFAULT = 0;
+
 	/**
 	 * The cached value of the '{@link #getDatanode_handler_count() <em>Datanode handler count</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -85,6 +92,7 @@ public class DdsmHdfsClusterImpl extends DdsmMasterSlavePlatformImpl implements 
 	 * @ordered
 	 */
 	protected int datanode_handler_count = DATANODE_HANDLER_COUNT_EDEFAULT;
+
 	/**
 	 * The default value of the '{@link #getNamenode_heartbeat_recheck_interval_ms() <em>Namenode heartbeat recheck interval ms</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -94,6 +102,7 @@ public class DdsmHdfsClusterImpl extends DdsmMasterSlavePlatformImpl implements 
 	 * @ordered
 	 */
 	protected static final int NAMENODE_HEARTBEAT_RECHECK_INTERVAL_MS_EDEFAULT = 0;
+
 	/**
 	 * The cached value of the '{@link #getNamenode_heartbeat_recheck_interval_ms() <em>Namenode heartbeat recheck interval ms</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -103,6 +112,7 @@ public class DdsmHdfsClusterImpl extends DdsmMasterSlavePlatformImpl implements 
 	 * @ordered
 	 */
 	protected int namenode_heartbeat_recheck_interval_ms = NAMENODE_HEARTBEAT_RECHECK_INTERVAL_MS_EDEFAULT;
+
 	/**
 	 * The default value of the '{@link #isPermission_enabled() <em>Permission enabled</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -112,6 +122,7 @@ public class DdsmHdfsClusterImpl extends DdsmMasterSlavePlatformImpl implements 
 	 * @ordered
 	 */
 	protected static final boolean PERMISSION_ENABLED_EDEFAULT = false;
+
 	/**
 	 * The cached value of the '{@link #isPermission_enabled() <em>Permission enabled</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -121,6 +132,7 @@ public class DdsmHdfsClusterImpl extends DdsmMasterSlavePlatformImpl implements 
 	 * @ordered
 	 */
 	protected boolean permission_enabled = PERMISSION_ENABLED_EDEFAULT;
+
 	/**
 	 * The default value of the '{@link #getBlock_replication() <em>Block replication</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -130,6 +142,7 @@ public class DdsmHdfsClusterImpl extends DdsmMasterSlavePlatformImpl implements 
 	 * @ordered
 	 */
 	protected static final int BLOCK_REPLICATION_EDEFAULT = 0;
+
 	/**
 	 * The cached value of the '{@link #getBlock_replication() <em>Block replication</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -139,6 +152,7 @@ public class DdsmHdfsClusterImpl extends DdsmMasterSlavePlatformImpl implements 
 	 * @ordered
 	 */
 	protected int block_replication = BLOCK_REPLICATION_EDEFAULT;
+
 	/**
 	 * The default value of the '{@link #getBlocksize_bytes() <em>Blocksize bytes</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -148,6 +162,7 @@ public class DdsmHdfsClusterImpl extends DdsmMasterSlavePlatformImpl implements 
 	 * @ordered
 	 */
 	protected static final int BLOCKSIZE_BYTES_EDEFAULT = 0;
+
 	/**
 	 * The cached value of the '{@link #getBlocksize_bytes() <em>Blocksize bytes</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -157,6 +172,7 @@ public class DdsmHdfsClusterImpl extends DdsmMasterSlavePlatformImpl implements 
 	 * @ordered
 	 */
 	protected int blocksize_bytes = BLOCKSIZE_BYTES_EDEFAULT;
+
 	/**
 	 * The default value of the '{@link #getBlock_write_retries() <em>Block write retries</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -166,6 +182,7 @@ public class DdsmHdfsClusterImpl extends DdsmMasterSlavePlatformImpl implements 
 	 * @ordered
 	 */
 	protected static final int BLOCK_WRITE_RETRIES_EDEFAULT = 0;
+
 	/**
 	 * The cached value of the '{@link #getBlock_write_retries() <em>Block write retries</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -175,6 +192,7 @@ public class DdsmHdfsClusterImpl extends DdsmMasterSlavePlatformImpl implements 
 	 * @ordered
 	 */
 	protected int block_write_retries = BLOCK_WRITE_RETRIES_EDEFAULT;
+
 	/**
 	 * The default value of the '{@link #isResource_manager_recovery_enabled() <em>Resource manager recovery enabled</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -184,6 +202,7 @@ public class DdsmHdfsClusterImpl extends DdsmMasterSlavePlatformImpl implements 
 	 * @ordered
 	 */
 	protected static final boolean RESOURCE_MANAGER_RECOVERY_ENABLED_EDEFAULT = false;
+
 	/**
 	 * The cached value of the '{@link #isResource_manager_recovery_enabled() <em>Resource manager recovery enabled</em>}' attribute.
 	 * <!-- begin-user-doc -->

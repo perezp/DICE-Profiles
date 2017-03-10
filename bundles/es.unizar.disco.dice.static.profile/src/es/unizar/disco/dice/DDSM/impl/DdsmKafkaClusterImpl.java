@@ -28,7 +28,7 @@ import org.eclipse.uml2.uml.ExecutionEnvironment;
  *   <li>{@link es.unizar.disco.dice.DDSM.impl.DdsmKafkaClusterImpl#getNum_io_threads <em>Num io threads</em>}</li>
  *   <li>{@link es.unizar.disco.dice.DDSM.impl.DdsmKafkaClusterImpl#getNum_log_partition_per_topic <em>Num log partition per topic</em>}</li>
  *   <li>{@link es.unizar.disco.dice.DDSM.impl.DdsmKafkaClusterImpl#getNum_recovery_threads_per_data_dir <em>Num recovery threads per data dir</em>}</li>
- *   <li>{@link es.unizar.disco.dice.DDSM.impl.DdsmKafkaClusterImpl#getNum_messages_for_flush_to_dick <em>Num messages for flush to dick</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DDSM.impl.DdsmKafkaClusterImpl#getNum_messages_for_flush_to_disk <em>Num messages for flush to disk</em>}</li>
  *   <li>{@link es.unizar.disco.dice.DDSM.impl.DdsmKafkaClusterImpl#getMax_message_sit_time_before_flush_ms <em>Max message sit time before flush ms</em>}</li>
  *   <li>{@link es.unizar.disco.dice.DDSM.impl.DdsmKafkaClusterImpl#isEnable_topic_auto_creation <em>Enable topic auto creation</em>}</li>
  *   <li>{@link es.unizar.disco.dice.DDSM.impl.DdsmKafkaClusterImpl#isEnable_leader_rebalancing <em>Enable leader rebalancing</em>}</li>
@@ -58,6 +58,7 @@ public class DdsmKafkaClusterImpl extends DdsmPeerToPeerPlatformImpl implements 
 	 * @ordered
 	 */
 	protected static final boolean ENABLE_TOPIC_DELETION_EDEFAULT = false;
+
 	/**
 	 * The cached value of the '{@link #isEnable_topic_deletion() <em>Enable topic deletion</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -67,6 +68,7 @@ public class DdsmKafkaClusterImpl extends DdsmPeerToPeerPlatformImpl implements 
 	 * @ordered
 	 */
 	protected boolean enable_topic_deletion = ENABLE_TOPIC_DELETION_EDEFAULT;
+
 	/**
 	 * The default value of the '{@link #getNum_network_threads() <em>Num network threads</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -76,6 +78,7 @@ public class DdsmKafkaClusterImpl extends DdsmPeerToPeerPlatformImpl implements 
 	 * @ordered
 	 */
 	protected static final int NUM_NETWORK_THREADS_EDEFAULT = 0;
+
 	/**
 	 * The cached value of the '{@link #getNum_network_threads() <em>Num network threads</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -85,6 +88,7 @@ public class DdsmKafkaClusterImpl extends DdsmPeerToPeerPlatformImpl implements 
 	 * @ordered
 	 */
 	protected int num_network_threads = NUM_NETWORK_THREADS_EDEFAULT;
+
 	/**
 	 * The default value of the '{@link #getNum_io_threads() <em>Num io threads</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -94,6 +98,7 @@ public class DdsmKafkaClusterImpl extends DdsmPeerToPeerPlatformImpl implements 
 	 * @ordered
 	 */
 	protected static final int NUM_IO_THREADS_EDEFAULT = 0;
+
 	/**
 	 * The cached value of the '{@link #getNum_io_threads() <em>Num io threads</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -103,6 +108,7 @@ public class DdsmKafkaClusterImpl extends DdsmPeerToPeerPlatformImpl implements 
 	 * @ordered
 	 */
 	protected int num_io_threads = NUM_IO_THREADS_EDEFAULT;
+
 	/**
 	 * The default value of the '{@link #getNum_log_partition_per_topic() <em>Num log partition per topic</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -112,6 +118,7 @@ public class DdsmKafkaClusterImpl extends DdsmPeerToPeerPlatformImpl implements 
 	 * @ordered
 	 */
 	protected static final int NUM_LOG_PARTITION_PER_TOPIC_EDEFAULT = 0;
+
 	/**
 	 * The cached value of the '{@link #getNum_log_partition_per_topic() <em>Num log partition per topic</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -121,6 +128,7 @@ public class DdsmKafkaClusterImpl extends DdsmPeerToPeerPlatformImpl implements 
 	 * @ordered
 	 */
 	protected int num_log_partition_per_topic = NUM_LOG_PARTITION_PER_TOPIC_EDEFAULT;
+
 	/**
 	 * The default value of the '{@link #getNum_recovery_threads_per_data_dir() <em>Num recovery threads per data dir</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -130,6 +138,7 @@ public class DdsmKafkaClusterImpl extends DdsmPeerToPeerPlatformImpl implements 
 	 * @ordered
 	 */
 	protected static final int NUM_RECOVERY_THREADS_PER_DATA_DIR_EDEFAULT = 0;
+
 	/**
 	 * The cached value of the '{@link #getNum_recovery_threads_per_data_dir() <em>Num recovery threads per data dir</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -139,24 +148,27 @@ public class DdsmKafkaClusterImpl extends DdsmPeerToPeerPlatformImpl implements 
 	 * @ordered
 	 */
 	protected int num_recovery_threads_per_data_dir = NUM_RECOVERY_THREADS_PER_DATA_DIR_EDEFAULT;
+
 	/**
-	 * The default value of the '{@link #getNum_messages_for_flush_to_dick() <em>Num messages for flush to dick</em>}' attribute.
+	 * The default value of the '{@link #getNum_messages_for_flush_to_disk() <em>Num messages for flush to disk</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getNum_messages_for_flush_to_dick()
+	 * @see #getNum_messages_for_flush_to_disk()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final int NUM_MESSAGES_FOR_FLUSH_TO_DICK_EDEFAULT = 0;
+	protected static final int NUM_MESSAGES_FOR_FLUSH_TO_DISK_EDEFAULT = 0;
+
 	/**
-	 * The cached value of the '{@link #getNum_messages_for_flush_to_dick() <em>Num messages for flush to dick</em>}' attribute.
+	 * The cached value of the '{@link #getNum_messages_for_flush_to_disk() <em>Num messages for flush to disk</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getNum_messages_for_flush_to_dick()
+	 * @see #getNum_messages_for_flush_to_disk()
 	 * @generated
 	 * @ordered
 	 */
-	protected int num_messages_for_flush_to_dick = NUM_MESSAGES_FOR_FLUSH_TO_DICK_EDEFAULT;
+	protected int num_messages_for_flush_to_disk = NUM_MESSAGES_FOR_FLUSH_TO_DISK_EDEFAULT;
+
 	/**
 	 * The default value of the '{@link #getMax_message_sit_time_before_flush_ms() <em>Max message sit time before flush ms</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -166,6 +178,7 @@ public class DdsmKafkaClusterImpl extends DdsmPeerToPeerPlatformImpl implements 
 	 * @ordered
 	 */
 	protected static final int MAX_MESSAGE_SIT_TIME_BEFORE_FLUSH_MS_EDEFAULT = 0;
+
 	/**
 	 * The cached value of the '{@link #getMax_message_sit_time_before_flush_ms() <em>Max message sit time before flush ms</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -175,6 +188,7 @@ public class DdsmKafkaClusterImpl extends DdsmPeerToPeerPlatformImpl implements 
 	 * @ordered
 	 */
 	protected int max_message_sit_time_before_flush_ms = MAX_MESSAGE_SIT_TIME_BEFORE_FLUSH_MS_EDEFAULT;
+
 	/**
 	 * The default value of the '{@link #isEnable_topic_auto_creation() <em>Enable topic auto creation</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -184,6 +198,7 @@ public class DdsmKafkaClusterImpl extends DdsmPeerToPeerPlatformImpl implements 
 	 * @ordered
 	 */
 	protected static final boolean ENABLE_TOPIC_AUTO_CREATION_EDEFAULT = true;
+
 	/**
 	 * The cached value of the '{@link #isEnable_topic_auto_creation() <em>Enable topic auto creation</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -193,6 +208,7 @@ public class DdsmKafkaClusterImpl extends DdsmPeerToPeerPlatformImpl implements 
 	 * @ordered
 	 */
 	protected boolean enable_topic_auto_creation = ENABLE_TOPIC_AUTO_CREATION_EDEFAULT;
+
 	/**
 	 * The default value of the '{@link #isEnable_leader_rebalancing() <em>Enable leader rebalancing</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -202,6 +218,7 @@ public class DdsmKafkaClusterImpl extends DdsmPeerToPeerPlatformImpl implements 
 	 * @ordered
 	 */
 	protected static final boolean ENABLE_LEADER_REBALANCING_EDEFAULT = true;
+
 	/**
 	 * The cached value of the '{@link #isEnable_leader_rebalancing() <em>Enable leader rebalancing</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -211,6 +228,7 @@ public class DdsmKafkaClusterImpl extends DdsmPeerToPeerPlatformImpl implements 
 	 * @ordered
 	 */
 	protected boolean enable_leader_rebalancing = ENABLE_LEADER_REBALANCING_EDEFAULT;
+
 	/**
 	 * The default value of the '{@link #getLog_retention_hours() <em>Log retention hours</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -220,6 +238,7 @@ public class DdsmKafkaClusterImpl extends DdsmPeerToPeerPlatformImpl implements 
 	 * @ordered
 	 */
 	protected static final int LOG_RETENTION_HOURS_EDEFAULT = 0;
+
 	/**
 	 * The cached value of the '{@link #getLog_retention_hours() <em>Log retention hours</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -229,6 +248,7 @@ public class DdsmKafkaClusterImpl extends DdsmPeerToPeerPlatformImpl implements 
 	 * @ordered
 	 */
 	protected int log_retention_hours = LOG_RETENTION_HOURS_EDEFAULT;
+
 	/**
 	 * The default value of the '{@link #getQueued_max_requests() <em>Queued max requests</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -238,6 +258,7 @@ public class DdsmKafkaClusterImpl extends DdsmPeerToPeerPlatformImpl implements 
 	 * @ordered
 	 */
 	protected static final int QUEUED_MAX_REQUESTS_EDEFAULT = 0;
+
 	/**
 	 * The cached value of the '{@link #getQueued_max_requests() <em>Queued max requests</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -415,8 +436,8 @@ public class DdsmKafkaClusterImpl extends DdsmPeerToPeerPlatformImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public int getNum_messages_for_flush_to_dick() {
-		return num_messages_for_flush_to_dick;
+	public int getNum_messages_for_flush_to_disk() {
+		return num_messages_for_flush_to_disk;
 	}
 
 	/**
@@ -424,11 +445,11 @@ public class DdsmKafkaClusterImpl extends DdsmPeerToPeerPlatformImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setNum_messages_for_flush_to_dick(int newNum_messages_for_flush_to_dick) {
-		int oldNum_messages_for_flush_to_dick = num_messages_for_flush_to_dick;
-		num_messages_for_flush_to_dick = newNum_messages_for_flush_to_dick;
+	public void setNum_messages_for_flush_to_disk(int newNum_messages_for_flush_to_disk) {
+		int oldNum_messages_for_flush_to_disk = num_messages_for_flush_to_disk;
+		num_messages_for_flush_to_disk = newNum_messages_for_flush_to_disk;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, DDSMPackage.DDSM_KAFKA_CLUSTER__NUM_MESSAGES_FOR_FLUSH_TO_DICK, oldNum_messages_for_flush_to_dick, num_messages_for_flush_to_dick));
+			eNotify(new ENotificationImpl(this, Notification.SET, DDSMPackage.DDSM_KAFKA_CLUSTER__NUM_MESSAGES_FOR_FLUSH_TO_DISK, oldNum_messages_for_flush_to_disk, num_messages_for_flush_to_disk));
 	}
 
 	/**
@@ -557,8 +578,8 @@ public class DdsmKafkaClusterImpl extends DdsmPeerToPeerPlatformImpl implements 
 				return getNum_log_partition_per_topic();
 			case DDSMPackage.DDSM_KAFKA_CLUSTER__NUM_RECOVERY_THREADS_PER_DATA_DIR:
 				return getNum_recovery_threads_per_data_dir();
-			case DDSMPackage.DDSM_KAFKA_CLUSTER__NUM_MESSAGES_FOR_FLUSH_TO_DICK:
-				return getNum_messages_for_flush_to_dick();
+			case DDSMPackage.DDSM_KAFKA_CLUSTER__NUM_MESSAGES_FOR_FLUSH_TO_DISK:
+				return getNum_messages_for_flush_to_disk();
 			case DDSMPackage.DDSM_KAFKA_CLUSTER__MAX_MESSAGE_SIT_TIME_BEFORE_FLUSH_MS:
 				return getMax_message_sit_time_before_flush_ms();
 			case DDSMPackage.DDSM_KAFKA_CLUSTER__ENABLE_TOPIC_AUTO_CREATION:
@@ -599,8 +620,8 @@ public class DdsmKafkaClusterImpl extends DdsmPeerToPeerPlatformImpl implements 
 			case DDSMPackage.DDSM_KAFKA_CLUSTER__NUM_RECOVERY_THREADS_PER_DATA_DIR:
 				setNum_recovery_threads_per_data_dir((Integer)newValue);
 				return;
-			case DDSMPackage.DDSM_KAFKA_CLUSTER__NUM_MESSAGES_FOR_FLUSH_TO_DICK:
-				setNum_messages_for_flush_to_dick((Integer)newValue);
+			case DDSMPackage.DDSM_KAFKA_CLUSTER__NUM_MESSAGES_FOR_FLUSH_TO_DISK:
+				setNum_messages_for_flush_to_disk((Integer)newValue);
 				return;
 			case DDSMPackage.DDSM_KAFKA_CLUSTER__MAX_MESSAGE_SIT_TIME_BEFORE_FLUSH_MS:
 				setMax_message_sit_time_before_flush_ms((Integer)newValue);
@@ -647,8 +668,8 @@ public class DdsmKafkaClusterImpl extends DdsmPeerToPeerPlatformImpl implements 
 			case DDSMPackage.DDSM_KAFKA_CLUSTER__NUM_RECOVERY_THREADS_PER_DATA_DIR:
 				setNum_recovery_threads_per_data_dir(NUM_RECOVERY_THREADS_PER_DATA_DIR_EDEFAULT);
 				return;
-			case DDSMPackage.DDSM_KAFKA_CLUSTER__NUM_MESSAGES_FOR_FLUSH_TO_DICK:
-				setNum_messages_for_flush_to_dick(NUM_MESSAGES_FOR_FLUSH_TO_DICK_EDEFAULT);
+			case DDSMPackage.DDSM_KAFKA_CLUSTER__NUM_MESSAGES_FOR_FLUSH_TO_DISK:
+				setNum_messages_for_flush_to_disk(NUM_MESSAGES_FOR_FLUSH_TO_DISK_EDEFAULT);
 				return;
 			case DDSMPackage.DDSM_KAFKA_CLUSTER__MAX_MESSAGE_SIT_TIME_BEFORE_FLUSH_MS:
 				setMax_message_sit_time_before_flush_ms(MAX_MESSAGE_SIT_TIME_BEFORE_FLUSH_MS_EDEFAULT);
@@ -689,8 +710,8 @@ public class DdsmKafkaClusterImpl extends DdsmPeerToPeerPlatformImpl implements 
 				return num_log_partition_per_topic != NUM_LOG_PARTITION_PER_TOPIC_EDEFAULT;
 			case DDSMPackage.DDSM_KAFKA_CLUSTER__NUM_RECOVERY_THREADS_PER_DATA_DIR:
 				return num_recovery_threads_per_data_dir != NUM_RECOVERY_THREADS_PER_DATA_DIR_EDEFAULT;
-			case DDSMPackage.DDSM_KAFKA_CLUSTER__NUM_MESSAGES_FOR_FLUSH_TO_DICK:
-				return num_messages_for_flush_to_dick != NUM_MESSAGES_FOR_FLUSH_TO_DICK_EDEFAULT;
+			case DDSMPackage.DDSM_KAFKA_CLUSTER__NUM_MESSAGES_FOR_FLUSH_TO_DISK:
+				return num_messages_for_flush_to_disk != NUM_MESSAGES_FOR_FLUSH_TO_DISK_EDEFAULT;
 			case DDSMPackage.DDSM_KAFKA_CLUSTER__MAX_MESSAGE_SIT_TIME_BEFORE_FLUSH_MS:
 				return max_message_sit_time_before_flush_ms != MAX_MESSAGE_SIT_TIME_BEFORE_FLUSH_MS_EDEFAULT;
 			case DDSMPackage.DDSM_KAFKA_CLUSTER__ENABLE_TOPIC_AUTO_CREATION:
@@ -725,8 +746,8 @@ public class DdsmKafkaClusterImpl extends DdsmPeerToPeerPlatformImpl implements 
 		result.append(num_log_partition_per_topic);
 		result.append(", num_recovery_threads_per_data_dir: ");
 		result.append(num_recovery_threads_per_data_dir);
-		result.append(", num_messages_for_flush_to_dick: ");
-		result.append(num_messages_for_flush_to_dick);
+		result.append(", num_messages_for_flush_to_disk: ");
+		result.append(num_messages_for_flush_to_disk);
 		result.append(", max_message_sit_time_before_flush_ms: ");
 		result.append(max_message_sit_time_before_flush_ms);
 		result.append(", enable_topic_auto_creation: ");

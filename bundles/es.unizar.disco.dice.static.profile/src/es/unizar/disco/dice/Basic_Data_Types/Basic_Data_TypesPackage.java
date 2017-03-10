@@ -138,7 +138,6 @@ public interface Basic_Data_TypesPackage extends EPackage {
 	 */
 	int SCRIPT_TYPE_FEATURE_COUNT = 3;
 
-
 	/**
 	 * The meta object id for the '{@link es.unizar.disco.dice.Basic_Data_Types.impl.FirewallRuleImpl <em>Firewall Rule</em>}' class.
 	 * <!-- begin-user-doc -->

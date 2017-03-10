@@ -1697,13 +1697,13 @@ public interface DDSMPackage extends EPackage {
 	int DDSM_KAFKA_CLUSTER__NUM_RECOVERY_THREADS_PER_DATA_DIR = DDSM_PEER_TO_PEER_PLATFORM_FEATURE_COUNT + 5;
 
 	/**
-	 * The feature id for the '<em><b>Num messages for flush to dick</b></em>' attribute.
+	 * The feature id for the '<em><b>Num messages for flush to disk</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_KAFKA_CLUSTER__NUM_MESSAGES_FOR_FLUSH_TO_DICK = DDSM_PEER_TO_PEER_PLATFORM_FEATURE_COUNT + 6;
+	int DDSM_KAFKA_CLUSTER__NUM_MESSAGES_FOR_FLUSH_TO_DISK = DDSM_PEER_TO_PEER_PLATFORM_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Max message sit time before flush ms</b></em>' attribute.
@@ -2574,7 +2574,6 @@ public interface DDSMPackage extends EPackage {
 	 * @ordered
 	 */
 	int DDSM_CASSANDRA_CLUSTER_FEATURE_COUNT = DDSM_PEER_TO_PEER_PLATFORM_FEATURE_COUNT + 8;
-
 
 	/**
 	 * The meta object id for the '{@link es.unizar.disco.dice.DDSM.impl.DdsmSparkClusterImpl <em>Ddsm Spark Cluster</em>}' class.
@@ -3459,15 +3458,15 @@ public interface DDSMPackage extends EPackage {
 	EAttribute getDdsmKafkaCluster_Num_recovery_threads_per_data_dir();
 
 	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmKafkaCluster#getNum_messages_for_flush_to_dick <em>Num messages for flush to dick</em>}'.
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmKafkaCluster#getNum_messages_for_flush_to_disk <em>Num messages for flush to disk</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Num messages for flush to dick</em>'.
-	 * @see es.unizar.disco.dice.DDSM.DdsmKafkaCluster#getNum_messages_for_flush_to_dick()
+	 * @return the meta object for the attribute '<em>Num messages for flush to disk</em>'.
+	 * @see es.unizar.disco.dice.DDSM.DdsmKafkaCluster#getNum_messages_for_flush_to_disk()
 	 * @see #getDdsmKafkaCluster()
 	 * @generated
 	 */
-	EAttribute getDdsmKafkaCluster_Num_messages_for_flush_to_dick();
+	EAttribute getDdsmKafkaCluster_Num_messages_for_flush_to_disk();
 
 	/**
 	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmKafkaCluster#getMax_message_sit_time_before_flush_ms <em>Max message sit time before flush ms</em>}'.
@@ -4592,12 +4591,12 @@ public interface DDSMPackage extends EPackage {
 		EAttribute DDSM_KAFKA_CLUSTER__NUM_RECOVERY_THREADS_PER_DATA_DIR = eINSTANCE.getDdsmKafkaCluster_Num_recovery_threads_per_data_dir();
 
 		/**
-		 * The meta object literal for the '<em><b>Num messages for flush to dick</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>Num messages for flush to disk</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute DDSM_KAFKA_CLUSTER__NUM_MESSAGES_FOR_FLUSH_TO_DICK = eINSTANCE.getDdsmKafkaCluster_Num_messages_for_flush_to_dick();
+		EAttribute DDSM_KAFKA_CLUSTER__NUM_MESSAGES_FOR_FLUSH_TO_DISK = eINSTANCE.getDdsmKafkaCluster_Num_messages_for_flush_to_disk();
 
 		/**
 		 * The meta object literal for the '<em><b>Max message sit time before flush ms</b></em>' attribute feature.

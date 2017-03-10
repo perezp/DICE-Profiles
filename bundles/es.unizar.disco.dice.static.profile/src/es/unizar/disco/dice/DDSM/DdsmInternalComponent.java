@@ -3,9 +3,10 @@
 package es.unizar.disco.dice.DDSM;
 
 import es.unizar.disco.dice.Basic_Data_Types.FirewallRule;
-import es.unizar.disco.dice.Basic_Enumeration_Types.DDSMcomponentType;
 
+import es.unizar.disco.dice.Basic_Enumeration_Types.DDSMcomponentType;
 import es.unizar.disco.dice.Basic_Enumeration_Types.LanguageType;
+
 import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.uml2.uml.Node;

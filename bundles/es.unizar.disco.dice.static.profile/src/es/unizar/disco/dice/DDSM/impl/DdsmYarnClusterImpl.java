@@ -3,6 +3,7 @@
 package es.unizar.disco.dice.DDSM.impl;
 
 import es.unizar.disco.dice.Basic_Enumeration_Types.Scheduling;
+
 import es.unizar.disco.dice.DDSM.DDSMPackage;
 import es.unizar.disco.dice.DDSM.DdsmYarnCluster;
 
@@ -55,6 +56,7 @@ public class DdsmYarnClusterImpl extends DdsmMasterSlavePlatformImpl implements 
 	 * @ordered
 	 */
 	protected static final boolean ENABLE_ACL_EDEFAULT = false;
+
 	/**
 	 * The cached value of the '{@link #isEnable_acl() <em>Enable acl</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -64,6 +66,7 @@ public class DdsmYarnClusterImpl extends DdsmMasterSlavePlatformImpl implements 
 	 * @ordered
 	 */
 	protected boolean enable_acl = ENABLE_ACL_EDEFAULT;
+
 	/**
 	 * The default value of the '{@link #getScheduler_type() <em>Scheduler type</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -73,6 +76,7 @@ public class DdsmYarnClusterImpl extends DdsmMasterSlavePlatformImpl implements 
 	 * @ordered
 	 */
 	protected static final Scheduling SCHEDULER_TYPE_EDEFAULT = Scheduling.CAPACITY;
+
 	/**
 	 * The cached value of the '{@link #getScheduler_type() <em>Scheduler type</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -82,6 +86,7 @@ public class DdsmYarnClusterImpl extends DdsmMasterSlavePlatformImpl implements 
 	 * @ordered
 	 */
 	protected Scheduling scheduler_type = SCHEDULER_TYPE_EDEFAULT;
+
 	/**
 	 * The default value of the '{@link #getScheduler_min_container_mem_mb() <em>Scheduler min container mem mb</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -91,6 +96,7 @@ public class DdsmYarnClusterImpl extends DdsmMasterSlavePlatformImpl implements 
 	 * @ordered
 	 */
 	protected static final int SCHEDULER_MIN_CONTAINER_MEM_MB_EDEFAULT = 0;
+
 	/**
 	 * The cached value of the '{@link #getScheduler_min_container_mem_mb() <em>Scheduler min container mem mb</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -100,6 +106,7 @@ public class DdsmYarnClusterImpl extends DdsmMasterSlavePlatformImpl implements 
 	 * @ordered
 	 */
 	protected int scheduler_min_container_mem_mb = SCHEDULER_MIN_CONTAINER_MEM_MB_EDEFAULT;
+
 	/**
 	 * The default value of the '{@link #getScheduler_max_container_mem_mb() <em>Scheduler max container mem mb</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -109,6 +116,7 @@ public class DdsmYarnClusterImpl extends DdsmMasterSlavePlatformImpl implements 
 	 * @ordered
 	 */
 	protected static final int SCHEDULER_MAX_CONTAINER_MEM_MB_EDEFAULT = 0;
+
 	/**
 	 * The cached value of the '{@link #getScheduler_max_container_mem_mb() <em>Scheduler max container mem mb</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -118,6 +126,7 @@ public class DdsmYarnClusterImpl extends DdsmMasterSlavePlatformImpl implements 
 	 * @ordered
 	 */
 	protected int scheduler_max_container_mem_mb = SCHEDULER_MAX_CONTAINER_MEM_MB_EDEFAULT;
+
 	/**
 	 * The default value of the '{@link #getScheduler_min_container_core_num() <em>Scheduler min container core num</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -127,6 +136,7 @@ public class DdsmYarnClusterImpl extends DdsmMasterSlavePlatformImpl implements 
 	 * @ordered
 	 */
 	protected static final int SCHEDULER_MIN_CONTAINER_CORE_NUM_EDEFAULT = 0;
+
 	/**
 	 * The cached value of the '{@link #getScheduler_min_container_core_num() <em>Scheduler min container core num</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -136,6 +146,7 @@ public class DdsmYarnClusterImpl extends DdsmMasterSlavePlatformImpl implements 
 	 * @ordered
 	 */
 	protected int scheduler_min_container_core_num = SCHEDULER_MIN_CONTAINER_CORE_NUM_EDEFAULT;
+
 	/**
 	 * The default value of the '{@link #getScheduler_max_container_core_num() <em>Scheduler max container core num</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -145,6 +156,7 @@ public class DdsmYarnClusterImpl extends DdsmMasterSlavePlatformImpl implements 
 	 * @ordered
 	 */
 	protected static final int SCHEDULER_MAX_CONTAINER_CORE_NUM_EDEFAULT = 0;
+
 	/**
 	 * The cached value of the '{@link #getScheduler_max_container_core_num() <em>Scheduler max container core num</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -154,6 +166,7 @@ public class DdsmYarnClusterImpl extends DdsmMasterSlavePlatformImpl implements 
 	 * @ordered
 	 */
 	protected int scheduler_max_container_core_num = SCHEDULER_MAX_CONTAINER_CORE_NUM_EDEFAULT;
+
 	/**
 	 * The default value of the '{@link #getNodemanager_available_mem() <em>Nodemanager available mem</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -163,6 +176,7 @@ public class DdsmYarnClusterImpl extends DdsmMasterSlavePlatformImpl implements 
 	 * @ordered
 	 */
 	protected static final int NODEMANAGER_AVAILABLE_MEM_EDEFAULT = 0;
+
 	/**
 	 * The cached value of the '{@link #getNodemanager_available_mem() <em>Nodemanager available mem</em>}' attribute.
 	 * <!-- begin-user-doc -->

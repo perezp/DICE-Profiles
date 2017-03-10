@@ -461,7 +461,7 @@
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="num_recovery_threads_per_data_dir"
             ordered="false" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//Integer"
             defaultValueLiteral="0"/>
-        <eStructuralFeatures xsi:type="ecore:EAttribute" name="num_messages_for_flush_to_dick"
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="num_messages_for_flush_to_disk"
             ordered="false" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//Integer"
             defaultValueLiteral="0"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="max_message_sit_time_before_flush_ms"
