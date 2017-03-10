@@ -138,6 +138,43 @@ public interface Basic_Data_TypesPackage extends EPackage {
 	 */
 	int SCRIPT_TYPE_FEATURE_COUNT = 3;
 
+	/**
+	 * The meta object id for the '{@link es.unizar.disco.dice.Basic_Data_Types.impl.FirewallRuleImpl <em>Firewall Rule</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see es.unizar.disco.dice.Basic_Data_Types.impl.FirewallRuleImpl
+	 * @see es.unizar.disco.dice.Basic_Data_Types.impl.Basic_Data_TypesPackageImpl#getFirewallRule()
+	 * @generated
+	 */
+	int FIREWALL_RULE = 2;
+
+	/**
+	 * The feature id for the '<em><b>Allowed Ip Prefix</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FIREWALL_RULE__ALLOWED_IP_PREFIX = 0;
+
+	/**
+	 * The feature id for the '<em><b>Port</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FIREWALL_RULE__PORT = 1;
+
+	/**
+	 * The number of structural features of the '<em>Firewall Rule</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FIREWALL_RULE_FEATURE_COUNT = 2;
+
 
 	/**
 	 * Returns the meta object for class '{@link es.unizar.disco.dice.Basic_Data_Types.NFP_Privacy <em>NFP Privacy</em>}'.
@@ -213,6 +250,38 @@ public interface Basic_Data_TypesPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getScriptType_ScriptKind();
+
+	/**
+	 * Returns the meta object for class '{@link es.unizar.disco.dice.Basic_Data_Types.FirewallRule <em>Firewall Rule</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Firewall Rule</em>'.
+	 * @see es.unizar.disco.dice.Basic_Data_Types.FirewallRule
+	 * @generated
+	 */
+	EClass getFirewallRule();
+
+	/**
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.Basic_Data_Types.FirewallRule#getAllowedIpPrefix <em>Allowed Ip Prefix</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Allowed Ip Prefix</em>'.
+	 * @see es.unizar.disco.dice.Basic_Data_Types.FirewallRule#getAllowedIpPrefix()
+	 * @see #getFirewallRule()
+	 * @generated
+	 */
+	EAttribute getFirewallRule_AllowedIpPrefix();
+
+	/**
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.Basic_Data_Types.FirewallRule#getPort <em>Port</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Port</em>'.
+	 * @see es.unizar.disco.dice.Basic_Data_Types.FirewallRule#getPort()
+	 * @see #getFirewallRule()
+	 * @generated
+	 */
+	EAttribute getFirewallRule_Port();
 
 	/**
 	 * Returns the factory that creates the instances of the model.
@@ -295,6 +364,32 @@ public interface Basic_Data_TypesPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute SCRIPT_TYPE__SCRIPT_KIND = eINSTANCE.getScriptType_ScriptKind();
+
+		/**
+		 * The meta object literal for the '{@link es.unizar.disco.dice.Basic_Data_Types.impl.FirewallRuleImpl <em>Firewall Rule</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see es.unizar.disco.dice.Basic_Data_Types.impl.FirewallRuleImpl
+		 * @see es.unizar.disco.dice.Basic_Data_Types.impl.Basic_Data_TypesPackageImpl#getFirewallRule()
+		 * @generated
+		 */
+		EClass FIREWALL_RULE = eINSTANCE.getFirewallRule();
+
+		/**
+		 * The meta object literal for the '<em><b>Allowed Ip Prefix</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FIREWALL_RULE__ALLOWED_IP_PREFIX = eINSTANCE.getFirewallRule_AllowedIpPrefix();
+
+		/**
+		 * The meta object literal for the '<em><b>Port</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FIREWALL_RULE__PORT = eINSTANCE.getFirewallRule_Port();
 
 	}
 

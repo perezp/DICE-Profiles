@@ -10,6 +10,7 @@ import com.masdes.dam.DAM.DAMPackage;
 
 import es.unizar.disco.dice.Basic_Data_Types.Basic_Data_TypesFactory;
 import es.unizar.disco.dice.Basic_Data_Types.Basic_Data_TypesPackage;
+import es.unizar.disco.dice.Basic_Data_Types.FirewallRule;
 import es.unizar.disco.dice.Basic_Data_Types.NFP_Privacy;
 import es.unizar.disco.dice.Basic_Data_Types.ScriptType;
 
@@ -37,6 +38,10 @@ import es.unizar.disco.dice.DTSM.Hadoop.HadoopPackage;
 
 import es.unizar.disco.dice.DTSM.Hadoop.impl.HadoopPackageImpl;
 
+import es.unizar.disco.dice.DTSM.Spark.SparkPackage;
+
+import es.unizar.disco.dice.DTSM.Spark.impl.SparkPackageImpl;
+
 import es.unizar.disco.dice.DTSM.Storm.StormPackage;
 
 import es.unizar.disco.dice.DTSM.Storm.impl.StormPackageImpl;
@@ -50,6 +55,8 @@ import org.eclipse.emf.ecore.impl.EPackageImpl;
 import org.eclipse.papyrus.MARTE_Library.BasicNFP_Types.BasicNFP_TypesPackage;
 
 import org.eclipse.papyrus.MARTE_Library.MARTE_DataTypes.MARTE_DataTypesPackage;
+
+import org.eclipse.uml2.types.TypesPackage;
 
 /**
  * <!-- begin-user-doc -->
@@ -71,6 +78,13 @@ public class Basic_Data_TypesPackageImpl extends EPackageImpl implements Basic_D
 	 * @generated
 	 */
 	private EClass scriptTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass firewallRuleEClass = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -130,6 +144,7 @@ public class Basic_Data_TypesPackageImpl extends EPackageImpl implements Basic_D
 		CorePackageImpl theCorePackage = (CorePackageImpl)(EPackage.Registry.INSTANCE.getEPackage(CorePackage.eNS_URI) instanceof CorePackageImpl ? EPackage.Registry.INSTANCE.getEPackage(CorePackage.eNS_URI) : CorePackage.eINSTANCE);
 		StormPackageImpl theStormPackage = (StormPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(StormPackage.eNS_URI) instanceof StormPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(StormPackage.eNS_URI) : StormPackage.eINSTANCE);
 		HadoopPackageImpl theHadoopPackage = (HadoopPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(HadoopPackage.eNS_URI) instanceof HadoopPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(HadoopPackage.eNS_URI) : HadoopPackage.eINSTANCE);
+		SparkPackageImpl theSparkPackage = (SparkPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(SparkPackage.eNS_URI) instanceof SparkPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(SparkPackage.eNS_URI) : SparkPackage.eINSTANCE);
 		DDSMPackageImpl theDDSMPackage = (DDSMPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(DDSMPackage.eNS_URI) instanceof DDSMPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(DDSMPackage.eNS_URI) : DDSMPackage.eINSTANCE);
 		Complex_Data_TypesPackageImpl theComplex_Data_TypesPackage_1 = (Complex_Data_TypesPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(es.unizar.disco.dice.Complex_Data_Types.Complex_Data_TypesPackage.eNS_URI) instanceof Complex_Data_TypesPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(es.unizar.disco.dice.Complex_Data_Types.Complex_Data_TypesPackage.eNS_URI) : es.unizar.disco.dice.Complex_Data_Types.Complex_Data_TypesPackage.eINSTANCE);
 		Basic_Enumeration_TypesPackageImpl theBasic_Enumeration_TypesPackage_1 = (Basic_Enumeration_TypesPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(es.unizar.disco.dice.Basic_Enumeration_Types.Basic_Enumeration_TypesPackage.eNS_URI) instanceof Basic_Enumeration_TypesPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(es.unizar.disco.dice.Basic_Enumeration_Types.Basic_Enumeration_TypesPackage.eNS_URI) : es.unizar.disco.dice.Basic_Enumeration_Types.Basic_Enumeration_TypesPackage.eINSTANCE);
@@ -141,6 +156,7 @@ public class Basic_Data_TypesPackageImpl extends EPackageImpl implements Basic_D
 		theCorePackage.createPackageContents();
 		theStormPackage.createPackageContents();
 		theHadoopPackage.createPackageContents();
+		theSparkPackage.createPackageContents();
 		theDDSMPackage.createPackageContents();
 		theComplex_Data_TypesPackage_1.createPackageContents();
 		theBasic_Enumeration_TypesPackage_1.createPackageContents();
@@ -152,6 +168,7 @@ public class Basic_Data_TypesPackageImpl extends EPackageImpl implements Basic_D
 		theCorePackage.initializePackageContents();
 		theStormPackage.initializePackageContents();
 		theHadoopPackage.initializePackageContents();
+		theSparkPackage.initializePackageContents();
 		theDDSMPackage.initializePackageContents();
 		theComplex_Data_TypesPackage_1.initializePackageContents();
 		theBasic_Enumeration_TypesPackage_1.initializePackageContents();
@@ -233,6 +250,33 @@ public class Basic_Data_TypesPackageImpl extends EPackageImpl implements Basic_D
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EClass getFirewallRule() {
+		return firewallRuleEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getFirewallRule_AllowedIpPrefix() {
+		return (EAttribute)firewallRuleEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getFirewallRule_Port() {
+		return (EAttribute)firewallRuleEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public Basic_Data_TypesFactory getBasic_Data_TypesFactory() {
 		return (Basic_Data_TypesFactory)getEFactoryInstance();
 	}
@@ -264,6 +308,10 @@ public class Basic_Data_TypesPackageImpl extends EPackageImpl implements Basic_D
 		createEAttribute(scriptTypeEClass, SCRIPT_TYPE__SCRIPT_ID);
 		createEAttribute(scriptTypeEClass, SCRIPT_TYPE__SCRIPT_URI);
 		createEAttribute(scriptTypeEClass, SCRIPT_TYPE__SCRIPT_KIND);
+
+		firewallRuleEClass = createEClass(FIREWALL_RULE);
+		createEAttribute(firewallRuleEClass, FIREWALL_RULE__ALLOWED_IP_PREFIX);
+		createEAttribute(firewallRuleEClass, FIREWALL_RULE__PORT);
 	}
 
 	/**
@@ -293,6 +341,7 @@ public class Basic_Data_TypesPackageImpl extends EPackageImpl implements Basic_D
 		MARTE_DataTypesPackage theMARTE_DataTypesPackage = (MARTE_DataTypesPackage)EPackage.Registry.INSTANCE.getEPackage(MARTE_DataTypesPackage.eNS_URI);
 		BasicNFP_TypesPackage theBasicNFP_TypesPackage = (BasicNFP_TypesPackage)EPackage.Registry.INSTANCE.getEPackage(BasicNFP_TypesPackage.eNS_URI);
 		es.unizar.disco.dice.Basic_Enumeration_Types.Basic_Enumeration_TypesPackage theBasic_Enumeration_TypesPackage_1 = (es.unizar.disco.dice.Basic_Enumeration_Types.Basic_Enumeration_TypesPackage)EPackage.Registry.INSTANCE.getEPackage(es.unizar.disco.dice.Basic_Enumeration_Types.Basic_Enumeration_TypesPackage.eNS_URI);
+		TypesPackage theTypesPackage = (TypesPackage)EPackage.Registry.INSTANCE.getEPackage(TypesPackage.eNS_URI);
 
 		// Create type parameters
 
@@ -309,6 +358,10 @@ public class Basic_Data_TypesPackageImpl extends EPackageImpl implements Basic_D
 		initEAttribute(getScriptType_ScriptId(), ecorePackage.getEString(), "scriptId", null, 0, 1, ScriptType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getScriptType_ScriptUri(), ecorePackage.getEString(), "scriptUri", null, 0, 1, ScriptType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getScriptType_ScriptKind(), theBasic_Enumeration_TypesPackage_1.getLifeCycleElementType(), "scriptKind", null, 1, 1, ScriptType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+
+		initEClass(firewallRuleEClass, FirewallRule.class, "FirewallRule", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getFirewallRule_AllowedIpPrefix(), theTypesPackage.getString(), "allowedIpPrefix", "0.0.0.0/0", 0, 1, FirewallRule.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getFirewallRule_Port(), theTypesPackage.getInteger(), "port", null, 0, 1, FirewallRule.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		// Create resource
 		createResource(eNS_URI);

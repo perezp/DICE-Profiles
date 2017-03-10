@@ -2,7 +2,10 @@
  */
 package es.unizar.disco.dice.DDSM;
 
+import es.unizar.disco.dice.Basic_Data_Types.FirewallRule;
+
 import es.unizar.disco.dice.Basic_Enumeration_Types.DDSMcomponentType;
+import es.unizar.disco.dice.Basic_Enumeration_Types.LanguageType;
 
 import org.eclipse.emf.common.util.EList;
 
@@ -24,6 +27,8 @@ import org.eclipse.uml2.uml.Node;
  *   <li>{@link es.unizar.disco.dice.DDSM.DdsmInternalComponent#isProtected <em>Protected</em>}</li>
  *   <li>{@link es.unizar.disco.dice.DDSM.DdsmInternalComponent#getLaunch_script <em>Launch script</em>}</li>
  *   <li>{@link es.unizar.disco.dice.DDSM.DdsmInternalComponent#getLanguage <em>Language</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DDSM.DdsmInternalComponent#isEnable_monitoring <em>Enable monitoring</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DDSM.DdsmInternalComponent#getFirewallRules <em>Firewall Rules</em>}</li>
  * </ul>
  *
  * @see es.unizar.disco.dice.DDSM.DDSMPackage#getDdsmInternalComponent()
@@ -184,6 +189,8 @@ public interface DdsmInternalComponent extends DdsmComponent {
 
 	/**
 	 * Returns the value of the '<em><b>Language</b></em>' attribute.
+	 * The default value is <code>"bash"</code>.
+	 * The literals are from the enumeration {@link es.unizar.disco.dice.Basic_Enumeration_Types.LanguageType}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Language</em>' attribute isn't clear,
@@ -191,21 +198,66 @@ public interface DdsmInternalComponent extends DdsmComponent {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Language</em>' attribute.
-	 * @see #setLanguage(String)
+	 * @see es.unizar.disco.dice.Basic_Enumeration_Types.LanguageType
+	 * @see #setLanguage(LanguageType)
 	 * @see es.unizar.disco.dice.DDSM.DDSMPackage#getDdsmInternalComponent_Language()
-	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
+	 * @model default="bash" ordered="false"
 	 * @generated
 	 */
-	String getLanguage();
+	LanguageType getLanguage();
 
 	/**
 	 * Sets the value of the '{@link es.unizar.disco.dice.DDSM.DdsmInternalComponent#getLanguage <em>Language</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Language</em>' attribute.
+	 * @see es.unizar.disco.dice.Basic_Enumeration_Types.LanguageType
 	 * @see #getLanguage()
 	 * @generated
 	 */
-	void setLanguage(String value);
+	void setLanguage(LanguageType value);
+
+	/**
+	 * Returns the value of the '<em><b>Enable monitoring</b></em>' attribute.
+	 * The default value is <code>"false"</code>.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Enable monitoring</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Enable monitoring</em>' attribute.
+	 * @see #setEnable_monitoring(boolean)
+	 * @see es.unizar.disco.dice.DDSM.DDSMPackage#getDdsmInternalComponent_Enable_monitoring()
+	 * @model default="false" dataType="org.eclipse.uml2.types.Boolean" ordered="false"
+	 * @generated
+	 */
+	boolean isEnable_monitoring();
+
+	/**
+	 * Sets the value of the '{@link es.unizar.disco.dice.DDSM.DdsmInternalComponent#isEnable_monitoring <em>Enable monitoring</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Enable monitoring</em>' attribute.
+	 * @see #isEnable_monitoring()
+	 * @generated
+	 */
+	void setEnable_monitoring(boolean value);
+
+	/**
+	 * Returns the value of the '<em><b>Firewall Rules</b></em>' containment reference list.
+	 * The list contents are of type {@link es.unizar.disco.dice.Basic_Data_Types.FirewallRule}.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Firewall Rules</em>' containment reference list isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Firewall Rules</em>' containment reference list.
+	 * @see es.unizar.disco.dice.DDSM.DDSMPackage#getDdsmInternalComponent_FirewallRules()
+	 * @model containment="true" ordered="false"
+	 * @generated
+	 */
+	EList<FirewallRule> getFirewallRules();
 
 } // DdsmInternalComponent

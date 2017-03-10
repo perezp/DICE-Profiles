@@ -457,13 +457,31 @@ public interface DDSMPackage extends EPackage {
 	int DDSM_INTERNAL_COMPONENT__LANGUAGE = DDSM_COMPONENT_FEATURE_COUNT + 6;
 
 	/**
+	 * The feature id for the '<em><b>Enable monitoring</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_INTERNAL_COMPONENT__ENABLE_MONITORING = DDSM_COMPONENT_FEATURE_COUNT + 7;
+
+	/**
+	 * The feature id for the '<em><b>Firewall Rules</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_INTERNAL_COMPONENT__FIREWALL_RULES = DDSM_COMPONENT_FEATURE_COUNT + 8;
+
+	/**
 	 * The number of structural features of the '<em>Ddsm Internal Component</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_INTERNAL_COMPONENT_FEATURE_COUNT = DDSM_COMPONENT_FEATURE_COUNT + 7;
+	int DDSM_INTERNAL_COMPONENT_FEATURE_COUNT = DDSM_COMPONENT_FEATURE_COUNT + 9;
 
 	/**
 	 * The meta object id for the '{@link es.unizar.disco.dice.DDSM.impl.DdsmHeterogeneousClusterImpl <em>Ddsm Heterogeneous Cluster</em>}' class.
@@ -783,22 +801,13 @@ public interface DDSMPackage extends EPackage {
 	int DDSM_VMS_CLUSTER__OS = DDSM_EXTERNAL_COMPONENT_FEATURE_COUNT + 8;
 
 	/**
-	 * The feature id for the '<em><b>Security Group</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DDSM_VMS_CLUSTER__SECURITY_GROUP = DDSM_EXTERNAL_COMPONENT_FEATURE_COUNT + 9;
-
-	/**
 	 * The feature id for the '<em><b>Private Key</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_VMS_CLUSTER__PRIVATE_KEY = DDSM_EXTERNAL_COMPONENT_FEATURE_COUNT + 10;
+	int DDSM_VMS_CLUSTER__PRIVATE_KEY = DDSM_EXTERNAL_COMPONENT_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Ssh Key</b></em>' attribute.
@@ -807,7 +816,7 @@ public interface DDSMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_VMS_CLUSTER__SSH_KEY = DDSM_EXTERNAL_COMPONENT_FEATURE_COUNT + 11;
+	int DDSM_VMS_CLUSTER__SSH_KEY = DDSM_EXTERNAL_COMPONENT_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Public Address</b></em>' attribute.
@@ -816,7 +825,7 @@ public interface DDSMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_VMS_CLUSTER__PUBLIC_ADDRESS = DDSM_EXTERNAL_COMPONENT_FEATURE_COUNT + 12;
+	int DDSM_VMS_CLUSTER__PUBLIC_ADDRESS = DDSM_EXTERNAL_COMPONENT_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Instances</b></em>' attribute.
@@ -825,7 +834,7 @@ public interface DDSMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_VMS_CLUSTER__INSTANCES = DDSM_EXTERNAL_COMPONENT_FEATURE_COUNT + 13;
+	int DDSM_VMS_CLUSTER__INSTANCES = DDSM_EXTERNAL_COMPONENT_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Generic Size</b></em>' attribute.
@@ -834,7 +843,7 @@ public interface DDSMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_VMS_CLUSTER__GENERIC_SIZE = DDSM_EXTERNAL_COMPONENT_FEATURE_COUNT + 14;
+	int DDSM_VMS_CLUSTER__GENERIC_SIZE = DDSM_EXTERNAL_COMPONENT_FEATURE_COUNT + 13;
 
 	/**
 	 * The number of structural features of the '<em>Ddsm VMs Cluster</em>' class.
@@ -843,7 +852,7 @@ public interface DDSMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_VMS_CLUSTER_FEATURE_COUNT = DDSM_EXTERNAL_COMPONENT_FEATURE_COUNT + 15;
+	int DDSM_VMS_CLUSTER_FEATURE_COUNT = DDSM_EXTERNAL_COMPONENT_FEATURE_COUNT + 14;
 
 	/**
 	 * The meta object id for the '{@link es.unizar.disco.dice.DDSM.impl.DdsmMasterSlavePlatformImpl <em>Ddsm Master Slave Platform</em>}' class.
@@ -953,6 +962,24 @@ public interface DDSMPackage extends EPackage {
 	 * @ordered
 	 */
 	int DDSM_MASTER_SLAVE_PLATFORM__LANGUAGE = DDSM_INTERNAL_COMPONENT__LANGUAGE;
+
+	/**
+	 * The feature id for the '<em><b>Enable monitoring</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_MASTER_SLAVE_PLATFORM__ENABLE_MONITORING = DDSM_INTERNAL_COMPONENT__ENABLE_MONITORING;
+
+	/**
+	 * The feature id for the '<em><b>Firewall Rules</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_MASTER_SLAVE_PLATFORM__FIREWALL_RULES = DDSM_INTERNAL_COMPONENT__FIREWALL_RULES;
 
 	/**
 	 * The feature id for the '<em><b>Master Host</b></em>' reference.
@@ -1082,6 +1109,24 @@ public interface DDSMPackage extends EPackage {
 	int DDSM_YARN_CLUSTER__LANGUAGE = DDSM_MASTER_SLAVE_PLATFORM__LANGUAGE;
 
 	/**
+	 * The feature id for the '<em><b>Enable monitoring</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_YARN_CLUSTER__ENABLE_MONITORING = DDSM_MASTER_SLAVE_PLATFORM__ENABLE_MONITORING;
+
+	/**
+	 * The feature id for the '<em><b>Firewall Rules</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_YARN_CLUSTER__FIREWALL_RULES = DDSM_MASTER_SLAVE_PLATFORM__FIREWALL_RULES;
+
+	/**
 	 * The feature id for the '<em><b>Master Host</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1100,13 +1145,76 @@ public interface DDSMPackage extends EPackage {
 	int DDSM_YARN_CLUSTER__BASE_EXECUTION_ENVIRONMENT = DDSM_MASTER_SLAVE_PLATFORM_FEATURE_COUNT + 0;
 
 	/**
+	 * The feature id for the '<em><b>Enable acl</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_YARN_CLUSTER__ENABLE_ACL = DDSM_MASTER_SLAVE_PLATFORM_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Scheduler type</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_YARN_CLUSTER__SCHEDULER_TYPE = DDSM_MASTER_SLAVE_PLATFORM_FEATURE_COUNT + 2;
+
+	/**
+	 * The feature id for the '<em><b>Scheduler min container mem mb</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_YARN_CLUSTER__SCHEDULER_MIN_CONTAINER_MEM_MB = DDSM_MASTER_SLAVE_PLATFORM_FEATURE_COUNT + 3;
+
+	/**
+	 * The feature id for the '<em><b>Scheduler max container mem mb</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_YARN_CLUSTER__SCHEDULER_MAX_CONTAINER_MEM_MB = DDSM_MASTER_SLAVE_PLATFORM_FEATURE_COUNT + 4;
+
+	/**
+	 * The feature id for the '<em><b>Scheduler min container core num</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_YARN_CLUSTER__SCHEDULER_MIN_CONTAINER_CORE_NUM = DDSM_MASTER_SLAVE_PLATFORM_FEATURE_COUNT + 5;
+
+	/**
+	 * The feature id for the '<em><b>Scheduler max container core num</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_YARN_CLUSTER__SCHEDULER_MAX_CONTAINER_CORE_NUM = DDSM_MASTER_SLAVE_PLATFORM_FEATURE_COUNT + 6;
+
+	/**
+	 * The feature id for the '<em><b>Nodemanager available mem</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_YARN_CLUSTER__NODEMANAGER_AVAILABLE_MEM = DDSM_MASTER_SLAVE_PLATFORM_FEATURE_COUNT + 7;
+
+	/**
 	 * The number of structural features of the '<em>Ddsm Yarn Cluster</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_YARN_CLUSTER_FEATURE_COUNT = DDSM_MASTER_SLAVE_PLATFORM_FEATURE_COUNT + 1;
+	int DDSM_YARN_CLUSTER_FEATURE_COUNT = DDSM_MASTER_SLAVE_PLATFORM_FEATURE_COUNT + 8;
 
 	/**
 	 * The meta object id for the '{@link es.unizar.disco.dice.DDSM.impl.DdsmPeerToPeerPlatformImpl <em>Ddsm Peer To Peer Platform</em>}' class.
@@ -1216,6 +1324,24 @@ public interface DDSMPackage extends EPackage {
 	 * @ordered
 	 */
 	int DDSM_PEER_TO_PEER_PLATFORM__LANGUAGE = DDSM_INTERNAL_COMPONENT__LANGUAGE;
+
+	/**
+	 * The feature id for the '<em><b>Enable monitoring</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_PEER_TO_PEER_PLATFORM__ENABLE_MONITORING = DDSM_INTERNAL_COMPONENT__ENABLE_MONITORING;
+
+	/**
+	 * The feature id for the '<em><b>Firewall Rules</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_PEER_TO_PEER_PLATFORM__FIREWALL_RULES = DDSM_INTERNAL_COMPONENT__FIREWALL_RULES;
 
 	/**
 	 * The number of structural features of the '<em>Ddsm Peer To Peer Platform</em>' class.
@@ -1334,6 +1460,24 @@ public interface DDSMPackage extends EPackage {
 	 * @ordered
 	 */
 	int DDSM_ZOOKEEPER_CLUSTER__LANGUAGE = DDSM_PEER_TO_PEER_PLATFORM__LANGUAGE;
+
+	/**
+	 * The feature id for the '<em><b>Enable monitoring</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_ZOOKEEPER_CLUSTER__ENABLE_MONITORING = DDSM_PEER_TO_PEER_PLATFORM__ENABLE_MONITORING;
+
+	/**
+	 * The feature id for the '<em><b>Firewall Rules</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_ZOOKEEPER_CLUSTER__FIREWALL_RULES = DDSM_PEER_TO_PEER_PLATFORM__FIREWALL_RULES;
 
 	/**
 	 * The feature id for the '<em><b>Tick Time</b></em>' attribute.
@@ -1481,6 +1625,24 @@ public interface DDSMPackage extends EPackage {
 	int DDSM_KAFKA_CLUSTER__LANGUAGE = DDSM_PEER_TO_PEER_PLATFORM__LANGUAGE;
 
 	/**
+	 * The feature id for the '<em><b>Enable monitoring</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_KAFKA_CLUSTER__ENABLE_MONITORING = DDSM_PEER_TO_PEER_PLATFORM__ENABLE_MONITORING;
+
+	/**
+	 * The feature id for the '<em><b>Firewall Rules</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_KAFKA_CLUSTER__FIREWALL_RULES = DDSM_PEER_TO_PEER_PLATFORM__FIREWALL_RULES;
+
+	/**
 	 * The feature id for the '<em><b>Base Execution Environment</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1490,13 +1652,112 @@ public interface DDSMPackage extends EPackage {
 	int DDSM_KAFKA_CLUSTER__BASE_EXECUTION_ENVIRONMENT = DDSM_PEER_TO_PEER_PLATFORM_FEATURE_COUNT + 0;
 
 	/**
+	 * The feature id for the '<em><b>Enable topic deletion</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_KAFKA_CLUSTER__ENABLE_TOPIC_DELETION = DDSM_PEER_TO_PEER_PLATFORM_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Num network threads</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_KAFKA_CLUSTER__NUM_NETWORK_THREADS = DDSM_PEER_TO_PEER_PLATFORM_FEATURE_COUNT + 2;
+
+	/**
+	 * The feature id for the '<em><b>Num io threads</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_KAFKA_CLUSTER__NUM_IO_THREADS = DDSM_PEER_TO_PEER_PLATFORM_FEATURE_COUNT + 3;
+
+	/**
+	 * The feature id for the '<em><b>Num log partition per topic</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_KAFKA_CLUSTER__NUM_LOG_PARTITION_PER_TOPIC = DDSM_PEER_TO_PEER_PLATFORM_FEATURE_COUNT + 4;
+
+	/**
+	 * The feature id for the '<em><b>Num recovery threads per data dir</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_KAFKA_CLUSTER__NUM_RECOVERY_THREADS_PER_DATA_DIR = DDSM_PEER_TO_PEER_PLATFORM_FEATURE_COUNT + 5;
+
+	/**
+	 * The feature id for the '<em><b>Num messages for flush to disk</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_KAFKA_CLUSTER__NUM_MESSAGES_FOR_FLUSH_TO_DISK = DDSM_PEER_TO_PEER_PLATFORM_FEATURE_COUNT + 6;
+
+	/**
+	 * The feature id for the '<em><b>Max message sit time before flush ms</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_KAFKA_CLUSTER__MAX_MESSAGE_SIT_TIME_BEFORE_FLUSH_MS = DDSM_PEER_TO_PEER_PLATFORM_FEATURE_COUNT + 7;
+
+	/**
+	 * The feature id for the '<em><b>Enable topic auto creation</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_KAFKA_CLUSTER__ENABLE_TOPIC_AUTO_CREATION = DDSM_PEER_TO_PEER_PLATFORM_FEATURE_COUNT + 8;
+
+	/**
+	 * The feature id for the '<em><b>Enable leader rebalancing</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_KAFKA_CLUSTER__ENABLE_LEADER_REBALANCING = DDSM_PEER_TO_PEER_PLATFORM_FEATURE_COUNT + 9;
+
+	/**
+	 * The feature id for the '<em><b>Log retention hours</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_KAFKA_CLUSTER__LOG_RETENTION_HOURS = DDSM_PEER_TO_PEER_PLATFORM_FEATURE_COUNT + 10;
+
+	/**
+	 * The feature id for the '<em><b>Queued max requests</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_KAFKA_CLUSTER__QUEUED_MAX_REQUESTS = DDSM_PEER_TO_PEER_PLATFORM_FEATURE_COUNT + 11;
+
+	/**
 	 * The number of structural features of the '<em>Ddsm Kafka Cluster</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_KAFKA_CLUSTER_FEATURE_COUNT = DDSM_PEER_TO_PEER_PLATFORM_FEATURE_COUNT + 1;
+	int DDSM_KAFKA_CLUSTER_FEATURE_COUNT = DDSM_PEER_TO_PEER_PLATFORM_FEATURE_COUNT + 12;
 
 	/**
 	 * The meta object id for the '{@link es.unizar.disco.dice.DDSM.impl.DdsmStormClusterImpl <em>Ddsm Storm Cluster</em>}' class.
@@ -1606,6 +1867,24 @@ public interface DDSMPackage extends EPackage {
 	 * @ordered
 	 */
 	int DDSM_STORM_CLUSTER__LANGUAGE = DDSM_MASTER_SLAVE_PLATFORM__LANGUAGE;
+
+	/**
+	 * The feature id for the '<em><b>Enable monitoring</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_STORM_CLUSTER__ENABLE_MONITORING = DDSM_MASTER_SLAVE_PLATFORM__ENABLE_MONITORING;
+
+	/**
+	 * The feature id for the '<em><b>Firewall Rules</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_STORM_CLUSTER__FIREWALL_RULES = DDSM_MASTER_SLAVE_PLATFORM__FIREWALL_RULES;
 
 	/**
 	 * The feature id for the '<em><b>Master Host</b></em>' reference.
@@ -1817,7 +2096,7 @@ public interface DDSMPackage extends EPackage {
 	int DDSM_BIG_DATA_JOB__APPLICATION_NAME = 3;
 
 	/**
-	 * The feature id for the '<em><b>Arguments</b></em>' attribute.
+	 * The feature id for the '<em><b>Arguments</b></em>' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -1972,6 +2251,24 @@ public interface DDSMPackage extends EPackage {
 	int DDSM_HDFS_CLUSTER__LANGUAGE = DDSM_MASTER_SLAVE_PLATFORM__LANGUAGE;
 
 	/**
+	 * The feature id for the '<em><b>Enable monitoring</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_HDFS_CLUSTER__ENABLE_MONITORING = DDSM_MASTER_SLAVE_PLATFORM__ENABLE_MONITORING;
+
+	/**
+	 * The feature id for the '<em><b>Firewall Rules</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_HDFS_CLUSTER__FIREWALL_RULES = DDSM_MASTER_SLAVE_PLATFORM__FIREWALL_RULES;
+
+	/**
 	 * The feature id for the '<em><b>Master Host</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1981,13 +2278,94 @@ public interface DDSMPackage extends EPackage {
 	int DDSM_HDFS_CLUSTER__MASTER_HOST = DDSM_MASTER_SLAVE_PLATFORM__MASTER_HOST;
 
 	/**
+	 * The feature id for the '<em><b>Dfs blocksize</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_HDFS_CLUSTER__DFS_BLOCKSIZE = DDSM_MASTER_SLAVE_PLATFORM_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Namenode handler count</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_HDFS_CLUSTER__NAMENODE_HANDLER_COUNT = DDSM_MASTER_SLAVE_PLATFORM_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Datanode handler count</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_HDFS_CLUSTER__DATANODE_HANDLER_COUNT = DDSM_MASTER_SLAVE_PLATFORM_FEATURE_COUNT + 2;
+
+	/**
+	 * The feature id for the '<em><b>Namenode heartbeat recheck interval ms</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_HDFS_CLUSTER__NAMENODE_HEARTBEAT_RECHECK_INTERVAL_MS = DDSM_MASTER_SLAVE_PLATFORM_FEATURE_COUNT + 3;
+
+	/**
+	 * The feature id for the '<em><b>Permission enabled</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_HDFS_CLUSTER__PERMISSION_ENABLED = DDSM_MASTER_SLAVE_PLATFORM_FEATURE_COUNT + 4;
+
+	/**
+	 * The feature id for the '<em><b>Block replication</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_HDFS_CLUSTER__BLOCK_REPLICATION = DDSM_MASTER_SLAVE_PLATFORM_FEATURE_COUNT + 5;
+
+	/**
+	 * The feature id for the '<em><b>Blocksize bytes</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_HDFS_CLUSTER__BLOCKSIZE_BYTES = DDSM_MASTER_SLAVE_PLATFORM_FEATURE_COUNT + 6;
+
+	/**
+	 * The feature id for the '<em><b>Block write retries</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_HDFS_CLUSTER__BLOCK_WRITE_RETRIES = DDSM_MASTER_SLAVE_PLATFORM_FEATURE_COUNT + 7;
+
+	/**
+	 * The feature id for the '<em><b>Resource manager recovery enabled</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_HDFS_CLUSTER__RESOURCE_MANAGER_RECOVERY_ENABLED = DDSM_MASTER_SLAVE_PLATFORM_FEATURE_COUNT + 8;
+
+	/**
 	 * The number of structural features of the '<em>Ddsm Hdfs Cluster</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_HDFS_CLUSTER_FEATURE_COUNT = DDSM_MASTER_SLAVE_PLATFORM_FEATURE_COUNT + 0;
+	int DDSM_HDFS_CLUSTER_FEATURE_COUNT = DDSM_MASTER_SLAVE_PLATFORM_FEATURE_COUNT + 9;
 
 	/**
 	 * The meta object id for the '{@link es.unizar.disco.dice.DDSM.impl.DdsmCassandraClusterImpl <em>Ddsm Cassandra Cluster</em>}' class.
@@ -2099,6 +2477,24 @@ public interface DDSMPackage extends EPackage {
 	int DDSM_CASSANDRA_CLUSTER__LANGUAGE = DDSM_PEER_TO_PEER_PLATFORM__LANGUAGE;
 
 	/**
+	 * The feature id for the '<em><b>Enable monitoring</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_CASSANDRA_CLUSTER__ENABLE_MONITORING = DDSM_PEER_TO_PEER_PLATFORM__ENABLE_MONITORING;
+
+	/**
+	 * The feature id for the '<em><b>Firewall Rules</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_CASSANDRA_CLUSTER__FIREWALL_RULES = DDSM_PEER_TO_PEER_PLATFORM__FIREWALL_RULES;
+
+	/**
 	 * The feature id for the '<em><b>Seed Host</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2178,6 +2574,151 @@ public interface DDSMPackage extends EPackage {
 	 * @ordered
 	 */
 	int DDSM_CASSANDRA_CLUSTER_FEATURE_COUNT = DDSM_PEER_TO_PEER_PLATFORM_FEATURE_COUNT + 8;
+
+	/**
+	 * The meta object id for the '{@link es.unizar.disco.dice.DDSM.impl.DdsmSparkClusterImpl <em>Ddsm Spark Cluster</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see es.unizar.disco.dice.DDSM.impl.DdsmSparkClusterImpl
+	 * @see es.unizar.disco.dice.DDSM.impl.DDSMPackageImpl#getDdsmSparkCluster()
+	 * @generated
+	 */
+	int DDSM_SPARK_CLUSTER = 18;
+
+	/**
+	 * The feature id for the '<em><b>Description</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_SPARK_CLUSTER__DESCRIPTION = DDSM_MASTER_SLAVE_PLATFORM__DESCRIPTION;
+
+	/**
+	 * The feature id for the '<em><b>Properties List</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_SPARK_CLUSTER__PROPERTIES_LIST = DDSM_MASTER_SLAVE_PLATFORM__PROPERTIES_LIST;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_SPARK_CLUSTER__ID = DDSM_MASTER_SLAVE_PLATFORM__ID;
+
+	/**
+	 * The feature id for the '<em><b>Provided Ports List</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_SPARK_CLUSTER__PROVIDED_PORTS_LIST = DDSM_MASTER_SLAVE_PLATFORM__PROVIDED_PORTS_LIST;
+
+	/**
+	 * The feature id for the '<em><b>Required Port</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_SPARK_CLUSTER__REQUIRED_PORT = DDSM_MASTER_SLAVE_PLATFORM__REQUIRED_PORT;
+
+	/**
+	 * The feature id for the '<em><b>Is Front End</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_SPARK_CLUSTER__IS_FRONT_END = DDSM_MASTER_SLAVE_PLATFORM__IS_FRONT_END;
+
+	/**
+	 * The feature id for the '<em><b>Component Type</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_SPARK_CLUSTER__COMPONENT_TYPE = DDSM_MASTER_SLAVE_PLATFORM__COMPONENT_TYPE;
+
+	/**
+	 * The feature id for the '<em><b>Base Node</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_SPARK_CLUSTER__BASE_NODE = DDSM_MASTER_SLAVE_PLATFORM__BASE_NODE;
+
+	/**
+	 * The feature id for the '<em><b>Protected</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_SPARK_CLUSTER__PROTECTED = DDSM_MASTER_SLAVE_PLATFORM__PROTECTED;
+
+	/**
+	 * The feature id for the '<em><b>Launch script</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_SPARK_CLUSTER__LAUNCH_SCRIPT = DDSM_MASTER_SLAVE_PLATFORM__LAUNCH_SCRIPT;
+
+	/**
+	 * The feature id for the '<em><b>Language</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_SPARK_CLUSTER__LANGUAGE = DDSM_MASTER_SLAVE_PLATFORM__LANGUAGE;
+
+	/**
+	 * The feature id for the '<em><b>Enable monitoring</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_SPARK_CLUSTER__ENABLE_MONITORING = DDSM_MASTER_SLAVE_PLATFORM__ENABLE_MONITORING;
+
+	/**
+	 * The feature id for the '<em><b>Firewall Rules</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_SPARK_CLUSTER__FIREWALL_RULES = DDSM_MASTER_SLAVE_PLATFORM__FIREWALL_RULES;
+
+	/**
+	 * The feature id for the '<em><b>Master Host</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_SPARK_CLUSTER__MASTER_HOST = DDSM_MASTER_SLAVE_PLATFORM__MASTER_HOST;
+
+	/**
+	 * The number of structural features of the '<em>Ddsm Spark Cluster</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_SPARK_CLUSTER_FEATURE_COUNT = DDSM_MASTER_SLAVE_PLATFORM_FEATURE_COUNT + 0;
 
 
 	/**
@@ -2462,6 +3003,28 @@ public interface DDSMPackage extends EPackage {
 	EAttribute getDdsmInternalComponent_Language();
 
 	/**
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmInternalComponent#isEnable_monitoring <em>Enable monitoring</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Enable monitoring</em>'.
+	 * @see es.unizar.disco.dice.DDSM.DdsmInternalComponent#isEnable_monitoring()
+	 * @see #getDdsmInternalComponent()
+	 * @generated
+	 */
+	EAttribute getDdsmInternalComponent_Enable_monitoring();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link es.unizar.disco.dice.DDSM.DdsmInternalComponent#getFirewallRules <em>Firewall Rules</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Firewall Rules</em>'.
+	 * @see es.unizar.disco.dice.DDSM.DdsmInternalComponent#getFirewallRules()
+	 * @see #getDdsmInternalComponent()
+	 * @generated
+	 */
+	EReference getDdsmInternalComponent_FirewallRules();
+
+	/**
 	 * Returns the meta object for class '{@link es.unizar.disco.dice.DDSM.DdsmHeterogeneousCluster <em>Ddsm Heterogeneous Cluster</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2592,17 +3155,6 @@ public interface DDSMPackage extends EPackage {
 	EAttribute getDdsmVMsCluster_Os();
 
 	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmVMsCluster#getSecurityGroup <em>Security Group</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Security Group</em>'.
-	 * @see es.unizar.disco.dice.DDSM.DdsmVMsCluster#getSecurityGroup()
-	 * @see #getDdsmVMsCluster()
-	 * @generated
-	 */
-	EAttribute getDdsmVMsCluster_SecurityGroup();
-
-	/**
 	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmVMsCluster#getPrivateKey <em>Private Key</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2677,6 +3229,83 @@ public interface DDSMPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getDdsmYarnCluster_Base_ExecutionEnvironment();
+
+	/**
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmYarnCluster#isEnable_acl <em>Enable acl</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Enable acl</em>'.
+	 * @see es.unizar.disco.dice.DDSM.DdsmYarnCluster#isEnable_acl()
+	 * @see #getDdsmYarnCluster()
+	 * @generated
+	 */
+	EAttribute getDdsmYarnCluster_Enable_acl();
+
+	/**
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmYarnCluster#getScheduler_type <em>Scheduler type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Scheduler type</em>'.
+	 * @see es.unizar.disco.dice.DDSM.DdsmYarnCluster#getScheduler_type()
+	 * @see #getDdsmYarnCluster()
+	 * @generated
+	 */
+	EAttribute getDdsmYarnCluster_Scheduler_type();
+
+	/**
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmYarnCluster#getScheduler_min_container_mem_mb <em>Scheduler min container mem mb</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Scheduler min container mem mb</em>'.
+	 * @see es.unizar.disco.dice.DDSM.DdsmYarnCluster#getScheduler_min_container_mem_mb()
+	 * @see #getDdsmYarnCluster()
+	 * @generated
+	 */
+	EAttribute getDdsmYarnCluster_Scheduler_min_container_mem_mb();
+
+	/**
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmYarnCluster#getScheduler_max_container_mem_mb <em>Scheduler max container mem mb</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Scheduler max container mem mb</em>'.
+	 * @see es.unizar.disco.dice.DDSM.DdsmYarnCluster#getScheduler_max_container_mem_mb()
+	 * @see #getDdsmYarnCluster()
+	 * @generated
+	 */
+	EAttribute getDdsmYarnCluster_Scheduler_max_container_mem_mb();
+
+	/**
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmYarnCluster#getScheduler_min_container_core_num <em>Scheduler min container core num</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Scheduler min container core num</em>'.
+	 * @see es.unizar.disco.dice.DDSM.DdsmYarnCluster#getScheduler_min_container_core_num()
+	 * @see #getDdsmYarnCluster()
+	 * @generated
+	 */
+	EAttribute getDdsmYarnCluster_Scheduler_min_container_core_num();
+
+	/**
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmYarnCluster#getScheduler_max_container_core_num <em>Scheduler max container core num</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Scheduler max container core num</em>'.
+	 * @see es.unizar.disco.dice.DDSM.DdsmYarnCluster#getScheduler_max_container_core_num()
+	 * @see #getDdsmYarnCluster()
+	 * @generated
+	 */
+	EAttribute getDdsmYarnCluster_Scheduler_max_container_core_num();
+
+	/**
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmYarnCluster#getNodemanager_available_mem <em>Nodemanager available mem</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Nodemanager available mem</em>'.
+	 * @see es.unizar.disco.dice.DDSM.DdsmYarnCluster#getNodemanager_available_mem()
+	 * @see #getDdsmYarnCluster()
+	 * @generated
+	 */
+	EAttribute getDdsmYarnCluster_Nodemanager_available_mem();
 
 	/**
 	 * Returns the meta object for class '{@link es.unizar.disco.dice.DDSM.DdsmMasterSlavePlatform <em>Ddsm Master Slave Platform</em>}'.
@@ -2772,6 +3401,127 @@ public interface DDSMPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getDdsmKafkaCluster_Base_ExecutionEnvironment();
+
+	/**
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmKafkaCluster#isEnable_topic_deletion <em>Enable topic deletion</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Enable topic deletion</em>'.
+	 * @see es.unizar.disco.dice.DDSM.DdsmKafkaCluster#isEnable_topic_deletion()
+	 * @see #getDdsmKafkaCluster()
+	 * @generated
+	 */
+	EAttribute getDdsmKafkaCluster_Enable_topic_deletion();
+
+	/**
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmKafkaCluster#getNum_network_threads <em>Num network threads</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Num network threads</em>'.
+	 * @see es.unizar.disco.dice.DDSM.DdsmKafkaCluster#getNum_network_threads()
+	 * @see #getDdsmKafkaCluster()
+	 * @generated
+	 */
+	EAttribute getDdsmKafkaCluster_Num_network_threads();
+
+	/**
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmKafkaCluster#getNum_io_threads <em>Num io threads</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Num io threads</em>'.
+	 * @see es.unizar.disco.dice.DDSM.DdsmKafkaCluster#getNum_io_threads()
+	 * @see #getDdsmKafkaCluster()
+	 * @generated
+	 */
+	EAttribute getDdsmKafkaCluster_Num_io_threads();
+
+	/**
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmKafkaCluster#getNum_log_partition_per_topic <em>Num log partition per topic</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Num log partition per topic</em>'.
+	 * @see es.unizar.disco.dice.DDSM.DdsmKafkaCluster#getNum_log_partition_per_topic()
+	 * @see #getDdsmKafkaCluster()
+	 * @generated
+	 */
+	EAttribute getDdsmKafkaCluster_Num_log_partition_per_topic();
+
+	/**
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmKafkaCluster#getNum_recovery_threads_per_data_dir <em>Num recovery threads per data dir</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Num recovery threads per data dir</em>'.
+	 * @see es.unizar.disco.dice.DDSM.DdsmKafkaCluster#getNum_recovery_threads_per_data_dir()
+	 * @see #getDdsmKafkaCluster()
+	 * @generated
+	 */
+	EAttribute getDdsmKafkaCluster_Num_recovery_threads_per_data_dir();
+
+	/**
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmKafkaCluster#getNum_messages_for_flush_to_disk <em>Num messages for flush to disk</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Num messages for flush to disk</em>'.
+	 * @see es.unizar.disco.dice.DDSM.DdsmKafkaCluster#getNum_messages_for_flush_to_disk()
+	 * @see #getDdsmKafkaCluster()
+	 * @generated
+	 */
+	EAttribute getDdsmKafkaCluster_Num_messages_for_flush_to_disk();
+
+	/**
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmKafkaCluster#getMax_message_sit_time_before_flush_ms <em>Max message sit time before flush ms</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Max message sit time before flush ms</em>'.
+	 * @see es.unizar.disco.dice.DDSM.DdsmKafkaCluster#getMax_message_sit_time_before_flush_ms()
+	 * @see #getDdsmKafkaCluster()
+	 * @generated
+	 */
+	EAttribute getDdsmKafkaCluster_Max_message_sit_time_before_flush_ms();
+
+	/**
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmKafkaCluster#isEnable_topic_auto_creation <em>Enable topic auto creation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Enable topic auto creation</em>'.
+	 * @see es.unizar.disco.dice.DDSM.DdsmKafkaCluster#isEnable_topic_auto_creation()
+	 * @see #getDdsmKafkaCluster()
+	 * @generated
+	 */
+	EAttribute getDdsmKafkaCluster_Enable_topic_auto_creation();
+
+	/**
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmKafkaCluster#isEnable_leader_rebalancing <em>Enable leader rebalancing</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Enable leader rebalancing</em>'.
+	 * @see es.unizar.disco.dice.DDSM.DdsmKafkaCluster#isEnable_leader_rebalancing()
+	 * @see #getDdsmKafkaCluster()
+	 * @generated
+	 */
+	EAttribute getDdsmKafkaCluster_Enable_leader_rebalancing();
+
+	/**
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmKafkaCluster#getLog_retention_hours <em>Log retention hours</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Log retention hours</em>'.
+	 * @see es.unizar.disco.dice.DDSM.DdsmKafkaCluster#getLog_retention_hours()
+	 * @see #getDdsmKafkaCluster()
+	 * @generated
+	 */
+	EAttribute getDdsmKafkaCluster_Log_retention_hours();
+
+	/**
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmKafkaCluster#getQueued_max_requests <em>Queued max requests</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Queued max requests</em>'.
+	 * @see es.unizar.disco.dice.DDSM.DdsmKafkaCluster#getQueued_max_requests()
+	 * @see #getDdsmKafkaCluster()
+	 * @generated
+	 */
+	EAttribute getDdsmKafkaCluster_Queued_max_requests();
 
 	/**
 	 * Returns the meta object for class '{@link es.unizar.disco.dice.DDSM.DdsmStormCluster <em>Ddsm Storm Cluster</em>}'.
@@ -3002,10 +3752,10 @@ public interface DDSMPackage extends EPackage {
 	EAttribute getDdsmBigDataJob_Application_name();
 
 	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmBigDataJob#getArguments <em>Arguments</em>}'.
+	 * Returns the meta object for the attribute list '{@link es.unizar.disco.dice.DDSM.DdsmBigDataJob#getArguments <em>Arguments</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Arguments</em>'.
+	 * @return the meta object for the attribute list '<em>Arguments</em>'.
 	 * @see es.unizar.disco.dice.DDSM.DdsmBigDataJob#getArguments()
 	 * @see #getDdsmBigDataJob()
 	 * @generated
@@ -3042,6 +3792,105 @@ public interface DDSMPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getDdsmHdfsCluster();
+
+	/**
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmHdfsCluster#getDfs_blocksize <em>Dfs blocksize</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Dfs blocksize</em>'.
+	 * @see es.unizar.disco.dice.DDSM.DdsmHdfsCluster#getDfs_blocksize()
+	 * @see #getDdsmHdfsCluster()
+	 * @generated
+	 */
+	EAttribute getDdsmHdfsCluster_Dfs_blocksize();
+
+	/**
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmHdfsCluster#getNamenode_handler_count <em>Namenode handler count</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Namenode handler count</em>'.
+	 * @see es.unizar.disco.dice.DDSM.DdsmHdfsCluster#getNamenode_handler_count()
+	 * @see #getDdsmHdfsCluster()
+	 * @generated
+	 */
+	EAttribute getDdsmHdfsCluster_Namenode_handler_count();
+
+	/**
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmHdfsCluster#getDatanode_handler_count <em>Datanode handler count</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Datanode handler count</em>'.
+	 * @see es.unizar.disco.dice.DDSM.DdsmHdfsCluster#getDatanode_handler_count()
+	 * @see #getDdsmHdfsCluster()
+	 * @generated
+	 */
+	EAttribute getDdsmHdfsCluster_Datanode_handler_count();
+
+	/**
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmHdfsCluster#getNamenode_heartbeat_recheck_interval_ms <em>Namenode heartbeat recheck interval ms</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Namenode heartbeat recheck interval ms</em>'.
+	 * @see es.unizar.disco.dice.DDSM.DdsmHdfsCluster#getNamenode_heartbeat_recheck_interval_ms()
+	 * @see #getDdsmHdfsCluster()
+	 * @generated
+	 */
+	EAttribute getDdsmHdfsCluster_Namenode_heartbeat_recheck_interval_ms();
+
+	/**
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmHdfsCluster#isPermission_enabled <em>Permission enabled</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Permission enabled</em>'.
+	 * @see es.unizar.disco.dice.DDSM.DdsmHdfsCluster#isPermission_enabled()
+	 * @see #getDdsmHdfsCluster()
+	 * @generated
+	 */
+	EAttribute getDdsmHdfsCluster_Permission_enabled();
+
+	/**
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmHdfsCluster#getBlock_replication <em>Block replication</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Block replication</em>'.
+	 * @see es.unizar.disco.dice.DDSM.DdsmHdfsCluster#getBlock_replication()
+	 * @see #getDdsmHdfsCluster()
+	 * @generated
+	 */
+	EAttribute getDdsmHdfsCluster_Block_replication();
+
+	/**
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmHdfsCluster#getBlocksize_bytes <em>Blocksize bytes</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Blocksize bytes</em>'.
+	 * @see es.unizar.disco.dice.DDSM.DdsmHdfsCluster#getBlocksize_bytes()
+	 * @see #getDdsmHdfsCluster()
+	 * @generated
+	 */
+	EAttribute getDdsmHdfsCluster_Blocksize_bytes();
+
+	/**
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmHdfsCluster#getBlock_write_retries <em>Block write retries</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Block write retries</em>'.
+	 * @see es.unizar.disco.dice.DDSM.DdsmHdfsCluster#getBlock_write_retries()
+	 * @see #getDdsmHdfsCluster()
+	 * @generated
+	 */
+	EAttribute getDdsmHdfsCluster_Block_write_retries();
+
+	/**
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmHdfsCluster#isResource_manager_recovery_enabled <em>Resource manager recovery enabled</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Resource manager recovery enabled</em>'.
+	 * @see es.unizar.disco.dice.DDSM.DdsmHdfsCluster#isResource_manager_recovery_enabled()
+	 * @see #getDdsmHdfsCluster()
+	 * @generated
+	 */
+	EAttribute getDdsmHdfsCluster_Resource_manager_recovery_enabled();
 
 	/**
 	 * Returns the meta object for class '{@link es.unizar.disco.dice.DDSM.DdsmCassandraCluster <em>Ddsm Cassandra Cluster</em>}'.
@@ -3140,6 +3989,16 @@ public interface DDSMPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getDdsmCassandraCluster_Permission_validity_in_ms();
+
+	/**
+	 * Returns the meta object for class '{@link es.unizar.disco.dice.DDSM.DdsmSparkCluster <em>Ddsm Spark Cluster</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Ddsm Spark Cluster</em>'.
+	 * @see es.unizar.disco.dice.DDSM.DdsmSparkCluster
+	 * @generated
+	 */
+	EClass getDdsmSparkCluster();
 
 	/**
 	 * Returns the factory that creates the instances of the model.
@@ -3382,6 +4241,22 @@ public interface DDSMPackage extends EPackage {
 		EAttribute DDSM_INTERNAL_COMPONENT__LANGUAGE = eINSTANCE.getDdsmInternalComponent_Language();
 
 		/**
+		 * The meta object literal for the '<em><b>Enable monitoring</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DDSM_INTERNAL_COMPONENT__ENABLE_MONITORING = eINSTANCE.getDdsmInternalComponent_Enable_monitoring();
+
+		/**
+		 * The meta object literal for the '<em><b>Firewall Rules</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DDSM_INTERNAL_COMPONENT__FIREWALL_RULES = eINSTANCE.getDdsmInternalComponent_FirewallRules();
+
+		/**
 		 * The meta object literal for the '{@link es.unizar.disco.dice.DDSM.impl.DdsmHeterogeneousClusterImpl <em>Ddsm Heterogeneous Cluster</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -3482,14 +4357,6 @@ public interface DDSMPackage extends EPackage {
 		EAttribute DDSM_VMS_CLUSTER__OS = eINSTANCE.getDdsmVMsCluster_Os();
 
 		/**
-		 * The meta object literal for the '<em><b>Security Group</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute DDSM_VMS_CLUSTER__SECURITY_GROUP = eINSTANCE.getDdsmVMsCluster_SecurityGroup();
-
-		/**
 		 * The meta object literal for the '<em><b>Private Key</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -3546,6 +4413,62 @@ public interface DDSMPackage extends EPackage {
 		 * @generated
 		 */
 		EReference DDSM_YARN_CLUSTER__BASE_EXECUTION_ENVIRONMENT = eINSTANCE.getDdsmYarnCluster_Base_ExecutionEnvironment();
+
+		/**
+		 * The meta object literal for the '<em><b>Enable acl</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DDSM_YARN_CLUSTER__ENABLE_ACL = eINSTANCE.getDdsmYarnCluster_Enable_acl();
+
+		/**
+		 * The meta object literal for the '<em><b>Scheduler type</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DDSM_YARN_CLUSTER__SCHEDULER_TYPE = eINSTANCE.getDdsmYarnCluster_Scheduler_type();
+
+		/**
+		 * The meta object literal for the '<em><b>Scheduler min container mem mb</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DDSM_YARN_CLUSTER__SCHEDULER_MIN_CONTAINER_MEM_MB = eINSTANCE.getDdsmYarnCluster_Scheduler_min_container_mem_mb();
+
+		/**
+		 * The meta object literal for the '<em><b>Scheduler max container mem mb</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DDSM_YARN_CLUSTER__SCHEDULER_MAX_CONTAINER_MEM_MB = eINSTANCE.getDdsmYarnCluster_Scheduler_max_container_mem_mb();
+
+		/**
+		 * The meta object literal for the '<em><b>Scheduler min container core num</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DDSM_YARN_CLUSTER__SCHEDULER_MIN_CONTAINER_CORE_NUM = eINSTANCE.getDdsmYarnCluster_Scheduler_min_container_core_num();
+
+		/**
+		 * The meta object literal for the '<em><b>Scheduler max container core num</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DDSM_YARN_CLUSTER__SCHEDULER_MAX_CONTAINER_CORE_NUM = eINSTANCE.getDdsmYarnCluster_Scheduler_max_container_core_num();
+
+		/**
+		 * The meta object literal for the '<em><b>Nodemanager available mem</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DDSM_YARN_CLUSTER__NODEMANAGER_AVAILABLE_MEM = eINSTANCE.getDdsmYarnCluster_Nodemanager_available_mem();
 
 		/**
 		 * The meta object literal for the '{@link es.unizar.disco.dice.DDSM.impl.DdsmMasterSlavePlatformImpl <em>Ddsm Master Slave Platform</em>}' class.
@@ -3626,6 +4549,94 @@ public interface DDSMPackage extends EPackage {
 		 * @generated
 		 */
 		EReference DDSM_KAFKA_CLUSTER__BASE_EXECUTION_ENVIRONMENT = eINSTANCE.getDdsmKafkaCluster_Base_ExecutionEnvironment();
+
+		/**
+		 * The meta object literal for the '<em><b>Enable topic deletion</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DDSM_KAFKA_CLUSTER__ENABLE_TOPIC_DELETION = eINSTANCE.getDdsmKafkaCluster_Enable_topic_deletion();
+
+		/**
+		 * The meta object literal for the '<em><b>Num network threads</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DDSM_KAFKA_CLUSTER__NUM_NETWORK_THREADS = eINSTANCE.getDdsmKafkaCluster_Num_network_threads();
+
+		/**
+		 * The meta object literal for the '<em><b>Num io threads</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DDSM_KAFKA_CLUSTER__NUM_IO_THREADS = eINSTANCE.getDdsmKafkaCluster_Num_io_threads();
+
+		/**
+		 * The meta object literal for the '<em><b>Num log partition per topic</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DDSM_KAFKA_CLUSTER__NUM_LOG_PARTITION_PER_TOPIC = eINSTANCE.getDdsmKafkaCluster_Num_log_partition_per_topic();
+
+		/**
+		 * The meta object literal for the '<em><b>Num recovery threads per data dir</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DDSM_KAFKA_CLUSTER__NUM_RECOVERY_THREADS_PER_DATA_DIR = eINSTANCE.getDdsmKafkaCluster_Num_recovery_threads_per_data_dir();
+
+		/**
+		 * The meta object literal for the '<em><b>Num messages for flush to disk</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DDSM_KAFKA_CLUSTER__NUM_MESSAGES_FOR_FLUSH_TO_DISK = eINSTANCE.getDdsmKafkaCluster_Num_messages_for_flush_to_disk();
+
+		/**
+		 * The meta object literal for the '<em><b>Max message sit time before flush ms</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DDSM_KAFKA_CLUSTER__MAX_MESSAGE_SIT_TIME_BEFORE_FLUSH_MS = eINSTANCE.getDdsmKafkaCluster_Max_message_sit_time_before_flush_ms();
+
+		/**
+		 * The meta object literal for the '<em><b>Enable topic auto creation</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DDSM_KAFKA_CLUSTER__ENABLE_TOPIC_AUTO_CREATION = eINSTANCE.getDdsmKafkaCluster_Enable_topic_auto_creation();
+
+		/**
+		 * The meta object literal for the '<em><b>Enable leader rebalancing</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DDSM_KAFKA_CLUSTER__ENABLE_LEADER_REBALANCING = eINSTANCE.getDdsmKafkaCluster_Enable_leader_rebalancing();
+
+		/**
+		 * The meta object literal for the '<em><b>Log retention hours</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DDSM_KAFKA_CLUSTER__LOG_RETENTION_HOURS = eINSTANCE.getDdsmKafkaCluster_Log_retention_hours();
+
+		/**
+		 * The meta object literal for the '<em><b>Queued max requests</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DDSM_KAFKA_CLUSTER__QUEUED_MAX_REQUESTS = eINSTANCE.getDdsmKafkaCluster_Queued_max_requests();
 
 		/**
 		 * The meta object literal for the '{@link es.unizar.disco.dice.DDSM.impl.DdsmStormClusterImpl <em>Ddsm Storm Cluster</em>}' class.
@@ -3802,7 +4813,7 @@ public interface DDSMPackage extends EPackage {
 		EAttribute DDSM_BIG_DATA_JOB__APPLICATION_NAME = eINSTANCE.getDdsmBigDataJob_Application_name();
 
 		/**
-		 * The meta object literal for the '<em><b>Arguments</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>Arguments</b></em>' attribute list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
@@ -3836,6 +4847,78 @@ public interface DDSMPackage extends EPackage {
 		 * @generated
 		 */
 		EClass DDSM_HDFS_CLUSTER = eINSTANCE.getDdsmHdfsCluster();
+
+		/**
+		 * The meta object literal for the '<em><b>Dfs blocksize</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DDSM_HDFS_CLUSTER__DFS_BLOCKSIZE = eINSTANCE.getDdsmHdfsCluster_Dfs_blocksize();
+
+		/**
+		 * The meta object literal for the '<em><b>Namenode handler count</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DDSM_HDFS_CLUSTER__NAMENODE_HANDLER_COUNT = eINSTANCE.getDdsmHdfsCluster_Namenode_handler_count();
+
+		/**
+		 * The meta object literal for the '<em><b>Datanode handler count</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DDSM_HDFS_CLUSTER__DATANODE_HANDLER_COUNT = eINSTANCE.getDdsmHdfsCluster_Datanode_handler_count();
+
+		/**
+		 * The meta object literal for the '<em><b>Namenode heartbeat recheck interval ms</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DDSM_HDFS_CLUSTER__NAMENODE_HEARTBEAT_RECHECK_INTERVAL_MS = eINSTANCE.getDdsmHdfsCluster_Namenode_heartbeat_recheck_interval_ms();
+
+		/**
+		 * The meta object literal for the '<em><b>Permission enabled</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DDSM_HDFS_CLUSTER__PERMISSION_ENABLED = eINSTANCE.getDdsmHdfsCluster_Permission_enabled();
+
+		/**
+		 * The meta object literal for the '<em><b>Block replication</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DDSM_HDFS_CLUSTER__BLOCK_REPLICATION = eINSTANCE.getDdsmHdfsCluster_Block_replication();
+
+		/**
+		 * The meta object literal for the '<em><b>Blocksize bytes</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DDSM_HDFS_CLUSTER__BLOCKSIZE_BYTES = eINSTANCE.getDdsmHdfsCluster_Blocksize_bytes();
+
+		/**
+		 * The meta object literal for the '<em><b>Block write retries</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DDSM_HDFS_CLUSTER__BLOCK_WRITE_RETRIES = eINSTANCE.getDdsmHdfsCluster_Block_write_retries();
+
+		/**
+		 * The meta object literal for the '<em><b>Resource manager recovery enabled</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DDSM_HDFS_CLUSTER__RESOURCE_MANAGER_RECOVERY_ENABLED = eINSTANCE.getDdsmHdfsCluster_Resource_manager_recovery_enabled();
 
 		/**
 		 * The meta object literal for the '{@link es.unizar.disco.dice.DDSM.impl.DdsmCassandraClusterImpl <em>Ddsm Cassandra Cluster</em>}' class.
@@ -3910,6 +4993,16 @@ public interface DDSMPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute DDSM_CASSANDRA_CLUSTER__PERMISSION_VALIDITY_IN_MS = eINSTANCE.getDdsmCassandraCluster_Permission_validity_in_ms();
+
+		/**
+		 * The meta object literal for the '{@link es.unizar.disco.dice.DDSM.impl.DdsmSparkClusterImpl <em>Ddsm Spark Cluster</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see es.unizar.disco.dice.DDSM.impl.DdsmSparkClusterImpl
+		 * @see es.unizar.disco.dice.DDSM.impl.DDSMPackageImpl#getDdsmSparkCluster()
+		 * @generated
+		 */
+		EClass DDSM_SPARK_CLUSTER = eINSTANCE.getDdsmSparkCluster();
 
 	}
 

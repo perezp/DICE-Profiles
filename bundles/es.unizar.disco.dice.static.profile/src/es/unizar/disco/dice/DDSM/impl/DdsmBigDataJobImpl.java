@@ -5,13 +5,19 @@ package es.unizar.disco.dice.DDSM.impl;
 import es.unizar.disco.dice.DDSM.DDSMPackage;
 import es.unizar.disco.dice.DDSM.DdsmBigDataJob;
 
+import java.util.Collection;
+
 import org.eclipse.emf.common.notify.Notification;
+
+import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
+
+import org.eclipse.emf.ecore.util.EDataTypeUniqueEList;
 
 import org.eclipse.uml2.uml.Artifact;
 
@@ -104,24 +110,14 @@ public class DdsmBigDataJobImpl extends MinimalEObjectImpl.Container implements 
 	protected String application_name = APPLICATION_NAME_EDEFAULT;
 
 	/**
-	 * The default value of the '{@link #getArguments() <em>Arguments</em>}' attribute.
+	 * The cached value of the '{@link #getArguments() <em>Arguments</em>}' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getArguments()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String ARGUMENTS_EDEFAULT = null;
-
-	/**
-	 * The cached value of the '{@link #getArguments() <em>Arguments</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getArguments()
-	 * @generated
-	 * @ordered
-	 */
-	protected String arguments = ARGUMENTS_EDEFAULT;
+	protected EList<String> arguments;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -248,20 +244,11 @@ public class DdsmBigDataJobImpl extends MinimalEObjectImpl.Container implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getArguments() {
+	public EList<String> getArguments() {
+		if (arguments == null) {
+			arguments = new EDataTypeUniqueEList<String>(String.class, this, DDSMPackage.DDSM_BIG_DATA_JOB__ARGUMENTS);
+		}
 		return arguments;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setArguments(String newArguments) {
-		String oldArguments = arguments;
-		arguments = newArguments;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, DDSMPackage.DDSM_BIG_DATA_JOB__ARGUMENTS, oldArguments, arguments));
 	}
 
 	/**
@@ -292,6 +279,7 @@ public class DdsmBigDataJobImpl extends MinimalEObjectImpl.Container implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@SuppressWarnings("unchecked")
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
@@ -308,7 +296,8 @@ public class DdsmBigDataJobImpl extends MinimalEObjectImpl.Container implements 
 				setApplication_name((String)newValue);
 				return;
 			case DDSMPackage.DDSM_BIG_DATA_JOB__ARGUMENTS:
-				setArguments((String)newValue);
+				getArguments().clear();
+				getArguments().addAll((Collection<? extends String>)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -335,7 +324,7 @@ public class DdsmBigDataJobImpl extends MinimalEObjectImpl.Container implements 
 				setApplication_name(APPLICATION_NAME_EDEFAULT);
 				return;
 			case DDSMPackage.DDSM_BIG_DATA_JOB__ARGUMENTS:
-				setArguments(ARGUMENTS_EDEFAULT);
+				getArguments().clear();
 				return;
 		}
 		super.eUnset(featureID);
@@ -358,7 +347,7 @@ public class DdsmBigDataJobImpl extends MinimalEObjectImpl.Container implements 
 			case DDSMPackage.DDSM_BIG_DATA_JOB__APPLICATION_NAME:
 				return APPLICATION_NAME_EDEFAULT == null ? application_name != null : !APPLICATION_NAME_EDEFAULT.equals(application_name);
 			case DDSMPackage.DDSM_BIG_DATA_JOB__ARGUMENTS:
-				return ARGUMENTS_EDEFAULT == null ? arguments != null : !ARGUMENTS_EDEFAULT.equals(arguments);
+				return arguments != null && !arguments.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}

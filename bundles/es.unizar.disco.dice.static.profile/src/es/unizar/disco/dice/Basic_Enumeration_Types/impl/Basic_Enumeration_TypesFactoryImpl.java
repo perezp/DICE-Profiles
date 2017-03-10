@@ -100,6 +100,14 @@ public class Basic_Enumeration_TypesFactoryImpl extends EFactoryImpl implements 
 				return createProviderTypeFromString(eDataType, initialValue);
 			case Basic_Enumeration_TypesPackage.DDS_MCOMPONENT_TYPE:
 				return createDDSMcomponentTypeFromString(eDataType, initialValue);
+			case Basic_Enumeration_TypesPackage.SPARK_REDUCE:
+				return createSparkReduceFromString(eDataType, initialValue);
+			case Basic_Enumeration_TypesPackage.SPARK_MAP:
+				return createSparkMapFromString(eDataType, initialValue);
+			case Basic_Enumeration_TypesPackage.SPARK_OPERATION:
+				return createSparkOperationFromString(eDataType, initialValue);
+			case Basic_Enumeration_TypesPackage.LANGUAGE_TYPE:
+				return createLanguageTypeFromString(eDataType, initialValue);
 			case Basic_Enumeration_TypesPackage.COMPUTATION_TYPE:
 				return createComputationTypeFromString(eDataType, initialValue);
 			default:
@@ -145,6 +153,14 @@ public class Basic_Enumeration_TypesFactoryImpl extends EFactoryImpl implements 
 				return convertProviderTypeToString(eDataType, instanceValue);
 			case Basic_Enumeration_TypesPackage.DDS_MCOMPONENT_TYPE:
 				return convertDDSMcomponentTypeToString(eDataType, instanceValue);
+			case Basic_Enumeration_TypesPackage.SPARK_REDUCE:
+				return convertSparkReduceToString(eDataType, instanceValue);
+			case Basic_Enumeration_TypesPackage.SPARK_MAP:
+				return convertSparkMapToString(eDataType, instanceValue);
+			case Basic_Enumeration_TypesPackage.SPARK_OPERATION:
+				return convertSparkOperationToString(eDataType, instanceValue);
+			case Basic_Enumeration_TypesPackage.LANGUAGE_TYPE:
+				return convertLanguageTypeToString(eDataType, instanceValue);
 			case Basic_Enumeration_TypesPackage.COMPUTATION_TYPE:
 				return convertComputationTypeToString(eDataType, instanceValue);
 			default:
@@ -449,6 +465,86 @@ public class Basic_Enumeration_TypesFactoryImpl extends EFactoryImpl implements 
 	 * @generated
 	 */
 	public String convertDDSMcomponentTypeToString(EDataType eDataType, Object instanceValue) {
+		return instanceValue == null ? null : instanceValue.toString();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public SparkReduce createSparkReduceFromString(EDataType eDataType, String initialValue) {
+		SparkReduce result = SparkReduce.get(initialValue);
+		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+		return result;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String convertSparkReduceToString(EDataType eDataType, Object instanceValue) {
+		return instanceValue == null ? null : instanceValue.toString();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public SparkMap createSparkMapFromString(EDataType eDataType, String initialValue) {
+		SparkMap result = SparkMap.get(initialValue);
+		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+		return result;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String convertSparkMapToString(EDataType eDataType, Object instanceValue) {
+		return instanceValue == null ? null : instanceValue.toString();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public SparkOperation createSparkOperationFromString(EDataType eDataType, String initialValue) {
+		SparkOperation result = SparkOperation.get(initialValue);
+		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+		return result;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String convertSparkOperationToString(EDataType eDataType, Object instanceValue) {
+		return instanceValue == null ? null : instanceValue.toString();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public LanguageType createLanguageTypeFromString(EDataType eDataType, String initialValue) {
+		LanguageType result = LanguageType.get(initialValue);
+		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+		return result;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String convertLanguageTypeToString(EDataType eDataType, Object instanceValue) {
 		return instanceValue == null ? null : instanceValue.toString();
 	}
 
