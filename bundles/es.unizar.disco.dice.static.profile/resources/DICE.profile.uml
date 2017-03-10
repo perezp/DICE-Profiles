@@ -154,8 +154,8 @@
             </ownedAttribute>
           </packagedElement>
           <packagedElement xmi:type="uml:Stereotype" xmi:id="_2HB5kCluEeaibdPncpUwfA" name="CoreDirectAcyclicGraph" isAbstract="true">
-            <generalization xmi:type="uml:Generalization" xmi:id="_LnTawC5qEeaF_sH3mLTVKg">
-              <general xmi:type="uml:Stereotype" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_XYaMIBKYEdyGYuetzx6T5A"/>
+            <generalization xmi:type="uml:Generalization" xmi:id="_-jgaYAWbEee6F_uL6ESNCQ">
+              <general xmi:type="uml:Stereotype" href="pathmap://DAM_PROFILES/DAM.profile.uml#_UMuEIOPvEeKfvsJiOXhpew"/>
             </generalization>
             <ownedAttribute xmi:type="uml:Property" xmi:id="_5tJY4CpkEeaibdPncpUwfA" name="hasSourceNode" type="_9mn3oCluEeaibdPncpUwfA">
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2egq8CpqEeaibdPncpUwfA" value="1"/>
