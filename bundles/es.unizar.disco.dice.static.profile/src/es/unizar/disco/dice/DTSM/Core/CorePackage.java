@@ -574,7 +574,7 @@ public interface CorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CORE_DIRECT_ACYCLIC_GRAPH__EXEC_TIME = GQAMPackage.GA_SCENARIO__EXEC_TIME;
+	int CORE_DIRECT_ACYCLIC_GRAPH__EXEC_TIME = com.masdes.dam.Core.CorePackage.DA_SERVICE__EXEC_TIME;
 
 	/**
 	 * The feature id for the '<em><b>Allocated Memory</b></em>' attribute list.
@@ -583,7 +583,7 @@ public interface CorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CORE_DIRECT_ACYCLIC_GRAPH__ALLOCATED_MEMORY = GQAMPackage.GA_SCENARIO__ALLOCATED_MEMORY;
+	int CORE_DIRECT_ACYCLIC_GRAPH__ALLOCATED_MEMORY = com.masdes.dam.Core.CorePackage.DA_SERVICE__ALLOCATED_MEMORY;
 
 	/**
 	 * The feature id for the '<em><b>Used Memory</b></em>' attribute list.
@@ -592,7 +592,7 @@ public interface CorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CORE_DIRECT_ACYCLIC_GRAPH__USED_MEMORY = GQAMPackage.GA_SCENARIO__USED_MEMORY;
+	int CORE_DIRECT_ACYCLIC_GRAPH__USED_MEMORY = com.masdes.dam.Core.CorePackage.DA_SERVICE__USED_MEMORY;
 
 	/**
 	 * The feature id for the '<em><b>Power Peak</b></em>' attribute list.
@@ -601,7 +601,7 @@ public interface CorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CORE_DIRECT_ACYCLIC_GRAPH__POWER_PEAK = GQAMPackage.GA_SCENARIO__POWER_PEAK;
+	int CORE_DIRECT_ACYCLIC_GRAPH__POWER_PEAK = com.masdes.dam.Core.CorePackage.DA_SERVICE__POWER_PEAK;
 
 	/**
 	 * The feature id for the '<em><b>Energy</b></em>' attribute list.
@@ -610,7 +610,7 @@ public interface CorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CORE_DIRECT_ACYCLIC_GRAPH__ENERGY = GQAMPackage.GA_SCENARIO__ENERGY;
+	int CORE_DIRECT_ACYCLIC_GRAPH__ENERGY = com.masdes.dam.Core.CorePackage.DA_SERVICE__ENERGY;
 
 	/**
 	 * The feature id for the '<em><b>Base Named Element</b></em>' reference.
@@ -619,7 +619,7 @@ public interface CorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CORE_DIRECT_ACYCLIC_GRAPH__BASE_NAMED_ELEMENT = GQAMPackage.GA_SCENARIO__BASE_NAMED_ELEMENT;
+	int CORE_DIRECT_ACYCLIC_GRAPH__BASE_NAMED_ELEMENT = com.masdes.dam.Core.CorePackage.DA_SERVICE__BASE_NAMED_ELEMENT;
 
 	/**
 	 * The feature id for the '<em><b>Sub Usage</b></em>' reference list.
@@ -628,7 +628,7 @@ public interface CorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CORE_DIRECT_ACYCLIC_GRAPH__SUB_USAGE = GQAMPackage.GA_SCENARIO__SUB_USAGE;
+	int CORE_DIRECT_ACYCLIC_GRAPH__SUB_USAGE = com.masdes.dam.Core.CorePackage.DA_SERVICE__SUB_USAGE;
 
 	/**
 	 * The feature id for the '<em><b>Used Resources</b></em>' reference list.
@@ -637,7 +637,7 @@ public interface CorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CORE_DIRECT_ACYCLIC_GRAPH__USED_RESOURCES = GQAMPackage.GA_SCENARIO__USED_RESOURCES;
+	int CORE_DIRECT_ACYCLIC_GRAPH__USED_RESOURCES = com.masdes.dam.Core.CorePackage.DA_SERVICE__USED_RESOURCES;
 
 	/**
 	 * The feature id for the '<em><b>Msg Size</b></em>' attribute list.
@@ -646,7 +646,7 @@ public interface CorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CORE_DIRECT_ACYCLIC_GRAPH__MSG_SIZE = GQAMPackage.GA_SCENARIO__MSG_SIZE;
+	int CORE_DIRECT_ACYCLIC_GRAPH__MSG_SIZE = com.masdes.dam.Core.CorePackage.DA_SERVICE__MSG_SIZE;
 
 	/**
 	 * The feature id for the '<em><b>On</b></em>' reference list.
@@ -655,7 +655,7 @@ public interface CorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CORE_DIRECT_ACYCLIC_GRAPH__ON = GQAMPackage.GA_SCENARIO__ON;
+	int CORE_DIRECT_ACYCLIC_GRAPH__ON = com.masdes.dam.Core.CorePackage.DA_SERVICE__ON;
 
 	/**
 	 * The feature id for the '<em><b>Base Action</b></em>' reference.
@@ -664,7 +664,7 @@ public interface CorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CORE_DIRECT_ACYCLIC_GRAPH__BASE_ACTION = GQAMPackage.GA_SCENARIO__BASE_ACTION;
+	int CORE_DIRECT_ACYCLIC_GRAPH__BASE_ACTION = com.masdes.dam.Core.CorePackage.DA_SERVICE__BASE_ACTION;
 
 	/**
 	 * The feature id for the '<em><b>Base Behavior</b></em>' reference.
@@ -673,7 +673,7 @@ public interface CorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CORE_DIRECT_ACYCLIC_GRAPH__BASE_BEHAVIOR = GQAMPackage.GA_SCENARIO__BASE_BEHAVIOR;
+	int CORE_DIRECT_ACYCLIC_GRAPH__BASE_BEHAVIOR = com.masdes.dam.Core.CorePackage.DA_SERVICE__BASE_BEHAVIOR;
 
 	/**
 	 * The feature id for the '<em><b>Base Message</b></em>' reference.
@@ -682,7 +682,7 @@ public interface CorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CORE_DIRECT_ACYCLIC_GRAPH__BASE_MESSAGE = GQAMPackage.GA_SCENARIO__BASE_MESSAGE;
+	int CORE_DIRECT_ACYCLIC_GRAPH__BASE_MESSAGE = com.masdes.dam.Core.CorePackage.DA_SERVICE__BASE_MESSAGE;
 
 	/**
 	 * The feature id for the '<em><b>Duration</b></em>' containment reference.
@@ -691,7 +691,7 @@ public interface CorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CORE_DIRECT_ACYCLIC_GRAPH__DURATION = GQAMPackage.GA_SCENARIO__DURATION;
+	int CORE_DIRECT_ACYCLIC_GRAPH__DURATION = com.masdes.dam.Core.CorePackage.DA_SERVICE__DURATION;
 
 	/**
 	 * The feature id for the '<em><b>Start</b></em>' reference.
@@ -700,7 +700,7 @@ public interface CorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CORE_DIRECT_ACYCLIC_GRAPH__START = GQAMPackage.GA_SCENARIO__START;
+	int CORE_DIRECT_ACYCLIC_GRAPH__START = com.masdes.dam.Core.CorePackage.DA_SERVICE__START;
 
 	/**
 	 * The feature id for the '<em><b>Finish</b></em>' reference.
@@ -709,7 +709,7 @@ public interface CorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CORE_DIRECT_ACYCLIC_GRAPH__FINISH = GQAMPackage.GA_SCENARIO__FINISH;
+	int CORE_DIRECT_ACYCLIC_GRAPH__FINISH = com.masdes.dam.Core.CorePackage.DA_SERVICE__FINISH;
 
 	/**
 	 * The feature id for the '<em><b>Cause</b></em>' reference.
@@ -718,7 +718,7 @@ public interface CorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CORE_DIRECT_ACYCLIC_GRAPH__CAUSE = GQAMPackage.GA_SCENARIO__CAUSE;
+	int CORE_DIRECT_ACYCLIC_GRAPH__CAUSE = com.masdes.dam.Core.CorePackage.DA_SERVICE__CAUSE;
 
 	/**
 	 * The feature id for the '<em><b>Host Demand</b></em>' attribute list.
@@ -727,7 +727,7 @@ public interface CorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CORE_DIRECT_ACYCLIC_GRAPH__HOST_DEMAND = GQAMPackage.GA_SCENARIO__HOST_DEMAND;
+	int CORE_DIRECT_ACYCLIC_GRAPH__HOST_DEMAND = com.masdes.dam.Core.CorePackage.DA_SERVICE__HOST_DEMAND;
 
 	/**
 	 * The feature id for the '<em><b>Host Demand Ops</b></em>' attribute list.
@@ -736,7 +736,7 @@ public interface CorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CORE_DIRECT_ACYCLIC_GRAPH__HOST_DEMAND_OPS = GQAMPackage.GA_SCENARIO__HOST_DEMAND_OPS;
+	int CORE_DIRECT_ACYCLIC_GRAPH__HOST_DEMAND_OPS = com.masdes.dam.Core.CorePackage.DA_SERVICE__HOST_DEMAND_OPS;
 
 	/**
 	 * The feature id for the '<em><b>Inter Occ T</b></em>' attribute list.
@@ -745,7 +745,7 @@ public interface CorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CORE_DIRECT_ACYCLIC_GRAPH__INTER_OCC_T = GQAMPackage.GA_SCENARIO__INTER_OCC_T;
+	int CORE_DIRECT_ACYCLIC_GRAPH__INTER_OCC_T = com.masdes.dam.Core.CorePackage.DA_SERVICE__INTER_OCC_T;
 
 	/**
 	 * The feature id for the '<em><b>Throughput</b></em>' attribute list.
@@ -754,7 +754,7 @@ public interface CorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CORE_DIRECT_ACYCLIC_GRAPH__THROUGHPUT = GQAMPackage.GA_SCENARIO__THROUGHPUT;
+	int CORE_DIRECT_ACYCLIC_GRAPH__THROUGHPUT = com.masdes.dam.Core.CorePackage.DA_SERVICE__THROUGHPUT;
 
 	/**
 	 * The feature id for the '<em><b>Resp T</b></em>' attribute list.
@@ -763,7 +763,7 @@ public interface CorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CORE_DIRECT_ACYCLIC_GRAPH__RESP_T = GQAMPackage.GA_SCENARIO__RESP_T;
+	int CORE_DIRECT_ACYCLIC_GRAPH__RESP_T = com.masdes.dam.Core.CorePackage.DA_SERVICE__RESP_T;
 
 	/**
 	 * The feature id for the '<em><b>Utilization</b></em>' attribute list.
@@ -772,7 +772,7 @@ public interface CorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CORE_DIRECT_ACYCLIC_GRAPH__UTILIZATION = GQAMPackage.GA_SCENARIO__UTILIZATION;
+	int CORE_DIRECT_ACYCLIC_GRAPH__UTILIZATION = com.masdes.dam.Core.CorePackage.DA_SERVICE__UTILIZATION;
 
 	/**
 	 * The feature id for the '<em><b>Utilization On Host</b></em>' attribute list.
@@ -781,7 +781,7 @@ public interface CorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CORE_DIRECT_ACYCLIC_GRAPH__UTILIZATION_ON_HOST = GQAMPackage.GA_SCENARIO__UTILIZATION_ON_HOST;
+	int CORE_DIRECT_ACYCLIC_GRAPH__UTILIZATION_ON_HOST = com.masdes.dam.Core.CorePackage.DA_SERVICE__UTILIZATION_ON_HOST;
 
 	/**
 	 * The feature id for the '<em><b>Root</b></em>' reference.
@@ -790,7 +790,7 @@ public interface CorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CORE_DIRECT_ACYCLIC_GRAPH__ROOT = GQAMPackage.GA_SCENARIO__ROOT;
+	int CORE_DIRECT_ACYCLIC_GRAPH__ROOT = com.masdes.dam.Core.CorePackage.DA_SERVICE__ROOT;
 
 	/**
 	 * The feature id for the '<em><b>Steps</b></em>' reference list.
@@ -799,7 +799,7 @@ public interface CorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CORE_DIRECT_ACYCLIC_GRAPH__STEPS = GQAMPackage.GA_SCENARIO__STEPS;
+	int CORE_DIRECT_ACYCLIC_GRAPH__STEPS = com.masdes.dam.Core.CorePackage.DA_SERVICE__STEPS;
 
 	/**
 	 * The feature id for the '<em><b>Parent Step</b></em>' reference list.
@@ -808,7 +808,7 @@ public interface CorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CORE_DIRECT_ACYCLIC_GRAPH__PARENT_STEP = GQAMPackage.GA_SCENARIO__PARENT_STEP;
+	int CORE_DIRECT_ACYCLIC_GRAPH__PARENT_STEP = com.masdes.dam.Core.CorePackage.DA_SERVICE__PARENT_STEP;
 
 	/**
 	 * The feature id for the '<em><b>Timing</b></em>' reference list.
@@ -817,7 +817,142 @@ public interface CorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CORE_DIRECT_ACYCLIC_GRAPH__TIMING = GQAMPackage.GA_SCENARIO__TIMING;
+	int CORE_DIRECT_ACYCLIC_GRAPH__TIMING = com.masdes.dam.Core.CorePackage.DA_SERVICE__TIMING;
+
+	/**
+	 * The feature id for the '<em><b>Exec Prob</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORE_DIRECT_ACYCLIC_GRAPH__EXEC_PROB = com.masdes.dam.Core.CorePackage.DA_SERVICE__EXEC_PROB;
+
+	/**
+	 * The feature id for the '<em><b>Ss Avail</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORE_DIRECT_ACYCLIC_GRAPH__SS_AVAIL = com.masdes.dam.Core.CorePackage.DA_SERVICE__SS_AVAIL;
+
+	/**
+	 * The feature id for the '<em><b>Inst Avail</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORE_DIRECT_ACYCLIC_GRAPH__INST_AVAIL = com.masdes.dam.Core.CorePackage.DA_SERVICE__INST_AVAIL;
+
+	/**
+	 * The feature id for the '<em><b>Unreliability</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORE_DIRECT_ACYCLIC_GRAPH__UNRELIABILITY = com.masdes.dam.Core.CorePackage.DA_SERVICE__UNRELIABILITY;
+
+	/**
+	 * The feature id for the '<em><b>Reliability</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORE_DIRECT_ACYCLIC_GRAPH__RELIABILITY = com.masdes.dam.Core.CorePackage.DA_SERVICE__RELIABILITY;
+
+	/**
+	 * The feature id for the '<em><b>Mission Time</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORE_DIRECT_ACYCLIC_GRAPH__MISSION_TIME = com.masdes.dam.Core.CorePackage.DA_SERVICE__MISSION_TIME;
+
+	/**
+	 * The feature id for the '<em><b>Avail Level</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORE_DIRECT_ACYCLIC_GRAPH__AVAIL_LEVEL = com.masdes.dam.Core.CorePackage.DA_SERVICE__AVAIL_LEVEL;
+
+	/**
+	 * The feature id for the '<em><b>Reliab Level</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORE_DIRECT_ACYCLIC_GRAPH__RELIAB_LEVEL = com.masdes.dam.Core.CorePackage.DA_SERVICE__RELIAB_LEVEL;
+
+	/**
+	 * The feature id for the '<em><b>Safety Level</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORE_DIRECT_ACYCLIC_GRAPH__SAFETY_LEVEL = com.masdes.dam.Core.CorePackage.DA_SERVICE__SAFETY_LEVEL;
+
+	/**
+	 * The feature id for the '<em><b>Complexity</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORE_DIRECT_ACYCLIC_GRAPH__COMPLEXITY = com.masdes.dam.Core.CorePackage.DA_SERVICE__COMPLEXITY;
+
+	/**
+	 * The feature id for the '<em><b>Failure</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORE_DIRECT_ACYCLIC_GRAPH__FAILURE = com.masdes.dam.Core.CorePackage.DA_SERVICE__FAILURE;
+
+	/**
+	 * The feature id for the '<em><b>Hazard</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORE_DIRECT_ACYCLIC_GRAPH__HAZARD = com.masdes.dam.Core.CorePackage.DA_SERVICE__HAZARD;
+
+	/**
+	 * The feature id for the '<em><b>Recovery</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORE_DIRECT_ACYCLIC_GRAPH__RECOVERY = com.masdes.dam.Core.CorePackage.DA_SERVICE__RECOVERY;
+
+	/**
+	 * The feature id for the '<em><b>Conf Level</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORE_DIRECT_ACYCLIC_GRAPH__CONF_LEVEL = com.masdes.dam.Core.CorePackage.DA_SERVICE__CONF_LEVEL;
+
+	/**
+	 * The feature id for the '<em><b>Integ Level</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORE_DIRECT_ACYCLIC_GRAPH__INTEG_LEVEL = com.masdes.dam.Core.CorePackage.DA_SERVICE__INTEG_LEVEL;
 
 	/**
 	 * The feature id for the '<em><b>Has Source Node</b></em>' reference list.
@@ -826,7 +961,7 @@ public interface CorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CORE_DIRECT_ACYCLIC_GRAPH__HAS_SOURCE_NODE = GQAMPackage.GA_SCENARIO_FEATURE_COUNT + 0;
+	int CORE_DIRECT_ACYCLIC_GRAPH__HAS_SOURCE_NODE = com.masdes.dam.Core.CorePackage.DA_SERVICE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Base Class</b></em>' reference.
@@ -835,7 +970,7 @@ public interface CorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CORE_DIRECT_ACYCLIC_GRAPH__BASE_CLASS = GQAMPackage.GA_SCENARIO_FEATURE_COUNT + 1;
+	int CORE_DIRECT_ACYCLIC_GRAPH__BASE_CLASS = com.masdes.dam.Core.CorePackage.DA_SERVICE_FEATURE_COUNT + 1;
 
 	/**
 	 * The number of structural features of the '<em>Direct Acyclic Graph</em>' class.
@@ -844,7 +979,7 @@ public interface CorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CORE_DIRECT_ACYCLIC_GRAPH_FEATURE_COUNT = GQAMPackage.GA_SCENARIO_FEATURE_COUNT + 2;
+	int CORE_DIRECT_ACYCLIC_GRAPH_FEATURE_COUNT = com.masdes.dam.Core.CorePackage.DA_SERVICE_FEATURE_COUNT + 2;
 
 	/**
 	 * The meta object id for the '{@link es.unizar.disco.dice.DTSM.Core.impl.CoreDAGNodeImpl <em>DAG Node</em>}' class.

@@ -84,7 +84,7 @@
         <eClassifiers xsi:type="ecore:EClass" name="CoreDataSource" abstract="true"
             eSuperTypes="#//DICE_UML_Extensions/DPIM/DpimStorageNode"/>
         <eClassifiers xsi:type="ecore:EClass" name="CoreDirectAcyclicGraph" abstract="true"
-            eSuperTypes="../../org.eclipse.papyrus.marte.static.profile/resources/MARTE.ecore#//MARTE_AnalysisModel/GQAM/GaScenario">
+            eSuperTypes="../../com.masdes.dam.static.profile/resources/DAM.ecore#//DAM_UML_Extensions/System/Core/DaService">
           <eStructuralFeatures xsi:type="ecore:EReference" name="hasSourceNode" ordered="false"
               lowerBound="1" upperBound="-1" eType="#//DICE_UML_Extensions/DTSM/Core/CoreDAGSourceNode"/>
           <eStructuralFeatures xsi:type="ecore:EReference" name="base_Class" ordered="false"

@@ -2,9 +2,9 @@
  */
 package es.unizar.disco.dice.DTSM.Core;
 
-import org.eclipse.emf.common.util.EList;
+import com.masdes.dam.Core.DaService;
 
-import org.eclipse.papyrus.MARTE.MARTE_AnalysisModel.GQAM.GaScenario;
+import org.eclipse.emf.common.util.EList;
 
 /**
  * <!-- begin-user-doc -->
@@ -23,7 +23,7 @@ import org.eclipse.papyrus.MARTE.MARTE_AnalysisModel.GQAM.GaScenario;
  * @model abstract="true"
  * @generated
  */
-public interface CoreDirectAcyclicGraph extends GaScenario {
+public interface CoreDirectAcyclicGraph extends DaService {
 	/**
 	 * Returns the value of the '<em><b>Has Source Node</b></em>' reference list.
 	 * The list contents are of type {@link es.unizar.disco.dice.DTSM.Core.CoreDAGSourceNode}.
