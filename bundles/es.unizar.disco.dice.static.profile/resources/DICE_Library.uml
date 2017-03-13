@@ -126,6 +126,13 @@
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_CC_MYf8iEeae0ceaALtJ7Q" name="Transformation"/>
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_CC_MYv8iEeae0ceaALtJ7Q" name="Action"/>
         </packagedElement>
+        <packagedElement xmi:type="uml:Enumeration" xmi:id="_VcueAAAvEee5FrQsk8AM1w" name="LanguageType">
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_WrORcAAvEee5FrQsk8AM1w" name="bash"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_XP6S4AAvEee5FrQsk8AM1w" name="python"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_X7V1gAAvEee5FrQsk8AM1w" name="java"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_afJ2EAAvEee5FrQsk8AM1w" name="scala"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_cm_FQAAvEee5FrQsk8AM1w" name="R"/>
+        </packagedElement>
       </packagedElement>
       <packagedElement xmi:type="uml:Profile" xmi:id="_yQjxwOeYEeWj7ZPL8JeBTQ" name="Data_Types">
         <packagedElement xmi:type="uml:DataType" xmi:id="_KyBsgC5SEeaF_sH3mLTVKg" name="NFP_Privacy">
@@ -148,6 +155,19 @@
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bJnzET4WEeahGZm0A1o1gg" value="1"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_SF_PYD4WEeahGZm0A1o1gg" name="scriptKind" type="_JBGoID4OEeahGZm0A1o1gg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_YKdksAAxEee5FrQsk8AM1w" name="FirewallRule">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_hgHsgAAxEee5FrQsk8AM1w" name="allowedIpPrefix">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qzJXEAAxEee5FrQsk8AM1w"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qzPdsAAxEee5FrQsk8AM1w" value="1"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_NuYgsAP9EeeNS8hZS_VTiQ" value="0.0.0.0/0"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_yJi84AAxEee5FrQsk8AM1w" name="port">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4EWgoANhEeeNS8hZS_VTiQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4EZj8ANhEeeNS8hZS_VTiQ" value="1"/>
+          </ownedAttribute>
         </packagedElement>
       </packagedElement>
     </packagedElement>

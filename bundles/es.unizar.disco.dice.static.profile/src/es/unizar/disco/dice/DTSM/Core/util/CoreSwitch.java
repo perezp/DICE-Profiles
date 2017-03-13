@@ -3,6 +3,7 @@
 package es.unizar.disco.dice.DTSM.Core.util;
 
 import com.masdes.dam.Core.DaComponent;
+import com.masdes.dam.Core.DaService;
 
 import es.unizar.disco.dice.DPIM.DpimComputationNode;
 import es.unizar.disco.dice.DPIM.DpimSourceNode;
@@ -109,6 +110,7 @@ public class CoreSwitch<T> extends Switch<T> {
 			case CorePackage.CORE_DIRECT_ACYCLIC_GRAPH: {
 				CoreDirectAcyclicGraph coreDirectAcyclicGraph = (CoreDirectAcyclicGraph)theEObject;
 				T result = caseCoreDirectAcyclicGraph(coreDirectAcyclicGraph);
+				if (result == null) result = caseDaService(coreDirectAcyclicGraph);
 				if (result == null) result = caseGaScenario(coreDirectAcyclicGraph);
 				if (result == null) result = caseResourceUsage(coreDirectAcyclicGraph);
 				if (result == null) result = caseTimedProcessing(coreDirectAcyclicGraph);
@@ -398,6 +400,21 @@ public class CoreSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseGaScenario(GaScenario object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Da Service</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Da Service</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseDaService(DaService object) {
 		return null;
 	}
 

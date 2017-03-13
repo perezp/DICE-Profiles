@@ -58,6 +58,7 @@ public class Basic_Data_TypesFactoryImpl extends EFactoryImpl implements Basic_D
 		switch (eClass.getClassifierID()) {
 			case Basic_Data_TypesPackage.NFP_PRIVACY: return createNFP_Privacy();
 			case Basic_Data_TypesPackage.SCRIPT_TYPE: return createScriptType();
+			case Basic_Data_TypesPackage.FIREWALL_RULE: return createFirewallRule();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -81,6 +82,16 @@ public class Basic_Data_TypesFactoryImpl extends EFactoryImpl implements Basic_D
 	public ScriptType createScriptType() {
 		ScriptTypeImpl scriptType = new ScriptTypeImpl();
 		return scriptType;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public FirewallRule createFirewallRule() {
+		FirewallRuleImpl firewallRule = new FirewallRuleImpl();
+		return firewallRule;
 	}
 
 	/**

@@ -15,6 +15,7 @@ import es.unizar.disco.dice.Basic_Enumeration_Types.Basic_Enumeration_TypesPacka
 import es.unizar.disco.dice.Basic_Enumeration_Types.ComputationType;
 import es.unizar.disco.dice.Basic_Enumeration_Types.ConstraintType;
 import es.unizar.disco.dice.Basic_Enumeration_Types.DDSMcomponentType;
+import es.unizar.disco.dice.Basic_Enumeration_Types.LanguageType;
 import es.unizar.disco.dice.Basic_Enumeration_Types.LifeCycleElementType;
 import es.unizar.disco.dice.Basic_Enumeration_Types.MapType;
 import es.unizar.disco.dice.Basic_Enumeration_Types.ProcessingType;
@@ -199,6 +200,13 @@ public class Basic_Enumeration_TypesPackageImpl extends EPackageImpl implements 
 	 * @generated
 	 */
 	private EEnum sparkOperationEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum languageTypeEEnum = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -470,6 +478,15 @@ public class Basic_Enumeration_TypesPackageImpl extends EPackageImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EEnum getLanguageType() {
+		return languageTypeEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EEnum getComputationType() {
 		return computationTypeEEnum;
 	}
@@ -520,6 +537,7 @@ public class Basic_Enumeration_TypesPackageImpl extends EPackageImpl implements 
 		sparkReduceEEnum = createEEnum(SPARK_REDUCE);
 		sparkMapEEnum = createEEnum(SPARK_MAP);
 		sparkOperationEEnum = createEEnum(SPARK_OPERATION);
+		languageTypeEEnum = createEEnum(LANGUAGE_TYPE);
 		computationTypeEEnum = createEEnum(COMPUTATION_TYPE);
 	}
 
@@ -650,6 +668,13 @@ public class Basic_Enumeration_TypesPackageImpl extends EPackageImpl implements 
 		initEEnum(sparkOperationEEnum, SparkOperation.class, "SparkOperation");
 		addEEnumLiteral(sparkOperationEEnum, SparkOperation.TRANSFORMATION);
 		addEEnumLiteral(sparkOperationEEnum, SparkOperation.ACTION);
+
+		initEEnum(languageTypeEEnum, LanguageType.class, "LanguageType");
+		addEEnumLiteral(languageTypeEEnum, LanguageType.BASH);
+		addEEnumLiteral(languageTypeEEnum, LanguageType.PYTHON);
+		addEEnumLiteral(languageTypeEEnum, LanguageType.JAVA);
+		addEEnumLiteral(languageTypeEEnum, LanguageType.SCALA);
+		addEEnumLiteral(languageTypeEEnum, LanguageType.R);
 
 		initEEnum(computationTypeEEnum, ComputationType.class, "ComputationType");
 		addEEnumLiteral(computationTypeEEnum, ComputationType.DISTRIBUTED);

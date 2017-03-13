@@ -22,7 +22,6 @@ import es.unizar.disco.dice.Basic_Enumeration_Types.VMSize;
  *   <li>{@link es.unizar.disco.dice.DDSM.DdsmVMsCluster#getMinRam <em>Min Ram</em>}</li>
  *   <li>{@link es.unizar.disco.dice.DDSM.DdsmVMsCluster#getMinStorage <em>Min Storage</em>}</li>
  *   <li>{@link es.unizar.disco.dice.DDSM.DdsmVMsCluster#getOs <em>Os</em>}</li>
- *   <li>{@link es.unizar.disco.dice.DDSM.DdsmVMsCluster#getSecurityGroup <em>Security Group</em>}</li>
  *   <li>{@link es.unizar.disco.dice.DDSM.DdsmVMsCluster#getPrivateKey <em>Private Key</em>}</li>
  *   <li>{@link es.unizar.disco.dice.DDSM.DdsmVMsCluster#getSshKey <em>Ssh Key</em>}</li>
  *   <li>{@link es.unizar.disco.dice.DDSM.DdsmVMsCluster#getPublicAddress <em>Public Address</em>}</li>
@@ -271,32 +270,6 @@ public interface DdsmVMsCluster extends DdsmExternalComponent {
 	 * @generated
 	 */
 	void setOs(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Security Group</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Security Group</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Security Group</em>' attribute.
-	 * @see #setSecurityGroup(String)
-	 * @see es.unizar.disco.dice.DDSM.DDSMPackage#getDdsmVMsCluster_SecurityGroup()
-	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
-	 * @generated
-	 */
-	String getSecurityGroup();
-
-	/**
-	 * Sets the value of the '{@link es.unizar.disco.dice.DDSM.DdsmVMsCluster#getSecurityGroup <em>Security Group</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Security Group</em>' attribute.
-	 * @see #getSecurityGroup()
-	 * @generated
-	 */
-	void setSecurityGroup(String value);
 
 	/**
 	 * Returns the value of the '<em><b>Private Key</b></em>' attribute.

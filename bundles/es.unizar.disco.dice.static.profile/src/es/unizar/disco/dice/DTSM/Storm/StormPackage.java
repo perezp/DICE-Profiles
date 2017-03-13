@@ -1809,6 +1809,141 @@ public interface StormPackage extends EPackage {
 	int STORM_SCENARIO_TOPOLOGY__TIMING = CorePackage.CORE_DIRECT_ACYCLIC_GRAPH__TIMING;
 
 	/**
+	 * The feature id for the '<em><b>Exec Prob</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORM_SCENARIO_TOPOLOGY__EXEC_PROB = CorePackage.CORE_DIRECT_ACYCLIC_GRAPH__EXEC_PROB;
+
+	/**
+	 * The feature id for the '<em><b>Ss Avail</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORM_SCENARIO_TOPOLOGY__SS_AVAIL = CorePackage.CORE_DIRECT_ACYCLIC_GRAPH__SS_AVAIL;
+
+	/**
+	 * The feature id for the '<em><b>Inst Avail</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORM_SCENARIO_TOPOLOGY__INST_AVAIL = CorePackage.CORE_DIRECT_ACYCLIC_GRAPH__INST_AVAIL;
+
+	/**
+	 * The feature id for the '<em><b>Unreliability</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORM_SCENARIO_TOPOLOGY__UNRELIABILITY = CorePackage.CORE_DIRECT_ACYCLIC_GRAPH__UNRELIABILITY;
+
+	/**
+	 * The feature id for the '<em><b>Reliability</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORM_SCENARIO_TOPOLOGY__RELIABILITY = CorePackage.CORE_DIRECT_ACYCLIC_GRAPH__RELIABILITY;
+
+	/**
+	 * The feature id for the '<em><b>Mission Time</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORM_SCENARIO_TOPOLOGY__MISSION_TIME = CorePackage.CORE_DIRECT_ACYCLIC_GRAPH__MISSION_TIME;
+
+	/**
+	 * The feature id for the '<em><b>Avail Level</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORM_SCENARIO_TOPOLOGY__AVAIL_LEVEL = CorePackage.CORE_DIRECT_ACYCLIC_GRAPH__AVAIL_LEVEL;
+
+	/**
+	 * The feature id for the '<em><b>Reliab Level</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORM_SCENARIO_TOPOLOGY__RELIAB_LEVEL = CorePackage.CORE_DIRECT_ACYCLIC_GRAPH__RELIAB_LEVEL;
+
+	/**
+	 * The feature id for the '<em><b>Safety Level</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORM_SCENARIO_TOPOLOGY__SAFETY_LEVEL = CorePackage.CORE_DIRECT_ACYCLIC_GRAPH__SAFETY_LEVEL;
+
+	/**
+	 * The feature id for the '<em><b>Complexity</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORM_SCENARIO_TOPOLOGY__COMPLEXITY = CorePackage.CORE_DIRECT_ACYCLIC_GRAPH__COMPLEXITY;
+
+	/**
+	 * The feature id for the '<em><b>Failure</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORM_SCENARIO_TOPOLOGY__FAILURE = CorePackage.CORE_DIRECT_ACYCLIC_GRAPH__FAILURE;
+
+	/**
+	 * The feature id for the '<em><b>Hazard</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORM_SCENARIO_TOPOLOGY__HAZARD = CorePackage.CORE_DIRECT_ACYCLIC_GRAPH__HAZARD;
+
+	/**
+	 * The feature id for the '<em><b>Recovery</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORM_SCENARIO_TOPOLOGY__RECOVERY = CorePackage.CORE_DIRECT_ACYCLIC_GRAPH__RECOVERY;
+
+	/**
+	 * The feature id for the '<em><b>Conf Level</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORM_SCENARIO_TOPOLOGY__CONF_LEVEL = CorePackage.CORE_DIRECT_ACYCLIC_GRAPH__CONF_LEVEL;
+
+	/**
+	 * The feature id for the '<em><b>Integ Level</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORM_SCENARIO_TOPOLOGY__INTEG_LEVEL = CorePackage.CORE_DIRECT_ACYCLIC_GRAPH__INTEG_LEVEL;
+
+	/**
 	 * The feature id for the '<em><b>Has Source Node</b></em>' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

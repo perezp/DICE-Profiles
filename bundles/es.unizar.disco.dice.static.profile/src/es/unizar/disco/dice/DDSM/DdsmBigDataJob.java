@@ -2,6 +2,8 @@
  */
 package es.unizar.disco.dice.DDSM;
 
+import org.eclipse.emf.common.util.EList;
+
 import org.eclipse.emf.ecore.EObject;
 
 import org.eclipse.uml2.uml.Artifact;
@@ -132,29 +134,19 @@ public interface DdsmBigDataJob extends EObject {
 	void setApplication_name(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Arguments</b></em>' attribute.
+	 * Returns the value of the '<em><b>Arguments</b></em>' attribute list.
+	 * The list contents are of type {@link java.lang.String}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Arguments</em>' attribute isn't clear,
+	 * If the meaning of the '<em>Arguments</em>' attribute list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Arguments</em>' attribute.
-	 * @see #setArguments(String)
+	 * @return the value of the '<em>Arguments</em>' attribute list.
 	 * @see es.unizar.disco.dice.DDSM.DDSMPackage#getDdsmBigDataJob_Arguments()
-	 * @model dataType="org.eclipse.uml2.types.String" required="true" ordered="false"
+	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
 	 * @generated
 	 */
-	String getArguments();
-
-	/**
-	 * Sets the value of the '{@link es.unizar.disco.dice.DDSM.DdsmBigDataJob#getArguments <em>Arguments</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Arguments</em>' attribute.
-	 * @see #getArguments()
-	 * @generated
-	 */
-	void setArguments(String value);
+	EList<String> getArguments();
 
 } // DdsmBigDataJob

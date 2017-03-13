@@ -30,7 +30,6 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *   <li>{@link es.unizar.disco.dice.DDSM.impl.DdsmVMsClusterImpl#getMinRam <em>Min Ram</em>}</li>
  *   <li>{@link es.unizar.disco.dice.DDSM.impl.DdsmVMsClusterImpl#getMinStorage <em>Min Storage</em>}</li>
  *   <li>{@link es.unizar.disco.dice.DDSM.impl.DdsmVMsClusterImpl#getOs <em>Os</em>}</li>
- *   <li>{@link es.unizar.disco.dice.DDSM.impl.DdsmVMsClusterImpl#getSecurityGroup <em>Security Group</em>}</li>
  *   <li>{@link es.unizar.disco.dice.DDSM.impl.DdsmVMsClusterImpl#getPrivateKey <em>Private Key</em>}</li>
  *   <li>{@link es.unizar.disco.dice.DDSM.impl.DdsmVMsClusterImpl#getSshKey <em>Ssh Key</em>}</li>
  *   <li>{@link es.unizar.disco.dice.DDSM.impl.DdsmVMsClusterImpl#getPublicAddress <em>Public Address</em>}</li>
@@ -220,26 +219,6 @@ public class DdsmVMsClusterImpl extends DdsmExternalComponentImpl implements Dds
 	 * @ordered
 	 */
 	protected String os = OS_EDEFAULT;
-
-	/**
-	 * The default value of the '{@link #getSecurityGroup() <em>Security Group</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getSecurityGroup()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String SECURITY_GROUP_EDEFAULT = null;
-
-	/**
-	 * The cached value of the '{@link #getSecurityGroup() <em>Security Group</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getSecurityGroup()
-	 * @generated
-	 * @ordered
-	 */
-	protected String securityGroup = SECURITY_GROUP_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getPrivateKey() <em>Private Key</em>}' attribute.
@@ -554,27 +533,6 @@ public class DdsmVMsClusterImpl extends DdsmExternalComponentImpl implements Dds
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getSecurityGroup() {
-		return securityGroup;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setSecurityGroup(String newSecurityGroup) {
-		String oldSecurityGroup = securityGroup;
-		securityGroup = newSecurityGroup;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, DDSMPackage.DDSM_VMS_CLUSTER__SECURITY_GROUP, oldSecurityGroup, securityGroup));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public String getPrivateKey() {
 		return privateKey;
 	}
@@ -701,8 +659,6 @@ public class DdsmVMsClusterImpl extends DdsmExternalComponentImpl implements Dds
 				return getMinStorage();
 			case DDSMPackage.DDSM_VMS_CLUSTER__OS:
 				return getOs();
-			case DDSMPackage.DDSM_VMS_CLUSTER__SECURITY_GROUP:
-				return getSecurityGroup();
 			case DDSMPackage.DDSM_VMS_CLUSTER__PRIVATE_KEY:
 				return getPrivateKey();
 			case DDSMPackage.DDSM_VMS_CLUSTER__SSH_KEY:
@@ -751,9 +707,6 @@ public class DdsmVMsClusterImpl extends DdsmExternalComponentImpl implements Dds
 				return;
 			case DDSMPackage.DDSM_VMS_CLUSTER__OS:
 				setOs((String)newValue);
-				return;
-			case DDSMPackage.DDSM_VMS_CLUSTER__SECURITY_GROUP:
-				setSecurityGroup((String)newValue);
 				return;
 			case DDSMPackage.DDSM_VMS_CLUSTER__PRIVATE_KEY:
 				setPrivateKey((String)newValue);
@@ -809,9 +762,6 @@ public class DdsmVMsClusterImpl extends DdsmExternalComponentImpl implements Dds
 			case DDSMPackage.DDSM_VMS_CLUSTER__OS:
 				setOs(OS_EDEFAULT);
 				return;
-			case DDSMPackage.DDSM_VMS_CLUSTER__SECURITY_GROUP:
-				setSecurityGroup(SECURITY_GROUP_EDEFAULT);
-				return;
 			case DDSMPackage.DDSM_VMS_CLUSTER__PRIVATE_KEY:
 				setPrivateKey(PRIVATE_KEY_EDEFAULT);
 				return;
@@ -857,8 +807,6 @@ public class DdsmVMsClusterImpl extends DdsmExternalComponentImpl implements Dds
 				return minStorage != MIN_STORAGE_EDEFAULT;
 			case DDSMPackage.DDSM_VMS_CLUSTER__OS:
 				return OS_EDEFAULT == null ? os != null : !OS_EDEFAULT.equals(os);
-			case DDSMPackage.DDSM_VMS_CLUSTER__SECURITY_GROUP:
-				return SECURITY_GROUP_EDEFAULT == null ? securityGroup != null : !SECURITY_GROUP_EDEFAULT.equals(securityGroup);
 			case DDSMPackage.DDSM_VMS_CLUSTER__PRIVATE_KEY:
 				return PRIVATE_KEY_EDEFAULT == null ? privateKey != null : !PRIVATE_KEY_EDEFAULT.equals(privateKey);
 			case DDSMPackage.DDSM_VMS_CLUSTER__SSH_KEY:
@@ -901,8 +849,6 @@ public class DdsmVMsClusterImpl extends DdsmExternalComponentImpl implements Dds
 		result.append(minStorage);
 		result.append(", os: ");
 		result.append(os);
-		result.append(", securityGroup: ");
-		result.append(securityGroup);
 		result.append(", privateKey: ");
 		result.append(privateKey);
 		result.append(", sshKey: ");

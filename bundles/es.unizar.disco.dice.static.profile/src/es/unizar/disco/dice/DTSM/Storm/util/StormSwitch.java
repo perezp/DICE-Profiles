@@ -3,6 +3,7 @@
 package es.unizar.disco.dice.DTSM.Storm.util;
 
 import com.masdes.dam.Core.DaComponent;
+import com.masdes.dam.Core.DaService;
 
 import es.unizar.disco.dice.DPIM.DpimComputationNode;
 import es.unizar.disco.dice.DPIM.DpimSourceNode;
@@ -122,6 +123,7 @@ public class StormSwitch<T> extends Switch<T> {
 				StormScenarioTopology stormScenarioTopology = (StormScenarioTopology)theEObject;
 				T result = caseStormScenarioTopology(stormScenarioTopology);
 				if (result == null) result = caseCoreDirectAcyclicGraph(stormScenarioTopology);
+				if (result == null) result = caseDaService(stormScenarioTopology);
 				if (result == null) result = caseGaScenario(stormScenarioTopology);
 				if (result == null) result = caseResourceUsage(stormScenarioTopology);
 				if (result == null) result = caseTimedProcessing(stormScenarioTopology);
@@ -454,6 +456,21 @@ public class StormSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseCoreDAGSourceNode(CoreDAGSourceNode object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Da Service</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Da Service</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseDaService(DaService object) {
 		return null;
 	}
 
