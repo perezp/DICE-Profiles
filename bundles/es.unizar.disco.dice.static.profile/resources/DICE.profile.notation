@@ -1707,13 +1707,13 @@
           <element xmi:type="uml:Property" href="DICE.profile.uml#_n26yEP5mEeastMYiWd95zQ"/>
           <layoutConstraint xmi:type="notation:Location" xmi:id="_n3WP4f5mEeastMYiWd95zQ"/>
         </children>
-        <children xmi:type="notation:Shape" xmi:id="_8BMZcAKMEeeo9amVjAoIhA" type="Property_ClassAttributeLabel">
-          <element xmi:type="uml:Property" href="DICE.profile.uml#_8AsDIAKMEeeo9amVjAoIhA"/>
-          <layoutConstraint xmi:type="notation:Location" xmi:id="_8BMZcQKMEeeo9amVjAoIhA"/>
-        </children>
         <children xmi:type="notation:Shape" xmi:id="_T_AS0ANQEeeNS8hZS_VTiQ" type="Property_ClassAttributeLabel">
           <element xmi:type="uml:Property" href="DICE.profile.uml#_T9-_IANQEeeNS8hZS_VTiQ"/>
           <layoutConstraint xmi:type="notation:Location" xmi:id="_T_AS0QNQEeeNS8hZS_VTiQ"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_a25c8BOREeeqarsdcU2oLw" type="Property_ClassAttributeLabel">
+          <element xmi:type="uml:Property" href="DICE.profile.uml#_a17MkBOREeeqarsdcU2oLw"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_a25c8ROREeeqarsdcU2oLw"/>
         </children>
         <styles xmi:type="notation:TitleStyle" xmi:id="_VW7TRDx3EeaOH59TuV453g"/>
         <styles xmi:type="notation:SortingStyle" xmi:id="_VW7TRTx3EeaOH59TuV453g"/>
@@ -2021,6 +2021,14 @@
         <children xmi:type="notation:Shape" xmi:id="_fRFtoD3oEeaPco63Cq703g" type="Property_ClassAttributeLabel">
           <element xmi:type="uml:Property" href="DICE.profile.uml#_fQ_nAD3oEeaPco63Cq703g"/>
           <layoutConstraint xmi:type="notation:Location" xmi:id="_fRFtoT3oEeaPco63Cq703g"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_7xKyEBGCEeek-vqfmGWZmg" type="Property_ClassAttributeLabel">
+          <element xmi:type="uml:Property" href="DICE.profile.uml#_7psREBGCEeek-vqfmGWZmg"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_7xKyERGCEeek-vqfmGWZmg"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_gQz-8BGDEeek-vqfmGWZmg" type="Property_ClassAttributeLabel">
+          <element xmi:type="uml:Property" href="DICE.profile.uml#_gPr9kBGDEeek-vqfmGWZmg"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_gQz-8RGDEeek-vqfmGWZmg"/>
         </children>
         <styles xmi:type="notation:TitleStyle" xmi:id="_Q0DcUj3oEeaPco63Cq703g"/>
         <styles xmi:type="notation:SortingStyle" xmi:id="_Q0DcUz3oEeaPco63Cq703g"/>
