@@ -248,7 +248,7 @@ public class DdsmVMsClusterImpl extends DdsmExternalComponentImpl implements Dds
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String SSH_KEY_EDEFAULT = null;
+	protected static final String SSH_KEY_EDEFAULT = "/root/.ssh/agent.key";
 
 	/**
 	 * The cached value of the '{@link #getSshKey() <em>Ssh Key</em>}' attribute.

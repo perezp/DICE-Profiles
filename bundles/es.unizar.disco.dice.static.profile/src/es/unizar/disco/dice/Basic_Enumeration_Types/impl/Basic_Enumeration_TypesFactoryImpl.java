@@ -74,8 +74,6 @@ public class Basic_Enumeration_TypesFactoryImpl extends EFactoryImpl implements 
 				return createRefTypeFromString(eDataType, initialValue);
 			case Basic_Enumeration_TypesPackage.REF_DATA_FORMAT_TYPE:
 				return createRefDataFormatTypeFromString(eDataType, initialValue);
-			case Basic_Enumeration_TypesPackage.LIFE_CYCLE_ELEMENT_TYPE:
-				return createLifeCycleElementTypeFromString(eDataType, initialValue);
 			case Basic_Enumeration_TypesPackage.TECH_TYPE:
 				return createTechTypeFromString(eDataType, initialValue);
 			case Basic_Enumeration_TypesPackage.PROCESSING_TYPE:
@@ -98,6 +96,8 @@ public class Basic_Enumeration_TypesFactoryImpl extends EFactoryImpl implements 
 				return createVMSizeFromString(eDataType, initialValue);
 			case Basic_Enumeration_TypesPackage.PROVIDER_TYPE:
 				return createProviderTypeFromString(eDataType, initialValue);
+			case Basic_Enumeration_TypesPackage.LIFE_CYCLE_ELEMENT_TYPE:
+				return createLifeCycleElementTypeFromString(eDataType, initialValue);
 			case Basic_Enumeration_TypesPackage.DDS_MCOMPONENT_TYPE:
 				return createDDSMcomponentTypeFromString(eDataType, initialValue);
 			case Basic_Enumeration_TypesPackage.SPARK_REDUCE:
@@ -127,8 +127,6 @@ public class Basic_Enumeration_TypesFactoryImpl extends EFactoryImpl implements 
 				return convertRefTypeToString(eDataType, instanceValue);
 			case Basic_Enumeration_TypesPackage.REF_DATA_FORMAT_TYPE:
 				return convertRefDataFormatTypeToString(eDataType, instanceValue);
-			case Basic_Enumeration_TypesPackage.LIFE_CYCLE_ELEMENT_TYPE:
-				return convertLifeCycleElementTypeToString(eDataType, instanceValue);
 			case Basic_Enumeration_TypesPackage.TECH_TYPE:
 				return convertTechTypeToString(eDataType, instanceValue);
 			case Basic_Enumeration_TypesPackage.PROCESSING_TYPE:
@@ -151,6 +149,8 @@ public class Basic_Enumeration_TypesFactoryImpl extends EFactoryImpl implements 
 				return convertVMSizeToString(eDataType, instanceValue);
 			case Basic_Enumeration_TypesPackage.PROVIDER_TYPE:
 				return convertProviderTypeToString(eDataType, instanceValue);
+			case Basic_Enumeration_TypesPackage.LIFE_CYCLE_ELEMENT_TYPE:
+				return convertLifeCycleElementTypeToString(eDataType, instanceValue);
 			case Basic_Enumeration_TypesPackage.DDS_MCOMPONENT_TYPE:
 				return convertDDSMcomponentTypeToString(eDataType, instanceValue);
 			case Basic_Enumeration_TypesPackage.SPARK_REDUCE:
@@ -205,26 +205,6 @@ public class Basic_Enumeration_TypesFactoryImpl extends EFactoryImpl implements 
 	 * @generated
 	 */
 	public String convertRefDataFormatTypeToString(EDataType eDataType, Object instanceValue) {
-		return instanceValue == null ? null : instanceValue.toString();
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public LifeCycleElementType createLifeCycleElementTypeFromString(EDataType eDataType, String initialValue) {
-		LifeCycleElementType result = LifeCycleElementType.get(initialValue);
-		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
-		return result;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public String convertLifeCycleElementTypeToString(EDataType eDataType, Object instanceValue) {
 		return instanceValue == null ? null : instanceValue.toString();
 	}
 
@@ -445,6 +425,26 @@ public class Basic_Enumeration_TypesFactoryImpl extends EFactoryImpl implements 
 	 * @generated
 	 */
 	public String convertProviderTypeToString(EDataType eDataType, Object instanceValue) {
+		return instanceValue == null ? null : instanceValue.toString();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public LifeCycleElementType createLifeCycleElementTypeFromString(EDataType eDataType, String initialValue) {
+		LifeCycleElementType result = LifeCycleElementType.get(initialValue);
+		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+		return result;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String convertLifeCycleElementTypeToString(EDataType eDataType, Object instanceValue) {
 		return instanceValue == null ? null : instanceValue.toString();
 	}
 

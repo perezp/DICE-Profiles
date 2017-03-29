@@ -1,6 +1,6 @@
 /**
  */
-package es.unizar.disco.dice.Basic_Data_Types;
+package es.unizar.disco.dice.Complex_Data_Types;
 
 import org.eclipse.emf.ecore.EObject;
 
@@ -13,11 +13,11 @@ import org.eclipse.emf.ecore.EObject;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link es.unizar.disco.dice.Basic_Data_Types.FirewallRule#getAllowedIpPrefix <em>Allowed Ip Prefix</em>}</li>
- *   <li>{@link es.unizar.disco.dice.Basic_Data_Types.FirewallRule#getPort <em>Port</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.Complex_Data_Types.FirewallRule#getAllowedIpPrefix <em>Allowed Ip Prefix</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.Complex_Data_Types.FirewallRule#getPort <em>Port</em>}</li>
  * </ul>
  *
- * @see es.unizar.disco.dice.Basic_Data_Types.Basic_Data_TypesPackage#getFirewallRule()
+ * @see es.unizar.disco.dice.Complex_Data_Types.Complex_Data_TypesPackage#getFirewallRule()
  * @model
  * @generated
  */
@@ -33,14 +33,14 @@ public interface FirewallRule extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Allowed Ip Prefix</em>' attribute.
 	 * @see #setAllowedIpPrefix(String)
-	 * @see es.unizar.disco.dice.Basic_Data_Types.Basic_Data_TypesPackage#getFirewallRule_AllowedIpPrefix()
-	 * @model default="0.0.0.0/0" dataType="org.eclipse.uml2.types.String" ordered="false"
+	 * @see es.unizar.disco.dice.Complex_Data_Types.Complex_Data_TypesPackage#getFirewallRule_AllowedIpPrefix()
+	 * @model default="0.0.0.0/0" dataType="org.eclipse.uml2.types.String" required="true" ordered="false"
 	 * @generated
 	 */
 	String getAllowedIpPrefix();
 
 	/**
-	 * Sets the value of the '{@link es.unizar.disco.dice.Basic_Data_Types.FirewallRule#getAllowedIpPrefix <em>Allowed Ip Prefix</em>}' attribute.
+	 * Sets the value of the '{@link es.unizar.disco.dice.Complex_Data_Types.FirewallRule#getAllowedIpPrefix <em>Allowed Ip Prefix</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Allowed Ip Prefix</em>' attribute.
@@ -59,14 +59,14 @@ public interface FirewallRule extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Port</em>' attribute.
 	 * @see #setPort(int)
-	 * @see es.unizar.disco.dice.Basic_Data_Types.Basic_Data_TypesPackage#getFirewallRule_Port()
-	 * @model dataType="org.eclipse.uml2.types.Integer" ordered="false"
+	 * @see es.unizar.disco.dice.Complex_Data_Types.Complex_Data_TypesPackage#getFirewallRule_Port()
+	 * @model dataType="org.eclipse.uml2.types.Integer" required="true" ordered="false"
 	 * @generated
 	 */
 	int getPort();
 
 	/**
-	 * Sets the value of the '{@link es.unizar.disco.dice.Basic_Data_Types.FirewallRule#getPort <em>Port</em>}' attribute.
+	 * Sets the value of the '{@link es.unizar.disco.dice.Complex_Data_Types.FirewallRule#getPort <em>Port</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Port</em>' attribute.

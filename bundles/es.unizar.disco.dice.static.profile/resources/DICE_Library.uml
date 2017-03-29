@@ -134,29 +134,6 @@
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_cm_FQAAvEee5FrQsk8AM1w" name="R"/>
         </packagedElement>
       </packagedElement>
-      <packagedElement xmi:type="uml:Profile" xmi:id="_yQjxwOeYEeWj7ZPL8JeBTQ" name="Data_Types">
-        <packagedElement xmi:type="uml:DataType" xmi:id="_KyBsgC5SEeaF_sH3mLTVKg" name="NFP_Privacy">
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_pbLAEC5SEeaF_sH3mLTVKg" name="expr">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://Papyrus_LIBRARIES/MARTE_Library.library.uml#_bManMBEBEdyx6M3BlUjlCQ"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_25PuwC5SEeaF_sH3mLTVKg" name="source">
-            <type xmi:type="uml:Enumeration" href="pathmap://Papyrus_LIBRARIES/MARTE_Library.library.uml#_oMZzEBD-EdyybZnLxHsjyA"/>
-          </ownedAttribute>
-        </packagedElement>
-        <packagedElement xmi:type="uml:DataType" xmi:id="_EgSOsD4WEeahGZm0A1o1gg" name="ScriptType">
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_JQxiMD4WEeahGZm0A1o1gg" name="scriptId">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_aTHB0D4WEeahGZm0A1o1gg"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aTHo4D4WEeahGZm0A1o1gg" value="1"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_NDdwsD4WEeahGZm0A1o1gg" name="scriptUri">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bJnzED4WEeahGZm0A1o1gg"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bJnzET4WEeahGZm0A1o1gg" value="1"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_SF_PYD4WEeahGZm0A1o1gg" name="scriptKind" type="_JBGoID4OEeahGZm0A1o1gg"/>
-        </packagedElement>
-      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_8J84wOeYEeWj7ZPL8JeBTQ" name="Complex_DICE_Types">
       <packagedElement xmi:type="uml:Profile" xmi:id="_GunKUOeZEeWj7ZPL8JeBTQ" name="Data_Types">
@@ -244,7 +221,6 @@
   <Ecore:EPackage xmi:id="_ynCuMOePEeWj7ZPL8JeBTQ" base_Package="_mTBX0OePEeWj7ZPL8JeBTQ" packageName="DICE_Library" nsPrefix="DICE_Library" nsURI="http://es.unizar.disco.dice/libraries/DICE_Library/1.0" basePackage="es.unizar.disco.dice"/>
   <standard:ModelLibrary xmi:id="_ynkSoOePEeWj7ZPL8JeBTQ" base_Package="_mTBX0OePEeWj7ZPL8JeBTQ"/>
   <Ecore:EPackage xmi:id="_vBN2AOeaEeWj7ZPL8JeBTQ" base_Package="_-1XS8OeUEeWj7ZPL8JeBTQ" packageName="Basic_DICE_Types" nsPrefix="Basic_DICE_Types" nsURI="http://es.unizar.disco.dice/libraries/Basic_DICE_Types/1.0" basePackage="es.unizar.disco.dice"/>
-  <Ecore:EPackage xmi:id="_vwxDoOeaEeWj7ZPL8JeBTQ" base_Package="_yQjxwOeYEeWj7ZPL8JeBTQ" packageName="Basic_Data_Types" nsPrefix="Basic_Data_Types" nsURI="http://es.unizar.disco.dice/libraries/Basic_Data_Types/1.0" basePackage="es.unizar.disco.dice"/>
   <Ecore:EPackage xmi:id="_wg11sOeaEeWj7ZPL8JeBTQ" base_Package="_diCmMOeWEeWj7ZPL8JeBTQ" packageName="Basic_Enumeration_Types" nsPrefix="Basic_Enumeration_Types" nsURI="http://es.unizar.disco.dice/libraries/Basic_Enumeration_Types/1.0" basePackage="es.unizar.disco.dice"/>
   <Ecore:EPackage xmi:id="_xvTz8OeaEeWj7ZPL8JeBTQ" base_Package="_8J84wOeYEeWj7ZPL8JeBTQ" packageName="Complex_DICE_Types" nsPrefix="Complex_DICE_Types" nsURI="http://es.unizar.disco.dice/libraries/Complex_DICE_Types/1.0" basePackage="es.unizar.disco.dice"/>
   <Ecore:EPackage xmi:id="_ydZB8OeaEeWj7ZPL8JeBTQ" base_Package="_GunKUOeZEeWj7ZPL8JeBTQ" packageName="Complex_Data_Types" nsPrefix="Complex_Data_Types" nsURI="http://es.unizar.disco.dice/libraries/Complex_Data_Types/1.0" basePackage="es.unizar.disco.dice"/>

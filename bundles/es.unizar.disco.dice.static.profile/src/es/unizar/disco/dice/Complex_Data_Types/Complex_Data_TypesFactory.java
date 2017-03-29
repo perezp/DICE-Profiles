@@ -49,6 +49,24 @@ public interface Complex_Data_TypesFactory extends EFactory {
 	DiceChannelSpecification createDiceChannelSpecification();
 
 	/**
+	 * Returns a new object of class '<em>Required Attribute</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Required Attribute</em>'.
+	 * @generated
+	 */
+	RequiredAttribute createRequiredAttribute();
+
+	/**
+	 * Returns a new object of class '<em>Firewall Rule</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Firewall Rule</em>'.
+	 * @generated
+	 */
+	FirewallRule createFirewallRule();
+
+	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
