@@ -642,6 +642,7 @@
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fbY-gD37EeahGZm0A1o1gg"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fbZlkD37EeahGZm0A1o1gg" value="1"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_OUbToBIMEeeObJA3SYVWAw" value="ubuntu"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_gJR_QD37EeahGZm0A1o1gg" name="password">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
@@ -692,16 +693,15 @@
               <instance xmi:type="uml:EnumerationLiteral" href="DICE_Library.uml#_WrORcAAvEee5FrQsk8AM1w"/>
             </defaultValue>
           </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_8AsDIAKMEeeo9amVjAoIhA" name="enable_monitoring">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9fgKgAKMEeeo9amVjAoIhA"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9fkb8AKMEeeo9amVjAoIhA" value="1"/>
-            <defaultValue xmi:type="uml:LiteralBoolean" xmi:id="_-_c6UAKMEeeo9amVjAoIhA"/>
-          </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_T9-_IANQEeeNS8hZS_VTiQ" name="firewallRules">
-            <type xmi:type="uml:DataType" href="DICE_Library.uml#_YKdksAAxEee5FrQsk8AM1w"/>
+            <type xmi:type="uml:DataType" href="DICE_Library.uml#_37SOMBQKEeerG-qiQF7PAA"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_VidCkANQEeeNS8hZS_VTiQ"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_VigF4ANQEeeNS8hZS_VTiQ" value="*"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_a17MkBOREeeqarsdcU2oLw" name="requiredAttributes">
+            <type xmi:type="uml:DataType" href="DICE_Library.uml#_mT3EgBQKEeerG-qiQF7PAA"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hqfQoBOREeeqarsdcU2oLw"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hql-UBOREeeqarsdcU2oLw" value="*"/>
           </ownedAttribute>
         </packagedElement>
         <packagedElement xmi:type="uml:Stereotype" xmi:id="_2gRSsDx3EeaOH59TuV453g" name="DdsmHeterogeneousCluster">
@@ -772,6 +772,7 @@
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8_RTID37EeahGZm0A1o1gg"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8_R6MD37EeahGZm0A1o1gg" value="1"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_a4qQQBIMEeeObJA3SYVWAw" value="/root/.ssh/agent.key"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="__CBOAD37EeahGZm0A1o1gg" name="publicAddress">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
@@ -1003,6 +1004,17 @@
           <ownedAttribute xmi:type="uml:Property" xmi:id="_fQ_nAD3oEeaPco63Cq703g" name="providedPortsList" type="_cyK-sD3pEeaPco63Cq703g">
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hmSDYD3oEeaPco63Cq703g"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hmSqcD3oEeaPco63Cq703g" value="*"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_7psREBGCEeek-vqfmGWZmg" name="monitored">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__vm9kBGCEeek-vqfmGWZmg"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__vx8sBGCEeek-vqfmGWZmg" value="1"/>
+            <defaultValue xmi:type="uml:LiteralBoolean" xmi:id="_E9hz8BGDEeek-vqfmGWZmg"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_gPr9kBGDEeek-vqfmGWZmg" name="monitoringRoles">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_h_gVYBGDEeek-vqfmGWZmg"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_h_ixoBGDEeek-vqfmGWZmg" value="*"/>
           </ownedAttribute>
         </packagedElement>
         <packagedElement xmi:type="uml:Stereotype" xmi:id="_cyK-sD3pEeaPco63Cq703g" name="DdsmPort">
