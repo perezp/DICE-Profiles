@@ -8,8 +8,6 @@ import com.masdes.dam.Basic_Enumeration_Types.Basic_Enumeration_TypesPackage;
 
 import com.masdes.dam.DAM.DAMPackage;
 
-import es.unizar.disco.dice.Basic_Data_Types.impl.Basic_Data_TypesPackageImpl;
-
 import es.unizar.disco.dice.Basic_Enumeration_Types.impl.Basic_Enumeration_TypesPackageImpl;
 
 import es.unizar.disco.dice.Complex_Data_Types.Complex_Data_TypesFactory;
@@ -17,6 +15,8 @@ import es.unizar.disco.dice.Complex_Data_Types.Complex_Data_TypesPackage;
 import es.unizar.disco.dice.Complex_Data_Types.DiceChannelSpecification;
 import es.unizar.disco.dice.Complex_Data_Types.DiceDataSpecification;
 import es.unizar.disco.dice.Complex_Data_Types.DiceDataVolume;
+import es.unizar.disco.dice.Complex_Data_Types.FirewallRule;
+import es.unizar.disco.dice.Complex_Data_Types.RequiredAttribute;
 
 import es.unizar.disco.dice.DDSM.DDSMPackage;
 
@@ -85,6 +85,20 @@ public class Complex_Data_TypesPackageImpl extends EPackageImpl implements Compl
 	private EClass diceChannelSpecificationEClass = null;
 
 	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass requiredAttributeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass firewallRuleEClass = null;
+
+	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
 	 * {@link org.eclipse.emf.ecore.EPackage.Registry EPackage.Registry} by the package
 	 * package URI value.
@@ -144,7 +158,6 @@ public class Complex_Data_TypesPackageImpl extends EPackageImpl implements Compl
 		HadoopPackageImpl theHadoopPackage = (HadoopPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(HadoopPackage.eNS_URI) instanceof HadoopPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(HadoopPackage.eNS_URI) : HadoopPackage.eINSTANCE);
 		SparkPackageImpl theSparkPackage = (SparkPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(SparkPackage.eNS_URI) instanceof SparkPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(SparkPackage.eNS_URI) : SparkPackage.eINSTANCE);
 		DDSMPackageImpl theDDSMPackage = (DDSMPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(DDSMPackage.eNS_URI) instanceof DDSMPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(DDSMPackage.eNS_URI) : DDSMPackage.eINSTANCE);
-		Basic_Data_TypesPackageImpl theBasic_Data_TypesPackage_1 = (Basic_Data_TypesPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(es.unizar.disco.dice.Basic_Data_Types.Basic_Data_TypesPackage.eNS_URI) instanceof Basic_Data_TypesPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(es.unizar.disco.dice.Basic_Data_Types.Basic_Data_TypesPackage.eNS_URI) : es.unizar.disco.dice.Basic_Data_Types.Basic_Data_TypesPackage.eINSTANCE);
 		Basic_Enumeration_TypesPackageImpl theBasic_Enumeration_TypesPackage_1 = (Basic_Enumeration_TypesPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(es.unizar.disco.dice.Basic_Enumeration_Types.Basic_Enumeration_TypesPackage.eNS_URI) instanceof Basic_Enumeration_TypesPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(es.unizar.disco.dice.Basic_Enumeration_Types.Basic_Enumeration_TypesPackage.eNS_URI) : es.unizar.disco.dice.Basic_Enumeration_Types.Basic_Enumeration_TypesPackage.eINSTANCE);
 
 		// Create package meta-data objects
@@ -156,7 +169,6 @@ public class Complex_Data_TypesPackageImpl extends EPackageImpl implements Compl
 		theHadoopPackage.createPackageContents();
 		theSparkPackage.createPackageContents();
 		theDDSMPackage.createPackageContents();
-		theBasic_Data_TypesPackage_1.createPackageContents();
 		theBasic_Enumeration_TypesPackage_1.createPackageContents();
 
 		// Initialize created meta-data
@@ -168,7 +180,6 @@ public class Complex_Data_TypesPackageImpl extends EPackageImpl implements Compl
 		theHadoopPackage.initializePackageContents();
 		theSparkPackage.initializePackageContents();
 		theDDSMPackage.initializePackageContents();
-		theBasic_Data_TypesPackage_1.initializePackageContents();
 		theBasic_Enumeration_TypesPackage_1.initializePackageContents();
 
 		// Mark meta-data to indicate it can't be changed
@@ -275,6 +286,60 @@ public class Complex_Data_TypesPackageImpl extends EPackageImpl implements Compl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EClass getRequiredAttribute() {
+		return requiredAttributeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getRequiredAttribute_ReferenceNode() {
+		return (EAttribute)requiredAttributeEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getRequiredAttribute_AttributeName() {
+		return (EAttribute)requiredAttributeEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getFirewallRule() {
+		return firewallRuleEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getFirewallRule_AllowedIpPrefix() {
+		return (EAttribute)firewallRuleEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getFirewallRule_Port() {
+		return (EAttribute)firewallRuleEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public Complex_Data_TypesFactory getComplex_Data_TypesFactory() {
 		return (Complex_Data_TypesFactory)getEFactoryInstance();
 	}
@@ -310,6 +375,14 @@ public class Complex_Data_TypesPackageImpl extends EPackageImpl implements Compl
 		diceChannelSpecificationEClass = createEClass(DICE_CHANNEL_SPECIFICATION);
 		createEAttribute(diceChannelSpecificationEClass, DICE_CHANNEL_SPECIFICATION__RATE);
 		createEAttribute(diceChannelSpecificationEClass, DICE_CHANNEL_SPECIFICATION__SIZE);
+
+		requiredAttributeEClass = createEClass(REQUIRED_ATTRIBUTE);
+		createEAttribute(requiredAttributeEClass, REQUIRED_ATTRIBUTE__REFERENCE_NODE);
+		createEAttribute(requiredAttributeEClass, REQUIRED_ATTRIBUTE__ATTRIBUTE_NAME);
+
+		firewallRuleEClass = createEClass(FIREWALL_RULE);
+		createEAttribute(firewallRuleEClass, FIREWALL_RULE__ALLOWED_IP_PREFIX);
+		createEAttribute(firewallRuleEClass, FIREWALL_RULE__PORT);
 	}
 
 	/**
@@ -359,6 +432,14 @@ public class Complex_Data_TypesPackageImpl extends EPackageImpl implements Compl
 		initEClass(diceChannelSpecificationEClass, DiceChannelSpecification.class, "DiceChannelSpecification", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getDiceChannelSpecification_Rate(), theBasicNFP_TypesPackage.getNFP_Frequency(), "rate", null, 0, 1, DiceChannelSpecification.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getDiceChannelSpecification_Size(), theBasicNFP_TypesPackage.getNFP_DataSize(), "size", null, 0, 1, DiceChannelSpecification.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+
+		initEClass(requiredAttributeEClass, RequiredAttribute.class, "RequiredAttribute", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getRequiredAttribute_ReferenceNode(), theTypesPackage.getString(), "referenceNode", null, 1, 1, RequiredAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getRequiredAttribute_AttributeName(), theTypesPackage.getString(), "attributeName", null, 1, 1, RequiredAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+
+		initEClass(firewallRuleEClass, FirewallRule.class, "FirewallRule", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getFirewallRule_AllowedIpPrefix(), theTypesPackage.getString(), "allowedIpPrefix", "0.0.0.0/0", 1, 1, FirewallRule.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getFirewallRule_Port(), theTypesPackage.getInteger(), "port", null, 1, 1, FirewallRule.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		// Create resource
 		createResource(eNS_URI);

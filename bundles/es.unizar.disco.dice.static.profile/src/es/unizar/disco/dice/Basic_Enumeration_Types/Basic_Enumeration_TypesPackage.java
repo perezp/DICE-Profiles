@@ -75,16 +75,6 @@ public interface Basic_Enumeration_TypesPackage extends EPackage {
 	int REF_DATA_FORMAT_TYPE = 1;
 
 	/**
-	 * The meta object id for the '{@link es.unizar.disco.dice.Basic_Enumeration_Types.LifeCycleElementType <em>Life Cycle Element Type</em>}' enum.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see es.unizar.disco.dice.Basic_Enumeration_Types.LifeCycleElementType
-	 * @see es.unizar.disco.dice.Basic_Enumeration_Types.impl.Basic_Enumeration_TypesPackageImpl#getLifeCycleElementType()
-	 * @generated
-	 */
-	int LIFE_CYCLE_ELEMENT_TYPE = 2;
-
-	/**
 	 * The meta object id for the '{@link es.unizar.disco.dice.Basic_Enumeration_Types.TechType <em>Tech Type</em>}' enum.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -92,7 +82,7 @@ public interface Basic_Enumeration_TypesPackage extends EPackage {
 	 * @see es.unizar.disco.dice.Basic_Enumeration_Types.impl.Basic_Enumeration_TypesPackageImpl#getTechType()
 	 * @generated
 	 */
-	int TECH_TYPE = 3;
+	int TECH_TYPE = 2;
 
 	/**
 	 * The meta object id for the '{@link es.unizar.disco.dice.Basic_Enumeration_Types.ProcessingType <em>Processing Type</em>}' enum.
@@ -102,7 +92,7 @@ public interface Basic_Enumeration_TypesPackage extends EPackage {
 	 * @see es.unizar.disco.dice.Basic_Enumeration_Types.impl.Basic_Enumeration_TypesPackageImpl#getProcessingType()
 	 * @generated
 	 */
-	int PROCESSING_TYPE = 4;
+	int PROCESSING_TYPE = 3;
 
 	/**
 	 * The meta object id for the '{@link es.unizar.disco.dice.Basic_Enumeration_Types.SourceType <em>Source Type</em>}' enum.
@@ -112,7 +102,7 @@ public interface Basic_Enumeration_TypesPackage extends EPackage {
 	 * @see es.unizar.disco.dice.Basic_Enumeration_Types.impl.Basic_Enumeration_TypesPackageImpl#getSourceType()
 	 * @generated
 	 */
-	int SOURCE_TYPE = 5;
+	int SOURCE_TYPE = 4;
 
 	/**
 	 * The meta object id for the '{@link es.unizar.disco.dice.Basic_Enumeration_Types.ConstraintType <em>Constraint Type</em>}' enum.
@@ -122,7 +112,7 @@ public interface Basic_Enumeration_TypesPackage extends EPackage {
 	 * @see es.unizar.disco.dice.Basic_Enumeration_Types.impl.Basic_Enumeration_TypesPackageImpl#getConstraintType()
 	 * @generated
 	 */
-	int CONSTRAINT_TYPE = 6;
+	int CONSTRAINT_TYPE = 5;
 
 	/**
 	 * The meta object id for the '{@link es.unizar.disco.dice.Basic_Enumeration_Types.WorkflowOperation <em>Workflow Operation</em>}' enum.
@@ -132,7 +122,7 @@ public interface Basic_Enumeration_TypesPackage extends EPackage {
 	 * @see es.unizar.disco.dice.Basic_Enumeration_Types.impl.Basic_Enumeration_TypesPackageImpl#getWorkflowOperation()
 	 * @generated
 	 */
-	int WORKFLOW_OPERATION = 7;
+	int WORKFLOW_OPERATION = 6;
 
 	/**
 	 * The meta object id for the '{@link es.unizar.disco.dice.Basic_Enumeration_Types.MapType <em>Map Type</em>}' enum.
@@ -142,7 +132,7 @@ public interface Basic_Enumeration_TypesPackage extends EPackage {
 	 * @see es.unizar.disco.dice.Basic_Enumeration_Types.impl.Basic_Enumeration_TypesPackageImpl#getMapType()
 	 * @generated
 	 */
-	int MAP_TYPE = 8;
+	int MAP_TYPE = 7;
 
 	/**
 	 * The meta object id for the '{@link es.unizar.disco.dice.Basic_Enumeration_Types.ReduceType <em>Reduce Type</em>}' enum.
@@ -152,7 +142,7 @@ public interface Basic_Enumeration_TypesPackage extends EPackage {
 	 * @see es.unizar.disco.dice.Basic_Enumeration_Types.impl.Basic_Enumeration_TypesPackageImpl#getReduceType()
 	 * @generated
 	 */
-	int REDUCE_TYPE = 9;
+	int REDUCE_TYPE = 8;
 
 	/**
 	 * The meta object id for the '{@link es.unizar.disco.dice.Basic_Enumeration_Types.StreamPolicy <em>Stream Policy</em>}' enum.
@@ -162,7 +152,7 @@ public interface Basic_Enumeration_TypesPackage extends EPackage {
 	 * @see es.unizar.disco.dice.Basic_Enumeration_Types.impl.Basic_Enumeration_TypesPackageImpl#getStreamPolicy()
 	 * @generated
 	 */
-	int STREAM_POLICY = 10;
+	int STREAM_POLICY = 9;
 
 	/**
 	 * The meta object id for the '{@link es.unizar.disco.dice.Basic_Enumeration_Types.Scheduling <em>Scheduling</em>}' enum.
@@ -172,7 +162,7 @@ public interface Basic_Enumeration_TypesPackage extends EPackage {
 	 * @see es.unizar.disco.dice.Basic_Enumeration_Types.impl.Basic_Enumeration_TypesPackageImpl#getScheduling()
 	 * @generated
 	 */
-	int SCHEDULING = 11;
+	int SCHEDULING = 10;
 
 	/**
 	 * The meta object id for the '{@link es.unizar.disco.dice.Basic_Enumeration_Types.VMSize <em>VM Size</em>}' enum.
@@ -182,7 +172,7 @@ public interface Basic_Enumeration_TypesPackage extends EPackage {
 	 * @see es.unizar.disco.dice.Basic_Enumeration_Types.impl.Basic_Enumeration_TypesPackageImpl#getVMSize()
 	 * @generated
 	 */
-	int VM_SIZE = 12;
+	int VM_SIZE = 11;
 
 	/**
 	 * The meta object id for the '{@link es.unizar.disco.dice.Basic_Enumeration_Types.ProviderType <em>Provider Type</em>}' enum.
@@ -192,7 +182,17 @@ public interface Basic_Enumeration_TypesPackage extends EPackage {
 	 * @see es.unizar.disco.dice.Basic_Enumeration_Types.impl.Basic_Enumeration_TypesPackageImpl#getProviderType()
 	 * @generated
 	 */
-	int PROVIDER_TYPE = 13;
+	int PROVIDER_TYPE = 12;
+
+	/**
+	 * The meta object id for the '{@link es.unizar.disco.dice.Basic_Enumeration_Types.LifeCycleElementType <em>Life Cycle Element Type</em>}' enum.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see es.unizar.disco.dice.Basic_Enumeration_Types.LifeCycleElementType
+	 * @see es.unizar.disco.dice.Basic_Enumeration_Types.impl.Basic_Enumeration_TypesPackageImpl#getLifeCycleElementType()
+	 * @generated
+	 */
+	int LIFE_CYCLE_ELEMENT_TYPE = 13;
 
 	/**
 	 * The meta object id for the '{@link es.unizar.disco.dice.Basic_Enumeration_Types.DDSMcomponentType <em>DDS Mcomponent Type</em>}' enum.
@@ -274,16 +274,6 @@ public interface Basic_Enumeration_TypesPackage extends EPackage {
 	 * @generated
 	 */
 	EEnum getRefDataFormatType();
-
-	/**
-	 * Returns the meta object for enum '{@link es.unizar.disco.dice.Basic_Enumeration_Types.LifeCycleElementType <em>Life Cycle Element Type</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for enum '<em>Life Cycle Element Type</em>'.
-	 * @see es.unizar.disco.dice.Basic_Enumeration_Types.LifeCycleElementType
-	 * @generated
-	 */
-	EEnum getLifeCycleElementType();
 
 	/**
 	 * Returns the meta object for enum '{@link es.unizar.disco.dice.Basic_Enumeration_Types.TechType <em>Tech Type</em>}'.
@@ -396,6 +386,16 @@ public interface Basic_Enumeration_TypesPackage extends EPackage {
 	EEnum getProviderType();
 
 	/**
+	 * Returns the meta object for enum '{@link es.unizar.disco.dice.Basic_Enumeration_Types.LifeCycleElementType <em>Life Cycle Element Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for enum '<em>Life Cycle Element Type</em>'.
+	 * @see es.unizar.disco.dice.Basic_Enumeration_Types.LifeCycleElementType
+	 * @generated
+	 */
+	EEnum getLifeCycleElementType();
+
+	/**
 	 * Returns the meta object for enum '{@link es.unizar.disco.dice.Basic_Enumeration_Types.DDSMcomponentType <em>DDS Mcomponent Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -496,16 +496,6 @@ public interface Basic_Enumeration_TypesPackage extends EPackage {
 		 * @generated
 		 */
 		EEnum REF_DATA_FORMAT_TYPE = eINSTANCE.getRefDataFormatType();
-
-		/**
-		 * The meta object literal for the '{@link es.unizar.disco.dice.Basic_Enumeration_Types.LifeCycleElementType <em>Life Cycle Element Type</em>}' enum.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see es.unizar.disco.dice.Basic_Enumeration_Types.LifeCycleElementType
-		 * @see es.unizar.disco.dice.Basic_Enumeration_Types.impl.Basic_Enumeration_TypesPackageImpl#getLifeCycleElementType()
-		 * @generated
-		 */
-		EEnum LIFE_CYCLE_ELEMENT_TYPE = eINSTANCE.getLifeCycleElementType();
 
 		/**
 		 * The meta object literal for the '{@link es.unizar.disco.dice.Basic_Enumeration_Types.TechType <em>Tech Type</em>}' enum.
@@ -616,6 +606,16 @@ public interface Basic_Enumeration_TypesPackage extends EPackage {
 		 * @generated
 		 */
 		EEnum PROVIDER_TYPE = eINSTANCE.getProviderType();
+
+		/**
+		 * The meta object literal for the '{@link es.unizar.disco.dice.Basic_Enumeration_Types.LifeCycleElementType <em>Life Cycle Element Type</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see es.unizar.disco.dice.Basic_Enumeration_Types.LifeCycleElementType
+		 * @see es.unizar.disco.dice.Basic_Enumeration_Types.impl.Basic_Enumeration_TypesPackageImpl#getLifeCycleElementType()
+		 * @generated
+		 */
+		EEnum LIFE_CYCLE_ELEMENT_TYPE = eINSTANCE.getLifeCycleElementType();
 
 		/**
 		 * The meta object literal for the '{@link es.unizar.disco.dice.Basic_Enumeration_Types.DDSMcomponentType <em>DDS Mcomponent Type</em>}' enum.

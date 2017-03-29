@@ -73,14 +73,6 @@
    <extension point="org.eclipse.emf.ecore.generated_package">
       <!-- @generated DICE -->
       <package
-            uri="http://es.unizar.disco.dice/libraries/Basic_Data_Types/1.0"
-            class="es.unizar.disco.dice.Basic_Data_Types.Basic_Data_TypesPackage"
-            genModel="resources/DICE.genmodel"/>
-   </extension>
-
-   <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated DICE -->
-      <package
             uri="http://es.unizar.disco.dice/libraries/Basic_Enumeration_Types/1.0"
             class="es.unizar.disco.dice.Basic_Enumeration_Types.Basic_Enumeration_TypesPackage"
             genModel="resources/DICE.genmodel"/>

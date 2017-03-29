@@ -299,6 +299,7 @@ public interface DdsmVMsCluster extends DdsmExternalComponent {
 
 	/**
 	 * Returns the value of the '<em><b>Ssh Key</b></em>' attribute.
+	 * The default value is <code>"/root/.ssh/agent.key"</code>.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Ssh Key</em>' attribute isn't clear,
@@ -308,7 +309,7 @@ public interface DdsmVMsCluster extends DdsmExternalComponent {
 	 * @return the value of the '<em>Ssh Key</em>' attribute.
 	 * @see #setSshKey(String)
 	 * @see es.unizar.disco.dice.DDSM.DDSMPackage#getDdsmVMsCluster_SshKey()
-	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
+	 * @model default="/root/.ssh/agent.key" dataType="org.eclipse.uml2.types.String" ordered="false"
 	 * @generated
 	 */
 	String getSshKey();

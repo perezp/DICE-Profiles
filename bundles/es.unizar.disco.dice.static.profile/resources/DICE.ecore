@@ -311,7 +311,8 @@
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="region" ordered="false"
             eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="login" ordered="false"
-            eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+            eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"
+            defaultValueLiteral="ubuntu"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="password" ordered="false"
             eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="base_Device" ordered="false"
@@ -320,6 +321,11 @@
       <eClassifiers xsi:type="ecore:EClass" name="DdsmComponent" abstract="true" eSuperTypes="#//DICE_UML_Extensions/DDSM/DdsmCloudElement">
         <eStructuralFeatures xsi:type="ecore:EReference" name="providedPortsList"
             ordered="false" upperBound="-1" eType="#//DICE_UML_Extensions/DDSM/DdsmPort"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="monitored" ordered="false"
+            eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//Boolean"
+            defaultValueLiteral="false"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="monitoringRoles" ordered="false"
+            upperBound="-1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
       </eClassifiers>
       <eClassifiers xsi:type="ecore:EClass" name="DdsmCloudElement" abstract="true">
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" ordered="false"
@@ -356,11 +362,11 @@
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="language" ordered="false"
             eType="ecore:EEnum DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/LanguageType"
             defaultValueLiteral="bash"/>
-        <eStructuralFeatures xsi:type="ecore:EAttribute" name="enable_monitoring"
-            ordered="false" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//Boolean"
-            defaultValueLiteral="false"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="firewallRules" ordered="false"
-            upperBound="-1" eType="ecore:EClass DICE_Library.ecore#//Basic_DICE_Types/Basic_Data_Types/FirewallRule"
+            upperBound="-1" eType="ecore:EClass DICE_Library.ecore#//Complex_DICE_Types/Complex_Data_Types/FirewallRule"
+            containment="true"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" name="requiredAttributes"
+            ordered="false" upperBound="-1" eType="ecore:EClass DICE_Library.ecore#//Complex_DICE_Types/Complex_Data_Types/RequiredAttribute"
             containment="true"/>
       </eClassifiers>
       <eClassifiers xsi:type="ecore:EClass" name="DdsmHeterogeneousCluster" eSuperTypes="#//DICE_UML_Extensions/DDSM/DdsmExternalComponent">
@@ -392,7 +398,8 @@
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="privateKey" ordered="false"
             eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="sshKey" ordered="false"
-            eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+            eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"
+            defaultValueLiteral="/root/.ssh/agent.key"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="publicAddress" ordered="false"
             eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="instances" ordered="false"

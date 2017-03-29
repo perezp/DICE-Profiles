@@ -139,6 +139,7 @@ public interface DdsmExternalComponent extends DdsmComponent {
 
 	/**
 	 * Returns the value of the '<em><b>Login</b></em>' attribute.
+	 * The default value is <code>"ubuntu"</code>.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Login</em>' attribute isn't clear,
@@ -148,7 +149,7 @@ public interface DdsmExternalComponent extends DdsmComponent {
 	 * @return the value of the '<em>Login</em>' attribute.
 	 * @see #setLogin(String)
 	 * @see es.unizar.disco.dice.DDSM.DDSMPackage#getDdsmExternalComponent_Login()
-	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
+	 * @model default="ubuntu" dataType="org.eclipse.uml2.types.String" ordered="false"
 	 * @generated
 	 */
 	String getLogin();

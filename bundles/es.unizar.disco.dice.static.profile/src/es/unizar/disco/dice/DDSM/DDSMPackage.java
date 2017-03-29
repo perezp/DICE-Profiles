@@ -148,13 +148,31 @@ public interface DDSMPackage extends EPackage {
 	int DDSM_COMPONENT__PROVIDED_PORTS_LIST = DDSM_CLOUD_ELEMENT_FEATURE_COUNT + 0;
 
 	/**
+	 * The feature id for the '<em><b>Monitored</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_COMPONENT__MONITORED = DDSM_CLOUD_ELEMENT_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Monitoring Roles</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_COMPONENT__MONITORING_ROLES = DDSM_CLOUD_ELEMENT_FEATURE_COUNT + 2;
+
+	/**
 	 * The number of structural features of the '<em>Ddsm Component</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_COMPONENT_FEATURE_COUNT = DDSM_CLOUD_ELEMENT_FEATURE_COUNT + 1;
+	int DDSM_COMPONENT_FEATURE_COUNT = DDSM_CLOUD_ELEMENT_FEATURE_COUNT + 3;
 
 	/**
 	 * The meta object id for the '{@link es.unizar.disco.dice.DDSM.impl.DdsmExternalComponentImpl <em>Ddsm External Component</em>}' class.
@@ -201,6 +219,24 @@ public interface DDSMPackage extends EPackage {
 	 * @ordered
 	 */
 	int DDSM_EXTERNAL_COMPONENT__PROVIDED_PORTS_LIST = DDSM_COMPONENT__PROVIDED_PORTS_LIST;
+
+	/**
+	 * The feature id for the '<em><b>Monitored</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_EXTERNAL_COMPONENT__MONITORED = DDSM_COMPONENT__MONITORED;
+
+	/**
+	 * The feature id for the '<em><b>Monitoring Roles</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_EXTERNAL_COMPONENT__MONITORING_ROLES = DDSM_COMPONENT__MONITORING_ROLES;
 
 	/**
 	 * The feature id for the '<em><b>Location</b></em>' attribute.
@@ -394,6 +430,24 @@ public interface DDSMPackage extends EPackage {
 	int DDSM_INTERNAL_COMPONENT__PROVIDED_PORTS_LIST = DDSM_COMPONENT__PROVIDED_PORTS_LIST;
 
 	/**
+	 * The feature id for the '<em><b>Monitored</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_INTERNAL_COMPONENT__MONITORED = DDSM_COMPONENT__MONITORED;
+
+	/**
+	 * The feature id for the '<em><b>Monitoring Roles</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_INTERNAL_COMPONENT__MONITORING_ROLES = DDSM_COMPONENT__MONITORING_ROLES;
+
+	/**
 	 * The feature id for the '<em><b>Required Port</b></em>' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -457,22 +511,22 @@ public interface DDSMPackage extends EPackage {
 	int DDSM_INTERNAL_COMPONENT__LANGUAGE = DDSM_COMPONENT_FEATURE_COUNT + 6;
 
 	/**
-	 * The feature id for the '<em><b>Enable monitoring</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DDSM_INTERNAL_COMPONENT__ENABLE_MONITORING = DDSM_COMPONENT_FEATURE_COUNT + 7;
-
-	/**
 	 * The feature id for the '<em><b>Firewall Rules</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_INTERNAL_COMPONENT__FIREWALL_RULES = DDSM_COMPONENT_FEATURE_COUNT + 8;
+	int DDSM_INTERNAL_COMPONENT__FIREWALL_RULES = DDSM_COMPONENT_FEATURE_COUNT + 7;
+
+	/**
+	 * The feature id for the '<em><b>Required Attributes</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_INTERNAL_COMPONENT__REQUIRED_ATTRIBUTES = DDSM_COMPONENT_FEATURE_COUNT + 8;
 
 	/**
 	 * The number of structural features of the '<em>Ddsm Internal Component</em>' class.
@@ -528,6 +582,24 @@ public interface DDSMPackage extends EPackage {
 	 * @ordered
 	 */
 	int DDSM_HETEROGENEOUS_CLUSTER__PROVIDED_PORTS_LIST = DDSM_EXTERNAL_COMPONENT__PROVIDED_PORTS_LIST;
+
+	/**
+	 * The feature id for the '<em><b>Monitored</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_HETEROGENEOUS_CLUSTER__MONITORED = DDSM_EXTERNAL_COMPONENT__MONITORED;
+
+	/**
+	 * The feature id for the '<em><b>Monitoring Roles</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_HETEROGENEOUS_CLUSTER__MONITORING_ROLES = DDSM_EXTERNAL_COMPONENT__MONITORING_ROLES;
 
 	/**
 	 * The feature id for the '<em><b>Location</b></em>' attribute.
@@ -655,6 +727,24 @@ public interface DDSMPackage extends EPackage {
 	 * @ordered
 	 */
 	int DDSM_VMS_CLUSTER__PROVIDED_PORTS_LIST = DDSM_EXTERNAL_COMPONENT__PROVIDED_PORTS_LIST;
+
+	/**
+	 * The feature id for the '<em><b>Monitored</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_VMS_CLUSTER__MONITORED = DDSM_EXTERNAL_COMPONENT__MONITORED;
+
+	/**
+	 * The feature id for the '<em><b>Monitoring Roles</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_VMS_CLUSTER__MONITORING_ROLES = DDSM_EXTERNAL_COMPONENT__MONITORING_ROLES;
 
 	/**
 	 * The feature id for the '<em><b>Location</b></em>' attribute.
@@ -901,6 +991,24 @@ public interface DDSMPackage extends EPackage {
 	int DDSM_MASTER_SLAVE_PLATFORM__PROVIDED_PORTS_LIST = DDSM_INTERNAL_COMPONENT__PROVIDED_PORTS_LIST;
 
 	/**
+	 * The feature id for the '<em><b>Monitored</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_MASTER_SLAVE_PLATFORM__MONITORED = DDSM_INTERNAL_COMPONENT__MONITORED;
+
+	/**
+	 * The feature id for the '<em><b>Monitoring Roles</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_MASTER_SLAVE_PLATFORM__MONITORING_ROLES = DDSM_INTERNAL_COMPONENT__MONITORING_ROLES;
+
+	/**
 	 * The feature id for the '<em><b>Required Port</b></em>' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -964,15 +1072,6 @@ public interface DDSMPackage extends EPackage {
 	int DDSM_MASTER_SLAVE_PLATFORM__LANGUAGE = DDSM_INTERNAL_COMPONENT__LANGUAGE;
 
 	/**
-	 * The feature id for the '<em><b>Enable monitoring</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DDSM_MASTER_SLAVE_PLATFORM__ENABLE_MONITORING = DDSM_INTERNAL_COMPONENT__ENABLE_MONITORING;
-
-	/**
 	 * The feature id for the '<em><b>Firewall Rules</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -980,6 +1079,15 @@ public interface DDSMPackage extends EPackage {
 	 * @ordered
 	 */
 	int DDSM_MASTER_SLAVE_PLATFORM__FIREWALL_RULES = DDSM_INTERNAL_COMPONENT__FIREWALL_RULES;
+
+	/**
+	 * The feature id for the '<em><b>Required Attributes</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_MASTER_SLAVE_PLATFORM__REQUIRED_ATTRIBUTES = DDSM_INTERNAL_COMPONENT__REQUIRED_ATTRIBUTES;
 
 	/**
 	 * The feature id for the '<em><b>Master Host</b></em>' reference.
@@ -1046,6 +1154,24 @@ public interface DDSMPackage extends EPackage {
 	int DDSM_YARN_CLUSTER__PROVIDED_PORTS_LIST = DDSM_MASTER_SLAVE_PLATFORM__PROVIDED_PORTS_LIST;
 
 	/**
+	 * The feature id for the '<em><b>Monitored</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_YARN_CLUSTER__MONITORED = DDSM_MASTER_SLAVE_PLATFORM__MONITORED;
+
+	/**
+	 * The feature id for the '<em><b>Monitoring Roles</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_YARN_CLUSTER__MONITORING_ROLES = DDSM_MASTER_SLAVE_PLATFORM__MONITORING_ROLES;
+
+	/**
 	 * The feature id for the '<em><b>Required Port</b></em>' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1109,15 +1235,6 @@ public interface DDSMPackage extends EPackage {
 	int DDSM_YARN_CLUSTER__LANGUAGE = DDSM_MASTER_SLAVE_PLATFORM__LANGUAGE;
 
 	/**
-	 * The feature id for the '<em><b>Enable monitoring</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DDSM_YARN_CLUSTER__ENABLE_MONITORING = DDSM_MASTER_SLAVE_PLATFORM__ENABLE_MONITORING;
-
-	/**
 	 * The feature id for the '<em><b>Firewall Rules</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1125,6 +1242,15 @@ public interface DDSMPackage extends EPackage {
 	 * @ordered
 	 */
 	int DDSM_YARN_CLUSTER__FIREWALL_RULES = DDSM_MASTER_SLAVE_PLATFORM__FIREWALL_RULES;
+
+	/**
+	 * The feature id for the '<em><b>Required Attributes</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_YARN_CLUSTER__REQUIRED_ATTRIBUTES = DDSM_MASTER_SLAVE_PLATFORM__REQUIRED_ATTRIBUTES;
 
 	/**
 	 * The feature id for the '<em><b>Master Host</b></em>' reference.
@@ -1263,6 +1389,24 @@ public interface DDSMPackage extends EPackage {
 	int DDSM_PEER_TO_PEER_PLATFORM__PROVIDED_PORTS_LIST = DDSM_INTERNAL_COMPONENT__PROVIDED_PORTS_LIST;
 
 	/**
+	 * The feature id for the '<em><b>Monitored</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_PEER_TO_PEER_PLATFORM__MONITORED = DDSM_INTERNAL_COMPONENT__MONITORED;
+
+	/**
+	 * The feature id for the '<em><b>Monitoring Roles</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_PEER_TO_PEER_PLATFORM__MONITORING_ROLES = DDSM_INTERNAL_COMPONENT__MONITORING_ROLES;
+
+	/**
 	 * The feature id for the '<em><b>Required Port</b></em>' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1326,15 +1470,6 @@ public interface DDSMPackage extends EPackage {
 	int DDSM_PEER_TO_PEER_PLATFORM__LANGUAGE = DDSM_INTERNAL_COMPONENT__LANGUAGE;
 
 	/**
-	 * The feature id for the '<em><b>Enable monitoring</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DDSM_PEER_TO_PEER_PLATFORM__ENABLE_MONITORING = DDSM_INTERNAL_COMPONENT__ENABLE_MONITORING;
-
-	/**
 	 * The feature id for the '<em><b>Firewall Rules</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1342,6 +1477,15 @@ public interface DDSMPackage extends EPackage {
 	 * @ordered
 	 */
 	int DDSM_PEER_TO_PEER_PLATFORM__FIREWALL_RULES = DDSM_INTERNAL_COMPONENT__FIREWALL_RULES;
+
+	/**
+	 * The feature id for the '<em><b>Required Attributes</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_PEER_TO_PEER_PLATFORM__REQUIRED_ATTRIBUTES = DDSM_INTERNAL_COMPONENT__REQUIRED_ATTRIBUTES;
 
 	/**
 	 * The number of structural features of the '<em>Ddsm Peer To Peer Platform</em>' class.
@@ -1397,6 +1541,24 @@ public interface DDSMPackage extends EPackage {
 	 * @ordered
 	 */
 	int DDSM_ZOOKEEPER_CLUSTER__PROVIDED_PORTS_LIST = DDSM_PEER_TO_PEER_PLATFORM__PROVIDED_PORTS_LIST;
+
+	/**
+	 * The feature id for the '<em><b>Monitored</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_ZOOKEEPER_CLUSTER__MONITORED = DDSM_PEER_TO_PEER_PLATFORM__MONITORED;
+
+	/**
+	 * The feature id for the '<em><b>Monitoring Roles</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_ZOOKEEPER_CLUSTER__MONITORING_ROLES = DDSM_PEER_TO_PEER_PLATFORM__MONITORING_ROLES;
 
 	/**
 	 * The feature id for the '<em><b>Required Port</b></em>' reference list.
@@ -1462,15 +1624,6 @@ public interface DDSMPackage extends EPackage {
 	int DDSM_ZOOKEEPER_CLUSTER__LANGUAGE = DDSM_PEER_TO_PEER_PLATFORM__LANGUAGE;
 
 	/**
-	 * The feature id for the '<em><b>Enable monitoring</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DDSM_ZOOKEEPER_CLUSTER__ENABLE_MONITORING = DDSM_PEER_TO_PEER_PLATFORM__ENABLE_MONITORING;
-
-	/**
 	 * The feature id for the '<em><b>Firewall Rules</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1478,6 +1631,15 @@ public interface DDSMPackage extends EPackage {
 	 * @ordered
 	 */
 	int DDSM_ZOOKEEPER_CLUSTER__FIREWALL_RULES = DDSM_PEER_TO_PEER_PLATFORM__FIREWALL_RULES;
+
+	/**
+	 * The feature id for the '<em><b>Required Attributes</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_ZOOKEEPER_CLUSTER__REQUIRED_ATTRIBUTES = DDSM_PEER_TO_PEER_PLATFORM__REQUIRED_ATTRIBUTES;
 
 	/**
 	 * The feature id for the '<em><b>Tick Time</b></em>' attribute.
@@ -1562,6 +1724,24 @@ public interface DDSMPackage extends EPackage {
 	int DDSM_KAFKA_CLUSTER__PROVIDED_PORTS_LIST = DDSM_PEER_TO_PEER_PLATFORM__PROVIDED_PORTS_LIST;
 
 	/**
+	 * The feature id for the '<em><b>Monitored</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_KAFKA_CLUSTER__MONITORED = DDSM_PEER_TO_PEER_PLATFORM__MONITORED;
+
+	/**
+	 * The feature id for the '<em><b>Monitoring Roles</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_KAFKA_CLUSTER__MONITORING_ROLES = DDSM_PEER_TO_PEER_PLATFORM__MONITORING_ROLES;
+
+	/**
 	 * The feature id for the '<em><b>Required Port</b></em>' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1625,15 +1805,6 @@ public interface DDSMPackage extends EPackage {
 	int DDSM_KAFKA_CLUSTER__LANGUAGE = DDSM_PEER_TO_PEER_PLATFORM__LANGUAGE;
 
 	/**
-	 * The feature id for the '<em><b>Enable monitoring</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DDSM_KAFKA_CLUSTER__ENABLE_MONITORING = DDSM_PEER_TO_PEER_PLATFORM__ENABLE_MONITORING;
-
-	/**
 	 * The feature id for the '<em><b>Firewall Rules</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1641,6 +1812,15 @@ public interface DDSMPackage extends EPackage {
 	 * @ordered
 	 */
 	int DDSM_KAFKA_CLUSTER__FIREWALL_RULES = DDSM_PEER_TO_PEER_PLATFORM__FIREWALL_RULES;
+
+	/**
+	 * The feature id for the '<em><b>Required Attributes</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_KAFKA_CLUSTER__REQUIRED_ATTRIBUTES = DDSM_PEER_TO_PEER_PLATFORM__REQUIRED_ATTRIBUTES;
 
 	/**
 	 * The feature id for the '<em><b>Base Execution Environment</b></em>' reference.
@@ -1806,6 +1986,24 @@ public interface DDSMPackage extends EPackage {
 	int DDSM_STORM_CLUSTER__PROVIDED_PORTS_LIST = DDSM_MASTER_SLAVE_PLATFORM__PROVIDED_PORTS_LIST;
 
 	/**
+	 * The feature id for the '<em><b>Monitored</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_STORM_CLUSTER__MONITORED = DDSM_MASTER_SLAVE_PLATFORM__MONITORED;
+
+	/**
+	 * The feature id for the '<em><b>Monitoring Roles</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_STORM_CLUSTER__MONITORING_ROLES = DDSM_MASTER_SLAVE_PLATFORM__MONITORING_ROLES;
+
+	/**
 	 * The feature id for the '<em><b>Required Port</b></em>' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1869,15 +2067,6 @@ public interface DDSMPackage extends EPackage {
 	int DDSM_STORM_CLUSTER__LANGUAGE = DDSM_MASTER_SLAVE_PLATFORM__LANGUAGE;
 
 	/**
-	 * The feature id for the '<em><b>Enable monitoring</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DDSM_STORM_CLUSTER__ENABLE_MONITORING = DDSM_MASTER_SLAVE_PLATFORM__ENABLE_MONITORING;
-
-	/**
 	 * The feature id for the '<em><b>Firewall Rules</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1885,6 +2074,15 @@ public interface DDSMPackage extends EPackage {
 	 * @ordered
 	 */
 	int DDSM_STORM_CLUSTER__FIREWALL_RULES = DDSM_MASTER_SLAVE_PLATFORM__FIREWALL_RULES;
+
+	/**
+	 * The feature id for the '<em><b>Required Attributes</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_STORM_CLUSTER__REQUIRED_ATTRIBUTES = DDSM_MASTER_SLAVE_PLATFORM__REQUIRED_ATTRIBUTES;
 
 	/**
 	 * The feature id for the '<em><b>Master Host</b></em>' reference.
@@ -2188,6 +2386,24 @@ public interface DDSMPackage extends EPackage {
 	int DDSM_HDFS_CLUSTER__PROVIDED_PORTS_LIST = DDSM_MASTER_SLAVE_PLATFORM__PROVIDED_PORTS_LIST;
 
 	/**
+	 * The feature id for the '<em><b>Monitored</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_HDFS_CLUSTER__MONITORED = DDSM_MASTER_SLAVE_PLATFORM__MONITORED;
+
+	/**
+	 * The feature id for the '<em><b>Monitoring Roles</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_HDFS_CLUSTER__MONITORING_ROLES = DDSM_MASTER_SLAVE_PLATFORM__MONITORING_ROLES;
+
+	/**
 	 * The feature id for the '<em><b>Required Port</b></em>' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2251,15 +2467,6 @@ public interface DDSMPackage extends EPackage {
 	int DDSM_HDFS_CLUSTER__LANGUAGE = DDSM_MASTER_SLAVE_PLATFORM__LANGUAGE;
 
 	/**
-	 * The feature id for the '<em><b>Enable monitoring</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DDSM_HDFS_CLUSTER__ENABLE_MONITORING = DDSM_MASTER_SLAVE_PLATFORM__ENABLE_MONITORING;
-
-	/**
 	 * The feature id for the '<em><b>Firewall Rules</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2267,6 +2474,15 @@ public interface DDSMPackage extends EPackage {
 	 * @ordered
 	 */
 	int DDSM_HDFS_CLUSTER__FIREWALL_RULES = DDSM_MASTER_SLAVE_PLATFORM__FIREWALL_RULES;
+
+	/**
+	 * The feature id for the '<em><b>Required Attributes</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_HDFS_CLUSTER__REQUIRED_ATTRIBUTES = DDSM_MASTER_SLAVE_PLATFORM__REQUIRED_ATTRIBUTES;
 
 	/**
 	 * The feature id for the '<em><b>Master Host</b></em>' reference.
@@ -2414,6 +2630,24 @@ public interface DDSMPackage extends EPackage {
 	int DDSM_CASSANDRA_CLUSTER__PROVIDED_PORTS_LIST = DDSM_PEER_TO_PEER_PLATFORM__PROVIDED_PORTS_LIST;
 
 	/**
+	 * The feature id for the '<em><b>Monitored</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_CASSANDRA_CLUSTER__MONITORED = DDSM_PEER_TO_PEER_PLATFORM__MONITORED;
+
+	/**
+	 * The feature id for the '<em><b>Monitoring Roles</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_CASSANDRA_CLUSTER__MONITORING_ROLES = DDSM_PEER_TO_PEER_PLATFORM__MONITORING_ROLES;
+
+	/**
 	 * The feature id for the '<em><b>Required Port</b></em>' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2477,15 +2711,6 @@ public interface DDSMPackage extends EPackage {
 	int DDSM_CASSANDRA_CLUSTER__LANGUAGE = DDSM_PEER_TO_PEER_PLATFORM__LANGUAGE;
 
 	/**
-	 * The feature id for the '<em><b>Enable monitoring</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DDSM_CASSANDRA_CLUSTER__ENABLE_MONITORING = DDSM_PEER_TO_PEER_PLATFORM__ENABLE_MONITORING;
-
-	/**
 	 * The feature id for the '<em><b>Firewall Rules</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2493,6 +2718,15 @@ public interface DDSMPackage extends EPackage {
 	 * @ordered
 	 */
 	int DDSM_CASSANDRA_CLUSTER__FIREWALL_RULES = DDSM_PEER_TO_PEER_PLATFORM__FIREWALL_RULES;
+
+	/**
+	 * The feature id for the '<em><b>Required Attributes</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_CASSANDRA_CLUSTER__REQUIRED_ATTRIBUTES = DDSM_PEER_TO_PEER_PLATFORM__REQUIRED_ATTRIBUTES;
 
 	/**
 	 * The feature id for the '<em><b>Seed Host</b></em>' reference.
@@ -2622,6 +2856,24 @@ public interface DDSMPackage extends EPackage {
 	int DDSM_SPARK_CLUSTER__PROVIDED_PORTS_LIST = DDSM_MASTER_SLAVE_PLATFORM__PROVIDED_PORTS_LIST;
 
 	/**
+	 * The feature id for the '<em><b>Monitored</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_SPARK_CLUSTER__MONITORED = DDSM_MASTER_SLAVE_PLATFORM__MONITORED;
+
+	/**
+	 * The feature id for the '<em><b>Monitoring Roles</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_SPARK_CLUSTER__MONITORING_ROLES = DDSM_MASTER_SLAVE_PLATFORM__MONITORING_ROLES;
+
+	/**
 	 * The feature id for the '<em><b>Required Port</b></em>' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2685,15 +2937,6 @@ public interface DDSMPackage extends EPackage {
 	int DDSM_SPARK_CLUSTER__LANGUAGE = DDSM_MASTER_SLAVE_PLATFORM__LANGUAGE;
 
 	/**
-	 * The feature id for the '<em><b>Enable monitoring</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DDSM_SPARK_CLUSTER__ENABLE_MONITORING = DDSM_MASTER_SLAVE_PLATFORM__ENABLE_MONITORING;
-
-	/**
 	 * The feature id for the '<em><b>Firewall Rules</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2701,6 +2944,15 @@ public interface DDSMPackage extends EPackage {
 	 * @ordered
 	 */
 	int DDSM_SPARK_CLUSTER__FIREWALL_RULES = DDSM_MASTER_SLAVE_PLATFORM__FIREWALL_RULES;
+
+	/**
+	 * The feature id for the '<em><b>Required Attributes</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_SPARK_CLUSTER__REQUIRED_ATTRIBUTES = DDSM_MASTER_SLAVE_PLATFORM__REQUIRED_ATTRIBUTES;
 
 	/**
 	 * The feature id for the '<em><b>Master Host</b></em>' reference.
@@ -2828,6 +3080,28 @@ public interface DDSMPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getDdsmComponent_ProvidedPortsList();
+
+	/**
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmComponent#isMonitored <em>Monitored</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Monitored</em>'.
+	 * @see es.unizar.disco.dice.DDSM.DdsmComponent#isMonitored()
+	 * @see #getDdsmComponent()
+	 * @generated
+	 */
+	EAttribute getDdsmComponent_Monitored();
+
+	/**
+	 * Returns the meta object for the attribute list '{@link es.unizar.disco.dice.DDSM.DdsmComponent#getMonitoringRoles <em>Monitoring Roles</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute list '<em>Monitoring Roles</em>'.
+	 * @see es.unizar.disco.dice.DDSM.DdsmComponent#getMonitoringRoles()
+	 * @see #getDdsmComponent()
+	 * @generated
+	 */
+	EAttribute getDdsmComponent_MonitoringRoles();
 
 	/**
 	 * Returns the meta object for class '{@link es.unizar.disco.dice.DDSM.DdsmCloudElement <em>Ddsm Cloud Element</em>}'.
@@ -3003,17 +3277,6 @@ public interface DDSMPackage extends EPackage {
 	EAttribute getDdsmInternalComponent_Language();
 
 	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmInternalComponent#isEnable_monitoring <em>Enable monitoring</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Enable monitoring</em>'.
-	 * @see es.unizar.disco.dice.DDSM.DdsmInternalComponent#isEnable_monitoring()
-	 * @see #getDdsmInternalComponent()
-	 * @generated
-	 */
-	EAttribute getDdsmInternalComponent_Enable_monitoring();
-
-	/**
 	 * Returns the meta object for the containment reference list '{@link es.unizar.disco.dice.DDSM.DdsmInternalComponent#getFirewallRules <em>Firewall Rules</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3023,6 +3286,17 @@ public interface DDSMPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getDdsmInternalComponent_FirewallRules();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link es.unizar.disco.dice.DDSM.DdsmInternalComponent#getRequiredAttributes <em>Required Attributes</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Required Attributes</em>'.
+	 * @see es.unizar.disco.dice.DDSM.DdsmInternalComponent#getRequiredAttributes()
+	 * @see #getDdsmInternalComponent()
+	 * @generated
+	 */
+	EReference getDdsmInternalComponent_RequiredAttributes();
 
 	/**
 	 * Returns the meta object for class '{@link es.unizar.disco.dice.DDSM.DdsmHeterogeneousCluster <em>Ddsm Heterogeneous Cluster</em>}'.
@@ -4107,6 +4381,22 @@ public interface DDSMPackage extends EPackage {
 		EReference DDSM_COMPONENT__PROVIDED_PORTS_LIST = eINSTANCE.getDdsmComponent_ProvidedPortsList();
 
 		/**
+		 * The meta object literal for the '<em><b>Monitored</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DDSM_COMPONENT__MONITORED = eINSTANCE.getDdsmComponent_Monitored();
+
+		/**
+		 * The meta object literal for the '<em><b>Monitoring Roles</b></em>' attribute list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DDSM_COMPONENT__MONITORING_ROLES = eINSTANCE.getDdsmComponent_MonitoringRoles();
+
+		/**
 		 * The meta object literal for the '{@link es.unizar.disco.dice.DDSM.impl.DdsmCloudElementImpl <em>Ddsm Cloud Element</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -4241,20 +4531,20 @@ public interface DDSMPackage extends EPackage {
 		EAttribute DDSM_INTERNAL_COMPONENT__LANGUAGE = eINSTANCE.getDdsmInternalComponent_Language();
 
 		/**
-		 * The meta object literal for the '<em><b>Enable monitoring</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute DDSM_INTERNAL_COMPONENT__ENABLE_MONITORING = eINSTANCE.getDdsmInternalComponent_Enable_monitoring();
-
-		/**
 		 * The meta object literal for the '<em><b>Firewall Rules</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
 		EReference DDSM_INTERNAL_COMPONENT__FIREWALL_RULES = eINSTANCE.getDdsmInternalComponent_FirewallRules();
+
+		/**
+		 * The meta object literal for the '<em><b>Required Attributes</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DDSM_INTERNAL_COMPONENT__REQUIRED_ATTRIBUTES = eINSTANCE.getDdsmInternalComponent_RequiredAttributes();
 
 		/**
 		 * The meta object literal for the '{@link es.unizar.disco.dice.DDSM.impl.DdsmHeterogeneousClusterImpl <em>Ddsm Heterogeneous Cluster</em>}' class.

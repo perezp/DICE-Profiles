@@ -80,6 +80,14 @@ public class Complex_Data_TypesAdapterFactory extends AdapterFactoryImpl {
 				return createDiceChannelSpecificationAdapter();
 			}
 			@Override
+			public Adapter caseRequiredAttribute(RequiredAttribute object) {
+				return createRequiredAttributeAdapter();
+			}
+			@Override
+			public Adapter caseFirewallRule(FirewallRule object) {
+				return createFirewallRuleAdapter();
+			}
+			@Override
 			public Adapter defaultCase(EObject object) {
 				return createEObjectAdapter();
 			}
@@ -138,6 +146,34 @@ public class Complex_Data_TypesAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createDiceChannelSpecificationAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link es.unizar.disco.dice.Complex_Data_Types.RequiredAttribute <em>Required Attribute</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see es.unizar.disco.dice.Complex_Data_Types.RequiredAttribute
+	 * @generated
+	 */
+	public Adapter createRequiredAttributeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link es.unizar.disco.dice.Complex_Data_Types.FirewallRule <em>Firewall Rule</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see es.unizar.disco.dice.Complex_Data_Types.FirewallRule
+	 * @generated
+	 */
+	public Adapter createFirewallRuleAdapter() {
 		return null;
 	}
 

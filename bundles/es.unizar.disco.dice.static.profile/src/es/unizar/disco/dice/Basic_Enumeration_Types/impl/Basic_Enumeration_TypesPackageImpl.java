@@ -8,8 +8,6 @@ import com.masdes.dam.Complex_Data_Types.Complex_Data_TypesPackage;
 
 import com.masdes.dam.DAM.DAMPackage;
 
-import es.unizar.disco.dice.Basic_Data_Types.impl.Basic_Data_TypesPackageImpl;
-
 import es.unizar.disco.dice.Basic_Enumeration_Types.Basic_Enumeration_TypesFactory;
 import es.unizar.disco.dice.Basic_Enumeration_Types.Basic_Enumeration_TypesPackage;
 import es.unizar.disco.dice.Basic_Enumeration_Types.ComputationType;
@@ -94,13 +92,6 @@ public class Basic_Enumeration_TypesPackageImpl extends EPackageImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EEnum lifeCycleElementTypeEEnum = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	private EEnum techTypeEEnum = null;
 
 	/**
@@ -172,6 +163,13 @@ public class Basic_Enumeration_TypesPackageImpl extends EPackageImpl implements 
 	 * @generated
 	 */
 	private EEnum providerTypeEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum lifeCycleElementTypeEEnum = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -276,7 +274,6 @@ public class Basic_Enumeration_TypesPackageImpl extends EPackageImpl implements 
 		SparkPackageImpl theSparkPackage = (SparkPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(SparkPackage.eNS_URI) instanceof SparkPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(SparkPackage.eNS_URI) : SparkPackage.eINSTANCE);
 		DDSMPackageImpl theDDSMPackage = (DDSMPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(DDSMPackage.eNS_URI) instanceof DDSMPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(DDSMPackage.eNS_URI) : DDSMPackage.eINSTANCE);
 		Complex_Data_TypesPackageImpl theComplex_Data_TypesPackage_1 = (Complex_Data_TypesPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(es.unizar.disco.dice.Complex_Data_Types.Complex_Data_TypesPackage.eNS_URI) instanceof Complex_Data_TypesPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(es.unizar.disco.dice.Complex_Data_Types.Complex_Data_TypesPackage.eNS_URI) : es.unizar.disco.dice.Complex_Data_Types.Complex_Data_TypesPackage.eINSTANCE);
-		Basic_Data_TypesPackageImpl theBasic_Data_TypesPackage_1 = (Basic_Data_TypesPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(es.unizar.disco.dice.Basic_Data_Types.Basic_Data_TypesPackage.eNS_URI) instanceof Basic_Data_TypesPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(es.unizar.disco.dice.Basic_Data_Types.Basic_Data_TypesPackage.eNS_URI) : es.unizar.disco.dice.Basic_Data_Types.Basic_Data_TypesPackage.eINSTANCE);
 
 		// Create package meta-data objects
 		theBasic_Enumeration_TypesPackage.createPackageContents();
@@ -288,7 +285,6 @@ public class Basic_Enumeration_TypesPackageImpl extends EPackageImpl implements 
 		theSparkPackage.createPackageContents();
 		theDDSMPackage.createPackageContents();
 		theComplex_Data_TypesPackage_1.createPackageContents();
-		theBasic_Data_TypesPackage_1.createPackageContents();
 
 		// Initialize created meta-data
 		theBasic_Enumeration_TypesPackage.initializePackageContents();
@@ -300,7 +296,6 @@ public class Basic_Enumeration_TypesPackageImpl extends EPackageImpl implements 
 		theSparkPackage.initializePackageContents();
 		theDDSMPackage.initializePackageContents();
 		theComplex_Data_TypesPackage_1.initializePackageContents();
-		theBasic_Data_TypesPackage_1.initializePackageContents();
 
 		// Mark meta-data to indicate it can't be changed
 		theBasic_Enumeration_TypesPackage.freeze();
@@ -327,15 +322,6 @@ public class Basic_Enumeration_TypesPackageImpl extends EPackageImpl implements 
 	 */
 	public EEnum getRefDataFormatType() {
 		return refDataFormatTypeEEnum;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EEnum getLifeCycleElementType() {
-		return lifeCycleElementTypeEEnum;
 	}
 
 	/**
@@ -442,6 +428,15 @@ public class Basic_Enumeration_TypesPackageImpl extends EPackageImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EEnum getLifeCycleElementType() {
+		return lifeCycleElementTypeEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EEnum getDDSMcomponentType() {
 		return ddsMcomponentTypeEEnum;
 	}
@@ -521,7 +516,6 @@ public class Basic_Enumeration_TypesPackageImpl extends EPackageImpl implements 
 		// Create enums
 		refTypeEEnum = createEEnum(REF_TYPE);
 		refDataFormatTypeEEnum = createEEnum(REF_DATA_FORMAT_TYPE);
-		lifeCycleElementTypeEEnum = createEEnum(LIFE_CYCLE_ELEMENT_TYPE);
 		techTypeEEnum = createEEnum(TECH_TYPE);
 		processingTypeEEnum = createEEnum(PROCESSING_TYPE);
 		sourceTypeEEnum = createEEnum(SOURCE_TYPE);
@@ -533,6 +527,7 @@ public class Basic_Enumeration_TypesPackageImpl extends EPackageImpl implements 
 		schedulingEEnum = createEEnum(SCHEDULING);
 		vmSizeEEnum = createEEnum(VM_SIZE);
 		providerTypeEEnum = createEEnum(PROVIDER_TYPE);
+		lifeCycleElementTypeEEnum = createEEnum(LIFE_CYCLE_ELEMENT_TYPE);
 		ddsMcomponentTypeEEnum = createEEnum(DDS_MCOMPONENT_TYPE);
 		sparkReduceEEnum = createEEnum(SPARK_REDUCE);
 		sparkMapEEnum = createEEnum(SPARK_MAP);
@@ -578,14 +573,6 @@ public class Basic_Enumeration_TypesPackageImpl extends EPackageImpl implements 
 		addEEnumLiteral(refDataFormatTypeEEnum, RefDataFormatType.AVRO);
 		addEEnumLiteral(refDataFormatTypeEEnum, RefDataFormatType.PARQUET);
 		addEEnumLiteral(refDataFormatTypeEEnum, RefDataFormatType.YAML);
-
-		initEEnum(lifeCycleElementTypeEEnum, LifeCycleElementType.class, "LifeCycleElementType");
-		addEEnumLiteral(lifeCycleElementTypeEEnum, LifeCycleElementType.START);
-		addEEnumLiteral(lifeCycleElementTypeEEnum, LifeCycleElementType.STOP);
-		addEEnumLiteral(lifeCycleElementTypeEEnum, LifeCycleElementType.INSTALL);
-		addEEnumLiteral(lifeCycleElementTypeEEnum, LifeCycleElementType.CREATE);
-		addEEnumLiteral(lifeCycleElementTypeEEnum, LifeCycleElementType.DOWNLOAD);
-		addEEnumLiteral(lifeCycleElementTypeEEnum, LifeCycleElementType.PRECONFIGURED);
 
 		initEEnum(techTypeEEnum, TechType.class, "TechType");
 		addEEnumLiteral(techTypeEEnum, TechType.HADOOP);
@@ -643,6 +630,14 @@ public class Basic_Enumeration_TypesPackageImpl extends EPackageImpl implements 
 		initEEnum(providerTypeEEnum, ProviderType.class, "ProviderType");
 		addEEnumLiteral(providerTypeEEnum, ProviderType.FCO);
 		addEEnumLiteral(providerTypeEEnum, ProviderType.OPENSTACK);
+
+		initEEnum(lifeCycleElementTypeEEnum, LifeCycleElementType.class, "LifeCycleElementType");
+		addEEnumLiteral(lifeCycleElementTypeEEnum, LifeCycleElementType.START);
+		addEEnumLiteral(lifeCycleElementTypeEEnum, LifeCycleElementType.STOP);
+		addEEnumLiteral(lifeCycleElementTypeEEnum, LifeCycleElementType.INSTALL);
+		addEEnumLiteral(lifeCycleElementTypeEEnum, LifeCycleElementType.CREATE);
+		addEEnumLiteral(lifeCycleElementTypeEEnum, LifeCycleElementType.DOWNLOAD);
+		addEEnumLiteral(lifeCycleElementTypeEEnum, LifeCycleElementType.PRECONFIGURED);
 
 		initEEnum(ddsMcomponentTypeEEnum, DDSMcomponentType.class, "DDSMcomponentType");
 		addEEnumLiteral(ddsMcomponentTypeEEnum, DDSMcomponentType.MASTER_SLAVE_PLATFORM);

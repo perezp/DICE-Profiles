@@ -84,6 +84,18 @@ public class Complex_Data_TypesSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
+			case Complex_Data_TypesPackage.REQUIRED_ATTRIBUTE: {
+				RequiredAttribute requiredAttribute = (RequiredAttribute)theEObject;
+				T result = caseRequiredAttribute(requiredAttribute);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case Complex_Data_TypesPackage.FIREWALL_RULE: {
+				FirewallRule firewallRule = (FirewallRule)theEObject;
+				T result = caseFirewallRule(firewallRule);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
 			default: return defaultCase(theEObject);
 		}
 	}
@@ -130,6 +142,36 @@ public class Complex_Data_TypesSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseDiceChannelSpecification(DiceChannelSpecification object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Required Attribute</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Required Attribute</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseRequiredAttribute(RequiredAttribute object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Firewall Rule</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Firewall Rule</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseFirewallRule(FirewallRule object) {
 		return null;
 	}
 

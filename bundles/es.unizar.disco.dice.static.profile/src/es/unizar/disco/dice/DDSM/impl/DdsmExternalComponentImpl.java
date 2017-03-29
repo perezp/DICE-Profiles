@@ -124,7 +124,7 @@ public class DdsmExternalComponentImpl extends DdsmComponentImpl implements Ddsm
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String LOGIN_EDEFAULT = null;
+	protected static final String LOGIN_EDEFAULT = "ubuntu";
 
 	/**
 	 * The cached value of the '{@link #getLogin() <em>Login</em>}' attribute.
