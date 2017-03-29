@@ -7,10 +7,7 @@ Bundle-ClassPath: .
 Bundle-Vendor: %providerName
 Bundle-Localization: plugin
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
-Export-Package: es.unizar.disco.dice.Basic_Data_Types,
- es.unizar.disco.dice.Basic_Data_Types.impl,
- es.unizar.disco.dice.Basic_Data_Types.util,
- es.unizar.disco.dice.Basic_Enumeration_Types,
+Export-Package: es.unizar.disco.dice.Basic_Enumeration_Types,
  es.unizar.disco.dice.Basic_Enumeration_Types.impl,
  es.unizar.disco.dice.Complex_Data_Types,
  es.unizar.disco.dice.Complex_Data_Types.impl,
