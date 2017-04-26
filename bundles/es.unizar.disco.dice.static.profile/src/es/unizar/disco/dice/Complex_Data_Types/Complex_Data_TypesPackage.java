@@ -175,6 +175,80 @@ public interface Complex_Data_TypesPackage extends EPackage {
 	 */
 	int DICE_CHANNEL_SPECIFICATION_FEATURE_COUNT = 2;
 
+	/**
+	 * The meta object id for the '{@link es.unizar.disco.dice.Complex_Data_Types.impl.RequiredAttributeImpl <em>Required Attribute</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see es.unizar.disco.dice.Complex_Data_Types.impl.RequiredAttributeImpl
+	 * @see es.unizar.disco.dice.Complex_Data_Types.impl.Complex_Data_TypesPackageImpl#getRequiredAttribute()
+	 * @generated
+	 */
+	int REQUIRED_ATTRIBUTE = 3;
+
+	/**
+	 * The feature id for the '<em><b>Reference Node</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REQUIRED_ATTRIBUTE__REFERENCE_NODE = 0;
+
+	/**
+	 * The feature id for the '<em><b>Attribute Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REQUIRED_ATTRIBUTE__ATTRIBUTE_NAME = 1;
+
+	/**
+	 * The number of structural features of the '<em>Required Attribute</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REQUIRED_ATTRIBUTE_FEATURE_COUNT = 2;
+
+	/**
+	 * The meta object id for the '{@link es.unizar.disco.dice.Complex_Data_Types.impl.FirewallRuleImpl <em>Firewall Rule</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see es.unizar.disco.dice.Complex_Data_Types.impl.FirewallRuleImpl
+	 * @see es.unizar.disco.dice.Complex_Data_Types.impl.Complex_Data_TypesPackageImpl#getFirewallRule()
+	 * @generated
+	 */
+	int FIREWALL_RULE = 4;
+
+	/**
+	 * The feature id for the '<em><b>Allowed Ip Prefix</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FIREWALL_RULE__ALLOWED_IP_PREFIX = 0;
+
+	/**
+	 * The feature id for the '<em><b>Port</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FIREWALL_RULE__PORT = 1;
+
+	/**
+	 * The number of structural features of the '<em>Firewall Rule</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FIREWALL_RULE_FEATURE_COUNT = 2;
+
 
 	/**
 	 * Returns the meta object for class '{@link es.unizar.disco.dice.Complex_Data_Types.DiceDataVolume <em>Dice Data Volume</em>}'.
@@ -284,6 +358,70 @@ public interface Complex_Data_TypesPackage extends EPackage {
 	EAttribute getDiceChannelSpecification_Size();
 
 	/**
+	 * Returns the meta object for class '{@link es.unizar.disco.dice.Complex_Data_Types.RequiredAttribute <em>Required Attribute</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Required Attribute</em>'.
+	 * @see es.unizar.disco.dice.Complex_Data_Types.RequiredAttribute
+	 * @generated
+	 */
+	EClass getRequiredAttribute();
+
+	/**
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.Complex_Data_Types.RequiredAttribute#getReferenceNode <em>Reference Node</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Reference Node</em>'.
+	 * @see es.unizar.disco.dice.Complex_Data_Types.RequiredAttribute#getReferenceNode()
+	 * @see #getRequiredAttribute()
+	 * @generated
+	 */
+	EAttribute getRequiredAttribute_ReferenceNode();
+
+	/**
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.Complex_Data_Types.RequiredAttribute#getAttributeName <em>Attribute Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Attribute Name</em>'.
+	 * @see es.unizar.disco.dice.Complex_Data_Types.RequiredAttribute#getAttributeName()
+	 * @see #getRequiredAttribute()
+	 * @generated
+	 */
+	EAttribute getRequiredAttribute_AttributeName();
+
+	/**
+	 * Returns the meta object for class '{@link es.unizar.disco.dice.Complex_Data_Types.FirewallRule <em>Firewall Rule</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Firewall Rule</em>'.
+	 * @see es.unizar.disco.dice.Complex_Data_Types.FirewallRule
+	 * @generated
+	 */
+	EClass getFirewallRule();
+
+	/**
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.Complex_Data_Types.FirewallRule#getAllowedIpPrefix <em>Allowed Ip Prefix</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Allowed Ip Prefix</em>'.
+	 * @see es.unizar.disco.dice.Complex_Data_Types.FirewallRule#getAllowedIpPrefix()
+	 * @see #getFirewallRule()
+	 * @generated
+	 */
+	EAttribute getFirewallRule_AllowedIpPrefix();
+
+	/**
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.Complex_Data_Types.FirewallRule#getPort <em>Port</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Port</em>'.
+	 * @see es.unizar.disco.dice.Complex_Data_Types.FirewallRule#getPort()
+	 * @see #getFirewallRule()
+	 * @generated
+	 */
+	EAttribute getFirewallRule_Port();
+
+	/**
 	 * Returns the factory that creates the instances of the model.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -390,6 +528,58 @@ public interface Complex_Data_TypesPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute DICE_CHANNEL_SPECIFICATION__SIZE = eINSTANCE.getDiceChannelSpecification_Size();
+
+		/**
+		 * The meta object literal for the '{@link es.unizar.disco.dice.Complex_Data_Types.impl.RequiredAttributeImpl <em>Required Attribute</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see es.unizar.disco.dice.Complex_Data_Types.impl.RequiredAttributeImpl
+		 * @see es.unizar.disco.dice.Complex_Data_Types.impl.Complex_Data_TypesPackageImpl#getRequiredAttribute()
+		 * @generated
+		 */
+		EClass REQUIRED_ATTRIBUTE = eINSTANCE.getRequiredAttribute();
+
+		/**
+		 * The meta object literal for the '<em><b>Reference Node</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute REQUIRED_ATTRIBUTE__REFERENCE_NODE = eINSTANCE.getRequiredAttribute_ReferenceNode();
+
+		/**
+		 * The meta object literal for the '<em><b>Attribute Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute REQUIRED_ATTRIBUTE__ATTRIBUTE_NAME = eINSTANCE.getRequiredAttribute_AttributeName();
+
+		/**
+		 * The meta object literal for the '{@link es.unizar.disco.dice.Complex_Data_Types.impl.FirewallRuleImpl <em>Firewall Rule</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see es.unizar.disco.dice.Complex_Data_Types.impl.FirewallRuleImpl
+		 * @see es.unizar.disco.dice.Complex_Data_Types.impl.Complex_Data_TypesPackageImpl#getFirewallRule()
+		 * @generated
+		 */
+		EClass FIREWALL_RULE = eINSTANCE.getFirewallRule();
+
+		/**
+		 * The meta object literal for the '<em><b>Allowed Ip Prefix</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FIREWALL_RULE__ALLOWED_IP_PREFIX = eINSTANCE.getFirewallRule_AllowedIpPrefix();
+
+		/**
+		 * The meta object literal for the '<em><b>Port</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FIREWALL_RULE__PORT = eINSTANCE.getFirewallRule_Port();
 
 	}
 

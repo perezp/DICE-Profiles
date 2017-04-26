@@ -10,8 +10,6 @@ import com.masdes.dam.Complex_Data_Types.Complex_Data_TypesPackage;
 
 import com.masdes.dam.DAM.DAMPackage;
 
-import es.unizar.disco.dice.Basic_Data_Types.impl.Basic_Data_TypesPackageImpl;
-
 import es.unizar.disco.dice.Basic_Enumeration_Types.impl.Basic_Enumeration_TypesPackageImpl;
 
 import es.unizar.disco.dice.Complex_Data_Types.impl.Complex_Data_TypesPackageImpl;
@@ -273,7 +271,6 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 		HadoopPackageImpl theHadoopPackage = (HadoopPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(HadoopPackage.eNS_URI) instanceof HadoopPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(HadoopPackage.eNS_URI) : HadoopPackage.eINSTANCE);
 		SparkPackageImpl theSparkPackage = (SparkPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(SparkPackage.eNS_URI) instanceof SparkPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(SparkPackage.eNS_URI) : SparkPackage.eINSTANCE);
 		Complex_Data_TypesPackageImpl theComplex_Data_TypesPackage_1 = (Complex_Data_TypesPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(es.unizar.disco.dice.Complex_Data_Types.Complex_Data_TypesPackage.eNS_URI) instanceof Complex_Data_TypesPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(es.unizar.disco.dice.Complex_Data_Types.Complex_Data_TypesPackage.eNS_URI) : es.unizar.disco.dice.Complex_Data_Types.Complex_Data_TypesPackage.eINSTANCE);
-		Basic_Data_TypesPackageImpl theBasic_Data_TypesPackage_1 = (Basic_Data_TypesPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(es.unizar.disco.dice.Basic_Data_Types.Basic_Data_TypesPackage.eNS_URI) instanceof Basic_Data_TypesPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(es.unizar.disco.dice.Basic_Data_Types.Basic_Data_TypesPackage.eNS_URI) : es.unizar.disco.dice.Basic_Data_Types.Basic_Data_TypesPackage.eINSTANCE);
 		Basic_Enumeration_TypesPackageImpl theBasic_Enumeration_TypesPackage_1 = (Basic_Enumeration_TypesPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(es.unizar.disco.dice.Basic_Enumeration_Types.Basic_Enumeration_TypesPackage.eNS_URI) instanceof Basic_Enumeration_TypesPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(es.unizar.disco.dice.Basic_Enumeration_Types.Basic_Enumeration_TypesPackage.eNS_URI) : es.unizar.disco.dice.Basic_Enumeration_Types.Basic_Enumeration_TypesPackage.eINSTANCE);
 
 		// Create package meta-data objects
@@ -285,7 +282,6 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 		theHadoopPackage.createPackageContents();
 		theSparkPackage.createPackageContents();
 		theComplex_Data_TypesPackage_1.createPackageContents();
-		theBasic_Data_TypesPackage_1.createPackageContents();
 		theBasic_Enumeration_TypesPackage_1.createPackageContents();
 
 		// Initialize created meta-data
@@ -297,7 +293,6 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 		theHadoopPackage.initializePackageContents();
 		theSparkPackage.initializePackageContents();
 		theComplex_Data_TypesPackage_1.initializePackageContents();
-		theBasic_Data_TypesPackage_1.initializePackageContents();
 		theBasic_Enumeration_TypesPackage_1.initializePackageContents();
 
 		// Mark meta-data to indicate it can't be changed
@@ -397,6 +392,24 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 	 */
 	public EReference getDdsmComponent_ProvidedPortsList() {
 		return (EReference)ddsmComponentEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getDdsmComponent_Monitored() {
+		return (EAttribute)ddsmComponentEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getDdsmComponent_MonitoringRoles() {
+		return (EAttribute)ddsmComponentEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -548,8 +561,8 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDdsmInternalComponent_Enable_monitoring() {
-		return (EAttribute)ddsmInternalComponentEClass.getEStructuralFeatures().get(7);
+	public EReference getDdsmInternalComponent_FirewallRules() {
+		return (EReference)ddsmInternalComponentEClass.getEStructuralFeatures().get(7);
 	}
 
 	/**
@@ -557,7 +570,7 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getDdsmInternalComponent_FirewallRules() {
+	public EReference getDdsmInternalComponent_RequiredAttributes() {
 		return (EReference)ddsmInternalComponentEClass.getEStructuralFeatures().get(8);
 	}
 
@@ -1410,6 +1423,8 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 
 		ddsmComponentEClass = createEClass(DDSM_COMPONENT);
 		createEReference(ddsmComponentEClass, DDSM_COMPONENT__PROVIDED_PORTS_LIST);
+		createEAttribute(ddsmComponentEClass, DDSM_COMPONENT__MONITORED);
+		createEAttribute(ddsmComponentEClass, DDSM_COMPONENT__MONITORING_ROLES);
 
 		ddsmCloudElementEClass = createEClass(DDSM_CLOUD_ELEMENT);
 		createEAttribute(ddsmCloudElementEClass, DDSM_CLOUD_ELEMENT__DESCRIPTION);
@@ -1429,8 +1444,8 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 		createEAttribute(ddsmInternalComponentEClass, DDSM_INTERNAL_COMPONENT__PROTECTED);
 		createEAttribute(ddsmInternalComponentEClass, DDSM_INTERNAL_COMPONENT__LAUNCH_SCRIPT);
 		createEAttribute(ddsmInternalComponentEClass, DDSM_INTERNAL_COMPONENT__LANGUAGE);
-		createEAttribute(ddsmInternalComponentEClass, DDSM_INTERNAL_COMPONENT__ENABLE_MONITORING);
 		createEReference(ddsmInternalComponentEClass, DDSM_INTERNAL_COMPONENT__FIREWALL_RULES);
+		createEReference(ddsmInternalComponentEClass, DDSM_INTERNAL_COMPONENT__REQUIRED_ATTRIBUTES);
 
 		ddsmHeterogeneousClusterEClass = createEClass(DDSM_HETEROGENEOUS_CLUSTER);
 		createEReference(ddsmHeterogeneousClusterEClass, DDSM_HETEROGENEOUS_CLUSTER__HAS_VM);
@@ -1564,7 +1579,7 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 		TypesPackage theTypesPackage = (TypesPackage)EPackage.Registry.INSTANCE.getEPackage(TypesPackage.eNS_URI);
 		es.unizar.disco.dice.Basic_Enumeration_Types.Basic_Enumeration_TypesPackage theBasic_Enumeration_TypesPackage_1 = (es.unizar.disco.dice.Basic_Enumeration_Types.Basic_Enumeration_TypesPackage)EPackage.Registry.INSTANCE.getEPackage(es.unizar.disco.dice.Basic_Enumeration_Types.Basic_Enumeration_TypesPackage.eNS_URI);
 		UMLPackage theUMLPackage = (UMLPackage)EPackage.Registry.INSTANCE.getEPackage(UMLPackage.eNS_URI);
-		es.unizar.disco.dice.Basic_Data_Types.Basic_Data_TypesPackage theBasic_Data_TypesPackage_1 = (es.unizar.disco.dice.Basic_Data_Types.Basic_Data_TypesPackage)EPackage.Registry.INSTANCE.getEPackage(es.unizar.disco.dice.Basic_Data_Types.Basic_Data_TypesPackage.eNS_URI);
+		es.unizar.disco.dice.Complex_Data_Types.Complex_Data_TypesPackage theComplex_Data_TypesPackage_1 = (es.unizar.disco.dice.Complex_Data_Types.Complex_Data_TypesPackage)EPackage.Registry.INSTANCE.getEPackage(es.unizar.disco.dice.Complex_Data_Types.Complex_Data_TypesPackage.eNS_URI);
 
 		// Create type parameters
 
@@ -1593,12 +1608,14 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 		initEAttribute(getDdsmExternalComponent_Provider(), theBasic_Enumeration_TypesPackage_1.getProviderType(), "provider", "fco", 1, 1, DdsmExternalComponent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getDdsmExternalComponent_ServiceType(), theTypesPackage.getString(), "serviceType", null, 0, 1, DdsmExternalComponent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getDdsmExternalComponent_Region(), theTypesPackage.getString(), "region", null, 0, 1, DdsmExternalComponent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getDdsmExternalComponent_Login(), theTypesPackage.getString(), "login", null, 0, 1, DdsmExternalComponent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDdsmExternalComponent_Login(), theTypesPackage.getString(), "login", "ubuntu", 0, 1, DdsmExternalComponent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getDdsmExternalComponent_Password(), theTypesPackage.getString(), "password", null, 0, 1, DdsmExternalComponent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getDdsmExternalComponent_Base_Device(), theUMLPackage.getDevice(), null, "base_Device", null, 1, 1, DdsmExternalComponent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(ddsmComponentEClass, DdsmComponent.class, "DdsmComponent", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getDdsmComponent_ProvidedPortsList(), this.getDdsmPort(), null, "providedPortsList", null, 0, -1, DdsmComponent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDdsmComponent_Monitored(), theTypesPackage.getBoolean(), "monitored", "false", 0, 1, DdsmComponent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDdsmComponent_MonitoringRoles(), theTypesPackage.getString(), "monitoringRoles", null, 0, -1, DdsmComponent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(ddsmCloudElementEClass, DdsmCloudElement.class, "DdsmCloudElement", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getDdsmCloudElement_Description(), theTypesPackage.getString(), "description", null, 0, 1, DdsmCloudElement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
@@ -1618,8 +1635,8 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 		initEAttribute(getDdsmInternalComponent_Protected(), theTypesPackage.getBoolean(), "protected", "false", 0, 1, DdsmInternalComponent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getDdsmInternalComponent_Launch_script(), theTypesPackage.getString(), "launch_script", null, 0, 1, DdsmInternalComponent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getDdsmInternalComponent_Language(), theBasic_Enumeration_TypesPackage_1.getLanguageType(), "language", "bash", 0, 1, DdsmInternalComponent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getDdsmInternalComponent_Enable_monitoring(), theTypesPackage.getBoolean(), "enable_monitoring", "false", 0, 1, DdsmInternalComponent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getDdsmInternalComponent_FirewallRules(), theBasic_Data_TypesPackage_1.getFirewallRule(), null, "firewallRules", null, 0, -1, DdsmInternalComponent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEReference(getDdsmInternalComponent_FirewallRules(), theComplex_Data_TypesPackage_1.getFirewallRule(), null, "firewallRules", null, 0, -1, DdsmInternalComponent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEReference(getDdsmInternalComponent_RequiredAttributes(), theComplex_Data_TypesPackage_1.getRequiredAttribute(), null, "requiredAttributes", null, 0, -1, DdsmInternalComponent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(ddsmHeterogeneousClusterEClass, DdsmHeterogeneousCluster.class, "DdsmHeterogeneousCluster", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getDdsmHeterogeneousCluster_HasVM(), this.getDdsmVMsCluster(), null, "hasVM", null, 0, -1, DdsmHeterogeneousCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
@@ -1635,7 +1652,7 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 		initEAttribute(getDdsmVMsCluster_MinStorage(), theTypesPackage.getInteger(), "minStorage", "0", 0, 1, DdsmVMsCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getDdsmVMsCluster_Os(), theTypesPackage.getString(), "os", null, 0, 1, DdsmVMsCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getDdsmVMsCluster_PrivateKey(), theTypesPackage.getString(), "privateKey", null, 0, 1, DdsmVMsCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getDdsmVMsCluster_SshKey(), theTypesPackage.getString(), "sshKey", null, 0, 1, DdsmVMsCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDdsmVMsCluster_SshKey(), theTypesPackage.getString(), "sshKey", "/root/.ssh/agent.key", 0, 1, DdsmVMsCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getDdsmVMsCluster_PublicAddress(), theTypesPackage.getString(), "publicAddress", null, 0, 1, DdsmVMsCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getDdsmVMsCluster_Instances(), theTypesPackage.getInteger(), "instances", "1", 0, 1, DdsmVMsCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getDdsmVMsCluster_GenericSize(), theBasic_Enumeration_TypesPackage_1.getVMSize(), "genericSize", "Small", 1, 1, DdsmVMsCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);

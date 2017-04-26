@@ -2,10 +2,11 @@
  */
 package es.unizar.disco.dice.DDSM;
 
-import es.unizar.disco.dice.Basic_Data_Types.FirewallRule;
-
 import es.unizar.disco.dice.Basic_Enumeration_Types.DDSMcomponentType;
 import es.unizar.disco.dice.Basic_Enumeration_Types.LanguageType;
+
+import es.unizar.disco.dice.Complex_Data_Types.FirewallRule;
+import es.unizar.disco.dice.Complex_Data_Types.RequiredAttribute;
 
 import org.eclipse.emf.common.util.EList;
 
@@ -27,8 +28,8 @@ import org.eclipse.uml2.uml.Node;
  *   <li>{@link es.unizar.disco.dice.DDSM.DdsmInternalComponent#isProtected <em>Protected</em>}</li>
  *   <li>{@link es.unizar.disco.dice.DDSM.DdsmInternalComponent#getLaunch_script <em>Launch script</em>}</li>
  *   <li>{@link es.unizar.disco.dice.DDSM.DdsmInternalComponent#getLanguage <em>Language</em>}</li>
- *   <li>{@link es.unizar.disco.dice.DDSM.DdsmInternalComponent#isEnable_monitoring <em>Enable monitoring</em>}</li>
  *   <li>{@link es.unizar.disco.dice.DDSM.DdsmInternalComponent#getFirewallRules <em>Firewall Rules</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DDSM.DdsmInternalComponent#getRequiredAttributes <em>Required Attributes</em>}</li>
  * </ul>
  *
  * @see es.unizar.disco.dice.DDSM.DDSMPackage#getDdsmInternalComponent()
@@ -218,35 +219,8 @@ public interface DdsmInternalComponent extends DdsmComponent {
 	void setLanguage(LanguageType value);
 
 	/**
-	 * Returns the value of the '<em><b>Enable monitoring</b></em>' attribute.
-	 * The default value is <code>"false"</code>.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Enable monitoring</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Enable monitoring</em>' attribute.
-	 * @see #setEnable_monitoring(boolean)
-	 * @see es.unizar.disco.dice.DDSM.DDSMPackage#getDdsmInternalComponent_Enable_monitoring()
-	 * @model default="false" dataType="org.eclipse.uml2.types.Boolean" ordered="false"
-	 * @generated
-	 */
-	boolean isEnable_monitoring();
-
-	/**
-	 * Sets the value of the '{@link es.unizar.disco.dice.DDSM.DdsmInternalComponent#isEnable_monitoring <em>Enable monitoring</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Enable monitoring</em>' attribute.
-	 * @see #isEnable_monitoring()
-	 * @generated
-	 */
-	void setEnable_monitoring(boolean value);
-
-	/**
 	 * Returns the value of the '<em><b>Firewall Rules</b></em>' containment reference list.
-	 * The list contents are of type {@link es.unizar.disco.dice.Basic_Data_Types.FirewallRule}.
+	 * The list contents are of type {@link es.unizar.disco.dice.Complex_Data_Types.FirewallRule}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Firewall Rules</em>' containment reference list isn't clear,
@@ -259,5 +233,21 @@ public interface DdsmInternalComponent extends DdsmComponent {
 	 * @generated
 	 */
 	EList<FirewallRule> getFirewallRules();
+
+	/**
+	 * Returns the value of the '<em><b>Required Attributes</b></em>' containment reference list.
+	 * The list contents are of type {@link es.unizar.disco.dice.Complex_Data_Types.RequiredAttribute}.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Required Attributes</em>' containment reference list isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Required Attributes</em>' containment reference list.
+	 * @see es.unizar.disco.dice.DDSM.DDSMPackage#getDdsmInternalComponent_RequiredAttributes()
+	 * @model containment="true" ordered="false"
+	 * @generated
+	 */
+	EList<RequiredAttribute> getRequiredAttributes();
 
 } // DdsmInternalComponent

@@ -29,37 +29,23 @@
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="size" ordered="false"
             eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_DataSize"/>
       </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" name="RequiredAttribute">
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="referenceNode" ordered="false"
+            lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="attributeName" ordered="false"
+            lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" name="FirewallRule">
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="allowedIpPrefix" ordered="false"
+            lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"
+            defaultValueLiteral="0.0.0.0/0"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="port" ordered="false"
+            lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//Integer"/>
+      </eClassifiers>
     </eSubpackages>
   </eSubpackages>
   <eSubpackages name="Basic_DICE_Types" nsURI="http://es.unizar.disco.dice/libraries/Basic_DICE_Types/1.0"
       nsPrefix="Basic_DICE_Types">
-    <eSubpackages name="Basic_Data_Types" nsURI="http://es.unizar.disco.dice/libraries/Basic_Data_Types/1.0"
-        nsPrefix="Basic_Data_Types">
-      <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
-        <details key="originalName" value="Data_Types"/>
-      </eAnnotations>
-      <eClassifiers xsi:type="ecore:EClass" name="NFP_Privacy">
-        <eStructuralFeatures xsi:type="ecore:EAttribute" name="expr" ordered="false"
-            lowerBound="1" eType="ecore:EDataType ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//MARTE_DataTypes/VSL_Expression"/>
-        <eStructuralFeatures xsi:type="ecore:EAttribute" name="source" ordered="false"
-            lowerBound="1" eType="ecore:EEnum ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/SourceKind"/>
-      </eClassifiers>
-      <eClassifiers xsi:type="ecore:EClass" name="ScriptType">
-        <eStructuralFeatures xsi:type="ecore:EAttribute" name="scriptId" ordered="false"
-            eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-        <eStructuralFeatures xsi:type="ecore:EAttribute" name="scriptUri" ordered="false"
-            eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-        <eStructuralFeatures xsi:type="ecore:EAttribute" name="scriptKind" ordered="false"
-            lowerBound="1" eType="#//Basic_DICE_Types/Basic_Enumeration_Types/LifeCycleElementType"/>
-      </eClassifiers>
-      <eClassifiers xsi:type="ecore:EClass" name="FirewallRule">
-        <eStructuralFeatures xsi:type="ecore:EAttribute" name="allowedIpPrefix" ordered="false"
-            eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"
-            defaultValueLiteral="0.0.0.0/0"/>
-        <eStructuralFeatures xsi:type="ecore:EAttribute" name="port" ordered="false"
-            eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//Integer"/>
-      </eClassifiers>
-    </eSubpackages>
     <eSubpackages name="Basic_Enumeration_Types" nsURI="http://es.unizar.disco.dice/libraries/Basic_Enumeration_Types/1.0"
         nsPrefix="Basic_Enumeration_Types">
       <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -78,14 +64,6 @@
         <eLiterals name="avro" value="3"/>
         <eLiterals name="parquet" value="4"/>
         <eLiterals name="yaml" value="5"/>
-      </eClassifiers>
-      <eClassifiers xsi:type="ecore:EEnum" name="LifeCycleElementType">
-        <eLiterals name="start"/>
-        <eLiterals name="stop" value="1"/>
-        <eLiterals name="install" value="2"/>
-        <eLiterals name="create" value="3"/>
-        <eLiterals name="download" value="4"/>
-        <eLiterals name="preconfigured" value="5"/>
       </eClassifiers>
       <eClassifiers xsi:type="ecore:EEnum" name="TechType">
         <eLiterals name="hadoop"/>
@@ -143,6 +121,14 @@
       <eClassifiers xsi:type="ecore:EEnum" name="ProviderType">
         <eLiterals name="fco"/>
         <eLiterals name="openstack" value="1"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EEnum" name="LifeCycleElementType">
+        <eLiterals name="start"/>
+        <eLiterals name="stop" value="1"/>
+        <eLiterals name="install" value="2"/>
+        <eLiterals name="create" value="3"/>
+        <eLiterals name="download" value="4"/>
+        <eLiterals name="preconfigured" value="5"/>
       </eClassifiers>
       <eClassifiers xsi:type="ecore:EEnum" name="DDSMcomponentType">
         <eLiterals name="MasterSlavePlatform"/>

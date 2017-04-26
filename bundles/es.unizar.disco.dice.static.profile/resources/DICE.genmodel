@@ -258,6 +258,8 @@
         <genClasses xsi:type="genmodel:GenClass" image="false" ecoreClass="DICE.ecore#//DICE_UML_Extensions/DDSM/DdsmComponent">
           <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
               propertySortChoices="true" ecoreFeature="ecore:EReference DICE.ecore#//DICE_UML_Extensions/DDSM/DdsmComponent/providedPortsList"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DDSM/DdsmComponent/monitored"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DDSM/DdsmComponent/monitoringRoles"/>
         </genClasses>
         <genClasses xsi:type="genmodel:GenClass" image="false" ecoreClass="DICE.ecore#//DICE_UML_Extensions/DDSM/DdsmCloudElement">
           <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DDSM/DdsmCloudElement/description"/>
@@ -280,9 +282,10 @@
           <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DDSM/DdsmInternalComponent/protected"/>
           <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DDSM/DdsmInternalComponent/launch_script"/>
           <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DDSM/DdsmInternalComponent/language"/>
-          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DDSM/DdsmInternalComponent/enable_monitoring"/>
           <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
               createChild="true" ecoreFeature="ecore:EReference DICE.ecore#//DICE_UML_Extensions/DDSM/DdsmInternalComponent/firewallRules"/>
+          <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+              createChild="true" ecoreFeature="ecore:EReference DICE.ecore#//DICE_UML_Extensions/DDSM/DdsmInternalComponent/requiredAttributes"/>
         </genClasses>
         <genClasses xsi:type="genmodel:GenClass" ecoreClass="DICE.ecore#//DICE_UML_Extensions/DDSM/DdsmHeterogeneousCluster">
           <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
@@ -417,26 +420,18 @@
           <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE_Library.ecore#//Complex_DICE_Types/Complex_Data_Types/DiceChannelSpecification/rate"/>
           <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE_Library.ecore#//Complex_DICE_Types/Complex_Data_Types/DiceChannelSpecification/size"/>
         </genClasses>
+        <genClasses xsi:type="genmodel:GenClass" ecoreClass="DICE_Library.ecore#//Complex_DICE_Types/Complex_Data_Types/RequiredAttribute">
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE_Library.ecore#//Complex_DICE_Types/Complex_Data_Types/RequiredAttribute/referenceNode"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE_Library.ecore#//Complex_DICE_Types/Complex_Data_Types/RequiredAttribute/attributeName"/>
+        </genClasses>
+        <genClasses xsi:type="genmodel:GenClass" ecoreClass="DICE_Library.ecore#//Complex_DICE_Types/Complex_Data_Types/FirewallRule">
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE_Library.ecore#//Complex_DICE_Types/Complex_Data_Types/FirewallRule/allowedIpPrefix"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE_Library.ecore#//Complex_DICE_Types/Complex_Data_Types/FirewallRule/port"/>
+        </genClasses>
       </nestedGenPackages>
     </nestedGenPackages>
     <nestedGenPackages xsi:type="genmodel:GenPackage" prefix="Basic_DICE_Types" basePackage="es.unizar.disco.dice"
         disposableProviderFactory="true" ecorePackage="DICE_Library.ecore#//Basic_DICE_Types">
-      <nestedGenPackages xsi:type="genmodel:GenPackage" prefix="Basic_Data_Types"
-          basePackage="es.unizar.disco.dice" disposableProviderFactory="true" ecorePackage="DICE_Library.ecore#//Basic_DICE_Types/Basic_Data_Types">
-        <genClasses xsi:type="genmodel:GenClass" ecoreClass="DICE_Library.ecore#//Basic_DICE_Types/Basic_Data_Types/NFP_Privacy">
-          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE_Library.ecore#//Basic_DICE_Types/Basic_Data_Types/NFP_Privacy/expr"/>
-          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE_Library.ecore#//Basic_DICE_Types/Basic_Data_Types/NFP_Privacy/source"/>
-        </genClasses>
-        <genClasses xsi:type="genmodel:GenClass" ecoreClass="DICE_Library.ecore#//Basic_DICE_Types/Basic_Data_Types/ScriptType">
-          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE_Library.ecore#//Basic_DICE_Types/Basic_Data_Types/ScriptType/scriptId"/>
-          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE_Library.ecore#//Basic_DICE_Types/Basic_Data_Types/ScriptType/scriptUri"/>
-          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE_Library.ecore#//Basic_DICE_Types/Basic_Data_Types/ScriptType/scriptKind"/>
-        </genClasses>
-        <genClasses xsi:type="genmodel:GenClass" ecoreClass="DICE_Library.ecore#//Basic_DICE_Types/Basic_Data_Types/FirewallRule">
-          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE_Library.ecore#//Basic_DICE_Types/Basic_Data_Types/FirewallRule/allowedIpPrefix"/>
-          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE_Library.ecore#//Basic_DICE_Types/Basic_Data_Types/FirewallRule/port"/>
-        </genClasses>
-      </nestedGenPackages>
       <nestedGenPackages xsi:type="genmodel:GenPackage" prefix="Basic_Enumeration_Types"
           basePackage="es.unizar.disco.dice" disposableProviderFactory="true" ecorePackage="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types">
         <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/RefType">
@@ -452,14 +447,6 @@
           <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/RefDataFormatType/avro"/>
           <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/RefDataFormatType/parquet"/>
           <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/RefDataFormatType/yaml"/>
-        </genEnums>
-        <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/LifeCycleElementType">
-          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/LifeCycleElementType/start"/>
-          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/LifeCycleElementType/stop"/>
-          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/LifeCycleElementType/install"/>
-          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/LifeCycleElementType/create"/>
-          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/LifeCycleElementType/download"/>
-          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/LifeCycleElementType/preconfigured"/>
         </genEnums>
         <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/TechType">
           <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/TechType/hadoop"/>
@@ -517,6 +504,14 @@
         <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/ProviderType">
           <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/ProviderType/fco"/>
           <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/ProviderType/openstack"/>
+        </genEnums>
+        <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/LifeCycleElementType">
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/LifeCycleElementType/start"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/LifeCycleElementType/stop"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/LifeCycleElementType/install"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/LifeCycleElementType/create"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/LifeCycleElementType/download"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/LifeCycleElementType/preconfigured"/>
         </genEnums>
         <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/DDSMcomponentType">
           <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/DDSMcomponentType/MasterSlavePlatform"/>

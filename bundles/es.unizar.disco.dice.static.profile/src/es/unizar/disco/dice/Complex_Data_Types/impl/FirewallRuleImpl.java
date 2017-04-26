@@ -1,9 +1,9 @@
 /**
  */
-package es.unizar.disco.dice.Basic_Data_Types.impl;
+package es.unizar.disco.dice.Complex_Data_Types.impl;
 
-import es.unizar.disco.dice.Basic_Data_Types.Basic_Data_TypesPackage;
-import es.unizar.disco.dice.Basic_Data_Types.FirewallRule;
+import es.unizar.disco.dice.Complex_Data_Types.Complex_Data_TypesPackage;
+import es.unizar.disco.dice.Complex_Data_Types.FirewallRule;
 
 import org.eclipse.emf.common.notify.Notification;
 
@@ -20,8 +20,8 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link es.unizar.disco.dice.Basic_Data_Types.impl.FirewallRuleImpl#getAllowedIpPrefix <em>Allowed Ip Prefix</em>}</li>
- *   <li>{@link es.unizar.disco.dice.Basic_Data_Types.impl.FirewallRuleImpl#getPort <em>Port</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.Complex_Data_Types.impl.FirewallRuleImpl#getAllowedIpPrefix <em>Allowed Ip Prefix</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.Complex_Data_Types.impl.FirewallRuleImpl#getPort <em>Port</em>}</li>
  * </ul>
  *
  * @generated
@@ -83,7 +83,7 @@ public class FirewallRuleImpl extends MinimalEObjectImpl.Container implements Fi
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return Basic_Data_TypesPackage.Literals.FIREWALL_RULE;
+		return Complex_Data_TypesPackage.Literals.FIREWALL_RULE;
 	}
 
 	/**
@@ -104,7 +104,7 @@ public class FirewallRuleImpl extends MinimalEObjectImpl.Container implements Fi
 		String oldAllowedIpPrefix = allowedIpPrefix;
 		allowedIpPrefix = newAllowedIpPrefix;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, Basic_Data_TypesPackage.FIREWALL_RULE__ALLOWED_IP_PREFIX, oldAllowedIpPrefix, allowedIpPrefix));
+			eNotify(new ENotificationImpl(this, Notification.SET, Complex_Data_TypesPackage.FIREWALL_RULE__ALLOWED_IP_PREFIX, oldAllowedIpPrefix, allowedIpPrefix));
 	}
 
 	/**
@@ -125,7 +125,7 @@ public class FirewallRuleImpl extends MinimalEObjectImpl.Container implements Fi
 		int oldPort = port;
 		port = newPort;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, Basic_Data_TypesPackage.FIREWALL_RULE__PORT, oldPort, port));
+			eNotify(new ENotificationImpl(this, Notification.SET, Complex_Data_TypesPackage.FIREWALL_RULE__PORT, oldPort, port));
 	}
 
 	/**
@@ -136,9 +136,9 @@ public class FirewallRuleImpl extends MinimalEObjectImpl.Container implements Fi
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case Basic_Data_TypesPackage.FIREWALL_RULE__ALLOWED_IP_PREFIX:
+			case Complex_Data_TypesPackage.FIREWALL_RULE__ALLOWED_IP_PREFIX:
 				return getAllowedIpPrefix();
-			case Basic_Data_TypesPackage.FIREWALL_RULE__PORT:
+			case Complex_Data_TypesPackage.FIREWALL_RULE__PORT:
 				return getPort();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -152,10 +152,10 @@ public class FirewallRuleImpl extends MinimalEObjectImpl.Container implements Fi
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case Basic_Data_TypesPackage.FIREWALL_RULE__ALLOWED_IP_PREFIX:
+			case Complex_Data_TypesPackage.FIREWALL_RULE__ALLOWED_IP_PREFIX:
 				setAllowedIpPrefix((String)newValue);
 				return;
-			case Basic_Data_TypesPackage.FIREWALL_RULE__PORT:
+			case Complex_Data_TypesPackage.FIREWALL_RULE__PORT:
 				setPort((Integer)newValue);
 				return;
 		}
@@ -170,10 +170,10 @@ public class FirewallRuleImpl extends MinimalEObjectImpl.Container implements Fi
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case Basic_Data_TypesPackage.FIREWALL_RULE__ALLOWED_IP_PREFIX:
+			case Complex_Data_TypesPackage.FIREWALL_RULE__ALLOWED_IP_PREFIX:
 				setAllowedIpPrefix(ALLOWED_IP_PREFIX_EDEFAULT);
 				return;
-			case Basic_Data_TypesPackage.FIREWALL_RULE__PORT:
+			case Complex_Data_TypesPackage.FIREWALL_RULE__PORT:
 				setPort(PORT_EDEFAULT);
 				return;
 		}
@@ -188,9 +188,9 @@ public class FirewallRuleImpl extends MinimalEObjectImpl.Container implements Fi
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case Basic_Data_TypesPackage.FIREWALL_RULE__ALLOWED_IP_PREFIX:
+			case Complex_Data_TypesPackage.FIREWALL_RULE__ALLOWED_IP_PREFIX:
 				return ALLOWED_IP_PREFIX_EDEFAULT == null ? allowedIpPrefix != null : !ALLOWED_IP_PREFIX_EDEFAULT.equals(allowedIpPrefix);
-			case Basic_Data_TypesPackage.FIREWALL_RULE__PORT:
+			case Complex_Data_TypesPackage.FIREWALL_RULE__PORT:
 				return port != PORT_EDEFAULT;
 		}
 		return super.eIsSet(featureID);
