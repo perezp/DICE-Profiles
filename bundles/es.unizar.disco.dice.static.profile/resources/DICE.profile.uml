@@ -1233,6 +1233,24 @@
         <packagedElement xmi:type="uml:Stereotype" xmi:id="_QSJKIAKNEeeo9amVjAoIhA" name="DdsmSparkCluster">
           <generalization xmi:type="uml:Generalization" xmi:id="_SWr0wAKNEeeo9amVjAoIhA" general="_Q1XXcP5lEeastMYiWd95zQ"/>
         </packagedElement>
+        <packagedElement xmi:type="uml:Stereotype" xmi:id="_3DR0EC8lEeeKwIxvoTP_kA" name="DdsmMongoDBCluster">
+          <generalization xmi:type="uml:Generalization" xmi:id="_CRmtsC8mEeeKwIxvoTP_kA" general="_SIP7oP5lEeastMYiWd95zQ"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_4NTSAC83EeeKwIxvoTP_kA" name="shardingMode">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7gaBgC83EeeKwIxvoTP_kA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7glnsC83EeeKwIxvoTP_kA" value="1"/>
+            <defaultValue xmi:type="uml:LiteralBoolean" xmi:id="_XvUR0C85EeeKwIxvoTP_kA"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Zm7TsC85EeeKwIxvoTP_kA" name="routerServerHost" type="_4GoMgDx3EeaOH59TuV453g">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_d_IDAC85EeeKwIxvoTP_kA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_d_YhsC85EeeKwIxvoTP_kA" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_pwIrkC88EeeKwIxvoTP_kA" name="shards">
+            <type xmi:type="uml:DataType" href="DICE_Library.uml#_QJiE0C88EeeKwIxvoTP_kA"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rnsDEC88EeeKwIxvoTP_kA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rnwUgC88EeeKwIxvoTP_kA" value="*"/>
+          </ownedAttribute>
+        </packagedElement>
         <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_iGZsADx2EeaOH59TuV453g">
           <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_iG3mEDx2EeaOH59TuV453g" source="http://www.eclipse.org/uml2/2.0.0/UML">
             <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA"/>

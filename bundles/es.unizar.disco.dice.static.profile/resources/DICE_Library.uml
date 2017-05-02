@@ -197,6 +197,19 @@
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KzS2ABQLEeerG-qiQF7PAA" value="1"/>
           </ownedAttribute>
         </packagedElement>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_QJiE0C88EeeKwIxvoTP_kA" name="MongoDBShard">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_SwjxcC88EeeKwIxvoTP_kA" name="nInstances">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ZX__gC88EeeKwIxvoTP_kA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZYDp4C88EeeKwIxvoTP_kA" value="1"/>
+            <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_cLPjMC88EeeKwIxvoTP_kA" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_T6OIMC88EeeKwIxvoTP_kA" name="hostSize" type="_HOIsID4CEeahGZm0A1o1gg">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mEp4UC88EeeKwIxvoTP_kA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mEsUkC88EeeKwIxvoTP_kA" value="1"/>
+            <defaultValue xmi:type="uml:InstanceValue" xmi:id="_k8D4kC88EeeKwIxvoTP_kA" type="_HOIsID4CEeahGZm0A1o1gg" instance="_MfkJgD4CEeahGZm0A1o1gg"/>
+          </ownedAttribute>
+        </packagedElement>
       </packagedElement>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_mT_BIOePEeWj7ZPL8JeBTQ">
