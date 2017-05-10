@@ -42,6 +42,13 @@
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="port" ordered="false"
             lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//Integer"/>
       </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" name="MongoDBShard">
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="nInstances" ordered="false"
+            eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//Integer"
+            defaultValueLiteral="1"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="hostSize" ordered="false"
+            eType="#//Basic_DICE_Types/Basic_Enumeration_Types/VMSize" defaultValueLiteral="Small"/>
+      </eClassifiers>
     </eSubpackages>
   </eSubpackages>
   <eSubpackages name="Basic_DICE_Types" nsURI="http://es.unizar.disco.dice/libraries/Basic_DICE_Types/1.0"
@@ -64,6 +71,11 @@
         <eLiterals name="avro" value="3"/>
         <eLiterals name="parquet" value="4"/>
         <eLiterals name="yaml" value="5"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EEnum" name="VMSize">
+        <eLiterals name="Small"/>
+        <eLiterals name="Medium" value="1"/>
+        <eLiterals name="Large" value="2"/>
       </eClassifiers>
       <eClassifiers xsi:type="ecore:EEnum" name="TechType">
         <eLiterals name="hadoop"/>
@@ -112,11 +124,6 @@
         <eLiterals name="capacity"/>
         <eLiterals name="fifo" value="1"/>
         <eLiterals name="fair" value="2"/>
-      </eClassifiers>
-      <eClassifiers xsi:type="ecore:EEnum" name="VMSize">
-        <eLiterals name="Small"/>
-        <eLiterals name="Medium" value="1"/>
-        <eLiterals name="Large" value="2"/>
       </eClassifiers>
       <eClassifiers xsi:type="ecore:EEnum" name="ProviderType">
         <eLiterals name="fco"/>

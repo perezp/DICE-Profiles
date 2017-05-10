@@ -28,6 +28,7 @@ import es.unizar.disco.dice.DDSM.DdsmJobDeployedFrom;
 import es.unizar.disco.dice.DDSM.DdsmJobSubmission;
 import es.unizar.disco.dice.DDSM.DdsmKafkaCluster;
 import es.unizar.disco.dice.DDSM.DdsmMasterSlavePlatform;
+import es.unizar.disco.dice.DDSM.DdsmMongoDBCluster;
 import es.unizar.disco.dice.DDSM.DdsmPeerToPeerPlatform;
 import es.unizar.disco.dice.DDSM.DdsmPort;
 import es.unizar.disco.dice.DDSM.DdsmSparkCluster;
@@ -210,6 +211,13 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 	 * @generated
 	 */
 	private EClass ddsmSparkClusterEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass ddsmMongoDBClusterEClass = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -1389,6 +1397,42 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EClass getDdsmMongoDBCluster() {
+		return ddsmMongoDBClusterEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getDdsmMongoDBCluster_ShardingMode() {
+		return (EAttribute)ddsmMongoDBClusterEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getDdsmMongoDBCluster_RouterServerHost() {
+		return (EReference)ddsmMongoDBClusterEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getDdsmMongoDBCluster_Shards() {
+		return (EReference)ddsmMongoDBClusterEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public DDSMFactory getDDSMFactory() {
 		return (DDSMFactory)getEFactoryInstance();
 	}
@@ -1550,6 +1594,11 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 		createEAttribute(ddsmCassandraClusterEClass, DDSM_CASSANDRA_CLUSTER__PERMISSION_VALIDITY_IN_MS);
 
 		ddsmSparkClusterEClass = createEClass(DDSM_SPARK_CLUSTER);
+
+		ddsmMongoDBClusterEClass = createEClass(DDSM_MONGO_DB_CLUSTER);
+		createEAttribute(ddsmMongoDBClusterEClass, DDSM_MONGO_DB_CLUSTER__SHARDING_MODE);
+		createEReference(ddsmMongoDBClusterEClass, DDSM_MONGO_DB_CLUSTER__ROUTER_SERVER_HOST);
+		createEReference(ddsmMongoDBClusterEClass, DDSM_MONGO_DB_CLUSTER__SHARDS);
 	}
 
 	/**
@@ -1601,6 +1650,7 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 		ddsmHdfsClusterEClass.getESuperTypes().add(this.getDdsmMasterSlavePlatform());
 		ddsmCassandraClusterEClass.getESuperTypes().add(this.getDdsmPeerToPeerPlatform());
 		ddsmSparkClusterEClass.getESuperTypes().add(this.getDdsmMasterSlavePlatform());
+		ddsmMongoDBClusterEClass.getESuperTypes().add(this.getDdsmPeerToPeerPlatform());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(ddsmExternalComponentEClass, DdsmExternalComponent.class, "DdsmExternalComponent", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -1741,6 +1791,11 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 		initEAttribute(getDdsmCassandraCluster_Permission_validity_in_ms(), theTypesPackage.getInteger(), "permission_validity_in_ms", null, 0, 1, DdsmCassandraCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(ddsmSparkClusterEClass, DdsmSparkCluster.class, "DdsmSparkCluster", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(ddsmMongoDBClusterEClass, DdsmMongoDBCluster.class, "DdsmMongoDBCluster", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getDdsmMongoDBCluster_ShardingMode(), theTypesPackage.getBoolean(), "shardingMode", "false", 0, 1, DdsmMongoDBCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEReference(getDdsmMongoDBCluster_RouterServerHost(), this.getDdsmVMsCluster(), null, "routerServerHost", null, 0, 1, DdsmMongoDBCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEReference(getDdsmMongoDBCluster_Shards(), theComplex_Data_TypesPackage_1.getMongoDBShard(), null, "shards", null, 0, -1, DdsmMongoDBCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 	}
 
 } //DDSMPackageImpl
