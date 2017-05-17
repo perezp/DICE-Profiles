@@ -251,6 +251,44 @@ public interface Complex_Data_TypesPackage extends EPackage {
 
 
 	/**
+	 * The meta object id for the '{@link es.unizar.disco.dice.Complex_Data_Types.impl.MongoDBShardImpl <em>Mongo DB Shard</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see es.unizar.disco.dice.Complex_Data_Types.impl.MongoDBShardImpl
+	 * @see es.unizar.disco.dice.Complex_Data_Types.impl.Complex_Data_TypesPackageImpl#getMongoDBShard()
+	 * @generated
+	 */
+	int MONGO_DB_SHARD = 5;
+
+	/**
+	 * The feature id for the '<em><b>NInstances</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MONGO_DB_SHARD__NINSTANCES = 0;
+
+	/**
+	 * The feature id for the '<em><b>Host Size</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MONGO_DB_SHARD__HOST_SIZE = 1;
+
+	/**
+	 * The number of structural features of the '<em>Mongo DB Shard</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MONGO_DB_SHARD_FEATURE_COUNT = 2;
+
+
+	/**
 	 * Returns the meta object for class '{@link es.unizar.disco.dice.Complex_Data_Types.DiceDataVolume <em>Dice Data Volume</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -422,6 +460,38 @@ public interface Complex_Data_TypesPackage extends EPackage {
 	EAttribute getFirewallRule_Port();
 
 	/**
+	 * Returns the meta object for class '{@link es.unizar.disco.dice.Complex_Data_Types.MongoDBShard <em>Mongo DB Shard</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Mongo DB Shard</em>'.
+	 * @see es.unizar.disco.dice.Complex_Data_Types.MongoDBShard
+	 * @generated
+	 */
+	EClass getMongoDBShard();
+
+	/**
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.Complex_Data_Types.MongoDBShard#getNInstances <em>NInstances</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>NInstances</em>'.
+	 * @see es.unizar.disco.dice.Complex_Data_Types.MongoDBShard#getNInstances()
+	 * @see #getMongoDBShard()
+	 * @generated
+	 */
+	EAttribute getMongoDBShard_NInstances();
+
+	/**
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.Complex_Data_Types.MongoDBShard#getHostSize <em>Host Size</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Host Size</em>'.
+	 * @see es.unizar.disco.dice.Complex_Data_Types.MongoDBShard#getHostSize()
+	 * @see #getMongoDBShard()
+	 * @generated
+	 */
+	EAttribute getMongoDBShard_HostSize();
+
+	/**
 	 * Returns the factory that creates the instances of the model.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -580,6 +650,32 @@ public interface Complex_Data_TypesPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute FIREWALL_RULE__PORT = eINSTANCE.getFirewallRule_Port();
+
+		/**
+		 * The meta object literal for the '{@link es.unizar.disco.dice.Complex_Data_Types.impl.MongoDBShardImpl <em>Mongo DB Shard</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see es.unizar.disco.dice.Complex_Data_Types.impl.MongoDBShardImpl
+		 * @see es.unizar.disco.dice.Complex_Data_Types.impl.Complex_Data_TypesPackageImpl#getMongoDBShard()
+		 * @generated
+		 */
+		EClass MONGO_DB_SHARD = eINSTANCE.getMongoDBShard();
+
+		/**
+		 * The meta object literal for the '<em><b>NInstances</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MONGO_DB_SHARD__NINSTANCES = eINSTANCE.getMongoDBShard_NInstances();
+
+		/**
+		 * The meta object literal for the '<em><b>Host Size</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MONGO_DB_SHARD__HOST_SIZE = eINSTANCE.getMongoDBShard_HostSize();
 
 	}
 

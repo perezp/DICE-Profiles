@@ -175,6 +175,15 @@ public interface DDSMFactory extends EFactory {
 	DdsmSparkCluster createDdsmSparkCluster();
 
 	/**
+	 * Returns a new object of class '<em>Ddsm Mongo DB Cluster</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Ddsm Mongo DB Cluster</em>'.
+	 * @generated
+	 */
+	DdsmMongoDBCluster createDdsmMongoDBCluster();
+
+	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

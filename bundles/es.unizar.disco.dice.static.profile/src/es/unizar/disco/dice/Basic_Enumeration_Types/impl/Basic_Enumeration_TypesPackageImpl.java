@@ -516,6 +516,7 @@ public class Basic_Enumeration_TypesPackageImpl extends EPackageImpl implements 
 		// Create enums
 		refTypeEEnum = createEEnum(REF_TYPE);
 		refDataFormatTypeEEnum = createEEnum(REF_DATA_FORMAT_TYPE);
+		vmSizeEEnum = createEEnum(VM_SIZE);
 		techTypeEEnum = createEEnum(TECH_TYPE);
 		processingTypeEEnum = createEEnum(PROCESSING_TYPE);
 		sourceTypeEEnum = createEEnum(SOURCE_TYPE);
@@ -525,7 +526,6 @@ public class Basic_Enumeration_TypesPackageImpl extends EPackageImpl implements 
 		reduceTypeEEnum = createEEnum(REDUCE_TYPE);
 		streamPolicyEEnum = createEEnum(STREAM_POLICY);
 		schedulingEEnum = createEEnum(SCHEDULING);
-		vmSizeEEnum = createEEnum(VM_SIZE);
 		providerTypeEEnum = createEEnum(PROVIDER_TYPE);
 		lifeCycleElementTypeEEnum = createEEnum(LIFE_CYCLE_ELEMENT_TYPE);
 		ddsMcomponentTypeEEnum = createEEnum(DDS_MCOMPONENT_TYPE);
@@ -574,6 +574,11 @@ public class Basic_Enumeration_TypesPackageImpl extends EPackageImpl implements 
 		addEEnumLiteral(refDataFormatTypeEEnum, RefDataFormatType.PARQUET);
 		addEEnumLiteral(refDataFormatTypeEEnum, RefDataFormatType.YAML);
 
+		initEEnum(vmSizeEEnum, VMSize.class, "VMSize");
+		addEEnumLiteral(vmSizeEEnum, VMSize.SMALL);
+		addEEnumLiteral(vmSizeEEnum, VMSize.MEDIUM);
+		addEEnumLiteral(vmSizeEEnum, VMSize.LARGE);
+
 		initEEnum(techTypeEEnum, TechType.class, "TechType");
 		addEEnumLiteral(techTypeEEnum, TechType.HADOOP);
 		addEEnumLiteral(techTypeEEnum, TechType.SPARK);
@@ -621,11 +626,6 @@ public class Basic_Enumeration_TypesPackageImpl extends EPackageImpl implements 
 		addEEnumLiteral(schedulingEEnum, Scheduling.CAPACITY);
 		addEEnumLiteral(schedulingEEnum, Scheduling.FIFO);
 		addEEnumLiteral(schedulingEEnum, Scheduling.FAIR);
-
-		initEEnum(vmSizeEEnum, VMSize.class, "VMSize");
-		addEEnumLiteral(vmSizeEEnum, VMSize.SMALL);
-		addEEnumLiteral(vmSizeEEnum, VMSize.MEDIUM);
-		addEEnumLiteral(vmSizeEEnum, VMSize.LARGE);
 
 		initEEnum(providerTypeEEnum, ProviderType.class, "ProviderType");
 		addEEnumLiteral(providerTypeEEnum, ProviderType.FCO);

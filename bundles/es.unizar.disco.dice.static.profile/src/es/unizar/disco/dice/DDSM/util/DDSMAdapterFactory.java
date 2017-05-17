@@ -144,6 +144,10 @@ public class DDSMAdapterFactory extends AdapterFactoryImpl {
 				return createDdsmSparkClusterAdapter();
 			}
 			@Override
+			public Adapter caseDdsmMongoDBCluster(DdsmMongoDBCluster object) {
+				return createDdsmMongoDBClusterAdapter();
+			}
+			@Override
 			public Adapter defaultCase(EObject object) {
 				return createEObjectAdapter();
 			}
@@ -426,6 +430,20 @@ public class DDSMAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createDdsmSparkClusterAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link es.unizar.disco.dice.DDSM.DdsmMongoDBCluster <em>Ddsm Mongo DB Cluster</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see es.unizar.disco.dice.DDSM.DdsmMongoDBCluster
+	 * @generated
+	 */
+	public Adapter createDdsmMongoDBClusterAdapter() {
 		return null;
 	}
 

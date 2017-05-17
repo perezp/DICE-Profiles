@@ -67,6 +67,15 @@ public interface Complex_Data_TypesFactory extends EFactory {
 	FirewallRule createFirewallRule();
 
 	/**
+	 * Returns a new object of class '<em>Mongo DB Shard</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Mongo DB Shard</em>'.
+	 * @generated
+	 */
+	MongoDBShard createMongoDBShard();
+
+	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
