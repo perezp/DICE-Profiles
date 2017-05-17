@@ -504,6 +504,7 @@ public class HadoopPackageImpl extends EPackageImpl implements HadoopPackage {
 		es.unizar.disco.dice.Basic_Enumeration_Types.Basic_Enumeration_TypesPackage theBasic_Enumeration_TypesPackage_1 = (es.unizar.disco.dice.Basic_Enumeration_Types.Basic_Enumeration_TypesPackage)EPackage.Registry.INSTANCE.getEPackage(es.unizar.disco.dice.Basic_Enumeration_Types.Basic_Enumeration_TypesPackage.eNS_URI);
 		GQAMPackage theGQAMPackage = (GQAMPackage)EPackage.Registry.INSTANCE.getEPackage(GQAMPackage.eNS_URI);
 		BasicNFP_TypesPackage theBasicNFP_TypesPackage = (BasicNFP_TypesPackage)EPackage.Registry.INSTANCE.getEPackage(BasicNFP_TypesPackage.eNS_URI);
+		com.masdes.dam.Core.CorePackage theCorePackage_1 = (com.masdes.dam.Core.CorePackage)EPackage.Registry.INSTANCE.getEPackage(com.masdes.dam.Core.CorePackage.eNS_URI);
 
 		// Create type parameters
 
@@ -513,7 +514,7 @@ public class HadoopPackageImpl extends EPackageImpl implements HadoopPackage {
 		hadoopMapEClass.getESuperTypes().add(this.getHadoopOperation());
 		hadoopOperationEClass.getESuperTypes().add(theGQAMPackage.getGaStep());
 		hadoopReduceEClass.getESuperTypes().add(this.getHadoopOperation());
-		hadoopScenarioEClass.getESuperTypes().add(theGQAMPackage.getGaScenario());
+		hadoopScenarioEClass.getESuperTypes().add(theCorePackage_1.getDaService());
 		hadoopWorkloadEventEClass.getESuperTypes().add(theGQAMPackage.getGaWorkloadEvent());
 		hadoopComputationNodeEClass.getESuperTypes().add(theCorePackage.getCoreComputationNode());
 

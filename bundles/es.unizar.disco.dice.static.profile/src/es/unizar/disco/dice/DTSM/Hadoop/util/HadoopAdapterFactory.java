@@ -3,6 +3,7 @@
 package es.unizar.disco.dice.DTSM.Hadoop.util;
 
 import com.masdes.dam.Core.DaComponent;
+import com.masdes.dam.Core.DaService;
 
 import es.unizar.disco.dice.DPIM.DpimComputationNode;
 
@@ -134,6 +135,10 @@ public class HadoopAdapterFactory extends AdapterFactoryImpl {
 			@Override
 			public Adapter caseGaStep(GaStep object) {
 				return createGaStepAdapter();
+			}
+			@Override
+			public Adapter caseDaService(DaService object) {
+				return createDaServiceAdapter();
 			}
 			@Override
 			public Adapter caseGaWorkloadEvent(GaWorkloadEvent object) {
@@ -354,6 +359,20 @@ public class HadoopAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createGaStepAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.masdes.dam.Core.DaService <em>Da Service</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.masdes.dam.Core.DaService
+	 * @generated
+	 */
+	public Adapter createDaServiceAdapter() {
 		return null;
 	}
 
