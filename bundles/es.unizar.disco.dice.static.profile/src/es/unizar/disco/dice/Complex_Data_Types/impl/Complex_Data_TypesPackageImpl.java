@@ -16,6 +16,7 @@ import es.unizar.disco.dice.Complex_Data_Types.DiceChannelSpecification;
 import es.unizar.disco.dice.Complex_Data_Types.DiceDataSpecification;
 import es.unizar.disco.dice.Complex_Data_Types.DiceDataVolume;
 import es.unizar.disco.dice.Complex_Data_Types.FirewallRule;
+import es.unizar.disco.dice.Complex_Data_Types.MongoDBShard;
 import es.unizar.disco.dice.Complex_Data_Types.RequiredAttribute;
 
 import es.unizar.disco.dice.DDSM.DDSMPackage;
@@ -97,6 +98,13 @@ public class Complex_Data_TypesPackageImpl extends EPackageImpl implements Compl
 	 * @generated
 	 */
 	private EClass firewallRuleEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass mongoDBShardEClass = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -340,6 +348,33 @@ public class Complex_Data_TypesPackageImpl extends EPackageImpl implements Compl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EClass getMongoDBShard() {
+		return mongoDBShardEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getMongoDBShard_NInstances() {
+		return (EAttribute)mongoDBShardEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getMongoDBShard_HostSize() {
+		return (EAttribute)mongoDBShardEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public Complex_Data_TypesFactory getComplex_Data_TypesFactory() {
 		return (Complex_Data_TypesFactory)getEFactoryInstance();
 	}
@@ -383,6 +418,10 @@ public class Complex_Data_TypesPackageImpl extends EPackageImpl implements Compl
 		firewallRuleEClass = createEClass(FIREWALL_RULE);
 		createEAttribute(firewallRuleEClass, FIREWALL_RULE__ALLOWED_IP_PREFIX);
 		createEAttribute(firewallRuleEClass, FIREWALL_RULE__PORT);
+
+		mongoDBShardEClass = createEClass(MONGO_DB_SHARD);
+		createEAttribute(mongoDBShardEClass, MONGO_DB_SHARD__NINSTANCES);
+		createEAttribute(mongoDBShardEClass, MONGO_DB_SHARD__HOST_SIZE);
 	}
 
 	/**
@@ -440,6 +479,10 @@ public class Complex_Data_TypesPackageImpl extends EPackageImpl implements Compl
 		initEClass(firewallRuleEClass, FirewallRule.class, "FirewallRule", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getFirewallRule_AllowedIpPrefix(), theTypesPackage.getString(), "allowedIpPrefix", "0.0.0.0/0", 1, 1, FirewallRule.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getFirewallRule_Port(), theTypesPackage.getInteger(), "port", null, 1, 1, FirewallRule.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+
+		initEClass(mongoDBShardEClass, MongoDBShard.class, "MongoDBShard", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getMongoDBShard_NInstances(), theTypesPackage.getInteger(), "nInstances", "1", 0, 1, MongoDBShard.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getMongoDBShard_HostSize(), theBasic_Enumeration_TypesPackage_1.getVMSize(), "hostSize", "Small", 0, 1, MongoDBShard.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		// Create resource
 		createResource(eNS_URI);

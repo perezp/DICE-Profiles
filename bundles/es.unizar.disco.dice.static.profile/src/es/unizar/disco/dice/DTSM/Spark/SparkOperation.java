@@ -13,8 +13,7 @@ import org.eclipse.papyrus.MARTE.MARTE_AnalysisModel.GQAM.GaStep;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link es.unizar.disco.dice.DTSM.Spark.SparkOperation#getRDDAvailable <em>RDD Available</em>}</li>
- *   <li>{@link es.unizar.disco.dice.DTSM.Spark.SparkOperation#getRDD <em>RDD</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Spark.SparkOperation#getNumTasks <em>Num Tasks</em>}</li>
  *   <li>{@link es.unizar.disco.dice.DTSM.Spark.SparkOperation#getOpType <em>Op Type</em>}</li>
  * </ul>
  *
@@ -24,56 +23,30 @@ import org.eclipse.papyrus.MARTE.MARTE_AnalysisModel.GQAM.GaStep;
  */
 public interface SparkOperation extends GaStep {
 	/**
-	 * Returns the value of the '<em><b>RDD Available</b></em>' attribute.
+	 * Returns the value of the '<em><b>Num Tasks</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>RDD Available</em>' attribute isn't clear,
+	 * If the meaning of the '<em>Num Tasks</em>' attribute isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>RDD Available</em>' attribute.
-	 * @see #setRDDAvailable(String)
-	 * @see es.unizar.disco.dice.DTSM.Spark.SparkPackage#getSparkOperation_RDDAvailable()
+	 * @return the value of the '<em>Num Tasks</em>' attribute.
+	 * @see #setNumTasks(String)
+	 * @see es.unizar.disco.dice.DTSM.Spark.SparkPackage#getSparkOperation_NumTasks()
 	 * @model dataType="org.eclipse.papyrus.MARTE_Library.BasicNFP_Types.NFP_Integer" required="true" ordered="false"
 	 * @generated
 	 */
-	String getRDDAvailable();
+	String getNumTasks();
 
 	/**
-	 * Sets the value of the '{@link es.unizar.disco.dice.DTSM.Spark.SparkOperation#getRDDAvailable <em>RDD Available</em>}' attribute.
+	 * Sets the value of the '{@link es.unizar.disco.dice.DTSM.Spark.SparkOperation#getNumTasks <em>Num Tasks</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>RDD Available</em>' attribute.
-	 * @see #getRDDAvailable()
+	 * @param value the new value of the '<em>Num Tasks</em>' attribute.
+	 * @see #getNumTasks()
 	 * @generated
 	 */
-	void setRDDAvailable(String value);
-
-	/**
-	 * Returns the value of the '<em><b>RDD</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>RDD</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>RDD</em>' attribute.
-	 * @see #setRDD(String)
-	 * @see es.unizar.disco.dice.DTSM.Spark.SparkPackage#getSparkOperation_RDD()
-	 * @model dataType="org.eclipse.papyrus.MARTE_Library.BasicNFP_Types.NFP_Integer" required="true" ordered="false"
-	 * @generated
-	 */
-	String getRDD();
-
-	/**
-	 * Sets the value of the '{@link es.unizar.disco.dice.DTSM.Spark.SparkOperation#getRDD <em>RDD</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>RDD</em>' attribute.
-	 * @see #getRDD()
-	 * @generated
-	 */
-	void setRDD(String value);
+	void setNumTasks(String value);
 
 	/**
 	 * Returns the value of the '<em><b>Op Type</b></em>' attribute.

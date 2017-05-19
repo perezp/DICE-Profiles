@@ -264,13 +264,11 @@
               lowerBound="1" eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Integer"/>
           <eStructuralFeatures xsi:type="ecore:EAttribute" name="nAssignedMemory"
               ordered="false" lowerBound="1" eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Integer"/>
-          <eStructuralFeatures xsi:type="ecore:EAttribute" name="jobSchedule" ordered="false"
-              lowerBound="1" eType="ecore:EEnum DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/Scheduling"/>
+          <eStructuralFeatures xsi:type="ecore:EAttribute" name="sparkDefaultParallelism"
+              ordered="false" lowerBound="1" eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Integer"/>
         </eClassifiers>
         <eClassifiers xsi:type="ecore:EClass" name="SparkOperation" eSuperTypes="../../org.eclipse.papyrus.marte.static.profile/resources/MARTE.ecore#//MARTE_AnalysisModel/GQAM/GaStep">
-          <eStructuralFeatures xsi:type="ecore:EAttribute" name="RDDAvailable" ordered="false"
-              lowerBound="1" eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Integer"/>
-          <eStructuralFeatures xsi:type="ecore:EAttribute" name="RDD" ordered="false"
+          <eStructuralFeatures xsi:type="ecore:EAttribute" name="numTasks" ordered="false"
               lowerBound="1" eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Integer"/>
           <eStructuralFeatures xsi:type="ecore:EAttribute" name="OpType" ordered="false"
               lowerBound="1" eType="ecore:EEnum DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/SparkOperation"/>
@@ -279,7 +277,6 @@
           <eStructuralFeatures xsi:type="ecore:EAttribute" name="ReduceType" ordered="false"
               lowerBound="1" eType="ecore:EEnum DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/SparkReduce"/>
         </eClassifiers>
-        <eClassifiers xsi:type="ecore:EClass" name="SparkForEach" eSuperTypes="#//DICE_UML_Extensions/DTSM/Spark/SparkOperation"/>
         <eClassifiers xsi:type="ecore:EClass" name="SparkMap" eSuperTypes="#//DICE_UML_Extensions/DTSM/Spark/SparkOperation">
           <eStructuralFeatures xsi:type="ecore:EAttribute" name="MapType" ordered="false"
               lowerBound="1" eType="ecore:EEnum DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/SparkMap"/>
@@ -589,6 +586,16 @@
             ordered="false" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//Integer"/>
       </eClassifiers>
       <eClassifiers xsi:type="ecore:EClass" name="DdsmSparkCluster" eSuperTypes="#//DICE_UML_Extensions/DDSM/DdsmMasterSlavePlatform"/>
+      <eClassifiers xsi:type="ecore:EClass" name="DdsmMongoDBCluster" eSuperTypes="#//DICE_UML_Extensions/DDSM/DdsmPeerToPeerPlatform">
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="shardingMode" ordered="false"
+            eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//Boolean"
+            defaultValueLiteral="false"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" name="routerServerHost" ordered="false"
+            eType="#//DICE_UML_Extensions/DDSM/DdsmVMsCluster"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" name="shards" ordered="false"
+            upperBound="-1" eType="ecore:EClass DICE_Library.ecore#//Complex_DICE_Types/Complex_Data_Types/MongoDBShard"
+            containment="true"/>
+      </eClassifiers>
     </eSubpackages>
   </eSubpackages>
 </ecore:EPackage>

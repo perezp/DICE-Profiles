@@ -21,8 +21,7 @@ import org.eclipse.papyrus.MARTE.MARTE_AnalysisModel.GQAM.impl.GaStepImpl;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link es.unizar.disco.dice.DTSM.Spark.impl.SparkOperationImpl#getRDDAvailable <em>RDD Available</em>}</li>
- *   <li>{@link es.unizar.disco.dice.DTSM.Spark.impl.SparkOperationImpl#getRDD <em>RDD</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Spark.impl.SparkOperationImpl#getNumTasks <em>Num Tasks</em>}</li>
  *   <li>{@link es.unizar.disco.dice.DTSM.Spark.impl.SparkOperationImpl#getOpType <em>Op Type</em>}</li>
  * </ul>
  *
@@ -30,44 +29,24 @@ import org.eclipse.papyrus.MARTE.MARTE_AnalysisModel.GQAM.impl.GaStepImpl;
  */
 public class SparkOperationImpl extends GaStepImpl implements SparkOperation {
 	/**
-	 * The default value of the '{@link #getRDDAvailable() <em>RDD Available</em>}' attribute.
+	 * The default value of the '{@link #getNumTasks() <em>Num Tasks</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getRDDAvailable()
+	 * @see #getNumTasks()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String RDD_AVAILABLE_EDEFAULT = null;
+	protected static final String NUM_TASKS_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getRDDAvailable() <em>RDD Available</em>}' attribute.
+	 * The cached value of the '{@link #getNumTasks() <em>Num Tasks</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getRDDAvailable()
+	 * @see #getNumTasks()
 	 * @generated
 	 * @ordered
 	 */
-	protected String rddAvailable = RDD_AVAILABLE_EDEFAULT;
-
-	/**
-	 * The default value of the '{@link #getRDD() <em>RDD</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getRDD()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String RDD_EDEFAULT = null;
-
-	/**
-	 * The cached value of the '{@link #getRDD() <em>RDD</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getRDD()
-	 * @generated
-	 * @ordered
-	 */
-	protected String rdd = RDD_EDEFAULT;
+	protected String numTasks = NUM_TASKS_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getOpType() <em>Op Type</em>}' attribute.
@@ -113,8 +92,8 @@ public class SparkOperationImpl extends GaStepImpl implements SparkOperation {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getRDDAvailable() {
-		return rddAvailable;
+	public String getNumTasks() {
+		return numTasks;
 	}
 
 	/**
@@ -122,32 +101,11 @@ public class SparkOperationImpl extends GaStepImpl implements SparkOperation {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setRDDAvailable(String newRDDAvailable) {
-		String oldRDDAvailable = rddAvailable;
-		rddAvailable = newRDDAvailable;
+	public void setNumTasks(String newNumTasks) {
+		String oldNumTasks = numTasks;
+		numTasks = newNumTasks;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, SparkPackage.SPARK_OPERATION__RDD_AVAILABLE, oldRDDAvailable, rddAvailable));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public String getRDD() {
-		return rdd;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setRDD(String newRDD) {
-		String oldRDD = rdd;
-		rdd = newRDD;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, SparkPackage.SPARK_OPERATION__RDD, oldRDD, rdd));
+			eNotify(new ENotificationImpl(this, Notification.SET, SparkPackage.SPARK_OPERATION__NUM_TASKS, oldNumTasks, numTasks));
 	}
 
 	/**
@@ -179,10 +137,8 @@ public class SparkOperationImpl extends GaStepImpl implements SparkOperation {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case SparkPackage.SPARK_OPERATION__RDD_AVAILABLE:
-				return getRDDAvailable();
-			case SparkPackage.SPARK_OPERATION__RDD:
-				return getRDD();
+			case SparkPackage.SPARK_OPERATION__NUM_TASKS:
+				return getNumTasks();
 			case SparkPackage.SPARK_OPERATION__OP_TYPE:
 				return getOpType();
 		}
@@ -197,11 +153,8 @@ public class SparkOperationImpl extends GaStepImpl implements SparkOperation {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case SparkPackage.SPARK_OPERATION__RDD_AVAILABLE:
-				setRDDAvailable((String)newValue);
-				return;
-			case SparkPackage.SPARK_OPERATION__RDD:
-				setRDD((String)newValue);
+			case SparkPackage.SPARK_OPERATION__NUM_TASKS:
+				setNumTasks((String)newValue);
 				return;
 			case SparkPackage.SPARK_OPERATION__OP_TYPE:
 				setOpType((es.unizar.disco.dice.Basic_Enumeration_Types.SparkOperation)newValue);
@@ -218,11 +171,8 @@ public class SparkOperationImpl extends GaStepImpl implements SparkOperation {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case SparkPackage.SPARK_OPERATION__RDD_AVAILABLE:
-				setRDDAvailable(RDD_AVAILABLE_EDEFAULT);
-				return;
-			case SparkPackage.SPARK_OPERATION__RDD:
-				setRDD(RDD_EDEFAULT);
+			case SparkPackage.SPARK_OPERATION__NUM_TASKS:
+				setNumTasks(NUM_TASKS_EDEFAULT);
 				return;
 			case SparkPackage.SPARK_OPERATION__OP_TYPE:
 				setOpType(OP_TYPE_EDEFAULT);
@@ -239,10 +189,8 @@ public class SparkOperationImpl extends GaStepImpl implements SparkOperation {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case SparkPackage.SPARK_OPERATION__RDD_AVAILABLE:
-				return RDD_AVAILABLE_EDEFAULT == null ? rddAvailable != null : !RDD_AVAILABLE_EDEFAULT.equals(rddAvailable);
-			case SparkPackage.SPARK_OPERATION__RDD:
-				return RDD_EDEFAULT == null ? rdd != null : !RDD_EDEFAULT.equals(rdd);
+			case SparkPackage.SPARK_OPERATION__NUM_TASKS:
+				return NUM_TASKS_EDEFAULT == null ? numTasks != null : !NUM_TASKS_EDEFAULT.equals(numTasks);
 			case SparkPackage.SPARK_OPERATION__OP_TYPE:
 				return opType != OP_TYPE_EDEFAULT;
 		}
@@ -259,10 +207,8 @@ public class SparkOperationImpl extends GaStepImpl implements SparkOperation {
 		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (RDDAvailable: ");
-		result.append(rddAvailable);
-		result.append(", RDD: ");
-		result.append(rdd);
+		result.append(" (numTasks: ");
+		result.append(numTasks);
 		result.append(", OpType: ");
 		result.append(opType);
 		result.append(')');

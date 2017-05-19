@@ -42,6 +42,13 @@
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="port" ordered="false"
             lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//Integer"/>
       </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" name="MongoDBShard">
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="nInstances" ordered="false"
+            eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//Integer"
+            defaultValueLiteral="1"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="hostSize" ordered="false"
+            eType="#//Basic_DICE_Types/Basic_Enumeration_Types/VMSize" defaultValueLiteral="Small"/>
+      </eClassifiers>
     </eSubpackages>
   </eSubpackages>
   <eSubpackages name="Basic_DICE_Types" nsURI="http://es.unizar.disco.dice/libraries/Basic_DICE_Types/1.0"
@@ -64,6 +71,11 @@
         <eLiterals name="avro" value="3"/>
         <eLiterals name="parquet" value="4"/>
         <eLiterals name="yaml" value="5"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EEnum" name="VMSize">
+        <eLiterals name="Small"/>
+        <eLiterals name="Medium" value="1"/>
+        <eLiterals name="Large" value="2"/>
       </eClassifiers>
       <eClassifiers xsi:type="ecore:EEnum" name="TechType">
         <eLiterals name="hadoop"/>
@@ -113,11 +125,6 @@
         <eLiterals name="fifo" value="1"/>
         <eLiterals name="fair" value="2"/>
       </eClassifiers>
-      <eClassifiers xsi:type="ecore:EEnum" name="VMSize">
-        <eLiterals name="Small"/>
-        <eLiterals name="Medium" value="1"/>
-        <eLiterals name="Large" value="2"/>
-      </eClassifiers>
       <eClassifiers xsi:type="ecore:EEnum" name="ProviderType">
         <eLiterals name="fco"/>
         <eLiterals name="openstack" value="1"/>
@@ -141,15 +148,26 @@
       </eClassifiers>
       <eClassifiers xsi:type="ecore:EEnum" name="SparkReduce">
         <eLiterals name="Reduce"/>
-        <eLiterals name="Sample" value="1"/>
-        <eLiterals name="Order" value="2"/>
+        <eLiterals name="Collect" value="1"/>
+        <eLiterals name="Count" value="2"/>
+        <eLiterals name="Sample" value="3"/>
+        <eLiterals name="SaveAs" value="4"/>
+        <eLiterals name="CountByKey" value="5"/>
+        <eLiterals name="ForEach" value="6"/>
       </eClassifiers>
       <eClassifiers xsi:type="ecore:EEnum" name="SparkMap">
         <eLiterals name="Map"/>
         <eLiterals name="Filter" value="1"/>
         <eLiterals name="Sample" value="2"/>
-        <eLiterals name="ByKey" value="3"/>
-        <eLiterals name="RDDSetOperation" value="4"/>
+        <eLiterals name="RDDSetOperation" value="3"/>
+        <eLiterals name="Union" value="4"/>
+        <eLiterals name="Intersection" value="5"/>
+        <eLiterals name="Substraction" value="6"/>
+        <eLiterals name="Distinct" value="7"/>
+        <eLiterals name="ByKey" value="8"/>
+        <eLiterals name="Join" value="9"/>
+        <eLiterals name="Cartesian" value="10"/>
+        <eLiterals name="Repartition" value="11"/>
       </eClassifiers>
       <eClassifiers xsi:type="ecore:EEnum" name="SparkOperation">
         <eLiterals name="Transformation"/>

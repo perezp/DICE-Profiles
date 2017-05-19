@@ -339,13 +339,13 @@ public interface SparkPackage extends EPackage {
 	int SPARK_SCENARIO__NASSIGNED_MEMORY = GQAMPackage.GA_SCENARIO_FEATURE_COUNT + 1;
 
 	/**
-	 * The feature id for the '<em><b>Job Schedule</b></em>' attribute.
+	 * The feature id for the '<em><b>Spark Default Parallelism</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SPARK_SCENARIO__JOB_SCHEDULE = GQAMPackage.GA_SCENARIO_FEATURE_COUNT + 2;
+	int SPARK_SCENARIO__SPARK_DEFAULT_PARALLELISM = GQAMPackage.GA_SCENARIO_FEATURE_COUNT + 2;
 
 	/**
 	 * The number of structural features of the '<em>Scenario</em>' class.
@@ -727,22 +727,13 @@ public interface SparkPackage extends EPackage {
 	int SPARK_OPERATION__CHILD_SCENARIO = GQAMPackage.GA_STEP__CHILD_SCENARIO;
 
 	/**
-	 * The feature id for the '<em><b>RDD Available</b></em>' attribute.
+	 * The feature id for the '<em><b>Num Tasks</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SPARK_OPERATION__RDD_AVAILABLE = GQAMPackage.GA_STEP_FEATURE_COUNT + 0;
-
-	/**
-	 * The feature id for the '<em><b>RDD</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SPARK_OPERATION__RDD = GQAMPackage.GA_STEP_FEATURE_COUNT + 1;
+	int SPARK_OPERATION__NUM_TASKS = GQAMPackage.GA_STEP_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Op Type</b></em>' attribute.
@@ -751,7 +742,7 @@ public interface SparkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SPARK_OPERATION__OP_TYPE = GQAMPackage.GA_STEP_FEATURE_COUNT + 2;
+	int SPARK_OPERATION__OP_TYPE = GQAMPackage.GA_STEP_FEATURE_COUNT + 1;
 
 	/**
 	 * The number of structural features of the '<em>Operation</em>' class.
@@ -760,7 +751,7 @@ public interface SparkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SPARK_OPERATION_FEATURE_COUNT = GQAMPackage.GA_STEP_FEATURE_COUNT + 3;
+	int SPARK_OPERATION_FEATURE_COUNT = GQAMPackage.GA_STEP_FEATURE_COUNT + 2;
 
 	/**
 	 * The meta object id for the '{@link es.unizar.disco.dice.DTSM.Spark.impl.SparkReduceImpl <em>Reduce</em>}' class.
@@ -1133,22 +1124,13 @@ public interface SparkPackage extends EPackage {
 	int SPARK_REDUCE__CHILD_SCENARIO = SPARK_OPERATION__CHILD_SCENARIO;
 
 	/**
-	 * The feature id for the '<em><b>RDD Available</b></em>' attribute.
+	 * The feature id for the '<em><b>Num Tasks</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SPARK_REDUCE__RDD_AVAILABLE = SPARK_OPERATION__RDD_AVAILABLE;
-
-	/**
-	 * The feature id for the '<em><b>RDD</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SPARK_REDUCE__RDD = SPARK_OPERATION__RDD;
+	int SPARK_REDUCE__NUM_TASKS = SPARK_OPERATION__NUM_TASKS;
 
 	/**
 	 * The feature id for the '<em><b>Op Type</b></em>' attribute.
@@ -1178,412 +1160,6 @@ public interface SparkPackage extends EPackage {
 	int SPARK_REDUCE_FEATURE_COUNT = SPARK_OPERATION_FEATURE_COUNT + 1;
 
 	/**
-	 * The meta object id for the '{@link es.unizar.disco.dice.DTSM.Spark.impl.SparkForEachImpl <em>For Each</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see es.unizar.disco.dice.DTSM.Spark.impl.SparkForEachImpl
-	 * @see es.unizar.disco.dice.DTSM.Spark.impl.SparkPackageImpl#getSparkForEach()
-	 * @generated
-	 */
-	int SPARK_FOR_EACH = 3;
-
-	/**
-	 * The feature id for the '<em><b>Exec Time</b></em>' attribute list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SPARK_FOR_EACH__EXEC_TIME = SPARK_OPERATION__EXEC_TIME;
-
-	/**
-	 * The feature id for the '<em><b>Allocated Memory</b></em>' attribute list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SPARK_FOR_EACH__ALLOCATED_MEMORY = SPARK_OPERATION__ALLOCATED_MEMORY;
-
-	/**
-	 * The feature id for the '<em><b>Used Memory</b></em>' attribute list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SPARK_FOR_EACH__USED_MEMORY = SPARK_OPERATION__USED_MEMORY;
-
-	/**
-	 * The feature id for the '<em><b>Power Peak</b></em>' attribute list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SPARK_FOR_EACH__POWER_PEAK = SPARK_OPERATION__POWER_PEAK;
-
-	/**
-	 * The feature id for the '<em><b>Energy</b></em>' attribute list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SPARK_FOR_EACH__ENERGY = SPARK_OPERATION__ENERGY;
-
-	/**
-	 * The feature id for the '<em><b>Base Named Element</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SPARK_FOR_EACH__BASE_NAMED_ELEMENT = SPARK_OPERATION__BASE_NAMED_ELEMENT;
-
-	/**
-	 * The feature id for the '<em><b>Sub Usage</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SPARK_FOR_EACH__SUB_USAGE = SPARK_OPERATION__SUB_USAGE;
-
-	/**
-	 * The feature id for the '<em><b>Used Resources</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SPARK_FOR_EACH__USED_RESOURCES = SPARK_OPERATION__USED_RESOURCES;
-
-	/**
-	 * The feature id for the '<em><b>Msg Size</b></em>' attribute list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SPARK_FOR_EACH__MSG_SIZE = SPARK_OPERATION__MSG_SIZE;
-
-	/**
-	 * The feature id for the '<em><b>On</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SPARK_FOR_EACH__ON = SPARK_OPERATION__ON;
-
-	/**
-	 * The feature id for the '<em><b>Base Action</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SPARK_FOR_EACH__BASE_ACTION = SPARK_OPERATION__BASE_ACTION;
-
-	/**
-	 * The feature id for the '<em><b>Base Behavior</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SPARK_FOR_EACH__BASE_BEHAVIOR = SPARK_OPERATION__BASE_BEHAVIOR;
-
-	/**
-	 * The feature id for the '<em><b>Base Message</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SPARK_FOR_EACH__BASE_MESSAGE = SPARK_OPERATION__BASE_MESSAGE;
-
-	/**
-	 * The feature id for the '<em><b>Duration</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SPARK_FOR_EACH__DURATION = SPARK_OPERATION__DURATION;
-
-	/**
-	 * The feature id for the '<em><b>Start</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SPARK_FOR_EACH__START = SPARK_OPERATION__START;
-
-	/**
-	 * The feature id for the '<em><b>Finish</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SPARK_FOR_EACH__FINISH = SPARK_OPERATION__FINISH;
-
-	/**
-	 * The feature id for the '<em><b>Cause</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SPARK_FOR_EACH__CAUSE = SPARK_OPERATION__CAUSE;
-
-	/**
-	 * The feature id for the '<em><b>Host Demand</b></em>' attribute list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SPARK_FOR_EACH__HOST_DEMAND = SPARK_OPERATION__HOST_DEMAND;
-
-	/**
-	 * The feature id for the '<em><b>Host Demand Ops</b></em>' attribute list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SPARK_FOR_EACH__HOST_DEMAND_OPS = SPARK_OPERATION__HOST_DEMAND_OPS;
-
-	/**
-	 * The feature id for the '<em><b>Inter Occ T</b></em>' attribute list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SPARK_FOR_EACH__INTER_OCC_T = SPARK_OPERATION__INTER_OCC_T;
-
-	/**
-	 * The feature id for the '<em><b>Throughput</b></em>' attribute list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SPARK_FOR_EACH__THROUGHPUT = SPARK_OPERATION__THROUGHPUT;
-
-	/**
-	 * The feature id for the '<em><b>Resp T</b></em>' attribute list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SPARK_FOR_EACH__RESP_T = SPARK_OPERATION__RESP_T;
-
-	/**
-	 * The feature id for the '<em><b>Utilization</b></em>' attribute list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SPARK_FOR_EACH__UTILIZATION = SPARK_OPERATION__UTILIZATION;
-
-	/**
-	 * The feature id for the '<em><b>Utilization On Host</b></em>' attribute list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SPARK_FOR_EACH__UTILIZATION_ON_HOST = SPARK_OPERATION__UTILIZATION_ON_HOST;
-
-	/**
-	 * The feature id for the '<em><b>Root</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SPARK_FOR_EACH__ROOT = SPARK_OPERATION__ROOT;
-
-	/**
-	 * The feature id for the '<em><b>Steps</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SPARK_FOR_EACH__STEPS = SPARK_OPERATION__STEPS;
-
-	/**
-	 * The feature id for the '<em><b>Parent Step</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SPARK_FOR_EACH__PARENT_STEP = SPARK_OPERATION__PARENT_STEP;
-
-	/**
-	 * The feature id for the '<em><b>Timing</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SPARK_FOR_EACH__TIMING = SPARK_OPERATION__TIMING;
-
-	/**
-	 * The feature id for the '<em><b>Is Atomic</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SPARK_FOR_EACH__IS_ATOMIC = SPARK_OPERATION__IS_ATOMIC;
-
-	/**
-	 * The feature id for the '<em><b>Block T</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SPARK_FOR_EACH__BLOCK_T = SPARK_OPERATION__BLOCK_T;
-
-	/**
-	 * The feature id for the '<em><b>Rep</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SPARK_FOR_EACH__REP = SPARK_OPERATION__REP;
-
-	/**
-	 * The feature id for the '<em><b>Prob</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SPARK_FOR_EACH__PROB = SPARK_OPERATION__PROB;
-
-	/**
-	 * The feature id for the '<em><b>Priority</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SPARK_FOR_EACH__PRIORITY = SPARK_OPERATION__PRIORITY;
-
-	/**
-	 * The feature id for the '<em><b>Concur Res</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SPARK_FOR_EACH__CONCUR_RES = SPARK_OPERATION__CONCUR_RES;
-
-	/**
-	 * The feature id for the '<em><b>Host</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SPARK_FOR_EACH__HOST = SPARK_OPERATION__HOST;
-
-	/**
-	 * The feature id for the '<em><b>Serv Demand</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SPARK_FOR_EACH__SERV_DEMAND = SPARK_OPERATION__SERV_DEMAND;
-
-	/**
-	 * The feature id for the '<em><b>Serv Count</b></em>' attribute list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SPARK_FOR_EACH__SERV_COUNT = SPARK_OPERATION__SERV_COUNT;
-
-	/**
-	 * The feature id for the '<em><b>Self Delay</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SPARK_FOR_EACH__SELF_DELAY = SPARK_OPERATION__SELF_DELAY;
-
-	/**
-	 * The feature id for the '<em><b>Scenario</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SPARK_FOR_EACH__SCENARIO = SPARK_OPERATION__SCENARIO;
-
-	/**
-	 * The feature id for the '<em><b>Child Scenario</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SPARK_FOR_EACH__CHILD_SCENARIO = SPARK_OPERATION__CHILD_SCENARIO;
-
-	/**
-	 * The feature id for the '<em><b>RDD Available</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SPARK_FOR_EACH__RDD_AVAILABLE = SPARK_OPERATION__RDD_AVAILABLE;
-
-	/**
-	 * The feature id for the '<em><b>RDD</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SPARK_FOR_EACH__RDD = SPARK_OPERATION__RDD;
-
-	/**
-	 * The feature id for the '<em><b>Op Type</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SPARK_FOR_EACH__OP_TYPE = SPARK_OPERATION__OP_TYPE;
-
-	/**
-	 * The number of structural features of the '<em>For Each</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SPARK_FOR_EACH_FEATURE_COUNT = SPARK_OPERATION_FEATURE_COUNT + 0;
-
-	/**
 	 * The meta object id for the '{@link es.unizar.disco.dice.DTSM.Spark.impl.SparkMapImpl <em>Map</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1591,7 +1167,7 @@ public interface SparkPackage extends EPackage {
 	 * @see es.unizar.disco.dice.DTSM.Spark.impl.SparkPackageImpl#getSparkMap()
 	 * @generated
 	 */
-	int SPARK_MAP = 4;
+	int SPARK_MAP = 3;
 
 	/**
 	 * The feature id for the '<em><b>Exec Time</b></em>' attribute list.
@@ -1954,22 +1530,13 @@ public interface SparkPackage extends EPackage {
 	int SPARK_MAP__CHILD_SCENARIO = SPARK_OPERATION__CHILD_SCENARIO;
 
 	/**
-	 * The feature id for the '<em><b>RDD Available</b></em>' attribute.
+	 * The feature id for the '<em><b>Num Tasks</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SPARK_MAP__RDD_AVAILABLE = SPARK_OPERATION__RDD_AVAILABLE;
-
-	/**
-	 * The feature id for the '<em><b>RDD</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SPARK_MAP__RDD = SPARK_OPERATION__RDD;
+	int SPARK_MAP__NUM_TASKS = SPARK_OPERATION__NUM_TASKS;
 
 	/**
 	 * The feature id for the '<em><b>Op Type</b></em>' attribute.
@@ -2006,7 +1573,7 @@ public interface SparkPackage extends EPackage {
 	 * @see es.unizar.disco.dice.DTSM.Spark.impl.SparkPackageImpl#getSparkNode()
 	 * @generated
 	 */
-	int SPARK_NODE = 5;
+	int SPARK_NODE = 4;
 
 	/**
 	 * The feature id for the '<em><b>Res Mult</b></em>' attribute.
@@ -2601,7 +2168,7 @@ public interface SparkPackage extends EPackage {
 	 * @see es.unizar.disco.dice.DTSM.Spark.impl.SparkPackageImpl#getSparkWorkloadEvent()
 	 * @generated
 	 */
-	int SPARK_WORKLOAD_EVENT = 6;
+	int SPARK_WORKLOAD_EVENT = 5;
 
 	/**
 	 * The feature id for the '<em><b>Pattern</b></em>' attribute.
@@ -2718,15 +2285,15 @@ public interface SparkPackage extends EPackage {
 	EAttribute getSparkScenario_NAssignedMemory();
 
 	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DTSM.Spark.SparkScenario#getJobSchedule <em>Job Schedule</em>}'.
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DTSM.Spark.SparkScenario#getSparkDefaultParallelism <em>Spark Default Parallelism</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Job Schedule</em>'.
-	 * @see es.unizar.disco.dice.DTSM.Spark.SparkScenario#getJobSchedule()
+	 * @return the meta object for the attribute '<em>Spark Default Parallelism</em>'.
+	 * @see es.unizar.disco.dice.DTSM.Spark.SparkScenario#getSparkDefaultParallelism()
 	 * @see #getSparkScenario()
 	 * @generated
 	 */
-	EAttribute getSparkScenario_JobSchedule();
+	EAttribute getSparkScenario_SparkDefaultParallelism();
 
 	/**
 	 * Returns the meta object for class '{@link es.unizar.disco.dice.DTSM.Spark.SparkOperation <em>Operation</em>}'.
@@ -2739,26 +2306,15 @@ public interface SparkPackage extends EPackage {
 	EClass getSparkOperation();
 
 	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DTSM.Spark.SparkOperation#getRDDAvailable <em>RDD Available</em>}'.
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DTSM.Spark.SparkOperation#getNumTasks <em>Num Tasks</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>RDD Available</em>'.
-	 * @see es.unizar.disco.dice.DTSM.Spark.SparkOperation#getRDDAvailable()
+	 * @return the meta object for the attribute '<em>Num Tasks</em>'.
+	 * @see es.unizar.disco.dice.DTSM.Spark.SparkOperation#getNumTasks()
 	 * @see #getSparkOperation()
 	 * @generated
 	 */
-	EAttribute getSparkOperation_RDDAvailable();
-
-	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DTSM.Spark.SparkOperation#getRDD <em>RDD</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>RDD</em>'.
-	 * @see es.unizar.disco.dice.DTSM.Spark.SparkOperation#getRDD()
-	 * @see #getSparkOperation()
-	 * @generated
-	 */
-	EAttribute getSparkOperation_RDD();
+	EAttribute getSparkOperation_NumTasks();
 
 	/**
 	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DTSM.Spark.SparkOperation#getOpType <em>Op Type</em>}'.
@@ -2791,16 +2347,6 @@ public interface SparkPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getSparkReduce_ReduceType();
-
-	/**
-	 * Returns the meta object for class '{@link es.unizar.disco.dice.DTSM.Spark.SparkForEach <em>For Each</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>For Each</em>'.
-	 * @see es.unizar.disco.dice.DTSM.Spark.SparkForEach
-	 * @generated
-	 */
-	EClass getSparkForEach();
 
 	/**
 	 * Returns the meta object for class '{@link es.unizar.disco.dice.DTSM.Spark.SparkMap <em>Map</em>}'.
@@ -2936,12 +2482,12 @@ public interface SparkPackage extends EPackage {
 		EAttribute SPARK_SCENARIO__NASSIGNED_MEMORY = eINSTANCE.getSparkScenario_NAssignedMemory();
 
 		/**
-		 * The meta object literal for the '<em><b>Job Schedule</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>Spark Default Parallelism</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute SPARK_SCENARIO__JOB_SCHEDULE = eINSTANCE.getSparkScenario_JobSchedule();
+		EAttribute SPARK_SCENARIO__SPARK_DEFAULT_PARALLELISM = eINSTANCE.getSparkScenario_SparkDefaultParallelism();
 
 		/**
 		 * The meta object literal for the '{@link es.unizar.disco.dice.DTSM.Spark.impl.SparkOperationImpl <em>Operation</em>}' class.
@@ -2954,20 +2500,12 @@ public interface SparkPackage extends EPackage {
 		EClass SPARK_OPERATION = eINSTANCE.getSparkOperation();
 
 		/**
-		 * The meta object literal for the '<em><b>RDD Available</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>Num Tasks</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute SPARK_OPERATION__RDD_AVAILABLE = eINSTANCE.getSparkOperation_RDDAvailable();
-
-		/**
-		 * The meta object literal for the '<em><b>RDD</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute SPARK_OPERATION__RDD = eINSTANCE.getSparkOperation_RDD();
+		EAttribute SPARK_OPERATION__NUM_TASKS = eINSTANCE.getSparkOperation_NumTasks();
 
 		/**
 		 * The meta object literal for the '<em><b>Op Type</b></em>' attribute feature.
@@ -2994,16 +2532,6 @@ public interface SparkPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute SPARK_REDUCE__REDUCE_TYPE = eINSTANCE.getSparkReduce_ReduceType();
-
-		/**
-		 * The meta object literal for the '{@link es.unizar.disco.dice.DTSM.Spark.impl.SparkForEachImpl <em>For Each</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see es.unizar.disco.dice.DTSM.Spark.impl.SparkForEachImpl
-		 * @see es.unizar.disco.dice.DTSM.Spark.impl.SparkPackageImpl#getSparkForEach()
-		 * @generated
-		 */
-		EClass SPARK_FOR_EACH = eINSTANCE.getSparkForEach();
 
 		/**
 		 * The meta object literal for the '{@link es.unizar.disco.dice.DTSM.Spark.impl.SparkMapImpl <em>Map</em>}' class.
