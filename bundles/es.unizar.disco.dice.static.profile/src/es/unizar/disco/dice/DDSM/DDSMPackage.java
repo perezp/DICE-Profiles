@@ -2974,6 +2974,188 @@ public interface DDSMPackage extends EPackage {
 
 
 	/**
+	 * The meta object id for the '{@link es.unizar.disco.dice.DDSM.impl.DdsmMongoDBClusterImpl <em>Ddsm Mongo DB Cluster</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see es.unizar.disco.dice.DDSM.impl.DdsmMongoDBClusterImpl
+	 * @see es.unizar.disco.dice.DDSM.impl.DDSMPackageImpl#getDdsmMongoDBCluster()
+	 * @generated
+	 */
+	int DDSM_MONGO_DB_CLUSTER = 19;
+
+	/**
+	 * The feature id for the '<em><b>Description</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_MONGO_DB_CLUSTER__DESCRIPTION = DDSM_PEER_TO_PEER_PLATFORM__DESCRIPTION;
+
+	/**
+	 * The feature id for the '<em><b>Properties List</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_MONGO_DB_CLUSTER__PROPERTIES_LIST = DDSM_PEER_TO_PEER_PLATFORM__PROPERTIES_LIST;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_MONGO_DB_CLUSTER__ID = DDSM_PEER_TO_PEER_PLATFORM__ID;
+
+	/**
+	 * The feature id for the '<em><b>Provided Ports List</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_MONGO_DB_CLUSTER__PROVIDED_PORTS_LIST = DDSM_PEER_TO_PEER_PLATFORM__PROVIDED_PORTS_LIST;
+
+	/**
+	 * The feature id for the '<em><b>Monitored</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_MONGO_DB_CLUSTER__MONITORED = DDSM_PEER_TO_PEER_PLATFORM__MONITORED;
+
+	/**
+	 * The feature id for the '<em><b>Monitoring Roles</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_MONGO_DB_CLUSTER__MONITORING_ROLES = DDSM_PEER_TO_PEER_PLATFORM__MONITORING_ROLES;
+
+	/**
+	 * The feature id for the '<em><b>Required Port</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_MONGO_DB_CLUSTER__REQUIRED_PORT = DDSM_PEER_TO_PEER_PLATFORM__REQUIRED_PORT;
+
+	/**
+	 * The feature id for the '<em><b>Is Front End</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_MONGO_DB_CLUSTER__IS_FRONT_END = DDSM_PEER_TO_PEER_PLATFORM__IS_FRONT_END;
+
+	/**
+	 * The feature id for the '<em><b>Component Type</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_MONGO_DB_CLUSTER__COMPONENT_TYPE = DDSM_PEER_TO_PEER_PLATFORM__COMPONENT_TYPE;
+
+	/**
+	 * The feature id for the '<em><b>Base Node</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_MONGO_DB_CLUSTER__BASE_NODE = DDSM_PEER_TO_PEER_PLATFORM__BASE_NODE;
+
+	/**
+	 * The feature id for the '<em><b>Protected</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_MONGO_DB_CLUSTER__PROTECTED = DDSM_PEER_TO_PEER_PLATFORM__PROTECTED;
+
+	/**
+	 * The feature id for the '<em><b>Launch script</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_MONGO_DB_CLUSTER__LAUNCH_SCRIPT = DDSM_PEER_TO_PEER_PLATFORM__LAUNCH_SCRIPT;
+
+	/**
+	 * The feature id for the '<em><b>Language</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_MONGO_DB_CLUSTER__LANGUAGE = DDSM_PEER_TO_PEER_PLATFORM__LANGUAGE;
+
+	/**
+	 * The feature id for the '<em><b>Firewall Rules</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_MONGO_DB_CLUSTER__FIREWALL_RULES = DDSM_PEER_TO_PEER_PLATFORM__FIREWALL_RULES;
+
+	/**
+	 * The feature id for the '<em><b>Required Attributes</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_MONGO_DB_CLUSTER__REQUIRED_ATTRIBUTES = DDSM_PEER_TO_PEER_PLATFORM__REQUIRED_ATTRIBUTES;
+
+	/**
+	 * The feature id for the '<em><b>Sharding Mode</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_MONGO_DB_CLUSTER__SHARDING_MODE = DDSM_PEER_TO_PEER_PLATFORM_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Router Server Host</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_MONGO_DB_CLUSTER__ROUTER_SERVER_HOST = DDSM_PEER_TO_PEER_PLATFORM_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Shards</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_MONGO_DB_CLUSTER__SHARDS = DDSM_PEER_TO_PEER_PLATFORM_FEATURE_COUNT + 2;
+
+	/**
+	 * The number of structural features of the '<em>Ddsm Mongo DB Cluster</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_MONGO_DB_CLUSTER_FEATURE_COUNT = DDSM_PEER_TO_PEER_PLATFORM_FEATURE_COUNT + 3;
+
+
+	/**
 	 * Returns the meta object for class '{@link es.unizar.disco.dice.DDSM.DdsmExternalComponent <em>Ddsm External Component</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -4275,6 +4457,49 @@ public interface DDSMPackage extends EPackage {
 	EClass getDdsmSparkCluster();
 
 	/**
+	 * Returns the meta object for class '{@link es.unizar.disco.dice.DDSM.DdsmMongoDBCluster <em>Ddsm Mongo DB Cluster</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Ddsm Mongo DB Cluster</em>'.
+	 * @see es.unizar.disco.dice.DDSM.DdsmMongoDBCluster
+	 * @generated
+	 */
+	EClass getDdsmMongoDBCluster();
+
+	/**
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmMongoDBCluster#isShardingMode <em>Sharding Mode</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Sharding Mode</em>'.
+	 * @see es.unizar.disco.dice.DDSM.DdsmMongoDBCluster#isShardingMode()
+	 * @see #getDdsmMongoDBCluster()
+	 * @generated
+	 */
+	EAttribute getDdsmMongoDBCluster_ShardingMode();
+
+	/**
+	 * Returns the meta object for the reference '{@link es.unizar.disco.dice.DDSM.DdsmMongoDBCluster#getRouterServerHost <em>Router Server Host</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Router Server Host</em>'.
+	 * @see es.unizar.disco.dice.DDSM.DdsmMongoDBCluster#getRouterServerHost()
+	 * @see #getDdsmMongoDBCluster()
+	 * @generated
+	 */
+	EReference getDdsmMongoDBCluster_RouterServerHost();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link es.unizar.disco.dice.DDSM.DdsmMongoDBCluster#getShards <em>Shards</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Shards</em>'.
+	 * @see es.unizar.disco.dice.DDSM.DdsmMongoDBCluster#getShards()
+	 * @see #getDdsmMongoDBCluster()
+	 * @generated
+	 */
+	EReference getDdsmMongoDBCluster_Shards();
+
+	/**
 	 * Returns the factory that creates the instances of the model.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -5293,6 +5518,40 @@ public interface DDSMPackage extends EPackage {
 		 * @generated
 		 */
 		EClass DDSM_SPARK_CLUSTER = eINSTANCE.getDdsmSparkCluster();
+
+		/**
+		 * The meta object literal for the '{@link es.unizar.disco.dice.DDSM.impl.DdsmMongoDBClusterImpl <em>Ddsm Mongo DB Cluster</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see es.unizar.disco.dice.DDSM.impl.DdsmMongoDBClusterImpl
+		 * @see es.unizar.disco.dice.DDSM.impl.DDSMPackageImpl#getDdsmMongoDBCluster()
+		 * @generated
+		 */
+		EClass DDSM_MONGO_DB_CLUSTER = eINSTANCE.getDdsmMongoDBCluster();
+
+		/**
+		 * The meta object literal for the '<em><b>Sharding Mode</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DDSM_MONGO_DB_CLUSTER__SHARDING_MODE = eINSTANCE.getDdsmMongoDBCluster_ShardingMode();
+
+		/**
+		 * The meta object literal for the '<em><b>Router Server Host</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DDSM_MONGO_DB_CLUSTER__ROUTER_SERVER_HOST = eINSTANCE.getDdsmMongoDBCluster_RouterServerHost();
+
+		/**
+		 * The meta object literal for the '<em><b>Shards</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DDSM_MONGO_DB_CLUSTER__SHARDS = eINSTANCE.getDdsmMongoDBCluster_Shards();
 
 	}
 

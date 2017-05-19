@@ -61,6 +61,7 @@ public class Complex_Data_TypesFactoryImpl extends EFactoryImpl implements Compl
 			case Complex_Data_TypesPackage.DICE_CHANNEL_SPECIFICATION: return createDiceChannelSpecification();
 			case Complex_Data_TypesPackage.REQUIRED_ATTRIBUTE: return createRequiredAttribute();
 			case Complex_Data_TypesPackage.FIREWALL_RULE: return createFirewallRule();
+			case Complex_Data_TypesPackage.MONGO_DB_SHARD: return createMongoDBShard();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -114,6 +115,16 @@ public class Complex_Data_TypesFactoryImpl extends EFactoryImpl implements Compl
 	public FirewallRule createFirewallRule() {
 		FirewallRuleImpl firewallRule = new FirewallRuleImpl();
 		return firewallRule;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public MongoDBShard createMongoDBShard() {
+		MongoDBShardImpl mongoDBShard = new MongoDBShardImpl();
+		return mongoDBShard;
 	}
 
 	/**

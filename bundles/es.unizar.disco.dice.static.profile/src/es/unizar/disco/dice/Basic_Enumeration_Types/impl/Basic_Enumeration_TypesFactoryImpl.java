@@ -74,6 +74,8 @@ public class Basic_Enumeration_TypesFactoryImpl extends EFactoryImpl implements 
 				return createRefTypeFromString(eDataType, initialValue);
 			case Basic_Enumeration_TypesPackage.REF_DATA_FORMAT_TYPE:
 				return createRefDataFormatTypeFromString(eDataType, initialValue);
+			case Basic_Enumeration_TypesPackage.VM_SIZE:
+				return createVMSizeFromString(eDataType, initialValue);
 			case Basic_Enumeration_TypesPackage.TECH_TYPE:
 				return createTechTypeFromString(eDataType, initialValue);
 			case Basic_Enumeration_TypesPackage.PROCESSING_TYPE:
@@ -92,8 +94,6 @@ public class Basic_Enumeration_TypesFactoryImpl extends EFactoryImpl implements 
 				return createStreamPolicyFromString(eDataType, initialValue);
 			case Basic_Enumeration_TypesPackage.SCHEDULING:
 				return createSchedulingFromString(eDataType, initialValue);
-			case Basic_Enumeration_TypesPackage.VM_SIZE:
-				return createVMSizeFromString(eDataType, initialValue);
 			case Basic_Enumeration_TypesPackage.PROVIDER_TYPE:
 				return createProviderTypeFromString(eDataType, initialValue);
 			case Basic_Enumeration_TypesPackage.LIFE_CYCLE_ELEMENT_TYPE:
@@ -127,6 +127,8 @@ public class Basic_Enumeration_TypesFactoryImpl extends EFactoryImpl implements 
 				return convertRefTypeToString(eDataType, instanceValue);
 			case Basic_Enumeration_TypesPackage.REF_DATA_FORMAT_TYPE:
 				return convertRefDataFormatTypeToString(eDataType, instanceValue);
+			case Basic_Enumeration_TypesPackage.VM_SIZE:
+				return convertVMSizeToString(eDataType, instanceValue);
 			case Basic_Enumeration_TypesPackage.TECH_TYPE:
 				return convertTechTypeToString(eDataType, instanceValue);
 			case Basic_Enumeration_TypesPackage.PROCESSING_TYPE:
@@ -145,8 +147,6 @@ public class Basic_Enumeration_TypesFactoryImpl extends EFactoryImpl implements 
 				return convertStreamPolicyToString(eDataType, instanceValue);
 			case Basic_Enumeration_TypesPackage.SCHEDULING:
 				return convertSchedulingToString(eDataType, instanceValue);
-			case Basic_Enumeration_TypesPackage.VM_SIZE:
-				return convertVMSizeToString(eDataType, instanceValue);
 			case Basic_Enumeration_TypesPackage.PROVIDER_TYPE:
 				return convertProviderTypeToString(eDataType, instanceValue);
 			case Basic_Enumeration_TypesPackage.LIFE_CYCLE_ELEMENT_TYPE:

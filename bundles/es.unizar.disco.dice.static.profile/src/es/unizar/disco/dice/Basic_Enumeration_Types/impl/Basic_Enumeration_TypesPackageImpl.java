@@ -579,6 +579,11 @@ public class Basic_Enumeration_TypesPackageImpl extends EPackageImpl implements 
 		addEEnumLiteral(vmSizeEEnum, VMSize.MEDIUM);
 		addEEnumLiteral(vmSizeEEnum, VMSize.LARGE);
 
+		initEEnum(vmSizeEEnum, VMSize.class, "VMSize");
+		addEEnumLiteral(vmSizeEEnum, VMSize.SMALL);
+		addEEnumLiteral(vmSizeEEnum, VMSize.MEDIUM);
+		addEEnumLiteral(vmSizeEEnum, VMSize.LARGE);
+
 		initEEnum(techTypeEEnum, TechType.class, "TechType");
 		addEEnumLiteral(techTypeEEnum, TechType.HADOOP);
 		addEEnumLiteral(techTypeEEnum, TechType.SPARK);
