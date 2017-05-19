@@ -29,22 +29,6 @@ public enum SparkReduce implements Enumerator {
 	REDUCE(0, "Reduce", "Reduce"),
 
 	/**
-	 * The '<em><b>Collect</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #COLLECT_VALUE
-	 * @generated
-	 * @ordered
-	 */
-	COLLECT(1, "Collect", "Collect"), /**
-	 * The '<em><b>Count</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #COUNT_VALUE
-	 * @generated
-	 * @ordered
-	 */
-	COUNT(2, "Count", "Count"), /**
 	 * The '<em><b>Sample</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -52,7 +36,23 @@ public enum SparkReduce implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	SAMPLE(3, "Sample", "Sample"),
+	SAMPLE(1, "Sample", "Sample"), /**
+	 * The '<em><b>Collect</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #COLLECT_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	COLLECT(2, "Collect", "Collect"), /**
+	 * The '<em><b>Count</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #COUNT_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	COUNT(3, "Count", "Count"),
 
 	/**
 	 * The '<em><b>Save As</b></em>' literal object.
@@ -96,6 +96,21 @@ public enum SparkReduce implements Enumerator {
 	public static final int REDUCE_VALUE = 0;
 
 	/**
+	 * The '<em><b>Sample</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of '<em><b>Sample</b></em>' literal object isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @see #SAMPLE
+	 * @model name="Sample"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int SAMPLE_VALUE = 1;
+
+	/**
 	 * The '<em><b>Collect</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -108,7 +123,7 @@ public enum SparkReduce implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int COLLECT_VALUE = 1;
+	public static final int COLLECT_VALUE = 2;
 
 	/**
 	 * The '<em><b>Count</b></em>' literal value.
@@ -123,22 +138,7 @@ public enum SparkReduce implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int COUNT_VALUE = 2;
-
-	/**
-	 * The '<em><b>Sample</b></em>' literal value.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Sample</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @see #SAMPLE
-	 * @model name="Sample"
-	 * @generated
-	 * @ordered
-	 */
-	public static final int SAMPLE_VALUE = 3;
+	public static final int COUNT_VALUE = 3;
 
 	/**
 	 * The '<em><b>Save As</b></em>' literal value.
@@ -194,9 +194,9 @@ public enum SparkReduce implements Enumerator {
 	private static final SparkReduce[] VALUES_ARRAY =
 		new SparkReduce[] {
 			REDUCE,
+			SAMPLE,
 			COLLECT,
 			COUNT,
-			SAMPLE,
 			SAVE_AS,
 			COUNT_BY_KEY,
 			FOR_EACH,
@@ -257,9 +257,9 @@ public enum SparkReduce implements Enumerator {
 	public static SparkReduce get(int value) {
 		switch (value) {
 			case REDUCE_VALUE: return REDUCE;
+			case SAMPLE_VALUE: return SAMPLE;
 			case COLLECT_VALUE: return COLLECT;
 			case COUNT_VALUE: return COUNT;
-			case SAMPLE_VALUE: return SAMPLE;
 			case SAVE_AS_VALUE: return SAVE_AS;
 			case COUNT_BY_KEY_VALUE: return COUNT_BY_KEY;
 			case FOR_EACH_VALUE: return FOR_EACH;

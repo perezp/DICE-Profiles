@@ -148,9 +148,9 @@
       </eClassifiers>
       <eClassifiers xsi:type="ecore:EEnum" name="SparkReduce">
         <eLiterals name="Reduce"/>
-        <eLiterals name="Collect" value="1"/>
-        <eLiterals name="Count" value="2"/>
-        <eLiterals name="Sample" value="3"/>
+        <eLiterals name="Sample" value="1"/>
+        <eLiterals name="Collect" value="2"/>
+        <eLiterals name="Count" value="3"/>
         <eLiterals name="SaveAs" value="4"/>
         <eLiterals name="CountByKey" value="5"/>
         <eLiterals name="ForEach" value="6"/>
