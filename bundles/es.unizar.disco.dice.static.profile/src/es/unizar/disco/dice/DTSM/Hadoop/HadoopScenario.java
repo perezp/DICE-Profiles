@@ -2,9 +2,9 @@
  */
 package es.unizar.disco.dice.DTSM.Hadoop;
 
-import es.unizar.disco.dice.Basic_Enumeration_Types.Scheduling;
+import com.masdes.dam.Core.DaService;
 
-import org.eclipse.papyrus.MARTE.MARTE_AnalysisModel.GQAM.GaScenario;
+import es.unizar.disco.dice.Basic_Enumeration_Types.Scheduling;
 
 /**
  * <!-- begin-user-doc -->
@@ -22,7 +22,7 @@ import org.eclipse.papyrus.MARTE.MARTE_AnalysisModel.GQAM.GaScenario;
  * @model
  * @generated
  */
-public interface HadoopScenario extends GaScenario {
+public interface HadoopScenario extends DaService {
 	/**
 	 * Returns the value of the '<em><b>Job Schedule</b></em>' attribute.
 	 * The literals are from the enumeration {@link es.unizar.disco.dice.Basic_Enumeration_Types.Scheduling}.

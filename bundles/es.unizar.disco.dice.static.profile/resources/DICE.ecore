@@ -241,7 +241,7 @@
           <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" ordered="false"
               eType="ecore:EEnum DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/ReduceType"/>
         </eClassifiers>
-        <eClassifiers xsi:type="ecore:EClass" name="HadoopScenario" eSuperTypes="../../org.eclipse.papyrus.marte.static.profile/resources/MARTE.ecore#//MARTE_AnalysisModel/GQAM/GaScenario">
+        <eClassifiers xsi:type="ecore:EClass" name="HadoopScenario" eSuperTypes="../../com.masdes.dam.static.profile/resources/DAM.ecore#//DAM_UML_Extensions/System/Core/DaService">
           <eStructuralFeatures xsi:type="ecore:EAttribute" name="jobSchedule" ordered="false"
               eType="ecore:EEnum DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/Scheduling"/>
         </eClassifiers>

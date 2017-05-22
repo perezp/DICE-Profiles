@@ -2,7 +2,7 @@
  */
 package es.unizar.disco.dice.DTSM.Hadoop;
 
-import es.unizar.disco.dice.DTSM.Core.CorePackage;
+import com.masdes.dam.Core.CorePackage;
 
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
@@ -1377,7 +1377,7 @@ public interface HadoopPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HADOOP_SCENARIO__EXEC_TIME = GQAMPackage.GA_SCENARIO__EXEC_TIME;
+	int HADOOP_SCENARIO__EXEC_TIME = CorePackage.DA_SERVICE__EXEC_TIME;
 
 	/**
 	 * The feature id for the '<em><b>Allocated Memory</b></em>' attribute list.
@@ -1386,7 +1386,7 @@ public interface HadoopPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HADOOP_SCENARIO__ALLOCATED_MEMORY = GQAMPackage.GA_SCENARIO__ALLOCATED_MEMORY;
+	int HADOOP_SCENARIO__ALLOCATED_MEMORY = CorePackage.DA_SERVICE__ALLOCATED_MEMORY;
 
 	/**
 	 * The feature id for the '<em><b>Used Memory</b></em>' attribute list.
@@ -1395,7 +1395,7 @@ public interface HadoopPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HADOOP_SCENARIO__USED_MEMORY = GQAMPackage.GA_SCENARIO__USED_MEMORY;
+	int HADOOP_SCENARIO__USED_MEMORY = CorePackage.DA_SERVICE__USED_MEMORY;
 
 	/**
 	 * The feature id for the '<em><b>Power Peak</b></em>' attribute list.
@@ -1404,7 +1404,7 @@ public interface HadoopPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HADOOP_SCENARIO__POWER_PEAK = GQAMPackage.GA_SCENARIO__POWER_PEAK;
+	int HADOOP_SCENARIO__POWER_PEAK = CorePackage.DA_SERVICE__POWER_PEAK;
 
 	/**
 	 * The feature id for the '<em><b>Energy</b></em>' attribute list.
@@ -1413,7 +1413,7 @@ public interface HadoopPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HADOOP_SCENARIO__ENERGY = GQAMPackage.GA_SCENARIO__ENERGY;
+	int HADOOP_SCENARIO__ENERGY = CorePackage.DA_SERVICE__ENERGY;
 
 	/**
 	 * The feature id for the '<em><b>Base Named Element</b></em>' reference.
@@ -1422,7 +1422,7 @@ public interface HadoopPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HADOOP_SCENARIO__BASE_NAMED_ELEMENT = GQAMPackage.GA_SCENARIO__BASE_NAMED_ELEMENT;
+	int HADOOP_SCENARIO__BASE_NAMED_ELEMENT = CorePackage.DA_SERVICE__BASE_NAMED_ELEMENT;
 
 	/**
 	 * The feature id for the '<em><b>Sub Usage</b></em>' reference list.
@@ -1431,7 +1431,7 @@ public interface HadoopPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HADOOP_SCENARIO__SUB_USAGE = GQAMPackage.GA_SCENARIO__SUB_USAGE;
+	int HADOOP_SCENARIO__SUB_USAGE = CorePackage.DA_SERVICE__SUB_USAGE;
 
 	/**
 	 * The feature id for the '<em><b>Used Resources</b></em>' reference list.
@@ -1440,7 +1440,7 @@ public interface HadoopPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HADOOP_SCENARIO__USED_RESOURCES = GQAMPackage.GA_SCENARIO__USED_RESOURCES;
+	int HADOOP_SCENARIO__USED_RESOURCES = CorePackage.DA_SERVICE__USED_RESOURCES;
 
 	/**
 	 * The feature id for the '<em><b>Msg Size</b></em>' attribute list.
@@ -1449,7 +1449,7 @@ public interface HadoopPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HADOOP_SCENARIO__MSG_SIZE = GQAMPackage.GA_SCENARIO__MSG_SIZE;
+	int HADOOP_SCENARIO__MSG_SIZE = CorePackage.DA_SERVICE__MSG_SIZE;
 
 	/**
 	 * The feature id for the '<em><b>On</b></em>' reference list.
@@ -1458,7 +1458,7 @@ public interface HadoopPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HADOOP_SCENARIO__ON = GQAMPackage.GA_SCENARIO__ON;
+	int HADOOP_SCENARIO__ON = CorePackage.DA_SERVICE__ON;
 
 	/**
 	 * The feature id for the '<em><b>Base Action</b></em>' reference.
@@ -1467,7 +1467,7 @@ public interface HadoopPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HADOOP_SCENARIO__BASE_ACTION = GQAMPackage.GA_SCENARIO__BASE_ACTION;
+	int HADOOP_SCENARIO__BASE_ACTION = CorePackage.DA_SERVICE__BASE_ACTION;
 
 	/**
 	 * The feature id for the '<em><b>Base Behavior</b></em>' reference.
@@ -1476,7 +1476,7 @@ public interface HadoopPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HADOOP_SCENARIO__BASE_BEHAVIOR = GQAMPackage.GA_SCENARIO__BASE_BEHAVIOR;
+	int HADOOP_SCENARIO__BASE_BEHAVIOR = CorePackage.DA_SERVICE__BASE_BEHAVIOR;
 
 	/**
 	 * The feature id for the '<em><b>Base Message</b></em>' reference.
@@ -1485,7 +1485,7 @@ public interface HadoopPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HADOOP_SCENARIO__BASE_MESSAGE = GQAMPackage.GA_SCENARIO__BASE_MESSAGE;
+	int HADOOP_SCENARIO__BASE_MESSAGE = CorePackage.DA_SERVICE__BASE_MESSAGE;
 
 	/**
 	 * The feature id for the '<em><b>Duration</b></em>' containment reference.
@@ -1494,7 +1494,7 @@ public interface HadoopPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HADOOP_SCENARIO__DURATION = GQAMPackage.GA_SCENARIO__DURATION;
+	int HADOOP_SCENARIO__DURATION = CorePackage.DA_SERVICE__DURATION;
 
 	/**
 	 * The feature id for the '<em><b>Start</b></em>' reference.
@@ -1503,7 +1503,7 @@ public interface HadoopPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HADOOP_SCENARIO__START = GQAMPackage.GA_SCENARIO__START;
+	int HADOOP_SCENARIO__START = CorePackage.DA_SERVICE__START;
 
 	/**
 	 * The feature id for the '<em><b>Finish</b></em>' reference.
@@ -1512,7 +1512,7 @@ public interface HadoopPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HADOOP_SCENARIO__FINISH = GQAMPackage.GA_SCENARIO__FINISH;
+	int HADOOP_SCENARIO__FINISH = CorePackage.DA_SERVICE__FINISH;
 
 	/**
 	 * The feature id for the '<em><b>Cause</b></em>' reference.
@@ -1521,7 +1521,7 @@ public interface HadoopPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HADOOP_SCENARIO__CAUSE = GQAMPackage.GA_SCENARIO__CAUSE;
+	int HADOOP_SCENARIO__CAUSE = CorePackage.DA_SERVICE__CAUSE;
 
 	/**
 	 * The feature id for the '<em><b>Host Demand</b></em>' attribute list.
@@ -1530,7 +1530,7 @@ public interface HadoopPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HADOOP_SCENARIO__HOST_DEMAND = GQAMPackage.GA_SCENARIO__HOST_DEMAND;
+	int HADOOP_SCENARIO__HOST_DEMAND = CorePackage.DA_SERVICE__HOST_DEMAND;
 
 	/**
 	 * The feature id for the '<em><b>Host Demand Ops</b></em>' attribute list.
@@ -1539,7 +1539,7 @@ public interface HadoopPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HADOOP_SCENARIO__HOST_DEMAND_OPS = GQAMPackage.GA_SCENARIO__HOST_DEMAND_OPS;
+	int HADOOP_SCENARIO__HOST_DEMAND_OPS = CorePackage.DA_SERVICE__HOST_DEMAND_OPS;
 
 	/**
 	 * The feature id for the '<em><b>Inter Occ T</b></em>' attribute list.
@@ -1548,7 +1548,7 @@ public interface HadoopPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HADOOP_SCENARIO__INTER_OCC_T = GQAMPackage.GA_SCENARIO__INTER_OCC_T;
+	int HADOOP_SCENARIO__INTER_OCC_T = CorePackage.DA_SERVICE__INTER_OCC_T;
 
 	/**
 	 * The feature id for the '<em><b>Throughput</b></em>' attribute list.
@@ -1557,7 +1557,7 @@ public interface HadoopPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HADOOP_SCENARIO__THROUGHPUT = GQAMPackage.GA_SCENARIO__THROUGHPUT;
+	int HADOOP_SCENARIO__THROUGHPUT = CorePackage.DA_SERVICE__THROUGHPUT;
 
 	/**
 	 * The feature id for the '<em><b>Resp T</b></em>' attribute list.
@@ -1566,7 +1566,7 @@ public interface HadoopPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HADOOP_SCENARIO__RESP_T = GQAMPackage.GA_SCENARIO__RESP_T;
+	int HADOOP_SCENARIO__RESP_T = CorePackage.DA_SERVICE__RESP_T;
 
 	/**
 	 * The feature id for the '<em><b>Utilization</b></em>' attribute list.
@@ -1575,7 +1575,7 @@ public interface HadoopPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HADOOP_SCENARIO__UTILIZATION = GQAMPackage.GA_SCENARIO__UTILIZATION;
+	int HADOOP_SCENARIO__UTILIZATION = CorePackage.DA_SERVICE__UTILIZATION;
 
 	/**
 	 * The feature id for the '<em><b>Utilization On Host</b></em>' attribute list.
@@ -1584,7 +1584,7 @@ public interface HadoopPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HADOOP_SCENARIO__UTILIZATION_ON_HOST = GQAMPackage.GA_SCENARIO__UTILIZATION_ON_HOST;
+	int HADOOP_SCENARIO__UTILIZATION_ON_HOST = CorePackage.DA_SERVICE__UTILIZATION_ON_HOST;
 
 	/**
 	 * The feature id for the '<em><b>Root</b></em>' reference.
@@ -1593,7 +1593,7 @@ public interface HadoopPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HADOOP_SCENARIO__ROOT = GQAMPackage.GA_SCENARIO__ROOT;
+	int HADOOP_SCENARIO__ROOT = CorePackage.DA_SERVICE__ROOT;
 
 	/**
 	 * The feature id for the '<em><b>Steps</b></em>' reference list.
@@ -1602,7 +1602,7 @@ public interface HadoopPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HADOOP_SCENARIO__STEPS = GQAMPackage.GA_SCENARIO__STEPS;
+	int HADOOP_SCENARIO__STEPS = CorePackage.DA_SERVICE__STEPS;
 
 	/**
 	 * The feature id for the '<em><b>Parent Step</b></em>' reference list.
@@ -1611,7 +1611,7 @@ public interface HadoopPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HADOOP_SCENARIO__PARENT_STEP = GQAMPackage.GA_SCENARIO__PARENT_STEP;
+	int HADOOP_SCENARIO__PARENT_STEP = CorePackage.DA_SERVICE__PARENT_STEP;
 
 	/**
 	 * The feature id for the '<em><b>Timing</b></em>' reference list.
@@ -1620,7 +1620,142 @@ public interface HadoopPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HADOOP_SCENARIO__TIMING = GQAMPackage.GA_SCENARIO__TIMING;
+	int HADOOP_SCENARIO__TIMING = CorePackage.DA_SERVICE__TIMING;
+
+	/**
+	 * The feature id for the '<em><b>Exec Prob</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HADOOP_SCENARIO__EXEC_PROB = CorePackage.DA_SERVICE__EXEC_PROB;
+
+	/**
+	 * The feature id for the '<em><b>Ss Avail</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HADOOP_SCENARIO__SS_AVAIL = CorePackage.DA_SERVICE__SS_AVAIL;
+
+	/**
+	 * The feature id for the '<em><b>Inst Avail</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HADOOP_SCENARIO__INST_AVAIL = CorePackage.DA_SERVICE__INST_AVAIL;
+
+	/**
+	 * The feature id for the '<em><b>Unreliability</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HADOOP_SCENARIO__UNRELIABILITY = CorePackage.DA_SERVICE__UNRELIABILITY;
+
+	/**
+	 * The feature id for the '<em><b>Reliability</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HADOOP_SCENARIO__RELIABILITY = CorePackage.DA_SERVICE__RELIABILITY;
+
+	/**
+	 * The feature id for the '<em><b>Mission Time</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HADOOP_SCENARIO__MISSION_TIME = CorePackage.DA_SERVICE__MISSION_TIME;
+
+	/**
+	 * The feature id for the '<em><b>Avail Level</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HADOOP_SCENARIO__AVAIL_LEVEL = CorePackage.DA_SERVICE__AVAIL_LEVEL;
+
+	/**
+	 * The feature id for the '<em><b>Reliab Level</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HADOOP_SCENARIO__RELIAB_LEVEL = CorePackage.DA_SERVICE__RELIAB_LEVEL;
+
+	/**
+	 * The feature id for the '<em><b>Safety Level</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HADOOP_SCENARIO__SAFETY_LEVEL = CorePackage.DA_SERVICE__SAFETY_LEVEL;
+
+	/**
+	 * The feature id for the '<em><b>Complexity</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HADOOP_SCENARIO__COMPLEXITY = CorePackage.DA_SERVICE__COMPLEXITY;
+
+	/**
+	 * The feature id for the '<em><b>Failure</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HADOOP_SCENARIO__FAILURE = CorePackage.DA_SERVICE__FAILURE;
+
+	/**
+	 * The feature id for the '<em><b>Hazard</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HADOOP_SCENARIO__HAZARD = CorePackage.DA_SERVICE__HAZARD;
+
+	/**
+	 * The feature id for the '<em><b>Recovery</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HADOOP_SCENARIO__RECOVERY = CorePackage.DA_SERVICE__RECOVERY;
+
+	/**
+	 * The feature id for the '<em><b>Conf Level</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HADOOP_SCENARIO__CONF_LEVEL = CorePackage.DA_SERVICE__CONF_LEVEL;
+
+	/**
+	 * The feature id for the '<em><b>Integ Level</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HADOOP_SCENARIO__INTEG_LEVEL = CorePackage.DA_SERVICE__INTEG_LEVEL;
 
 	/**
 	 * The feature id for the '<em><b>Job Schedule</b></em>' attribute.
@@ -1629,7 +1764,7 @@ public interface HadoopPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HADOOP_SCENARIO__JOB_SCHEDULE = GQAMPackage.GA_SCENARIO_FEATURE_COUNT + 0;
+	int HADOOP_SCENARIO__JOB_SCHEDULE = CorePackage.DA_SERVICE_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of structural features of the '<em>Scenario</em>' class.
@@ -1638,7 +1773,7 @@ public interface HadoopPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HADOOP_SCENARIO_FEATURE_COUNT = GQAMPackage.GA_SCENARIO_FEATURE_COUNT + 1;
+	int HADOOP_SCENARIO_FEATURE_COUNT = CorePackage.DA_SERVICE_FEATURE_COUNT + 1;
 
 	/**
 	 * The meta object id for the '{@link es.unizar.disco.dice.DTSM.Hadoop.impl.HadoopWorkloadEventImpl <em>Workload Event</em>}' class.
@@ -1748,7 +1883,7 @@ public interface HadoopPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HADOOP_COMPUTATION_NODE__RES_MULT = CorePackage.CORE_COMPUTATION_NODE__RES_MULT;
+	int HADOOP_COMPUTATION_NODE__RES_MULT = es.unizar.disco.dice.DTSM.Core.CorePackage.CORE_COMPUTATION_NODE__RES_MULT;
 
 	/**
 	 * The feature id for the '<em><b>Is Protected</b></em>' attribute.
@@ -1757,7 +1892,7 @@ public interface HadoopPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HADOOP_COMPUTATION_NODE__IS_PROTECTED = CorePackage.CORE_COMPUTATION_NODE__IS_PROTECTED;
+	int HADOOP_COMPUTATION_NODE__IS_PROTECTED = es.unizar.disco.dice.DTSM.Core.CorePackage.CORE_COMPUTATION_NODE__IS_PROTECTED;
 
 	/**
 	 * The feature id for the '<em><b>Is Active</b></em>' attribute.
@@ -1766,7 +1901,7 @@ public interface HadoopPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HADOOP_COMPUTATION_NODE__IS_ACTIVE = CorePackage.CORE_COMPUTATION_NODE__IS_ACTIVE;
+	int HADOOP_COMPUTATION_NODE__IS_ACTIVE = es.unizar.disco.dice.DTSM.Core.CorePackage.CORE_COMPUTATION_NODE__IS_ACTIVE;
 
 	/**
 	 * The feature id for the '<em><b>Base Property</b></em>' reference.
@@ -1775,7 +1910,7 @@ public interface HadoopPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HADOOP_COMPUTATION_NODE__BASE_PROPERTY = CorePackage.CORE_COMPUTATION_NODE__BASE_PROPERTY;
+	int HADOOP_COMPUTATION_NODE__BASE_PROPERTY = es.unizar.disco.dice.DTSM.Core.CorePackage.CORE_COMPUTATION_NODE__BASE_PROPERTY;
 
 	/**
 	 * The feature id for the '<em><b>Base Instance Specification</b></em>' reference.
@@ -1784,7 +1919,7 @@ public interface HadoopPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HADOOP_COMPUTATION_NODE__BASE_INSTANCE_SPECIFICATION = CorePackage.CORE_COMPUTATION_NODE__BASE_INSTANCE_SPECIFICATION;
+	int HADOOP_COMPUTATION_NODE__BASE_INSTANCE_SPECIFICATION = es.unizar.disco.dice.DTSM.Core.CorePackage.CORE_COMPUTATION_NODE__BASE_INSTANCE_SPECIFICATION;
 
 	/**
 	 * The feature id for the '<em><b>Base Classifier</b></em>' reference.
@@ -1793,7 +1928,7 @@ public interface HadoopPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HADOOP_COMPUTATION_NODE__BASE_CLASSIFIER = CorePackage.CORE_COMPUTATION_NODE__BASE_CLASSIFIER;
+	int HADOOP_COMPUTATION_NODE__BASE_CLASSIFIER = es.unizar.disco.dice.DTSM.Core.CorePackage.CORE_COMPUTATION_NODE__BASE_CLASSIFIER;
 
 	/**
 	 * The feature id for the '<em><b>Base Lifeline</b></em>' reference.
@@ -1802,7 +1937,7 @@ public interface HadoopPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HADOOP_COMPUTATION_NODE__BASE_LIFELINE = CorePackage.CORE_COMPUTATION_NODE__BASE_LIFELINE;
+	int HADOOP_COMPUTATION_NODE__BASE_LIFELINE = es.unizar.disco.dice.DTSM.Core.CorePackage.CORE_COMPUTATION_NODE__BASE_LIFELINE;
 
 	/**
 	 * The feature id for the '<em><b>Base Connectable Element</b></em>' reference.
@@ -1811,7 +1946,7 @@ public interface HadoopPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HADOOP_COMPUTATION_NODE__BASE_CONNECTABLE_ELEMENT = CorePackage.CORE_COMPUTATION_NODE__BASE_CONNECTABLE_ELEMENT;
+	int HADOOP_COMPUTATION_NODE__BASE_CONNECTABLE_ELEMENT = es.unizar.disco.dice.DTSM.Core.CorePackage.CORE_COMPUTATION_NODE__BASE_CONNECTABLE_ELEMENT;
 
 	/**
 	 * The feature id for the '<em><b>Stateful</b></em>' attribute.
@@ -1820,7 +1955,7 @@ public interface HadoopPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HADOOP_COMPUTATION_NODE__STATEFUL = CorePackage.CORE_COMPUTATION_NODE__STATEFUL;
+	int HADOOP_COMPUTATION_NODE__STATEFUL = es.unizar.disco.dice.DTSM.Core.CorePackage.CORE_COMPUTATION_NODE__STATEFUL;
 
 	/**
 	 * The feature id for the '<em><b>Origin</b></em>' attribute.
@@ -1829,7 +1964,7 @@ public interface HadoopPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HADOOP_COMPUTATION_NODE__ORIGIN = CorePackage.CORE_COMPUTATION_NODE__ORIGIN;
+	int HADOOP_COMPUTATION_NODE__ORIGIN = es.unizar.disco.dice.DTSM.Core.CorePackage.CORE_COMPUTATION_NODE__ORIGIN;
 
 	/**
 	 * The feature id for the '<em><b>Failure Coverage</b></em>' attribute list.
@@ -1838,7 +1973,7 @@ public interface HadoopPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HADOOP_COMPUTATION_NODE__FAILURE_COVERAGE = CorePackage.CORE_COMPUTATION_NODE__FAILURE_COVERAGE;
+	int HADOOP_COMPUTATION_NODE__FAILURE_COVERAGE = es.unizar.disco.dice.DTSM.Core.CorePackage.CORE_COMPUTATION_NODE__FAILURE_COVERAGE;
 
 	/**
 	 * The feature id for the '<em><b>Perc Perm Fault</b></em>' attribute list.
@@ -1847,7 +1982,7 @@ public interface HadoopPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HADOOP_COMPUTATION_NODE__PERC_PERM_FAULT = CorePackage.CORE_COMPUTATION_NODE__PERC_PERM_FAULT;
+	int HADOOP_COMPUTATION_NODE__PERC_PERM_FAULT = es.unizar.disco.dice.DTSM.Core.CorePackage.CORE_COMPUTATION_NODE__PERC_PERM_FAULT;
 
 	/**
 	 * The feature id for the '<em><b>Ss Avail</b></em>' attribute list.
@@ -1856,7 +1991,7 @@ public interface HadoopPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HADOOP_COMPUTATION_NODE__SS_AVAIL = CorePackage.CORE_COMPUTATION_NODE__SS_AVAIL;
+	int HADOOP_COMPUTATION_NODE__SS_AVAIL = es.unizar.disco.dice.DTSM.Core.CorePackage.CORE_COMPUTATION_NODE__SS_AVAIL;
 
 	/**
 	 * The feature id for the '<em><b>Unreliability</b></em>' attribute list.
@@ -1865,7 +2000,7 @@ public interface HadoopPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HADOOP_COMPUTATION_NODE__UNRELIABILITY = CorePackage.CORE_COMPUTATION_NODE__UNRELIABILITY;
+	int HADOOP_COMPUTATION_NODE__UNRELIABILITY = es.unizar.disco.dice.DTSM.Core.CorePackage.CORE_COMPUTATION_NODE__UNRELIABILITY;
 
 	/**
 	 * The feature id for the '<em><b>Reliability</b></em>' attribute list.
@@ -1874,7 +2009,7 @@ public interface HadoopPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HADOOP_COMPUTATION_NODE__RELIABILITY = CorePackage.CORE_COMPUTATION_NODE__RELIABILITY;
+	int HADOOP_COMPUTATION_NODE__RELIABILITY = es.unizar.disco.dice.DTSM.Core.CorePackage.CORE_COMPUTATION_NODE__RELIABILITY;
 
 	/**
 	 * The feature id for the '<em><b>Mission Time</b></em>' attribute list.
@@ -1883,7 +2018,7 @@ public interface HadoopPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HADOOP_COMPUTATION_NODE__MISSION_TIME = CorePackage.CORE_COMPUTATION_NODE__MISSION_TIME;
+	int HADOOP_COMPUTATION_NODE__MISSION_TIME = es.unizar.disco.dice.DTSM.Core.CorePackage.CORE_COMPUTATION_NODE__MISSION_TIME;
 
 	/**
 	 * The feature id for the '<em><b>Avail Level</b></em>' attribute list.
@@ -1892,7 +2027,7 @@ public interface HadoopPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HADOOP_COMPUTATION_NODE__AVAIL_LEVEL = CorePackage.CORE_COMPUTATION_NODE__AVAIL_LEVEL;
+	int HADOOP_COMPUTATION_NODE__AVAIL_LEVEL = es.unizar.disco.dice.DTSM.Core.CorePackage.CORE_COMPUTATION_NODE__AVAIL_LEVEL;
 
 	/**
 	 * The feature id for the '<em><b>Reliability Level</b></em>' attribute list.
@@ -1901,7 +2036,7 @@ public interface HadoopPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HADOOP_COMPUTATION_NODE__RELIABILITY_LEVEL = CorePackage.CORE_COMPUTATION_NODE__RELIABILITY_LEVEL;
+	int HADOOP_COMPUTATION_NODE__RELIABILITY_LEVEL = es.unizar.disco.dice.DTSM.Core.CorePackage.CORE_COMPUTATION_NODE__RELIABILITY_LEVEL;
 
 	/**
 	 * The feature id for the '<em><b>Safety Level</b></em>' attribute list.
@@ -1910,7 +2045,7 @@ public interface HadoopPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HADOOP_COMPUTATION_NODE__SAFETY_LEVEL = CorePackage.CORE_COMPUTATION_NODE__SAFETY_LEVEL;
+	int HADOOP_COMPUTATION_NODE__SAFETY_LEVEL = es.unizar.disco.dice.DTSM.Core.CorePackage.CORE_COMPUTATION_NODE__SAFETY_LEVEL;
 
 	/**
 	 * The feature id for the '<em><b>Complexity</b></em>' attribute list.
@@ -1919,7 +2054,7 @@ public interface HadoopPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HADOOP_COMPUTATION_NODE__COMPLEXITY = CorePackage.CORE_COMPUTATION_NODE__COMPLEXITY;
+	int HADOOP_COMPUTATION_NODE__COMPLEXITY = es.unizar.disco.dice.DTSM.Core.CorePackage.CORE_COMPUTATION_NODE__COMPLEXITY;
 
 	/**
 	 * The feature id for the '<em><b>Fault</b></em>' containment reference list.
@@ -1928,7 +2063,7 @@ public interface HadoopPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HADOOP_COMPUTATION_NODE__FAULT = CorePackage.CORE_COMPUTATION_NODE__FAULT;
+	int HADOOP_COMPUTATION_NODE__FAULT = es.unizar.disco.dice.DTSM.Core.CorePackage.CORE_COMPUTATION_NODE__FAULT;
 
 	/**
 	 * The feature id for the '<em><b>Error</b></em>' containment reference list.
@@ -1937,7 +2072,7 @@ public interface HadoopPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HADOOP_COMPUTATION_NODE__ERROR = CorePackage.CORE_COMPUTATION_NODE__ERROR;
+	int HADOOP_COMPUTATION_NODE__ERROR = es.unizar.disco.dice.DTSM.Core.CorePackage.CORE_COMPUTATION_NODE__ERROR;
 
 	/**
 	 * The feature id for the '<em><b>Failure</b></em>' containment reference list.
@@ -1946,7 +2081,7 @@ public interface HadoopPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HADOOP_COMPUTATION_NODE__FAILURE = CorePackage.CORE_COMPUTATION_NODE__FAILURE;
+	int HADOOP_COMPUTATION_NODE__FAILURE = es.unizar.disco.dice.DTSM.Core.CorePackage.CORE_COMPUTATION_NODE__FAILURE;
 
 	/**
 	 * The feature id for the '<em><b>Hazard</b></em>' containment reference list.
@@ -1955,7 +2090,7 @@ public interface HadoopPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HADOOP_COMPUTATION_NODE__HAZARD = CorePackage.CORE_COMPUTATION_NODE__HAZARD;
+	int HADOOP_COMPUTATION_NODE__HAZARD = es.unizar.disco.dice.DTSM.Core.CorePackage.CORE_COMPUTATION_NODE__HAZARD;
 
 	/**
 	 * The feature id for the '<em><b>Repair</b></em>' containment reference list.
@@ -1964,7 +2099,7 @@ public interface HadoopPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HADOOP_COMPUTATION_NODE__REPAIR = CorePackage.CORE_COMPUTATION_NODE__REPAIR;
+	int HADOOP_COMPUTATION_NODE__REPAIR = es.unizar.disco.dice.DTSM.Core.CorePackage.CORE_COMPUTATION_NODE__REPAIR;
 
 	/**
 	 * The feature id for the '<em><b>Substituted By</b></em>' reference list.
@@ -1973,7 +2108,7 @@ public interface HadoopPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HADOOP_COMPUTATION_NODE__SUBSTITUTED_BY = CorePackage.CORE_COMPUTATION_NODE__SUBSTITUTED_BY;
+	int HADOOP_COMPUTATION_NODE__SUBSTITUTED_BY = es.unizar.disco.dice.DTSM.Core.CorePackage.CORE_COMPUTATION_NODE__SUBSTITUTED_BY;
 
 	/**
 	 * The feature id for the '<em><b>Node Throughput</b></em>' attribute.
@@ -1982,7 +2117,7 @@ public interface HadoopPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HADOOP_COMPUTATION_NODE__NODE_THROUGHPUT = CorePackage.CORE_COMPUTATION_NODE__NODE_THROUGHPUT;
+	int HADOOP_COMPUTATION_NODE__NODE_THROUGHPUT = es.unizar.disco.dice.DTSM.Core.CorePackage.CORE_COMPUTATION_NODE__NODE_THROUGHPUT;
 
 	/**
 	 * The feature id for the '<em><b>Type</b></em>' attribute.
@@ -1991,7 +2126,7 @@ public interface HadoopPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HADOOP_COMPUTATION_NODE__TYPE = CorePackage.CORE_COMPUTATION_NODE__TYPE;
+	int HADOOP_COMPUTATION_NODE__TYPE = es.unizar.disco.dice.DTSM.Core.CorePackage.CORE_COMPUTATION_NODE__TYPE;
 
 	/**
 	 * The feature id for the '<em><b>Target Tech</b></em>' attribute.
@@ -2000,7 +2135,7 @@ public interface HadoopPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HADOOP_COMPUTATION_NODE__TARGET_TECH = CorePackage.CORE_COMPUTATION_NODE__TARGET_TECH;
+	int HADOOP_COMPUTATION_NODE__TARGET_TECH = es.unizar.disco.dice.DTSM.Core.CorePackage.CORE_COMPUTATION_NODE__TARGET_TECH;
 
 	/**
 	 * The feature id for the '<em><b>Proc Type</b></em>' attribute.
@@ -2009,7 +2144,7 @@ public interface HadoopPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HADOOP_COMPUTATION_NODE__PROC_TYPE = CorePackage.CORE_COMPUTATION_NODE__PROC_TYPE;
+	int HADOOP_COMPUTATION_NODE__PROC_TYPE = es.unizar.disco.dice.DTSM.Core.CorePackage.CORE_COMPUTATION_NODE__PROC_TYPE;
 
 	/**
 	 * The feature id for the '<em><b>Has Successor</b></em>' reference list.
@@ -2018,7 +2153,7 @@ public interface HadoopPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HADOOP_COMPUTATION_NODE__HAS_SUCCESSOR = CorePackage.CORE_COMPUTATION_NODE__HAS_SUCCESSOR;
+	int HADOOP_COMPUTATION_NODE__HAS_SUCCESSOR = es.unizar.disco.dice.DTSM.Core.CorePackage.CORE_COMPUTATION_NODE__HAS_SUCCESSOR;
 
 	/**
 	 * The feature id for the '<em><b>Process Input Data</b></em>' reference list.
@@ -2027,7 +2162,7 @@ public interface HadoopPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HADOOP_COMPUTATION_NODE__PROCESS_INPUT_DATA = CorePackage.CORE_COMPUTATION_NODE__PROCESS_INPUT_DATA;
+	int HADOOP_COMPUTATION_NODE__PROCESS_INPUT_DATA = es.unizar.disco.dice.DTSM.Core.CorePackage.CORE_COMPUTATION_NODE__PROCESS_INPUT_DATA;
 
 	/**
 	 * The feature id for the '<em><b>Realise</b></em>' reference.
@@ -2036,7 +2171,7 @@ public interface HadoopPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HADOOP_COMPUTATION_NODE__REALISE = CorePackage.CORE_COMPUTATION_NODE__REALISE;
+	int HADOOP_COMPUTATION_NODE__REALISE = es.unizar.disco.dice.DTSM.Core.CorePackage.CORE_COMPUTATION_NODE__REALISE;
 
 	/**
 	 * The feature id for the '<em><b>Produce Output Data</b></em>' reference list.
@@ -2045,7 +2180,7 @@ public interface HadoopPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HADOOP_COMPUTATION_NODE__PRODUCE_OUTPUT_DATA = CorePackage.CORE_COMPUTATION_NODE__PRODUCE_OUTPUT_DATA;
+	int HADOOP_COMPUTATION_NODE__PRODUCE_OUTPUT_DATA = es.unizar.disco.dice.DTSM.Core.CorePackage.CORE_COMPUTATION_NODE__PRODUCE_OUTPUT_DATA;
 
 	/**
 	 * The feature id for the '<em><b>NCores</b></em>' attribute list.
@@ -2054,7 +2189,7 @@ public interface HadoopPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HADOOP_COMPUTATION_NODE__NCORES = CorePackage.CORE_COMPUTATION_NODE_FEATURE_COUNT + 0;
+	int HADOOP_COMPUTATION_NODE__NCORES = es.unizar.disco.dice.DTSM.Core.CorePackage.CORE_COMPUTATION_NODE_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of structural features of the '<em>Computation Node</em>' class.
@@ -2063,7 +2198,7 @@ public interface HadoopPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HADOOP_COMPUTATION_NODE_FEATURE_COUNT = CorePackage.CORE_COMPUTATION_NODE_FEATURE_COUNT + 1;
+	int HADOOP_COMPUTATION_NODE_FEATURE_COUNT = es.unizar.disco.dice.DTSM.Core.CorePackage.CORE_COMPUTATION_NODE_FEATURE_COUNT + 1;
 
 
 	/**
