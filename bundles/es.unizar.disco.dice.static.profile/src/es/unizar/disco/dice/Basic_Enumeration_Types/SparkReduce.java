@@ -36,7 +36,9 @@ public enum SparkReduce implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	SAMPLE(1, "Sample", "Sample"), /**
+	SAMPLE(1, "Sample", "Sample"),
+
+	/**
 	 * The '<em><b>Collect</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -44,7 +46,9 @@ public enum SparkReduce implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	COLLECT(2, "Collect", "Collect"), /**
+	COLLECT(2, "Collect", "Collect"),
+
+	/**
 	 * The '<em><b>Count</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -62,7 +66,9 @@ public enum SparkReduce implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	SAVE_AS(4, "SaveAs", "SaveAs"), /**
+	SAVE_AS(4, "SaveAs", "SaveAs"),
+
+	/**
 	 * The '<em><b>Count By Key</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -70,7 +76,9 @@ public enum SparkReduce implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	COUNT_BY_KEY(5, "CountByKey", "CountByKey"), /**
+	COUNT_BY_KEY(5, "CountByKey", "CountByKey"),
+
+	/**
 	 * The '<em><b>For Each</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
