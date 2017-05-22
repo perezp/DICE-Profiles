@@ -2,6 +2,8 @@
  */
 package es.unizar.disco.dice.DTSM.Hadoop.impl;
 
+import com.masdes.dam.Core.impl.DaServiceImpl;
+
 import es.unizar.disco.dice.Basic_Enumeration_Types.Scheduling;
 
 import es.unizar.disco.dice.DTSM.Hadoop.HadoopPackage;
@@ -12,8 +14,6 @@ import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-
-import org.eclipse.papyrus.MARTE.MARTE_AnalysisModel.GQAM.impl.GaScenarioImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -28,7 +28,7 @@ import org.eclipse.papyrus.MARTE.MARTE_AnalysisModel.GQAM.impl.GaScenarioImpl;
  *
  * @generated
  */
-public class HadoopScenarioImpl extends GaScenarioImpl implements HadoopScenario {
+public class HadoopScenarioImpl extends DaServiceImpl implements HadoopScenario {
 	/**
 	 * The default value of the '{@link #getJobSchedule() <em>Job Schedule</em>}' attribute.
 	 * <!-- begin-user-doc -->

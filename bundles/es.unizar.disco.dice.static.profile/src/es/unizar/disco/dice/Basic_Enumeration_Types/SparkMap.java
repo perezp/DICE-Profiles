@@ -56,7 +56,9 @@ public enum SparkMap implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	RDD_SET_OPERATION(3, "RDDSetOperation", "RDDSetOperation"), /**
+	RDD_SET_OPERATION(3, "RDDSetOperation", "RDDSetOperation"),
+
+	/**
 	 * The '<em><b>Union</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -64,7 +66,9 @@ public enum SparkMap implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	UNION(4, "Union", "Union"), /**
+	UNION(4, "Union", "Union"),
+
+	/**
 	 * The '<em><b>Intersection</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -72,7 +76,9 @@ public enum SparkMap implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	INTERSECTION(5, "Intersection", "Intersection"), /**
+	INTERSECTION(5, "Intersection", "Intersection"),
+
+	/**
 	 * The '<em><b>Substraction</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -80,7 +86,9 @@ public enum SparkMap implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	SUBSTRACTION(6, "Substraction", "Substraction"), /**
+	SUBSTRACTION(6, "Substraction", "Substraction"),
+
+	/**
 	 * The '<em><b>Distinct</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -88,7 +96,9 @@ public enum SparkMap implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	DISTINCT(7, "Distinct", "Distinct"), /**
+	DISTINCT(7, "Distinct", "Distinct"),
+
+	/**
 	 * The '<em><b>By Key</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -96,7 +106,9 @@ public enum SparkMap implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	BY_KEY(8, "ByKey", "ByKey"), /**
+	BY_KEY(8, "ByKey", "ByKey"),
+
+	/**
 	 * The '<em><b>Join</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -104,7 +116,9 @@ public enum SparkMap implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	JOIN(9, "Join", "Join"), /**
+	JOIN(9, "Join", "Join"),
+
+	/**
 	 * The '<em><b>Cartesian</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -112,7 +126,9 @@ public enum SparkMap implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	CARTESIAN(10, "Cartesian", "Cartesian"), /**
+	CARTESIAN(10, "Cartesian", "Cartesian"),
+
+	/**
 	 * The '<em><b>Repartition</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

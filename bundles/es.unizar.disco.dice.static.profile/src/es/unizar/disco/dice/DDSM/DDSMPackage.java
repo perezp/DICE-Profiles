@@ -2972,7 +2972,6 @@ public interface DDSMPackage extends EPackage {
 	 */
 	int DDSM_SPARK_CLUSTER_FEATURE_COUNT = DDSM_MASTER_SLAVE_PLATFORM_FEATURE_COUNT + 0;
 
-
 	/**
 	 * The meta object id for the '{@link es.unizar.disco.dice.DDSM.impl.DdsmMongoDBClusterImpl <em>Ddsm Mongo DB Cluster</em>}' class.
 	 * <!-- begin-user-doc -->

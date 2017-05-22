@@ -3,6 +3,7 @@
 package es.unizar.disco.dice.DTSM.Hadoop.util;
 
 import com.masdes.dam.Core.DaComponent;
+import com.masdes.dam.Core.DaService;
 
 import es.unizar.disco.dice.DPIM.DpimComputationNode;
 
@@ -132,6 +133,7 @@ public class HadoopSwitch<T> extends Switch<T> {
 			case HadoopPackage.HADOOP_SCENARIO: {
 				HadoopScenario hadoopScenario = (HadoopScenario)theEObject;
 				T result = caseHadoopScenario(hadoopScenario);
+				if (result == null) result = caseDaService(hadoopScenario);
 				if (result == null) result = caseGaScenario(hadoopScenario);
 				if (result == null) result = caseResourceUsage(hadoopScenario);
 				if (result == null) result = caseTimedProcessing(hadoopScenario);
@@ -352,6 +354,21 @@ public class HadoopSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseGaStep(GaStep object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Da Service</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Da Service</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseDaService(DaService object) {
 		return null;
 	}
 

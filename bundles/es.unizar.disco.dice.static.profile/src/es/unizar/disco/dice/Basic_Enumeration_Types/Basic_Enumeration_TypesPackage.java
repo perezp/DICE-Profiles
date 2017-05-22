@@ -75,6 +75,16 @@ public interface Basic_Enumeration_TypesPackage extends EPackage {
 	int REF_DATA_FORMAT_TYPE = 1;
 
 	/**
+	 * The meta object id for the '{@link es.unizar.disco.dice.Basic_Enumeration_Types.VMSize <em>VM Size</em>}' enum.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see es.unizar.disco.dice.Basic_Enumeration_Types.VMSize
+	 * @see es.unizar.disco.dice.Basic_Enumeration_Types.impl.Basic_Enumeration_TypesPackageImpl#getVMSize()
+	 * @generated
+	 */
+	int VM_SIZE = 2;
+
+	/**
 	 * The meta object id for the '{@link es.unizar.disco.dice.Basic_Enumeration_Types.TechType <em>Tech Type</em>}' enum.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -163,16 +173,6 @@ public interface Basic_Enumeration_TypesPackage extends EPackage {
 	 * @generated
 	 */
 	int SCHEDULING = 11;
-
-	/**
-	 * The meta object id for the '{@link es.unizar.disco.dice.Basic_Enumeration_Types.VMSize <em>VM Size</em>}' enum.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see es.unizar.disco.dice.Basic_Enumeration_Types.VMSize
-	 * @see es.unizar.disco.dice.Basic_Enumeration_Types.impl.Basic_Enumeration_TypesPackageImpl#getVMSize()
-	 * @generated
-	 */
-	int VM_SIZE = 2;
 
 	/**
 	 * The meta object id for the '{@link es.unizar.disco.dice.Basic_Enumeration_Types.ProviderType <em>Provider Type</em>}' enum.
@@ -276,6 +276,16 @@ public interface Basic_Enumeration_TypesPackage extends EPackage {
 	EEnum getRefDataFormatType();
 
 	/**
+	 * Returns the meta object for enum '{@link es.unizar.disco.dice.Basic_Enumeration_Types.VMSize <em>VM Size</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for enum '<em>VM Size</em>'.
+	 * @see es.unizar.disco.dice.Basic_Enumeration_Types.VMSize
+	 * @generated
+	 */
+	EEnum getVMSize();
+
+	/**
 	 * Returns the meta object for enum '{@link es.unizar.disco.dice.Basic_Enumeration_Types.TechType <em>Tech Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -364,16 +374,6 @@ public interface Basic_Enumeration_TypesPackage extends EPackage {
 	 * @generated
 	 */
 	EEnum getScheduling();
-
-	/**
-	 * Returns the meta object for enum '{@link es.unizar.disco.dice.Basic_Enumeration_Types.VMSize <em>VM Size</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for enum '<em>VM Size</em>'.
-	 * @see es.unizar.disco.dice.Basic_Enumeration_Types.VMSize
-	 * @generated
-	 */
-	EEnum getVMSize();
 
 	/**
 	 * Returns the meta object for enum '{@link es.unizar.disco.dice.Basic_Enumeration_Types.ProviderType <em>Provider Type</em>}'.
@@ -498,6 +498,16 @@ public interface Basic_Enumeration_TypesPackage extends EPackage {
 		EEnum REF_DATA_FORMAT_TYPE = eINSTANCE.getRefDataFormatType();
 
 		/**
+		 * The meta object literal for the '{@link es.unizar.disco.dice.Basic_Enumeration_Types.VMSize <em>VM Size</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see es.unizar.disco.dice.Basic_Enumeration_Types.VMSize
+		 * @see es.unizar.disco.dice.Basic_Enumeration_Types.impl.Basic_Enumeration_TypesPackageImpl#getVMSize()
+		 * @generated
+		 */
+		EEnum VM_SIZE = eINSTANCE.getVMSize();
+
+		/**
 		 * The meta object literal for the '{@link es.unizar.disco.dice.Basic_Enumeration_Types.TechType <em>Tech Type</em>}' enum.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -586,16 +596,6 @@ public interface Basic_Enumeration_TypesPackage extends EPackage {
 		 * @generated
 		 */
 		EEnum SCHEDULING = eINSTANCE.getScheduling();
-
-		/**
-		 * The meta object literal for the '{@link es.unizar.disco.dice.Basic_Enumeration_Types.VMSize <em>VM Size</em>}' enum.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see es.unizar.disco.dice.Basic_Enumeration_Types.VMSize
-		 * @see es.unizar.disco.dice.Basic_Enumeration_Types.impl.Basic_Enumeration_TypesPackageImpl#getVMSize()
-		 * @generated
-		 */
-		EEnum VM_SIZE = eINSTANCE.getVMSize();
 
 		/**
 		 * The meta object literal for the '{@link es.unizar.disco.dice.Basic_Enumeration_Types.ProviderType <em>Provider Type</em>}' enum.

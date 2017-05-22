@@ -249,7 +249,6 @@ public interface Complex_Data_TypesPackage extends EPackage {
 	 */
 	int FIREWALL_RULE_FEATURE_COUNT = 2;
 
-
 	/**
 	 * The meta object id for the '{@link es.unizar.disco.dice.Complex_Data_Types.impl.MongoDBShardImpl <em>Mongo DB Shard</em>}' class.
 	 * <!-- begin-user-doc -->

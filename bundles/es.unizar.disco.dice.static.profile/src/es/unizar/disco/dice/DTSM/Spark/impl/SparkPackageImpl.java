@@ -17,6 +17,11 @@ import es.unizar.disco.dice.Complex_Data_Types.impl.Complex_Data_TypesPackageImp
 import es.unizar.disco.dice.DDSM.DDSMPackage;
 
 import es.unizar.disco.dice.DDSM.impl.DDSMPackageImpl;
+
+import es.unizar.disco.dice.DICE.DICEPackage;
+
+import es.unizar.disco.dice.DICE.impl.DICEPackageImpl;
+
 import es.unizar.disco.dice.DPIM.DPIMPackage;
 
 import es.unizar.disco.dice.DPIM.impl.DPIMPackageImpl;
@@ -154,6 +159,7 @@ public class SparkPackageImpl extends EPackageImpl implements SparkPackage {
 		Basic_Enumeration_TypesPackage.eINSTANCE.eClass();
 
 		// Obtain or create and register interdependencies
+		DICEPackageImpl theDICEPackage = (DICEPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(DICEPackage.eNS_URI) instanceof DICEPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(DICEPackage.eNS_URI) : DICEPackage.eINSTANCE);
 		DPIMPackageImpl theDPIMPackage = (DPIMPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(DPIMPackage.eNS_URI) instanceof DPIMPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(DPIMPackage.eNS_URI) : DPIMPackage.eINSTANCE);
 		CorePackageImpl theCorePackage = (CorePackageImpl)(EPackage.Registry.INSTANCE.getEPackage(CorePackage.eNS_URI) instanceof CorePackageImpl ? EPackage.Registry.INSTANCE.getEPackage(CorePackage.eNS_URI) : CorePackage.eINSTANCE);
 		StormPackageImpl theStormPackage = (StormPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(StormPackage.eNS_URI) instanceof StormPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(StormPackage.eNS_URI) : StormPackage.eINSTANCE);
@@ -164,6 +170,7 @@ public class SparkPackageImpl extends EPackageImpl implements SparkPackage {
 
 		// Create package meta-data objects
 		theSparkPackage.createPackageContents();
+		theDICEPackage.createPackageContents();
 		theDPIMPackage.createPackageContents();
 		theCorePackage.createPackageContents();
 		theStormPackage.createPackageContents();
@@ -174,6 +181,7 @@ public class SparkPackageImpl extends EPackageImpl implements SparkPackage {
 
 		// Initialize created meta-data
 		theSparkPackage.initializePackageContents();
+		theDICEPackage.initializePackageContents();
 		theDPIMPackage.initializePackageContents();
 		theCorePackage.initializePackageContents();
 		theStormPackage.initializePackageContents();
@@ -461,9 +469,6 @@ public class SparkPackageImpl extends EPackageImpl implements SparkPackage {
 		initEClass(sparkWorkloadEventEClass, SparkWorkloadEvent.class, "SparkWorkloadEvent", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getSparkWorkloadEvent_SparkPopulation(), theBasicNFP_TypesPackage.getNFP_Integer(), "sparkPopulation", null, 1, 1, SparkWorkloadEvent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getSparkWorkloadEvent_SparkExtDelay(), theBasicNFP_TypesPackage.getNFP_Duration(), "sparkExtDelay", null, 1, 1, SparkWorkloadEvent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-
-		// Create resource
-		createResource(eNS_URI);
 	}
 
 } //SparkPackageImpl
