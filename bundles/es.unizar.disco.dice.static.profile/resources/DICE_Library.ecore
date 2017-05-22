@@ -149,14 +149,25 @@
       <eClassifiers xsi:type="ecore:EEnum" name="SparkReduce">
         <eLiterals name="Reduce"/>
         <eLiterals name="Sample" value="1"/>
-        <eLiterals name="Order" value="2"/>
+        <eLiterals name="Collect" value="2"/>
+        <eLiterals name="Count" value="3"/>
+        <eLiterals name="SaveAs" value="4"/>
+        <eLiterals name="CountByKey" value="5"/>
+        <eLiterals name="ForEach" value="6"/>
       </eClassifiers>
       <eClassifiers xsi:type="ecore:EEnum" name="SparkMap">
         <eLiterals name="Map"/>
         <eLiterals name="Filter" value="1"/>
         <eLiterals name="Sample" value="2"/>
-        <eLiterals name="ByKey" value="3"/>
-        <eLiterals name="RDDSetOperation" value="4"/>
+        <eLiterals name="RDDSetOperation" value="3"/>
+        <eLiterals name="Union" value="4"/>
+        <eLiterals name="Intersection" value="5"/>
+        <eLiterals name="Substraction" value="6"/>
+        <eLiterals name="Distinct" value="7"/>
+        <eLiterals name="ByKey" value="8"/>
+        <eLiterals name="Join" value="9"/>
+        <eLiterals name="Cartesian" value="10"/>
+        <eLiterals name="Repartition" value="11"/>
       </eClassifiers>
       <eClassifiers xsi:type="ecore:EEnum" name="SparkOperation">
         <eLiterals name="Transformation"/>

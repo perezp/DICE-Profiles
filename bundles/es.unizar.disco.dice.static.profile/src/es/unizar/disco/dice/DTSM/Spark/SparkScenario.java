@@ -2,8 +2,6 @@
  */
 package es.unizar.disco.dice.DTSM.Spark;
 
-import es.unizar.disco.dice.Basic_Enumeration_Types.Scheduling;
-
 import org.eclipse.papyrus.MARTE.MARTE_AnalysisModel.GQAM.GaScenario;
 
 /**
@@ -17,7 +15,7 @@ import org.eclipse.papyrus.MARTE.MARTE_AnalysisModel.GQAM.GaScenario;
  * <ul>
  *   <li>{@link es.unizar.disco.dice.DTSM.Spark.SparkScenario#getNAssignedCores <em>NAssigned Cores</em>}</li>
  *   <li>{@link es.unizar.disco.dice.DTSM.Spark.SparkScenario#getNAssignedMemory <em>NAssigned Memory</em>}</li>
- *   <li>{@link es.unizar.disco.dice.DTSM.Spark.SparkScenario#getJobSchedule <em>Job Schedule</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Spark.SparkScenario#getSparkDefaultParallelism <em>Spark Default Parallelism</em>}</li>
  * </ul>
  *
  * @see es.unizar.disco.dice.DTSM.Spark.SparkPackage#getSparkScenario()
@@ -78,32 +76,29 @@ public interface SparkScenario extends GaScenario {
 	void setNAssignedMemory(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Job Schedule</b></em>' attribute.
-	 * The literals are from the enumeration {@link es.unizar.disco.dice.Basic_Enumeration_Types.Scheduling}.
+	 * Returns the value of the '<em><b>Spark Default Parallelism</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Job Schedule</em>' attribute isn't clear,
+	 * If the meaning of the '<em>Spark Default Parallelism</em>' attribute isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Job Schedule</em>' attribute.
-	 * @see es.unizar.disco.dice.Basic_Enumeration_Types.Scheduling
-	 * @see #setJobSchedule(Scheduling)
-	 * @see es.unizar.disco.dice.DTSM.Spark.SparkPackage#getSparkScenario_JobSchedule()
-	 * @model required="true" ordered="false"
+	 * @return the value of the '<em>Spark Default Parallelism</em>' attribute.
+	 * @see #setSparkDefaultParallelism(String)
+	 * @see es.unizar.disco.dice.DTSM.Spark.SparkPackage#getSparkScenario_SparkDefaultParallelism()
+	 * @model dataType="org.eclipse.papyrus.MARTE_Library.BasicNFP_Types.NFP_Integer" required="true" ordered="false"
 	 * @generated
 	 */
-	Scheduling getJobSchedule();
+	String getSparkDefaultParallelism();
 
 	/**
-	 * Sets the value of the '{@link es.unizar.disco.dice.DTSM.Spark.SparkScenario#getJobSchedule <em>Job Schedule</em>}' attribute.
+	 * Sets the value of the '{@link es.unizar.disco.dice.DTSM.Spark.SparkScenario#getSparkDefaultParallelism <em>Spark Default Parallelism</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Job Schedule</em>' attribute.
-	 * @see es.unizar.disco.dice.Basic_Enumeration_Types.Scheduling
-	 * @see #getJobSchedule()
+	 * @param value the new value of the '<em>Spark Default Parallelism</em>' attribute.
+	 * @see #getSparkDefaultParallelism()
 	 * @generated
 	 */
-	void setJobSchedule(Scheduling value);
+	void setSparkDefaultParallelism(String value);
 
 } // SparkScenario

@@ -96,10 +96,6 @@ public class SparkAdapterFactory extends AdapterFactoryImpl {
 				return createSparkReduceAdapter();
 			}
 			@Override
-			public Adapter caseSparkForEach(SparkForEach object) {
-				return createSparkForEachAdapter();
-			}
-			@Override
 			public Adapter caseSparkMap(SparkMap object) {
 				return createSparkMapAdapter();
 			}
@@ -210,20 +206,6 @@ public class SparkAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createSparkReduceAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link es.unizar.disco.dice.DTSM.Spark.SparkForEach <em>For Each</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see es.unizar.disco.dice.DTSM.Spark.SparkForEach
-	 * @generated
-	 */
-	public Adapter createSparkForEachAdapter() {
 		return null;
 	}
 

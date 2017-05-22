@@ -36,17 +36,49 @@ public enum SparkReduce implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	SAMPLE(1, "Sample", "Sample"),
-
-	/**
-	 * The '<em><b>Order</b></em>' literal object.
+	SAMPLE(1, "Sample", "Sample"), /**
+	 * The '<em><b>Collect</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #ORDER_VALUE
+	 * @see #COLLECT_VALUE
 	 * @generated
 	 * @ordered
 	 */
-	ORDER(2, "Order", "Order");
+	COLLECT(2, "Collect", "Collect"), /**
+	 * The '<em><b>Count</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #COUNT_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	COUNT(3, "Count", "Count"),
+
+	/**
+	 * The '<em><b>Save As</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #SAVE_AS_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	SAVE_AS(4, "SaveAs", "SaveAs"), /**
+	 * The '<em><b>Count By Key</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #COUNT_BY_KEY_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	COUNT_BY_KEY(5, "CountByKey", "CountByKey"), /**
+	 * The '<em><b>For Each</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #FOR_EACH_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	FOR_EACH(6, "ForEach", "ForEach");
 
 	/**
 	 * The '<em><b>Reduce</b></em>' literal value.
@@ -79,19 +111,79 @@ public enum SparkReduce implements Enumerator {
 	public static final int SAMPLE_VALUE = 1;
 
 	/**
-	 * The '<em><b>Order</b></em>' literal value.
+	 * The '<em><b>Collect</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of '<em><b>Order</b></em>' literal object isn't clear,
+	 * If the meaning of '<em><b>Collect</b></em>' literal object isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @see #ORDER
-	 * @model name="Order"
+	 * @see #COLLECT
+	 * @model name="Collect"
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ORDER_VALUE = 2;
+	public static final int COLLECT_VALUE = 2;
+
+	/**
+	 * The '<em><b>Count</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of '<em><b>Count</b></em>' literal object isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @see #COUNT
+	 * @model name="Count"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int COUNT_VALUE = 3;
+
+	/**
+	 * The '<em><b>Save As</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of '<em><b>Save As</b></em>' literal object isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @see #SAVE_AS
+	 * @model name="SaveAs"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int SAVE_AS_VALUE = 4;
+
+	/**
+	 * The '<em><b>Count By Key</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of '<em><b>Count By Key</b></em>' literal object isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @see #COUNT_BY_KEY
+	 * @model name="CountByKey"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int COUNT_BY_KEY_VALUE = 5;
+
+	/**
+	 * The '<em><b>For Each</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of '<em><b>For Each</b></em>' literal object isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @see #FOR_EACH
+	 * @model name="ForEach"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int FOR_EACH_VALUE = 6;
 
 	/**
 	 * An array of all the '<em><b>Spark Reduce</b></em>' enumerators.
@@ -103,7 +195,11 @@ public enum SparkReduce implements Enumerator {
 		new SparkReduce[] {
 			REDUCE,
 			SAMPLE,
-			ORDER,
+			COLLECT,
+			COUNT,
+			SAVE_AS,
+			COUNT_BY_KEY,
+			FOR_EACH,
 		};
 
 	/**
@@ -162,7 +258,11 @@ public enum SparkReduce implements Enumerator {
 		switch (value) {
 			case REDUCE_VALUE: return REDUCE;
 			case SAMPLE_VALUE: return SAMPLE;
-			case ORDER_VALUE: return ORDER;
+			case COLLECT_VALUE: return COLLECT;
+			case COUNT_VALUE: return COUNT;
+			case SAVE_AS_VALUE: return SAVE_AS;
+			case COUNT_BY_KEY_VALUE: return COUNT_BY_KEY;
+			case FOR_EACH_VALUE: return FOR_EACH;
 		}
 		return null;
 	}

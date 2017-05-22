@@ -115,18 +115,6 @@ public class SparkSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case SparkPackage.SPARK_FOR_EACH: {
-				SparkForEach sparkForEach = (SparkForEach)theEObject;
-				T result = caseSparkForEach(sparkForEach);
-				if (result == null) result = caseSparkOperation(sparkForEach);
-				if (result == null) result = caseGaStep(sparkForEach);
-				if (result == null) result = caseGaScenario(sparkForEach);
-				if (result == null) result = caseResourceUsage(sparkForEach);
-				if (result == null) result = caseTimedProcessing(sparkForEach);
-				if (result == null) result = caseTimedElement(sparkForEach);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
 			case SparkPackage.SPARK_MAP: {
 				SparkMap sparkMap = (SparkMap)theEObject;
 				T result = caseSparkMap(sparkMap);
@@ -206,21 +194,6 @@ public class SparkSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseSparkReduce(SparkReduce object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>For Each</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>For Each</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseSparkForEach(SparkForEach object) {
 		return null;
 	}
 

@@ -49,16 +49,6 @@ public enum SparkMap implements Enumerator {
 	SAMPLE(2, "Sample", "Sample"),
 
 	/**
-	 * The '<em><b>By Key</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #BY_KEY_VALUE
-	 * @generated
-	 * @ordered
-	 */
-	BY_KEY(3, "ByKey", "ByKey"),
-
-	/**
 	 * The '<em><b>RDD Set Operation</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -66,7 +56,71 @@ public enum SparkMap implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	RDD_SET_OPERATION(4, "RDDSetOperation", "RDDSetOperation");
+	RDD_SET_OPERATION(3, "RDDSetOperation", "RDDSetOperation"), /**
+	 * The '<em><b>Union</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #UNION_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	UNION(4, "Union", "Union"), /**
+	 * The '<em><b>Intersection</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #INTERSECTION_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	INTERSECTION(5, "Intersection", "Intersection"), /**
+	 * The '<em><b>Substraction</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #SUBSTRACTION_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	SUBSTRACTION(6, "Substraction", "Substraction"), /**
+	 * The '<em><b>Distinct</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #DISTINCT_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	DISTINCT(7, "Distinct", "Distinct"), /**
+	 * The '<em><b>By Key</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #BY_KEY_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	BY_KEY(8, "ByKey", "ByKey"), /**
+	 * The '<em><b>Join</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #JOIN_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	JOIN(9, "Join", "Join"), /**
+	 * The '<em><b>Cartesian</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #CARTESIAN_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	CARTESIAN(10, "Cartesian", "Cartesian"), /**
+	 * The '<em><b>Repartition</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #REPARTITION_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	REPARTITION(11, "Repartition", "Repartition");
 
 	/**
 	 * The '<em><b>Map</b></em>' literal value.
@@ -114,21 +168,6 @@ public enum SparkMap implements Enumerator {
 	public static final int SAMPLE_VALUE = 2;
 
 	/**
-	 * The '<em><b>By Key</b></em>' literal value.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>By Key</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @see #BY_KEY
-	 * @model name="ByKey"
-	 * @generated
-	 * @ordered
-	 */
-	public static final int BY_KEY_VALUE = 3;
-
-	/**
 	 * The '<em><b>RDD Set Operation</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -141,7 +180,127 @@ public enum SparkMap implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int RDD_SET_OPERATION_VALUE = 4;
+	public static final int RDD_SET_OPERATION_VALUE = 3;
+
+	/**
+	 * The '<em><b>Union</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of '<em><b>Union</b></em>' literal object isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @see #UNION
+	 * @model name="Union"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int UNION_VALUE = 4;
+
+	/**
+	 * The '<em><b>Intersection</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of '<em><b>Intersection</b></em>' literal object isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @see #INTERSECTION
+	 * @model name="Intersection"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int INTERSECTION_VALUE = 5;
+
+	/**
+	 * The '<em><b>Substraction</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of '<em><b>Substraction</b></em>' literal object isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @see #SUBSTRACTION
+	 * @model name="Substraction"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int SUBSTRACTION_VALUE = 6;
+
+	/**
+	 * The '<em><b>Distinct</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of '<em><b>Distinct</b></em>' literal object isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @see #DISTINCT
+	 * @model name="Distinct"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int DISTINCT_VALUE = 7;
+
+	/**
+	 * The '<em><b>By Key</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of '<em><b>By Key</b></em>' literal object isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @see #BY_KEY
+	 * @model name="ByKey"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int BY_KEY_VALUE = 8;
+
+	/**
+	 * The '<em><b>Join</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of '<em><b>Join</b></em>' literal object isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @see #JOIN
+	 * @model name="Join"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int JOIN_VALUE = 9;
+
+	/**
+	 * The '<em><b>Cartesian</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of '<em><b>Cartesian</b></em>' literal object isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @see #CARTESIAN
+	 * @model name="Cartesian"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int CARTESIAN_VALUE = 10;
+
+	/**
+	 * The '<em><b>Repartition</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of '<em><b>Repartition</b></em>' literal object isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @see #REPARTITION
+	 * @model name="Repartition"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int REPARTITION_VALUE = 11;
 
 	/**
 	 * An array of all the '<em><b>Spark Map</b></em>' enumerators.
@@ -154,8 +313,15 @@ public enum SparkMap implements Enumerator {
 			MAP,
 			FILTER,
 			SAMPLE,
-			BY_KEY,
 			RDD_SET_OPERATION,
+			UNION,
+			INTERSECTION,
+			SUBSTRACTION,
+			DISTINCT,
+			BY_KEY,
+			JOIN,
+			CARTESIAN,
+			REPARTITION,
 		};
 
 	/**
@@ -215,8 +381,15 @@ public enum SparkMap implements Enumerator {
 			case MAP_VALUE: return MAP;
 			case FILTER_VALUE: return FILTER;
 			case SAMPLE_VALUE: return SAMPLE;
-			case BY_KEY_VALUE: return BY_KEY;
 			case RDD_SET_OPERATION_VALUE: return RDD_SET_OPERATION;
+			case UNION_VALUE: return UNION;
+			case INTERSECTION_VALUE: return INTERSECTION;
+			case SUBSTRACTION_VALUE: return SUBSTRACTION;
+			case DISTINCT_VALUE: return DISTINCT;
+			case BY_KEY_VALUE: return BY_KEY;
+			case JOIN_VALUE: return JOIN;
+			case CARTESIAN_VALUE: return CARTESIAN;
+			case REPARTITION_VALUE: return REPARTITION;
 		}
 		return null;
 	}

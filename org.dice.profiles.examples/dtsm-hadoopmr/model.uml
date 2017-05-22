@@ -10,7 +10,7 @@
 {contextParams=[$nC1,$nC2,$nC3,$th1,$th2,$th3,$nM1,$nM2,$nM3,$nR1,$nR2,$nR3,$mapT1,$mapT2,$mapT3,$redT1,$redT2,$redT3,$nP1,$nP2,$nP3,out$RT1,out$RT2,out$RT3,out$T1,out$T2,out$T3,out$U1,out$U2,out$U3,out$U]}
 &lt;&lt;HadoopScenario>>
 {jobSchedule=capacity;
-respT=(expr=$RT,statQ=mean,source=calc)}</body>
+respT=[(expr=$RT1,statQ=mean,source=calc), (expr=$RT2,statQ=mean,source=calc), (expr=$RT2,statQ=mean,source=calc)]}</body>
       </ownedComment>
       <ownedComment xmi:type="uml:Comment" xmi:id="_ol2_0DliEeaE4deiM0Jlvg" annotatedElement="_p15FUDlXEeaE4deiM0Jlvg">
         <body>{hadoopPopulation=[$nC1,$nC2,$nC3];
@@ -176,9 +176,9 @@ respT=(expr=$RT,statQ=mean,source=calc)}</body>
     <hadoopPopulation>$nC1</hadoopPopulation>
     <hadoopPopulation>$nC2</hadoopPopulation>
     <hadoopPopulation>$nC3</hadoopPopulation>
-    <hadoopExtDelay>$th1</hadoopExtDelay>
-    <hadoopExtDelay>$th2</hadoopExtDelay>
-    <hadoopExtDelay>$th3</hadoopExtDelay>
+    <hadoopExtDelay>(expr=$th1,unit=ms,statQ=mean,source=est)</hadoopExtDelay>
+    <hadoopExtDelay>(expr=$th2,unit=ms,statQ=mean,source=est)</hadoopExtDelay>
+    <hadoopExtDelay>(expr=$th3,unit=ms,statQ=mean,source=est)</hadoopExtDelay>
   </Hadoop:HadoopWorkloadEvent>
   <Hadoop:HadoopOperation xmi:id="_-5CVsDlcEeaE4deiM0Jlvg" base_NamedElement="_vVW-sDlXEeaE4deiM0Jlvg" base_Action="_vVW-sDlXEeaE4deiM0Jlvg">
     <hostDemand>(expr=$redT1,unit=ms,statQ=mean,source=est)</hostDemand>

@@ -17,11 +17,6 @@ import es.unizar.disco.dice.Complex_Data_Types.impl.Complex_Data_TypesPackageImp
 import es.unizar.disco.dice.DDSM.DDSMPackage;
 
 import es.unizar.disco.dice.DDSM.impl.DDSMPackageImpl;
-
-import es.unizar.disco.dice.DICE.DICEPackage;
-
-import es.unizar.disco.dice.DICE.impl.DICEPackageImpl;
-
 import es.unizar.disco.dice.DPIM.DPIMPackage;
 
 import es.unizar.disco.dice.DPIM.impl.DPIMPackageImpl;
@@ -35,7 +30,6 @@ import es.unizar.disco.dice.DTSM.Hadoop.HadoopPackage;
 import es.unizar.disco.dice.DTSM.Hadoop.impl.HadoopPackageImpl;
 
 import es.unizar.disco.dice.DTSM.Spark.SparkFactory;
-import es.unizar.disco.dice.DTSM.Spark.SparkForEach;
 import es.unizar.disco.dice.DTSM.Spark.SparkMap;
 import es.unizar.disco.dice.DTSM.Spark.SparkNode;
 import es.unizar.disco.dice.DTSM.Spark.SparkOperation;
@@ -85,13 +79,6 @@ public class SparkPackageImpl extends EPackageImpl implements SparkPackage {
 	 * @generated
 	 */
 	private EClass sparkReduceEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass sparkForEachEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -167,7 +154,6 @@ public class SparkPackageImpl extends EPackageImpl implements SparkPackage {
 		Basic_Enumeration_TypesPackage.eINSTANCE.eClass();
 
 		// Obtain or create and register interdependencies
-		DICEPackageImpl theDICEPackage = (DICEPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(DICEPackage.eNS_URI) instanceof DICEPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(DICEPackage.eNS_URI) : DICEPackage.eINSTANCE);
 		DPIMPackageImpl theDPIMPackage = (DPIMPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(DPIMPackage.eNS_URI) instanceof DPIMPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(DPIMPackage.eNS_URI) : DPIMPackage.eINSTANCE);
 		CorePackageImpl theCorePackage = (CorePackageImpl)(EPackage.Registry.INSTANCE.getEPackage(CorePackage.eNS_URI) instanceof CorePackageImpl ? EPackage.Registry.INSTANCE.getEPackage(CorePackage.eNS_URI) : CorePackage.eINSTANCE);
 		StormPackageImpl theStormPackage = (StormPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(StormPackage.eNS_URI) instanceof StormPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(StormPackage.eNS_URI) : StormPackage.eINSTANCE);
@@ -178,7 +164,6 @@ public class SparkPackageImpl extends EPackageImpl implements SparkPackage {
 
 		// Create package meta-data objects
 		theSparkPackage.createPackageContents();
-		theDICEPackage.createPackageContents();
 		theDPIMPackage.createPackageContents();
 		theCorePackage.createPackageContents();
 		theStormPackage.createPackageContents();
@@ -189,7 +174,6 @@ public class SparkPackageImpl extends EPackageImpl implements SparkPackage {
 
 		// Initialize created meta-data
 		theSparkPackage.initializePackageContents();
-		theDICEPackage.initializePackageContents();
 		theDPIMPackage.initializePackageContents();
 		theCorePackage.initializePackageContents();
 		theStormPackage.initializePackageContents();
@@ -239,7 +223,7 @@ public class SparkPackageImpl extends EPackageImpl implements SparkPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSparkScenario_JobSchedule() {
+	public EAttribute getSparkScenario_SparkDefaultParallelism() {
 		return (EAttribute)sparkScenarioEClass.getEStructuralFeatures().get(2);
 	}
 
@@ -257,7 +241,7 @@ public class SparkPackageImpl extends EPackageImpl implements SparkPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSparkOperation_RDDAvailable() {
+	public EAttribute getSparkOperation_NumTasks() {
 		return (EAttribute)sparkOperationEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -266,17 +250,8 @@ public class SparkPackageImpl extends EPackageImpl implements SparkPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSparkOperation_RDD() {
-		return (EAttribute)sparkOperationEClass.getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EAttribute getSparkOperation_OpType() {
-		return (EAttribute)sparkOperationEClass.getEStructuralFeatures().get(2);
+		return (EAttribute)sparkOperationEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -295,15 +270,6 @@ public class SparkPackageImpl extends EPackageImpl implements SparkPackage {
 	 */
 	public EAttribute getSparkReduce_ReduceType() {
 		return (EAttribute)sparkReduceEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getSparkForEach() {
-		return sparkForEachEClass;
 	}
 
 	/**
@@ -409,17 +375,14 @@ public class SparkPackageImpl extends EPackageImpl implements SparkPackage {
 		sparkScenarioEClass = createEClass(SPARK_SCENARIO);
 		createEAttribute(sparkScenarioEClass, SPARK_SCENARIO__NASSIGNED_CORES);
 		createEAttribute(sparkScenarioEClass, SPARK_SCENARIO__NASSIGNED_MEMORY);
-		createEAttribute(sparkScenarioEClass, SPARK_SCENARIO__JOB_SCHEDULE);
+		createEAttribute(sparkScenarioEClass, SPARK_SCENARIO__SPARK_DEFAULT_PARALLELISM);
 
 		sparkOperationEClass = createEClass(SPARK_OPERATION);
-		createEAttribute(sparkOperationEClass, SPARK_OPERATION__RDD_AVAILABLE);
-		createEAttribute(sparkOperationEClass, SPARK_OPERATION__RDD);
+		createEAttribute(sparkOperationEClass, SPARK_OPERATION__NUM_TASKS);
 		createEAttribute(sparkOperationEClass, SPARK_OPERATION__OP_TYPE);
 
 		sparkReduceEClass = createEClass(SPARK_REDUCE);
 		createEAttribute(sparkReduceEClass, SPARK_REDUCE__REDUCE_TYPE);
-
-		sparkForEachEClass = createEClass(SPARK_FOR_EACH);
 
 		sparkMapEClass = createEClass(SPARK_MAP);
 		createEAttribute(sparkMapEClass, SPARK_MAP__MAP_TYPE);
@@ -470,7 +433,6 @@ public class SparkPackageImpl extends EPackageImpl implements SparkPackage {
 		sparkScenarioEClass.getESuperTypes().add(theGQAMPackage.getGaScenario());
 		sparkOperationEClass.getESuperTypes().add(theGQAMPackage.getGaStep());
 		sparkReduceEClass.getESuperTypes().add(this.getSparkOperation());
-		sparkForEachEClass.getESuperTypes().add(this.getSparkOperation());
 		sparkMapEClass.getESuperTypes().add(this.getSparkOperation());
 		sparkNodeEClass.getESuperTypes().add(theCorePackage.getCoreComputationNode());
 		sparkNodeEClass.getESuperTypes().add(theGQAMPackage.getGaScenario());
@@ -480,17 +442,14 @@ public class SparkPackageImpl extends EPackageImpl implements SparkPackage {
 		initEClass(sparkScenarioEClass, SparkScenario.class, "SparkScenario", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getSparkScenario_NAssignedCores(), theBasicNFP_TypesPackage.getNFP_Integer(), "nAssignedCores", null, 1, 1, SparkScenario.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getSparkScenario_NAssignedMemory(), theBasicNFP_TypesPackage.getNFP_Integer(), "nAssignedMemory", null, 1, 1, SparkScenario.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getSparkScenario_JobSchedule(), theBasic_Enumeration_TypesPackage_1.getScheduling(), "jobSchedule", null, 1, 1, SparkScenario.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getSparkScenario_SparkDefaultParallelism(), theBasicNFP_TypesPackage.getNFP_Integer(), "sparkDefaultParallelism", null, 1, 1, SparkScenario.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(sparkOperationEClass, SparkOperation.class, "SparkOperation", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getSparkOperation_RDDAvailable(), theBasicNFP_TypesPackage.getNFP_Integer(), "RDDAvailable", null, 1, 1, SparkOperation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getSparkOperation_RDD(), theBasicNFP_TypesPackage.getNFP_Integer(), "RDD", null, 1, 1, SparkOperation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getSparkOperation_NumTasks(), theBasicNFP_TypesPackage.getNFP_Integer(), "numTasks", null, 1, 1, SparkOperation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getSparkOperation_OpType(), theBasic_Enumeration_TypesPackage_1.getSparkOperation(), "OpType", null, 1, 1, SparkOperation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(sparkReduceEClass, SparkReduce.class, "SparkReduce", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getSparkReduce_ReduceType(), theBasic_Enumeration_TypesPackage_1.getSparkReduce(), "ReduceType", null, 1, 1, SparkReduce.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-
-		initEClass(sparkForEachEClass, SparkForEach.class, "SparkForEach", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(sparkMapEClass, SparkMap.class, "SparkMap", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getSparkMap_MapType(), theBasic_Enumeration_TypesPackage_1.getSparkMap(), "MapType", null, 1, 1, SparkMap.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
@@ -502,6 +461,9 @@ public class SparkPackageImpl extends EPackageImpl implements SparkPackage {
 		initEClass(sparkWorkloadEventEClass, SparkWorkloadEvent.class, "SparkWorkloadEvent", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getSparkWorkloadEvent_SparkPopulation(), theBasicNFP_TypesPackage.getNFP_Integer(), "sparkPopulation", null, 1, 1, SparkWorkloadEvent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getSparkWorkloadEvent_SparkExtDelay(), theBasicNFP_TypesPackage.getNFP_Duration(), "sparkExtDelay", null, 1, 1, SparkWorkloadEvent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+
+		// Create resource
+		createResource(eNS_URI);
 	}
 
 } //SparkPackageImpl

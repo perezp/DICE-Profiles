@@ -2,7 +2,6 @@
 <ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="DICE" nsURI="http://es.unizar.disco.dice/profiles/DICE/1.0"
     nsPrefix="DICE">
-  <eClassifiers xsi:type="ecore:EEnum" name="Dummy"/>
   <eSubpackages name="DICE_UML_Extensions" nsURI="http://es.unizar.disco.dice/profiles/DICE_UML_Extensions/1.0"
       nsPrefix="DICE_UML_Extensions">
     <eSubpackages name="DPIM" nsURI="http://es.unizar.disco.dice/profiles/DPIM/1.0"
@@ -264,13 +263,11 @@
               lowerBound="1" eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Integer"/>
           <eStructuralFeatures xsi:type="ecore:EAttribute" name="nAssignedMemory"
               ordered="false" lowerBound="1" eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Integer"/>
-          <eStructuralFeatures xsi:type="ecore:EAttribute" name="jobSchedule" ordered="false"
-              lowerBound="1" eType="ecore:EEnum DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/Scheduling"/>
+          <eStructuralFeatures xsi:type="ecore:EAttribute" name="sparkDefaultParallelism"
+              ordered="false" lowerBound="1" eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Integer"/>
         </eClassifiers>
         <eClassifiers xsi:type="ecore:EClass" name="SparkOperation" eSuperTypes="../../org.eclipse.papyrus.marte.static.profile/resources/MARTE.ecore#//MARTE_AnalysisModel/GQAM/GaStep">
-          <eStructuralFeatures xsi:type="ecore:EAttribute" name="RDDAvailable" ordered="false"
-              lowerBound="1" eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Integer"/>
-          <eStructuralFeatures xsi:type="ecore:EAttribute" name="RDD" ordered="false"
+          <eStructuralFeatures xsi:type="ecore:EAttribute" name="numTasks" ordered="false"
               lowerBound="1" eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Integer"/>
           <eStructuralFeatures xsi:type="ecore:EAttribute" name="OpType" ordered="false"
               lowerBound="1" eType="ecore:EEnum DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/SparkOperation"/>
@@ -279,7 +276,6 @@
           <eStructuralFeatures xsi:type="ecore:EAttribute" name="ReduceType" ordered="false"
               lowerBound="1" eType="ecore:EEnum DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/SparkReduce"/>
         </eClassifiers>
-        <eClassifiers xsi:type="ecore:EClass" name="SparkForEach" eSuperTypes="#//DICE_UML_Extensions/DTSM/Spark/SparkOperation"/>
         <eClassifiers xsi:type="ecore:EClass" name="SparkMap" eSuperTypes="#//DICE_UML_Extensions/DTSM/Spark/SparkOperation">
           <eStructuralFeatures xsi:type="ecore:EAttribute" name="MapType" ordered="false"
               lowerBound="1" eType="ecore:EEnum DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/SparkMap"/>

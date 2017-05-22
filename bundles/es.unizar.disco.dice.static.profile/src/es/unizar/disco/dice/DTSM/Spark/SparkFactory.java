@@ -49,15 +49,6 @@ public interface SparkFactory extends EFactory {
 	SparkReduce createSparkReduce();
 
 	/**
-	 * Returns a new object of class '<em>For Each</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>For Each</em>'.
-	 * @generated
-	 */
-	SparkForEach createSparkForEach();
-
-	/**
 	 * Returns a new object of class '<em>Map</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

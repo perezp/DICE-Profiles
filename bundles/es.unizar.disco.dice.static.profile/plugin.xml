@@ -9,14 +9,6 @@
    <extension point="org.eclipse.emf.ecore.generated_package">
       <!-- @generated DICE -->
       <package
-            uri="http://es.unizar.disco.dice/profiles/DICE/1.0"
-            class="es.unizar.disco.dice.DICE.DICEPackage"
-            genModel="resources/DICE.genmodel"/>
-   </extension>
-
-   <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated DICE -->
-      <package
             uri="http://es.unizar.disco.dice/profiles/DPIM/1.0"
             class="es.unizar.disco.dice.DPIM.DPIMPackage"
             genModel="resources/DICE.genmodel"/>

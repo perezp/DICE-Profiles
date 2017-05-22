@@ -2,8 +2,6 @@
  */
 package es.unizar.disco.dice.DTSM.Spark.impl;
 
-import es.unizar.disco.dice.Basic_Enumeration_Types.Scheduling;
-
 import es.unizar.disco.dice.DTSM.Spark.SparkPackage;
 import es.unizar.disco.dice.DTSM.Spark.SparkScenario;
 
@@ -25,7 +23,7 @@ import org.eclipse.papyrus.MARTE.MARTE_AnalysisModel.GQAM.impl.GaScenarioImpl;
  * <ul>
  *   <li>{@link es.unizar.disco.dice.DTSM.Spark.impl.SparkScenarioImpl#getNAssignedCores <em>NAssigned Cores</em>}</li>
  *   <li>{@link es.unizar.disco.dice.DTSM.Spark.impl.SparkScenarioImpl#getNAssignedMemory <em>NAssigned Memory</em>}</li>
- *   <li>{@link es.unizar.disco.dice.DTSM.Spark.impl.SparkScenarioImpl#getJobSchedule <em>Job Schedule</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Spark.impl.SparkScenarioImpl#getSparkDefaultParallelism <em>Spark Default Parallelism</em>}</li>
  * </ul>
  *
  * @generated
@@ -72,24 +70,24 @@ public class SparkScenarioImpl extends GaScenarioImpl implements SparkScenario {
 	protected String nAssignedMemory = NASSIGNED_MEMORY_EDEFAULT;
 
 	/**
-	 * The default value of the '{@link #getJobSchedule() <em>Job Schedule</em>}' attribute.
+	 * The default value of the '{@link #getSparkDefaultParallelism() <em>Spark Default Parallelism</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getJobSchedule()
+	 * @see #getSparkDefaultParallelism()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final Scheduling JOB_SCHEDULE_EDEFAULT = Scheduling.CAPACITY;
+	protected static final String SPARK_DEFAULT_PARALLELISM_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getJobSchedule() <em>Job Schedule</em>}' attribute.
+	 * The cached value of the '{@link #getSparkDefaultParallelism() <em>Spark Default Parallelism</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getJobSchedule()
+	 * @see #getSparkDefaultParallelism()
 	 * @generated
 	 * @ordered
 	 */
-	protected Scheduling jobSchedule = JOB_SCHEDULE_EDEFAULT;
+	protected String sparkDefaultParallelism = SPARK_DEFAULT_PARALLELISM_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -157,8 +155,8 @@ public class SparkScenarioImpl extends GaScenarioImpl implements SparkScenario {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Scheduling getJobSchedule() {
-		return jobSchedule;
+	public String getSparkDefaultParallelism() {
+		return sparkDefaultParallelism;
 	}
 
 	/**
@@ -166,11 +164,11 @@ public class SparkScenarioImpl extends GaScenarioImpl implements SparkScenario {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setJobSchedule(Scheduling newJobSchedule) {
-		Scheduling oldJobSchedule = jobSchedule;
-		jobSchedule = newJobSchedule == null ? JOB_SCHEDULE_EDEFAULT : newJobSchedule;
+	public void setSparkDefaultParallelism(String newSparkDefaultParallelism) {
+		String oldSparkDefaultParallelism = sparkDefaultParallelism;
+		sparkDefaultParallelism = newSparkDefaultParallelism;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, SparkPackage.SPARK_SCENARIO__JOB_SCHEDULE, oldJobSchedule, jobSchedule));
+			eNotify(new ENotificationImpl(this, Notification.SET, SparkPackage.SPARK_SCENARIO__SPARK_DEFAULT_PARALLELISM, oldSparkDefaultParallelism, sparkDefaultParallelism));
 	}
 
 	/**
@@ -185,8 +183,8 @@ public class SparkScenarioImpl extends GaScenarioImpl implements SparkScenario {
 				return getNAssignedCores();
 			case SparkPackage.SPARK_SCENARIO__NASSIGNED_MEMORY:
 				return getNAssignedMemory();
-			case SparkPackage.SPARK_SCENARIO__JOB_SCHEDULE:
-				return getJobSchedule();
+			case SparkPackage.SPARK_SCENARIO__SPARK_DEFAULT_PARALLELISM:
+				return getSparkDefaultParallelism();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -205,8 +203,8 @@ public class SparkScenarioImpl extends GaScenarioImpl implements SparkScenario {
 			case SparkPackage.SPARK_SCENARIO__NASSIGNED_MEMORY:
 				setNAssignedMemory((String)newValue);
 				return;
-			case SparkPackage.SPARK_SCENARIO__JOB_SCHEDULE:
-				setJobSchedule((Scheduling)newValue);
+			case SparkPackage.SPARK_SCENARIO__SPARK_DEFAULT_PARALLELISM:
+				setSparkDefaultParallelism((String)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -226,8 +224,8 @@ public class SparkScenarioImpl extends GaScenarioImpl implements SparkScenario {
 			case SparkPackage.SPARK_SCENARIO__NASSIGNED_MEMORY:
 				setNAssignedMemory(NASSIGNED_MEMORY_EDEFAULT);
 				return;
-			case SparkPackage.SPARK_SCENARIO__JOB_SCHEDULE:
-				setJobSchedule(JOB_SCHEDULE_EDEFAULT);
+			case SparkPackage.SPARK_SCENARIO__SPARK_DEFAULT_PARALLELISM:
+				setSparkDefaultParallelism(SPARK_DEFAULT_PARALLELISM_EDEFAULT);
 				return;
 		}
 		super.eUnset(featureID);
@@ -245,8 +243,8 @@ public class SparkScenarioImpl extends GaScenarioImpl implements SparkScenario {
 				return NASSIGNED_CORES_EDEFAULT == null ? nAssignedCores != null : !NASSIGNED_CORES_EDEFAULT.equals(nAssignedCores);
 			case SparkPackage.SPARK_SCENARIO__NASSIGNED_MEMORY:
 				return NASSIGNED_MEMORY_EDEFAULT == null ? nAssignedMemory != null : !NASSIGNED_MEMORY_EDEFAULT.equals(nAssignedMemory);
-			case SparkPackage.SPARK_SCENARIO__JOB_SCHEDULE:
-				return jobSchedule != JOB_SCHEDULE_EDEFAULT;
+			case SparkPackage.SPARK_SCENARIO__SPARK_DEFAULT_PARALLELISM:
+				return SPARK_DEFAULT_PARALLELISM_EDEFAULT == null ? sparkDefaultParallelism != null : !SPARK_DEFAULT_PARALLELISM_EDEFAULT.equals(sparkDefaultParallelism);
 		}
 		return super.eIsSet(featureID);
 	}
@@ -265,8 +263,8 @@ public class SparkScenarioImpl extends GaScenarioImpl implements SparkScenario {
 		result.append(nAssignedCores);
 		result.append(", nAssignedMemory: ");
 		result.append(nAssignedMemory);
-		result.append(", jobSchedule: ");
-		result.append(jobSchedule);
+		result.append(", sparkDefaultParallelism: ");
+		result.append(sparkDefaultParallelism);
 		result.append(')');
 		return result.toString();
 	}

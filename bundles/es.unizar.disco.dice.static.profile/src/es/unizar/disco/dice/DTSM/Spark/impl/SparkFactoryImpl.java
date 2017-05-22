@@ -59,7 +59,6 @@ public class SparkFactoryImpl extends EFactoryImpl implements SparkFactory {
 			case SparkPackage.SPARK_SCENARIO: return createSparkScenario();
 			case SparkPackage.SPARK_OPERATION: return createSparkOperation();
 			case SparkPackage.SPARK_REDUCE: return createSparkReduce();
-			case SparkPackage.SPARK_FOR_EACH: return createSparkForEach();
 			case SparkPackage.SPARK_MAP: return createSparkMap();
 			case SparkPackage.SPARK_NODE: return createSparkNode();
 			case SparkPackage.SPARK_WORKLOAD_EVENT: return createSparkWorkloadEvent();
@@ -96,16 +95,6 @@ public class SparkFactoryImpl extends EFactoryImpl implements SparkFactory {
 	public SparkReduce createSparkReduce() {
 		SparkReduceImpl sparkReduce = new SparkReduceImpl();
 		return sparkReduce;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public SparkForEach createSparkForEach() {
-		SparkForEachImpl sparkForEach = new SparkForEachImpl();
-		return sparkForEach;
 	}
 
 	/**
