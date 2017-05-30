@@ -2,6 +2,8 @@
  */
 package es.unizar.disco.dice.DTSM.Spark.impl;
 
+import com.masdes.dam.Core.impl.DaServiceImpl;
+
 import es.unizar.disco.dice.DTSM.Spark.SparkPackage;
 import es.unizar.disco.dice.DTSM.Spark.SparkScenario;
 
@@ -10,8 +12,6 @@ import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-
-import org.eclipse.papyrus.MARTE.MARTE_AnalysisModel.GQAM.impl.GaScenarioImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -28,7 +28,7 @@ import org.eclipse.papyrus.MARTE.MARTE_AnalysisModel.GQAM.impl.GaScenarioImpl;
  *
  * @generated
  */
-public class SparkScenarioImpl extends GaScenarioImpl implements SparkScenario {
+public class SparkScenarioImpl extends DaServiceImpl implements SparkScenario {
 	/**
 	 * The default value of the '{@link #getNAssignedCores() <em>NAssigned Cores</em>}' attribute.
 	 * <!-- begin-user-doc -->

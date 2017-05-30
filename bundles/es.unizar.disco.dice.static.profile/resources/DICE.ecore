@@ -259,7 +259,7 @@
       </eSubpackages>
       <eSubpackages name="Spark" nsURI="http://es.unizar.disco.dice/profiles/DTSM/Spark/1.0"
           nsPrefix="Spark">
-        <eClassifiers xsi:type="ecore:EClass" name="SparkScenario" eSuperTypes="../../org.eclipse.papyrus.marte.static.profile/resources/MARTE.ecore#//MARTE_AnalysisModel/GQAM/GaScenario">
+        <eClassifiers xsi:type="ecore:EClass" name="SparkScenario" eSuperTypes="../../com.masdes.dam.static.profile/resources/DAM.ecore#//DAM_UML_Extensions/System/Core/DaService">
           <eStructuralFeatures xsi:type="ecore:EAttribute" name="nAssignedCores" ordered="false"
               lowerBound="1" eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Integer"/>
           <eStructuralFeatures xsi:type="ecore:EAttribute" name="nAssignedMemory"
