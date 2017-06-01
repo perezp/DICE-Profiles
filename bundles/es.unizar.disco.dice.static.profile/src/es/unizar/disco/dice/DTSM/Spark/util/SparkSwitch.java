@@ -3,6 +3,7 @@
 package es.unizar.disco.dice.DTSM.Spark.util;
 
 import com.masdes.dam.Core.DaComponent;
+import com.masdes.dam.Core.DaService;
 
 import es.unizar.disco.dice.DPIM.DpimComputationNode;
 
@@ -85,6 +86,7 @@ public class SparkSwitch<T> extends Switch<T> {
 			case SparkPackage.SPARK_SCENARIO: {
 				SparkScenario sparkScenario = (SparkScenario)theEObject;
 				T result = caseSparkScenario(sparkScenario);
+				if (result == null) result = caseDaService(sparkScenario);
 				if (result == null) result = caseGaScenario(sparkScenario);
 				if (result == null) result = caseResourceUsage(sparkScenario);
 				if (result == null) result = caseTimedProcessing(sparkScenario);
@@ -299,6 +301,21 @@ public class SparkSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseGaScenario(GaScenario object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Da Service</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Da Service</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseDaService(DaService object) {
 		return null;
 	}
 

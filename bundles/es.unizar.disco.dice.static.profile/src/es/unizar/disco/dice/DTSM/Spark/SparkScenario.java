@@ -2,7 +2,7 @@
  */
 package es.unizar.disco.dice.DTSM.Spark;
 
-import org.eclipse.papyrus.MARTE.MARTE_AnalysisModel.GQAM.GaScenario;
+import com.masdes.dam.Core.DaService;
 
 /**
  * <!-- begin-user-doc -->
@@ -22,7 +22,7 @@ import org.eclipse.papyrus.MARTE.MARTE_AnalysisModel.GQAM.GaScenario;
  * @model
  * @generated
  */
-public interface SparkScenario extends GaScenario {
+public interface SparkScenario extends DaService {
 	/**
 	 * Returns the value of the '<em><b>NAssigned Cores</b></em>' attribute.
 	 * <!-- begin-user-doc -->

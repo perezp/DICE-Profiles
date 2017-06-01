@@ -428,8 +428,9 @@ public class SparkPackageImpl extends EPackageImpl implements SparkPackage {
 		setNsURI(eNS_URI);
 
 		// Obtain other dependent packages
-		GQAMPackage theGQAMPackage = (GQAMPackage)EPackage.Registry.INSTANCE.getEPackage(GQAMPackage.eNS_URI);
+		com.masdes.dam.Core.CorePackage theCorePackage_1 = (com.masdes.dam.Core.CorePackage)EPackage.Registry.INSTANCE.getEPackage(com.masdes.dam.Core.CorePackage.eNS_URI);
 		BasicNFP_TypesPackage theBasicNFP_TypesPackage = (BasicNFP_TypesPackage)EPackage.Registry.INSTANCE.getEPackage(BasicNFP_TypesPackage.eNS_URI);
+		GQAMPackage theGQAMPackage = (GQAMPackage)EPackage.Registry.INSTANCE.getEPackage(GQAMPackage.eNS_URI);
 		es.unizar.disco.dice.Basic_Enumeration_Types.Basic_Enumeration_TypesPackage theBasic_Enumeration_TypesPackage_1 = (es.unizar.disco.dice.Basic_Enumeration_Types.Basic_Enumeration_TypesPackage)EPackage.Registry.INSTANCE.getEPackage(es.unizar.disco.dice.Basic_Enumeration_Types.Basic_Enumeration_TypesPackage.eNS_URI);
 		CorePackage theCorePackage = (CorePackage)EPackage.Registry.INSTANCE.getEPackage(CorePackage.eNS_URI);
 
@@ -438,7 +439,7 @@ public class SparkPackageImpl extends EPackageImpl implements SparkPackage {
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
-		sparkScenarioEClass.getESuperTypes().add(theGQAMPackage.getGaScenario());
+		sparkScenarioEClass.getESuperTypes().add(theCorePackage_1.getDaService());
 		sparkOperationEClass.getESuperTypes().add(theGQAMPackage.getGaStep());
 		sparkReduceEClass.getESuperTypes().add(this.getSparkOperation());
 		sparkMapEClass.getESuperTypes().add(this.getSparkOperation());
