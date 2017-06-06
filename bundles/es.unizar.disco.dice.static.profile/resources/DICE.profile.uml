@@ -573,6 +573,52 @@
             </ownedAttribute>
           </packagedElement>
         </packagedElement>
+        <packagedElement xmi:type="uml:Profile" xmi:id="_nBY5MErOEeeMQoOjqcCpqg" name="Tez">
+          <packagedElement xmi:type="uml:Stereotype" xmi:id="_pqFYoEnwEeejV93_VexjFw" name="TezVertex">
+            <generalization xmi:type="uml:Generalization" xmi:id="_Ik98cEnxEeejV93_VexjFw" general="_8x7EQCluEeaibdPncpUwfA"/>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_r9F9EEnwEeejV93_VexjFw" name="taskInputSize">
+              <type xmi:type="uml:DataType" href="pathmap://Papyrus_PROFILES/MARTE_Library.library.uml#_0KWSgBFQEdyUJeMeN__D-A"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_uY7tYEnwEeejV93_VexjFw" name="minSrcFraction">
+              <type xmi:type="uml:DataType" href="pathmap://Papyrus_PROFILES/MARTE_Library.library.uml#_Yq-MQBFQEdyUJeMeN__D-A"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_xojrEEnwEeejV93_VexjFw" name="maxScrFraction">
+              <type xmi:type="uml:DataType" href="pathmap://Papyrus_PROFILES/MARTE_Library.library.uml#_Yq-MQBFQEdyUJeMeN__D-A"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_Fx_ZEEqiEeexLMFFcxluzQ" name="virtualCores">
+              <type xmi:type="uml:DataType" href="pathmap://Papyrus_PROFILES/MARTE_Library.library.uml#_0KWSgBFQEdyUJeMeN__D-A"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_KQVzsEqiEeexLMFFcxluzQ" name="memory">
+              <type xmi:type="uml:DataType" href="pathmap://Papyrus_PROFILES/MARTE_Library.library.uml#_0KWSgBFQEdyUJeMeN__D-A"/>
+            </ownedAttribute>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Stereotype" xmi:id="_1jhr0EnwEeejV93_VexjFw" name="TezEdge">
+            <generalization xmi:type="uml:Generalization" xmi:id="_L5_XgEnxEeejV93_VexjFw">
+              <general xmi:type="uml:Stereotype" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_eXMtwBKZEdyGYuetzx6T5A"/>
+            </generalization>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_4d39EEnwEeejV93_VexjFw" name="dataMovementType">
+              <type xmi:type="uml:Enumeration" href="DICE_Library.uml#_89eU4EnwEeejV93_VexjFw"/>
+            </ownedAttribute>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Stereotype" xmi:id="_qwXJUEqiEeexLMFFcxluzQ" name="TezScenario">
+            <generalization xmi:type="uml:Generalization" xmi:id="_yQzb8EqiEeexLMFFcxluzQ" general="_2HB5kCluEeaibdPncpUwfA"/>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_zxi18EqiEeexLMFFcxluzQ" name="maxTaskParalellism">
+              <type xmi:type="uml:DataType" href="pathmap://Papyrus_PROFILES/MARTE_Library.library.uml#_0KWSgBFQEdyUJeMeN__D-A"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_Ky-KMEqjEeexLMFFcxluzQ" name="amVirtualCores">
+              <type xmi:type="uml:DataType" href="pathmap://Papyrus_PROFILES/MARTE_Library.library.uml#_0KWSgBFQEdyUJeMeN__D-A"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_PqeEoEqjEeexLMFFcxluzQ" name="amMemory">
+              <type xmi:type="uml:DataType" href="pathmap://Papyrus_PROFILES/MARTE_Library.library.uml#_0KWSgBFQEdyUJeMeN__D-A"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_WwqEMEqjEeexLMFFcxluzQ" name="taskVirtualCores">
+              <type xmi:type="uml:DataType" href="pathmap://Papyrus_PROFILES/MARTE_Library.library.uml#_0KWSgBFQEdyUJeMeN__D-A"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_ZmeawEqjEeexLMFFcxluzQ" name="taskMemory">
+              <type xmi:type="uml:DataType" href="pathmap://Papyrus_PROFILES/MARTE_Library.library.uml#_0KWSgBFQEdyUJeMeN__D-A"/>
+            </ownedAttribute>
+          </packagedElement>
+        </packagedElement>
         <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_B66nMCy4EeagadxR5JgrcA">
           <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_B671UCy4EeagadxR5JgrcA" source="http://www.eclipse.org/uml2/2.0.0/UML">
             <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA"/>

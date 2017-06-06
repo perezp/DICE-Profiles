@@ -144,6 +144,11 @@
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_afJ2EAAvEee5FrQsk8AM1w" name="scala"/>
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_cm_FQAAvEee5FrQsk8AM1w" name="R"/>
         </packagedElement>
+        <packagedElement xmi:type="uml:Enumeration" xmi:id="_89eU4EnwEeejV93_VexjFw" name="DataMovementType">
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="__lXkMEnwEeejV93_VexjFw" name="OneToOne"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_BWwCQEnxEeejV93_VexjFw" name="ScatterGather"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_CnvJAEnxEeejV93_VexjFw" name="Broadcast"/>
+        </packagedElement>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_8J84wOeYEeWj7ZPL8JeBTQ" name="Complex_DICE_Types">
