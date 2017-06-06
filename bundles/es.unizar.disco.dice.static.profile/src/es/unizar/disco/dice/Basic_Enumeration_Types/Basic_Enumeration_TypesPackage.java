@@ -245,6 +245,16 @@ public interface Basic_Enumeration_TypesPackage extends EPackage {
 	int LANGUAGE_TYPE = 18;
 
 	/**
+	 * The meta object id for the '{@link es.unizar.disco.dice.Basic_Enumeration_Types.DataMovementType <em>Data Movement Type</em>}' enum.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see es.unizar.disco.dice.Basic_Enumeration_Types.DataMovementType
+	 * @see es.unizar.disco.dice.Basic_Enumeration_Types.impl.Basic_Enumeration_TypesPackageImpl#getDataMovementType()
+	 * @generated
+	 */
+	int DATA_MOVEMENT_TYPE = 19;
+
+	/**
 	 * The meta object id for the '{@link es.unizar.disco.dice.Basic_Enumeration_Types.ComputationType <em>Computation Type</em>}' enum.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -252,7 +262,7 @@ public interface Basic_Enumeration_TypesPackage extends EPackage {
 	 * @see es.unizar.disco.dice.Basic_Enumeration_Types.impl.Basic_Enumeration_TypesPackageImpl#getComputationType()
 	 * @generated
 	 */
-	int COMPUTATION_TYPE = 19;
+	int COMPUTATION_TYPE = 20;
 
 
 	/**
@@ -444,6 +454,16 @@ public interface Basic_Enumeration_TypesPackage extends EPackage {
 	 * @generated
 	 */
 	EEnum getLanguageType();
+
+	/**
+	 * Returns the meta object for enum '{@link es.unizar.disco.dice.Basic_Enumeration_Types.DataMovementType <em>Data Movement Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for enum '<em>Data Movement Type</em>'.
+	 * @see es.unizar.disco.dice.Basic_Enumeration_Types.DataMovementType
+	 * @generated
+	 */
+	EEnum getDataMovementType();
 
 	/**
 	 * Returns the meta object for enum '{@link es.unizar.disco.dice.Basic_Enumeration_Types.ComputationType <em>Computation Type</em>}'.
@@ -666,6 +686,16 @@ public interface Basic_Enumeration_TypesPackage extends EPackage {
 		 * @generated
 		 */
 		EEnum LANGUAGE_TYPE = eINSTANCE.getLanguageType();
+
+		/**
+		 * The meta object literal for the '{@link es.unizar.disco.dice.Basic_Enumeration_Types.DataMovementType <em>Data Movement Type</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see es.unizar.disco.dice.Basic_Enumeration_Types.DataMovementType
+		 * @see es.unizar.disco.dice.Basic_Enumeration_Types.impl.Basic_Enumeration_TypesPackageImpl#getDataMovementType()
+		 * @generated
+		 */
+		EEnum DATA_MOVEMENT_TYPE = eINSTANCE.getDataMovementType();
 
 		/**
 		 * The meta object literal for the '{@link es.unizar.disco.dice.Basic_Enumeration_Types.ComputationType <em>Computation Type</em>}' enum.

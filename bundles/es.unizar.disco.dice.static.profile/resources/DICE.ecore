@@ -2,7 +2,6 @@
 <ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="DICE" nsURI="http://es.unizar.disco.dice/profiles/DICE/1.0"
     nsPrefix="DICE">
-  <eClassifiers xsi:type="ecore:EEnum" name="Dummy"/>
   <eSubpackages name="DICE_UML_Extensions" nsURI="http://es.unizar.disco.dice/profiles/DICE_UML_Extensions/1.0"
       nsPrefix="DICE_UML_Extensions">
     <eSubpackages name="DPIM" nsURI="http://es.unizar.disco.dice/profiles/DPIM/1.0"
@@ -292,6 +291,37 @@
               ordered="false" lowerBound="1" eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Integer"/>
           <eStructuralFeatures xsi:type="ecore:EAttribute" name="sparkExtDelay" ordered="false"
               lowerBound="1" eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Duration"/>
+        </eClassifiers>
+      </eSubpackages>
+      <eSubpackages name="Tez" nsURI="http://es.unizar.disco.dice/profiles/DTSM/Tez/1.0"
+          nsPrefix="Tez">
+        <eClassifiers xsi:type="ecore:EClass" name="TezVertex" eSuperTypes="#//DICE_UML_Extensions/DTSM/Core/CoreDAGNode">
+          <eStructuralFeatures xsi:type="ecore:EAttribute" name="taskInputSize" ordered="false"
+              lowerBound="1" eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Integer"/>
+          <eStructuralFeatures xsi:type="ecore:EAttribute" name="minSrcFraction" ordered="false"
+              lowerBound="1" eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Real"/>
+          <eStructuralFeatures xsi:type="ecore:EAttribute" name="maxScrFraction" ordered="false"
+              lowerBound="1" eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Real"/>
+          <eStructuralFeatures xsi:type="ecore:EAttribute" name="virtualCores" ordered="false"
+              lowerBound="1" eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Integer"/>
+          <eStructuralFeatures xsi:type="ecore:EAttribute" name="memory" ordered="false"
+              lowerBound="1" eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Integer"/>
+        </eClassifiers>
+        <eClassifiers xsi:type="ecore:EClass" name="TezEdge" eSuperTypes="../../org.eclipse.papyrus.marte.static.profile/resources/MARTE.ecore#//MARTE_AnalysisModel/GQAM/GaStep">
+          <eStructuralFeatures xsi:type="ecore:EAttribute" name="dataMovementType"
+              ordered="false" lowerBound="1" eType="ecore:EEnum DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/DataMovementType"/>
+        </eClassifiers>
+        <eClassifiers xsi:type="ecore:EClass" name="TezScenario" eSuperTypes="#//DICE_UML_Extensions/DTSM/Core/CoreDirectAcyclicGraph">
+          <eStructuralFeatures xsi:type="ecore:EAttribute" name="maxTaskParalellism"
+              ordered="false" lowerBound="1" eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Integer"/>
+          <eStructuralFeatures xsi:type="ecore:EAttribute" name="amVirtualCores" ordered="false"
+              lowerBound="1" eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Integer"/>
+          <eStructuralFeatures xsi:type="ecore:EAttribute" name="amMemory" ordered="false"
+              lowerBound="1" eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Integer"/>
+          <eStructuralFeatures xsi:type="ecore:EAttribute" name="taskVirtualCores"
+              ordered="false" lowerBound="1" eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Integer"/>
+          <eStructuralFeatures xsi:type="ecore:EAttribute" name="taskMemory" ordered="false"
+              lowerBound="1" eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Integer"/>
         </eClassifiers>
       </eSubpackages>
     </eSubpackages>

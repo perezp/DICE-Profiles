@@ -11,13 +11,13 @@
       </eAnnotations>
       <eClassifiers xsi:type="ecore:EClass" name="DiceDataVolume">
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="volume" ordered="false"
-            eType="ecore:EClass MARTE_Library.ecore#//BasicNFP_Types/NFP_DataSize"/>
+            eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_DataSize"/>
       </eClassifiers>
       <eClassifiers xsi:type="ecore:EClass" name="DiceDataSpecification">
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" ordered="false"
-            eType="ecore:EDataType platform:/plugin/org.eclipse.uml2.types/model/Types.ecore#//String"/>
+            eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="size" ordered="false"
-            eType="ecore:EClass MARTE_Library.ecore#//BasicNFP_Types/NFP_DataSize"/>
+            eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_DataSize"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="refModel" ordered="false"
             eType="#//Basic_DICE_Types/Basic_Enumeration_Types/RefType"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="refDataFormat" ordered="false"
@@ -25,26 +25,26 @@
       </eClassifiers>
       <eClassifiers xsi:type="ecore:EClass" name="DiceChannelSpecification">
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="rate" ordered="false"
-            eType="ecore:EClass MARTE_Library.ecore#//BasicNFP_Types/NFP_Frequency"/>
+            eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Frequency"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="size" ordered="false"
-            eType="ecore:EClass MARTE_Library.ecore#//BasicNFP_Types/NFP_DataSize"/>
+            eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_DataSize"/>
       </eClassifiers>
       <eClassifiers xsi:type="ecore:EClass" name="RequiredAttribute">
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="referenceNode" ordered="false"
-            lowerBound="1" eType="ecore:EDataType platform:/plugin/org.eclipse.uml2.types/model/Types.ecore#//String"/>
+            lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="attributeName" ordered="false"
-            lowerBound="1" eType="ecore:EDataType platform:/plugin/org.eclipse.uml2.types/model/Types.ecore#//String"/>
+            lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
       </eClassifiers>
       <eClassifiers xsi:type="ecore:EClass" name="FirewallRule">
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="allowedIpPrefix" ordered="false"
-            lowerBound="1" eType="ecore:EDataType platform:/plugin/org.eclipse.uml2.types/model/Types.ecore#//String"
+            lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"
             defaultValueLiteral="0.0.0.0/0"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="port" ordered="false"
-            lowerBound="1" eType="ecore:EDataType platform:/plugin/org.eclipse.uml2.types/model/Types.ecore#//Integer"/>
+            lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//Integer"/>
       </eClassifiers>
       <eClassifiers xsi:type="ecore:EClass" name="MongoDBShard">
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="nInstances" ordered="false"
-            eType="ecore:EDataType platform:/plugin/org.eclipse.uml2.types/model/Types.ecore#//Integer"
+            eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//Integer"
             defaultValueLiteral="1"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="hostSize" ordered="false"
             eType="#//Basic_DICE_Types/Basic_Enumeration_Types/VMSize" defaultValueLiteral="Small"/>

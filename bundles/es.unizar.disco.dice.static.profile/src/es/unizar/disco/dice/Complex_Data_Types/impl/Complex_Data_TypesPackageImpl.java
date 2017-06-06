@@ -22,11 +22,6 @@ import es.unizar.disco.dice.Complex_Data_Types.RequiredAttribute;
 import es.unizar.disco.dice.DDSM.DDSMPackage;
 
 import es.unizar.disco.dice.DDSM.impl.DDSMPackageImpl;
-
-import es.unizar.disco.dice.DICE.DICEPackage;
-
-import es.unizar.disco.dice.DICE.impl.DICEPackageImpl;
-
 import es.unizar.disco.dice.DPIM.DPIMPackage;
 
 import es.unizar.disco.dice.DPIM.impl.DPIMPackageImpl;
@@ -47,6 +42,8 @@ import es.unizar.disco.dice.DTSM.Storm.StormPackage;
 
 import es.unizar.disco.dice.DTSM.Storm.impl.StormPackageImpl;
 
+import es.unizar.disco.dice.DTSM.Tez.TezPackage;
+import es.unizar.disco.dice.DTSM.Tez.impl.TezPackageImpl;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
@@ -159,34 +156,34 @@ public class Complex_Data_TypesPackageImpl extends EPackageImpl implements Compl
 		Basic_Enumeration_TypesPackage.eINSTANCE.eClass();
 
 		// Obtain or create and register interdependencies
-		DICEPackageImpl theDICEPackage = (DICEPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(DICEPackage.eNS_URI) instanceof DICEPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(DICEPackage.eNS_URI) : DICEPackage.eINSTANCE);
 		DPIMPackageImpl theDPIMPackage = (DPIMPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(DPIMPackage.eNS_URI) instanceof DPIMPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(DPIMPackage.eNS_URI) : DPIMPackage.eINSTANCE);
 		CorePackageImpl theCorePackage = (CorePackageImpl)(EPackage.Registry.INSTANCE.getEPackage(CorePackage.eNS_URI) instanceof CorePackageImpl ? EPackage.Registry.INSTANCE.getEPackage(CorePackage.eNS_URI) : CorePackage.eINSTANCE);
 		StormPackageImpl theStormPackage = (StormPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(StormPackage.eNS_URI) instanceof StormPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(StormPackage.eNS_URI) : StormPackage.eINSTANCE);
 		HadoopPackageImpl theHadoopPackage = (HadoopPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(HadoopPackage.eNS_URI) instanceof HadoopPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(HadoopPackage.eNS_URI) : HadoopPackage.eINSTANCE);
 		SparkPackageImpl theSparkPackage = (SparkPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(SparkPackage.eNS_URI) instanceof SparkPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(SparkPackage.eNS_URI) : SparkPackage.eINSTANCE);
+		TezPackageImpl theTezPackage = (TezPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(TezPackage.eNS_URI) instanceof TezPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(TezPackage.eNS_URI) : TezPackage.eINSTANCE);
 		DDSMPackageImpl theDDSMPackage = (DDSMPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(DDSMPackage.eNS_URI) instanceof DDSMPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(DDSMPackage.eNS_URI) : DDSMPackage.eINSTANCE);
 		Basic_Enumeration_TypesPackageImpl theBasic_Enumeration_TypesPackage_1 = (Basic_Enumeration_TypesPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(es.unizar.disco.dice.Basic_Enumeration_Types.Basic_Enumeration_TypesPackage.eNS_URI) instanceof Basic_Enumeration_TypesPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(es.unizar.disco.dice.Basic_Enumeration_Types.Basic_Enumeration_TypesPackage.eNS_URI) : es.unizar.disco.dice.Basic_Enumeration_Types.Basic_Enumeration_TypesPackage.eINSTANCE);
 
 		// Create package meta-data objects
 		theComplex_Data_TypesPackage.createPackageContents();
-		theDICEPackage.createPackageContents();
 		theDPIMPackage.createPackageContents();
 		theCorePackage.createPackageContents();
 		theStormPackage.createPackageContents();
 		theHadoopPackage.createPackageContents();
 		theSparkPackage.createPackageContents();
+		theTezPackage.createPackageContents();
 		theDDSMPackage.createPackageContents();
 		theBasic_Enumeration_TypesPackage_1.createPackageContents();
 
 		// Initialize created meta-data
 		theComplex_Data_TypesPackage.initializePackageContents();
-		theDICEPackage.initializePackageContents();
 		theDPIMPackage.initializePackageContents();
 		theCorePackage.initializePackageContents();
 		theStormPackage.initializePackageContents();
 		theHadoopPackage.initializePackageContents();
 		theSparkPackage.initializePackageContents();
+		theTezPackage.initializePackageContents();
 		theDDSMPackage.initializePackageContents();
 		theBasic_Enumeration_TypesPackage_1.initializePackageContents();
 
