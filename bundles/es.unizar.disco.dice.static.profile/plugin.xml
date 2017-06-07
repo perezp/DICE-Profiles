@@ -141,6 +141,10 @@
             uri="http://es.unizar.disco.dice/profiles/DTSM/Spark/1.0">
       </profile>
       <profile
+            location="pathmap://DICE_PROFILES/DICE.profile.uml#_0QZvIPjzEeaT8NXWw3z-XE"
+            uri="http://es.unizar.disco.dice/profiles/DTSM/Tez/1.0">
+      </profile>
+      <profile
             location="pathmap://DICE_PROFILES/DICE.profile.uml#_aYmS0Dx2EeaOH59TuV453g"
             uri="http://es.unizar.disco.dice/profiles/DDSM/1.0">
       </profile>
