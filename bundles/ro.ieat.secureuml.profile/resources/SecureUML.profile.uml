@@ -8526,6 +8526,17 @@
     <packagedElement xmi:type="uml:Extension" xmi:id="_WHIwwHmXEeae1LmHHETvPg" name="E_Action_Classifier1" memberEnd="_WHIwwXmXEeae1LmHHETvPg _WHO3YHmXEeae1LmHHETvPg">
       <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_WHIwwXmXEeae1LmHHETvPg" name="extension_Action" type="_G6VVADI-EeaCqKWE88ztuQ" aggregation="composite" association="_WHIwwHmXEeae1LmHHETvPg"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_T4B0cFDpEeez1vSxqhhUSw" name="ResourceType">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_VPQGEFDpEeez1vSxqhhUSw" name="base_Classifier" association="_VPMbsFDpEeez1vSxqhhUSw">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Classifier"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_WseSAFDpEeez1vSxqhhUSw" name="baseClass">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_VPMbsFDpEeez1vSxqhhUSw" name="E_ResourceType_Classifier1" memberEnd="_VPPfAFDpEeez1vSxqhhUSw _VPQGEFDpEeez1vSxqhhUSw">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_VPPfAFDpEeez1vSxqhhUSw" name="extension_ResourceType" type="_T4B0cFDpEeez1vSxqhhUSw" aggregation="composite" association="_VPMbsFDpEeez1vSxqhhUSw"/>
+    </packagedElement>
   </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_LaDTgDI8EeaCqKWE88ztuQ" name="UserAssociation" isAbstract="true" memberEnd="_LaDTgzI8EeaCqKWE88ztuQ _LaD6kDI8EeaCqKWE88ztuQ">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_LaDTgTI8EeaCqKWE88ztuQ" source="org.eclipse.papyrus">
