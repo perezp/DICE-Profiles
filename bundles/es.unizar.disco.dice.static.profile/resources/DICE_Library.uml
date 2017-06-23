@@ -92,6 +92,7 @@
         <packagedElement xmi:type="uml:Enumeration" xmi:id="_ToY-oD4IEeahGZm0A1o1gg" name="ProviderType">
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_VrthQD4IEeahGZm0A1o1gg" name="fco"/>
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_Xqh-YD4IEeahGZm0A1o1gg" name="openstack"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_vWzJQFflEeefbOVX5L95Fg" name="aws"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Enumeration" xmi:id="_JBGoID4OEeahGZm0A1o1gg" name="LifeCycleElementType">
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_L6TC0D4OEeahGZm0A1o1gg" name="start"/>
