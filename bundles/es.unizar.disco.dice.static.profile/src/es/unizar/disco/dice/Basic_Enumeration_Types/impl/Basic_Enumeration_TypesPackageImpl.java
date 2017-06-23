@@ -630,6 +630,7 @@ public class Basic_Enumeration_TypesPackageImpl extends EPackageImpl implements 
 		initEEnum(providerTypeEEnum, ProviderType.class, "ProviderType");
 		addEEnumLiteral(providerTypeEEnum, ProviderType.FCO);
 		addEEnumLiteral(providerTypeEEnum, ProviderType.OPENSTACK);
+		addEEnumLiteral(providerTypeEEnum, ProviderType.AWS);
 
 		initEEnum(lifeCycleElementTypeEEnum, LifeCycleElementType.class, "LifeCycleElementType");
 		addEEnumLiteral(lifeCycleElementTypeEEnum, LifeCycleElementType.START);

@@ -128,6 +128,7 @@
       <eClassifiers xsi:type="ecore:EEnum" name="ProviderType">
         <eLiterals name="fco"/>
         <eLiterals name="openstack" value="1"/>
+        <eLiterals name="aws" value="2"/>
       </eClassifiers>
       <eClassifiers xsi:type="ecore:EEnum" name="LifeCycleElementType">
         <eLiterals name="start"/>

@@ -513,6 +513,7 @@
         <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/ProviderType">
           <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/ProviderType/fco"/>
           <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/ProviderType/openstack"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/ProviderType/aws"/>
         </genEnums>
         <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/LifeCycleElementType">
           <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/LifeCycleElementType/start"/>
