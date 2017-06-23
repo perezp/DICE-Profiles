@@ -434,6 +434,10 @@
                   <element xmi:type="uml:EnumerationLiteral" href="DICE_Library.uml#_Xqh-YD4IEeahGZm0A1o1gg"/>
                   <layoutConstraint xmi:type="notation:Location" xmi:id="_XquLoT4IEeahGZm0A1o1gg"/>
                 </children>
+                <children xmi:type="notation:Shape" xmi:id="_vYGw0FflEeefbOVX5L95Fg" type="EnumerationLiteral_LiteralLabel">
+                  <element xmi:type="uml:EnumerationLiteral" href="DICE_Library.uml#_vWzJQFflEeefbOVX5L95Fg"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_vYGw0VflEeefbOVX5L95Fg"/>
+                </children>
                 <styles xmi:type="notation:TitleStyle" xmi:id="_TolL5j4IEeahGZm0A1o1gg"/>
                 <styles xmi:type="notation:SortingStyle" xmi:id="_TolL5z4IEeahGZm0A1o1gg"/>
                 <styles xmi:type="notation:FilteringStyle" xmi:id="_TolL6D4IEeahGZm0A1o1gg"/>
