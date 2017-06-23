@@ -36,7 +36,15 @@ public enum ProviderType implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	OPENSTACK(1, "openstack", "openstack");
+	OPENSTACK(1, "openstack", "openstack"), /**
+	 * The '<em><b>Aws</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #AWS_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	AWS(2, "aws", "aws");
 
 	/**
 	 * The '<em><b>Fco</b></em>' literal value.
@@ -69,6 +77,21 @@ public enum ProviderType implements Enumerator {
 	public static final int OPENSTACK_VALUE = 1;
 
 	/**
+	 * The '<em><b>Aws</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of '<em><b>Aws</b></em>' literal object isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @see #AWS
+	 * @model name="aws"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int AWS_VALUE = 2;
+
+	/**
 	 * An array of all the '<em><b>Provider Type</b></em>' enumerators.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -78,6 +101,7 @@ public enum ProviderType implements Enumerator {
 		new ProviderType[] {
 			FCO,
 			OPENSTACK,
+			AWS,
 		};
 
 	/**
@@ -136,6 +160,7 @@ public enum ProviderType implements Enumerator {
 		switch (value) {
 			case FCO_VALUE: return FCO;
 			case OPENSTACK_VALUE: return OPENSTACK;
+			case AWS_VALUE: return AWS;
 		}
 		return null;
 	}
