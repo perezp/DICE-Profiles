@@ -240,8 +240,8 @@
             <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DTSM/Spark/SparkWorkloadEvent/sparkExtDelay"/>
           </genClasses>
         </nestedGenPackages>
-        <nestedGenPackages xsi:type="genmodel:GenPackage" prefix="Cassandra" disposableProviderFactory="true"
-            ecorePackage="DICE.ecore#//DICE_UML_Extensions/DTSM/Cassandra">
+        <nestedGenPackages xsi:type="genmodel:GenPackage" prefix="Cassandra" basePackage="es.unizar.disco.dice.DTSM"
+            disposableProviderFactory="true" ecorePackage="DICE.ecore#//DICE_UML_Extensions/DTSM/Cassandra">
           <genClasses xsi:type="genmodel:GenClass" ecoreClass="DICE.ecore#//DICE_UML_Extensions/DTSM/Cassandra/CassandraDB">
             <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DTSM/Cassandra/CassandraDB/replicationFactor"/>
             <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DTSM/Cassandra/CassandraDB/consistencyLevel"/>

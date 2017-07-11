@@ -37,7 +37,7 @@ public interface CassandraPackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	String eNS_URI = "http:///DICE/DICE_UML_Extensions/DTSM/Cassandra.ecore";
+	String eNS_URI = "http://es.unizar.disco.dice/profiles/DTSM/Cassandra/1.0";
 
 	/**
 	 * The package namespace name.
@@ -45,7 +45,7 @@ public interface CassandraPackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	String eNS_PREFIX = "DICE.DICE_UML_Extensions.DTSM.Cassandra";
+	String eNS_PREFIX = "Cassandra";
 
 	/**
 	 * The singleton instance of the package.

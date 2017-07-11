@@ -1291,5 +1291,5 @@
   <Ecore:EPackage xmi:id="_0yQ4UC5LEeaF_sH3mLTVKg" base_Package="_lhjuYC5LEeaF_sH3mLTVKg" packageName="Hadoop" nsPrefix="Hadoop" nsURI="http://es.unizar.disco.dice/profiles/DTSM/Hadoop/1.0" basePackage="es.unizar.disco.dice.DTSM"/>
   <Ecore:EPackage xmi:id="_jBv58Dx2EeaOH59TuV453g" base_Package="_aYmS0Dx2EeaOH59TuV453g" packageName="DDSM" nsPrefix="DDSM" nsURI="http://es.unizar.disco.dice/profiles/DDSM/1.0" basePackage="es.unizar.disco.dice"/>
   <Ecore:EPackage xmi:id="_0QZvIPjzEeaT8NXWw3z-XA" base_Package="_uVw8sPjzEeaT8NXWw3z-XA" packageName="Spark" nsPrefix="Spark" nsURI="http://es.unizar.disco.dice/profiles/DTSM/Spark/1.0" basePackage="es.unizar.disco.dice.DTSM"/>
-  <Ecore:EPackage xmi:id="_GJ5KYGY7EeeWJ7BBNSdFOw" base_Package="_CxT4QGYrEeeWJ7BBNSdFOw"/>
+  <Ecore:EPackage xmi:id="_GJ5KYGY7EeeWJ7BBNSdFOw" base_Package="_CxT4QGYrEeeWJ7BBNSdFOw" packageName="Cassandra" nsPrefix="Cassandra" nsURI="http://es.unizar.disco.dice/profiles/DTSM/Cassandra/1.0" basePackage="es.unizar.disco.dice.DTSM"/>
 </xmi:XMI>

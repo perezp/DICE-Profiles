@@ -294,8 +294,8 @@
               lowerBound="1" eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Duration"/>
         </eClassifiers>
       </eSubpackages>
-      <eSubpackages name="Cassandra" nsURI="http:///DICE/DICE_UML_Extensions/DTSM/Cassandra.ecore"
-          nsPrefix="DICE.DICE_UML_Extensions.DTSM.Cassandra">
+      <eSubpackages name="Cassandra" nsURI="http://es.unizar.disco.dice/profiles/DTSM/Cassandra/1.0"
+          nsPrefix="Cassandra">
         <eClassifiers xsi:type="ecore:EClass" name="CassandraDB">
           <eStructuralFeatures xsi:type="ecore:EAttribute" name="replicationFactor"
               ordered="false" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//Integer"/>
