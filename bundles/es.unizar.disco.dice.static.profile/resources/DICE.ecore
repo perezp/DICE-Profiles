@@ -294,6 +294,17 @@
               lowerBound="1" eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Duration"/>
         </eClassifiers>
       </eSubpackages>
+      <eSubpackages name="Cassandra" nsURI="http:///DICE/DICE_UML_Extensions/DTSM/Cassandra.ecore"
+          nsPrefix="DICE.DICE_UML_Extensions.DTSM.Cassandra">
+        <eClassifiers xsi:type="ecore:EClass" name="CassandraDB">
+          <eStructuralFeatures xsi:type="ecore:EAttribute" name="replicationFactor"
+              ordered="false" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//Integer"/>
+          <eStructuralFeatures xsi:type="ecore:EAttribute" name="consistencyLevel"
+              ordered="false" eType="ecore:EEnum DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/CassandraConsistencyLevelType"/>
+          <eStructuralFeatures xsi:type="ecore:EReference" name="base_Node" ordered="false"
+              lowerBound="1" eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//Node"/>
+        </eClassifiers>
+      </eSubpackages>
     </eSubpackages>
     <eSubpackages name="DDSM" nsURI="http://es.unizar.disco.dice/profiles/DDSM/1.0"
         nsPrefix="DDSM">

@@ -240,6 +240,15 @@
             <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DTSM/Spark/SparkWorkloadEvent/sparkExtDelay"/>
           </genClasses>
         </nestedGenPackages>
+        <nestedGenPackages xsi:type="genmodel:GenPackage" prefix="Cassandra" disposableProviderFactory="true"
+            ecorePackage="DICE.ecore#//DICE_UML_Extensions/DTSM/Cassandra">
+          <genClasses xsi:type="genmodel:GenClass" ecoreClass="DICE.ecore#//DICE_UML_Extensions/DTSM/Cassandra/CassandraDB">
+            <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DTSM/Cassandra/CassandraDB/replicationFactor"/>
+            <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute DICE.ecore#//DICE_UML_Extensions/DTSM/Cassandra/CassandraDB/consistencyLevel"/>
+            <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+                propertySortChoices="true" ecoreFeature="ecore:EReference DICE.ecore#//DICE_UML_Extensions/DTSM/Cassandra/CassandraDB/base_Node"/>
+          </genClasses>
+        </nestedGenPackages>
       </nestedGenPackages>
       <nestedGenPackages xsi:type="genmodel:GenPackage" prefix="DDSM" basePackage="es.unizar.disco.dice"
           disposableProviderFactory="true" ecorePackage="DICE.ecore#//DICE_UML_Extensions/DDSM">
@@ -565,6 +574,11 @@
           <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/LanguageType/java"/>
           <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/LanguageType/scala"/>
           <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/LanguageType/R"/>
+        </genEnums>
+        <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/CassandraConsistencyLevelType">
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/CassandraConsistencyLevelType/one"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/CassandraConsistencyLevelType/quorum"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/CassandraConsistencyLevelType/all"/>
         </genEnums>
         <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/ComputationType">
           <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/ComputationType/distributed"/>

@@ -181,6 +181,11 @@
         <eLiterals name="scala" value="3"/>
         <eLiterals name="R" value="4"/>
       </eClassifiers>
+      <eClassifiers xsi:type="ecore:EEnum" name="CassandraConsistencyLevelType">
+        <eLiterals name="one"/>
+        <eLiterals name="quorum" value="1"/>
+        <eLiterals name="all" value="2"/>
+      </eClassifiers>
       <eClassifiers xsi:type="ecore:EEnum" name="ComputationType">
         <eLiterals name="distributed"/>
         <eLiterals name="parallel" value="1"/>

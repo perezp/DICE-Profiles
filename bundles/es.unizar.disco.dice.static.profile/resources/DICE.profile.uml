@@ -573,6 +573,26 @@
             </ownedAttribute>
           </packagedElement>
         </packagedElement>
+        <packagedElement xmi:type="uml:Profile" xmi:id="_CxT4QGYrEeeWJ7BBNSdFOw" name="Cassandra">
+          <packagedElement xmi:type="uml:Stereotype" xmi:id="_YOq-cGY7EeeWJ7BBNSdFOw" name="CassandraDB">
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_fpP5oGY7EeeWJ7BBNSdFOw" name="replicationFactor">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IaSqQGY8EeeWJ7BBNSdFOw"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IaSqQWY8EeeWJ7BBNSdFOw" value="1"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_RsrboGY8EeeWJ7BBNSdFOw" name="consistencyLevel">
+              <type xmi:type="uml:Enumeration" href="DICE_Library.uml#_dhj-8GY8EeeWJ7BBNSdFOw"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tgzp4GY8EeeWJ7BBNSdFOw"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tgzp4WY8EeeWJ7BBNSdFOw" value="1"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_rrHeImY9EeeWJ7BBNSdFOw" name="base_Node" association="_rrHeIGY9EeeWJ7BBNSdFOw">
+              <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Node"/>
+            </ownedAttribute>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Extension" xmi:id="_rrHeIGY9EeeWJ7BBNSdFOw" name="E_CassandraDB_Node1" memberEnd="_rrHeIWY9EeeWJ7BBNSdFOw _rrHeImY9EeeWJ7BBNSdFOw">
+            <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_rrHeIWY9EeeWJ7BBNSdFOw" name="extension_CassandraDB" type="_YOq-cGY7EeeWJ7BBNSdFOw" aggregation="composite" association="_rrHeIGY9EeeWJ7BBNSdFOw"/>
+          </packagedElement>
+        </packagedElement>
         <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_B66nMCy4EeagadxR5JgrcA">
           <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_B671UCy4EeagadxR5JgrcA" source="http://www.eclipse.org/uml2/2.0.0/UML">
             <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA"/>
@@ -1271,4 +1291,5 @@
   <Ecore:EPackage xmi:id="_0yQ4UC5LEeaF_sH3mLTVKg" base_Package="_lhjuYC5LEeaF_sH3mLTVKg" packageName="Hadoop" nsPrefix="Hadoop" nsURI="http://es.unizar.disco.dice/profiles/DTSM/Hadoop/1.0" basePackage="es.unizar.disco.dice.DTSM"/>
   <Ecore:EPackage xmi:id="_jBv58Dx2EeaOH59TuV453g" base_Package="_aYmS0Dx2EeaOH59TuV453g" packageName="DDSM" nsPrefix="DDSM" nsURI="http://es.unizar.disco.dice/profiles/DDSM/1.0" basePackage="es.unizar.disco.dice"/>
   <Ecore:EPackage xmi:id="_0QZvIPjzEeaT8NXWw3z-XA" base_Package="_uVw8sPjzEeaT8NXWw3z-XA" packageName="Spark" nsPrefix="Spark" nsURI="http://es.unizar.disco.dice/profiles/DTSM/Spark/1.0" basePackage="es.unizar.disco.dice.DTSM"/>
+  <Ecore:EPackage xmi:id="_GJ5KYGY7EeeWJ7BBNSdFOw" base_Package="_CxT4QGYrEeeWJ7BBNSdFOw"/>
 </xmi:XMI>
