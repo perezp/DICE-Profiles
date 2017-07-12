@@ -145,6 +145,11 @@
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_afJ2EAAvEee5FrQsk8AM1w" name="scala"/>
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_cm_FQAAvEee5FrQsk8AM1w" name="R"/>
         </packagedElement>
+        <packagedElement xmi:type="uml:Enumeration" xmi:id="_dhj-8GY8EeeWJ7BBNSdFOw" name="CassandraConsistencyLevelType">
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_jy4zEGY8EeeWJ7BBNSdFOw" name="one"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_maqGkGY8EeeWJ7BBNSdFOw" name="quorum"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_nRvfkGY8EeeWJ7BBNSdFOw" name="all"/>
+        </packagedElement>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_8J84wOeYEeWj7ZPL8JeBTQ" name="Complex_DICE_Types">

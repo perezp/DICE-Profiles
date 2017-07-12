@@ -108,6 +108,8 @@ public class Basic_Enumeration_TypesFactoryImpl extends EFactoryImpl implements 
 				return createSparkOperationFromString(eDataType, initialValue);
 			case Basic_Enumeration_TypesPackage.LANGUAGE_TYPE:
 				return createLanguageTypeFromString(eDataType, initialValue);
+			case Basic_Enumeration_TypesPackage.CASSANDRA_CONSISTENCY_LEVEL_TYPE:
+				return createCassandraConsistencyLevelTypeFromString(eDataType, initialValue);
 			case Basic_Enumeration_TypesPackage.COMPUTATION_TYPE:
 				return createComputationTypeFromString(eDataType, initialValue);
 			default:
@@ -161,6 +163,8 @@ public class Basic_Enumeration_TypesFactoryImpl extends EFactoryImpl implements 
 				return convertSparkOperationToString(eDataType, instanceValue);
 			case Basic_Enumeration_TypesPackage.LANGUAGE_TYPE:
 				return convertLanguageTypeToString(eDataType, instanceValue);
+			case Basic_Enumeration_TypesPackage.CASSANDRA_CONSISTENCY_LEVEL_TYPE:
+				return convertCassandraConsistencyLevelTypeToString(eDataType, instanceValue);
 			case Basic_Enumeration_TypesPackage.COMPUTATION_TYPE:
 				return convertComputationTypeToString(eDataType, instanceValue);
 			default:
@@ -545,6 +549,26 @@ public class Basic_Enumeration_TypesFactoryImpl extends EFactoryImpl implements 
 	 * @generated
 	 */
 	public String convertLanguageTypeToString(EDataType eDataType, Object instanceValue) {
+		return instanceValue == null ? null : instanceValue.toString();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public CassandraConsistencyLevelType createCassandraConsistencyLevelTypeFromString(EDataType eDataType, String initialValue) {
+		CassandraConsistencyLevelType result = CassandraConsistencyLevelType.get(initialValue);
+		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+		return result;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String convertCassandraConsistencyLevelTypeToString(EDataType eDataType, Object instanceValue) {
 		return instanceValue == null ? null : instanceValue.toString();
 	}
 

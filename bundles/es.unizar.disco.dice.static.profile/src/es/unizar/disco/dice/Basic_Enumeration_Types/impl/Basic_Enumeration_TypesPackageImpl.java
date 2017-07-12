@@ -10,6 +10,7 @@ import com.masdes.dam.DAM.DAMPackage;
 
 import es.unizar.disco.dice.Basic_Enumeration_Types.Basic_Enumeration_TypesFactory;
 import es.unizar.disco.dice.Basic_Enumeration_Types.Basic_Enumeration_TypesPackage;
+import es.unizar.disco.dice.Basic_Enumeration_Types.CassandraConsistencyLevelType;
 import es.unizar.disco.dice.Basic_Enumeration_Types.ComputationType;
 import es.unizar.disco.dice.Basic_Enumeration_Types.ConstraintType;
 import es.unizar.disco.dice.Basic_Enumeration_Types.DDSMcomponentType;
@@ -45,6 +46,8 @@ import es.unizar.disco.dice.DPIM.DPIMPackage;
 
 import es.unizar.disco.dice.DPIM.impl.DPIMPackageImpl;
 
+import es.unizar.disco.dice.DTSM.Cassandra.CassandraPackage;
+import es.unizar.disco.dice.DTSM.Cassandra.impl.CassandraPackageImpl;
 import es.unizar.disco.dice.DTSM.Core.CorePackage;
 
 import es.unizar.disco.dice.DTSM.Core.impl.CorePackageImpl;
@@ -211,6 +214,13 @@ public class Basic_Enumeration_TypesPackageImpl extends EPackageImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EEnum cassandraConsistencyLevelTypeEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EEnum computationTypeEEnum = null;
 
 	/**
@@ -272,6 +282,7 @@ public class Basic_Enumeration_TypesPackageImpl extends EPackageImpl implements 
 		StormPackageImpl theStormPackage = (StormPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(StormPackage.eNS_URI) instanceof StormPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(StormPackage.eNS_URI) : StormPackage.eINSTANCE);
 		HadoopPackageImpl theHadoopPackage = (HadoopPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(HadoopPackage.eNS_URI) instanceof HadoopPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(HadoopPackage.eNS_URI) : HadoopPackage.eINSTANCE);
 		SparkPackageImpl theSparkPackage = (SparkPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(SparkPackage.eNS_URI) instanceof SparkPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(SparkPackage.eNS_URI) : SparkPackage.eINSTANCE);
+		CassandraPackageImpl theCassandraPackage = (CassandraPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(CassandraPackage.eNS_URI) instanceof CassandraPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(CassandraPackage.eNS_URI) : CassandraPackage.eINSTANCE);
 		DDSMPackageImpl theDDSMPackage = (DDSMPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(DDSMPackage.eNS_URI) instanceof DDSMPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(DDSMPackage.eNS_URI) : DDSMPackage.eINSTANCE);
 		Complex_Data_TypesPackageImpl theComplex_Data_TypesPackage_1 = (Complex_Data_TypesPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(es.unizar.disco.dice.Complex_Data_Types.Complex_Data_TypesPackage.eNS_URI) instanceof Complex_Data_TypesPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(es.unizar.disco.dice.Complex_Data_Types.Complex_Data_TypesPackage.eNS_URI) : es.unizar.disco.dice.Complex_Data_Types.Complex_Data_TypesPackage.eINSTANCE);
 
@@ -283,6 +294,7 @@ public class Basic_Enumeration_TypesPackageImpl extends EPackageImpl implements 
 		theStormPackage.createPackageContents();
 		theHadoopPackage.createPackageContents();
 		theSparkPackage.createPackageContents();
+		theCassandraPackage.createPackageContents();
 		theDDSMPackage.createPackageContents();
 		theComplex_Data_TypesPackage_1.createPackageContents();
 
@@ -294,6 +306,7 @@ public class Basic_Enumeration_TypesPackageImpl extends EPackageImpl implements 
 		theStormPackage.initializePackageContents();
 		theHadoopPackage.initializePackageContents();
 		theSparkPackage.initializePackageContents();
+		theCassandraPackage.initializePackageContents();
 		theDDSMPackage.initializePackageContents();
 		theComplex_Data_TypesPackage_1.initializePackageContents();
 
@@ -482,6 +495,15 @@ public class Basic_Enumeration_TypesPackageImpl extends EPackageImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EEnum getCassandraConsistencyLevelType() {
+		return cassandraConsistencyLevelTypeEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EEnum getComputationType() {
 		return computationTypeEEnum;
 	}
@@ -533,6 +555,7 @@ public class Basic_Enumeration_TypesPackageImpl extends EPackageImpl implements 
 		sparkMapEEnum = createEEnum(SPARK_MAP);
 		sparkOperationEEnum = createEEnum(SPARK_OPERATION);
 		languageTypeEEnum = createEEnum(LANGUAGE_TYPE);
+		cassandraConsistencyLevelTypeEEnum = createEEnum(CASSANDRA_CONSISTENCY_LEVEL_TYPE);
 		computationTypeEEnum = createEEnum(COMPUTATION_TYPE);
 	}
 
@@ -682,6 +705,11 @@ public class Basic_Enumeration_TypesPackageImpl extends EPackageImpl implements 
 		addEEnumLiteral(languageTypeEEnum, LanguageType.JAVA);
 		addEEnumLiteral(languageTypeEEnum, LanguageType.SCALA);
 		addEEnumLiteral(languageTypeEEnum, LanguageType.R);
+
+		initEEnum(cassandraConsistencyLevelTypeEEnum, CassandraConsistencyLevelType.class, "CassandraConsistencyLevelType");
+		addEEnumLiteral(cassandraConsistencyLevelTypeEEnum, CassandraConsistencyLevelType.ONE);
+		addEEnumLiteral(cassandraConsistencyLevelTypeEEnum, CassandraConsistencyLevelType.QUORUM);
+		addEEnumLiteral(cassandraConsistencyLevelTypeEEnum, CassandraConsistencyLevelType.ALL);
 
 		initEEnum(computationTypeEEnum, ComputationType.class, "ComputationType");
 		addEEnumLiteral(computationTypeEEnum, ComputationType.DISTRIBUTED);
