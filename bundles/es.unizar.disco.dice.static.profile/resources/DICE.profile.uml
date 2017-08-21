@@ -529,7 +529,7 @@
               <type xmi:type="uml:Enumeration" href="DICE_Library.uml#_CC_MYP8iEeae0ceaALtJ7Q"/>
             </ownedAttribute>
           </packagedElement>
-          <packagedElement xmi:type="uml:Stereotype" xmi:id="_uVw9i_jzEeaT8NXWw3z-XA" name="SparkReduce">
+          <packagedElement xmi:type="uml:Stereotype" xmi:id="_uVw9i_jzEeaT8NXWw3z-XA" name="SparkAction">
             <generalization xmi:type="uml:Generalization" xmi:id="_DZ1IsAPyEee8MoBjXIybTQ" general="_uVw9fPjzEeaT8NXWw3z-XA"/>
             <ownedAttribute xmi:type="uml:Property" xmi:id="_uVw9j_jzEeaT8NXWw3z-XA" name="ReduceType">
               <type xmi:type="uml:Enumeration" href="DICE_Library.uml#_zfUr4PdQEeauAqwbCM80KA"/>
@@ -537,7 +537,7 @@
               <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uVw9kfjzEeaT8NXWw3z-XA" value="1"/>
             </ownedAttribute>
           </packagedElement>
-          <packagedElement xmi:type="uml:Stereotype" xmi:id="_uVw9mfjzEeaT8NXWw3z-XA" name="SparkMap">
+          <packagedElement xmi:type="uml:Stereotype" xmi:id="_uVw9mfjzEeaT8NXWw3z-XA" name="SparkTransformation">
             <generalization xmi:type="uml:Generalization" xmi:id="_CwJSgAPyEee8MoBjXIybTQ" general="_uVw9fPjzEeaT8NXWw3z-XA"/>
             <ownedAttribute xmi:type="uml:Property" xmi:id="_uVw9nvjzEeaT8NXWw3z-XA" name="MapType">
               <type xmi:type="uml:Enumeration" href="DICE_Library.uml#_zfVS8PdQEeauAqwbCM80KA"/>

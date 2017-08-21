@@ -716,7 +716,7 @@
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mt7OQiyzEeagadxR5JgrcA" x="220" y="21"/>
           </children>
           <element xmi:type="uml:Profile" href="DICE_Library.uml#_diCmMOeWEeWj7ZPL8JeBTQ"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_diHeseeWEeWj7ZPL8JeBTQ" x="9" y="12" width="787" height="481"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_diHeseeWEeWj7ZPL8JeBTQ" x="9" y="12" width="787" height="669"/>
         </children>
         <styles xmi:type="notation:TitleStyle" xmi:id="_bGrzgueVEeWj7ZPL8JeBTQ"/>
         <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bGrzg-eVEeWj7ZPL8JeBTQ"/>
